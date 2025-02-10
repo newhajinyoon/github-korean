@@ -1,7 +1,7 @@
 /*******************************************************************************
 
     locals.js - 搭配用户脚本插件`GitHub 中文化插件`的页面匹配规则, 翻译忽略规则,
-                词条库文件
+                词条库文件 
     Copyright (C) 2016-2021 楼教主 (https://github.com/52cik)
     Copyright (C) 2021-当前 沙漠之子 (https://github.com/maboloshi)
 
@@ -22,7 +22,7 @@
 */
 var I18N = {};
 
-I18N.conf = {
+I18N。conf = {
 
     /**
      * 匹配 pathname 页面的正则
