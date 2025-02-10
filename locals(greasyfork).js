@@ -381,7 +381,7 @@ I18N["zh-CN"]["title"] = { // 标题翻译
         [/starred/, "星标"],
         [/Commits · ([^ ]+)/, "提交 · $1"],
         [/New Issue/, "新建议题"],
-        [/Issues?/, "议题"],
+        [/Issues?/, "이슈"],
         [/Pull (R|r)equests?/, "拉取请求"],
         [/Actions secrets · ([^ ]+)/, "操作机密 · $1"],
         [/Actions settings · ([^ ]+)/, "操作设置 · $1"],
@@ -577,7 +577,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
 
         // 搜索栏
             "Search or jump to...": "搜索或跳转到…",
-            "Type": "",
+            "Type": " ",
             "to search": "키로 검색",
             "Command palette": "命令面板",
             "Saved queries": "已保存的搜索",
@@ -603,7 +603,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
 
         // 左上角下拉栏 (已登录)
             "Home": "主页",
-            "Issues": "议题",
+            "Issues": "이슈",
             "Pull requests": "병합요청",
             "Projects": "프로젝트",
             "Codespaces": "代码空间",
@@ -1050,7 +1050,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
             "organizations, repositories,": "组织、仓库",
             "Projects": "프로젝트",
             "files": "文件",
-            "issues": "议题",
+            "issues": "이슈",
             "Pull requests": "병합요청",
             "organizations": "组织",
             "repositories": "仓库",
@@ -5601,7 +5601,7 @@ I18N["zh-CN"]["settings/apps"] = { // 设置 - 开发者设置/GitHub 应用
                         "Discussions and related comments and labels.": "讨论及相关评论和标签。",
                     "Environments": "环境",
                         "Manage repository environments.": "管理仓库环境。",
-                    "Issues": "议题",
+                    "Issues": "이슈",
                         "Issues and related comments, assignees, labels, and milestones.": "议题及相关评论、受理人、标签和里程碑。",
                     "Merge queues": "合并列队",
                         "Manage a repository's merge queues": "管理仓库的合并队列。",
@@ -5777,7 +5777,7 @@ I18N["zh-CN"]["settings/apps"] = { // 设置 - 开发者设置/GitHub 应用
                     "Wiki page updated.": "Wiki 页面的更新。",
                 "Issue comment": "议题评论",
                     "Issue comment created, edited, or deleted.": "议题评论的创建、编辑或删除。",
-                //"议题": "",
+                //"이슈": "",
                     "Issue opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned, locked, or unlocked.": "议题的打开、编辑、删除、转移、置顶、取消置顶、关闭、重新打开、分配、取消分配、标记、取消标记、设置里程碑、取消里程碑、锁定或解锁。",
                 "Label": "标签",
                     "Label created, edited or deleted.": "标签的创建、编辑或删除。",
@@ -6261,7 +6261,7 @@ I18N["zh-CN"]["settings/tokens"] = { // 设置 - 开发者设置/个人访问令
                         "Discussions and related comments and labels.": "讨论及相关评论和标签。",
                     "Environments": "环境",
                         "Manage repository environments.": "管理仓库环境。",
-                    "Issues": "议题",
+                    "Issues": "이슈",
                         "Issues and related comments, assignees, labels, and milestones.": "议题及相关评论、受理人、标签和里程碑。",
                     "Merge queues": "合并列队",
                         "Manage a repository's merge queues": "管理仓库的合并队列。",
@@ -8217,7 +8217,7 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
             "close": "关闭",
             "this issue": "这个议题",
             // "that will close this issue": "这将会关闭这个议题",
-            // "Issue": "议题",
+            // "Issue": "이슈",
             "added a commit that closed this issue": "在提交时关闭了这个议题",
             "closed this in": "关闭于",
             "added the": "添加了",
@@ -8568,7 +8568,7 @@ I18N["zh-CN"]["repository/pulls"] = { // 仓库 - 拉取请求页面
 
             // [/First time contributing to ([^ ]+)?/, "首次为 $1 做贡献？"], // /pulls
             "If you know how to fix an": "如果您知道如何修复一个",
-            "issue": "议题",
+            "issue": "이슈",
             ", consider opening a pull request for it.": "，可考虑为它打开一个拉取请求。",
             "You can read this repository’s": "您可以阅读该仓库的",
             "to learn how to open a good pull request.": "，去学习如何打开一个好的拉取请求。",
@@ -15278,7 +15278,7 @@ I18N["zh-CN"]["repository/settings/hooks"] = { // 仓库设置 - Web 钩子 /<us
                         "Repository forked.": "仓库复刻。",
                     "Issue comments": "议题评论",
                         "Issue comment created, edited, or deleted.": "议题评论的创建、编辑或删除。",
-                    // "Issue": "议题",
+                    // "Issue": "이슈",
                         "Issue opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned, locked, or unlocked.": "议题的打开、编辑、删除、转移、置顶、取消置顶、关闭、重新打开、分配、取消分配、标记、取消标记、设置里程碑、取消里程碑、锁定或解锁。",
                     "Labels": "标签",
                         "Label created, edited or deleted.": "标签的创建、编辑或删除。",
@@ -17797,8 +17797,8 @@ I18N["zh-CN"]["search"] = { // 搜索页面
 
             "Your search did not match any": "您的搜索没有匹配任何",
             "Code": "코드",
-            "issue": "议题",
-            "issues": "议题",
+            "issue": "이슈",
+            "issues": "이슈",
             "pull request": "拉取请求",
             "Pull requests": "병합요청",
             "discussion": "讨论",
@@ -23745,7 +23745,7 @@ I18N["zh-CN"]["education"] = { // 教育页面，申请学生包会用到
 
             // https://education.github.com/learner/opportunities
                 "Community Exchange": "社区交流",
-                    "Community Exchange is a collection of student repositories for teaching, learning and collaborating.": "社区交流是一个用于教学、学习和合作的学生资源库。",
+                    "Community Exchange is a collection of student repositories for teaching, learning 和 collaborating.": "社区交流是一个用于教学、学习和合作的学生资源库。",
                     "Go to Community Exchange": "前往社区交流",
                 "Updates in Find Opportunities": "寻找机遇的更新内容",
 
@@ -23759,7 +23759,7 @@ I18N["zh-CN"]["education"] = { // 教育页面，申请学生包会用到
                 // 右侧
                     "Updates in Get Connected": "获得联系更新内容",
                     "Campus Expert": "校园专家",
-                        "Campus Experts are student leaders that strive to build diverse and inclusive technical communities.": "校园专家是学生领袖，他们努力建设多元化和包容性的技术社区。",
+                        "Campus Experts are student leaders that strive to build diverse 和 inclusive technical communities.": "校园专家是学生领袖，他们努力建设多元化和包容性的技术社区。",
 
                         "Follow your Expert": "关注专家",
                         "Follow student leaders trained by GitHub to get help with hackathons & events": "关注由 GitHub 培训的学生领袖，在黑客马拉松和活动中获得帮助",
@@ -23770,13 +23770,13 @@ I18N["zh-CN"]["education"] = { // 教育页面，申请学生包会用到
     },
     "regexp":[
         [/(\d+) requests?/, "$1 次"],
-        [/Hi, ([^ ]+)! You were last verified as a on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification and access to academic benefits./, (match, user, p1) => {
+        [/Hi, ([^ ]+)! You were last verified as a on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification 和 access to academic benefits./, (match, user, p1) => {
                 const dateRegExp = I18N["zh-CN"]["public"]["time-regexp"];
                 const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
                 return `您好，`+ user + `！您最近于${translatedDate}验证。您现在无需重新验证。从验证到享受学业福利之间可能会有一段等待时间。`;
             // return '您好，' + user + '！您最近于' + year + '年' + monthKey[month] + day + '日验证。您现在无需重新验证。从验证到享受学业福利之间可能会有一段等待时间。';
         }],
-        [/Hi, ([^ ]+)! You were last verified as a student on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification and access to academic benefits./, (match, user, p1)=> {
+        [/Hi, ([^ ]+)! You were last verified as a student on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification 和 access to academic benefits./, (match, user, p1)=> {
             const dateRegExp = I18N["zh-CN"]["public"]["time-regexp"];
             const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
             return `您好，`+ user + `！您最近于${translatedDate}学生验证。您现在无需重新验证。从验证到享受学业福利之间可能会有一段等待时间。`;
