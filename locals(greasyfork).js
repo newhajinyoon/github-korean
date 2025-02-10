@@ -37,7 +37,7 @@ I18N.conf = {
      * 通知页面 /notifications
      * 关注页面 /watching
      * 星标页面 /stars
-     * 议题页面 /issues
+     * 이슈页面 /issues
      * 拉取请求 /pulls
      * 搜索页面 /search
      * 趋势页面 /trending
@@ -280,7 +280,7 @@ I18N["zh-CN"]["title"] = { // 标题翻译
         "Saved replies": "快捷回复",
         "Security & analysis": "安全与分析",
         "Installed GitHub Apps": "已安装的 GitHub 应用",
-        "Issue search results": "议题搜索结果",
+        "Issue search results": "이슈搜索结果",
         "Scheduled reminders": "定时提醒",
         "Security log": "安全日志",
         "Sponsorship Log": "赞助日志",
@@ -380,7 +380,7 @@ I18N["zh-CN"]["title"] = { // 标题翻译
         [/starred topics/, "星标主题"],
         [/starred/, "星标"],
         [/Commits · ([^ ]+)/, "提交 · $1"],
-        [/New Issue/, "新建议题"],
+        [/New Issue/, "新建이슈"],
         [/Issues?/, "이슈"],
         [/Pull (R|r)equests?/, "拉取请求"],
         [/Actions secrets · ([^ ]+)/, "操作机密 · $1"],
@@ -482,14 +482,14 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
         "You have exceeded a secondary rate limit.": "您已经超出次要速率限制。",
         "Please wait a few minutes before you try again;": "请稍等几分钟再重试；",
         "in some cases this may take up to an hour.": "在某些情况下，这可能最多需要一个小时。",
-        // 议题、拉取请求、讨论浮动信息卡（在任一引用这些链接的页面都会出现
-        "You opened this issue": "您打开了这个议题",
+        // 이슈、拉取请求、讨论浮动信息卡（在任一引用这些链接的页面都会出现
+        "You opened this issue": "您打开了这个이슈",
         "You opened this pull request": "您打开了这个拉取请求",
-        "You commented on this issue": "您对此议题发表了评论",
-        "You commented on and opened this issue": "您打开了这个议题并发表评论",
+        "You commented on this issue": "您对此이슈发表了评论",
+        "You commented on and opened this issue": "您打开了这个이슈并发表评论",
         "You commented on this pull request": "您对此拉取请求发表了评论",
         "You commented on and opened this pull request": "您打开了这个拉取请求并发表评论",
-        "You were mentioned on and commented on this issue": "您在此议题上被提及并发表评论",
+        "You were mentioned on and commented on this issue": "您在此이슈上被提及并发表评论",
         "You were mentioned on and commented on this pull request": "您在此拉取请求上被提及并发表评论",
         "You were mentioned on and opened this pull request": "您被提及并打开了此拉取请求",
         "You are assigned to this pull request": "您被指派处理此拉取请求",
@@ -513,7 +513,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
                     "Manage code changes": "管理代码更改",
                 // Copilot
                     "Write better code with AI": "借助 AI 写出更好的代码",
-                // 议题
+                // 이슈
                     "Plan and track work": "计划和追踪工作",
                 // 讨论
                     "Collaborate outside of code": "代码之外的协作",
@@ -680,7 +680,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
                     "Light/dark Protanopia & Deuteranopia for red/green color blindness.": "明/暗 - 红绿色盲主题适用于红绿色盲。",
                     "Light/dark Tritanopia for blue/yellow color blindness.": "明/暗 - 蓝色盲主题适用于蓝黄色盲。",
                 "Command Palette": "命令面板",
-                    "Quickly navigate and jump between your organizations or repositories and search recent issues, pull requests, projects and more with the new command palette. You can also execute time saving commands all without lifting your fingers off the keyboard!": "使用新的命令面板，可以快速导航并跳转到您所在的组织或仓库，并搜索最近的议题、拉取请求、项目等等。您还可以执行节省时间的命令，而无需将手指从键盘上移开！",
+                    "Quickly navigate and jump between your organizations or repositories and search recent issues, pull requests, projects and more with the new command palette. You can also execute time saving commands all without lifting your fingers off the keyboard!": "使用新的命令面板，可以快速导航并跳转到您所在的组织或仓库，并搜索最近的이슈、拉取请求、项目等等。您还可以执行节省时间的命令，而无需将手指从键盘上移开！",
                     "To open the command palette:": "打开命令面板：",
                 "Copilot Workspace for Pull Requests": "适用于拉取请求的 Copilot 工作区",
                     "Copilot Workspace is a Copilot-native coding environment that helps you land high-quality pull requests faster by allowing you to edit and run code from your pull request without leaving GitHub.com.": "Copilot 工作区是 Copilot 的原生编码环境，允许您在不离开 GitHub.com 的情况下编辑和运行拉取请求中的代码，从而帮助您更快提交高质量的拉取请求。",
@@ -695,11 +695,11 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
                 "Rich Jupyter Notebook Diffs": "Jupyter Notebook 的丰富差异视图",
                     "Enables rich diffs of Jupyter Notebooks in pull requests": "在拉取请求中启用 Jupyter Notebook 的丰富差异视图",
                     "Note: commenting on rich diff views of notebooks is not yet supported": "注意：尚不支持对 Jupyter Notebook 的丰富差异视图进行评论",
-                "New Issues Experience": "新议题体验",
-                    "The new GitHub Issues experience brings three powerful new features:": "新版 GitHub 议题体验带来了三个强大的新功能：",
-                    "Sub-issues are designed to help you break-down and manage your issues with a parent/child relationship into a hierarchy.": "子议题旨在帮助您将具有父/子关系的议题分解和管理为层次结构。",
-                    "Issues types allow you to classify and manage your issues with a shared and consistent language across all repositories in an organization, such as bugs or tasks.": "议题类型允许您使用组织中所有仓库中的共享和一致的语言对议题进行分类和管理，例如错误或任务。",
-                    "Advanced search allows you to build advanced queries using the AND and OR keywords, as well as nested queries using parentheses up to 5 layers deep right from the repository Issues page.": "高级搜索允许您使用 AND 和 OR 关键字构建高级查询，以及使用括号构建多达 5 层深的嵌套查询，直接从仓库议题页面开始。",
+                "New Issues Experience": "新이슈体验",
+                    "The new GitHub Issues experience brings three powerful new features:": "新版 GitHub 이슈体验带来了三个强大的新功能：",
+                    "Sub-issues are designed to help you break-down and manage your issues with a parent/child relationship into a hierarchy.": "子이슈旨在帮助您将具有父/子关系的이슈分解和管理为层次结构。",
+                    "Issues types allow you to classify and manage your issues with a shared and consistent language across all repositories in an organization, such as bugs or tasks.": "이슈类型允许您使用组织中所有仓库中的共享和一致的语言对이슈进行分类和管理，例如错误或任务。",
+                    "Advanced search allows you to build advanced queries using the AND and OR keywords, as well as nested queries using parentheses up to 5 layers deep right from the repository Issues page.": "高级搜索允许您使用 AND 和 OR 关键字构建高级查询，以及使用括号构建多达 5 层深的嵌套查询，直接从仓库이슈页面开始。",
                 "New merge experience": "新合并体验",
                     "Improved merge experience on the pull request page that helps you better understand the state of your pull request and get it merged faster!": "改进了拉取请求页面上的合并体验，可帮助您更好地了解拉取请求的状态，更快地完成合并！",
                 "New Pull Request Commits Experience": "新拉取请求提交体验",
@@ -708,7 +708,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
                     "We’re thrilled to introduce our new graphics library! With this update, you’ll find significant enhancements to two of our repository insights views—Contributors and Code Frequency. Both now utilize an SVG-based solution, offering improved focus navigation for precise, point-by-point interaction. You can also hide a series by interacting with the chart legend and view or download the data in both table format and as PNGs.": "我们非常高兴地介绍我们的新图形库！通过此次更新，您将发现我们的两个仓库洞察视图-- “贡献者” 和 “代码频率” 都有了显著增强。这两个视图现在都采用了基于 SVG 的解决方案，为精确的逐点交互提供了改进的焦点导航。您还可以通过与图表图例交互来隐藏系列，并以表格格式和 PNG 格式查看或下载数据。",
                 "Slash Commands": "斜杠命令",
                     "Slash commands make it easier to type more complex Markdown, such as tables, tasklists, and code blocks.": "斜线命令可以让您更轻松地输入更复杂的 Markdown，如表格、任务列表和代码块。",
-                    "Simply type": "只需在议题、拉取请求和讨论中键入",
+                    "Simply type": "只需在이슈、拉取请求和讨论中键入",
                     "on Issues, PRs and Discussions to check out a list of available commands!": "，即可查看可用命令的列表！",
                 "Feature disabled.": "功能已禁用。",
                     "Please": "请",
@@ -833,7 +833,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
                 "Table": "表格",
                     "Add markdown table": "添加 Markdown 表格",
                 "Templates": "模板",
-                    "Insert one of your issue templates": "插入您的议题模板",
+                    "Insert one of your issue templates": "插入您的이슈模板",
 
                 "Slash": "斜杠",
                 // 代码块
@@ -858,9 +858,9 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
                 "5 rows": "5 行",
 
                 // 模板
-                "No issue templates": "尚无议题模板",
+                "No issue templates": "尚无이슈模板",
                 "Learn more about": "了解更多关于",
-                "issue templates": "议题模板",
+                "issue templates": "이슈模板",
 
             // 小屏 插入链接 对话框
                 "Insert Link": "插入链接",
@@ -879,15 +879,15 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
                 "Try again": "请上传",
                 "with a file size less than 10MB.": "体积小于10MB的文件",
 
-            "Close issue": "关闭议题", // issue页 评论框
+            "Close issue": "关闭이슈", // issue页 评论框
                 "Close as completed": "完成后关闭",
                     "Done, closed, fixed, resolved": "已完成、已关闭、已修复、已解决",
                 "Close as not planned": "非计划中关闭",
                     "Won't fix, can't repro, duplicate, stale": "不会修复，无法重现，重复，陈旧",
-                    "Won't fix, can't repro, stale": "不会修复，无法重现，陈旧", // 新版议题页
-                // 因重复而关闭（新版议题页）
-                    "Duplicate of another issue": "重复议题",
-            "Close with comment": "评论并关闭", // 议题/拉取请求 评论框
+                    "Won't fix, can't repro, stale": "不会修复，无法重现，陈旧", // 新版이슈页
+                // 因重复而关闭（新版이슈页）
+                    "Duplicate of another issue": "重复이슈",
+            "Close with comment": "评论并关闭", // 이슈/拉取请求 评论框
             "Close pull request": "关闭拉取请求", // 拉取请求页 评论框
             "Reopen discussion": "重新打开讨论", // discussion页 评论框
             "Close discussion": "关闭讨论", // discussion页 评论框
@@ -899,12 +899,12 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
                     "The discussion is a duplicate of another": "讨论与另一个讨论重复",
             "Comment": "评论",
             "comment": "评论",
-            "Submit new issue": "提交新议题",
+            "Submit new issue": "提交新이슈",
             "Comment on this commit": "评论",
             "Close and comment": "提交并关闭",
             "Reopen and comment": "提交并重新打开",
-            "Reopen issue": "重新打开议题", // 具体议题
-            "Reopen with comment": "重新打开评论", // 具体议题
+            "Reopen issue": "重新打开이슈", // 具体이슈
+            "Reopen with comment": "重新打开评论", // 具体이슈
             "Reopen pull request": "重新打开拉取请求", //具体拉取请求
             "Add single comment": "评论", // 具体提交页 进行某条代码评论
             "Reply": "回复", // 具体讨论页
@@ -944,7 +944,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
                 "Open search bar": "打开搜索栏",
                 "Go to notifications": "跳转到通知",
                 "Go to dashboard": "跳转到仪表板",
-                "Go to your issues": "跳转到议题",
+                "Go to your issues": "跳转到이슈",
                 "Go to your pull requests": "跳转到拉取请求",
                 "Bring up this help dialog": "弹出这个帮助对话框",
                 "Move selection down": "向下移动选择",
@@ -959,13 +959,13 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
             "Tip:": "小贴士：",
                 "Go to your accessibility settings to change your keyboard shortcuts": "跳转到您的无障碍设置，以更改您的键盘快捷键",
                 "to search discussions": "搜索讨论", // 键入 #
-                "to search issues": "搜索议题", // 键入 #
+                "to search issues": "搜索이슈", // 键入 #
                 "to search pull requests": "搜索拉取请求", // 键入 #
                 "to search projects": "搜索项目", // 键入 !
                 "to search people and organizations": "搜索成员和组织", // 键入 @
                 "to search teams": "搜索团队", // 键入 @
                 "to activate command mode": "激活命令模式", // 键入 >
-                "Type is:issue to filter to issues": "键入 is:issue 以筛选议题",
+                "Type is:issue to filter to issues": "键入 is:issue 以筛选이슈",
                 "Type is:pr to filter to pull requests": "键入 is:pr 以筛选拉取请求",
                 "Type is:open to filter to open content": "键入 is:open 以筛选打开的内容",
                 "Type author:@me to search your content": "键入 author:@me 以筛选您的内容",
@@ -988,9 +988,9 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
             // [/in ([\w]+/[\w]+)/, "在 $1"],
 
             // # 模式
-            "Search issues and pull requests": "搜索议题和拉取请求",
-            "Search issues, pull requests, discussions, and projects": "搜索议题、拉取请求、讨论和项目",
-            "Issues, pull requests, and discussions": "议题、拉取请求和讨论",
+            "Search issues and pull requests": "搜索이슈和拉取请求",
+            "Search issues, pull requests, discussions, and projects": "搜索이슈、拉取请求、讨论和项目",
+            "Issues, pull requests, and discussions": "이슈、拉取请求和讨论",
 
             // ! 模式
             "Search projects": "搜索项目",
@@ -1015,12 +1015,12 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
             "– New discussion": "- 新建讨论",
             "– New organization": "- 新建组织",
             "– New gist": "- 新建代码片段",
-            "– New issue": "- 新建议题",
+            "– New issue": "- 新建이슈",
             "– New file": "- 新建文件",
             "– Change tab size rendering": "- 切换制表符尺寸",
             "– Switch theme": "- 切换主题",
 
-            "New issue": "新建议题",
+            "New issue": "新建이슈",
             "New discussion": "新建讨论",
             "New file": "新建文件",
             "Change tab size rendering": "切换制表符尺寸",
@@ -1046,7 +1046,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
             "Modes": "模式",
             "Search for": "搜索",
             "across all of GitHub": "在整个 GitHub 中",
-            "issues, pull requests, discussions,": "议题、拉取请求、讨论",
+            "issues, pull requests, discussions,": "이슈、拉取请求、讨论",
             "organizations, repositories,": "组织、仓库",
             "Projects": "프로젝트",
             "files": "文件",
@@ -1058,19 +1058,19 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
             "Activate": "激活",
             "command mode": "命令模式",
 
-            "Use filters in issues, pull requests, discussions, and projects": "在议题题、拉取请求、讨论和项目中使用过滤器",
-            "Search your issues, pull requests, and discussions": "搜索您的议题、拉取请求和讨论",
+            "Use filters in issues, pull requests, discussions, and projects": "在이슈题、拉取请求、讨论和项目中使用过滤器",
+            "Search your issues, pull requests, and discussions": "搜索您的이슈、拉取请求和讨论",
             "Filter to pull requests": "筛选拉取请求",
-            "Filter to issues": "筛选议题",
+            "Filter to issues": "筛选이슈",
             "Filter to discussions": "筛选讨论",
             "Filter to projects": "筛选项目",
-            "Filter to open issues, pull requests, and discussions": "筛选打开的议题、拉取请求和讨论",
+            "Filter to open issues, pull requests, and discussions": "筛选打开的이슈、拉取请求和讨论",
 
-            // 议题页面
-            "Edit issue title": "编辑议题标题",
-            "Edit issue body": "编辑议题内容",
-            "Transfer issue…": "转移议题…",
-            "Delete issue…": "删除议题…",
+            // 이슈页面
+            "Edit issue title": "编辑이슈标题",
+            "Edit issue body": "编辑이슈内容",
+            "Transfer issue…": "转移이슈…",
+            "Delete issue…": "删除이슈…",
 
         // 公共词 高频词
             "Follow": "关注",
@@ -1323,7 +1323,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
                 "Using the GitHub API to search pull requests": "正在使用 GitHub API 搜索拉取请求",
                 "Using the GitHub API to get latest release": "正在使用 GitHub API 获取最新发行版",
                     "Copilot used the": "Copilot 已使用",
-                    "Issue API": "议题 API",
+                    "Issue API": "이슈 API",
                     "tool": "工具",
 
             // 引用
@@ -1357,7 +1357,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
         [/Public code references from (\d+) repositor(y|ies)/, "公共代码，引用自 $1 个仓库"],
         [/(\d+) references?/, "$1 条引用"],
         [/(\d+) lines? \((\d+) loc\) ·/, "$1 行（$2 非空行）·"],  // loc = 代码行（line of code）= 行数 - 空行数（lines - blank lines）
-        [/Using the GitHub API to search for issues assigned to user ([^ ]+)/, "使用 GitHub API 搜索分配给用户 $1 的议题"],
+        [/Using the GitHub API to search for issues assigned to user ([^ ]+)/, "使用 GitHub API 搜索分配给用户 $1 的이슈"],
         [/Chatting with (\d+) attachments?/, "附件 $1 个"],
         /**
          * 匹配时间格式
@@ -1718,7 +1718,7 @@ I18N["zh-CN"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
             "You choose who can see and commit to this repository": "您可以选择谁可以看和提交到该仓库。",
             "Create a new repository": "创建新的仓库",
             "You're seeing this because you haven't created a repository in a while.": "您看到这个是因为您有一段时间没有创建仓库了。",
-            "You're seeing this because you haven't used repositories, issues, and pull requests recently.": "您看到这个是因为您最近没有使用仓库、议题和拉取请求。",
+            "You're seeing this because you haven't used repositories, issues, and pull requests recently.": "您看到这个是因为您最近没有使用仓库、이슈和拉取请求。",
             "Remove from dashboard": "从仪表板中删除",
         "Use tools of the trade": "使用贸易工具",
             "You're seeing this because you haven't opened a pull request in a while.": "您看到这个是因为您有一段时间没有打开拉取请求了。",
@@ -1779,7 +1779,7 @@ I18N["zh-CN"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
             "Repositories": "仓库",
                 "Repositories that are created or forked by people": "由人们创建或复刻的仓库",
             "Repository activity": "仓库活动",
-                "Issues and pull requests from repositories": "来自仓库的议题和拉取请求",
+                "Issues and pull requests from repositories": "来自仓库的이슈和拉取请求",
             "Follows": "关注",
                 "Who people are following": "人们在关注谁",
             "Recommendations": "推荐",
@@ -1913,7 +1913,7 @@ I18N["zh-CN"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
 
         // 快捷键
         "Dashboards": "仪表板",
-        "Go to your issues": "跳转到您的议题",
+        "Go to your issues": "跳转到您的이슈",
         "Go to your pull requests": "跳转到您的拉取请求",
     },
     "regexp": [ // 正则翻译
@@ -1930,7 +1930,7 @@ I18N["zh-CN"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         [/(\d+) comments?/, "$1 条评论"],
         [/(\d+) commits? to/, "$1 个提交到"],
         [/(\d+) more commits? »/, "$1 个更多提交到"],
-        [/(\d+) issues? needs? help/, "$1 个议题需要帮助"],
+        [/(\d+) issues? needs? help/, "$1 个이슈需要帮助"],
         [/Join discussion/, "加入讨论"],
         // [/Updated/, "更新于"],
         [/You’re an owner of the ([^ ]+) organization!/, "您是 $1 组织的所有者！"], // 组织
@@ -2220,14 +2220,14 @@ I18N["zh-CN"]["page-profile"] = { // 个人首页
             "Built by": "构建者",
 
             "Created their first repository": "创建了他们的第一个仓库",
-            "Created an issue in": "创建一个议题在",
+            "Created an issue in": "创建一个이슈在",
             "a private repository": "私有仓库",
             "Created a pull request in": "创建一个拉取请求在",
                 "lines changed": "行更改",
             "First repository": "第一个仓库",
             "First pull request": "第一次拉取请求",
-            "First issue": "第一次议题",
-            "Opened their first issue on GitHub in": "打开了他们第一个议题",
+            "First issue": "第一次이슈",
+            "Opened their first issue on GitHub in": "打开了他们第一个이슈",
             "Opened their first pull request on GitHub in": "打开了他们第一个拉取请求",
             "Opened their first pull request on GitHub in a private repository": "在私有仓库中打开了他们第一个拉取请求",
             "Joined GitHub": "刚加入 GitHub",
@@ -2264,8 +2264,8 @@ I18N["zh-CN"]["page-profile"] = { // 个人首页
         [/Created (\d+) (other)? repositor(y|ies)/, "创建了 $1 个仓库"],
         [/Opened (\d+) pull requests? in (\d+) repositor(y|ies)/, "在 $2 个仓库中打开了 $1 个拉取请求"],
         [/Opened (\d+) other pull requests? in (\d+) repositor(y|ies)/, "在 $2 个其他仓库中打开了 $1 个拉取请求"],
-        [/Opened (\d+) issues? in (\d+) repositor(y|ies)/, "在 $2 个仓库中打开了 $1 个议题"],
-        [/Opened (\d+) other issues? in (\d+) repositor(y|ies)/, "在 $2 个其他仓库中打开了 $1 个其他议题"],
+        [/Opened (\d+) issues? in (\d+) repositor(y|ies)/, "在 $2 个仓库中打开了 $1 个이슈"],
+        [/Opened (\d+) other issues? in (\d+) repositor(y|ies)/, "在 $2 个其他仓库中打开了 $1 个其他이슈"],
         [/Reviewed (\d+) pull requests? in (\d+) repositor(y|ies)/, "在 $2 个仓库中审查了 $1 个拉取请求"],
         [/Answered (\d+) discussions? in (\d+) repositor(y|ies)/, "在 $2 个仓库中答复了 $1 个讨论"],
         [/Started (\d+) discussions? in (\d+) repositor(y|ies)/, "在 $2 个仓库中发起了 $1 个讨论"],
@@ -2285,7 +2285,7 @@ I18N["zh-CN"]["page-profile"] = { // 个人首页
         [/Created (\d+\+?) repositor(y|ies)/, "创建了 $1 个仓库"],
         [/(\d+) repositor(y|ies)/, "$1 个仓库"],
         [/(\d+) members?/, "$1 成员"], // 组织 浮动信息卡
-        [/(\d+) tasks?/, "$1 任务"], // 带任务议题
+        [/(\d+) tasks?/, "$1 任务"], // 带任务이슈
         [/and (\d+) more/, "等 $1 人"],
         [/- (\d+)h (ahead|behind)/, function(all, num, compare){
             var compareKey = {ahead: '早', behind: '晚'};
@@ -2297,7 +2297,7 @@ I18N["zh-CN"]["page-profile"] = { // 个人首页
         //        'commits': '提交',
         //        'pull requests': '拉取请求',
         //        'code review': '代码审查',
-        //        'issues': '议题',
+        //        'issues': '이슈',
         //    };
         //    return user + '从' + date1 + '到' + date2 + '的贡献图。其中' + cd1 + c1Key[c1] + '，' + cd2 + c2Key[c2] + '，' +cd3 + c3Key[c3] + '，' + cd4 + c4Key[c4]+ '。';
         //}],
@@ -2403,9 +2403,9 @@ I18N["zh-CN"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
                     "Qualifier": "限定词",
                         "Created": "已创建",
                         "Total forks": "复刻总数",
-                        "Total good-first issues": "好的首发议题总数",
+                        "Total good-first issues": "好的首发이슈总数",
                         "Has": "包含文件",
-                        "Total help-wanted issues": "求助议题总数",
+                        "Total help-wanted issues": "求助이슈总数",
                         "License": "许可证",
                         "Mirror": "镜像",
                         "Size (Kb)": "大小 (Kb)",
@@ -2453,8 +2453,8 @@ I18N["zh-CN"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
                                         "Size (ascending)": "大小（降序）",
                                         "Total stars (ascending)": "星标总数（降序）",
                                         "Total forks (ascending)": "复刻总数（降序）",
-                                        "Help-wanted issues (ascending)": "求助议题总数（升序）",
-                                        "Help-wanted issues (descending)": "求助议题总数（降序）",
+                                        "Help-wanted issues (ascending)": "求助이슈总数（升序）",
+                                        "Help-wanted issues (descending)": "求助이슈总数（降序）",
                                     // 可见性
                                         "Internal": "内部",
                 "Discard changes?": "放弃更改？",
@@ -2477,7 +2477,7 @@ I18N["zh-CN"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
         [/(\d+) members?/, "$1 成员"], // 组织 浮动信息卡
         [/([^ ]+) doesn’t have any repositories that match./, "$1 没有任何匹配的仓库"], // 仓库标签卡
         [/Your repository \"([^ ]+)\" was successfully deleted./, "您的仓库 “$1” 已成功删除。"],
-        [/(\d+) issues? needs? help/, "$1 个议题需要帮助"],
+        [/(\d+) issues? needs? help/, "$1 个이슈需要帮助"],
         [/and (\d+) more/, "等 $1 人"],
         ...I18N["zh-CN"]["orgs-public"]["regexp"],
     ],
@@ -2496,7 +2496,7 @@ I18N["zh-CN"]["page-profile/projects"] = { // 个人首页- 项目标签卡
             "Add projects to view them here.": "将项目添加到此处查看。",
 
             "Welcome to the all-new projects": "欢迎访问全新的项目",
-            "Built like a spreadsheet, project tables give you a live canvas to filter, sort, and group issues and pull requests. Tailor them to your needs with custom fields and saved views.": "构建像电子表格一样的项目表，给您一个实时的画布来对议题和拉取请求进行筛选、排序和分组。通过自定义字段和保存的视图，使它们符合您的需要。",
+            "Built like a spreadsheet, project tables give you a live canvas to filter, sort, and group issues and pull requests. Tailor them to your needs with custom fields and saved views.": "构建像电子表格一样的项目表，给您一个实时的画布来对이슈和拉取请求进行筛选、排序和分组。通过自定义字段和保存的视图，使它们符合您的需要。",
 
             "Learn more about projects": "了解更多关于项目的信息", // ?tab=projects
 
@@ -3228,7 +3228,7 @@ I18N["zh-CN"]["settings/admin"] = { // 设置 - 账户
                 "Are you sure you want to do this?": "您确定要这么做吗？",
                 "This is extremely important.": "这是极其重要的。",
                 "We will": "我们将",
-                ", along with all of your forks, wikis, issues, pull requests, and GitHub Pages sites.": "以及您所有的复刻、Wiki、议题、拉取请求和 GitHub Pages 站点。",
+                ", along with all of your forks, wikis, issues, pull requests, and GitHub Pages sites.": "以及您所有的复刻、Wiki、이슈、拉取请求和 GitHub Pages 站点。",
                 "You will no longer be billed, and after 90 days your username will be available to anyone on GitHub.": "您将不再被收取费用，并且 90 天后您的用户名将被 GitHub 上的任何人使用。",
                 "For more help, read our article \"": "如需更多帮助，请阅读我们的文章 “",
                 "Deleting your user account": "删除您的账户",
@@ -3316,7 +3316,7 @@ I18N["zh-CN"]["settings/appearance"] = { // 设置 - 外观
             "8 (Default)": "8 (默认)",
 
             "Markdown editor font preference": "Markdown 编辑器字体首选项",
-            "Font preference for plain text editors that support Markdown styling (e.g. pull request and issue descriptions, comments.)": "支持 Markdown 样式的纯文本编辑器的字体首选项（例如拉取请求和议题描述、评论。）",
+            "Font preference for plain text editors that support Markdown styling (e.g. pull request and issue descriptions, comments.)": "支持 Markdown 样式的纯文本编辑器的字体首选项（例如拉取请求和이슈描述、评论。）",
             "Use a fixed-width (monospace) font when editing Markdown": "编辑 Markdown 时使用固定宽度（等宽）字体",
 
     },
@@ -3439,7 +3439,7 @@ I18N["zh-CN"]["settings/notifications"] = { // 设置 - 通知
                     "Reviews, Pushes, Comments, My own updates": "审查、推送、评论、自我更新",
                     "Pull Request reviews": "拉取请求审核",
                     "Pull Request pushes": "拉取请求推送",
-                    "Comments on Issues and Pull Requests": "关于议题和拉取请求的评论",
+                    "Comments on Issues and Pull Requests": "关于이슈和拉取请求的评论",
                     "Includes your own updates": "包括您自己的更新",
                 "Ignored repositories": "忽略的仓库",
                 "You'll never be notified.": "您将永远不会收到通知。",
@@ -3846,23 +3846,23 @@ I18N["zh-CN"]["settings/billing"] = { // 设置 - 账单和计划
 
                 "Collaboration": "协作",
                     "Collaborators for public repositories": "公共仓库协作者",
-                        "Invite any GitHub member, or all GitHub members, to work with you on code in a public repository you control – including making changes and opening issues.": "邀请任何 GitHub 成员或所有 GitHub 成员，在您控制的公共仓库上与您共同处理代码，包括进行更改和提出议题。",
+                        "Invite any GitHub member, or all GitHub members, to work with you on code in a public repository you control – including making changes and opening issues.": "邀请任何 GitHub 成员或所有 GitHub 成员，在您控制的公共仓库上与您共同处理代码，包括进行更改和提出이슈。",
                     "Collaborators for private repositories": "私有仓库协作者",
-                        "Invite any GitHub member, or all GitHub members, to work with you on code in a private repository you control – including making changes and opening issues.": "邀请任何 GitHub 成员或所有 GitHub 成员，在您控制的私有仓库上与您共同处理代码，包括进行更改和提出议题。",
-                    // 议题
+                        "Invite any GitHub member, or all GitHub members, to work with you on code in a private repository you control – including making changes and opening issues.": "邀请任何 GitHub 成员或所有 GitHub 成员，在您控制的私有仓库上与您共同处理代码，包括进行更改和提出이슈。",
+                    // 이슈
                         "Track bugs, enhancements, and other requests, prioritize work, and communicate with stakeholders as changes are proposed and merged.": "跟踪漏洞、增强功能和其他请求，确定工作的优先级，并在提出和合并变更时与利益相关者沟通。",
                     // 项目
-                        "Visualize and manage issues and pull requests across tables, boards, and roadmaps with custom fields and views that you can arrange to suit your workflow.": "通过自定义字段和视图，在表格、面板和路线图上可视化管理议题和拉取请求，以适应您的工作流程。",
+                        "Visualize and manage issues and pull requests across tables, boards, and roadmaps with custom fields and views that you can arrange to suit your workflow.": "通过自定义字段和视图，在表格、面板和路线图上可视化管理이슈和拉取请求，以适应您的工作流程。",
                     "Milestones": "里程碑",
-                        "Track progress on groups of issues or pull requests in a repository, and map groups to overall project goals.": "跟踪仓库中议题或拉取请求组的进展，并将组映射到整体项目目标。",
+                        "Track progress on groups of issues or pull requests in a repository, and map groups to overall project goals.": "跟踪仓库中이슈或拉取请求组的进展，并将组映射到整体项目目标。",
                     // 团队讨论
-                        "Discuss any topic, unattached to a specific project or issue. Control who has access, notify discussion participants with updates, and link from anywhere.": "讨论任何主题，不与特定项目或议题相关。控制访问权限，通知讨论参与者最新情况，并从任何地方进行链接。",
+                        "Discuss any topic, unattached to a specific project or issue. Control who has access, notify discussion participants with updates, and link from anywhere.": "讨论任何主题，不与特定项目或이슈相关。控制访问权限，通知讨论参与者最新情况，并从任何地方进行链接。",
                     "Organization and team management": "组织和团队管理",
                         "Manage access to projects on a team-by-team, or individual user, basis.": "以团队或个人用户为基础管理对项目的访问。",
                     "Pages and wikis": "GitHub Pages 和 Wiki",
                         "Host documentation and simple websites for your project in a wiki format that contributors can easily edit either on the web or command line.": "以 Wiki 格式为您的项目托管文档和简单网站，贡献者可以轻松在网络或命令行上进行编辑。",
-                    "Multiple issue assignees": "多个议题受理人",
-                        "Assign more than one person to an issue.": "为议题指派多人受理",
+                    "Multiple issue assignees": "多个이슈受理人",
+                        "Assign more than one person to an issue.": "为이슈指派多人受理",
                     "GitHub organizations give you team-based access control and discussions.": "GitHub 组织为您提供基于团队的访问控制和讨论。",
                         "Learn more about organizations": "了解更多关于组织的信息",
 
@@ -3908,7 +3908,7 @@ I18N["zh-CN"]["settings/billing"] = { // 设置 - 账单和计划
 
                 "Support and deployment": "支持与部署",
                     "Community Support": "社区支持",
-                        "Get help with most of your GitHub questions and issues in our Community Forum.": "在我们的社区论坛中，获取大多数有关 GitHub 问题和议题的帮助。",
+                        "Get help with most of your GitHub questions and issues in our Community Forum.": "在我们的社区论坛中，获取大多数有关 GitHub 问题和이슈的帮助。",
                     "Standard Support": "标准支持",
                         "GitHub Support can help you troubleshoot issues you run into while using GitHub. Get support via the web.": "GitHub 支持可帮助您解决使用 GitHub 时遇到的问题。通过网络获取支持。",
                     "Enterprises also get Premium Support, invoice billing, and self-hosted deployment.": "企业还可以获得高级支持、发票计费和自托管部署。",
@@ -4033,7 +4033,7 @@ I18N["zh-CN"]["settings/emails"] = { // 设置 - 电子邮箱
             "Visible in emails": "在电子邮件中可见",
                 "This email may be used as the 'author' or 'committer' address for web-based Git operations, e.g., edits and merges.": "该电子邮箱可用作基于 Web 的 Git 操作（例如：编辑和合并）的 ‘作者’ 或 ‘提交者’ 地址。",
             "Receives notifications": "接收通知",
-            "This email address is the default used for GitHub notifications, i.e., replies to issues, pull requests, etc.": "该电子邮箱默认用于 GitHub 的通知，即对议题和拉取请求的回复，等等。",
+            "This email address is the default used for GitHub notifications, i.e., replies to issues, pull requests, etc.": "该电子邮箱默认用于 GitHub 的通知，即对이슈和拉取请求的回复，等等。",
             "At least one email is required.": "至少需要一个电子邮箱。",
             // 删除按钮 提醒信息
                 "At least one verified email is required.": "至少需要1个经过验证的电子邮箱",
@@ -4496,7 +4496,7 @@ I18N["zh-CN"]["settings/blocked_users"] = { // 设置 - 黑名单
         // Blocked users 黑名单 https://github.com/settings/blocked_users
             "Block a user": "拉黑用户",
             "Blocking a user prevents the following on all your repositories:": "拉黑用户可以防止所有仓库中的以下操作：",
-            "opening or commenting on issues or pull requests": "打开或评论议题或拉取请求",
+            "opening or commenting on issues or pull requests": "打开或评论이슈或拉取请求",
             "starring, forking, or watching": "加星标、复刻、关注",
             "adding or editing wiki pages": "添加或编辑 Wiki 页面",
             "Additionally, blocked users are not able to:": "此外，被拉黑用户无法：",
@@ -4522,7 +4522,7 @@ I18N["zh-CN"]["settings/interaction_limits"] = { // 设置 - 互动限制
 
         // Interaction limits 互动限制 https://github.com/settings/interaction_limits
             "Temporary interaction limits": "临时互动限制",
-            "Temporarily restrict which external users can interact with your repositories (comment, open issues, or create pull requests) for a configurable period of time.": "在配置的时间段内，可临时限制哪些外部用户与您的仓库互动（评论、打开议题或创建拉取请求）。",
+            "Temporarily restrict which external users can interact with your repositories (comment, open issues, or create pull requests) for a configurable period of time.": "在配置的时间段内，可临时限制哪些外部用户与您的仓库互动（评论、打开이슈或创建拉取请求）。",
             "This may be used to force a \"cool-down\" period during heated discussions or prevent unwanted interactions.": "可用于在激烈讨论期间，强制进入 “冷静” 期或防止不必要的互动。",
             "Interaction limits may already exist in your account's": "互动限制可能已经存在于您的",
             "public repositories": "公开仓库",
@@ -5602,7 +5602,7 @@ I18N["zh-CN"]["settings/apps"] = { // 设置 - 开发者设置/GitHub 应用
                     "Environments": "环境",
                         "Manage repository environments.": "管理仓库环境。",
                     "Issues": "이슈",
-                        "Issues and related comments, assignees, labels, and milestones.": "议题及相关评论、受理人、标签和里程碑。",
+                        "Issues and related comments, assignees, labels, and milestones.": "이슈及相关评论、受理人、标签和里程碑。",
                     "Merge queues": "合并列队",
                         "Manage a repository's merge queues": "管理仓库的合并队列。",
                     "Metadata": "元数据",
@@ -5775,10 +5775,10 @@ I18N["zh-CN"]["settings/apps"] = { // 设置 - 开发者设置/GitHub 应用
                     "Repository forked.": "仓库复刻。",
                 "Gollum": "咕噜",
                     "Wiki page updated.": "Wiki 页面的更新。",
-                "Issue comment": "议题评论",
-                    "Issue comment created, edited, or deleted.": "议题评论的创建、编辑或删除。",
+                "Issue comment": "이슈评论",
+                    "Issue comment created, edited, or deleted.": "이슈评论的创建、编辑或删除。",
                 //"이슈": "",
-                    "Issue opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned, locked, or unlocked.": "议题的打开、编辑、删除、转移、置顶、取消置顶、关闭、重新打开、分配、取消分配、标记、取消标记、设置里程碑、取消里程碑、锁定或解锁。",
+                    "Issue opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned, locked, or unlocked.": "이슈的打开、编辑、删除、转移、置顶、取消置顶、关闭、重新打开、分配、取消分配、标记、取消标记、设置里程碑、取消里程碑、锁定或解锁。",
                 "Label": "标签",
                     "Label created, edited or deleted.": "标签的创建、编辑或删除。",
                 "Milestone": "里程碑",
@@ -5860,7 +5860,7 @@ I18N["zh-CN"]["settings/apps"] = { // 设置 - 开发者设置/GitHub 应用
                 "Repository advisory": "仓库公告",
                     "Repository advisory published or reported.": "仓库公告发布或报告。",
                 "Sub issues": "子提议",
-                    "Sub-issues added or removed, and parent issues added or removed.": "子议题和父议题的添加或删除。",
+                    "Sub-issues added or removed, and parent issues added or removed.": "子이슈和父이슈的添加或删除。",
 
             "Where can this GitHub App be installed?": "这款 GitHub 应用可以安装在哪里？",
                 "Only on this account": "仅在当前账户",
@@ -6262,7 +6262,7 @@ I18N["zh-CN"]["settings/tokens"] = { // 设置 - 开发者设置/个人访问令
                     "Environments": "环境",
                         "Manage repository environments.": "管理仓库环境。",
                     "Issues": "이슈",
-                        "Issues and related comments, assignees, labels, and milestones.": "议题及相关评论、受理人、标签和里程碑。",
+                        "Issues and related comments, assignees, labels, and milestones.": "이슈及相关评论、受理人、标签和里程碑。",
                     "Merge queues": "合并列队",
                         "Manage a repository's merge queues": "管理仓库的合并队列。",
                     "Metadata": "元数据",
@@ -6564,7 +6564,7 @@ I18N["zh-CN"]["repository-public"] = { // 仓库 - 公共部分
                 "Committed to this repository in the past month": "最近一个月里已提交过这个仓库",
                 "Member of": "隶属组织",
                 // [/, and (\d+) more/, "，以及其他 $1 个组织"],
-                "Opened this issue": "打开了该议题",
+                "Opened this issue": "打开了该이슈",
                 "Opened this pull request": "打开了该拉取请求",
                 "Opened this pull request (their first ever)": "打开了该拉取请求（他们有史以来的第一个请求）",
                 "Started this discussion": "开启了该讨论",
@@ -6608,14 +6608,14 @@ I18N["zh-CN"]["repository-public"] = { // 仓库 - 公共部分
             "Save": "保存",
             "Unsave": "未保存",
 
-            // 评论框头部栏 (议题 & 拉取请求)
+            // 评论框头部栏 (이슈 & 拉取请求)
                 "Contributor": "贡献者",
                 "Owner": "所有者",
                 "Author": "作者",
-                    "You are the author of this issue": "您是这个议题的作者。",  // 议题
+                    "You are the author of this issue": "您是这个이슈的作者。",  // 이슈
                     "You are the author of this pull request.": "您是这个拉取请求的作者。", // 拉取请求
-                    "This user is the author of this issue": "该用户是这个议题的作者。",  // 议题
-                    "This user is the author of this issue.": "该用户是这个议题的作者。",// 拉取请求
+                    "This user is the author of this issue": "该用户是这个이슈的作者。",  // 이슈
+                    "This user is the author of this issue.": "该用户是这个이슈的作者。",// 拉取请求
                     "This user is the author of this pull request.": "该用户是这个拉取请求的作者。",// 拉取请求
                 "Member": "成员",
                     //[/This user is a member of the ([^ ]+)./, "该用户是 $1 组织的成员。"],
@@ -6624,8 +6624,8 @@ I18N["zh-CN"]["repository-public"] = { // 仓库 - 公共部分
                 "Pick your reaction": "选择您的表情",
                 "Copy link": "复制链接",
                 "Quote reply": "引用回复",
-                "Reference in new issue": "引用到新议题",
-                    // 引用到新议题 对话框
+                "Reference in new issue": "引用到新이슈",
+                    // 引用到新이슈 对话框
                     "Body": "正文",
                 "Report content": "举报内容",
                 "Report": "举报",
@@ -6692,7 +6692,7 @@ I18N["zh-CN"]["repository-public"] = { // 仓库 - 公共部分
                 "Open cs.github.com in a new tab": "在新标签页中打开 cs.github.com",
                 "Focus secondary search bar" : "聚焦二级搜索栏",
                 "Go to Code"                 : "跳转到代码",
-                "Go to Issues"               : "跳转到议题",
+                "Go to Issues"               : "跳转到이슈",
                 "Go to Pull Requests"        : "跳转到拉取请求",
                 "Go to Actions"              : "跳转到操作",
                 "Go to Projects"             : "跳转到项目",
@@ -6704,11 +6704,11 @@ I18N["zh-CN"]["repository-public"] = { // 仓库 - 公共部分
                 "Close Copilot chat": "关闭 Copilot 聊天",
                 "Expand/collapse Copilot chat": "展开/折叠 Copilot 聊天",
 
-            // 议题
+            // 이슈
                 "Submit comment": "提交评论",
-                "Submit comment and close issue": "提交评论并关闭议题",
+                "Submit comment and close issue": "提交评论并关闭이슈",
                 "Preview comment": "预览评论",
-                "Create issue": "创建议题",
+                "Create issue": "创建이슈",
                 // "筛选用户": "",
                 "Filter by or edit assignees"  : "按受理人筛选或编辑受理人",
                 "Filter by or edit labels"     : "按标签筛选或编辑标签",
@@ -6723,7 +6723,7 @@ I18N["zh-CN"]["repository-public"] = { // 仓库 - 公共部分
                 "Pull request - Conversation tab": "拉取请求 - 对话标签卡",
                     "Submit comment and close or open pull request": "提交评论和关闭或打开拉取请求",
                     "Request reviewers": "请求审查者",
-                    "Link an issue or pull request from the same repository": "链接同一仓库的议题或拉取请求",
+                    "Link an issue or pull request from the same repository": "链接同一仓库的이슈或拉取请求",
                     "Toggle visibility of all collapsed review comments instead of just the current one": "切换所有折叠审查意见的可见性，而不仅仅是当前的审查意见",
                 "Pull request - Files changed tab": "拉取请求 - 文件更改标签卡",
                     "Open commits list": "打开提交列表",
@@ -7112,7 +7112,7 @@ I18N["zh-CN"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                     "Select events you want to be notified of in addition to participating and @mentions.": "참여 및 @언급 외에도 알림을 받고 싶은 이벤트를 선택하기",
                 "Get push notifications on": "푸시 알림 받기",
                 "Releases": "릴리즈",
-                    //"Issues are not enabled for this repository": "此仓库未启用议题功能",
+                    //"Issues are not enabled for this repository": "此仓库未启用이슈功能",
                 "Discussions": "토론",
                     //"Discussions are not enabled for this repository": "该仓库未启用讨论功能",
                     //"Discussions are not enabled for this repo": "此仓库未启用讨论功能",
@@ -7590,8 +7590,8 @@ I18N["zh-CN"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
             // 编辑按钮
             "Edit README": "编辑 README", // md 文件
 
-        // 文件管理器 - 议题模板 /<user-name>/<repo-name>/tree/<branch>/.github/ISSUE_TEMPLATE
-            "Customize the issue creation experience with a": "自定义议题的创建模板使用一个",
+        // 文件管理器 - 이슈模板 /<user-name>/<repo-name>/tree/<branch>/.github/ISSUE_TEMPLATE
+            "Customize the issue creation experience with a": "自定义이슈的创建模板使用一个",
             "file.": "文件。",
             "Learn more about configuring a template chooser.": "了解更多关于配置模板选择器的信息。",
 
@@ -7653,7 +7653,7 @@ I18N["zh-CN"]["repository/milestones"] = { // 仓库 - 里程碑页面
             "Milestones": "里程碑",
 
             "You haven’t created any Milestones.": "您尚未创建任何里程碑。",
-            "Use Milestones to create collections of Issues and Pull Requests for a particular release or project.": "使用里程碑为特定版本或项目创建议题和拉取请求的集合。",
+            "Use Milestones to create collections of Issues and Pull Requests for a particular release or project.": "使用里程碑为特定版本或项目创建이슈和拉取请求的集合。",
 
             // 组织 仓库 里程碑
             "No Milestones found!": "没有发现里程碑!",
@@ -7669,8 +7669,8 @@ I18N["zh-CN"]["repository/milestones"] = { // 仓库 - 里程碑页面
                 "Most complete": "最完整",
                 "Alphabetically": "按字母顺序",
                 "Reverse alphabetically": "按字母倒序",
-                "Most issues": "最多的议题",
-                "Least issues": "最少的议题",
+                "Most issues": "最多的이슈",
+                "Least issues": "最少的이슈",
 
             "No due date": "没有截止日期",
             // [/Due by (.*)/, "截止日期 $1"], // 里程碑截止日期
@@ -7684,8 +7684,8 @@ I18N["zh-CN"]["repository/milestones"] = { // 仓库 - 里程碑页面
 
         // 新建里程碑页面 /<user-name>/<repo-name>/milestones/new
             "New milestone": "新建里程牌",
-                "Create a new milestone to help organize your issues and pull requests. Learn more about": "创建一个新的里程碑来帮助组织您的议题和拉取请求。了解更多关于",
-                "milestones and issues": "里程碑和议题",
+                "Create a new milestone to help organize your issues and pull requests. Learn more about": "创建一个新的里程碑来帮助组织您的이슈和拉取请求。了解更多关于",
+                "milestones and issues": "里程碑和이슈",
             "Title": "标题",
             "Due date (optional)": "截止日期（可选）",
             "Description": "描述",
@@ -7699,26 +7699,26 @@ I18N["zh-CN"]["repository/milestones"] = { // 仓库 - 里程碑页面
     ],
 };
 
-I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请求页面公共部分
+I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 이슈和拉取请求页面公共部分
     "static": { // 静态翻译
         // pull 与 request 公共词条
             "Filters": "筛选",
                 // 筛选下拉菜单
-                "Filter Issues": "筛选议题",
-                "Open issues and pull requests": "打开的议题和拉取请求",
-                "Your issues": "您提出的议题",
+                "Filter Issues": "筛选이슈",
+                "Open issues and pull requests": "打开的이슈和拉取请求",
+                "Your issues": "您提出的이슈",
                 "Your pull requests": "您的拉取请求",
                 "Everything assigned to you": "任何分配给您的",
                 "Everything mentioning you": "任何提及您的",
                 "View advanced search syntax": "查看高级搜索语法",
 
-            "Search all issues": "搜索所有议题",
+            "Search all issues": "搜索所有이슈",
             "Clear current search query, filters, and sorts": "清除当前的搜索查询、筛选器和排序方式",
 
             "Labels": "标签",
                 "No labels": "无标签",
             "Milestones": "里程碑",
-            "New issue": "创建议题",
+            "New issue": "创建이슈",
             "New": "创建", // 小屏
 
             // 筛选工作条
@@ -7743,7 +7743,7 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
             // "Milestones": "里程碑",
                 "Filter by milestone": "按里程碑筛选",
                 "Filter milestones": "筛选里程碑",
-                "Issues with no milestone": "无里程碑的议题",
+                "Issues with no milestone": "无里程碑的이슈",
                 "Pull requests with no milestone": "无里程碑的拉取请求", // pulls
                 "Nothing to show": "暂无",
 
@@ -7757,7 +7757,7 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
                     "Assign yourself": "分配给自己",
 
             "Relationships": "关系",
-                "Parent issue": "父议题",
+                "Parent issue": "父이슈",
 
             "Sort": "排序",
                 "Sort by": "排序",
@@ -7804,9 +7804,9 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
             "and limited conversation to collaborators": "并限制与协作者对话",
 
             // 图标浮窗
-            "Open issue": "议题已打开",
-            "Closed issue": "议题已完成",
-            "Closed as not planned issue": "议题已关闭因未计划",
+            "Open issue": "이슈已打开",
+            "Closed issue": "이슈已完成",
+            "Closed as not planned issue": "이슈已关闭因未计划",
             "Open Pull Request": "拉取请求已打开",
             "Draft Pull Request": "拉取请求草案",
             "Merged Pull Request": "拉取请求已合并",
@@ -7814,7 +7814,7 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
 
             // [/(\d+) linked pull requests?/, "链接 $1 个拉取请求"],
 
-        // 某个拉取请求和某个议题 公共词条
+        // 某个拉取请求和某个이슈 公共词条
             // 顶部提醒
                 "You’ve been unsubscribed from this thread.": "您已退订该主题。",
 
@@ -7848,7 +7848,7 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
                     "No one—": "无人 - ",
                     "assign yourself": " 受理自己",
                     // 下拉框
-                    "Assign up to 10 people to this issue": "最多指定 10 人", // 议题
+                    "Assign up to 10 people to this issue": "最多指定 10 人", // 이슈
                     "Assign up to 10 people to this pull request": "最多指定 10 人", // 拉取请求
                     "Clear assignees": "清除受理人",
                     "Type or choose a user": "输入或选择用户",
@@ -7864,10 +7864,10 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
                     "documentation": "文档",
                         "Improvements or additions to documentation": "文档的改进或补充",
                     "duplicate": "重复",
-                        "This issue or pull request already exists": "这个议题或拉取请求已经存在",
+                        "This issue or pull request already exists": "这个이슈或拉取请求已经存在",
                     "enhancement": "增强",
                         "New feature or request": "新功能或请求",
-                    "good first issue": "好的首发议题",
+                    "good first issue": "好的首发이슈",
                         "Good for newcomers": "适合新人",
                     "help wanted": "需要帮助",
                         "Extra attention is needed": "需要特别关注",
@@ -7878,7 +7878,7 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
                     "wontfix": "不会修复",
                         "This will not be worked on": "这将不会被处理",
 
-                    "Apply labels to this issue": "应用标签", // 议题
+                    "Apply labels to this issue": "应用标签", // 이슈
                     "Apply labels to this pull request": "应用标签", // 拉取请求
                     "Edit labels": "编辑标签",
 
@@ -7898,10 +7898,10 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
                         "Nothing to show": "暂无",
 
                 "Development": "进展",
-                    "Successfully merging this pull request may close these issues.": "成功合并此拉取请求可能会关闭这些议题。",
-                    "Successfully merging a pull request may close this issue.": "成功合并一个拉取请求可能会关闭此议题。",
+                    "Successfully merging this pull request may close these issues.": "成功合并此拉取请求可能会关闭这些이슈。",
+                    "Successfully merging a pull request may close this issue.": "成功合并一个拉取请求可能会关闭此이슈。",
                     // 下拉
-                    "Link an issue from this repository": "关联来自此仓库的议题",
+                    "Link an issue from this repository": "关联来自此仓库的이슈",
                     "Filter": "筛选",
                     "No results": "无结果",
 
@@ -7918,46 +7918,46 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
                 "You’re receiving notifications because you were mentioned.": "您收到通知是因为有人 @您。",
                 "You’re receiving notifications because you commented.": "您收到通知是因为您发表了评论。",
                 "You’re receiving notifications because you are watching pull requests on this repository.": "您收到通知是因为您正在关注此仓库上的拉取请求。",
-                "You’re receiving notifications because you are watching issues on this repository.": "您收到通知是因为您正在关注此仓库上的议题。",
+                "You’re receiving notifications because you are watching issues on this repository.": "您收到通知是因为您正在关注此仓库上的이슈。",
                 "You’re receiving notifications because you modified the open/close state.": "您收到通知是因为您修改了打开/关闭状态。",
                 "You’re receiving notifications because you were assigned.": "您收到通知是因为您受理了它。",
                 "You’re ignoring this repository.": "您忽略了这个仓库。",
 
                     // 通知设置对话框
                     "Notification settings": "通知设置",
-                    "Notifications settings": "通知设置", // 新版议题页面
+                    "Notifications settings": "通知设置", // 新版이슈页面
                     "Not subscribed": "未订阅",
                         "Only receive notifications from this pull request when you have participated or have been @mentioned.": "只有在您参与或被 @您时才会收到来自此拉取请求的通知。",
-                        "Only receive notifications from this issue when you have participated or have been @mentioned.": "只有在您参与或被 @您时才会收到来自此议题的通知。", // 议题页面
+                        "Only receive notifications from this issue when you have participated or have been @mentioned.": "只有在您参与或被 @您时才会收到来自此이슈的通知。", // 이슈页面
                     "Subscribed": "订阅",
                         "Receive all notifications from this pull request.": "接收来自此拉取请求的所有通知。",
-                        "Receive all notifications from this issue.": "接收来自此议题的所有通知。",  // 议题页面
+                        "Receive all notifications from this issue.": "接收来自此이슈的所有通知。",  // 이슈页面
                     "Custom": "自定义",
                         "You will only be notified for events selected from the list below. If you participate or are @mentioned you will be subscribed.": "您只会收到从以下列表中选择的事件的通知。如果您参与或 @s您时，将自动订阅。",
                         "You will only be notified for the events selected from the list below.": "您只会收到从以下列表中选择的事件的通知。",
                         "If you participate or are @mentioned you will be subscribed.": "如果您参与或 @您时，将自动订阅。",
-                    // 议题
-                        "Receive a notification when this issue has been closed.": "当议题被关闭时，收到通知。",
+                    // 이슈
+                        "Receive a notification when this issue has been closed.": "当이슈被关闭时，收到通知。",
                         "Reopened": "重新打开",
-                            "Receive a notification when this issue has been reopened.": "当议题被重新打开时，收到通知。",
+                            "Receive a notification when this issue has been reopened.": "当이슈被重新打开时，收到通知。",
                     // 拉取请求
                         "Receive a notification when this pull request has been merged.": "当拉取请求被合并时，收到通知。",
                         "Receive a notification when this pull request has been closed.": "当拉取请求被关闭时，收到通知。",
                         "Receive a notification when this pull request has been reopened.": "当拉取请求被重新打开时，收到通知。",
 
                 "Lock conversation": "锁定对话",
-                    "Lock conversation on this issue": "锁定此议题的对话",
+                    "Lock conversation on this issue": "锁定此이슈的对话",
                     "Lock conversation on this pull request": "锁定此拉取请求的对话",
                     "Other users": "其他用户",
                     "can’t add new comments": "无法添加新评论",
-                    "to this issue.": "到该议题。",
+                    "to this issue.": "到该이슈。",
                     "to this pull request.": "到该拉取请求。",
                     "You and other collaborators": "您和其他协作者",
                     "with access": "有权限访问",
                     "to this repository": "该仓库",
                     "can still leave comments": "仍然可以发表评论",
                     "that others can see.": "其他人可以看到。",
-                    "You can always unlock this issue again in the future.": "您今后仍可以随时再次解锁此议题。",
+                    "You can always unlock this issue again in the future.": "您今后仍可以随时再次解锁此이슈。",
                     "You can always unlock this pull request again in the future.": "您今后仍可以随时再次解锁此拉取请求。",
                     "Reason for locking": "锁定原因",
                     "Choose a reason": "选择原因",
@@ -7969,13 +7969,13 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
                     "lock conversations": "锁定对话",
                     // "Lock conversation on this issue": "锁定对话",
                 "Unlock conversation": "解锁对话",
-                    "Unlock conversation on this issue": "解锁此议题的对话",
+                    "Unlock conversation on this issue": "解锁此이슈的对话",
                     "Unlock conversation on this pull request": "解锁此拉取请求的对话",
                     "Everyone": "任何人",
-                    "will be able to comment on this issue once more.": "将能够再次对这个议题发表评论。",
+                    "will be able to comment on this issue once more.": "将能够再次对这个이슈发表评论。",
                     "will be able to comment on this pull request once more.": "将能够再次对这个拉取请求发表评论。",
                     "You can always lock this pull request again in the future.": "您今后仍可以随时再次锁定此拉取请求。",
-                    "You can always lock this issue again in the future.": "您今后仍可以随时再次锁定此议题。",
+                    "You can always lock this issue again in the future.": "您今后仍可以随时再次锁定此이슈。",
 
                 // 隐藏评论对话框
                 "The reason will be displayed to describe this comment to others.": "将显示原因，以便向其他人描述此评论。",
@@ -8023,41 +8023,41 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
             // 专业提示
                 "will show everything without a milestone.": "将显示所有不含里程碑的内容",
                 "Updated in the last three days:": "显示最近3天更新：",
-                "Notify someone on an issue with a mention, like:": "用提及的方式通知某人某个议题，例如：",
+                "Notify someone on an issue with a mention, like:": "用提及的方式通知某人某个이슈，例如：",
                 "Adding": "添加",
                 "will show everything without a label.": "将显示所有无标签内容。",
-                "on any issue or pull request to go back to the issue listing page.": "可返回议题列表页面。",
-                "Click a checkbox on the left to edit multiple issues at once.": "单击左侧的复选框可同时编辑多个议题。",
+                "on any issue or pull request to go back to the issue listing page.": "可返回이슈列表页面。",
+                "Click a checkbox on the left to edit multiple issues at once.": "单击左侧的复选框可同时编辑多个이슈。",
 
     },
     "regexp": [ // 正则翻译
         // [/At least (\d+) approving reviews? is required by reviewers with write access./, "具有写入权限的审查者至少需要 $1 次批准审查。"],
-        [/(\d+) linked issues?/, "链接 $1 个议题"],
+        [/(\d+) linked issues?/, "链接 $1 个이슈"],
         [/Assigned to (.*)/, "分配给 $1"],
         [/Edited (\d+) times?/, "编辑 $1 次"],
-        [/Open issues created by ([^ ]+)/, "$1 创建议题"],
-        [/issues opened by ([^ ]+)/, "$1 打开议题"],
+        [/Open issues created by ([^ ]+)/, "$1 创建이슈"],
+        [/issues opened by ([^ ]+)/, "$1 打开이슈"],
         [/Open pull requests created by ([^ ]+)/, "$1 创建拉取请求"],
         [/pull requests opened by ([^ ]+)/, "$1 打开拉取请求"],
         [/(\d+) hidden conversations/, "$1 条隐藏对话"],
     ]
 };
 
-I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
+I18N["zh-CN"]["repository/issues"] = { // 仓库 - 이슈页面
     "static": { // 静态翻译
         ...I18N["zh-CN"]["repository-public"]["static"],
         ...I18N["zh-CN"]["repository/pull_issue_public"]["static"],
 
-        // 仓库 --> 议题 标签卡/<user-name>/<repo-name>/issues
+        // 仓库 --> 이슈 标签卡/<user-name>/<repo-name>/issues
         // /<user-name>/<repo-name>/labels/<label-name>
             // 欢迎信息
-            "Welcome to issues!": "欢迎关注议题！",
-            "Issues are used to track todos, bugs, feature requests, and more. As issues are created, they’ll appear here in a searchable and filterable list. To get started, you should": "议题用于跟踪待办事项、错误、功能请求等。创建议题后，它们将出现在可搜索和可筛选的列表中。要开始，您应该",
-            "create an issue": "创建议题",
+            "Welcome to issues!": "欢迎关注이슈！",
+            "Issues are used to track todos, bugs, feature requests, and more. As issues are created, they’ll appear here in a searchable and filterable list. To get started, you should": "이슈用于跟踪待办事项、错误、功能请求等。创建이슈后，它们将出现在可搜索和可筛选的列表中。要开始，您应该",
+            "create an issue": "创建이슈",
 
-            "Label issues and pull requests for new contributors": "标记新贡献者的议题和拉取请求",
+            "Label issues and pull requests for new contributors": "标记新贡献者的이슈和拉取请求",
             "Now, GitHub will help potential first-time contributors": "现在，GitHub 将帮助潜在的首次贡献者",
-            "discover issues": "探索议题",
+            "discover issues": "探索이슈",
             "labeled with": "标记为",
 
             "Clear filter": "清除筛选",
@@ -8085,25 +8085,25 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                     "Descending": "递减",
 
                 "Types": "类型",
-                "Issue type": "议题类型",
-                    "Filter by issue type": "按议题类型筛选",
-                    "Select issue type": "选择议题类型",
+                "Issue type": "이슈类型",
+                    "Filter by issue type": "按이슈类型筛选",
+                    "Select issue type": "选择이슈类型",
                     "Filter types": "筛选类型",
                         "No type": "无类型",
-                            "Issues with no type": "无类型议题",
-                            "No issue type": "无议题类型",
+                            "Issues with no type": "无类型이슈",
+                            "No issue type": "无이슈类型",
                 // 搜索
                 "Try adjusting your search filters.": "尝试调整搜索筛选器。",
 
             // [/Want to contribute to ([^ ]+)/, "想为 $1 做贡献吗？"], /issues
             "If you have a bug or an idea, read the": "如果您发现一个错误或有任何想法，请阅读",
-            "before opening an issue.": "，在打开议题之前。",
-            "If you have a bug or an idea, browse the open issues before opening a new one. You can also take a look at the": "如果您发现一个错误或有任何想法，请在打开新议题之前浏览未解决的议题。您也可以看看",
+            "before opening an issue.": "，在打开이슈之前。",
+            "If you have a bug or an idea, browse the open issues before opening a new one. You can also take a look at the": "如果您发现一个错误或有任何想法，请在打开新이슈之前浏览未解决的이슈。您也可以看看",
             "Open Source Guide": "开源指南",
                 "Learn about Open Source and how to contribute": "了解开源和如何贡献",
-            "If you're ready to tackle some open issues,": "如果您准备好解决一些未解决的议题，",
-            "we've collected some good first issues for you": "我们已为您收集了一些好的首发议题",
-            "we've collected some good first issues for you.": "我们已为您收集了一些好的首发议题。", // 新版议题页
+            "If you're ready to tackle some open issues,": "如果您准备好解决一些未解决的이슈，",
+            "we've collected some good first issues for you": "我们已为您收集了一些好的首发이슈",
+            "we've collected some good first issues for you.": "我们已为您收集了一些好的首发이슈。", // 新版이슈页
 
             "Dismiss": "忽略",
                 // 忽略 下拉
@@ -8111,7 +8111,7 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                 "Dismiss for all repositories": "对所有仓库均不在提示",
 
 
-            "There aren’t any open issues.": "暂无开放的议题。",
+            "There aren’t any open issues.": "暂无开放的이슈。",
 
             // 状态词
             "Open": "打开",
@@ -8124,38 +8124,38 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
             // 新版
                 "Closed as not planned": "关闭因未计划",
 
-            // 父级议题
+            // 父级이슈
             "Parent:": "父级：",
-            // 子级议题
-            "Create sub-issue": "创建子议题",
-                //"Create sub-issue": "创建子议题",
+            // 子级이슈
+            "Create sub-issue": "创建子이슈",
+                //"Create sub-issue": "创建子이슈",
                     // 窗口
-                        "Create new issue": "新建议题",
+                        "Create new issue": "新建이슈",
                             "Select an item": "选择一项",
                                 "Select repository": "选择仓库",
                             "Templates and forms": "模板和表单",
-                                // 空白议题
-                                    "Create a new issue from scratch": "从头开始创建新议题",
-                "Add existing issue": "添加现有议题",
-                    "Search issues": "搜索议题",
+                                // 空白이슈
+                                    "Create a new issue from scratch": "从头开始创建新이슈",
+                "Add existing issue": "添加现有이슈",
+                    "Search issues": "搜索이슈",
                         "Group selected": "分组选择",
 
-                "Blank issue": "空白议题",
+                "Blank issue": "空白이슈",
                     "in": "在",
                 "Type your description here…": "在此键入介绍…",
-                "Create more sub-issues": "创建更多子议题",
+                "Create more sub-issues": "创建更多子이슈",
 
-            "Sub-issues": "子议题",
-                "Collapse Sub-issues": "折叠子议题",
-                "Expand Sub-issues": "展开子议题",
+            "Sub-issues": "子이슈",
+                "Collapse Sub-issues": "折叠子이슈",
+                "Expand Sub-issues": "展开子이슈",
 
-            "You commented on and opened this issue": "您打开了此议题并发表了评论",
-            "You were mentioned on and commented on this issue": "您被提及并对此议题发表了评论",
-            "You commented on this issue": "您对此议题发表了评论",
-            "You opened this issue": "您打开了此议题",
+            "You commented on and opened this issue": "您打开了此이슈并发表了评论",
+            "You were mentioned on and commented on this issue": "您被提及并对此이슈发表了评论",
+            "You commented on this issue": "您对此이슈发表了评论",
+            "You opened this issue": "您打开了此이슈",
 
-            // 置顶议题
-            "Pinned issues": "置顶议题",
+            // 置顶이슈
+            "Pinned issues": "置顶이슈",
             "Drag to reorder": "拖拽排序",
 
             "Unpin": "고정 취소",
@@ -8175,30 +8175,30 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                 "Exclude everything labeled": "如果要找到所有标有",
                 "with": "标签的，请使用",
 
-        // 新建议题 选择议题模板  /<user-name>/<repo-name>/issues/new/choose
+        // 新建이슈 选择이슈模板  /<user-name>/<repo-name>/issues/new/choose
             "Get started": "开始",
-            "Don’t see your issue here?": "在这里没有看到您的议题？",
-            "Open a blank issue.": "打开一个空白议题。",
+            "Don’t see your issue here?": "在这里没有看到您的이슈？",
+            "Open a blank issue.": "打开一个空白이슈。",
             "Edit templates": "编辑模板",
             "Report abuse": "남용 신고",
 
             "View organization templates": "查看组织模板", // 组织仓库
 
-        // 新建空白议题  /<user-name>/<repo-name>/issues/new
+        // 新建空白이슈  /<user-name>/<repo-name>/issues/new
             "Title": "标题",
             "Helpful resources": "帮助性资源",
 
-        // 从讨论创建议题  /<user-name>/<repo-name>/issues/new?created_from_discussion_number=<id>
+        // 从讨论创建이슈  /<user-name>/<repo-name>/issues/new?created_from_discussion_number=<id>
             "Documentation has changed since you last contributed": "自您上次贡献以来，文档已更改",
-            ". Take a look before submitting an issue:": "。在提交议题之前先看一下：",
+            ". Take a look before submitting an issue:": "。在提交이슈之前先看一下：",
             "Contributing guidelines": "贡献指南",
             "Last updated": "最后更新",
 
-        // 某条具体的议题 /<user-name>/<repo-name>/issues/<id> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        // 某条具体的이슈 /<user-name>/<repo-name>/issues/<id> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // 快捷键
-                "Convert issue to discussion…": "将议题转化为讨论...",
+                "Convert issue to discussion…": "将이슈转化为讨论...",
 
-            "This issue was moved to a discussion.": "这个议题被转移到讨论中。",
+            "This issue was moved to a discussion.": "这个이슈被转移到讨论中。",
             "You can continue the conversation there.": "您可以在那里继续讨论。",
             "Go to discussion →": "转到讨论→",
 
@@ -8207,18 +8207,18 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
 
             // 状态词 同 /<user-name>/<repo-name>/pull/<id>
             "changed the title": "修改了标题",
-            "opened this issue": "打开了该议题",
+            "opened this issue": "打开了该이슈",
             "· Fixed by": "· 修复了",
-            "mentioned this issue": "提及了该议题",
+            "mentioned this issue": "提及了该이슈",
             "mentioned this": "提及此",
             "opened this": "打开了这个",
             "linked a pull request": "关联了一个拉取请求",
             "that will": "这将会",
             "close": "关闭",
-            "this issue": "这个议题",
-            // "that will close this issue": "这将会关闭这个议题",
+            "this issue": "这个이슈",
+            // "that will close this issue": "这将会关闭这个이슈",
             // "Issue": "이슈",
-            "added a commit that closed this issue": "在提交时关闭了这个议题",
+            "added a commit that closed this issue": "在提交时关闭了这个이슈",
             "closed this in": "关闭于",
             "added the": "添加了",
             "added": "添加了",
@@ -8227,7 +8227,7 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
             "removed": "移除了",
             "label": "标签",
             "labels": "标签",
-            "self-assigned this": "自己受理了该议题",
+            "self-assigned this": "自己受理了该이슈",
             // "edited": "编辑的",
             "added this to the": "添加到",
             "added this to": "添加到",
@@ -8241,7 +8241,7 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
             "This was referenced": "这是引用",
             "deleted a comment from": "删除了评论，来自",
             "· May be fixed by": " · 可通过该方案修复",
-            "pinned this issue": "置顶议题",
+            "pinned this issue": "置顶이슈",
             "unpinned this issue": "取消置顶",
             "Repository owner locked and limited conversation to collaborators": "仓库所有者锁定并限制与协作者对话",
             "Repository owner locked as": "仓库所有者锁定为",
@@ -8259,8 +8259,8 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
             // "into": "到",
             "deleted the": "删除了",
             "locked and limited conversation to collaborators": "锁定并限制与协作者对话",
-            "converted this issue into discussion": "此议题已转化为讨论",
-            "converted this issue into a discussion": "此议题已转化为讨论",
+            "converted this issue into discussion": "此이슈已转化为讨论",
+            "converted this issue into a discussion": "此이슈已转化为讨论",
             "removed their assignment": "取消了他们的任务",
             "assigned": "分配给了",
             "unassigned": "取消分配给",
@@ -8270,26 +8270,26 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
             "dismissed a stale review via": "驳回了一个陈旧的审查，通过",
             "requested changes": "请求了更改",
             "added a commit that referenced this issue": "添加了一个引用此问题的提交",
-            "referenced this issue": "提及这个议题",
+            "referenced this issue": "提及这个이슈",
             "closed this as completed": "已完成，关闭",
-            "added a parent issue": "添加了一个父议题",
-            "added a commit that references this issue": "添加了一个引用此议题的提交",
-            "transferred this issue from": "将此议题转移，从",
+            "added a parent issue": "添加了一个父이슈",
+            "added a commit that references this issue": "添加了一个引用此이슈的提交",
+            "transferred this issue from": "将此이슈转移，从",
             "as off topic": "因偏离主题",
             "as too heated": "因争论不休",
-            "added a sub-issue": "添加了一个子议题",
+            "added a sub-issue": "添加了一个子이슈",
 
             // 右侧栏 补充
                 // "Development": "进展",
                     "No branches or pull requests": "没有分支或拉取请求",
-                    "Shows branches and pull requests linked to this issue.": "显示与该议题相关的分支和拉取请求。",
+                    "Shows branches and pull requests linked to this issue.": "显示与该이슈相关的分支和拉取请求。",
                     "Create a branch": "创建分支",
-                    "for this issue or link a pull request.": "为这个议题或关联一个拉取请求",
-                    "When branches are created from issues, their pull requests are automatically linked.": "当从议题中创建分支时，它们的拉取请求会自动关联。",
+                    "for this issue or link a pull request.": "为这个이슈或关联一个拉取请求",
+                    "When branches are created from issues, their pull requests are automatically linked.": "当从이슈中创建分支时，它们的拉取请求会自动关联。",
                     "Open in Workspace": "在工作区打开",
 
                     // 关系
-                        "Add parent": "添加父议题",
+                        "Add parent": "添加父이슈",
                         "Select a repository": "选择一个仓库",
 
                     // 参与者数大于2
@@ -8300,19 +8300,19 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
 
                     // "linked a pull request that will": "关联一个拉取请求, 将会",
                     // "close": "关闭",
-                    // "this issue": "这个议题",
+                    // "this issue": "这个이슈",
 
-                    // 第一次打开议题
-                    "It looks like this is your first time opening an issue in this project!": "看起来这是您第一次在此项目中打开议题！",
+                    // 第一次打开이슈
+                    "It looks like this is your first time opening an issue in this project!": "看起来这是您第一次在此项目中打开이슈！",
                     "Be sure to review the": "请务必查阅",
 
-                    // 议题表单
+                    // 이슈表单
                     "You're using an": "您正在使用",
-                    "issue form": "议题表单",
-                    ", a new type of issue template.": "，一种新型议题模板。",
+                    "issue form": "이슈表单",
+                    ", a new type of issue template.": "，一种新型이슈模板。",
 
                     // 创建分支 对话框
-                        "Create a branch for this issue": "为该议题创建一个分支",
+                        "Create a branch for this issue": "为该이슈创建一个分支",
                         "Branch name": "分支名称",
                         "Repository destination": "仓库目的地",
                             "Search for a repository": "搜索仓库",
@@ -8334,33 +8334,33 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                         "Link a branch, pull request, or": "关联分支、拉取请求或",
                         "Search for branches or pull requests": "搜索分支或拉取请求",
 
-                "Pin issue": "置顶议题",
-                    "Up to 3 issues can be pinned and they will appear publicly at the top of the issues page": "最多可以置顶 3 个议题，它们将公开显示在议题页面的顶部",
-                    "Up to 3 issues can be pinned to the top of the issues page": "最多可以在议题页面置顶 3 个议题",
-                    "This will unpin this issue from the top of the issues page": "将从议题页面取消置顶该议题",
+                "Pin issue": "置顶이슈",
+                    "Up to 3 issues can be pinned and they will appear publicly at the top of the issues page": "最多可以置顶 3 个이슈，它们将公开显示在이슈页面的顶部",
+                    "Up to 3 issues can be pinned to the top of the issues page": "最多可以在이슈页面置顶 3 个이슈",
+                    "This will unpin this issue from the top of the issues page": "将从이슈页面取消置顶该이슈",
                     // 顶部提醒
-                    "The issue has been pinned.": "该议题已置顶。",
+                    "The issue has been pinned.": "该이슈已置顶。",
                 "Unpin issue": "取消置顶",
-                    "Up to 3 issues can be pinned and they will appear at the top of the issues page": "最多可以置顶 3 个议题，它们将显示在议题页面的顶部",
+                    "Up to 3 issues can be pinned and they will appear at the top of the issues page": "最多可以置顶 3 个이슈，它们将显示在이슈页面的顶部",
                     // 顶部提醒
-                    "The issue has been unpinned.": "该议题已取消置顶。",
-                "Transfer issue": "转移议题",
-                    // 转移议题 对话框
-                        "Transfer this issue": "转移议题",
-                            "Repository projects assigned to this issue will not transfer to the new location": "分配给此议题的仓库项目不会转移到新位置",
+                    "The issue has been unpinned.": "该이슈已取消置顶。",
+                "Transfer issue": "转移이슈",
+                    // 转移이슈 对话框
+                        "Transfer this issue": "转移이슈",
+                            "Repository projects assigned to this issue will not transfer to the new location": "分配给此이슈的仓库项目不会转移到新位置",
                         "Choose a repository": "选择仓库",
                         "Find a repository": "搜索仓库",
                         "Warning!": "警告！",
-                            "Transferring an issue does not scrub any issue content. Content such as text references to other issues, pull requests, projects, teams will remain in this issue's descriptions and comments.": "转移议题不会清除任何议题内容。诸如对其他议题、拉取请求、项目、团队的文本引用等内容将保留在此议题的描述和评论中。",
+                            "Transferring an issue does not scrub any issue content. Content such as text references to other issues, pull requests, projects, teams will remain in this issue's descriptions and comments.": "转移이슈不会清除任何이슈内容。诸如对其他이슈、拉取请求、项目、团队的文本引用等内容将保留在此이슈的描述和评论中。",
                             "Assignees, labels and milestones will be transferred if they are present in the target repository.": "如果目标仓库中存在受让人、标签和里程碑，它们将被转移。",
                 "Convert to discussion": "转为讨论",
-                    // 转换议题为讨论 对话框
-                    "Convert issue to a discussion": "转换议题为讨论",
-                        "Are you sure you want to convert this issue to a discussion?": "您确定要将议题转换为讨论吗？",
-                        "What happens when an issue is converted into a discussion:": "将议题转化为讨论时，会发生什么：",
-                        "Issue will be closed and locked": "议题将被关闭并锁定",
-                        "Title, description, and author will be the same as the issue": "标题、描述和作者将与议题相同",
-                        "All comments and reactions will be the same as the issue": "所有评论和反应将与议题相同",
+                    // 转换이슈为讨论 对话框
+                    "Convert issue to a discussion": "转换이슈为讨论",
+                        "Are you sure you want to convert this issue to a discussion?": "您确定要将이슈转换为讨论吗？",
+                        "What happens when an issue is converted into a discussion:": "将이슈转化为讨论时，会发生什么：",
+                        "Issue will be closed and locked": "이슈将被关闭并锁定",
+                        "Title, description, and author will be the same as the issue": "标题、描述和作者将与이슈相同",
+                        "All comments and reactions will be the same as the issue": "所有评论和反应将与이슈相同",
                         "Category for new discussion": "新讨论的类别",
                             "Announcements": "公告",
                             "General": "通常",
@@ -8368,30 +8368,30 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                             "Polls": "投票",
                             "Q&A": "问与答",
                             "Show and tell": "展示与讲述",
-                        "I understand, convert this issue.": "我明白了，依然转化该议题。",
-                "Delete issue": "删除议题",
-                    "Are you sure you want to delete this issue?": "您确定要删除此议题吗？",
+                        "I understand, convert this issue.": "我明白了，依然转化该이슈。",
+                "Delete issue": "删除이슈",
+                    "Are you sure you want to delete this issue?": "您确定要删除此이슈吗？",
                     "This cannot be undone": "这不能被撤消",
-                    "Only administrators can delete issues": "只有管理员可以删除议题",
-                    "Deletion will remove the issue from search and previous references will point to a placeholder": "删除将会从搜索中删除议题，以前的引用将指向一个占位符",
-                    "Delete this issue": "删除议题",
-                    "Deleting issue…": "议题删除中…",
+                    "Only administrators can delete issues": "只有管理员可以删除이슈",
+                    "Deletion will remove the issue from search and previous references will point to a placeholder": "删除将会从搜索中删除이슈，以前的引用将指向一个占位符",
+                    "Delete this issue": "删除이슈",
+                    "Deleting issue…": "이슈删除中…",
                     // 顶部提醒
-                    "The issue was successfully deleted.": "该议题已成功删除。",
+                    "The issue was successfully deleted.": "该이슈已成功删除。",
 
                 "Participants": "参与者",
 
             "Load more…": "载入更多…",
-            // 新版议题页面
+            // 新版이슈页面
             "remaining": "剩余",
             "items": "项",
             "Load more": "载入更多",
 
             "This conversation has been locked and limited to collaborators.": "此对话已锁定并限制与协作者对话。",
-            "This issue has been deleted.": "该议题已被删除。",
+            "This issue has been deleted.": "该이슈已被删除。",
             "deleted this from": "删除了这个，从",
 
-            "Reference in a new issue": "在新议题中提及",
+            "Reference in a new issue": "在新이슈中提及",
 
             // 评论框
             "edited by": "编辑者",
@@ -8400,10 +8400,10 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                 "hide comment": "隐藏评论",
             "Edits": "编辑",
                 "Most recent": "最近",
-            "Reopen Issue": "重新打开议题",
-                "You do not have permissions to reopen this issue": "您没有权限重新打开此议题",
+            "Reopen Issue": "重新打开이슈",
+                "You do not have permissions to reopen this issue": "您没有权限重新打开此이슈",
 
-        // 议题标签管理 /<user-name>/<repo-name>/issues/labels
+        // 이슈标签管理 /<user-name>/<repo-name>/issues/labels
         // 仓库 --> 标签页面 /<user-name>/<repo-name>/labels
             "Labels": "标签",
             "Milestones": "里程碑",
@@ -8426,8 +8426,8 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
             "Sort": "排序",
                 "Alphabetically": "按字母顺序",
                 "Reverse alphabetically": "按字母倒序",
-                "Most issues": "最多的议题",
-                "Fewest issues": "最少的议题",
+                "Most issues": "最多的이슈",
+                "Fewest issues": "最少的이슈",
 
             // 标签
                 "bug": "BUG",
@@ -8437,10 +8437,10 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                 "documentation": "文档",
                     "Improvements or additions to documentation": "文档的改进或补充",
                 "duplicate": "重复",
-                    "This issue or pull request already exists": "这个议题或拉取请求已经存在",
+                    "This issue or pull request already exists": "这个이슈或拉取请求已经存在",
                 "enhancement": "增强",
                     "New feature or request": "新功能或请求",
-                "good first issue": "好的首发议题",
+                "good first issue": "好的首发이슈",
                     "Good for newcomers": "适合新人",
                 "help wanted": "需要帮助",
                     "Extra attention is needed": "需要特别关注",
@@ -8451,19 +8451,19 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                 "wontfix": "不会修复",
                     "This will not be worked on": "这将不会被处理",
 
-            // [/open issues? and pull requests?/, "个打开的议题和拉取请求"], // 标签页面
-            // [/open issues? or pull requests?/, "个打开的议题或拉取请求"], // 标签页面
+            // [/open issues? and pull requests?/, "个打开的이슈和拉取请求"], // 标签页面
+            // [/open issues? or pull requests?/, "个打开的이슈或拉取请求"], // 标签页面
 
             "Convert to discussions": "转为讨论",
-                // 转换议题为讨论 对话框
-                "Convert issue to discussion": "转换议题为讨论",
-                "Convert issues to discussions": "转换议题为讨论",
-                    // [/Are you sure you want to convert (\d+) issues? with the following label to (?:a |)discussions?\?/, "您确定要将带有以下标签的 $1 条议题转换为讨论吗？"],
-                    // "What happens when an issue is converted into a discussion:": "将议题转化为讨论时，会发生什么：",
-                    "Issue will be locked": "议题将被锁定",
-                    // "Title, description, and author will be the same as the issue": "标题、描述和作者将与议题相同",
+                // 转换이슈为讨论 对话框
+                "Convert issue to discussion": "转换이슈为讨论",
+                "Convert issues to discussions": "转换이슈为讨论",
+                    // [/Are you sure you want to convert (\d+) issues? with the following label to (?:a |)discussions?\?/, "您确定要将带有以下标签的 $1 条이슈转换为讨论吗？"],
+                    // "What happens when an issue is converted into a discussion:": "将이슈转化为讨论时，会发生什么：",
+                    "Issue will be locked": "이슈将被锁定",
+                    // "Title, description, and author will be the same as the issue": "标题、描述和作者将与이슈相同",
                     "Existing links will redirect to the new discussion": "现有链接将重定向至新讨论",
-                    // "All comments and reactions will be the same as the issue": "所有评论和反应将与议题相同",
+                    // "All comments and reactions will be the same as the issue": "所有评论和反应将与이슈相同",
                     "Discussions do not have tasklists": "讨论没有任务列表",
                     "Discussions do not have assignees": "讨论没有受理人",
                     "Discussions cannot be added to projects": "讨论无法添加到项目",
@@ -8476,11 +8476,11 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                         "Polls": "投票",
                         "Q&A": "问与答",
                         "Show and tell": "展示与讲述",
-                    "I understand, convert issue to discussion": "我明白了，依然将议题转换未讨论",
-                    "I understand, convert issues to discussions": "我明白了，依然将议题转换未讨论",
-                    "Future issues with this label will not be automatically converted into discussions.": "今后带有此标签的议题不会自动转换为讨论。",
+                    "I understand, convert issue to discussion": "我明白了，依然将이슈转换未讨论",
+                    "I understand, convert issues to discussions": "我明白了，依然将이슈转换未讨论",
+                    "Future issues with this label will not be automatically converted into discussions.": "今后带有此标签的이슈不会自动转换为讨论。",
 
-        // 添加/编辑议题模板 /<user-name>/<repo-name>/issues/templates/edit
+        // 添加/编辑이슈模板 /<user-name>/<repo-name>/issues/templates/edit
             "Propose changes": "提出更改",
             "Add template:": "添加模板：",
             "select": "选择",
@@ -8491,9 +8491,9 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                 "Standard feature request template": "标准功能请求模板",
                 "Suggest an idea for this project": "为这个项目提出想法",
             "Custom template": "自定义模板",
-                "Blank template for other issue types": "其他议题类型的空白模板",
-                "Custom issue template": "自定义议题模板",
-                "Describe this issue template's purpose here.": "在此处描述此议题模板的用途。",
+                "Blank template for other issue types": "其他이슈类型的空白模板",
+                "Custom issue template": "自定义이슈模板",
+                "Describe this issue template's purpose here.": "在此处描述此이슈模板的用途。",
 
             "Preview and edit": "预览和编辑",
             "Close preview": "关闭预览",
@@ -8502,8 +8502,8 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
             "This file lives in": "该文件位于",
             "Template content": "模板内容",
             "Optional additional items": "可选附加项目",
-            "Issue default title": "议题默认标题",
-            "This will be suggested as the issue title": "建议作为议题标题",
+            "Issue default title": "이슈默认标题",
+            "This will be suggested as the issue title": "建议作为이슈标题",
 
     },
     "regexp": [ // 正则翻译
@@ -8514,36 +8514,36 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
         [/(#\d+) opened/, "$1 打开于"],
         [/(#\d+) by/, "$1 打开者"],
         [/(\d+) linked pull requests?/, "链接 $1 个拉取请求"],
-        [/([\d,]+) linked issues?/, "$1 个关联议题"],
+        [/([\d,]+) linked issues?/, "$1 个关联이슈"],
         [/(\d+) tasks? done/, "$1 个任务完成"],
         [/(\d+) of (\d+) tasks?/, "$1 / $2 个任务"],
         [/(\d+) tasks?/, "$1 个任务"],
         [/First time contributing to ([^ ]+)\?/, "首次为 $1 做贡献？"],
 
-        // 具体某条议题 /<user-name>/<repo-name>/issues/<id>
+        // 具体某条이슈 /<user-name>/<repo-name>/issues/<id>
         [/· ([\d,]+) comments?/, "• $1 条评论"],
         [/([\d,]+) participants?/, "$1 位参与者"],
         [/(\d+) similar comments?/, "$1 条类似评论"],
         [/(\d+) hidden items?/, "$1 条隐藏项目"],
-        [/added a commit to ([^ ]+) that referenced this issue/, "为 $1 添加了引用这个议题的提交"],
+        [/added a commit to ([^ ]+) that referenced this issue/, "为 $1 添加了引用这个이슈的提交"],
         [/Only people who can see ([^ ]+) will see this reference./, "只有能看到 $1 的人才能看到这个参考。"],
         [/Sponsor ([^ ]+)?/, "赞助 $1"], // 赞助按钮 对话框 标题
         [/Notify someone on an issue with a mention, like: @([^ ]+)./, "在某个问题上通知并提及某人，例如：@$1。"], // 专业提示
         [/Edited (\d+) times?/, "已编辑 $1 次"],
         [/edited by ([^ ]+)/, "由 $1 编辑"],
-        [/This issue will close when (#?\d+) is merged/, "此议题将在 $1 合并时关闭"],
-        [/Opened this issue \(their first in ([^ ]+)\)/, "打开了这个议题（首次在 $1 发表）"],
+        [/This issue will close when (#?\d+) is merged/, "此이슈将在 $1 合并时关闭"],
+        [/Opened this issue \(their first in ([^ ]+)\)/, "打开了这个이슈（首次在 $1 发表）"],
 
         // 标签页面
-        [/open issues? and pull requests?/, "个打开的议题和拉取请求"],
-        [/open issues? or pull requests?/, "个打开的议题或拉取请求"],
-        [/Are you sure you want to convert (\d+) issues? with the following label to (?:a |)discussions?\?/, "您确定要将带有以下标签的 $1 条议题转换为讨论吗？"],
+        [/open issues? and pull requests?/, "个打开的이슈和拉取请求"],
+        [/open issues? or pull requests?/, "个打开的이슈或拉取请求"],
+        [/Are you sure you want to convert (\d+) issues? with the following label to (?:a |)discussions?\?/, "您确定要将带有以下标签的 $1 条이슈转换为讨论吗？"],
 
-        // 子议题
-        [/Create new sub-issue in ([^ ]+)/, "在 $1 中新建子议题"],
+        // 子이슈
+        [/Create new sub-issue in ([^ ]+)/, "在 $1 中新建子이슈"],
         [/(\d+) of (\d+)/, "$1 / $2"],
 
-        // 新版议题
+        // 新版이슈
         [/(.+) will be between (.+) and (.+)./, "“$1” 将在 “$2” 和 “$3” 之间。"],
         [/(.+) will not be moved./, "“$1” 将不会被移动。"],
         [/(.+) will be first item in the list./, "“$1” 将移至最前。"],
@@ -8575,9 +8575,9 @@ I18N["zh-CN"]["repository/pulls"] = { // 仓库 - 拉取请求页面
             "If you would like to submit code to this repository, consider opening a pull request.": "如果您想向这个仓库提交代码，请考虑打开一个拉取请求。",
             "If you would like to submit code to this repository, consider opening a pull request. You can read this repository’s": "如果您想向这个仓库提交代码，请考虑打开一个拉取请求。您可以阅读该仓库的",
 
-            "Label issues and pull requests for new contributors": "标记新贡献者的议题和拉取请求",
+            "Label issues and pull requests for new contributors": "标记新贡献者的이슈和拉取请求",
             "Now, GitHub will help potential first-time contributors": "现在，GitHub 将帮助潜在的首次贡献者",
-            "discover issues": "探索议题",
+            "discover issues": "探索이슈",
             "labeled with": "标记为",
 
             "Dismiss": "忽略",
@@ -8610,10 +8610,10 @@ I18N["zh-CN"]["repository/pulls"] = { // 仓库 - 拉取请求页面
                 "Exclude everything labeled": "如果要找到所有标有",
                 "with": "标签的，请使用",
                 "Follow long discussions with": "要跟随长讨论，请使用",
-                "on any issue or pull request to go back to the pull request listing page.": "在任何议题或拉取请求来返回拉取请求列表页面。",
+                "on any issue or pull request to go back to the pull request listing page.": "在任何이슈或拉取请求来返回拉取请求列表页面。",
                 "Filter pull requests by the default branch with": "通过默认分支过滤拉取请求：",
                 "to see everything that’s not assigned.": "查看所有未分配的内容。",
-                "Find all pull requests that aren't related to any open issues with": "查找所有与任何打开议题无关的拉取请求，并使用",
+                "Find all pull requests that aren't related to any open issues with": "查找所有与任何打开이슈无关的拉取请求，并使用",
                 "Add comments to specific lines under": "为以下特定行添加注释于",
 
                 "You commented on and opened this pull request": "您打开了此拉取请求并发表了评论",
@@ -8629,7 +8629,7 @@ I18N["zh-CN"]["repository/pulls"] = { // 仓库 - 拉取请求页面
         ...I18N["zh-CN"]["repository/pull_issue_public"]["regexp"],
 
         [/(\d+) reviews? requesting changes?/, "$1 个请求审查更改"],
-        [/(\d+) linked issues?/, "链接 $1 个议题"],
+        [/(\d+) linked issues?/, "链接 $1 个이슈"],
         [/([\d,]+) Open/, "$1 打开"],
         [/([\d,]+) Closed/, "$1 已关闭"],
         [/(#\d+) opened/, "$1 打开于"],
@@ -8641,7 +8641,7 @@ I18N["zh-CN"]["repository/pulls"] = { // 仓库 - 拉取请求页面
         [/First time contributing to ([^ ]+)\?/, "首次为 $1 做贡献？"],
         [/Suggested change/, "建议更改"],
         [/Ears burning\? Get\@([^ ]+) mentions with/, "烧脑吗？使用 @$1 提及"], // 专业提示
-        [/Notify someone on an issue with a mention, like: \@([^ ]+)/, "通知某人在议题上使用提及，例如：@$1"],
+        [/Notify someone on an issue with a mention, like: \@([^ ]+)/, "通知某人在이슈上使用提及，例如：@$1"],
     ],
 };
 
@@ -8840,7 +8840,7 @@ I18N["zh-CN"]["repository/pull"] = { // 仓库 - 某个拉取请求页面
             "Hide all reviewers": "隐藏所有审查者",
             "New changes since you last viewed": "自您上次查看以来的新变化",
             "mentioned this pull request": "提及这个拉取请求",
-            "linked an issue": "链接议题",
+            "linked an issue": "链接이슈",
             "that may be": "将在该拉取请求合并时",
             "closed": "关闭",  // 浮动小字走正则
             "by this pull request": " ",
@@ -9425,7 +9425,7 @@ I18N["zh-CN"]["repository/pull"] = { // 仓库 - 某个拉取请求页面
         [/(\d+) reviews? requesting changes by reviewers with write access/, "$1 项审查，要求有写入权限的审查者进行更改"], // 拉取请求
         [/(\d+) changes? requested by reviewers with write access/, "具有写入权限的审查者提出 $1 项更改请求"],
         [/(\d+) changes? requested/, "$1 项更改请求"],
-        [/This pull request closes issue (#\d+)./, "该拉取请求将关闭议题 $1。"], // 死活不翻译
+        [/This pull request closes issue (#\d+)./, "该拉取请求将关闭이슈 $1。"], // 死活不翻译
         [/([\d,]+) additions, ([\d,]+) deletions not shown because the diff is too large. Please use a local Git client to view these changes./, "$1 处增加，$2 处删除未显示，因为差异太大。请使用本地 Git 客户端查看这些更改。"],
         [/(\d+) requested change/, "$1 项请求更改"],
 
@@ -9655,7 +9655,7 @@ I18N["zh-CN"]["repository/compare"] = { // 仓库 - 比较并创建拉取请求
                 "No one assigned": "无人受理",
                 "No one—": "无人 - ",
                 "assign yourself": " 受理自己",
-                "Assign up to 10 people to this issue": "最多指定 10 人", // 议题
+                "Assign up to 10 people to this issue": "最多指定 10 人", // 이슈
                 "Assign up to 10 people to this pull request": "最多指定 10 人", // 拉取请求
                 "Clear assignees": "清除受理人",
                 "Type or choose a user": "输入或选择用户",
@@ -9672,10 +9672,10 @@ I18N["zh-CN"]["repository/compare"] = { // 仓库 - 比较并创建拉取请求
                 "documentation": "文档",
                     "Improvements or additions to documentation": "文档的改进或补充",
                 "duplicate": "重复",
-                    "This issue or pull request already exists": "这个议题或拉取请求已经存在",
+                    "This issue or pull request already exists": "这个이슈或拉取请求已经存在",
                 "enhancement": "增强",
                     "New feature or request": "新功能或请求",
-                "good first issue": "好的首发议题",
+                "good first issue": "好的首发이슈",
                     "Good for newcomers": "适合新人",
                 "help wanted": "需要帮助",
                     "Extra attention is needed": "需要特别关注",
@@ -9687,7 +9687,7 @@ I18N["zh-CN"]["repository/compare"] = { // 仓库 - 比较并创建拉取请求
                     "Not going to fix it": "不打算修复",
                     "This will not be worked on": "这将不会被处理",
 
-                "Apply labels to this issue": "应用标签", // 议题
+                "Apply labels to this issue": "应用标签", // 이슈
                 "Apply labels to this pull request": "应用标签", // 拉取请求
                 "Edit labels": "编辑标签",
 
@@ -9726,7 +9726,7 @@ I18N["zh-CN"]["repository/compare"] = { // 仓库 - 比较并创建拉取请求
         "Development": "进展",
             "Use": "使用",
             "Closing keywords": "关闭关键词",
-            "in the description to automatically close issues": "在描述中，以自动关闭议题",
+            "in the description to automatically close issues": "在描述中，以自动关闭이슈",
             "Use Closing keywords to add a closing reference": "使用关闭关键词添加一个关闭引用",
 
         "Helpful resources": "帮助性资源",
@@ -9922,9 +9922,9 @@ I18N["zh-CN"]["repository/commit"] = { // 仓库 - 提交页面
                 "You were mentioned on and commented on this pull request": "您在该请求中被提及并发表了评论",
                 "You left a review": "您发表了评论",
 
-            // 议题悬浮卡
-                "You commented on this issue": "您对此议题发表了评论",
-                "You commented on and opened this issue": "您评论并打开了此议题",
+            // 이슈悬浮卡
+                "You commented on this issue": "您对此이슈发表了评论",
+                "You commented on and opened this issue": "您评论并打开了此이슈",
 
         // /commits?since=<start-date XXXX-XX-XX>&until=<end-date XXXX-XX-XX>&author=<author-name>
             "No commits history": "尚无提交历史记录",
@@ -10025,7 +10025,7 @@ I18N["zh-CN"]["repository/commit"] = { // 仓库 - 提交页面
                 "conversation": "对话",
                 "Off-topic": "偏离主题",
             "Load more comments": "加载更多评论",
-            "Reference in a new issue": "在新议题中提及",
+            "Reference in a new issue": "在新이슈中提及",
             "Add files": "添加文件",
             "You're not receiving notifications from this thread.": "您没有收到来自此主题的通知。",
             "You're receiving notifications because you're subscribed to this thread.": "您收到通知是因为您订阅了此主题。",
@@ -10039,7 +10039,7 @@ I18N["zh-CN"]["repository/commit"] = { // 仓库 - 提交页面
         [/(\d+) changes?: (\d+) additions? & (\d+) deletions?$/, "$1 处更改：$2 处增加和 $3 处删除"],
         [/(\d+) additions?$/, "$1 处增加"],
         [/(\d+) deletions?$/, "$1 处删除"],
-        [/This commit closes issue (#\d+)./, "此提交关闭了议题 $1。"], //具体提交页面
+        [/This commit closes issue (#\d+)./, "此提交关闭了이슈 $1。"], //具体提交页面
         [/from ([^ ]+) to ([^ ]+)/, "从 $1 到 $2。"], //具体提交页面
         [/([\d,]+) additions, ([\d,]+) deletions not shown because the diff is too large. Please use a local Git client to view these changes./, "$1 处增加，$2 处删除未显示，因为差异太大。请使用本地 Git 客户端查看这些更改。"],
         [/(\d+) comments? on commit/, "该提交有 $1 条评论"],
@@ -10101,8 +10101,8 @@ I18N["zh-CN"]["repository/blob"] = { // 仓库 - 浏览代码
                 "Draft a release": "起草发布",
             // 工作流程文件 /blob/<brach>/.github/workflows/xxxx.yml
                 "View Runs": "查看运行情况",
-            // 议题模板 /blob/<brach>/.github/ISSUE_TEMPLATE/xxxx.yml
-                "This file is used as an Issue Form template.": "该文件是议题表单模板",
+            // 이슈模板 /blob/<brach>/.github/ISSUE_TEMPLATE/xxxx.yml
+                "This file is used as an Issue Form template.": "该文件是이슈表单模板",
                 "Give Feedback.": "提交反馈。",
             // 添加文件按钮, 文件夹模式下
                 "Add file": "添加文件",
@@ -10170,7 +10170,7 @@ I18N["zh-CN"]["repository/blob"] = { // 仓库 - 浏览代码
                 "Copy lines": "复制行",
                 "Copy permalink": "复制永久链接",
                 "View git blame": "浏览 Git 追溯",
-                "Reference in new issue": "引用到新议题",
+                "Reference in new issue": "引用到新이슈",
                 "Reference in new discussion": "引用到新讨论",
                 "View file in GitHub.dev": "在 GitHub.dev 中查看文件",
                 "View file in different branch/tag": "查看不同分支/标签中的文件",
@@ -10374,10 +10374,10 @@ I18N["zh-CN"]["repository/discussions"] = { // 讨论页面
                 "documentation": "文档",
                     "Improvements or additions to documentation": "文档的改进或补充",
                 "duplicate": "重复",
-                    "This issue or pull request already exists": "这个议题或拉取请求已经存在",
+                    "This issue or pull request already exists": "这个이슈或拉取请求已经存在",
                 "enhancement": "增强",
                     "New feature or request": "新功能或请求",
-                "good first issue": "好的首发议题",
+                "good first issue": "好的首发이슈",
                     "Good for newcomers": "适合新人",
                 "help wanted": "需要帮助",
                     "Extra attention is needed": "需要特别关注",
@@ -10667,8 +10667,8 @@ I18N["zh-CN"]["repository/discussions"] = { // 讨论页面
             "Closed as resolved": "关闭为已解决",
 
             "Change category": "更改类别",
-            "Converted from issue": "由议题转化而来",
-                // [/This discussion was converted from issue/, "本讨论由以下议题转换而来"],
+            "Converted from issue": "由이슈转化而来",
+                // [/This discussion was converted from issue/, "本讨论由以下이슈转换而来"],
 
             "Notifications": "通知类型",
                 "Subscribe": "订阅",
@@ -10680,7 +10680,7 @@ I18N["zh-CN"]["repository/discussions"] = { // 讨论页面
                 "You’re receiving notifications because you were mentioned.": "您收到通知是因为有人 @您。",
                 "You’re receiving notifications because you commented.": "您收到通知是因为您发表了评论。",
                 "You’re receiving notifications because you are watching pull requests on this repository.": "您收到通知是因为您正在关注此仓库上的拉取请求。",
-                "You’re receiving notifications because you are watching issues on this repository.": "您收到通知是因为您正在关注此仓库上的议题。",
+                "You’re receiving notifications because you are watching issues on this repository.": "您收到通知是因为您正在关注此仓库上的이슈。",
                 "You’re receiving notifications because you modified the open/close state.": "您收到通知是因为您修改了打开/关闭状态。",
                 "You’re ignoring this repository.": "您忽略了这个仓库。",
 
@@ -10703,7 +10703,7 @@ I18N["zh-CN"]["repository/discussions"] = { // 讨论页面
                 "will be able to comment on this discussion once more.": "将能够再次对这个讨论发表评论。",
                 "You can always lock this discussion again in the future.": "您今后仍可以随时再次锁定此讨论。",
             "Transfer this discussion": "转移讨论",
-                // 转移议题 对话框
+                // 转移이슈 对话框
                 "Results are limited to top repositories, search to find more.": "结果仅限于置顶仓库，请搜索以查找更多信息。",
                 "Move this discussion to another repository owned by": "将此讨论移至另一个拥有的仓库由",
                 "Move this discussion to another repository you own.": "将此讨论移至您拥有的另一个仓库。",
@@ -10750,7 +10750,7 @@ I18N["zh-CN"]["repository/discussions"] = { // 讨论页面
                 "Are you sure you want to unpin this discussion from Q&A?": "您确定要从 “问与答” 中取消置顶此讨论吗？",
                 "Are you sure you want to unpin this discussion from Show and tell?": "您确定要从 “展示与讲述” 中取消置顶此讨论吗？",
                 "The discussion itself won't be deleted, it just won't be shown at the top of this category.": "讨论本身不会被删除，只是不会显示在该类别的顶部。",
-            "Create issue from discussion": "从讨论中创建议题",
+            "Create issue from discussion": "从讨论中创建이슈",
             "Delete discussion": "删除讨论",
                 "Delete discussion?": "删除讨论？",
                 "The discussion will be deleted permanently. You will not be able to restore the discussion or its comments.": "该讨论将被永久删除。您将无法恢复该讨论或其评论。",
@@ -10758,7 +10758,7 @@ I18N["zh-CN"]["repository/discussions"] = { // 讨论页面
                 // 顶部提醒
                 "The discussion was successfully deleted.": "该讨论已成功删除。",
 
-            "The original post will be copied into a new issue, and the discussion will remain active.": "原帖将被复制到一个新的议题中，讨论将保持活跃。",
+            "The original post will be copied into a new issue, and the discussion will remain active.": "原帖将被复制到一个新的이슈中，讨论将保持活跃。",
             "OK, got it!": "好的，我知道了！",
 
             // 评论删除对话框
@@ -10771,9 +10771,9 @@ I18N["zh-CN"]["repository/discussions"] = { // 讨论页面
                 ". Already have an account?": "。已经有账户？",
                 "Sign in to comment": "登录后发表评论",
 
-        // 转移议题到讨论 /<user-name>/<repo-name>discussions/<id>?converting=<讨论id>
+        // 转移이슈到讨论 /<user-name>/<repo-name>discussions/<id>?converting=<讨论id>
             "This discussion is being migrated": "此讨论正在迁移",
-                "The issue and any comments are still being copied to this discussion thread, please check back later.": "该议题和所有评论仍在复制到此讨论话题中，请稍后查看",
+                "The issue and any comments are still being copied to this discussion thread, please check back later.": "该이슈和所有评论仍在复制到此讨论话题中，请稍后查看",
                 "Refresh": "刷新",
 
         // /<user-name>/community/discussions
@@ -10824,7 +10824,7 @@ I18N["zh-CN"]["repository/discussions"] = { // 讨论页面
         [/Delete section (.*)/, "删除栏目 “$1”"],
         [/Delete (.*) section/, "删除 “$1” 栏目"],
         [/(\d+) new suggested answers?/, "$1 个新的建议答案"],
-        [/This discussion was converted from issue (#\d+) on (.+)/, "本讨论由以下议题转换而来：$1 ，$2"],
+        [/This discussion was converted from issue (#\d+) on (.+)/, "本讨论由以下이슈转换而来：$1 ，$2"],
         [/(\d+) new comments?/, "$1 条新评论"],
         [/Show (\d+) more replies/, "显示剩余 $1 条答复"],
         [/(\d+) new/, "$1 新"],
@@ -10856,7 +10856,7 @@ I18N["zh-CN"]["repository/actions"] = { // 仓库 - 操作页面
         // 新建操作 /<user-name>/<repo-name>/actions/new
             "Get started with GitHub Actions": "开始使用 GitHub Actions",
             "Choose a workflow": "选择工作流程",
-            "Build, test, and deploy your code. Make code reviews, branch management, and issue triaging work the way you want. Select a workflow to get started.": "构建、测试和部署您的代码。以您想要的方式进行代码审查、分支管理和议题分类。选择一个工作流以开始使用。",
+            "Build, test, and deploy your code. Make code reviews, branch management, and issue triaging work the way you want. Select a workflow to get started.": "构建、测试和部署您的代码。以您想要的方式进行代码审查、分支管理和이슈分类。选择一个工作流以开始使用。",
             "Skip this and": "跳过并",
             "set up a workflow yourself": "建立工作流程",
             "Search workflows": "搜索工作流",
@@ -10967,7 +10967,7 @@ I18N["zh-CN"]["repository/actions"] = { // 仓库 - 操作页面
                 "No matching events.": "无匹配事件。",
                 //"Filter by event": "按事件筛选",
                 "Find an event": "查找事件",
-                    "issue_comment": "议题评论",
+                    "issue_comment": "이슈评论",
                     "pull_request": "拉取请求",
                     "pull_request_target": "拉取请求目标",
                     "push": "推送",
@@ -11166,7 +11166,7 @@ I18N["zh-CN"]["repository/actions"] = { // 仓库 - 操作页面
 
             //状态条
             "Triggered via pull request": "通过拉取请求触发",
-            "Triggered via issues": "通过议题触发",
+            "Triggered via issues": "通过이슈触发",
             "Triggered via push": "通过推送触发",
             "Triggered via schedule": "通过计划表触发",
             "Triggered via dynamic": "通过动态触发",
@@ -11610,26 +11610,26 @@ I18N["zh-CN"]["repository/new"] = { // 仓库 - 新建/编辑/上传/删除文�
             // 编辑 LICENSE 许可证文件
                 "Choose a license template": "选择许可证模板",
 
-            // 编辑 议题表单模板文件 .github/ISSUE_TEMPLATE/xxxx.yml
+            // 编辑 이슈表单模板文件 .github/ISSUE_TEMPLATE/xxxx.yml
                 // 顶部提示
-                "Looks like this file is an issue template. Need help?": "此文件是一个议题模板。需要帮助？",
-                "Learn more about issue templates.": "了解更多关于议题模板的信息。",
+                "Looks like this file is an issue template. Need help?": "此文件是一个이슈模板。需要帮助？",
+                "Learn more about issue templates.": "了解更多关于이슈模板的信息。",
                 "Give feedback.": "提交反馈。",
                 // 右侧帮助说明
                 "Top-level configuration options": "顶层配置选项",
                     "Required Fields": "必填项",
                         "(String): The template's name. Must be unique across all templates, including Markdown templates.": "（字符串）模板名。不能与其他模板名重复，包括 Markdown 模板",
-                        "(String): A description of this template's intended use. This will be shown in the issue template chooser interface.": "(字符串）：该模板预期用途的说明。这将显示在议题模板选择界面中。",
+                        "(String): A description of this template's intended use. This will be shown in the issue template chooser interface.": "(字符串）：该模板预期用途的说明。这将显示在이슈模板选择界面中。",
                     "Optional Fields": "可选项",
-                        "(Array or String): This issue will be automatically assigned to these users. Can be array of usernames or comma-delimited string, e.g. \"monalisa,nat\"": "(数组或字符串）：此议题将自动分配给这些用户。可以是用户名数组或以逗号分隔的字符串，例如 “monalisa,nat”。",
-                        "(Array or String): This issue will automatically receive these labels upon creation. Can be array of labels or comma-delimited string, e.g. \"bug,needs-triage\"": "(数组或字符串）：该议题在创建时将自动接收这些标签。可以是标签数组或以逗号分隔的字符串，例如 “bug,needs-triage”（错误，需要分流）。",
-                        "(Array or String): This issue will be automatically added to these projects. Can be array of projects or comma-delimited string, e.g. \"github\/1,github\/2\"": "(数组或字符串）：该议题将自动添加到这些项目中。可以是项目数组或以逗号分隔的字符串，如 “github\/1,github\/2”。",
-                        "(String): Default title that will be pre-populated in the issue submission form.": "(字符串）：将在议题表单中预填的默认标题。",
+                        "(Array or String): This issue will be automatically assigned to these users. Can be array of usernames or comma-delimited string, e.g. \"monalisa,nat\"": "(数组或字符串）：此이슈将自动分配给这些用户。可以是用户名数组或以逗号分隔的字符串，例如 “monalisa,nat”。",
+                        "(Array or String): This issue will automatically receive these labels upon creation. Can be array of labels or comma-delimited string, e.g. \"bug,needs-triage\"": "(数组或字符串）：该이슈在创建时将自动接收这些标签。可以是标签数组或以逗号分隔的字符串，例如 “bug,needs-triage”（错误，需要分流）。",
+                        "(Array or String): This issue will be automatically added to these projects. Can be array of projects or comma-delimited string, e.g. \"github\/1,github\/2\"": "(数组或字符串）：该이슈将自动添加到这些项目中。可以是项目数组或以逗号分隔的字符串，如 “github\/1,github\/2”。",
+                        "(String): Default title that will be pre-populated in the issue submission form.": "(字符串）：将在이슈表单中预填的默认标题。",
                         "(Array): Definition of user inputs.": "(数组）：用户输入的定义。",
                 "Input type configuration options": "输入类型配置项",
                     // Markdown
                         "Markdown blocks contain arbitrary text that a maintainer can add to a template, to provide extra context or guidance to a contributor. Supports Markdown formatting. This text will": "Markdown 块包含任意文本，维护者可将其添加到模板中，为贡献者提供额外的上下文或指导。支持 Markdown 格式。这些文本",
-                        "not be rendered in the submitted issue body": "不会在提交的议题正文中呈现。",
+                        "not be rendered in the submitted issue body": "不会在提交的이슈正文中呈现。",
                         // 必填项
                             "(String): The text that will be rendered. Markdown formatting is supported.": "(字符串）：将渲染的文本。支持 Markdown 格式。",
                         "Tip #1: YAML processing will cause the hash symbol to be treated as a comment. To insert Markdown headers, wrap your text in quotes.": "提示 1：YAML 处理会将哈希符号视为注释。要插入 Markdown 标题，请用引号将文本包起来。",
@@ -12280,7 +12280,7 @@ I18N["zh-CN"]["repository/releases"] = { // 仓库 - 发行版页面
                 "Add a numbered list, <Ctrl+Shift+7>": "添加有序列表 <Ctrl+Shift+7>",
                 "Add a task list, <Ctrl+Shift+l>": "添加任务列表 <Ctrl+Shift+l>",
                 "Directly mention a user or team": "直接提及用户或团队",
-                "Reference an issue, pull request or discussion": "引用议题，拉取请求或讨论",
+                "Reference an issue, pull request or discussion": "引用이슈，拉取请求或讨论",
                 "Add saved reply": "添加快捷回复",
                     "Select a reply": "选择回复",
                         "Filter saved replies": "筛选快捷回复",
@@ -12558,7 +12558,7 @@ I18N["zh-CN"]["repository/pkgs"] = { // 仓库 - 软件包
             "Total downloads": "总下载量",
             "Start a discussion": "开始讨论",
             "Contributors": "贡献者",
-            "Open an issue": "打开一个议题",
+            "Open an issue": "打开一个이슈",
             "Package settings": "软件包设置",
 
             "Recent Versions": "最近版本",
@@ -13090,17 +13090,17 @@ I18N["zh-CN"]["repository/contribute"] = { // 仓库 - 贡献页面
 
         // 贡献页面 /<user-name>/<repo-name>/contribute
             "Contribute to": "贡献于",
-            "Make your first contribution to this repository by tackling one of the issues listed below.": "通过解决下面列出的一个议题，为这个仓库做出您的第一个贡献。",
-            "Each issue displayed here is a \"good first issue,\" selected for its relative approachability for first-time contributors.": "此处显示的每个议题都是 “好的首发议题”，因其对首次贡献者来说相对容易。",
+            "Make your first contribution to this repository by tackling one of the issues listed below.": "通过解决下面列出的一个이슈，为这个仓库做出您的第一个贡献。",
+            "Each issue displayed here is a \"good first issue,\" selected for its relative approachability for first-time contributors.": "此处显示的每个이슈都是 “好的首发이슈”，因其对首次贡献者来说相对容易。",
 
             "Read the contributing guidelines": "阅读贡献指南",
 
-            "Good first issues": "好的首发议题",
-            "See all issues": "查看所有议题",
+            "Good first issues": "好的首发이슈",
+            "See all issues": "查看所有이슈",
 
-            "This repo doesn't have any good first issues, yet": "该仓库暂无任何好的首发议题",
-            "Once its maintainers label issues and pull requests for new contributors, they will begin to appear here.": "一旦它的维护者为新的贡献者标记了议题和拉取请求，它们就会开始出现在这里。",
-            "All issues in this repository": "此仓库中的所有议题",
+            "This repo doesn't have any good first issues, yet": "该仓库暂无任何好的首发이슈",
+            "Once its maintainers label issues and pull requests for new contributors, they will begin to appear here.": "一旦它的维护者为新的贡献者标记了이슈和拉取请求，它们就会开始出现在这里。",
+            "All issues in this repository": "此仓库中的所有이슈",
 
     },
     "regexp": [ // 正则翻译
@@ -13113,7 +13113,7 @@ I18N["zh-CN"]["repository/subscription"] = { // 仓库 - 通知状态页面
         // 仓库通知状态管理 /<user-name>/<repo-name>/subscription
             "Your": "您的",
             "notifications status": "通知状态",
-            "A notification is created every time someone discusses something inside of the repository — Pull Requests, Issues, Comments, and Commit discussions. Whether you are watching the repository, not watching it, or ignoring it determines which notifications you receive.": "每当有人在仓库内讨论什么，比如拉取请求、议题、评论和提交讨论，都会产生一个通知。无论您是关注仓库、不关注还是忽略它，都决定了您会收到哪些通知。",
+            "A notification is created every time someone discusses something inside of the repository — Pull Requests, Issues, Comments, and Commit discussions. Whether you are watching the repository, not watching it, or ignoring it determines which notifications you receive.": "每当有人在仓库内讨论什么，比如拉取请求、이슈、评论和提交讨论，都会产生一个通知。无论您是关注仓库、不关注还是忽略它，都决定了您会收到哪些通知。",
             "Not watching": "不关注",
                 "You will only receive notifications when you participate or are @mentioned.": "只有当您参与或被 @您 时，您才会收到通知。",
             "Releases only": "仅发行版",
@@ -13204,16 +13204,16 @@ I18N["zh-CN"]["repository/pulse"] = { // 仓库 -> 洞察 - 统计
                 "1 month": "1 个月",
             "Active pull request": "活跃的拉取请求",
             "Active pull requests": "活跃的拉取请求",
-            "Active issue": "活跃的议题",
-            "Active issues": "活跃的议题",
+            "Active issue": "活跃的이슈",
+            "Active issues": "活跃的이슈",
             "Merged pull request": "合并的拉取请求",
             "Merged pull requests": "合并的拉取请求",
             "Open pull request": "打开的拉取请求",
             "Open pull requests": "打开的拉取请求",
-            "Closed issue": "关闭的议题",
-            "Closed issues": "关闭的议题",
-            "New issue": "新议题",
-            "New issues": "新议题",
+            "Closed issue": "关闭的이슈",
+            "Closed issues": "关闭的이슈",
+            "New issue": "新이슈",
+            "New issues": "新이슈",
 
             "Excluding merges,": "不包括合并，",
             // [/(\d+) authors?/, "$1 位作者"],
@@ -13241,13 +13241,13 @@ I18N["zh-CN"]["repository/pulse"] = { // 仓库 -> 洞察 - 统计
             "Pull requests merged by": "个拉取请求已合并由",
             "Pull request opened by": "个拉取请求打开由",
             "Pull requests opened by": "个拉取请求打开由",
-            "Issue closed by": "个议题已关闭由",
-            "Issues closed by": "个议题已关闭由",
-            "Issue opened by": "个议题打开由",
-            "Issues opened by": "个议题打开由",
+            "Issue closed by": "个이슈已关闭由",
+            "Issues closed by": "个이슈已关闭由",
+            "Issue opened by": "个이슈打开由",
+            "Issues opened by": "个이슈打开由",
             "person": "人",
             "people": "人",
-            "Sometimes conversations happen on old items that aren’t yet closed. Here is a list of all the Issues and Pull Requests with unresolved conversations.": "有时会针对尚未关闭的旧项目进行讨论。以下是所有未解决的讨论的议题和拉取请求的列表。",
+            "Sometimes conversations happen on old items that aren’t yet closed. Here is a list of all the Issues and Pull Requests with unresolved conversations.": "有时会针对尚未关闭的旧项目进行讨论。以下是所有未解决的讨论的이슈和拉取请求的列表。",
             // [/• (\d+) new comments/, "• $1 个新评论"],
             "Unresolved conversation": "个未解决的讨论",
             "Unresolved conversations": "个未解决的讨论",
@@ -13356,7 +13356,7 @@ I18N["zh-CN"]["repository/graphs/community"] = { // 仓库 -> 洞察 - 社区
                 "Last year": "最近 1 年",
 
             "Contribution activity": "贡献活动",
-                "Count of total contribution activity to Discussions, Issues, and PRs": "对讨论、议题和拉取请求的总贡献活动计数",
+                "Count of total contribution activity to Discussions, Issues, and PRs": "对讨论、이슈和拉取请求的总贡献活动计数",
                 "Discussions": "토론",
                 "Quantity": "数量",
                 "Timeline": "时间轴",
@@ -13381,7 +13381,7 @@ I18N["zh-CN"]["repository/graphs/community"] = { // 仓库 -> 洞察 - 社区
     "regexp": [ // 正则翻译
         ...I18N["zh-CN"]["repository-public"]["regexp"],
         [/(\d+) pull requests? created/, "$1 个拉取请求创建"],
-        [/(\d+) issues? created/, "$1 个议题创建"],
+        [/(\d+) issues? created/, "$1 个이슈创建"],
         [/(\d+) discussions? created/, "$1 个讨论创建"],
         [/(\d+) contributors?/, "$1 贡献者"],
     ],
@@ -13411,7 +13411,7 @@ I18N["zh-CN"]["repository/community"] = { // 仓库 -> 洞察 - 社区准则
                 "Choosing a license": "选择许可证",
             "Security policy": "安全政策",
                 "Set up a security policy": "设置安全策略",
-            "Issue templates": "议题模板",
+            "Issue templates": "이슈模板",
             "Pull request template": "拉取请求模板",
             "Repository admins accept content reports": "仓库管理员接受内容报告", // 组织仓库?
             "What is": "什么是",
@@ -13830,7 +13830,7 @@ I18N["zh-CN"]["repository/forks"] = { // 仓库 -> 洞察 - 复刻
                 "Sort by": "排序方式",
                     "Most starred": "最多星标",
                     "Recently updated": "最近更新",
-                    "Open issues": "打开的议题",
+                    "Open issues": "打开的이슈",
                     "Open pull requests": "打开的拉取请求",
                 "Defaults Saved": "默认值已保存",
                 "Save Defaults": "保存默认值",
@@ -13992,10 +13992,10 @@ I18N["zh-CN"]["repository/settings"] = { // 仓库设置 - 通常 /<user-name>/<
                 // "Upgrade": "升级",
                     "Learn more about wikis": "了解更多关于 Wiki 的信息",
 
-            // 议题
-            "Issues integrate lightweight task tracking into your repository. Keep projects on track with issue labels and milestones, and reference them in commit messages.": "议题将轻量级任务跟踪集成到您的仓库中。使用议题标签和里程碑保持项目正常运行，并在提交消息中引用它们。",
-            "Get organized with issue templates": "使用议题模板进行组织",
-            "Give contributors issue templates that help you cut through the noise and help them push your project forward.": "为贡献者提供议题模板，帮助您消除干扰并帮助他们推进您的项目。",
+            // 이슈
+            "Issues integrate lightweight task tracking into your repository. Keep projects on track with issue labels and milestones, and reference them in commit messages.": "이슈将轻量级任务跟踪集成到您的仓库中。使用이슈标签和里程碑保持项目正常运行，并在提交消息中引用它们。",
+            "Get organized with issue templates": "使用이슈模板进行组织",
+            "Give contributors issue templates that help you cut through the noise and help them push your project forward.": "为贡献者提供이슈模板，帮助您消除干扰并帮助他们推进您的项目。",
             "Set up templates": "设置模板",
 
             "Allow forking": "允许复刻", // 组织仓库
@@ -14020,7 +14020,7 @@ I18N["zh-CN"]["repository/settings"] = { // 仓库设置 - 通常 /<user-name>/<
             "Autogenerate table of contents for markdown files in this repository. the table of contents will be displayed near the top of the file.": "自动生成此仓库中 Markdown 文件的目录。目录将显示在文件顶部附近。",
 
             // "Discussions": "토론",
-            "Discussions is the space for your community to have conversations, ask questions and post answers without opening issues.": "讨论是您的社区进行对话、提问和发布答案的地方，而无需打开议题。",
+            "Discussions is the space for your community to have conversations, ask questions and post answers without opening issues.": "讨论是您的社区进行对话、提问和发布答案的地方，而无需打开이슈。",
             "Get started with Discussions": "开始讨论",
             "Engage your community by having discussions right in your repository, where your community already lives": "通过在您的社区已经存在的仓库中进行讨论来吸引您的社区",
             "Set up discussions": "建立讨论",
@@ -14101,7 +14101,7 @@ I18N["zh-CN"]["repository/settings"] = { // 仓库设置 - 通常 /<user-name>/<
             "This repository is currently private.": "该仓库当前是私有的。",
             "I want to make this repository public": "我想将此仓库设为公开",
                 "The code will be visible to everyone who can visit https://github.com": "所有可以访问 https://github.com 的人都可以看到代码",
-                "Attachments uploaded to this repository's issues and pull requests will not be accessible unless it is made private again.": "上传到此仓库的议题和拉取请求的附件将无法访问，除非再次设为私有。",
+                "Attachments uploaded to this repository's issues and pull requests will not be accessible unless it is made private again.": "上传到此仓库的이슈和拉取请求的附件将无法访问，除非再次设为私有。",
                 "Anyone can fork your repository.": "任何人都可以复刻您的仓库。",
                 "All push rulesets will be disabled.": "所有推送规则集都将被禁用。",
                 "Your changes will be published as activity.": "您的更改将作为活动发布。",
@@ -14163,7 +14163,7 @@ I18N["zh-CN"]["repository/settings"] = { // 仓库设置 - 通常 /<user-name>/<
             "Code scanning": "代码扫描",
             "Before you archive, please consider:": "在您存档之前，请考虑：",
             "Updating any repository settings": "更新仓库设置",
-            "Closing all open issues and pull requests": "关闭所有打开的议题和拉取请求",
+            "Closing all open issues and pull requests": "关闭所有打开的이슈和拉取请求",
             "Making a note in your README": "在您的 README 中做个说明",
             "Please type": "请键入",
             "to confirm.": "进行确定。",
@@ -14199,8 +14199,8 @@ I18N["zh-CN"]["repository/settings"] = { // 仓库设置 - 通常 /<user-name>/<
                 "I want to delete this repository": "我想删除这个仓库",
 
                 "This will permanently delete the": "这将永久删除",
-                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all collaborator associations.": "仓库、Wiki、议题、评论、软件包、机密、工作流程，并删除所有协作者关联。",
-                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all team associations.": "仓库、Wiki、议题、评论、软件包、机密、工作流程，并删除所有团队关联。", // 组织仓库
+                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all collaborator associations.": "仓库、Wiki、이슈、评论、软件包、机密、工作流程，并删除所有协作者关联。",
+                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all team associations.": "仓库、Wiki、이슈、评论、软件包、机密、工作流程，并删除所有团队关联。", // 组织仓库
                 "This will not change your billing plan. If you want to downgrade, you can do so in your Billing Settings.": "这并不会更改您的结算方案。 如果您想降级，可以在结算设置中进行降级。",
 
     },
@@ -14314,7 +14314,7 @@ I18N["zh-CN"]["repository/settings/interaction_limits"] = { // 仓库设置 - �
         // 审查设置 (仓库)互动限制 /<user-name>/<repo-name>/settings/interaction_limits
         // 同全局 同组织仓库
             "Temporary interaction limits": "临时互动限制",
-            "Temporarily restrict which external users can interact with your repository (comment, open issues, or create pull requests) for a configurable period of time.": "在配置的时间段内，可临时限制哪些外部用户与您的仓库互动（评论、打开议题或创建拉取请求）。",
+            "Temporarily restrict which external users can interact with your repository (comment, open issues, or create pull requests) for a configurable period of time.": "在配置的时间段内，可临时限制哪些外部用户与您的仓库互动（评论、打开이슈或创建拉取请求）。",
             "This may be used to force a \"cool-down\" period during heated discussions or prevent unwanted interactions.": "可用于在激烈讨论期间，强制进入 “冷静” 期或防止不必要的互动。",
 
             "You can restrict repository interactions across your account in your": "您可以限制仓库交互，在您的账户设置中的",
@@ -15162,7 +15162,7 @@ I18N["zh-CN"]["repository/settings/actions"] = { // 仓库设置 - 操作 /<user
             "Runner image": "运行器镜像",
             "Architecture": "架构",
             "Download": "下载",
-            "We recommend configuring the runner under \"\\actions-runner\". This will help avoid issues related to service identity folder permissions and long path restrictions on Windows.": "我们建议在 “\\actions-runner” 下配置运行器。这将有助于避免与 Windows 上的服务标识文件夹权限和长路径限制相关的议题。",
+            "We recommend configuring the runner under \"\\actions-runner\". This will help avoid issues related to service identity folder permissions and long path restrictions on Windows.": "我们建议在 “\\actions-runner” 下配置运行器。这将有助于避免与 Windows 上的服务标识文件夹权限和长路径限制相关的이슈。",
             "Configure": "设置",
             "Using your self-hosted runner": "使用您的自托管运行器",
             "For additional details about configuring, running, or shutting down the runner, please check out our": "关于配置、运行或关闭运行器的其他细节，请查看我们的",
@@ -15276,10 +15276,10 @@ I18N["zh-CN"]["repository/settings/hooks"] = { // 仓库设置 - Web 钩子 /<us
                         "Discussion created, edited, closed, reopened, pinned, unpinned, locked, unlocked, transferred, answered, unanswered, labeled, unlabeled, had its category changed, or was deleted.": "讨论的创建、编辑、关闭、重新打开、置顶、取消置顶、锁定、解锁、转移、答复、取消答复、标记、取消标记、更改其类别或删除。",
                     "Forks": "复刻",
                         "Repository forked.": "仓库复刻。",
-                    "Issue comments": "议题评论",
-                        "Issue comment created, edited, or deleted.": "议题评论的创建、编辑或删除。",
+                    "Issue comments": "이슈评论",
+                        "Issue comment created, edited, or deleted.": "이슈评论的创建、编辑或删除。",
                     // "Issue": "이슈",
-                        "Issue opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned, locked, or unlocked.": "议题的打开、编辑、删除、转移、置顶、取消置顶、关闭、重新打开、分配、取消分配、标记、取消标记、设置里程碑、取消里程碑、锁定或解锁。",
+                        "Issue opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned, locked, or unlocked.": "이슈的打开、编辑、删除、转移、置顶、取消置顶、关闭、重新打开、分配、取消分配、标记、取消标记、设置里程碑、取消里程碑、锁定或解锁。",
                     "Labels": "标签",
                         "Label created, edited or deleted.": "标签的创建、编辑或删除。",
                     "Memberships": "团队成员", // 组织设置
@@ -16250,7 +16250,7 @@ I18N["zh-CN"]["repository/settings/key_links"] = { // 仓库设置 - 自动链�
                     "Numeric autolinks only match": "只匹配",
 
                 "Reference prefix": "引用前缀",
-                    "This prefix appended by a string will generate a link any time it is found in an issue, pull request, or commit.": "这段前缀加上一个字符串后，在议题、拉取请求或提交中找到时将生成一个链接。",
+                    "This prefix appended by a string will generate a link any time it is found in an issue, pull request, or commit.": "这段前缀加上一个字符串后，在이슈、拉取请求或提交中找到时将生成一个链接。",
                 "Target URL": "目标链接",
                     "The URL must contain": "该链接必须包含",
                     "for the reference number.": "作为引用编号。",
@@ -16264,7 +16264,7 @@ I18N["zh-CN"]["repository/transfer"] = { // 转让仓库
         // 转让仓库 /<user-name>/<repo-name>/transfer
             "Transfer this repository to another user or to an organization where you have the ability to create repositories.": "将该仓库转让给另一位用户或一个您可以创建仓库的组织。",
             "Required fields are marked with an asterisk (*).": "带星号 (*) 的为必填项。",
-            "To understand admin access, teams, issue assignments, and redirects after a repository is transferred, see": "要了解仓库转移后的管理员访问权限、团队、议题分配和重定向，请参阅",
+            "To understand admin access, teams, issue assignments, and redirects after a repository is transferred, see": "要了解仓库转移后的管理员访问权限、团队、이슈分配和重定向，请参阅",
             "Transferring a repository": "转让仓库",
             "in GitHub Help.": "在 GitHub 帮助中。",
             "Transferring may be delayed until the new owner approves the transfer.": "转让可能会延迟，直到新所有者批准转让。",
@@ -16300,7 +16300,7 @@ I18N["zh-CN"]["repository/transfer"] = { // 转让仓库
                 "Draft": "草案",
                 "PRs": "拉取请求",
                 "Multiple assignees": "多个受让人",
-                "for issues and PRs": "的议题和拉取请求",
+                "for issues and PRs": "的이슈和拉取请求",
                 "Multiple reviewers": "多个审查者",
                 "for PRs": "的拉去请求",
                 "Branch and tag protection rules": "分支和标签保护规则",
@@ -16429,7 +16429,7 @@ I18N["zh-CN"]["homepage"] = { // 未登录的首页
         // 代码
             "Build code quickly and more securely with GitHub Copilot embedded throughout your workflows.": "使用嵌入在整个工作流程中的 GitHub Copilot 快速、更安全地构建代码。",
         "Plan": "计划",
-            "Track and coordinate your work with GitHub Issues, GitHub Projects, and insights.": "使用 GitHub 议题、GitHub 项目和见解来跟踪和协调您的工作。",
+            "Track and coordinate your work with GitHub Issues, GitHub Projects, and insights.": "使用 GitHub 이슈、GitHub 项目和见解来跟踪和协调您的工作。",
         "Collaborate": "协作",
             "Work easily with your team in real time with GitHub Pull Requests, code reviews, and GitHub Discussions.": "通过 GitHub 拉取请求、代码审查和 GitHub 讨论轻松地与您的团队实时合作。",
         "Automate": "自动化",
@@ -16491,8 +16491,8 @@ I18N["zh-CN"]["homepage"] = { // 未登录的首页
             "It helps us onboard new software engineers and get them productive right away. We have all our source code, issues, and pull requests in one place... GitHub is a complete platform that frees us from menial tasks and enables us to do our best work.": "它可以帮助我们吸收新的软件工程师，让他们立即投入工作。我们的所有源代码、问题和拉取请求都在一个地方... GitHub 是一个完整的平台，它将我们从琐碎的工作中解脱出来，让我们能够全力以赴。",
                 "Application manager at Mercedes-Benz": "Mercedes-Benz 应用管理员",
             "Keep track of your tasks": "跟踪任务",
-                "Create issues and manage projects with tools that adapt to your code.": "创建议题和管理项目的工具能适应您的代码。",
-                "Explore GitHub Issues": "探索 GitHub 议题",
+                "Create issues and manage projects with tools that adapt to your code.": "创建이슈和管理项目的工具能适应您的代码。",
+                "Explore GitHub Issues": "探索 GitHub 이슈",
             "Share ideas and ask questions": "交流想法和提出问题",
                 "Create space for open-ended conversations alongside your project.": "在开展项目的同时，为开放式对话创造空间。",
                 "Discover GitHub Discussions": "探索 GitHub 讨论",
@@ -16565,9 +16565,9 @@ I18N["zh-CN"]["homepage"] = { // 未登录的首页
         //"Supercharge collaboration": "加强协作",
         //"GitHub helps your teams work more efficiently together.": "GitHub 帮助您的团队更高效地协作。",
 
-        //"GitHub Issues and GitHub Projects": "GitHub 议题和 GitHub 项目",
+        //"GitHub Issues and GitHub Projects": "GitHub 이슈和 GitHub 项目",
         //"supply project management tools that adapt to your team alongside your code.": "提供了适合您的团队和代码的项目管理工具。",
-        //"Get started with GitHub Issues": "开始使用 GitHub 议题",
+        //"Get started with GitHub Issues": "开始使用 GitHub 이슈",
 
         //"reduction in onboarding time with GitHub": "使用 GitHub 缩短入职时间",
 
@@ -17349,19 +17349,19 @@ I18N["zh-CN"]["notifications/subscriptions"] = { //订阅的仓库页面
             "Any reason": "任何原因",
             "Show all subscriptions": "显示所有订阅",
             "Assign": "分配",
-            "You were assigned to the Issue/PR.": "您被分配到议题/拉取请求。",
+            "You were assigned to the Issue/PR.": "您被分配到이슈/拉取请求。",
             "Author": "作者",
             "You created the thread.": "您创造了这个话题。",
             "Comment": "评论",
             "You commented on the thread.": "您评论了这个话题。",
             "Manual": "手动",
-            "You subscribed to the thread (via an Issue or Pull Request).": "您订阅了该主题（通过议题或拉取请求）。",
+            "You subscribed to the thread (via an Issue or Pull Request).": "您订阅了该主题（通过이슈或拉取请求）。",
             "Mention": "提及",
             "You were specifically @mentioned in the content.": "在内容中特别 @您。",
             "Review Requested": "请求审查",
             "You were requested for review.": "您被要求进行审查。",
             "State Change": "状态变化",
-            "You changed the thread state (for example, closing an Issue or merging a Pull Request).": "您更改了话题状态（例如，关闭议题或合并拉取请求）。",
+            "You changed the thread state (for example, closing an Issue or merging a Pull Request).": "您更改了话题状态（例如，关闭이슈或合并拉取请求）。",
             "Team Mention": "提及团队",
             "You were on a team that was mentioned.": "您在团队中被提及。",
         "Repository": "仓库",
@@ -17438,14 +17438,14 @@ I18N["zh-CN"]["stars"] = { // 星标 https://github.com/stars/<user-name>
     ],
 };
 
-I18N["zh-CN"]["issues"] = { // 议题页面
+I18N["zh-CN"]["issues"] = { // 이슈页面
     "static": { // 静态翻译
         "Pull requests": "병합요청", // pulls
 
         "Created": "已创建",
         "Assigned": "已分配",
         "Mentioned": "提到的",
-            "Issues mentioning you": "提及您的议题",
+            "Issues mentioning you": "提及您的이슈",
             "Pull Requests mentioning you": "提及您的拉取请求", // pulls
         "Review requests": "审查请求", // pulls
             "Pull Requests requesting your review": "请求您审查的拉取请求", // pulls
@@ -17480,11 +17480,11 @@ I18N["zh-CN"]["issues"] = { // 议题页面
         "outdated": "陈旧的",
         "Draft": "草案",
 
-        "This issue was": "此议题已",
+        "This issue was": "此이슈已",
             "closed": "关闭",
 
         // "No results matched your search.": "没有符合您的搜索结果。",
-        "Search all issues": "搜索所有议题",
+        "Search all issues": "搜索所有이슈",
         // 筛选结果
         "No results matched your search.": "没有与您的搜索匹配的结果。",
         "You could search": "您可以搜索",
@@ -17494,7 +17494,7 @@ I18N["zh-CN"]["issues"] = { // 议题页面
 
         // "Use the links above to find what you’re looking for, or try": "使用上面的链接找到您要找的内容，或尝试",
         // "a new search query": "新的搜索查询",
-        // ". The Filters menu is also super helpful for quickly finding issues most relevant to you.": "。筛选菜单也是快速找到议题最相关的您超级有帮助的。",
+        // ". The Filters menu is also super helpful for quickly finding issues most relevant to you.": "。筛选菜单也是快速找到이슈最相关的您超级有帮助的。",
         // "Updated in the last three days": "更新了最后三天：",
         "ProTip!": "专业提示！",
             "Exclude your own issues with": "排除自己的问题",
@@ -17510,16 +17510,16 @@ I18N["zh-CN"]["issues"] = { // 议题页面
                 "Open github.dev editor in a new tab"  : "在新标签页中打开 github.dev 编辑器",
                 "Submit comment": "提交评论",
                 "Submit comment and close or open pull request": "提交评论并关闭或打开拉取请求",
-                "Submit comment and close issue": "提交评论并关闭??议题", // 议题
+                "Submit comment and close issue": "提交评论并关闭??이슈", // 이슈
                 "Preview comment": "预览评论",
-                "Create issue": "创建议题", //议题
+                "Create issue": "创建이슈", //이슈
                 "Request reviewers": "请求审查者",
                 "Filter by author"             : "按作者筛选",
                 "Filter by or edit assignees"  : "按受理人筛选或编辑受理人",
                 "Filter by or edit labels"     : "按标签筛选或编辑标签",
                 "Filter by or edit projects"   : "按项目筛选或编辑项目",
                 "Filter by or edit milestones" : "按里程碑筛选或编辑里程碑",
-                "Link an issue or pull request from the same repository": "链接同一仓库的议题或拉取请求",
+                "Link an issue or pull request from the same repository": "链接同一仓库的이슈或拉取请求",
                 "Reply (quoting selected text)": "答复（引用所选文本）",
                 "Open saved replies": "打开快捷回复（引用所选文本）",
                 "Insert saved reply (with open saved replies)": "插入快捷回复（打开快捷回复）",
@@ -17543,7 +17543,7 @@ I18N["zh-CN"]["issues"] = { // 议题页面
         [/(\d+) tasks?/, "$1 个任务"],
         [/(\d+) review approvals?/, "$1 次审查批准"],// 拉取请求页 "已批准' 浮动提示
         [/(\d+) review requesting changes?/, "$1 条请求更改评论"],
-        [/([\d,]+) linked issues?/, "$1 个关联议题"],
+        [/([\d,]+) linked issues?/, "$1 个关联이슈"],
         [/([\d,]+) linked pull requests?/, "$1 个关联拉取请求"],
         [/(\d+) \/ (\d+) checks? OK/, "$1 / $2 检查 OK"], // 对勾 的提醒 /pulls
         [/Assigned to ([^ ]+)/, "分配给 $1"],
@@ -17584,7 +17584,7 @@ I18N["zh-CN"]["search"] = { // 搜索页面
             "Finds repositories with…": "查找仓库...",
             "Repository search": "仓库搜索",
             "Code search": "代码搜索",
-            "Issue search": "议题搜索",
+            "Issue search": "이슈搜索",
             "User search": "用户搜索",
 
         // 搜索结果页面 https://github.com/search?q=  >>>>>>>>>>>>>>>>>>>>>>>>
@@ -17701,7 +17701,7 @@ I18N["zh-CN"]["search"] = { // 搜索页面
                 "Least recently committed": "最早提交",
                 "Recently authored": "最近撰写",
                 "Least recently authored": "最早撰写",
-                // 议题
+                // 이슈
                 "Most commented": "最多评论",
                 "Least commented": "最少评论",
                 "Newest": "最新",
@@ -17780,9 +17780,9 @@ I18N["zh-CN"]["search"] = { // 搜索页面
                 "Before you can access our code search functionality please sign in or create a free account.": "在使用代码搜索功能之前，请先登录或创建一个免费帐户。",
 
             // &type=issues
-                "Learn how you can use GitHub Issues to plan and track your work.": "了解如何使用 GitHub 议题计划和跟踪工作。",
-                "Save views for sprints, backlogs, teams, or releases. Rank, sort, and filter issues to suit the occasion. The possibilities are endless.": "保存冲刺、待办事项、团队或发布的视图。根据场合对议题进行排名、排序和筛选。可能性是无止境。",
-                "Learn more about GitHub Issues": "了解更多关于 GitHub 议题的信息",
+                "Learn how you can use GitHub Issues to plan and track your work.": "了解如何使用 GitHub 이슈计划和跟踪工作。",
+                "Save views for sprints, backlogs, teams, or releases. Rank, sort, and filter issues to suit the occasion. The possibilities are endless.": "保存冲刺、待办事项、团队或发布的视图。根据场合对이슈进行排名、排序和筛选。可能性是无止境。",
+                "Learn more about GitHub Issues": "了解更多关于 GitHub 이슈的信息",
 
             // &type=registrypackages
                 "Learn GitHub Packages": "了解 GitHub 软件包",
@@ -17898,8 +17898,8 @@ I18N["zh-CN"]["search"] = { // 搜索页面
             "Return code": "搜索结果",
             // "Return code from forked repositories": "搜索结果包括被复刻的仓库。",
 
-            "Issues options": "议题选项",
-            "In the state": "议题状态",
+            "Issues options": "이슈选项",
+            "In the state": "이슈状态",
                 "open/closed": "打开/关闭",
                 "open": "打开",
                 "closed": "已关闭",
@@ -17909,7 +17909,7 @@ I18N["zh-CN"]["search"] = { // 搜索页面
                 "not planned": "未计划",
                 "reopened": "重新打开",
             "With this many comments": "评论数量",
-            "With the labels": "议题标签",
+            "With the labels": "이슈标签",
             "Opened by the author": "提议人",
             "Mentioning the users": "提及谁",
             "Assigned to the users": "分配给谁",
@@ -17929,7 +17929,7 @@ I18N["zh-CN"]["search"] = { // 搜索页面
         [/(\d+(k|M|B)?) results?/, "$1 个结果"], // 顶部，数字后可能带 K、M、B 三种字母其中一个
         [/(\d+(k|M|B)?) files?/, "$1 个文件"], // 同上 https://github.com/search?q=<keyword>&type=code
         [/Show ([\d,]+) more matches?/, "显示更多 $1 处匹配"],
-        [/(\d+) issues? needs? help/, "$1 个议题需要帮助"],
+        [/(\d+) issues? needs? help/, "$1 个이슈需要帮助"],
         [/Sponsor ([^ ]+)?/, "赞助 $1"], // 赞助按钮 对话框 标题
         [/on (.+)/, "$1"], // 日期去除 on
     ],
@@ -19046,7 +19046,7 @@ I18N["zh-CN"]["marketplace"] = { // GitHub 市场
             "Project management": "项目管理",
                 "Project management apps": "项目管理应用",
                 "Project management actions": "项目管理操作",
-                "Organize, manage, and track your project with tools that build on top of issues and pull requests.": "使用基于置顶议题和拉取请求的工具来组织、管理和跟踪您的项目。",
+                "Organize, manage, and track your project with tools that build on top of issues and pull requests.": "使用基于置顶이슈和拉取请求的工具来组织、管理和跟踪您的项目。",
 
             "Publishing": "发布",
                 "Publishing apps": "发布应用",
@@ -19280,7 +19280,7 @@ I18N["zh-CN"]["marketplace"] = { // GitHub 市场
 
                 "Contributors": "贡献者",
                 "Start a discussion": "开始讨论",
-                "Open an issue": "打开议题",
+                "Open an issue": "打开이슈",
                 "View source code": "查看源代码",
                 "Security policy": "安全政策",
 
@@ -19729,7 +19729,7 @@ I18N["zh-CN"]["orgs"] = { // 组织页面
                     "Enforce certain workflows for one or more branches.": "为一个或多个分支强制执行某些工作流程。",
             "Automation and CI/CD": "自动化和 CI/CD",
                 "See more about automation and CI/CD": "查看更多关于自动化和 CI/CD 的信息",
-                "Auto-assign new issues": "自动分配新议题",
+                "Auto-assign new issues": "自动分配新이슈",
                     "Try automatically assigning work with GitHub Actions.": "尝试使用 GitHub Actions 自动分配工作。",
                 "Run a continuous integration test": "运行持续集成测试",
                     "Validate your code using a CI workflow.": "使用 CI 工作流程验证您的代码。",
@@ -19753,7 +19753,7 @@ I18N["zh-CN"]["orgs"] = { // 组织页面
         [/doesn't have any pinned public repositories yet./, "还没有任何置顶的公共仓库。"],
         [/You are viewing the README and pinned repositories as a member of the ([^ ]+) organization./, "您正在以 $1 组织成员的身份查看自述文件和置顶仓库。"],
         [/Invite a member to/, "邀请成员加入"],
-        [/\((\d+) issues? need help\)/, "($1 个议题需要帮助)"],
+        [/\((\d+) issues? need help\)/, "($1 个이슈需要帮助)"],
         [/([^ ]+)’s past year of commit activity/, "近几年 $1 的提交活动"],
         ...I18N["zh-CN"]["orgs-public"]["regexp"],
     ],
@@ -19935,7 +19935,7 @@ I18N["zh-CN"]["orgs/teams"] = { // 组织 - 团队标签卡
                 "Members can quickly request to join any team. An owner or team maintainer can approve the request.": "成员可以快速申请加入任何团队。一个所有者或团队维护者可以批准该请求。",
             "Team mentions": "团队提及",
                 "Use team @mentions (ex.": "使用团队 @提及（例如",
-                "for the entire team) in any comment, issue, or pull request.": "对于整个团队）在任何评论、议题或拉取请求中。",
+                "for the entire team) in any comment, issue, or pull request.": "对于整个团队）在任何评论、이슈或拉取请求中。",
                 "New team": "新建团队",
 
             "Find a team…": "搜索团队……",
@@ -20209,11 +20209,11 @@ I18N["zh-CN"]["orgs/settings/roles"] = { // 组织设置 - 仓库角色
                     "Read": "只读",
                         "Read and clone repositories. Open and comment on issues and pull requests.": "读取和克隆仓库。打开并评论问题和拉取请求。",
                     "Triage": "分级",
-                        "Read permissions plus manage issues and pull requests.": "读取权限外加管理议题和拉取请求的权限。",
+                        "Read permissions plus manage issues and pull requests.": "读取权限外加管理이슈和拉取请求的权限。",
                     "Write": "可写",
                         "Triage permissions plus read, clone and push to repositories.": "分级权限外加读取、克隆和推送到仓库。",
                     "Maintain": "维护",
-                        "Write permissions plus manage issues, pull requests and some repository settings.": "可写权限外加管理议题、拉取请求和一些仓库设置。",
+                        "Write permissions plus manage issues, pull requests and some repository settings.": "可写权限外加管理이슈、拉取请求和一些仓库设置。",
                     "Admin": "管理员",
                         "Full access to repositories including sensitive and destructive actions.": "对仓库的完全访问权限，包括敏感和破坏性操作。",
                         "Modify Admin Role": "修改管理角色",
@@ -20354,14 +20354,14 @@ I18N["zh-CN"]["orgs/settings/member_privileges"] = { // 组织设置 - 成员权
                             "Members can now delete or transfer repositories.": "成员现在可以删除或转让仓库。",
                             "Members can no longer delete or transfer repositories.": "成员不能再删除或转让仓库。",
 
-                    "Issue deletion": "议题删除",
-                        "Allow repository administrators to delete issues for this organization": "允许仓库管理员删除此组织的议题",
-                            "If enabled, members with admin permissions for the repository will be able to delete issues. If disabled, only organization owners can delete issues.": "如果启用，对仓库有管理权限的成员将能够删除议题。如果禁用，只有组织所有者可以删除议题。",
-                            "Learn more about allowing people to delete issues in your organization": "了解更多关于允许成员删除组织内议题的信息",
+                    "Issue deletion": "이슈删除",
+                        "Allow repository administrators to delete issues for this organization": "允许仓库管理员删除此组织的이슈",
+                            "If enabled, members with admin permissions for the repository will be able to delete issues. If disabled, only organization owners can delete issues.": "如果启用，对仓库有管理权限的成员将能够删除이슈。如果禁用，只有组织所有者可以删除이슈。",
+                            "Learn more about allowing people to delete issues in your organization": "了解更多关于允许成员删除组织内이슈的信息",
 
                         // 顶部提醒
-                            "Members can now delete issues.": "成员现在可以删除议题。",
-                            "Members can no longer delete issues.": "成员不能再删除议题。",
+                            "Members can now delete issues.": "成员现在可以删除이슈。",
+                            "Members can no longer delete issues.": "成员不能再删除이슈。",
 
                 "Member team permissions": "成员团队权限",
                     "Team creation rules": "团队创建规则",
@@ -20383,7 +20383,7 @@ I18N["zh-CN"]["orgs/settings/teams"] = { // 组织设置 - 团队讨论
         ...I18N["zh-CN"]["orgs-settings-menu"]["static"],
 
         // 团队讨论 /organizations/<org-login>/settings/teams
-            "Team discussions provide a place for a team to have conversations that span across projects or repositories and that don’t belong in an issue or a pull request.": "团队讨论为团队提供了一个进行跨项目或仓库，且不属于议题或拉取请求的对话的场所。",
+            "Team discussions provide a place for a team to have conversations that span across projects or repositories and that don’t belong in an issue or a pull request.": "团队讨论为团队提供了一个进行跨项目或仓库，且不属于이슈或拉取请求的对话的场所。",
             "Enable team discussions for this organization": "为此组织启用团队讨论",
                 "This allows members to start discussions in any team in the": "这允许成员在任何团队中开始讨论，在",
             "organization.": "组织中。",
@@ -20431,7 +20431,7 @@ I18N["zh-CN"]["orgs/settings/blocked_users"] = { // 组织设置 - 黑名单
         // Blocked users 黑名单 /organizations/<org-login>/settings/blocked_users
             "Block a user": "拉黑用户",
             "Blocking a user prevents the following on all your repositories:": "拉黑用户可以防止所有仓库中的以下操作：",
-            "opening or commenting on issues or pull requests": "打开或评论议题或拉取请求",
+            "opening or commenting on issues or pull requests": "打开或评论이슈或拉取请求",
             "starring, forking, or watching": "加星标、复刻、关注",
             "adding or editing wiki pages": "添加或编辑 Wiki 页面",
 
@@ -20459,7 +20459,7 @@ I18N["zh-CN"]["orgs/settings/interaction_limits"] = { // 组织设置 - 互动�
 
         // Interaction limits 互动限制 /organizations/<org-login>/settings/interaction_limits
             "Temporary interaction limits": "临时互动限制",
-            "Temporarily restrict which external users can interact with your repositories (comment, open issues, or create pull requests) for a configurable period of time. Users who are members of this organization will not be affected by these limits.": "在配置的时间段内，可临时限制哪些外部用户与您的仓库互动（评论、打开议题或创建拉取请求）。作为该组织成员的用户将不受这些限制的影响。",
+            "Temporarily restrict which external users can interact with your repositories (comment, open issues, or create pull requests) for a configurable period of time. Users who are members of this organization will not be affected by these limits.": "在配置的时间段内，可临时限制哪些外部用户与您的仓库互动（评论、打开이슈或创建拉取请求）。作为该组织成员的用户将不受这些限制的影响。",
             "This may be used to force a \"cool-down\" period during heated discussions or prevent unwanted interactions.": "可用于在激烈讨论期间，强制进入 “冷静” 期或防止不必要的互动。",
             "Interaction limits may already exist in your organization's": "互动限制可能已经存在于您的组织",
             "public repositories": "公开仓库",
@@ -20586,10 +20586,10 @@ I18N["zh-CN"]["orgs/settings/repository-defaults"] = { // 组织设置 - 仓库 
             "documentation": "文档",
                 "Improvements or additions to documentation": "文档的改进或补充",
             "duplicate": "重复",
-                "This issue or pull request already exists": "这个议题或拉取请求已经存在",
+                "This issue or pull request already exists": "这个이슈或拉取请求已经存在",
             "enhancement": "增强",
                 "New feature or request": "新功能或请求",
-            "good first issue": "好的首发议题",
+            "good first issue": "好的首发이슈",
                 "Good for newcomers": "适合新人",
             "help wanted": "需要帮助",
                 "Extra attention is needed": "需要特别关注",
@@ -20845,7 +20845,7 @@ I18N["zh-CN"]["orgs/settings/actions"] = { // 组织设置 - 操作
             "Architecture": "架构",
             "Download": "下载",
             // win 64
-            "We recommend configuring the runner under \"\\actions-runner\". This will help avoid issues related to service identity folder permissions and long path restrictions on Windows.": "我们建议在 “\\actions-runner” 下配置运行器。这将有助于避免与 Windows 上的服务标识文件夹权限和长路径限制相关的议题。",
+            "We recommend configuring the runner under \"\\actions-runner\". This will help avoid issues related to service identity folder permissions and long path restrictions on Windows.": "我们建议在 “\\actions-runner” 下配置运行器。这将有助于避免与 Windows 上的服务标识文件夹权限和长路径限制相关的이슈。",
             // macOS-arm64
             "macOS-arm64 runners are currently in pre-release status and subject to change.": "macOS-arm64 的运行器目前处于预发布状态，可能会有变化。",
             "Configure": "设置",
@@ -21852,14 +21852,14 @@ I18N["zh-CN"]["projects"] = { // 项目页面(含仓库项目)
                 "Open cs.github.com in a new tab": "在新标签页中打开 cs.github.com",
                 "Focus secondary search bar" : "聚焦二级搜索栏",
                 "Go to Code"                 : "跳转到代码",
-                "Go to Issues"               : "跳转到议题",
+                "Go to Issues"               : "跳转到이슈",
                 "Go to Pull Requests"        : "跳转到拉取请求",
                 "Go to Actions"              : "跳转到操作",
                 "Go to Projects"             : "跳转到项目",
                 "Go to Wiki"                 : "跳转到 Wiki",
                 "Go to Discussions"          : "跳转到讨论",
 
-        // 公共词 简版 议题&拉取请求信息
+        // 公共词 简版 이슈&拉取请求信息
             "opened by": "打开者",
             "Opened in": "打开在",
             "commented": "评论于",
@@ -21871,9 +21871,9 @@ I18N["zh-CN"]["projects"] = { // 项目页面(含仓库项目)
             "Milestone": "里程碑",
                 "No milestone": "尚无里程碑",
             "Linked pull requests": "关联的拉取请求",
-                "Successfully merging a pull request may close this issue.": "成功合并一个拉取请求可能会关闭此议题。",
+                "Successfully merging a pull request may close this issue.": "成功合并一个拉取请求可能会关闭此이슈。",
             "None yet": "暂无",
-            "Go to issue for full details": "跳转到议题以获取完整详细信息",
+            "Go to issue for full details": "跳转到이슈以获取完整详细信息",
 
             "Loading details…": "载入细节…",
 
@@ -21893,7 +21893,7 @@ I18N["zh-CN"]["projects"] = { // 项目页面(含仓库项目)
                 "Basic kanban": "基础看板",
                     "Basic kanban-style board with columns for To do, In progress and Done.": "基础风格看板，带有待办、进行中和已完成等栏目。",
                 "Automated kanban": "自动化看板",
-                    "Kanban-style board with built-in triggers to automatically move issues and pull requests across To do, In progress and Done columns.": "带有内置触发器的风格看板，可以自动将议题和拉取请求移到待办、进行中和已完成栏目中。",
+                    "Kanban-style board with built-in triggers to automatically move issues and pull requests across To do, In progress and Done columns.": "带有内置触发器的风格看板，可以自动将이슈和拉取请求移到待办、进行中和已完成栏目中。",
                 "Automated kanban with reviews": "带审查的自动看板",
                     "Everything included in the Automated kanban template with additional triggers for pull request reviews.": "除了包含自动化看板模板中的所有内容，还有拉取请求审查的额外触发器。",
                 "Bug triage": "BUG 分类",
@@ -21914,16 +21914,16 @@ I18N["zh-CN"]["projects"] = { // 项目页面(含仓库项目)
 
         // 仓库 项目页面  /<user-name>/<repo-name>/projects >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             "Welcome to the all-new projects": "欢迎访问全新的项目",
-            "Built like a spreadsheet, project tables give you a live canvas to filter, sort, and group issues and pull requests. Tailor them to your needs with custom fields and saved views.": "构建像电子表格一样的项目表，给您一个实时的画布来对议题和拉取请求进行筛选、排序和分组。通过自定义字段和保存的视图，使它们符合您的需要。",
+            "Built like a spreadsheet, project tables give you a live canvas to filter, sort, and group issues and pull requests. Tailor them to your needs with custom fields and saved views.": "构建像电子表格一样的项目表，给您一个实时的画布来对이슈和拉取请求进行筛选、排序和分组。通过自定义字段和保存的视图，使它们符合您的需要。",
 
             "This repository doesn't have any projects yet": "该仓库目前没有任何项目",
             "Create a project": "创建一个项目",
 
-            "Organize your issues with project boards": "使用项目面板组织您的议题",
+            "Organize your issues with project boards": "使用项目面板组织您的이슈",
             "Did you know you can manage projects in the same place you keep your code? Set up a project board on GitHub to streamline and automate your workflow.": "您知道您可以在保存代码的同一个地方管理项目吗？在 GitHub 上设置项目面板以简化和自动化您的工作流程。",
 
             "Sort tasks": "排序任务",
-            "Add issues and pull requests to your board and prioritize them alongside note cards containing ideas or task lists.": "将议题和拉取请求添加到您的看板中，并将它们与包含想法或任务清单的笔记卡一起进行优先排序。",
+            "Add issues and pull requests to your board and prioritize them alongside note cards containing ideas or task lists.": "将이슈和拉取请求添加到您的看板中，并将它们与包含想法或任务清单的笔记卡一起进行优先排序。",
             "Plan your project": "规划项目",
             "Sort tasks into columns by status. You can label columns with status indicators like \"To Do\", \"In Progress\", and \"Done\".": "将任务按状态分类成列。您可以用 “待办”、“进行中” 和 “已完成” 等状态指标给各栏贴上标签。",
             "Automate your workflow": "自动化工作流程",
@@ -21962,7 +21962,7 @@ I18N["zh-CN"]["projects"] = { // 项目页面(含仓库项目)
         // https://github.com/users/<user-name>/projects/<id>
             // 键盘快捷键
                 "Project card shortcuts": "项目卡快捷键",
-                    "Open the issue or pull request associated with the focused card in the sidebar": "聚焦卡片的侧边栏中打开相关联的议题或拉取请求",
+                    "Open the issue or pull request associated with the focused card in the sidebar": "聚焦卡片的侧边栏中打开相关联的이슈或拉取请求",
                 "Moving a card": "移动卡片",
                     "Start moving the focused card": "开始移动聚焦卡片",
                     "Cancel the move in progress": "取消正在进行的移动",
@@ -21994,7 +21994,7 @@ I18N["zh-CN"]["projects"] = { // 项目页面(含仓库项目)
             // 工具栏
             "Add cards": "添加卡片",
                 "You can use the filters available in": "您可使用的筛选器在",
-                "issue search": "议题搜索",
+                "issue search": "이슈搜索",
                 "Loading search results…": "载入搜索结果…",
                 "Search results": "搜索结果",
                 "More": "更多",
@@ -22074,11 +22074,11 @@ I18N["zh-CN"]["projects"] = { // 项目页面(含仓库项目)
                         "This column will not be automated": "本栏目将不会自动化",
                     "To do": "待办",
                         "Planned but not started": "已计划但未开始",
-                        "Move issues here when…": "当…时，将议题移至此处",
+                        "Move issues here when…": "当…时，将이슈移至此处",
                             "Newly added": "新添加的",
-                                "Issues will automatically move here when added to this project.": "添加到此项目时，议题将自动移至此处。",
+                                "Issues will automatically move here when added to this project.": "添加到此项目时，이슈将自动移至此处。",
                             "Reopened": "重新打开",
-                                "If a closed issue in this project reopens, it will automatically move here.": "如果此项目中已关闭的议题重新打开，它将自动移至此处。",
+                                "If a closed issue in this project reopens, it will automatically move here.": "如果此项目中已关闭的이슈重新打开，它将自动移至此处。",
                         "Move pull requests here when…": "当…时，将拉取请求移到此处",
                             "Pull requests will automatically move here when added to this project.": "添加到此项目时，拉取请求将自动移至此处。",
                             "If a closed pull request in this project reopens, it will automatically move here.": "如果此项目中已关闭的拉取请求重新打开，它将自动移至此处。",
@@ -22092,7 +22092,7 @@ I18N["zh-CN"]["projects"] = { // 项目页面(含仓库项目)
                     "Done": "已完成",
                         "Items are complete": "项目已完成",
                         "Closed": "已关闭",
-                            "If an open issue in this project is closed, it will automatically move here.": "如果该项目中的一个打开的议题被关闭，它将自动转移到这里。",
+                            "If an open issue in this project is closed, it will automatically move here.": "如果该项目中的一个打开的이슈被关闭，它将自动转移到这里。",
                         "Merged": "已合并",
                             "If an open pull request in this project is merged, it will automatically move here.": "如果该项目中的一个打开的拉取请求被合并，它将自动转移到这里。",
                         "Closed with unmerged commits": "已关闭的未合并的提交",
@@ -22135,10 +22135,10 @@ I18N["zh-CN"]["projects"] = { // 项目页面(含仓库项目)
             "This action will remove any cards and automation preset associated with the column.": "此操作将删除与该列关联的所有卡片和自动化预设。",
 
             "Copy card link": "复制卡片链接",
-            "Convert to issue": "转换为议题",
-                "Convert note to issue": "转换注释为议题",
+            "Convert to issue": "转换为이슈",
+                "Convert note to issue": "转换注释为이슈",
                 "Repository": "仓库",
-                    "Choose a repository for this issue": "为这个议题选择一个仓库",
+                    "Choose a repository for this issue": "为这个이슈选择一个仓库",
                     "Find a repository": "查找仓库",
                     "Title": "标题",
                     "Body": "内容",
@@ -22276,11 +22276,11 @@ I18N["zh-CN"]["projects"] = { // 项目页面(含仓库项目)
 
             "Pull Request closed without merge": "拉取请求关闭而不合并",
             "Pull Request merged": "合并拉取请求",
-            "Issue closed": "议题已关闭",
+            "Issue closed": "이슈已关闭",
             "Pull Request reopened": "拉取请求已重新打开",
-            "Issue reopened": "议题已重新打开",
+            "Issue reopened": "이슈已重新打开",
             "Pull Request pending card added": "添加了拉取请求待办卡",
-            "Issue pending card added": "添加了议题待办卡",
+            "Issue pending card added": "添加了이슈待办卡",
 
             "automation": "自动化",
             "to the": "到",
@@ -22799,8 +22799,8 @@ I18N["zh-CN"]["status"] = { // GitHub Status
                 "Requests for GitHub APIs": "GitHub API 请求",
             "Webhooks": "Web 钩子",
                 "Real time HTTP callbacks of user-generated and system events": "实时 HTTP 回调用户生成的事件和系统事件",
-            // 议题
-                "Requests for Issues on GitHub.com": "GitHub.com 上的议题请求",
+            // 이슈
+                "Requests for Issues on GitHub.com": "GitHub.com 上的이슈请求",
             "Pull requests": "병합요청",
                 "Requests for Pull Requests on GitHub.com": "GitHub.com 上的拉取请求",
             // 操作
@@ -22817,7 +22817,7 @@ I18N["zh-CN"]["status"] = { // GitHub Status
 
         // https://www.githubstatus.com/history
             "Incident with Packages": "软件包事故",
-            "Incident with Issues": "议题事故",
+            "Incident with Issues": "이슈事故",
             "Incident with Codespaces": "代码空间事故",
             "Incident with Copilot": "Copilot 事故",
             "Incident with Pull Requests": "拉取请求事故",
@@ -23042,7 +23042,7 @@ I18N["zh-CN"]["skills"] = { // https://skills.github.com/
             "Not everyone reads docs! Many potential course authors will use your course as an example. Make sure to include lots of comments in your README and Actions workflow files.": "不是每个人都会阅读文档！许多潜在的课程作者会将您的课程作为范例。请确保在您的 README 和操作工作流程文件中包含大量注释。",
             "Keep everything you need in the one course repository.": "将您需要的一切都保存在一个课程仓库内。",
             "If you need your courses to have limited access, create an organization for your courses, make your courses private, and invite the specific users that need these courses to your organization.": "如果您需要限制课程的访问权限，请为您的课程创建一个组织，将您的课程设为私人课程，并邀请需要这些课程的特定用户加入您的组织。",
-            "Consider adding a Code of Conduct, contributing guide, and issue templates.": "考虑添加行为准则、贡献指南和议题模板。",
+            "Consider adding a Code of Conduct, contributing guide, and issue templates.": "考虑添加行为准则、贡献指南和이슈模板。",
             "Keep the number of files and folders in the root directory short. More items in the root level means the README is further down the page.": "尽量减少根目录中文件和文件夹的数量。根目录中的项目越多，README 就越靠近页面底部。",
             "Content": "内容",
                 "The more content you have, the more content you will have to update later. Be concise. Link to the GitHub Docs whenever you can.": "内容越多，以后需要更新的内容就越多。简明扼要。尽可能链接到 GitHub 文档。",
@@ -23387,7 +23387,7 @@ I18N["zh-CN"]["copilot"] = {
                         "While this model is better at reasoning, it is generally slower for everyday tasks and has limited capabilities in retrieving external data. Here are a few of the common actions that are not supported:": "虽然这种模型的推理能力更强，但在执行日常任务时通常速度较慢，而且检索外部数据的能力有限。以下是一些不支持的常见操作：",
                         "Not supported": "不支持",
                             "Using knowledge bases": "使用知识库",
-                            "Retrieving issues": "检索议题",
+                            "Retrieving issues": "检索이슈",
                             "Retrieving pull requests": "检索拉取请求",
                             "Retrieving discussions": "检索讨论",
             "uses AI. Check for mistakes.": "使用 AI。请检查错误。",
@@ -23734,61 +23734,61 @@ I18N["zh-CN"]["education"] = { // 教育页面，申请学生包会用到
                     "Update your location": "更新您的位置",
 
                     // 看板
-                    "Enabling Copilot": "启用 Copilot",
-                        "To ensure your free Copilot benefit is enabled, redeem by going to this link.": "要确保您的免费 Copilot 优惠已启用，请访问此链接进行兑换。",
+                    "Enabling Copilot": "启用 Copilot"，
+                        "To ensure your free Copilot benefit is enabled, redeem by going to this link.": "要确保您的免费 Copilot 优惠已启用，请访问此链接进行兑换。"，
 
-                    "Updates in Learn New Skills": "学习新技能的更新内容",
-                        "No new updates": "无更新",
+                    "Updates in Learn New Skills": "学习新技能的更新内容"，
+                        "No new updates": "无更新"，
 
-                    "Claimed offers": "已申请优惠",
-                        "Your explored offers failed to load, please refresh the page to see this content.": "加载失败，请刷新页面以查看此内容。",
+                    "Claimed offers": "已申请优惠"，
+                        "Your explored offers failed to load, please refresh the page to see this content.": "加载失败，请刷新页面以查看此内容。"，
 
             // https://education.github.com/learner/opportunities
-                "Community Exchange": "社区交流",
-                    "Community Exchange is a collection of student repositories for teaching, learning 和 collaborating.": "社区交流是一个用于教学、学习和合作的学生资源库。",
-                    "Go to Community Exchange": "前往社区交流",
-                "Updates in Find Opportunities": "寻找机遇的更新内容",
+                "Community Exchange": "社区交流"，
+                    "Community Exchange is a collection of student repositories for teaching, learning 和 collaborating.": "社区交流是一个用于教学、学习和合作的学生资源库。"，
+                    "Go to Community Exchange": "前往社区交流"，
+                "Updates in Find Opportunities": "寻找机遇的更新内容"，
 
             // https://education.github.com/learner/connect
-                "Events": "事件",
-                    "View more events": "查看更多",
-                    "See more": "详情",
-                "GitHub Education Live": "GitHub 教育直播",
-                    "Go to Twitch": "前往 Twitch",
+                "Events": "事件"，
+                    "View more events": "查看更多"，
+                    "See more": "详情"，
+                "GitHub Education Live": "GitHub 教育直播"，
+                    "Go to Twitch": "前往 Twitch"，
 
                 // 右侧
-                    "Updates in Get Connected": "获得联系更新内容",
-                    "Campus Expert": "校园专家",
-                        "Campus Experts are student leaders that strive to build diverse 和 inclusive technical communities.": "校园专家是学生领袖，他们努力建设多元化和包容性的技术社区。",
+                    "Updates in Get Connected": "获得联系更新内容"，
+                    "Campus Expert": "校园专家"，
+                        "Campus Experts are student leaders that strive to build diverse 和 inclusive technical communities.": "校园专家是学生领袖，他们努力建设多元化和包容性的技术社区。"，
 
-                        "Follow your Expert": "关注专家",
-                        "Follow student leaders trained by GitHub to get help with hackathons & events": "关注由 GitHub 培训的学生领袖，在黑客马拉松和活动中获得帮助",
+                        "Follow your Expert": "关注专家"，
+                        "Follow student leaders trained by GitHub to get help with hackathons & events": "关注由 GitHub 培训的学生领袖，在黑客马拉松和活动中获得帮助"，
 
-                    "Education blog": "教育博客",
-                        "View more": "查看更多",
+                    "Education blog": "教育博客"，
+                        "View more": "查看更多"，
 
-    },
+    }，
     "regexp":[
-        [/(\d+) requests?/, "$1 次"],
-        [/Hi, ([^ ]+)! You were last verified as a on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification 和 access to academic benefits./, (match, user, p1) => {
+        [/(\d+) requests?/， "$1 次"]，
+        [/Hi, ([^ ]+)! You were last verified as a on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification 和 access to academic benefits./， (match， user， p1) => {
                 const dateRegExp = I18N["zh-CN"]["public"]["time-regexp"];
-                const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
+                const translatedDate = dateRegExp。reduce((acc， [pattern， replacement]) => acc。replace(pattern， replacement)， p1);
                 return `您好，`+ user + `！您最近于${translatedDate}验证。您现在无需重新验证。从验证到享受学业福利之间可能会有一段等待时间。`;
             // return '您好，' + user + '！您最近于' + year + '年' + monthKey[month] + day + '日验证。您现在无需重新验证。从验证到享受学业福利之间可能会有一段等待时间。';
-        }],
-        [/Hi, ([^ ]+)! You were last verified as a student on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification 和 access to academic benefits./, (match, user, p1)=> {
+        }]，
+        [/Hi, ([^ ]+)! You were last verified as a student on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification 和 access to academic benefits./， (match， user， p1)=> {
             const dateRegExp = I18N["zh-CN"]["public"]["time-regexp"];
-            const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
+            const translatedDate = dateRegExp。reduce((acc， [pattern， replacement]) => acc。replace(pattern， replacement)， p1);
             return `您好，`+ user + `！您最近于${translatedDate}学生验证。您现在无需重新验证。从验证到享受学业福利之间可能会有一段等待时间。`;
             //return '您好，' + user + '！您最近于' + year + '年' + monthKey[month] + day + '日学生验证。您现在无需重新验证。从验证到享受学业福利之间可能会有一段等待时间。';
-        }],
-        [/(Submitted|Verified since) (.+)/, (match, opt, p1) => { // p1为(.+)
-            var optKey = {"Submitted": "提交于", "Verified since": "验证自",};
+        }]，
+        [/(Submitted|Verified since) (.+)/， (match， opt， p1) => { // p1为(.+)
+            var optKey = {"Submitted": "提交于"， "Verified since": "验证自"，};
             const dateRegExp = I18N["zh-CN"]["public"]["time-regexp"];
-            const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
+            const translatedDate = dateRegExp。reduce((acc， [pattern， replacement]) => acc。replace(pattern， replacement)， p1);
             return optKey[opt] + `${translatedDate}`;
-        }],
+        }]，
         //[/Verified since (.+)/, "验证自 $1"],
-        [/(\d+) views?/, "$1 次观看"],
-    ],
+        [/(\d+) views?/， "$1 次观看"]，
+    ]，
 };
