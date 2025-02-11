@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub 한국어 확장프로그램",
+    "version": "1.0",
+    "description": "GitHub 페이지의 내용을 한국어로 번역하는 확장프로그램",
+    "permissions": [
+      "storage",
+      "notifications"
+    ],
+    "host_permissions": [
+      "https://github.com/*",
+      "https://skills.github.com/*",
+      "https://gist.github.com/*",
+      "https://education.github.com/*",
+      "https://www.githubstatus.com/*",
+      "https://fanyi.iflyrec.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://github.com/*",
+          "https://skills.github.com/*",
+          "https://gist.github.com/*",
+          "https://education.github.com/*",
+          "https://www.githubstatus.com/*"
+        ],
+        "js": [
+          "korean.js",
+          "content.js"
+        ],
+        "run_at": "document_start"
+      }
+    ]
+  }
+  
