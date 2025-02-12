@@ -1115,9 +1115,9 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             ",": "，",
             ".": "。",
 
-            "Prev": "上一页",
-            "Previous": "上一页",
-            "Next": "下一页",
+            "Prev": "이전",
+            "Previous": "이전",
+            "Next": "다음",
 
             // 名词
             "Public": "공개",
@@ -1646,11 +1646,12 @@ I18N["ko-KR"]["orgs-public"] = { // 组织公共部分
 
 I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组织）
     "static": { // 静态翻译
-        // 顶部 GPT 聊天窗口
+        // GPT 부분
         "Ask Copilot": "Copilot에게 무엇이든 물어보세요!",
             "Open issues in facebook/react": "facebook/react의 열린 이슈",
-            "Pull requests in": "microsoft/vscode",
-            "microsoft/vscode": "에 있는 끌어오기 요청",
+            // "Pull requests in": "microsoft/vscode", 
+            // "microsoft/vscode": "에 있는 끌어오기 요청",
+            // -- 작동 안함 --
             "Recent commits in torvalds/linux": "torvalds/linux의 최근 커밋",
             "Find issues assigned to me": "나에게 할당된 이슈 찾기",
             "What is a hash table in JS?": "JS에서 해시 테이블이란?",
@@ -1664,8 +1665,8 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
             "Email validation regex in JS": "JS 이메일 검증 정규식",
             "What are Python decorators?": "Python 데코레이터란?",
             "Python Panda data analysis": "Python Panda 데이터 분석",
-            "How can you help?": "어떻게 도와줄 수 있어?",
-            "What can I do here?": "여기서 무엇을 할 수 있어?",
+            "How can you help?": "어떻게 도와줄 수 있어?", 
+            "What can I do here?": "내가 여기서 뭘 할 수 있을까?",
             "To-do list with local storage": "로컬 스토리지를 사용하는 할 일 목록",
             "A digital time zone clock": "디지털 시간대 시계",
             "Develop a weather dashboard": "날씨 대시보드 개발",
@@ -2062,7 +2063,7 @@ I18N["ko-KR"]["page-profile-public"] = { // 个人首页（含组织）
                 "128th pull request merged": "128번째 끌어오기 요청 병합함",
                 "1024th pull request merged": "1024번째 끌어오기 요청 병합함",
             // Starstruck
-                "Starstruck": "별표 애호가",
+                "Starstruck": "별에 매료됨",
                 "⭐️ 16 stars": "⭐️ 별표 16개",
                 "⭐️ 128 stars": "⭐️ 별표 128개",
                 "⭐️ 512 stars": "⭐️ 별표 512개",
@@ -2184,7 +2185,7 @@ I18N["ko-KR"]["page-profile"] = { // 个人首页
             "Filter repositories and gists": "저장소 및 gists 필터링하기",
             "Repositories": "저장소",
             "Gists": "gists",
-            "Filter repositories": "저장소 필터링하기", // 조직 페이지
+            "Filter repositories": "저장소 필터링하기", // 조직 페이지 
             "Show:": "표시:",
             "Save pins": "고정 항목 저장하기",
         
@@ -2359,40 +2360,40 @@ I18N["ko-KR"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
             // "Search starred repositories…": "搜索点赞的仓库…",
 
             // 搜索, 筛选 & 排序工具栏
-            "Find a repository…": "搜索仓库…",
+            "Find a repository…": "저장소 찾기…",
             // "Type": "类型", // 与全局冲突 使用 Selector 规则翻译
                 // 下拉菜单
-                "Select type": "选择类型",
-                "All": "全部",
+                "Select type": "유형 선택",//타입 뭐라고 번역하지
+                "All": "모두",
                 "Public": "공개",
                 "Private": "비공개",
-                "Sources": "源码",
-                "Forks": "复刻",
+                "Sources": "소스",
+                "Forks": "포크",
                 "Archived": "보관됨",
-                "Can be sponsored": "可赞助",
-                "Mirrors": "镜像",
-                "Templates": "模板",
-            "Language": "语言",
+                "Can be sponsored": "후원 가능",
+                "Mirrors": "미러",
+                "Templates": "템플릿",
+            "Language": "언어",
                 // 下拉菜单
-                "Select language": "选择语言",
-                "All languages": "所有语言",
-            "Sort": "排序",
+                "Select language": "언어를 선택해주세요",
+                "All languages": "모든 언어",
+            "Sort": "정렬",
                 // 下拉菜单
-                "Select order": "选择排序",
-                "Last updated": "最近更新",
+                "Select order": "기준을 선택해주세요",
+                "Last updated": "최근 업데이트 됨",
                 // "Name": "仓库名",
                 // "Recently starred": "最近星标",
                 // "Recently active": "最近活跃",
                 // "Most stars": "最多星标",
                 // "Unstar": "取消星标",
-            "New": "新建",
+            "New": "새로 만들기",
 
             // 筛选结果
-            "result for": "个结果在",
-            "results for": "个结果在",
+            "result for": "검색 결과 :",
+            "results for": "검색 결과 :",
                 "public": "공개",
                 "private": "비공개",
-                "source": "源码",
+                "source": "소스",
                 "forked": "复刻",
                 "archived": "보관됨",
                 "sponsorable": "可赞助",
@@ -17234,9 +17235,9 @@ I18N["ko-KR"]["notifications"] = { // 通知页面
 
         "View all gist notifications": "查看全部 Gist 通知", // 仓库分组模式
 
-        "Prev": "上一页",
-        "Previous": "上一页",
-        "Next": "下一页",
+        "Prev": "이전",
+        "Previous": "이전",
+        "Next": "다음",
 
         "change notification settings": "更改通知设置",
         "you can change how you receive notifications from your account settings.": "您可以从账户设置更改接收通知的方式。",
