@@ -1112,8 +1112,8 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Learn more": "자세히 알아보기",
             "Learn More": "자세히 알아보기",
             "Learn more.": "자세히 알아보기",
-            ",": "，",
-            ".": "。",
+            ",": ",",
+            ".": ".",
 
             "Prev": "이전",
             "Previous": "이전",
@@ -2361,9 +2361,9 @@ I18N["ko-KR"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
 
             // 搜索, 筛选 & 排序工具栏
             "Find a repository…": "저장소 찾기…",
-            // "Type": "类型", // 与全局冲突 使用 Selector 规则翻译
+            // "Type": "유형", // 与全局冲突 使用 Selector 规则翻译
                 // 下拉菜单
-                "Select type": "유형 선택",//타입 뭐라고 번역하지
+                "Select type": "유형 선택",
                 "All": "모두",
                 "Public": "공개",
                 "Private": "비공개",
@@ -2380,7 +2380,7 @@ I18N["ko-KR"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
             "Sort": "정렬",
                 // 下拉菜单
                 "Select order": "기준을 선택해주세요",
-                "Last updated": "최근 업데이트 됨",
+                "Last updated": "최근 업데이트",
                 // "Name": "仓库名",
                 // "Recently starred": "最近星标",
                 // "Recently active": "最近活跃",
@@ -2389,39 +2389,40 @@ I18N["ko-KR"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
             "New": "새로 만들기",
 
             // 筛选结果
-            "result for": "검색 결과 :",
-            "results for": "검색 결과 :",
+            "result for": "개의 검색 결과 |",
+            "results for": "개의 검색 결과 |",
                 "public": "공개",
                 "private": "비공개",
                 "source": "소스",
-                "forked": "复刻",
-                "archived": "보관됨",
-                "sponsorable": "可赞助",
-                "mirror": "镜像",
-                "template": "模板",
-            "repositories matching": "仓库中匹配了",
-            "result for repositories matching": "个结果在仓库中匹配了",
-            "results for repositories matching": "个结果在仓库中匹配了",
-            "repositories sorted by": "仓库，排序按",
-            "written in": "，使用语言",
-            "results for repositories written in": "个结果在仓库中使用语言",
-            "star matching": "个星标匹配", //?tab=stars
-            "stars matching": "个星标匹配", //?tab=stars
-            "star written in": "个星标使用语言", //?tab=stars
-            "stars written in": "个星标使用语言", //?tab=stars
-            "sorted by": "，排序按",
-                "last updated": "最近更新",
-                "name": "仓库名",
-                "stars": "星标",
+                "forked": "포크",
+                "archived": "보관",
+                "sponsorable": "후원 가능",
+                "mirror": "미러",
+                "template": "템플릿",
+            "repositories matching": "저장소, ",
+            "result for repositories matching": "개의 검색 결과 |",
+            "results for repositories matching": "개의 검색 결과 |",
+            "repositories sorted by": "저장소, ",
+            "written in": ", ",
+            "repositories written in": "저장소, ",
+            "results for repositories written in": "개의 검색 결과 | ",
+            "star matching": "개의 검색 결과 |", //?tab=stars
+            "stars matching": "개의 검색 결과 |", //?tab=stars
+            "star written in": "개의 검색 결과 |", //?tab=stars
+            "stars written in": "개의 검색 결과 |", //?tab=stars
+            "sorted by": ", ",
+                "last updated": "최근 업데이트순 정렬",
+                "name": "이름순 정렬",
+                "stars": "별표순 정렬",
 
-            "Clear filter": "清除筛选",
+            "Clear filter": "필터 초기화",
 
             // [/([^ ]+) doesn’t have any repositories that match./, "$1 没有任何匹配的仓库"],
-            "This organization doesn’t have any repositories that match.": "该组织没有任何匹配的仓库。", // 组织仓库
+            "This organization doesn’t have any repositories that match.": "이 조직에는 일치하는 저장소가 없어요.", // 조직 저장소
 
-            "This organization has no public repositories.": "该组织没有公共仓库。", //组织仓库
+            "This organization has no public repositories.": "이 조직에는 공개 저장소가 없어요.", //조직 저장소
 
-            "No repositories matched your search.": "没有与您的搜索匹配的仓库。", // 无匹配仓库
+            "No repositories matched your search.": "검색하신 내용과 일치하는 저장소가 없어요.", // 일치하는 저장소 없음
 
             // 项目 状态词
             "on": "",
@@ -2429,98 +2430,98 @@ I18N["ko-KR"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
             "Forked from": "포크 됨",
 
             // 曲线图提示
-            "Past year of activity": "过去一年的活动",
+            "Past year of activity": "지난 1년간의 활동",
 
-        // 新版 组织 - 仓库概述 https://github.com/orgs/<orgs-name>/repositories
-            "Filter": "筛选",
-                "Advanced filters": "高级筛选器",
-                    "Build complex filter queries": "构建复杂的筛选查询",
-                        "To start building your query add your first filter using the button below.": "要开始创建查询，请使用下面的按钮添加第一个筛选器。",
-                    "Add a filter": "新增筛选器",
+        // 새 버전 조직 - 저장소 개요 https://github.com/orgs/<orgs-name>/repositories
+            "Filter": "필터",
+                "Advanced filters": "고급 필터",
+                    "Build complex filter queries": "복잡한 필터 쿼리를 구성해보세요.",
+                        "To start building your query add your first filter using the button below.": "쿼리 작성을 시작하려면, 아래 버튼을 사용하여 첫 번째 필터를 추가해보세요.",
+                    "Add a filter": "필터 추가하기",
                     "Apply": "반영하기",
-                    "Qualifier": "限定词",
-                        "Created": "已创建",
-                        "Total forks": "复刻总数",
-                        "Total good-first issues": "好的首发이슈总数",
-                        "Has": "包含文件",
-                        "Total help-wanted issues": "求助이슈总数",
-                        "License": "许可证",
-                        "Mirror": "镜像",
-                        "Size (Kb)": "大小 (Kb)",
-                        "Sponsorable": "可接受赞助",
-                        "Text": "文本",
-                        "Total topics": "主题总数",
-                        "Total stars": "星标总数",
-                        "Template": "模板",
-                        "Topic": "话题",
-                        "Visibility": "可见性",
-                    "Operator": "操作符",
-                        "is": "是",
-                        "is not": "不是",
-                        "before": "之前",
-                        "after": "之后",
-                        "between": "之间",
-                            "From": "起",
-                            "To": "至",
-                        "is one of": "包括",
-                        "is not one of": "不包含",
-                        "greater than": "大于",
-                        "less than": "小于",
-                        "greater than or equal to": "大于或等于",
-                        "less than or equal to": "小于或等于",
-                        "equal to": "等于",
-                    "Value": "值",
-                        "Enter a number": "输入数字",
-                        "Enter search text": "输入搜索文本",
-                        "Make a selection": "进行选择",
-                            "Select items": "选择项目",
-                            "Select an item": "选择项目",
-                                "Filter values": "筛选值",
-                                    // 复刻
-                                        "Only forks": "仅复刻",
-                                        "Exclude forks": "排除复刻",
-                                    // 排序
-                                        "Recently pushed": "最近推送",
-                                        "Topics": "话题",
-                                        "Size": "尺寸",
-                                        "Recently pushed (descending)": "最近推送（降序）",
-                                        "Name (descending)": "名称（降序）",
-                                        "Language (descending)": "语言（降序）",
-                                        "License (descending)": "许可证（降序）",
-                                        "Topics (ascending)": "主题（升序）",
-                                        "Size (ascending)": "大小（降序）",
-                                        "Total stars (ascending)": "星标总数（降序）",
-                                        "Total forks (ascending)": "复刻总数（降序）",
-                                        "Help-wanted issues (ascending)": "求助이슈总数（升序）",
-                                        "Help-wanted issues (descending)": "求助이슈总数（降序）",
-                                    // 可见性
-                                        "Internal": "内部",
-                "Discard changes?": "放弃更改？",
-                    "You have unsaved changes. Are you sure you want to discard them?": "您有未保存的更改。您确定要放弃它们吗？",
-                    "Keep editing": "继续编辑",
-                    "Close and discard": "关闭并放弃",
-            "Search repositories": "搜索仓库",
-                "No repositories matched your search": "没有与您的查询相匹配的仓库",
-                    "Try a different search query": "尝试不同的搜索查询",
+                    "Qualifier": "한정어",
+                        "Created": "생성됨",
+                        "Total forks": "포크 총수",
+                        "Total good-first issues": "총 good-first 이슈 수",
+                        "Has": "파일 포함",
+                        "Total help-wanted issues": "총 help-wanted 이슈 수",
+                        "License": "라이센스",
+                        "Mirror": "미러",
+                        "Size (Kb)": "크기 (Kb)",
+                        "Sponsorable": "후원 가능",
+                        "Text": "텍스트",
+                        "Total topics": "총 토픽 수",
+                        "Total stars": "별표 총수",
+                        "Template": "템플릿",
+                        "Topic": "토픽",
+                        "Visibility": "가시성",
+                    "Operator": "연산자",
+                        "is": "같음",
+                        "is not": "같지 않음",
+                        "before": "이전",
+                        "after": "이후",
+                        "between": "사이",
+                            "From": "부터",
+                            "To": "까지",
+                        "is one of": "포함",
+                        "is not one of": "포함하지 않음",
+                        "greater than": "보다 큼",
+                        "less than": "보다 작음",
+                        "greater than or equal to": "보다 크거나 같음",
+                        "less than or equal to": "보다 작거나 같음",
+                        "equal to": "같음",
+                    "Value": "값",
+                        "Enter a number": "숫자를 입력해보세요.",
+                        "Enter search text": "검색 텍스트를 입력해보세요.",
+                        "Make a selection": "선택해보세요.",
+                            "Select items": "항목 선택하기",
+                            "Select an item": "항목 선택하기",
+                                "Filter values": "필터 값",
+                                    // 포크
+                                        "Only forks": "포크만",
+                                        "Exclude forks": "포크 제외",
+                                    // 정렬
+                                        "Recently pushed": "최근 푸시",
+                                        "Topics": "토픽",
+                                        "Size": "크기",
+                                        "Recently pushed (descending)": "최근 푸시 (내림차순)",
+                                        "Name (descending)": "이름 (내림차순)",
+                                        "Language (descending)": "언어 (내림차순)",
+                                        "License (descending)": "라이센스 (내림차순)",
+                                        "Topics (ascending)": "토픽 (오름차순)",
+                                        "Size (ascending)": "크기 (내림차순)",
+                                        "Total stars (ascending)": "별표 총수 (내림차순)",
+                                        "Total forks (ascending)": "포크 총수 (내림차순)",
+                                        "Help-wanted issues (ascending)": "총 help-wanted 이슈 수 (오름차순)",
+                                        "Help-wanted issues (descending)": "총 help-wanted 이슈 수 (내림차순)",
+                                    // 가시성
+                                        "Internal": "내부",
+                "Discard changes?": "변경 사항을 취소할까요?",
+                    "You have unsaved changes. Are you sure you want to discard them?": "저장되지 않은 변경 사항이 있어요. 정말로 취소하시겠어요?",
+                    "Keep editing": "계속 편집하기",
+                    "Close and discard": "닫고 취소하기",
+            "Search repositories": "저장소 검색하기",
+                "No repositories matched your search": "검색 결과와 일치하는 저장소가 없어요.",
+                    "Try a different search query": "다른 검색어를 사용해보세요.",
 
-            "Last pushed": "最近提送",
-                "Ascending": "升序",
-                "Descending": "降序",
+            "Last pushed": "최근 푸시",
+                "Ascending": "오름차순",
+                "Descending": "내림차순",
             "repository": "저장소",
-            "No language": "无语言",
+            "No language": "언어 없음",
 
     },
-    "regexp": [ // 正则翻译
-        [/(\d+(k|M|B)?) repositor(y|ies)/, "$1 个仓库"],
-        [/(\d+) members?/, "$1 成员"], // 组织 浮动信息卡
-        [/([^ ]+) doesn’t have any repositories that match./, "$1 没有任何匹配的仓库"], // 仓库标签卡
-        [/Your repository \"([^ ]+)\" was successfully deleted./, "您的仓库 “$1” 已成功删除。"],
-        [/(\d+) issues? needs? help/, "$1 个이슈需要帮助"],
-        [/and (\d+) more/, "等 $1 人"],
+    "regexp": [ // 정규 표현식 번역
+        [/(\d+(k|M|B)?) repositor(y|ies)/, "$1 개 저장소"],
+        [/(\d+) members?/, "$1 명 멤버"], // 조직 플로팅 정보 카드
+        [/([^ ]+) doesn’t have any repositories that match./, "$1 일치하는 저장소가 없어요."], // 저장소 태그 카드
+        [/Your repository \"([^ ]+)\" was successfully deleted./, "당신의 저장소 “$1”가 성공적으로 삭제되었어요."],
+        [/(\d+) issues? needs? help/, "$1 개 이슈가 도움이 필요해요."],
+        [/and (\d+) more/, "등 $1 명"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
     "selector": [ // 元素筛选器规则
-        ["#type-options > summary > span:nth-child(1)", "类型"], // 个人主页 --> 仓库标签页-->类型筛选器 Type
+        ["#type-options > summary > span:nth-child(1)", "유형"], // 个人主页 --> 仓库标签页-->类型筛选器 Type
     ],
 };
 
@@ -2829,10 +2830,10 @@ I18N["ko-KR"]["page-profile/stars"] = { // 个人首页 - 星标标签卡
                 "archived": "보관됨",
                 "mirror": "镜像",
                 "template": "模板",
-            "star matching": "个星标匹配", //?tab=stars
-            "stars matching": "个星标匹配", //?tab=stars
-            "star written in": "个星标使用语言", //?tab=stars
-            "stars written in": "个星标使用语言", //?tab=stars
+            "star matching": "개의 검색 결과 |", //?tab=stars
+            "stars matching": "개의 검색 결과 |", //?tab=stars
+            "star written in": "개의 검색 결과 |", //?tab=stars
+            "stars written in": "개의 검색 결과 |", //?tab=stars
             "starred repositories": "星标仓库",
             "starred repositories written in": "星标仓库使用语言",
 
@@ -8121,7 +8122,7 @@ I18N["ko-KR"]["repository/issues"] = { // 仓库 - 이슈页面
                     "Ascending": "递增",
                     "Descending": "递减",
 
-                "Types": "类型",
+                "Types": "유형",
                 "Issue type": "이슈类型",
                     "Filter by issue type": "按이슈类型筛选",
                     "Select issue type": "选择이슈类型",
@@ -10153,7 +10154,7 @@ I18N["ko-KR"]["repository/blob"] = { // 仓库 - 浏览代码
                     "Copy path": "复制路径",
                     "Copy permalink": "复制永久链接",
                     "View options": "查看选项",
-                        "Show code folding buttons": "显示代码折叠按钮",
+                        "Show code folding buttons": "显示代码折叠f按钮",
                         "Wrap lines": "换行",
                         "Center content": "核心内容",
                         "Open symbols on click": "单击打开符号",
@@ -14300,7 +14301,7 @@ I18N["ko-KR"]["repository/settings/access"] = { // 仓库设置 - 协作者/(组
             "Select all": "全选",
                 // [/(\d+) members? selected…/, "已选择 $1 名成员..."],
                 "Remove Access": "删除访问权限",
-            "Type": "类型",
+            "Type": "유형",
                 "Filter by member type": "按成员类型筛选",
                     "Pending Invitations": "待处理邀请",
             "Find a collaborator…": "寻找协作者...",
@@ -17648,7 +17649,7 @@ I18N["ko-KR"]["search"] = { // 搜索页面
             "More directories...": "更多路径...",
 
             // &type=registrypackages
-            "Types": "类型",
+            "Types": "유형",
 
             // &type=issues
             "State": "状态",
@@ -19621,7 +19622,7 @@ I18N["ko-KR"]["orgs"] = { // 组织页面
             // 仓库
                 // 搜索, 筛选 & 排序工具栏
                 "Find a repository…": "搜索仓库…",
-                // "Type": "类型", // 与全局冲突 使用 Selector 规则翻译
+                // "Type": "유형", // 与全局冲突 使用 Selector 规则翻译
                     // 下拉菜单
                     "Select type": "选择类型",
                     "All": "全部",
@@ -19665,10 +19666,10 @@ I18N["ko-KR"]["orgs"] = { // 组织页面
                 // "repositories sorted by": "仓库，排序按",
                 "written in": "，使用语言",
                 // "results for repositories written in": "个结果在仓库中使用语言",
-                // "star matching": "个星标匹配", //?tab=stars
-                // "stars matching": "个星标匹配", //?tab=stars
-                // "star written in": "个星标使用语言", //?tab=stars
-                // "stars written in": "个星标使用语言", //?tab=stars
+                // "star matching": "개의 검색 결과 |", //?tab=stars
+                // "stars matching": "개의 검색 결과 |", //?tab=stars
+                // "star written in": "개의 검색 결과 |", //?tab=stars
+                // "stars written in": "개의 검색 결과 |", //?tab=stars
                 "repositories sorted by": "仓库，排序按",
                 "sorted by": "，排序按",
                     "last updated": "最近更新",
@@ -19797,7 +19798,7 @@ I18N["ko-KR"]["orgs"] = { // 组织页面
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
     "selector": [ // 元素筛选器规则
-        ["#type-options > summary > span:nth-child(1)", "类型"], // 组织主页 --> 仓库标签页-->类型筛选器 Type
+        ["#type-options > summary > span:nth-child(1)", "유형"], // 组织主页 --> 仓库标签页-->类型筛选器 Type
     ],
 };
 
@@ -21475,7 +21476,7 @@ I18N["ko-KR"]["orgs/settings/secrets"] = { // 组织设置 - 机密和变量
 
         // 编辑私有登记表 /organizations/<org-login>/settings/secrets/private_registries/<>
             "Edit private registry": "编辑私有注册表",
-            "Type": "类型",
+            "Type": "유형",
 
     },
     "regexp": [ // 正则翻译
