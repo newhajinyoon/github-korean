@@ -602,11 +602,11 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
                 "Pricing": "价格",
 
         // 左上角下拉栏 (已登录)
-            "Home": "主页",
+            "Home": "홈",
             "Issues": "이슈",
             "Pull requests": "끌어오기 요청",
             "Projects": "프로젝트",
-            "Codespaces": "代码空间",
+            "Codespaces": "코드스페이스",
             "Explore": "탐험하기",
             "Marketplace": "市场",
 
@@ -646,131 +646,128 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
                     "Immersive": "沉浸式",
                 "Open with": "打开于",
 
-        // 右上角个人图标下拉菜单
-            "Account switcher": "账户切换",
-                "Add account": "添加账户",
-                "Switch account": "切换账户",
-                "Sign out...": "登出...",
-            "Set status": "状态设置",
-            "Your profile": "我的资料",
-            "Your repositories": "我的仓库",
-            "Your codespaces": "我的代码空间",
-            "Your Copilot": "我的 Copilot",
-            "Your projects": "我的项目",
-            "Your discussions": "我的讨论",
-            "Your stars": "我的星标",
-            "Your gists": "我的代码片段",
-            "Your organizations": "我的组织",
-            "Your enterprises": "我的企业",
-            "Your sponsors": "我的赞助者",
-            "Create new": "创建...", // Android UA 下出现
-            "Upgrade": "升级",
-            "Try Enterprise": "试用企业版",
-                "Free": "免费",
-            "Feature preview": "功能预览",
-                // 对话框
-                "Feature preview dialog": "功能预览对话框",
-                "Enable": "启用",
-                "Enabled": "启用",
-                "Disable": "禁用",
-                "Disabled": "禁用",
-                "Documentation": "文档",
-                "Colorblind themes": "色盲主题",
-                    "Varying by gender and geography, color blindness can affect on average 8% of men and up to 0.5% of women. Our previous colorblind theme has been split into two new themes:": "色盲会因性别和地域的不同而有所不同，平均而言，色盲会影响 8% 的男性和高达 0.5% 的女性。我们之前的色盲主题被分为两个新主题：",
-                    "Light/dark Protanopia & Deuteranopia for red/green color blindness.": "明/暗 - 红绿色盲主题适用于红绿色盲。",
-                    "Light/dark Tritanopia for blue/yellow color blindness.": "明/暗 - 蓝色盲主题适用于蓝黄色盲。",
-                "Command Palette": "命令面板",
-                    "Quickly navigate and jump between your organizations or repositories and search recent issues, pull requests, projects and more with the new command palette. You can also execute time saving commands all without lifting your fingers off the keyboard!": "使用新的命令面板，可以快速导航并跳转到您所在的组织或仓库，并搜索最近的이슈、拉取请求、项目等等。您还可以执行节省时间的命令，而无需将手指从键盘上移开！",
-                    "To open the command palette:": "打开命令面板：",
-                "Copilot Workspace for Pull Requests": "适用于拉取请求的 Copilot 工作区",
-                    "Copilot Workspace is a Copilot-native coding environment that helps you land high-quality pull requests faster by allowing you to edit and run code from your pull request without leaving GitHub.com.": "Copilot 工作区是 Copilot 的原生编码环境，允许您在不离开 GitHub.com 的情况下编辑和运行拉取请求中的代码，从而帮助您更快提交高质量的拉取请求。",
-                    "Copilot Workspace is available to customers with access to the Copilot code review public preview.": "访问 Copilot 代码审查公开预览版的客户可使用 Copilot 工作区。",
-                    "Sign up for the Copilot code review public preview": "注册参与 Copilot 代码审查公开预览",
-                "Copilot Immersive Enhancements": "Copilot 沉浸式增强",
-                    // 在 GitHub Copilot 上的 Copilot Chat 沉浸式模式中探索增强的体验。该测试版在专用聊天界面中引入了改进的互动和更智能的建议，专为专注、深入的对话而设计。
-                    "Discover an enhanced experience in the immersive mode of Copilot Chat, available at": "在",
-                    ". This beta introduces improved interaction and smarter suggestions within a dedicated chat interface designed for focused, in-depth conversations.": "上的 Copilot 沉浸聊天模式中探索增强的体验。该测试版在专用聊天界面中引入了改进的互动和更智能的建议，专为专注、深入的对话而设计。",
-                "New Commit Details Page": "新版提交详情页",
-                    "New version of the commit details page that lets you quickly understand and navigate the changes in a commit. Improves filtering, commenting (with new floating comments and comment counts on the file tree), keyboard navigation, and more.": "新版提交详细信息页面可让您快速了解和浏览提交中的更改。改进了过滤、注释（文件树中新增了浮动注释和注释计数）、键盘导航等功能。",
-                "Rich Jupyter Notebook Diffs": "Jupyter Notebook 的丰富差异视图",
-                    "Enables rich diffs of Jupyter Notebooks in pull requests": "在拉取请求中启用 Jupyter Notebook 的丰富差异视图",
-                    "Note: commenting on rich diff views of notebooks is not yet supported": "注意：尚不支持对 Jupyter Notebook 的丰富差异视图进行评论",
-                "New Issues Experience": "新이슈体验",
-                    "The new GitHub Issues experience brings three powerful new features:": "新版 GitHub 이슈体验带来了三个强大的新功能：",
-                    "Sub-issues are designed to help you break-down and manage your issues with a parent/child relationship into a hierarchy.": "子이슈旨在帮助您将具有父/子关系的이슈分解和管理为层次结构。",
-                    "Issues types allow you to classify and manage your issues with a shared and consistent language across all repositories in an organization, such as bugs or tasks.": "이슈类型允许您使用组织中所有仓库中的共享和一致的语言对이슈进行分类和管理，例如错误或任务。",
-                    "Advanced search allows you to build advanced queries using the AND and OR keywords, as well as nested queries using parentheses up to 5 layers deep right from the repository Issues page.": "高级搜索允许您使用 AND 和 OR 关键字构建高级查询，以及使用括号构建多达 5 层深的嵌套查询，直接从仓库이슈页面开始。",
-                "New merge experience": "新合并体验",
-                    "Improved merge experience on the pull request page that helps you better understand the state of your pull request and get it merged faster!": "改进了拉取请求页面上的合并体验，可帮助您更好地了解拉取请求的状态，更快地完成合并！",
-                "New Pull Request Commits Experience": "新拉取请求提交体验",
-                    "The pull request commits page has been refreshed to improve performance, improve consistency with other pages, and to make the page more accessible!": "拉取请求提交页面已被刷新，以提高性能，改善与其他页面的一致性，并使页面更易于访问！",
-                "Enhanced Repos Insights Views": "仓库洞察增强视图",
-                    "We’re thrilled to introduce our new graphics library! With this update, you’ll find significant enhancements to two of our repository insights views—Contributors and Code Frequency. Both now utilize an SVG-based solution, offering improved focus navigation for precise, point-by-point interaction. You can also hide a series by interacting with the chart legend and view or download the data in both table format and as PNGs.": "我们非常高兴地介绍我们的新图形库！通过此次更新，您将发现我们的两个仓库洞察视图-- “贡献者” 和 “代码频率” 都有了显著增强。这两个视图现在都采用了基于 SVG 的解决方案，为精确的逐点交互提供了改进的焦点导航。您还可以通过与图表图例交互来隐藏系列，并以表格格式和 PNG 格式查看或下载数据。",
-                "Slash Commands": "斜杠命令",
-                    "Slash commands make it easier to type more complex Markdown, such as tables, tasklists, and code blocks.": "斜线命令可以让您更轻松地输入更复杂的 Markdown，如表格、任务列表和代码块。",
-                    "Simply type": "只需在이슈、拉取请求和讨论中键入",
-                    "on Issues, PRs and Discussions to check out a list of available commands!": "，即可查看可用命令的列表！",
-                "Feature disabled.": "功能已禁用。",
-                    "Please": "请",
-                    "give feedback": "提交反馈",
-                    "so we can improve it!": "以便我们加以改进！",
-                // 出错提示
-                    "Sorry, something went wrong and we were not able to fetch the feature previews": "对不起，出了点问题，我们无法获取功能预览",
+            // 오른쪽 상단 개인 아이콘 드롭다운 메뉴
+            "Account switcher": "계정 전환",
+                "Add account": "계정 추가하기",
+                "Switch account": "계정 전환하기",
+                "Sign out...": "로그아웃...",
+            "Set status": "상태 설정하기",
+            "Your profile": "내 프로필",
+            "Your repositories": "내 저장소",
+            "Your codespaces": "내 코드스페이스",
+            "Your Copilot": "내 Copilot",
+            "Your projects": "내 프로젝트",
+            "Your discussions": "내 토론",
+            "Your stars": "내 별표",
+            "Your gists": "내 gists",
+            "Your organizations": "내 조직",
+            "Your enterprises": "내 기업",
+            "Your sponsors": "내 후원자",
+            "Create new": "새로 만들기", // Android UA 에서 나타남
+            "Upgrade": "업그레이드하기",
+            "Try Enterprise": "기업용 체험하기",
+                "Free": "무료",
+            "Feature preview": "기능 미리보기",
+                // 대화상자
+                "Feature preview dialog": "기능 미리보기 대화상자",
+                "Enable": "활성화하기",
+                "Enabled": "활성화됨",
+                "Disable": "비활성화하기",
+                "Disabled": "비활성화됨",
+                "Documentation": "문서",
+                "Colorblind themes": "색맹 테마",
+                "Varying by gender and geography, color blindness can affect on average 8% of men and up to 0.5% of women. Our previous colorblind theme has been split into two new themes:": "성별과 지역에 따라 다르게 나타나지만, 평균적으로 색맹은 남성의 8%와 여성의 최대 0.5%에 영향을 줄 수 있어요. 이전 색맹 테마는 두 개의 새로운 테마로 나누어졌어요:",
+                "Light/dark Protanopia & Deuteranopia for red/green color blindness.": "밝은/어두운 프로타노피아 및 듀테라노피아 (적록색맹용)",
+                "Light/dark Tritanopia for blue/yellow color blindness.": "밝은/어두운 트리타노피아 (파란/노란 색맹용)",
+                "Command Palette": "명령 팔레트",
+                "Quickly navigate and jump between your organizations or repositories and search recent issues, pull requests, projects and more with the new command palette. You can also execute time saving commands all without lifting your fingers off the keyboard!": "새로운 명령 팔레트를 사용하면, 조직이나 저장소 간을 빠르게 탐색하고, 최근 이슈, 끌어오기 요청, 프로젝트 등을 검색할 수 있어요. 또한 손을 키보드에서 떼지 않고 시간 절약 명령어를 실행할 수 있어요.",
+                "To open the command palette:": "명령 팔레트 여는 방법:",
+                "Copilot Workspace for Pull Requests": "끌어오기 요청용 Copilot 작업공간",
+                "Copilot Workspace is a Copilot-native coding environment that helps you land high-quality pull requests faster by allowing you to edit and run code from your pull request without leaving GitHub.com.": "Copilot 작업공간은 Copilot 고유의 코딩 환경으로, GitHub.com을 떠나지 않고도 끌어오기 요청 내의 코드를 편집하고 실행할 수 있게 해, 고품질의 끌어오기 요청을 더 빠르게 완료할 수 있도록 도와줘요.",
+                "Copilot Workspace is available to customers with access to the Copilot code review public preview.": "Copilot 작업공간은 Copilot 코드 리뷰 공개 미리보기를 사용할 수 있는 고객에게 제공돼요.",
+                "Sign up for the Copilot code review public preview": "Copilot 코드 리뷰 공개 미리보기에 가입하기",
+                "Copilot Immersive Enhancements": "Copilot 몰입형 개선",
+                // GitHub Copilot의 Copilot Chat 몰입형 모드에서 향상된 경험을 탐색해보세요. 이 베타 버전은 집중되고 심도 있는 대화를 위해 설계된 전용 채팅 인터페이스 내에서 개선된 상호작용과 더욱 똑똑한 제안을 제공합니다.
+                "Discover an enhanced experience in the immersive mode of Copilot Chat, available at": " ",
+                ". This beta introduces improved interaction and smarter suggestions within a dedicated chat interface designed for focused, in-depth conversations.": "에서 제공되는 Copilot Chat의 몰입형 모드에서 향상된 경험을 찾아보세요. 이 베타 버전은 집중적이고 심도 있는 대화를 위해 설계된 전용 채팅 인터페이스 내에서 향상된 상호작용과 스마트한 제안을 제공합니다.",
+                "New Commit Details Page": "새로운 커밋 상세 페이지",
+                "New version of the commit details page that lets you quickly understand and navigate the changes in a commit. Improves filtering, commenting (with new floating comments and comment counts on the file tree), keyboard navigation, and more.": "커밋의 변경 사항을 빠르게 이해하고 탐색할 수 있도록 도와주는 새로운 커밋 상세 페이지예요. 필터링, 주석 작성(파일 트리의 새로운 부동 주석 및 주석 개수 기능 포함), 키보드 탐색 등이 개선되었어요.",
+                "Rich Jupyter Notebook Diffs": "풍부한 Jupyter Notebook 차이 보기",
+                "Enables rich diffs of Jupyter Notebooks in pull requests": "끌어오기 요청에서 Jupyter Notebook의 풍부한 차이 보기를 활성화해보세요.",
+                "Note: commenting on rich diff views of notebooks is not yet supported": "참고: Jupyter Notebook의 풍부한 차이 보기에는 아직 주석 기능이 지원되지 않아요.",
+                "New Issues Experience": "새로운 이슈 체험",
+                "The new GitHub Issues experience brings three powerful new features:": "새로운 GitHub 이슈 체험은 세 가지 강력한 새로운 기능을 제공합니다:",
+                "Sub-issues are designed to help you break-down and manage your issues with a parent/child relationship into a hierarchy.": "하위 이슈는 부모/자식 관계를 가진 이슈를 계층 구조로 나누어 관리할 수 있도록 도와드려요.",
+                "Issues types allow you to classify and manage your issues with a shared and consistent language across all repositories in an organization, such as bugs or tasks.": "이슈 유형을 사용하면, 조직 내 모든 저장소에서 버그나 작업 등 공통되고 일관된 용어로 이슈를 분류하고 관리할 수 있어요.",
+                "Advanced search allows you to build advanced queries using the AND and OR keywords, as well as nested queries using parentheses up to 5 layers deep right from the repository Issues page.": "고급 검색 기능을 사용하면, 저장소 이슈 페이지에서 바로 AND와 OR 키워드를 사용해 고급 쿼리를 구성하고, 괄호를 사용해 최대 5단계의 중첩 쿼리를 작성할 수 있어요.",
+                "New merge experience": "새로운 병합 체험",
+                "Improved merge experience on the pull request page that helps you better understand the state of your pull request and get it merged faster!": "끌어오기 요청 페이지에서 병합 체험이 개선되어, 끌어오기 요청의 상태를 더 잘 파악하고 더 빠르게 병합할 수 있도록 도와드려요!",
+                "New Pull Request Commits Experience": "새로운 끌어오기 요청 커밋 체험",
+                "The pull request commits page has been refreshed to improve performance, improve consistency with other pages, and to make the page more accessible!": "끌어오기 요청 커밋 페이지가 새롭게 개선되어 성능이 향상되고, 다른 페이지와의 일관성이 개선되었으며, 접근성이 높아졌어요!",
+                "Enhanced Repos Insights Views": "강화된 저장소 인사이트 보기",
+                "We’re thrilled to introduce our new graphics library! With this update, you’ll find significant enhancements to two of our repository insights views—Contributors and Code Frequency. Both now utilize an SVG-based solution, offering improved focus navigation for precise, point-by-point interaction. You can also hide a series by interacting with the chart legend and view or download the data in both table format and as PNGs.": "새로운 그래픽 라이브러리를 소개하게 되어 정말 기뻐요! 이번 업데이트로 저장소 인사이트 보기 중 '기여자'와 '코드 빈도'에 상당한 향상이 이루어졌어요. 두 보기 모두 이제 SVG 기반 솔루션을 사용해 정밀한 포인트별 상호작용을 위한 개선된 포커스 탐색을 제공하고, 차트 범례와 상호작용하여 시리즈를 숨기거나 데이터를 표 형식과 PNG 파일로 확인 및 다운로드할 수 있어요.",
+                "Slash Commands": "슬래시 명령어",
+                "Slash commands make it easier to type more complex Markdown, such as tables, tasklists, and code blocks.": "슬래시 명령어를 사용하면 표, 작업 목록, 코드 블록 등 복잡한 Markdown을 더 쉽게 입력할 수 있어요.",
+                "Simply type": "이슈, 끌어오기 요청, 토론에서",
+                "on Issues, PRs and Discussions to check out a list of available commands!": "를 입력하여 사용 가능한 명령어 목록을 확인해보세요!",
+                "Feature disabled.": "기능이 비활성화되었어요.",
+                "Please": "부디",
+                "give feedback": "피드백을 남겨주세요.",
+                "so we can improve it!": "깃허브를 더 개선할게요!",
+                // 오류 메시지
+                "Sorry, something went wrong and we were not able to fetch the feature previews": "죄송해요, 문제가 발생하여 기능 미리보기를 불러올 수 없었어요.",
             "Settings": "설정",
-            "GitHub Website": "GitHub 首页", // 非仪表板页
-            "GitHub Docs": "GitHub 文档",
-            "GitHub Support": "GitHub 支持",
-            "GitHub Community": "GitHub 社区",
-            "Sign out": "退出",
+            "GitHub Website": "GitHub 홈페이지", // 대시보드 외 페이지
+            "GitHub Docs": "GitHub 문서",
+            "GitHub Support": "GitHub 지원",
+            "GitHub Community": "GitHub 커뮤니티",
+            "Sign out": "로그아웃",
 
-        // 状态设置对话框
-        // 出现位置: 个人资料页, Gist 个人主页, 仓库页右上角个人图标下拉菜单
-            "Edit status": "编辑状态",
-            "What's happening?": "发生了什么？",
+            // 상태 설정 대화상자
+            // 나타나는 위치: 프로필 페이지, Gist 개인 페이지, 저장소 페이지 우측 상단 개인 아이콘 드롭다운 메뉴
+            "Edit status": "상태 편집하기",
+            "What's happening?": "무슨 일이 있으신가요?",
+            "Suggestions": "추천",
+                "On vacation": "휴가 중이에요",
+                "Out sick": "병가 중이에요",
+                "Working from home": "재택근무 중이에요",
+                "Focusing": "집중 중이에요",
+            "Busy": "바쁜 중이에요",
+                "When others mention you, assign you, or request your review, GitHub will let them know that you have limited availability.": "다른 사람이 당신을 언급하거나 지정하거나 리뷰를 요청할 때, GitHub가 당신이 바쁘다는 것을 알려드릴 거예요.",
+                "I may be slow to respond.": "답변이 늦을 수 있어요.",
+            "Clear status": "상태 지우기",
+                "Never": "지우지 않기",
+                "in 30 minutes": "30분 후",
+                "in 1 hour": "1시간 후",
+                "in 4 hours": "4시간 후",
+                "after today": "오늘 이후",
+                "after this week": "이번 주 이후",
+                "after a month": "한 달 이후",
+                "How long until this status will automatically clear.": "이 상태가 자동으로 지워지기까지의 시간을 설정해보세요.",
+            "Visible to": "보이기 대상",
+                "Everyone": "모두",
+                "Scope status visibility to a single organization.": "상태 보임 대상을 특정 조직으로 한정해보세요.",
+            "Filter emoji": "이모지 필터링",
+                "Search results": "검색 결과",
 
-            "Suggestions": "建议",
-                "On vacation": "在度假",
-                "Out sick": "生病",
-                "Working from home": "在家工作",
-                "Focusing": "专注中",
-
-            "Busy": "繁忙中",
-                "When others mention you, assign you, or request your review, GitHub will let them know that you have limited availability.": "当其他人提及您、指派您或请求您进行评论时，GitHub 会告知他们您的很忙。",
-                "I may be slow to respond.": "我的反应可能比较慢。",
-
-            "Clear status": "清除状态",
-                "Never": "永不",
-                "in 30 minutes": "30 分钟",
-                "in 1 hour": "1 小时",
-                "in 4 hours": "4 小时",
-                "after today": "今日之后",
-                "after this week": "本周之后",
-                "after a month": "本月之后",
-                "How long until this status will automatically clear.": "多久后状态自动清除。",
-            "Visible to": "可见",
-                "Everyone": "任何人",
-                    "Scope status visibility to a single organization.": "将状态可视范围扩大到单个组织。",
-            "Filter emoji": "筛选表情符号",
-                "Search results": "筛选结果",
-
-        // 底部条
-            "Terms": "服务条款",
-            "Privacy": "隐私",
+            // 하단 바
+            "Terms": "서비스 약관",
+            "Privacy": "개인정보 처리방침",
             "Security": "보안",
-            "Status": "状态",
-            "Docs": "文档",
-            "Contact": "联系我们",
-            "Manage cookies": "管理 Cookies",
-            "Do not share my personal information": "请勿分享我的个人信息",
+            "Status": "상태",
+            "Docs": "문서",
+            "Contact": "문의하기",
+            "Manage cookies": "쿠키 관리",
+            "Do not share my personal information": "내 개인정보 공유하지 않기",
 
-        // 左侧栏底部条
+            // 왼쪽 사이드바 하단 바
             "About": "정보",
-            "Blog": "博客",
-            "Manage Cookies": "管理 Cookies",
+            "Blog": "블로그",
+            "Manage Cookies": "쿠키 관리",
 
-        // 其他
-            "Contact GitHub": "联系 GitHub",
-            "Training": "培训",
+            // 기타
+            "Contact GitHub": "GitHub에 연락하기",
+            "Training": "훈련",
 
         // 描述、评论编辑器翻译
             "Add a comment": "添加评论",
@@ -918,25 +915,25 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
                 "This user is marked as spammy. Their comments will onlyshow in staff mode.": "该用户已被封号，评论仅自己可见。",
 
         // 添加到清单
-            "Add to list": "添加到清单",
-                "You don't have any lists yet.": "您尚无任何清单。",
-                "Lists": "清单",
-                    "Search lists": "搜索清单",
-                    "🔮 Future ideas": "🔮 超前想法",
-                    "🚀 My stack": "🚀 技术栈",
-                    "✨ Inspiration": "✨ 灵感",
-                "Create list": "创建清单",
-                    "Create a list to organize your starred repositories.": "创建一个清单来组织您的星标仓库。",
-                    "⭐️ Name this list": "⭐️ 清单名称",
-                    "Write a description": "简单描述",
+            "Add to list": "목록에 추가",
+                "You don't have any lists yet.": "아직 어떤 목록도 없어요.",
+                "Lists": "목록",
+                    "Search lists": "목록 검색",
+                    "🔮 Future ideas": "🔮 미래 아이디어",
+                    "🚀 My stack": "🚀 기술 창고",
+                    "✨ Inspiration": "✨ 영감",
+                "Create list": "목록 만들기",
+                    "Create a list to organize your starred repositories.": "별표 된 저장소를 정리할 목록을 만드세요.",
+                    "⭐️ Name this list": "⭐️ 이름을 지어주세요",
+                    "Write a description": "설명을 적어주세요",
                     // 小贴士
-                        "type : to add emoji to the name or description.": "输入: 在名称或描述中添加表情符号",
-                    "Lists are currently in beta.": "清单目前处于测试阶段。",
-                    "Share feedback and report bugs.": "分享反馈意见和报告错误。",
-                    "Creating...": "创建中...",
+                        "type : to add emoji to the name or description.": "이름이나 목록에 이모티콘을 넣으려면 : 를 입력하세요",
+                    "Lists are currently in beta.": "목록 기능은 현재 베타에요.",
+                    "Share feedback and report bugs.": "피드백을 공유하고 버그를 신고해주세요",
+                    "Creating...": "생성중...",
 
         // 全局快捷键对话框 - 快捷键 ? 打开
-            "Keyboard shortcuts": "键盘快捷键",
+            "Keyboard shortcuts": "단축키",
             "Site-wide shortcuts": "全站快捷键",
                 "Open command palette": "打开命令面板",
                 "Open command palette in command mode": "在命令模式下打开命令面板",
@@ -972,7 +969,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
                 "for help and tips": "寻求帮助和提示", // 键入 ?
 
             "Pages": "GitHub Pages",
-            "Dashboard": "仪表板",
+            "Dashboard": "대시보드",
             "Notifications": "通知",
             "Discussions": "토론",
             "Actions": "액션",
@@ -1073,21 +1070,21 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Delete issue…": "删除이슈…",
 
         // 公共词 高频词
-            "Follow": "关注",
-            "Unfollow": "取消关注",
+            "Follow": "팔로우",
+            "Unfollow": "팔로우 취소",
             "Star": "별표",
-            "Stars": "星标",
+            "Stars": "별표",
             "Unstar": "별표 취소",
             "Starred": "별표 됨",
             "Fork": "포크",
-            "Save": "保存",
-            "Saving…": "保存中…",
-            "Saving...": "保存中...",
-            "Updating": "更新中",
-            "Updating…": "更新中…",
-            "Delete": "删除",
-            "Cancel": "取消",
-            "Edit": "编辑",
+            "Save": "저장",
+            "Saving…": "저장 중…",
+            "Saving...": "저장 중...",
+            "Updating": "업데이트 중",
+            "Updating…": "업데이트 중…",
+            "Delete": "삭제",
+            "Cancel": "취소",
+            "Edit": "편집",
             "Added on": "添加于",
             "Loading...": "载入中...",
             "Loading…": "载入中…",
@@ -1112,9 +1109,9 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "on": "于",
             "Use": "使用",
 
-            "Learn more": "了解更多",
-            "Learn More": "了解更多",
-            "Learn more.": "了解更多。",
+            "Learn more": "자세히 알아보기",
+            "Learn More": "자세히 알아보기",
+            "Learn more.": "자세히 알아보기",
             ",": "，",
             ".": "。",
 
@@ -1125,28 +1122,28 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             // 名词
             "Public": "공개",
             "Private": "비공개",
-            "Public archive": "公共存档",
-            "Private archive": "私有存档",
-            "Public template": "公共模板",
-            "Public mirror": "公共镜像",
+            "Public archive": "공개 보관",
+            "Private archive": "비공개 보관",
+            "Public template": "공개 템플릿",
+            "Public mirror": "공개 미러",
             "Code": "코드",
-            "Overview": "概况",
-            "Followers": "关注者",
-            "Collaborators": "协作者",
-            "collaborators": "协作者",
-            "Sponsors": "赞助者",
-            "Sponsoring": "赞助者",
-            "commit": "提交",
-            "commits": "提交",
-            "Organization": "组织",
-            "People": "成员",
-            "Teams": "团队",
+            "Overview": "개요",
+            "Followers": "팔로워",
+            "Collaborators": "기여자",
+            "collaborators": "기여자",
+            "Sponsors": "후원",
+            "Sponsoring": "후원",
+            "commit": "커밋",
+            "commits": "커밋",
+            "Organization": "조직",
+            "People": "사람",
+            "Teams": "팀",
 
             // 相对时间
-            "just now": "刚刚",
-            "now": "当前",
-            "yesterday": "昨天",
-            "last month": "上个月",
+            "just now": "방금",
+            "now": "지금",
+            "yesterday": "어제",
+            "last month": "저번달",
 
         // 验证标记浮动信息
             "This commit was created on GitHub.com and signed with GitHub’s": "此提交在 GitHub.com 上创建并签名，使用 GitHub 的",
@@ -1193,55 +1190,55 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "to refresh your session.": "以刷新您的会话",
 
         // Cookie 设置
-            "Manage cookie preferences": "管理 Cookie 偏好设置",
-            "Most GitHub websites use cookies. Cookies are small text files placed on your device to store data so web servers can use it later. GitHub and our third-party partners use cookies to remember your preferences and settings, help you sign in, show you personalized ads, and analyze how well our websites are working. For more info, see the Cookies and similar technologies section of the": "大多数 GitHub 网站都使用 Cookie。Cookie 是保存在您的设备上的小型文本文件，用于存储数据，以便 Web 服务器稍后使用。GitHub 和我们的第三方合作伙伴使用 Cookie 来记住您的偏好和设置、帮助您登录、向您显示个性化广告以及分析我们网站的运行情况。有关更多信息，请参阅隐私声明中的",
-            "Privacy Statement": "Cookie 和类似技术部分",
-            "Accept": "接受",
-            "Reject": "拒绝",
-            "Reset all": "重置全部",
-            "Save changes": "保存更改",
-            "Required": "必要的",
-            "GitHub uses required cookies to perform essential website functions and to provide the services. For example, cookies are used to log you in, save your language preferences, provide a shopping cart experience, improve performance, route traffic between web servers, detect the size of your screen, determine page load times, improve user experience, and for audience measurement. These cookies are necessary for our websites to work.": "GitHub 使用必需的 Cookie 来执行基本网站功能并提供服务。例如，Cookie 用于登录、保存您的语言偏好、提供购物车体验、提高性能、在 Web 服务器之间路由流量、检测屏幕大小、确定页面加载时间、改善用户体验以及用于受众测量。这些 Cookie 是我们网站正常运行所必需的。",
-            "Analytics": "分析",
-            "We allow third parties to use analytics cookies to understand how you use our websites so we can make them better. For example, cookies are used to gather information about the pages you visit and how many clicks you need to accomplish a task. We also use some analytics cookies to provide personalized advertising.": "我们允许第三方使用分析性 Cookie 来了解您如何使用我们的网站，以便我们改进网站。例如，Cookie 用于收集有关您访问的页面以及完成任务所需的点击次数的信息。我们还使用一些分析性 Cookie 来提供个性化广告。",
-            "Social Media": "社交媒体",
-            "GitHub and third parties use social media cookies to show you ads and content based on your social media profiles and activity on GitHub's websites. This ensures that the ads and content you see on our websites and on social media will better reflect your interests. This also enables third parties to develop and improve their products, which they may use on websites that are not owned or operated by GitHub.": "GitHub 和第三方使用社交媒体 Cookie 根据您的社交媒体个人资料和 GitHub 网站上的活动向您显示广告和内容。这可以确保您在我们的网站和社交媒体上看到的广告和内容将更好地反映您的兴趣。还使第三方能够开发和改进它们的产品，它们可能会在不由 GitHub 拥有或运营的网站上使用这些产品。",
-            "Advertising": "广告",
-            "In addition, GitHub and third parties use advertising cookies to show you new ads based on ads you've already seen. Cookies also track which ads you click or purchases you make after clicking an ad. This is done to show you ads that are more relevant to you and for business purposes with our advertising partners. For example, cookies are used to detect when you click an ad and to show you ads based on your social media interests and website browsing history.": "此外，GitHub 和第三方使用广告 Cookie 根据您已经看过的广告向您显示新广告。Cookie 还会跟踪您点击的广告或点击广告后进行的购买。这样做是为了向您显示与您更相关的广告，并用于与我们的广告合作伙伴开展业务。例如，Cookie 用于检测您何时点击广告，并根据您的社交媒体兴趣和网站浏览历史记录向您显示广告。",
+        "Manage cookie preferences": "쿠키 환경 설정 관리하기",
+        "Most GitHub websites use cookies. Cookies are small text files placed on your device to store data so web servers can use it later. GitHub and our third-party partners use cookies to remember your preferences and settings, help you sign in, show you personalized ads, and analyze how well our websites are working. For more info, see the Cookies and similar technologies section of the": "대부분의 GitHub 웹사이트는 쿠키를 사용해요. 쿠키는 웹 서버가 나중에 활용할 수 있도록 기기에 저장되는 작은 텍스트 파일이에요. GitHub와 제3자 파트너들은 여러분의 환경 설정과 설정 정보를 기억하고, 로그인에 도움을 주며, 개인 맞춤형 광고를 제공하고, 웹사이트의 작동 상태를 분석하기 위해 쿠키를 사용해요. 자세한 정보는 다음의 쿠키 및 유사 기술 섹션을 참고해 주세요:",
+        "Privacy Statement": "개인정보 보호정책",
+        "Accept": "수락하기",
+        "Reject": "거부하기",
+        "Reset all": "전체 재설정하기",
+        "Save changes": "변경 사항 저장하기",
+        "Required": "필수",
+        "GitHub uses required cookies to perform essential website functions and to provide the services. For example, cookies are used to log you in, save your language preferences, provide a shopping cart experience, improve performance, route traffic between web servers, detect the size of your screen, determine page load times, improve user experience, and for audience measurement. These cookies are necessary for our websites to work.": "GitHub는 필수 쿠키를 사용하여 웹사이트의 기본 기능을 수행하고 서비스를 제공해요. 예를 들어, 쿠키는 로그인, 언어 환경 설정 저장, 쇼핑 카트 경험 제공, 성능 향상, 웹 서버 간 트래픽 라우팅, 화면 크기 감지, 페이지 로드 시간 측정, 사용자 경험 개선 및 방문자 측정을 위해 사용돼요. 이러한 쿠키는 웹사이트가 정상적으로 작동하는 데 꼭 필요해요.",
+        "Analytics": "분석",
+        "We allow third parties to use analytics cookies to understand how you use our websites so we can make them better. For example, cookies are used to gather information about the pages you visit and how many clicks you need to accomplish a task. We also use some analytics cookies to provide personalized advertising.": "저희는 제3자가 분석 쿠키를 사용하여 여러분이 웹사이트를 어떻게 이용하는지 이해하고, 이를 바탕으로 웹사이트를 개선할 수 있도록 허용해요. 예를 들어, 쿠키는 여러분이 방문한 페이지와 작업을 수행하는 데 필요한 클릭 수에 대한 정보를 수집하는 데 사용돼요. 또한, 일부 분석 쿠키는 개인 맞춤형 광고를 제공하기 위해 사용돼요.",
+        "Social Media": "소셜 미디어",
+        "GitHub and third parties use social media cookies to show you ads and content based on your social media profiles and activity on GitHub's websites. This ensures that the ads and content you see on our websites and on social media will better reflect your interests. This also enables third parties to develop and improve their products, which they may use on websites that are not owned or operated by GitHub.": "GitHub와 제3자는 여러분의 소셜 미디어 프로필과 GitHub 웹사이트에서의 활동을 기반으로 광고와 콘텐츠를 보여주기 위해 소셜 미디어 쿠키를 사용해요. 이를 통해 여러분이 웹사이트와 소셜 미디어에서 보는 광고와 콘텐츠가 여러분의 관심사를 더욱 잘 반영할 수 있어요. 또한, 제3자가 GitHub가 소유하거나 운영하지 않는 웹사이트에서 사용할 제품을 개발하고 개선할 수 있도록 도와줘요.",
+        "Advertising": "광고",
+        "In addition, GitHub and third parties use advertising cookies to show you new ads based on ads you've already seen. Cookies also track which ads you click or purchases you make after clicking an ad. This is done to show you ads that are more relevant to you and for business purposes with our advertising partners. For example, cookies are used to detect when you click an ad and to show you ads based on your social media interests and website browsing history.": "또한, GitHub와 제3자는 여러분이 이미 본 광고를 기반으로 새로운 광고를 보여주기 위해 광고 쿠키를 사용해요. 쿠키는 여러분이 클릭한 광고나, 광고 클릭 후 구매한 상품을 추적하기도 해요. 이는 여러분에게 더욱 관련성 높은 광고를 보여주고, 광고 파트너와의 비즈니스 목적으로 사용돼요. 예를 들어, 쿠키는 여러분이 언제 광고를 클릭하는지 감지하고, 여러분의 소셜 미디어 관심사와 웹사이트 방문 기록을 바탕으로 광고를 보여주는 데 사용돼요.",
+        // 달력
+            "Jan": "1월",
+            "Feb": "2월",
+            "Mar": "3월",
+            "Apr": "4월",
+            "May": "5월",
+            "Jun": "6월",
+            "Jul": "7월",
+            "Aug": "8월",
+            "Sep": "9월",
+            "Oct": "10월",
+            "Nov": "11월",
+            "Dec": "12월",
 
-        // 日历
-            "Jan": "1月",
-            "Feb": "2月",
-            "Mar": "3月",
-            "Apr": "4月",
-            "May": "5月",
-            "Jun": "6月",
-            "Jul": "7月",
-            "Aug": "8月",
-            "Sep": "9月",
-            "Oct": "10月",
-            "Nov": "11月",
-            "Dec": "12月",
+            "January"   : "1월",
+            "February"  : "2월",
+            "March"     : "3월",
+            "April"     : "4월",
+            "June"      : "6월",
+            "July"      : "7월",
+            "August"    : "8월",
+            "September" : "9월",
+            "October"   : "10월",
+            "November"  : "11월",
+            "December"  : "12월",
 
-            "January"   : "1月",
-            "February"  : "2月",
-            "March"     : "3月",
-            "April"     : "4月",
-            "June"      : "6月",
-            "July"      : "7月",
-            "August"    : "8月",
-            "September" : "9月",
-            "October"   : "10月",
-            "November"  : "11月",
-            "December"  : "12月",
+            "Sun"  : "일",
+            "Mon"  : "월",
+            "Tue"  : "화",
+            "Wed"  : "수",
+            "Thu"  : "목",
+            "Fri"  : "금",
+            "Sat"  : "토",
 
-            "Sun"  : "周日",
-            "Mon"  : "周一",
-            "Tue"  : "周二",
-            "Wed"  : "周三",
-            "Thu"  : "周四",
-            "Fri"  : "周五",
-            "Sat"  : "周六",
 
         // 语言名称（仅适配热门语言
             "Abkhazian": "압카즈어",
@@ -1476,7 +1473,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
                         "Chat with your favorite tools and services": "使用您最喜欢的工具和服务聊天",
                         "Browse the marketplace to find extensions for the tools and services you rely on": "浏览市场以查找您所依赖的工具和服务的扩展",
                         "Browse marketplace": "前往市场",
-            "Send now": "发送",
+            "Send now": "전송",
             // 反馈
             "Rate your experience": "反馈",
             // 四个表情
@@ -1511,7 +1508,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
 
             "Please don’t include sensitive, confidential, or personal data. Your anonymous feedback helps us improve our services in line with our": "请不要包含敏感、机密或个人数据。您的匿名反馈有助于我们改进服务，根据",
             "Privacy Policy": "隐私政策",
-            "Send": "发送",
+            "Send": "전송",
             "uses AI. Check for mistakes.": "使用 AI。请检查错误。",
 
             "Copy code": "复制代码",
@@ -1650,182 +1647,204 @@ I18N["ko-KR"]["orgs-public"] = { // 组织公共部分
 I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组织）
     "static": { // 静态翻译
         // 顶部 GPT 聊天窗口
-        "Ask Copilot": "询问 Copilot",
-        "Send": "发送",
-        "uses AI. Check for mistakes.": "使用 AI。请检查错误。",
-        // 新手帮助
-        "Learn Git and GitHub without any code!": "了解 Git 和 GitHub 无需任何代码！",
-        "Using the Hello World guide, you’ll create a repository, start a branch,": "使用 Hello World 指南，您将创建一个仓库，开始一个分支，",
-        "write comments, and open a pull request.": "写评论，并创建一个拉取请求。(教程内容就不翻译了...)",
-        "Let's get started!": "让我们开始吧！",
-        "Hide this notice forever": "永久的隐藏该信息",
-
-        "Welcome to GitHub! What’s next?": "欢迎来到 GitHub！下一步干什么？",
-        "Create a repository": "创建一个仓库",
-        "Tell us about yourself": "介绍一下您自己",
-        "Browse interesting repositories": "浏览有趣的仓库",
-        "on Twitter": "在 Twitter 上",
-
-        "You don’t have any repositories yet!": "您目前还没有任何仓库！",
-        "Create your first repository": "创建您的第一个仓库",
-        "or": "或者",
-        "Learn more about Git and GitHub": "了解更多关于 Git 和 GitHub 的信息",
-
-        // 教育版
-        "Join GitHub Education!": "加入 GitHub 教育！",
-            "GitHub Education opens doors to new skills, tools, and a collaborative community eager to drive innovation. Join us and build a foundation for your future in technology.": "GitHub 教育为您打开通往新技能、新工具以及渴望推动创新的协作社区的大门。加入我们，为您的技术未来打下基础。",
-        "Join GitHub Education": "加入 GitHub 教育",
-
-        // 组织
-        // [/You’re an owner of the ([^ ]+) organization!/, "您是 $1 组织的所有者！"],
-        // [/Create a repository for ([^ ]+)/, "为 $1 创建仓库"],
-        "Welcome to the": "欢迎来到",
-        "View your teams": "查看您的团队",
-        "View and create teams": "查看并创建团队",
-        "See all owners": "查看全部所有者",
-        "You've been added to the": "您已被添加至",
-        "organization.": "组织",
-        // [/Edit ([^ ]+)’s settings/, "编辑 $1 的设置"],
-        "Return to your personal dashboard": "返回到您的个人仪表板",
-
-        // 已有仓库的项目
-        // 左侧栏
-        "View organization": "查看组织", // 组织
-        "Browse organization's repositories": "浏览组织的仓库", // 组织
-        "Top repositories": "置顶仓库",
-        "Top Repositories": "置顶仓库", // 安卓UA
-        "New": "新建",
-        "Find a repository…": "搜索仓库…",
-        "Show more": "显示更多",
-        "Your teams": "您的团队",
-            "You don’t belong to any teams yet!": "您还不属于任何团队！",
-        "Find a team…": "搜索团队…",
-        "Recent activity": "近期活动",
-            "When you take actions across GitHub, we’ll provide links to that activity here.": "当您在 GitHub 上采取行动时，我们会在这里提供该活动的链接。", // 组织
-
-        "Create your first project": "创建您的第一个项目",
-            "Ready to start building? Create a repository for a new idea or bring over an existing repository to keep contributing to it.": "准备好开始构建了吗？为新想法创建一个仓库或使用现有仓库继续为其做出贡献。",
-            "Create repository": "创建仓库",
+        "Ask Copilot": "Copilot에게 무엇이든 물어보세요!",
+            "Open issues in facebook/react": "facebook/react의 열린 이슈",
+            "Pull requests in": "microsoft/vscode",
+            "microsoft/vscode": "에 있는 끌어오기 요청",
+            "Recent commits in torvalds/linux": "torvalds/linux의 최근 커밋",
+            "Find issues assigned to me": "나에게 할당된 이슈 찾기",
+            "What is a hash table in JS?": "JS에서 해시 테이블이란?",
+            "Latest nodejs/node release": "최신 nodejs/node 릴리스",
+            "Create a profile README for me": "프로필 README 생성",
+            "Recent bugs in primer/react": "primer/react의 최근 버그",
+            "My open pull requests": "내 열린 풀 리퀘스트",
+            "Generate an HTML/JS calculator": "HTML/JS 계산기 생성",
+            "Python password endpoint": "Python 비밀번호 엔드포인트",
+            "Rails authentication endpoint": "Rails 인증 엔드포인트",
+            "Email validation regex in JS": "JS 이메일 검증 정규식",
+            "What are Python decorators?": "Python 데코레이터란?",
+            "Python Panda data analysis": "Python Panda 데이터 분석",
+            "How can you help?": "어떻게 도와줄 수 있어?",
+            "What can I do here?": "여기서 무엇을 할 수 있어?",
+            "To-do list with local storage": "로컬 스토리지를 사용하는 할 일 목록",
+            "A digital time zone clock": "디지털 시간대 시계",
+            "Develop a weather dashboard": "날씨 대시보드 개발",
+            "Create a joke generator": "농담 생성기 만들기",
+        "Send": "전송",
+        "uses AI. Check for mistakes.": "AI를 사용해요. 실수를 확인해보세요!",
+        // 초보자 도움말
+        "Learn Git and GitHub without any code!": "Git과 GitHub를 단 한 줄의 코드도 없이 배워보세요!",
+        "Using the Hello World guide, you’ll create a repository, start a branch,": "헬로 월드 가이드를 사용해서, 저장소를 생성하고 분기를 시작할 거예요,",
+        "write comments, and open a pull request.": "댓글도 작성하고 끌어오기 요청을 열 거예요.",
+        "Let's get started!": "시작해봐요!",
+        "Hide this notice forever": "이 알림을 영원히 숨기기",
+    
+        "Welcome to GitHub! What’s next?": "GitHub에 오신 것을 환영해요! 이제 뭘 할까요?",
+        "Create a repository": "저장소를 만들기",
+        "Tell us about yourself": "자신에 대해 소개해 주세요",
+        "Browse interesting repositories": "흥미로운 저장소들을 둘러보기",
+        "on Twitter": "Twitter에서",
+    
+        "You don’t have any repositories yet!": "아직 저장소가 없어요!",
+        "Create your first repository": "첫 번째 저장소를 만들어보세요",
+        "or": "아니면",
+        "Learn more about Git and GitHub": "Git과 GitHub에 대해 더 알아보세요.",
+    
+        // 교육판
+        "Join GitHub Education!": "GitHub 교육에 가입해보세요!",
+            "GitHub Education opens doors to new skills, tools, and a collaborative community eager to drive innovation. Join us and build a foundation for your future in technology.": "GitHub 교육은 새로운 기술과 도구, 그리고 혁신을 향한 열정을 가진 협업 커뮤니티로 나아갈 수 있는 기회를 제공해요. 지금 합류해서 여러분의 기술 미래를 위한 기반을 마련해보세요.",
+        "Join GitHub Education": "GitHub 교육에 가입해보세요",
+    
+        // 조직
+        // [/You’re an owner of the ([^ ]+) organization!/, "당신은 $1 조직의 소유자에요!"],
+        // [/Create a repository for ([^ ]+)/, "$1을 위한 저장소를 만들어보세요"],
+        "Welcome to the": "환영합니다 :",
+        "View your teams": "팀을 확인해보세요",
+        "View and create teams": "팀을 확인하고 만들어보세요",
+        "See all owners": "모든 소유자를 확인해보세요",
+        "You've been added to the": "이미",
+        "organization.": "조직에 추가되어 있어요.",
+        // [/Edit ([^ ]+)’s settings/, "$1의 설정을 편집해보세요"],
+        "Return to your personal dashboard": "개인 대시보드로 돌아가기",
+    
+        // 이미 저장소가 있는 프로젝트
+        // 왼쪽 사이드바
+        "View organization": "조직 보기", // 조직
+        "Browse organization's repositories": "조직의 저장소들을 둘러보기", // 조직
+        "Top repositories": "상위 저장소",
+        "Top Repositories": "상위 저장소", // 안드로이드 UA
+        "New": "새로 만들기",
+        "Find a repository…": "저장소 검색…",
+        "Show more": "더 보기",
+        "Your teams": "내 팀",
+            "You don’t belong to any teams yet!": "아직 어떤 팀에도 속해 있지 않아요!",
+        "Find a team…": "팀 검색…",
+        "Recent activity": "최근 활동",
+            "When you take actions across GitHub, we’ll provide links to that activity here.": "GitHub 전반에서 활동을 하실 때, 해당 활동에 대한 링크를 이곳에 제공해드릴게요.", // 조직
+    
+        "Create your first project": "첫 번째 프로젝트를 만들어보세요.",
+            "Ready to start building? Create a repository for a new idea or bring over an existing repository to keep contributing to it.": "구축을 시작할 준비가 되셨나요? 새로운 아이디어를 위한 저장소를 만들어보거나 기존 저장소를 가져와서 계속 기여해보세요.",
+            "Create repository": "저장소 만들기.",
 
         // 中间栏
-        "The home for all developers — including you.": "所有开发者的家园——包括您。",
-        "Welcome to your personal dashboard, where you can find an introduction to how GitHub works, tools to help you build software, and help merging your first lines of code.": "欢迎来到您的个人仪表板，在这里您可以看到关于 GitHub 工作原理的介绍，帮助您构建软件的工具，以及帮助您合并您的第一行代码。",
-        "Learn with a tutorial project": "通过教程项目学习",
-            "Introduction to GitHub": "GitHub 简介",
-            "Get started using GitHub in less than an hour.": "一个小时内学会如何使用 GitHub。",
-            "Create a site or blog from your GitHub repositories with GitHub Pages.": "使用 GitHub Pages 从您的 GitHub 仓库创建网站或博客。",
-            "Code with Copilot": "使用 Copilot 编程",
-            "Develop with AI-powered code suggestions using GitHub Copilot, Codespaces, and VS Code.": "使用 GitHub Copilot、代码空间和 VS Code 通过 AI 驱动的代码建议进行开发。",
-            "Hello GitHub Actions": "你好 GitHub Actions",
-            "Create a GitHub Action and use it in a workflow.": "创建一个 GitHub Actions 并在工作流中使用它 ",
-            "See more tutorial projects": "查看更多的教程项目",
-        "Start writing code": "开始编写代码",
-            "A repository contains all of your project's files, revision history, and collaborator discussion.": "仓库包含项目的所有文件、修订历史记录和协作者讨论。",
-            "Repository name": "仓库名称",
-            "name your new repository...": "命名您的新仓库……",
-            "Anyone on the internet can see this repository": "任何人都可以看到这个仓库，您可以选择谁能提交。",
-            "You choose who can see and commit to this repository": "您可以选择谁可以看和提交到该仓库。",
-            "Create a new repository": "创建新的仓库",
-            "You're seeing this because you haven't created a repository in a while.": "您看到这个是因为您有一段时间没有创建仓库了。",
-            "You're seeing this because you haven't used repositories, issues, and pull requests recently.": "您看到这个是因为您最近没有使用仓库、이슈和拉取请求。",
-            "Remove from dashboard": "从仪表板中删除",
-        "Use tools of the trade": "使用贸易工具",
-            "You're seeing this because you haven't opened a pull request in a while.": "您看到这个是因为您有一段时间没有打开拉取请求了。",
-                "Simplify your development workflow with a GUI": "使用 GUI 简化开发工作流程",
-                "Install GitHub Desktop": "安装 GitHub Desktop",
-                "to visualize, commit, and push changes without ever touching the command line.": "来可视化、提交和推送更改，而无需使用命令行。",
-            "Get AI-based coding suggestions": "获取基于 AI 的编码建议",
-                "Try GitHub Copilot free for 30 days,": "免费试用 GitHub Copilot 30 天，",
-                "which suggests entire functions in real time, right from your editor.": "它可以直接从您的编辑器实时建议所有函数。",
-            "Write code in your web browser": "在您的网络浏览器中编写代码",
-                "Use": "使用",
-                "the github.dev web-based editor": "基于 github.dev 的网络编辑器",
-                "from your repository or pull request to create and commit changes.": "从您的仓库或拉取请求中创建和提交更改。",
-        "Install a powerful code editor": "安装一个强大的代码编辑器",
-            "is a multi-platform code editor optimized for building and debugging software.": "是针对构建和调试软件进行了优化的多平台代码编辑器。",
-        "Set up your local dev environment": "设置本地开发环境",
-            "set up Git": "设置 Git",
-            ", simplify your dev workflow with": "，简化您的开发工作流程，使用",
-            ", or": "，或",
-            "bring GitHub to the command line": "将 GitHub 引入命令行",
-        "Get started on GitHub": "开始使用 GitHub",
-            "You're seeing this because you haven't used GitHub's core features, yet.": "您看到这个是因为您有一段时间没有使用过 GitHub 的核心功能了。",
-        "Introduce yourself with a profile README": "使用 README 介绍自己",
-            "Share information about yourself by creating a profile README, which appears at the top of your profile page.": "通过创建个人资料自述文件（README）来分享有关您自己的信息，该信息将显示在您的个人资料页面顶部。",
-        "Follow this exercise to try the GitHub flow": "按照此练习尝试 GitHub 流程",
-            "GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and learn GitHub's pull request workflow for creating and reviewing code.": "GitHub 的 “Hello World” 教程会教您基本知识，您可以在其中创建自己的仓库并学习 GitHub 用于创建和审查代码的拉取请求工作流程。",
-            "Try the GitHub flow": "尝试 GitHub 流程",
-        "About version control and Git": "关于版本控制和 Git",
-        "Learn about the version control system, Git, and how it works with GitHub.": "了解版本控制系统、Git 以及它如何与 GitHub 一起工作。",
-        "The GitHub Flow": "GitHub 流程",
-        "Adopt GitHub's lightweight, branch-based workflow to collaborate on projects.": "采用 GitHub 的轻量级、基于分支的工作流程来协作处理项目。",
+        "The home for all developers — including you.": "모든 개발자들의 집이에요! — 사용자님도 당연히 포함해서요.",
+        "Welcome to your personal dashboard, where you can find an introduction to how GitHub works, tools to help you build software, and help merging your first lines of code.": "개인 대시보드에 오신 것을 환영해요. 여기서 GitHub의 작동 원리, 소프트웨어 개발에 도움을 주는 도구들, 그리고 첫 코드를 병합하는 방법을 확인해보실 수 있어요.",
+        "Learn with a tutorial project": "튜토리얼 프로젝트로 배우기",
+          "Introduction to GitHub": "GitHub 소개",
+          "Get started using GitHub in less than an hour.": "한 시간 안에 GitHub 사용법을 익혀보세요.",
+          "Create a site or blog from your GitHub repositories with GitHub Pages.": "GitHub 저장소를 활용해 GitHub Pages로 사이트나 블로그를 만들어보세요.",
+          "Code with Copilot": "Copilot으로 코드 작성하기",
+          "Develop with AI-powered code suggestions using GitHub Copilot, Codespaces, and VS Code.": "GitHub Copilot, Codespaces, 그리고 VS Code를 사용해 AI 기반의 코드 제안을 받아 개발해보세요.",
+          "Hello GitHub Actions": "GitHub 액션아 안녕!",
+          "Create a GitHub Action and use it in a workflow.": "GitHub 액션을 만들어 워크플로에서 사용해보세요.",
+          "See more tutorial projects": "더 많은 튜토리얼 프로젝트 보기",
+        "Start writing code": "코드 작성 시작하기",
+          "A repository contains all of your project's files, revision history, and collaborator discussion.": "저장소는 프로젝트의 모든 파일, 수정 이력, 그리고 협업자 간의 토론을 포함하고 있어요.",
+          "Repository name": "저장소 이름",
+          "name your new repository...": "새 저장소의 이름을 지어보세요…",
+          "Anyone on the internet can see this repository": "인터넷상의 누구나 이 저장소를 볼 수 있어요.",
+          "You choose who can see and commit to this repository": "이 저장소를 볼 수 있고 커밋할 수 있는 사람은 직접 선택할 수 있어요.",
+          "Create a new repository": "새 저장소 만들기",
+          "You're seeing this because you haven't created a repository in a while.": "오랫동안 저장소를 만들지 않으셔서 이 메시지가 보이고 있어요.",
+          "You're seeing this because you haven't used repositories, issues, and pull requests recently.": "최근에 저장소, 이슈, 끌어오기 요청을 사용하지 않으셔서 이 메시지가 보이고 있어요.",
+          "Remove from dashboard": "대시보드에서 제거하기",
+        "Use tools of the trade": "개발 도구 사용하기",
+          "You're seeing this because you haven't opened a pull request in a while.": "오랫동안 끌어오기 요청을 열지 않으셔서 이 메시지가 보이고 있어요.",
+            "Simplify your development workflow with a GUI": "GUI를 사용해 개발 워크플로를 간소화해보세요.",
+            "Install GitHub Desktop": "GitHub Desktop 설치하기",
+            "to visualize, commit, and push changes without ever touching the command line.": "명령줄을 전혀 사용하지 않고도 변경 사항을 시각화, 커밋, 푸시할 수 있어요.",
+          "Get AI-based coding suggestions": "AI 기반 코딩 제안 받아보기",
+            "Try GitHub Copilot free for 30 days,": "GitHub Copilot을 30일 동안 무료로 사용해보세요,",
+            "which suggests entire functions in real time, right from your editor.": "편집기에서 바로 전체 함수를 실시간으로 제안해줘요.",
+          "Write code in your web browser": "웹 브라우저에서 코드 작성하기",
+            "Use": " ",
+            "the github.dev web-based editor": "github.dev 웹 기반 편집기를",
+            "from your repository or pull request to create and commit changes.": "저장소 또는 끌어오기 요청에서 사용해 변경 사항을 만들고 커밋해보세요.",
+        "Install a powerful code editor": "강력한 코드 편집기 설치하기",
+          "is a multi-platform code editor optimized for building and debugging software.": "이 편집기는 소프트웨어 빌드와 디버깅에 최적화된 다중 플랫폼 코드 편집기에요.",
+        "Set up your local dev environment": "로컬 개발 환경 설정하기",
+          "set up Git": "Git 설정하기",
+          ", simplify your dev workflow with": "개발 워크플로 간소화하기",
+          ", or": ", 아니면",
+          "bring GitHub to the command line": "GitHub를 명령줄에서 사용하기",
+        "Get started on GitHub": "GitHub 시작하기",
+          "You're seeing this because you haven't used GitHub's core features, yet.": "아직 GitHub의 핵심 기능을 사용하지 않으셔서 이 메시지가 보이고 있어요.",
+        "Introduce yourself with a profile README": "프로필 리드미로 자신을 소개하기",
+          "Share information about yourself by creating a profile README, which appears at the top of your profile page.": "프로필 페이지 상단에 표시되는 프로필 리드미를 작성하여 자신에 대한 정보를 공유해보세요.",
+        "Follow this exercise to try the GitHub flow": "이 연습을 따라 GitHub 흐름을 체험해보세요.",
+          "GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and learn GitHub's pull request workflow for creating and reviewing code.": "GitHub의 ‘Hello World’ 튜토리얼은 필수 사항을 알려주며, 여기서 본인의 저장소를 만들고 코드를 작성 및 검토하는 끌어오기 요청 워크플로를 배울 수 있어요.",
+          "Try the GitHub flow": "GitHub 흐름 체험하기",
+        "About version control and Git": "버전 관리 및 Git에 대해 알아보기",
+          "Learn about the version control system, Git, and how it works with GitHub.": "버전 관리 시스템인 Git과 GitHub와의 연동 방식에 대해 알아보세요.",
+        "The GitHub Flow": "GitHub 흐름",
+          "Adopt GitHub's lightweight, branch-based workflow to collaborate on projects.": "프로젝트 협업을 위해 GitHub의 경량화된 분기 기반 워크플로를 도입해보세요.",
 
-        "One moment please...": "稍等一会儿...",
-        "Loading activity...": "载入活动...",
-        "All activity": "所有活动",
+        "One moment please...": "잠시만요...",
+        "Loading activity...": "작업을 로드중이에요...",
+        "All activity": "모든 작업",
 
-        "Welcome to the new feed!": "欢迎来到新的动态提要!",
-        "We’re updating the cards and ranking all the time, so check back regularly. At first, you might need to follow some people or star some repositories to get started": "我们一直在更新卡片和排名，所以请定期查看。一开始，您可能需要关注一些人或标星一些仓库才能开始",
-        "Send feedback": "发送反馈",
+        "Welcome to the new feed!": "새 피드에 오신것을 환영합니다!",
+        "We’re updating the cards and ranking all the time, so check back regularly. At first, you might need to follow some people or star some repositories to get started": "우리는 항상 카드를 업데이트하고 순위를 매기기 때문에 정기적으로 다시 확인해보세요. 처음에는 몇몇 사람들을 팔로우하거나 리포지토리를 선택해야 시작될 수도 있어요",
+        "Send feedback": "피드백 보내기",
 
-        "Updates to your homepage feed": "主页动态摘要的更新",
-        "We've combined the power of the Following feed with the For you feed so there’s one place to discover content on GitHub. There’s improved filtering so you can customize your feed exactly how you like it, and a shiny new visual design. ✨": "我们将 “关注动态提要” 与 “您的动态提要” 的强大功能结合在一起，让您在一个地方就能发现 GitHub 上的内容。此外，我们还改进了筛选功能，让您可以完全按照自己的喜好定制动态提要，并采用全新的视觉设计。 ✨",
-        "Learn more": "了解更多",
+        "Updates to your homepage feed": "홈페이지 피드 업데이트",
+        "We've combined the power of the Following feed with the For you feed so there’s one place to discover content on GitHub. There’s improved filtering so you can customize your feed exactly how you like it, and a shiny new visual design. ✨": "GitHub에서 팔로우 피드와 추천 피드의 기능을 합쳐서 콘텐츠를 한 곳에서 발견할 수 있게 되었어요. 원하는 대로 피드를 맞춤 설정할 수 있도록 필터링 기능이 개선되었고, 새로운 디자인으로 더욱 보기 좋아졌답니다. ✨",
+        "Learn more": "자세히 알아보기",
 
         // 提要筛选
-        "Filter": "筛选器",
-            "Feed filters": "提要筛选器",
-            "Events": "事件",
-                "Activity you want to see on your feed": "您想在提要上看到的活动",
-            "Announcements": "公告",
-                "Special discussion posts from repositories": "来自仓库的特别讨论帖",
+        "Filter": "필터",
+            "Feed filters": "피드 필터",
+            "Events": "이벤트",
+                "Activity you want to see on your feed": "피드에서 보고 싶은 활동을 골라보세요!",
+            "Announcements": "공지",
+                "Special discussion posts from repositories": "저장소에서 올라온 특별 토론 게시글들",
             "Releases": "릴리즈",
-                "Update posts from repositories": "来自仓库的更新帖",
-            // 赞助
-                "Relevant projects or people that are being sponsored": "获得赞助的相关项目或人员",
-            "Stars": "星标",
-                "Repositories being starred by people": "被人们标星的仓库",
+                "Update posts from repositories": "저장소의 업데이트 게시글들",
+            // 후원
+                "Relevant projects or people that are being sponsored": "후원을 받고 있는 관련 프로젝트나 사람들",
+            "Stars": "별표",
+                "Repositories being starred by people": "사람들이 별표 표시한 저장소",
             "Repositories": "저장소",
-                "Repositories that are created or forked by people": "由人们创建或复刻的仓库",
-            "Repository activity": "仓库活动",
-                "Issues and pull requests from repositories": "来自仓库的이슈和拉取请求",
-            "Follows": "关注",
-                "Who people are following": "人们在关注谁",
-            "Recommendations": "推荐",
-                "Repositories and people you may like": "您可能喜欢的仓库和人",
+                "Repositories that are created or forked by people": "사람들이 생성하거나 포크한 저장소",
+            "Repository activity": "저장소 활동",
+                "Issues and pull requests from repositories": "저장소에서 온 이슈와 끌어오기 요청",
+            "Follows": "팔로우",
+                "Who people are following": "사람들이 팔로우하는 사람들",
+            "Recommendations": "추천",
+                "Repositories and people you may like": "사용자님이 좋아할 만한 저장소와 사람들",
 
-            "Include events from starred repositories": "包括来自星标仓库中的事件",
-                "By default, the feed shows events from repositories you sponsor or watch, and people you follow.": "默认情况下，动态提要显示的事件来自您赞助或关注的仓库，以及您关注的人。",
-            "Reset to default": "重置",
-            "Save": "保存",
+            "Include events from starred repositories": "별표 표시한 저장소에서 온 이벤트 포함하기",
+                "By default, the feed shows events from repositories you sponsor or watch, and people you follow.": "기본적으로, 피드에는 후원하거나 구독하는 저장소와 팔로우하는 사람들의 이벤트가 표시돼요.",
+            "Reset to default": "기본값으로 재설정하기",
+            "Save": "저장하기",
 
-        "Show all": "显示所有",
-        "Show less": "显示更少",
+        "Show all": "모두 표시하기",
+        "Show less": "덜 표시하기",
 
-        "Uh oh!": "哎呀！",
-        "There was an error in loading the activity feed.": "载入动态提要时发生错误。",
-        "Reload this page": "重载此页面",
+        "Uh oh!": "헐...",
+        "There was an error in loading the activity feed.": "활동 피드를 불러오는 중 오류가 발생했어요.",
+        "Reload this page": "이 페이지 다시 불러오기",
 
         // 动态 状态词
-        "starred": "星标了",
-        "created": "创建了",
+        "starred": "에 별표했어요",
+        "created": "생성 :",
         "forked from": "포크됨 :",
-        "generated from": "创建自",
-        "mirrored from": "镜像自",
-        "forked": "复刻了",
-        "from": "来自",
+        "generated from": "생성됨 :",
+        "mirrored from": "미러됨 :",
+        "forked": "을(를) 포크했어요",
+        "from": "쀐이거어디서나오는지알아냈다면이슈에올려주시거나디스코드jinyoon으로연락주세요왜냐하면이게어디서나오는지진짜모르겠거든요",
         "for": "",
-        "pushed to": "推送到",
-        "released": "发布了",
+        "pushed to": "푸시됨 :",
+        "released": "에서 새로 릴리즈했어요",
         "published": "发布了",
-        "started sponsoring": "赞助给",
-        "started following": "已关注",
-        "you": "您",
-        "Updated": "更新于",
-        "a repository": "1 个仓库",
-        "has a new repository": "创建了仓库",
-        "created a repository": "创建了仓库",
-        "created a branch in": "创建了一个分支在",
+        "started sponsoring": "을(를) 후원하기 시작했어요",
+        "started following": "을(를) 팔로우하기 시작했어요",
+        "you": "나",
+        "Updated": "업데이트 :",
+        "a repository": "저장소",
+        "has a new repository": "에게 새 저장소가 있어요",
+        "created a repository": "님이 새 저장소를 만들었어요",
+        "created a branch in": "님이 새 분기를 만들었어요 :",
         "in": "分支在",
         "Forked to": "复刻为",
         "of": "",
@@ -1833,28 +1852,28 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         "public": "设为公共",
         "committed": "提交于",
         "posted a discussion in": "发表讨论于",
-        "made this repository public": "将此仓库公开",
+        "made this repository public": "",
         "labeled a pull request": "将标签添加到拉取请求中",
-        "launched their sponsorship page 💖": "推出了他们的赞助页面 💖",
+        "launched their sponsorship page 💖": "이(가) 새 후원 페이지를 열었어요 💖",
         //[/and (\d+) more/, "和另外 $1 个"],
-        "All reactions": "所有看法",
+        "All reactions": "모든 반응",
 
         "published a release": "发布发行版",
         "forked a repository": "复刻仓库",
         "starred a repository": "星标仓库",
         "sponsored": "赞助了",
-        "followed": "关注了",
-        "added a repository to": "已将仓库添加到",
+        "followed": "님이 다른 사용자를 팔로우했어요.",
+        "added a repository to": "목록에 추가했어요",
         "contributed to": "贡献给",
             // 现在会显示拉取请求状态
             "Merged": "已合并",
 
-        "your repository": "您的仓库",
+        "your repository": "내 저장소",
 
         "Read more": "阅读更多内容",
 
-        "More": "更多",
-        "Loading more…": "载入更多…",
+        "More": "더 보기",
+        "Loading more…": "불러오는 중…",
 
         "Subscribe to your news feed": "订阅您的新闻提要",
         "Subscribe to the": "订阅", // 组织
@@ -1870,18 +1889,18 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         // [/You're seeing this because you follow ([^ ]+)/, "您看到这个，是因为您关注了 $1"],
         "Unfollow this user": "取消关注此用户",
 
-        "Contributors": "贡献者",
-        "Report": "举报",
-        "Recommended for you": "为您推荐",
-        "Trending repositories": "热门仓库",
-        "See more": "查看更多",
+        "Contributors": "기여자",
+        "Report": "신고",
+        "Recommended for you": "사용자님을 위해 준비했어요",
+        "Trending repositories": "유행하는 저장소",
+        "See more": "더 보기",
         "You're seeing this based on GitHub-wide trends.": "您看到的是基于 GitHub-wide 的趋势。",
-        "Recommended based on people you follow": "根据您关注的人推荐",
-        "has a new discussion in": "有一条新讨论，在",
-        "Join discussion": "参与讨论",
+        "Recommended based on people you follow": "사용자님이 팔로우하는 사람들을 분석한 추천",
+        "has a new discussion in": "새로운 토론이 있어요 :",
+        "Join discussion": "토론 참여하기",
         "Popular among": "很受欢迎",
-        "people you follow": "在您关注的人中",
-        "Sponsor": "협찬",
+        "people you follow": "내가 팔로우 하는 사람",
+        "Sponsor": "후원",
 
         // 右侧栏
         "Latest changes": "最新变化",
@@ -1921,21 +1940,21 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         "After you switch contexts you’ll see an organization-focused dashboard that lists out organization repositories and activities.": "当您切换身份，您会看到一个组织为中心的页面，其中列出了组织库和活动。",
 
         // 快捷键
-        "Dashboards": "仪表板",
+        "Dashboards": "대시보드",
         "Go to your issues": "跳转到您的이슈",
         "Go to your pull requests": "跳转到您的拉取请求",
     },
     "regexp": [ // 正则翻译
         [/added (\d+) repositor(y|ies) to/, "添加 $1 个仓库到"],
         [/, and (\d+) more/, "，以及其他 $1 个组织"], // 用户 浮动信息卡
-        [/(\d+) repositor(y|ies)/, "$1 个仓库"], // 组织  浮动信息卡
-        [/(\d+) of your repositor(y|ies)/, "您的 $1 个仓库"],
+        [/(\d+) repositor(y|ies)/, "저장소 $1개"], // 组织  浮动信息卡
+        [/(\d+) of your repositor(y|ies)/, "사용자님의 $1개의 저장소"],
         [/(\d+) members?/, "$1 个成员"], // 组织  浮动信息卡
         [/is being deleted./, "正在被删除。"], // 仓库 组织被删除
         [/Your repository \"([^ ]+)\" was successfully deleted./, "您的仓库 “$1” 已成功删除。"], // 仓库删除
         [/(\d+) releases?/, "$1 个发行版"],
-        [/(\d+k?) followers?/, "$1 个关注者"],
-        [/(\d+) users?/, "$1 个用户"],
+        [/(\d+k?) followers?/, "팔로워 $1명"],
+        [/(\d+) users?/, "$1명의 사용자"],
         [/(\d+) comments?/, "$1 条评论"],
         [/(\d+) commits? to/, "$1 个提交到"],
         [/(\d+) more commits? »/, "$1 个更多提交到"],
@@ -1978,151 +1997,151 @@ I18N["ko-KR"]["orgs/dashboard"] = I18N["ko-KR"]["page-dashboard"];
 I18N["ko-KR"]["page-profile-public"] = { // 个人首页（含组织）
     "static": { // 静态翻译
         // 左侧用户信息栏
-            "Change your avatar": "修改头像",
-            "they/them": "他们",
-            "she/her": "她",
-            "he/him": "他",
-            "You have blocked this user": "您已拉黑此用户",
-            "Follow": "关注",
-            "Sponsor": "협찬",
-            "follower": "关注者",
-            "followers": "关注者",
-            "following": "关注",
-            "Followed by": "共同关注者：",
-            "Joined": "加入于",
-            "Achievements": "成就",
-            "Highlights": "高光时刻",
-                "Label: Pro": "标签：专业版",
-            "Developer Program Member": "开发者计划成员",
-            "Organizations": "组织",
-            "Block or Report": "拉黑或举报",
-            "Unblock or report user": "取消拉黑或举报",
-            "- same time": "- 时间相同",
-
-            // 编辑个人资料
-                "Edit profile": "编辑个人资料",
-                "Name": "名称",
-                "Display": "显示",
-                    "badge.": "徽章。",
-                "Bio": "个人简介",
-                "Add a bio": "添加个人简介",
-                    "You can": "您可",
-                    "@mention": "@用户名或组织名",
-                    "other users and organizations to link to them.": "链接到其他用户和组织。",
-                "Pronouns": "代词",
-                    "Don't specify": "不说明",
-                    "they/them": "他们",
-                    "she/her": "她",
-                    "he/him": "他",
-                    "Custom": "自定义",
-                "Company": "公司",
-                "Location": "位置",
-                "Display current local time": "显示当前当地时间",
-                "same time": "相同时间",
-                "Website": "网站",
-                "Social accounts": "社交账户",
-                "Link to social profile": "链接到社交账户",
-
-            // 成就浮动界面
-                // 北极代码库贡献者
-                    "Arctic Code Vault Contributor": "北极代码库贡献者",
-                        "History": "历史",
-                        "100% unlocked": "100% 解锁",
-                        "· Unlocked": "· 解锁于",
-                        "these repositories, and more, were archived": "这些仓库以及更多仓库已存档",
-                // YOLO
-                    "You want it? You merge it.": "您想要它？您合并它。",
-                    "Merged without a review": "未经审查就合并",
-                // Pull Shark
-                    "Pull Shark": "鲨鱼拉",
-                    "Bronze unlocked": "青铜已解锁",
-                    "Bronze and Silver unlocked": "青铜和白银已解锁",
-                    "· First unlocked": "· 首次解锁于",
-                    "2nd pull request merged": "2 个拉取请求被合并",
-                    "16th pull request merged": "16 个拉取请求被合并",
-                    "128th pull request merged": "128 个拉取请求被合并",
-                    "1024th pull request merged": "1024 个拉取请求被合并",
-                // Starstruck
-                    "Starstruck": "追星族",
-                    "⭐️ 16 stars": "⭐️ 16 个星标",
-                    "⭐️ 128 stars": "⭐️ 128 个星标",
-                    "⭐️ 512 stars": "⭐️ 512 个星标",
-                    "⭐️ 4096 stars": "⭐️ 4096 个星标",
-                // Pair Extraordinaire
-                    "Pair Extraordinaire": "非凡搭档",
-                    "Unlocked": "解锁于",
-                    "Coauthored with": "与下列用户共同合作",
-                    "Coauthored with an unknown user": "与未知用户共同合作",
-                // Quickdraw
-                    "Quickdraw": "快速关闭",
-                    "Gitty up!": "赶快开始！",
-                    "Closed within 5 minutes of opening": "在打开的 5 分钟内关闭",
-                // Galaxy Brain
-                    "Galaxy Brain": "银河大脑",
-                    "2nd accepted answer": "2 个答案被接受",
-                    "8th accepted answer": "8 个答案被接受",
-                    "16th accepted answer": "16 个答案被接受",
-                    "32nd accepted answer": "32 个答案被接受",
-                // Public Sponsor
-                    "Public Sponsor": "公共赞助者",
-                    "1st sponsorship": "1 次赞助",
-                // Mars 2020 Contributor
-                    "Mars 2020 Contributor": "火星 2020 贡献者",
-                    "Mars 2020 Helicopter Mission": "2020 火星无人直升机首飞计划",
-                    "this repository was included": "该仓库已收录",
-
-                // ?tab=achievements
-                    "Hide from profile": "从个人资料中隐藏",
-                    "Hidden from your profile.": "已从您的个人资料中隐藏",
-                    "Show on profile": "在个人资料中显示",
-                    "Copy share link": "复制共享链接",
-                    "Preview on Twitter": "在 Twitter 上预览",
-                    "New": "新",
-
-                    // 顶部提醒
-                        // [/The (.+) achievement will now be hidden from your profile./, "现在，将从您的个人资料中隐藏 “$1” 成就。"],
-                        // [/The (.+) achievement will now be shown in your profile./, "现在，将在您的个人资料中显示 “$1” 成就。"],
-
-                "Send feedback": "发送反馈",
-
-            // 拉黑 & 举报用户对话框
-                // [/Block or report ([^ ]+)/, "拉黑或举报 $1"],
-                "Block user": "拉黑用户",
-                "Prevent this user from interacting with your repositories and sending you notifications. Learn more about": "防止该用户与您的仓库互动并向您发送通知。了解更多关于",
-                "blocking users": "拉黑用户",
-
-                "Add an optional note:": "添加可选备注：",
-                    "Please don't include any personal information such as legal names or email addresses. Maximum 100 characters, markdown supported. This note will be visible to only you.": "请勿包含任何个人信息，如法定姓名或电子邮件地址。最多 100 个字符，支持标记符。此备注只有您本人可见。",
-
-                "Unblock user": "取消拉黑",
-                "Allow this user to interact with your repositories and send you notifications. Learn more about": "允许该用户与您的仓库互动并向您发送通知。了解更多关于",
-
-                "Report abuse": "남용 신고",
-                    "Contact GitHub support about this user’s behavior. Learn more about": "就该用户的行为联系 GitHub 支持部门。了解更多关于",
-                    "reporting abuse": "举报滥用",
-
-        // 仓库
-            "Forked from": "复刻自",
-            "Updated": "更新于",
-
-            // 许可证
-                "GNU General Public License v3.0": "GNU 通用公共许可证 v3.0",
-                "GPL-3.0 License": "GPL-3.0 许可证",
-                "AGPL-3.0 License": "AGPL-3.0 许可证",
-                "LGPL-3.0 License": "LGPL-3.0 许可证",
-                "MIT License": "MIT 许可证",
-                "Apache License 2.0": "Apache-2.0 许可证",
-                "OFL-1.1 License": "OFL-1.1 许可证",
-                "0BSD License": "0BSD 许可证",
-                "BSD-3-Clause License": "BSD-3-Clause 许可证",
-                "BSD 3-Clause \"New\" or \"Revised\" License": "BSD-3-Clause 许可证",
-                "CC0-1.0 License": "CC0-1.0 许可证",
-                "WTFPL License": "WTFPL 许可证",
-                "Other": "其他",
-                "Unknown": "未知",
-
+        "Change your avatar": "아바타 변경하기",
+        "they/them": "그들",
+        "she/her": "그녀",
+        "he/him": "그",
+        "You have blocked this user": "이 사용자를 차단하셨어요",
+        "Follow": "팔로우",
+        "Sponsor": "후원",
+        "follower": "팔로워",
+        "followers": "팔로워",
+        "following": "팔로잉",
+        "Followed by": "함께 팔로우한 사람:",
+        "Joined": "가입일:",
+        "Achievements": "업적",
+        "Highlights": "하이라이트",
+            "Label: Pro": "라벨: 프로",
+        "Developer Program Member": "개발자 프로그램 멤버",
+        "Organizations": "조직",
+        "Block or Report": "차단 또는 신고",
+        "Unblock or report user": "차단 해제 또는 신고하기",
+        "- same time": "- 같은 시간",
+    
+        // 프로필 편집
+            "Edit profile": "프로필 편집하기",
+            "Name": "이름",
+            "Display": "표시",
+                "badge.": "뱃지.",
+            "Bio": "자기소개",
+            "Add a bio": "자기소개 추가하기",
+                "You can": "사용할 수 있어요:",
+                "@mention": "@언급",
+                "other users and organizations to link to them.": "다른 사용자와 조직을 연결해보세요.",
+            "Pronouns": "대명사",
+                "Don't specify": "선택 안 함",
+                "they/them": "그들",
+                "she/her": "그녀",
+                "he/him": "그",
+                "Custom": "직접 입력",
+            "Company": "회사",
+            "Location": "위치",
+            "Display current local time": "현재 현지 시간 표시하기",
+            "same time": "같은 시간",
+            "Website": "웹사이트",
+            "Social accounts": "소셜 계정",
+            "Link to social profile": "소셜 프로필 연결하기",
+    
+        // 업적 플로팅 인터페이스
+            // 북극 코드 저장소 기여자
+                "Arctic Code Vault Contributor": "북극 코드 저장소 기여자",
+                    "History": "이력",
+                    "100% unlocked": "100% 해금됨",
+                    "· Unlocked": "· 해금됨:",
+                    "these repositories, and more, were archived": "이 저장소와 그 외 저장소가 아카이브되었어요.",
+            // YOLO
+                "You want it? You merge it.": "원하시면, 직접 머지해보세요.",
+                "Merged without a review": "리뷰 없이 머지되었어요.",
+            // Pull Shark
+                "Pull Shark": "풀 샤크",
+                "Bronze unlocked": "브론즈 해금됨",
+                "Bronze and Silver unlocked": "브론즈와 실버 해금됨",
+                "· First unlocked": "· 최초 해금됨:",
+                "2nd pull request merged": "2번째 끌어오기 요청 병합함",
+                "16th pull request merged": "16번째 끌어오기 요청 병합함",
+                "128th pull request merged": "128번째 끌어오기 요청 병합함",
+                "1024th pull request merged": "1024번째 끌어오기 요청 병합함",
+            // Starstruck
+                "Starstruck": "별친놈",
+                "⭐️ 16 stars": "⭐️ 별표 16개",
+                "⭐️ 128 stars": "⭐️ 별표 128개",
+                "⭐️ 512 stars": "⭐️ 별표 512개",
+                "⭐️ 4096 stars": "⭐️ 별표 4096개",
+            // Pair Extraordinaire
+                "Pair Extraordinaire": "뛰어난 페어",
+                "Unlocked": "해금됨:",
+                "Coauthored with": "함께 작성:",
+                "Coauthored with an unknown user": "알 수 없는 사용자와 함께 작성함",
+            // Quickdraw
+                "Quickdraw": "빠른 클로즈",
+                "Gitty up!": "빨리 시작해보세요!",
+                "Closed within 5 minutes of opening": "오픈한 후 5분 이내에 닫았어요.",
+            // Galaxy Brain
+                "Galaxy Brain": "갤럭시 브레인",
+                "2nd accepted answer": "2번째 채택된 답변",
+                "8th accepted answer": "8번째 채택된 답변",
+                "16th accepted answer": "16번째 채택된 답변",
+                "32nd accepted answer": "32번째 채택된 답변",
+            // Public Sponsor
+                "Public Sponsor": "공개 후원자",
+                "1st sponsorship": "첫 번째 후원",
+            // Mars 2020 Contributor
+                "Mars 2020 Contributor": "Mars 2020 기여자",
+                "Mars 2020 Helicopter Mission": "2020 화성 무인 헬리콥터 미션",
+                "this repository was included": "이 저장소가 포함되었어요.",
+    
+            // ?tab=업적
+                "Hide from profile": "프로필에서 숨기기",
+                "Hidden from your profile.": "프로필에서 숨겨졌어요.",
+                "Show on profile": "프로필에 표시하기",
+                "Copy share link": "공유 링크 복사하기",
+                "Preview on Twitter": "Twitter에서 미리보기",
+                "New": "새",
+                
+                // 상단 알림
+                    // [/The (.+) achievement will now be hidden from your profile./, "이제 프로필에서 “$1” 업적이 숨겨졌어요."],
+                    // [/The (.+) achievement will now be shown in your profile./, "이제 프로필에 “$1” 업적이 표시되었어요."],
+    
+            "Send feedback": "피드백 보내기",
+    
+        // 사용자 차단 및 신고 대화창
+            // [/Block or report ([^ ]+)/, "차단 또는 신고 $1"],
+            "Block user": "사용자 차단하기",
+            "Prevent this user from interacting with your repositories and sending you notifications. Learn more about": "이 사용자가 사용자님의 저장소와 상호작용하거나 알림을 보내지 못하게 할 수 있어요. 자세한 내용은",
+            "blocking users": "사용자 차단",
+            
+            "Add an optional note:": "선택적 메모 추가:",
+                "Please don't include any personal information such as legal names or email addresses. Maximum 100 characters, markdown supported. This note will be visible to only you.": "법적 이름이나 이메일 주소와 같은 개인 정보를 포함하지 마세요. 최대 100자까지 입력할 수 있고, 마크다운을 지원해요. 이 메모는 본인만 볼 수 있어요.",
+            
+            "Unblock user": "차단 해제하기",
+            "Allow this user to interact with your repositories and send you notifications. Learn more about": "이 사용자가 사용자님의 저장소와 상호작용하고 알림을 보낼 수 있도록 허용할 수 있어요. 자세한 내용은",
+            
+            "Report abuse": "남용 신고",
+                "Contact GitHub support about this user’s behavior. Learn more about": "이 사용자의 행동에 대해 GitHub 지원팀에 연락할 수 있어요. 자세한 내용은",
+                "reporting abuse": "남용 신고",
+    
+        // 저장소
+            "Forked from": "포크됨:",
+            "Updated": "업데이트됨:",
+    
+        // 라이선스
+                "GNU General Public License v3.0": "GNU 일반 공중 라이선스 v3.0",
+                "GPL-3.0 License": "GPL-3.0 라이선스",
+                "AGPL-3.0 License": "AGPL-3.0 라이선스",
+                "LGPL-3.0 License": "LGPL-3.0 라이선스",
+                "MIT License": "MIT 라이선스",
+                "Apache License 2.0": "Apache 라이선스 2.0",
+                "OFL-1.1 License": "OFL-1.1 라이선스",
+                "0BSD License": "0BSD 라이선스",
+                "BSD-3-Clause License": "BSD-3-Clause 라이선스",
+                "BSD 3-Clause \"New\" or \"Revised\" License": "BSD-3-Clause 라이선스",
+                "CC0-1.0 License": "CC0-1.0 라이선스",
+                "WTFPL License": "WTFPL 라이선스",
+                "Other": "기타",
+                "Unknown": "알 수 없음",
+    
         // 标签栏
-            "Sponsoring": "赞助",
+            "Sponsoring": "후원"
     },
     "regexp": [ // 正则翻译
         [/(\d+) discussions? answered/, "$1 个讨论已回答"], // 高光时刻
@@ -2155,166 +2174,174 @@ I18N["ko-KR"]["page-profile"] = { // 个人首页
     "static": { // 静态翻译
         ...I18N["ko-KR"]["page-profile-public"]["static"],
 
-        // 概述标签卡 即主页 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            "Customize your pins": "自定义置顶",
-            // 设置置顶项目对话框
-            "Edit pinned items": "设置置顶项目",
-            "Select up to six public repositories or gists you'd like to show to anyone.": "最多选择 6 个您想向任何人展示的公共仓库或代码片段。",
-            "Select up to six public repositories you'd like to show.": "最多选择 6 个要显示的公共仓库。", // 组织页
-            "Filter repositories and gists": "筛选仓库和代码片段",
+            // 概述标签卡 即主页 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            "Customize your pins": "고정 항목 맞춤 설정하기",
+        
+            // 고정 항목 설정 대화상자
+            "Edit pinned items": "고정 항목 설정하기",
+            "Select up to six public repositories or gists you'd like to show to anyone.": "최대 6개의 공개 저장소 또는 gists를 선택해 누구에게나 보여줄 수 있어요.",
+            "Select up to six public repositories you'd like to show.": "최대 6개의 공개 저장소를 선택해 보여줄 수 있어요.", // 조직 페이지
+            "Filter repositories and gists": "저장소 및 gists 필터링하기",
             "Repositories": "저장소",
-            "Gists": "代码片段",
-            "Filter repositories": "筛选仓库", // 组织页
-            "Show:": "显示：",
-            "Save pins": "保存置顶",
-
-            "Drag to reorder": "拖动重新排序",
-
-            // 顶部提醒
-            "You unlocked new Achievements with private contributions! Show them off by including private contributions in your Profile in": "您通过私人贡献解锁了新成就！通过在您的个人资料中包含私人贡献来展示它们。",
-            "You unlocked new Achievements! Show them off by including achievements and private contributions in your Profile in": "您通过私人贡献解锁了新成就！通过在您的个人资料中包含私人贡献来展示它们。",
-            "Your pins have been updated. Drag and drop to reorder them.": "您的置顶已更新。拖放来重新排列它们。",
-            "Your popular repositories will now be shown instead of your pins.": "现在将显示您的热门仓库，而不是您的置顶。",
-
-            "Only you can see your full profile.": "只有您可以查看完整的个人资料。",
-                "You have marked your profile as private, which limits what activity other people can see.": "您已将个人资料设为私密，这会限制其他人查看您的活动。",
-                "Update profile settings": "更新个人资料设置",
-            "View what others see": "以他人视角查看",
-            "View full profile": "查看完整个人资料",
-
-            "Your pins have been updated.": "您的置顶已更新。",
-            // 拖拽排序提醒
-            "Order updated.": "置顶已更新。",
-
-            "Pinned": "已置顶",
-            "Top repositories": "置顶的仓库",
-            "Popular repositories": "流行的仓库",
-
-            "Learn how we count contributions": "了解我们如何计算贡献",
-            "Less": "更少",
-            "More": "更多",
-            "Contribution settings": "贡献设置",
+            "Gists": "gists",
+            "Filter repositories": "저장소 필터링하기", // 조직 페이지
+            "Show:": "표시:",
+            "Save pins": "고정 항목 저장하기",
+        
+            "Drag to reorder": "끌어서 순서 변경하기",
+        
+            // 상단 알림
+            "You unlocked new Achievements with private contributions! Show them off by including private contributions in your Profile in": 
+            "비공개 기여를 통해 새로운 업적을 잠금 해제했어요! 프로필에 비공개 기여를 포함해 자랑해보세요.",
+            
+            "You unlocked new Achievements! Show them off by including achievements and private contributions in your Profile in": 
+            "새로운 업적을 잠금 해제했어요! 프로필에 업적과 비공개 기여를 포함해 자랑해보세요.",
+            
+            "Your pins have been updated. Drag and drop to reorder them.": "고정 항목이 업데이트되었어요. 끌어서 순서를 변경해보세요.",
+            
+            "Your popular repositories will now be shown instead of your pins.": "이제 고정 항목 대신 인기 있는 저장소가 표시돼요.",
+        
+            "Only you can see your full profile.": "전체 프로필은 본인만 볼 수 있어요.",
+            "You have marked your profile as private, which limits what activity other people can see.": "프로필을 비공개로 설정했어요. 다른 사람들이 볼 수 있는 활동이 제한돼요.",
+            "Update profile settings": "프로필 설정 업데이트하기",
+            
+            "View what others see": "다른 사람이 보는 화면 보기",
+            "View full profile": "전체 프로필 보기",
+        
+            "Your pins have been updated.": "고정 항목이 업데이트되었어요.",
+        
+            // 드래그 정렬 알림
+            "Order updated.": "순서가 업데이트되었어요.",
+        
+            "Pinned": "고정됨",
+            "Top repositories": "고정된 저장소",
+            "Popular repositories": "인기 있는 저장소",
+        
+            "Learn how we count contributions": "기여도를 계산하는 방법 알아보기",
+            "Less": "적음",
+            "More": "많음",
+            "Contribution settings": "기여 설정",
 
             // 复刻仓库特有
-            "Forked from": "复刻自",
-            // 贡献设置下拉菜单
-            "Private contributions": "私人贡献",
-            "Turning on private contributions will show anonymized private activity on your profile.": "开启私人贡献则将在您的个人资料上显示匿名的私人活动。",
-            "Visitors will now see your public and anonymized private contributions.": "访客现在将看到您的公开和匿名的私人贡献。",
-            "Turning off private contributions will show only public activity on your profile.": "关闭私人贡献则将仅在您的个人资料中显示公开活动。",
-            "Visitors will now see only your public contributions.": "访客现在将只能看到您的公开贡献。",
-            "Activity overview": "活动概况",
-            "Turning off the activity overview will hide the section on your profile.": "关闭活动概况则将隐藏您的个人资料中的部分内容。",
-            "The 'Activity overview' section will no longer appear on your profile.": "“活动概况” 部分将不再出现在您的个人资料中。",
-            "Turning on the activity overview will show an overview of your activity across organizations and repositories.": "开启活动概况将显示跨组织和仓库的活动概况。",
-            "Others will now see 'Activity overview' when they view your profile.": "其他人在查看您的资料时，现在会看到 “活动概况”。",
+            "Forked from": "포크됨 :",
+            // 기여 설정 드롭다운 메뉴
+            "Private contributions": "비공개 기여",
+            "Turning on private contributions will show anonymized private activity on your profile.": "비공개 기여를 활성화하면, 프로필에 익명 처리된 비공개 활동이 표시돼요.",
+            "Visitors will now see your public and anonymized private contributions.": "방문자들이 이제 프로필에서 공개 기여와 익명 처리된 비공개 기여를 볼 수 있어요.",
+            "Turning off private contributions will show only public activity on your profile.": "비공개 기여를 끄면, 프로필에 공개 활동만 표시돼요.",
+            "Visitors will now see only your public contributions.": "방문자들이 이제 프로필에서 공개 기여만 볼 수 있어요.",
+            "Activity overview": "활동 개요",
+            "Turning off the activity overview will hide the section on your profile.": "활동 개요를 끄면, 프로필의 해당 섹션이 숨겨져요.",
+            "The 'Activity overview' section will no longer appear on your profile.": "이제 프로필에 '활동 개요' 섹션이 더 이상 나타나지 않아요.",
+            "Turning on the activity overview will show an overview of your activity across organizations and repositories.": "활동 개요를 켜면, 조직과 저장소에 걸친 활동 개요가 표시돼요.",
+            "Others will now see 'Activity overview' when they view your profile.": "다른 사람들이 이제 프로필을 볼 때 '활동 개요'를 확인할 수 있어요.",
 
-            "Contribution activity": "贡献活动",
-                "Year:": "年份：", // 小屏模式
+            "Contribution activity": "기여 활동",
+                "Year:": "연도:", // 작은 화면 모드
 
-            "Search by name": "搜索组织名",
-            "Contributed to": "贡献给了",
-            "Activity in": "活动在",
-            "No activity overview available.": "没有可用的活动概况。",
+            "Search by name": "조직명 검색하기",
+            "Contributed to": "기여함",
+            "Activity in": "활동한:",
+            "No activity overview available.": "활동 개요를 볼 수 없어요.",
 
-            "open": "打开",
-            "closed": "已关闭",
-            "merged": "已合并",
-            "pull request": "拉取请求",
+            "open": "열림",
+            "closed": "닫힘",
+            "merged": "병합됨",
+            "pull request": "끌어오기 요청",
 
-            "commits": "次提交",
-            "comments": "次评论",
-            "Commits": "提交",
-            "Code review": "代码审查",
-            "Built by": "构建者",
+            "commits": "커밋",
+            "comments": "댓글",
+            "Commits": "커밋",
+            "Code review": "코드 리뷰",
+            "Built by": "빌드한 사람",
 
-            "Created their first repository": "创建了他们的第一个仓库",
-            "Created an issue in": "创建一个이슈在",
-            "a private repository": "私有仓库",
-            "Created a pull request in": "创建一个拉取请求在",
-                "lines changed": "行更改",
-            "First repository": "第一个仓库",
-            "First pull request": "第一次拉取请求",
-            "First issue": "第一次이슈",
-            "Opened their first issue on GitHub in": "打开了他们第一个이슈",
-            "Opened their first pull request on GitHub in": "打开了他们第一个拉取请求",
-            "Opened their first pull request on GitHub in a private repository": "在私有仓库中打开了他们第一个拉取请求",
-            "Joined GitHub": "刚加入 GitHub",
-            "Joined the": "加入",
-            "organization": "组织",
-            //"Show more activity": "显示更多",
-            "Show more activity": "加载更多动态",
-            "Loading...": "载入中...",
+            "Created their first repository": "첫 번째 저장소를 만들었어요.",
+            "Created an issue in": "다음에서 이슈를 만들었어요:",
+            "a private repository": "비공개 저장소",
+            "Created a pull request in": "다음에서 끌어오기 요청을 만들었어요:",
+                "lines changed": "변경된 줄",
+            "First repository": "첫 번째 저장소",
+            "First pull request": "첫 번째 끌어오기 요청",
+            "First issue": "첫 번째 이슈",
+            "Opened their first issue on GitHub in": "GitHub에서 첫 번째 이슈를 열었어요:",
+            "Opened their first pull request on GitHub in": "GitHub에서 첫 번째 끌어오기 요청을 열었어요:",
+            "Opened their first pull request on GitHub in a private repository": "비공개 저장소에서 GitHub 첫 번째 끌어오기 요청을 열었어요.",
+            "Joined GitHub": "GitHub에 가입했어요.",
+            "Joined the": "가입했어요 :",
+            "organization": "조직",
+            //"Show more activity": "더 많은 활동 보기",
+            "Show more activity": "더 많은 활동 불러오기",
+            "Loading...": "불러오는 중...",
 
-            "Seeing something unexpected? Take a look at the": "看到了一些意想不到的东西？请看一下",
-            "GitHub profile guide": "GitHub 个人资料指南",
+            "Seeing something unexpected? Take a look at the": "예상치 못한 것이 보이시나요? 한 번 살펴보세요 :",
+            "GitHub profile guide": "GitHub 프로필 안내",
 
     },
-    "regexp": [ // 正则翻译
-        [/(\d+) discussions? answered/, "$1 个讨论已回答"], // 高光时刻
-        [/Block or report ([^ ]+)/, "拉黑或举报 $1"],
-        [/(\d+) GitHub Archive Program/, "$1 GitHub 存档计划"], // 成就浮动款
-        [/(\d+) remaining/, "$1 剩余"], // 置顶项目 剩余
-        [/([^ ]+) doesn('|’)t have any public repositories yet./, "$1 尚无任何公共仓库。"],
-        [/([\d,]+) contributions? in the last year/, "在过去的一年中贡献 $1 次"],
-        [/([\d,]+) contributions? in (\d+) in ([^ ]+)/, "在 $2 年中向 $3, 贡献 $1 次"],
-        [/([\d,]+) contributions? in (\d+)/, "在 $2 年中贡献 $1 次"],
-        [/(\d+) contributions? in private repositor(y|ies)/, "私有仓库 $1 个贡献"],
+    "regexp": [ // 정규식 번역
+        [/(\d+) discussions? answered/, "$1개의 토론이 답변되었어요."], // 하이라이트 순간
+        [/Block or report ([^ ]+)/, "차단 또는 신고하기 $1"],
+        [/(\d+) GitHub Archive Program/, "$1 GitHub 아카이브 프로그램"], // 업적 플로팅 항목
+        [/(\d+) remaining/, "$1 남았어요"], // 상단 고정 항목 남음
+        [/([^ ]+) doesn('|’)t have any public repositories yet./, "$1 아직 공개 저장소가 없어요."],
+        [/([\d,]+) contributions? in the last year/, "지난 1년 동안 $1회 기여했어요."],
+        [/([\d,]+) contributions? in (\d+) in ([^ ]+)/, "$2년에 $3에 $1회 기여했어요."],
+        [/([\d,]+) contributions? in (\d+)/, "$2년에 $1회 기여했어요."],
+        [/(\d+) contributions? in private repositor(y|ies)/, "비공개 저장소에서 $1회 기여했어요."],
         [/(\d+|No) contribution(?:s)? on (.+)(?:st|nd|rd|th)./, (match, number, p1) => {
             const dateRegExp = I18N["ko-KR"]["public"]["time-regexp"];
             const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
             //return optKey[opt] + `${translatedDate}`;
-            return number === 'No' ? `${translatedDate}，无贡献` : `${translatedDate}，` + number + ` 次贡献`;
-        }],// 贡献日历
+            return number === 'No' ? `${translatedDate}，기여 없어요` : `${translatedDate}，` + number + `회 기여했어요`;
+        }], // 기여 달력
         //[/A graph representing ([^ ]+)'s contributions from ( .+) to ( .+)./, "$1 从 $2 到 $3 的贡献图。"],
-        [/and (\d+) other repositor(y|ies)/, "和 $1 个其他仓库"], // 活动概览
-        // 贡献信息
-        [/Created ([\d,]+) commits? in (\d+) repositor(y|ies)/, "在 $2 个仓库中创建了 $1 次提交"],
-        [/Created (\d+) (other)? repositor(y|ies)/, "创建了 $1 个仓库"],
-        [/Opened (\d+) pull requests? in (\d+) repositor(y|ies)/, "在 $2 个仓库中打开了 $1 个拉取请求"],
-        [/Opened (\d+) other pull requests? in (\d+) repositor(y|ies)/, "在 $2 个其他仓库中打开了 $1 个拉取请求"],
-        [/Opened (\d+) issues? in (\d+) repositor(y|ies)/, "在 $2 个仓库中打开了 $1 个이슈"],
-        [/Opened (\d+) other issues? in (\d+) repositor(y|ies)/, "在 $2 个其他仓库中打开了 $1 个其他이슈"],
-        [/Reviewed (\d+) pull requests? in (\d+) repositor(y|ies)/, "在 $2 个仓库中审查了 $1 个拉取请求"],
-        [/Answered (\d+) discussions? in (\d+) repositor(y|ies)/, "在 $2 个仓库中答复了 $1 个讨论"],
-        [/Started (\d+) discussions? in (\d+) repositor(y|ies)/, "在 $2 个仓库中发起了 $1 个讨论"],
-        [/(\d+) commits?/, "$1 次提交"],
-        [/(\d+) pull requests?/, "$1 次拉取请求"],
-        [/that received (\d+) comments?/  , "收到 $1 条评论"],
-        [/(\d+) of (\d+) tasks?/, "$1 / $2 个任务"],
-        [/(\d+) comments?/, "$1 条评论"],
-        [/(\d+) tasks? done/, "$1 个任务完成"],
-        [/([^ ]+) doesn't have any projects yet./, "$1 目前还没有任何项目。"],
-        [/([^ ]+) has no activity yet for this period./, "$1 目前还没有活动。"],
-        [/([^ ]+) had no activity during this period./, "$1 在此期间没有活动。"],
-        [/Contribution activity in ([^ ]+)/, "在 $1 中的贡献活动"],
-        [/([^ ]+) had no activity in ([^ ]+) during this period./, "在此期间，$1 在 $2 中没有活动。"],
-        [/([^ ]+) has no activity in ([^ ]+) yet for this period./, "在此期间，$1 在 $2 中没有活动。"],
-        [/@([^ ]+)'s activity is private/, "$1 的活动不可见"],
-        [/Created (\d+\+?) repositor(y|ies)/, "创建了 $1 个仓库"],
-        [/(\d+) repositor(y|ies)/, "$1 个仓库"],
-        [/(\d+) members?/, "$1 成员"], // 组织 浮动信息卡
-        [/(\d+) tasks?/, "$1 任务"], // 带任务이슈
-        [/and (\d+) more/, "等 $1 人"],
+        [/and (\d+) other repositor(y|ies)/, "와 $1개의 다른 저장소"], // 활동 개요
+        // 기여 정보
+        [/Created ([\d,]+) commits? in (\d+) repositor(y|ies)/, "$2개의 저장소에서 $1회 커밋을 만들었어요."],
+        [/Created (\d+) (other)? repositor(y|ies)/, "$1개의 저장소를 만들었어요."],
+        [/Opened (\d+) pull requests? in (\d+) repositor(y|ies)/, "$2개의 저장소에서 $1개의 끌어오기 요청을 열었어요."],
+        [/Opened (\d+) other pull requests? in (\d+) repositor(y|ies)/, "$2개의 다른 저장소에서 $1개의 끌어오기 요청을 열었어요."],
+        [/Opened (\d+) issues? in (\d+) repositor(y|ies)/, "$2개의 저장소에서 $1개의 이슈를 열었어요."],
+        [/Opened (\d+) other issues? in (\d+) repositor(y|ies)/, "$2개의 다른 저장소에서 $1개의 다른 이슈를 열었어요."],
+        [/Reviewed (\d+) pull requests? in (\d+) repositor(y|ies)/, "$2개의 저장소에서 $1개의 끌어오기 요청을 검토했어요."],
+        [/Answered (\d+) discussions? in (\d+) repositor(y|ies)/, "$2개의 저장소에서 $1개의 토론에 답변했어요."],
+        [/Started (\d+) discussions? in (\d+) repositor(y|ies)/, "$2개의 저장소에서 $1개의 토론을 시작했어요."],
+        [/(\d+) commits?/, "$1회 커밋"],
+        [/(\d+) pull requests?/, "$1회 끌어오기 요청"],
+        [/that received (\d+) comments?/  , "받은 $1개의 댓글"],
+        [/(\d+) of (\d+) tasks?/, "$1 / $2 개의 작업"],
+        [/(\d+) comments?/, "$1개의 댓글"],
+        [/(\d+) tasks? done/, "$1개의 작업이 완료되었어요."],
+        [/([^ ]+) doesn't have any projects yet./, "$1은 아직 어떤 프로젝트도 없어요."],
+        [/([^ ]+) has no activity yet for this period./, "$1은 아직 이 기간에 활동이 없어요."],
+        [/([^ ]+) had no activity during this period./, "$1은 이 기간 동안 활동이 없었어요."],
+        [/Contribution activity in ([^ ]+)/, "$1에서의 기여 활동"],
+        [/([^ ]+) had no activity in ([^ ]+) during this period./, "$1은 이 기간 동안 $2에서 활동이 없었어요."],
+        [/([^ ]+) has no activity in ([^ ]+) yet for this period./, "$1은 아직 이 기간에 $2에서 활동이 없어요."],
+        [/@([^ ]+)'s activity is private/, "$1의 활동은 비공개에요."],
+        [/Created (\d+\+?) repositor(y|ies)/, "$1개의 저장소를 만들었어요."],
+        [/(\d+) repositor(y|ies)/, "$1개의 저장소"],
+        [/(\d+) members?/, "$1명의 멤버"], // 조직 플로팅 정보 카드
+        [/(\d+) tasks?/, "$1개의 작업"], // 작업 포함 이슈
+        [/and (\d+) more/, "외 $1명"],
         [/- (\d+)h (ahead|behind)/, function(all, num, compare){
-            var compareKey = {ahead: '早', behind: '晚'};
+            var compareKey = {ahead: '앞', behind: '뒤'};
 
-            return '- ' + compareKey[compare] + num + '小时';
+            return '- ' + compareKey[compare] + num + '시간';
         }],
         //[/A graph representing ([^ ]+)'s contributions from (.+) to (.+). The contributions are (\d+\%) (commits|pull requests|issues|code review), (\d+\%) (commits|pull requests|issues|code review), (\d+\%) (commits|pull requests|issues|code review), (\d+\%) (commits|pull requests|issues|code review)./, function(all, user, date1, date2, cd1, c1, cd2, c2, cd3, c3, cd4, c4){
-        //    var c1Key, c2Key ,c3Key, c4Key = {
-        //        'commits': '提交',
-        //        'pull requests': '拉取请求',
-        //        'code review': '代码审查',
+        //    var c1Key, c2Key, c3Key, c4Key = {
+        //        'commits': '커밋',
+        //        'pull requests': '끌어오기 요청',
+        //        'code review': '코드 리뷰',
         //        'issues': '이슈',
         //    };
-        //    return user + '从' + date1 + '到' + date2 + '的贡献图。其中' + cd1 + c1Key[c1] + '，' + cd2 + c2Key[c2] + '，' +cd3 + c3Key[c3] + '，' + cd4 + c4Key[c4]+ '。';
+        //    return user + '의 ' + date1 + '부터 ' + date2 + '까지의 기여 그래프에요. 그 중 ' + cd1 + c1Key[c1] + ', ' + cd2 + c2Key[c2] + ', ' + cd3 + c3Key[c3] + ', ' + cd4 + c4Key[c4] + '에요.';
         //}],
-        // 成就
-        [/answered discussions./, "回答了讨论。"], // Galaxy Brain
-        [/opened pull requests that have been merged./, "打开的拉取请求已被合并。"], // Pull Shark
-        [/created a repository that has many stars./, "创建了一个拥有很多星标的仓库。"], // Starstruck
-        [/coauthored commits on merged pull requests./, "与他人共同提交了合并的拉取请求。"], // Pair Extraordinaire
+        // 업적
+        [/answered discussions./, "토론에 답변했어요."], // 갤럭시 브레인
+        [/opened pull requests that have been merged./, "열린 끌어오기 요청이 병합되었어요."], // 풀 샤크
+        [/created a repository that has many stars./, "별표가 많은 저장소를 만들었어요."], // 스타스트럭
+        [/coauthored commits on merged pull requests./, "병합된 끌어오기 요청에서 다른 사람과 함께 커밋했어요."], // 페어 엑스트라오디네어
     ],
 };
 I18N["ko-KR"]["page-profile/overview"] = I18N["ko-KR"]["page-profile"];
@@ -2396,8 +2423,9 @@ I18N["ko-KR"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
             "No repositories matched your search.": "没有与您的搜索匹配的仓库。", // 无匹配仓库
 
             // 项目 状态词
-            "Updated": "更新于",
-            "Forked from": "复刻自",
+            "on": "",
+            "Updated": "업데이트 됨",
+            "Forked from": "포크 됨",
 
             // 曲线图提示
             "Past year of activity": "过去一年的活动",
@@ -5586,7 +5614,7 @@ I18N["ko-KR"]["settings/apps"] = { // 设置 - 开发者设置/GitHub 应用
                         "Checks on code.": "检查代码。",
                     "Code scanning alerts": "代码扫描警报",
                         "View and manage code scanning alerts.": "查看和管理代码扫描警报。",
-                    // "": "代码空间",
+                    // "": "코드스페이스",
                         "Create, edit, delete and list Codespaces.": "创建、编辑、删除和列出代码空间。",
                     "Codespaces lifecycle admin": "代码空间的生命周期管理",
                         "Manage the lifecycle of Codespaces, including starting and stopping.": "管理代码空间的生命周期，包括启动和停止。",
@@ -5800,7 +5828,7 @@ I18N["ko-KR"]["settings/apps"] = { // 设置 - 开发者设置/GitHub 应用
                     "Merge Group requested checks, or was destroyed.": "合并组的请求检查或销毁。",
                 "Merge queue entry": "合并队列条目",
                     "Merge Queue entry added": "合并队列条目的添加。",
-                "Organization": "组织",
+                "Organization": "조직",
                     "Organization deleted, renamed, member invited, member added, or member removed.": "组织的删除、重命名以及成员的邀请、添加或删除。",
                 "Page build": "构建 GitHub Pages",
                     "Pages site built.": "GitHub Pages 站点的建立。",
@@ -6246,7 +6274,7 @@ I18N["ko-KR"]["settings/tokens"] = { // 设置 - 开发者设置/个人访问令
                         "Checks on code.": "检查代码。",
                     "Code scanning alerts": "代码扫描警报",
                         "View and manage code scanning alerts.": "查看和管理代码扫描警报。",
-                    // "": "代码空间",
+                    // "": "코드스페이스",
                         "Create, edit, delete and list Codespaces.": "创建、编辑、删除和列出代码空间。",
                     "Codespaces lifecycle admin": "代码空间的生命周期管理",
                         "Manage the lifecycle of Codespaces, including starting and stopping.": "管理代码空间的生命周期，包括启动和停止。",
@@ -7096,7 +7124,7 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                 "Fork": "포크",
                 "Unfork": "포크 취소",
 
-                "Sponsor": "협찬",
+                "Sponsor": "후원",
                 // 赞助对话框
                 // [/Sponsor ([^ ]+)?/, "赞助 $1"], // 赞助按钮 对话框 标题
                 "External links": "외부 링크",
@@ -7450,7 +7478,7 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
             "If you use this software in your work, please cite it using the following metadata.": "작업에서 이 소프트웨어를 사용하면, 아래 메타데이터를 사용해서 인용해 주세요.",
             "Learn more about CITATION files.": "CITATION 파일에 대해 더 알아보세요.",
             "View citation file": "인용 파일 보기",
-            "Activity": "활동",
+            "Activity": "작업",
             "Custom properties": "사용자 정의 속성",
             "star": "별표",
             "stars": "별표", 
@@ -7745,7 +7773,7 @@ I18N["ko-KR"]["repository/pull_issue_public"] = { // 仓库 - 이슈和拉取请
                 "Filter by project": "按项目筛选",
                 "Filter projects": "筛选项目",
                 "Repository": "저장소",
-                "Organization": "组织",
+                "Organization": "조직",
                 "No projects found. Sorry about that.": "很抱歉，未找到任何项目。",
 
             // "Milestones": "里程碑",
@@ -8019,7 +8047,7 @@ I18N["ko-KR"]["repository/pull_issue_public"] = { // 仓库 - 이슈和拉取请
             // 底部赞助
                 "Show your support for": "通过赞助来表达您对",
                 "by sponsoring them.": "的支持。",
-                "Sponsor": "협찬",
+                "Sponsor": "후원",
 
             // 底部提示栏 (未登录)
                 "Sign up for free": "免费注册",
@@ -9161,7 +9189,7 @@ I18N["ko-KR"]["repository/pull"] = { // 仓库 - 某个拉取请求页面
             "Browse the repository at this point in the history": "浏览该阶段的历史仓库内容",
 
         // 拉取请求--> 提交 --> 某提交详情/<user-name>/<repo-name>/pull/<id>/commits/<full SHA>
-            "commit": "提交",
+            "commit": "커밋",
             // 修改的文件 左侧 展开按钮
             "Expand all": "展开全部",
             "Expand All": "展开全部",
@@ -9809,7 +9837,7 @@ I18N["ko-KR"]["repository/commit"] = { // 仓库 - 提交页面
 
             // [/This commit closes issue (#\d+)./, "此提交关闭了提议 $1。"], //具体提交页面
             "committed": "提交于",
-            "commit": "提交",
+            "commit": "커밋",
 
             "Showing": "显示",
             "with": "包含",
@@ -9915,7 +9943,7 @@ I18N["ko-KR"]["repository/commit"] = { // 仓库 - 提交页面
 
         // 提交 commits 页面 /<user-name>/<repo-name>/commits/<branch> 或 /<user-name>/<repo-name>/commits
             "Commits": "提交",
-            "commit": "提交",
+            "commit": "커밋",
             // 快捷键
                 "Copy file permalink": "复制文件永久链接",
 
@@ -11927,7 +11955,7 @@ I18N["ko-KR"]["repository/branches"] = { // 仓库 - 分支页面
 
         // 分支页面 branches  /<user-name>/<repo-name>/branches
             // 标签卡栏
-            "Overview": "概况",
+            "Overview": "개요",
             "Yours": "您的",
             "Active": "活跃的",
             "Stale": "陈旧的",
@@ -12112,8 +12140,8 @@ I18N["ko-KR"]["repository/activity"] = { // 仓库 - 活动页面
             "Compare changes": "比较变更",
             "Restore Branch": "恢复分支",
 
-            "Previous": "上一页",
-            "Next": "下一页",
+            "Previous": "이전",
+            "Next": "다음",
 
             "Direct push": "直接推送",
             "Pull request merge": "拉取请求合并",
@@ -17421,7 +17449,7 @@ I18N["ko-KR"]["stars"] = { // 星标 https://github.com/stars/<user-name>
             "Recently active": "最近活跃",
             "Most stars": "最多标星",
 
-        "Sponsor": "협찬",
+        "Sponsor": "후원",
         "Unstar": "已加星标于",
         "See all starred repositories": "查看所有星标仓库",
         "See all starred topics": "查看所有星标主题",
@@ -17463,7 +17491,7 @@ I18N["ko-KR"]["issues"] = { // 이슈页面
         "Private repositories only": "只有私有仓库",
         "Public repositories only": "只有公共仓库",
 
-        "Organization": "组织",
+        "Organization": "조직",
         "Filter by organization or owner": "按组织或所有者筛选",
         "Filter organizations": "筛选组织",
 
@@ -17604,7 +17632,7 @@ I18N["ko-KR"]["search"] = { // 搜索页面
             "Discussions": "토론",
             "Topics": "主题",
             "Users": "用户",
-            "More": "更多",
+            "More": "더 보기",
 
             "States": "状态",
             "Closed": "已关闭",
@@ -17661,7 +17689,7 @@ I18N["ko-KR"]["search"] = { // 搜索页面
                 "Not merged": "未合并",
 
                 // &type=discussions
-                "Organization": "组织",
+                "Organization": "조직",
                 "Involves user": "相关用户",
 
                 // &type=users
@@ -17752,7 +17780,7 @@ I18N["ko-KR"]["search"] = { // 搜索页面
                 "Name has already been taken": "名称被占用",
 
             // &type=repositories
-                "Sponsor": "협찬",
+                "Sponsor": "후원",
                 // [/Sponsor ([^ ]+)?/, "赞助 $1"], // 赞助按钮 对话框 标题
                 // 赞助对话框
                 "External links": "외부 링크",
@@ -17811,8 +17839,8 @@ I18N["ko-KR"]["search"] = { // 搜索页面
             "Pull requests": "끌어오기 요청",
             "discussion": "讨论",
             "Discussions": "토론",
-            "commit": "提交",
-            "commits": "提交",
+            "commit": "커밋",
+            "commits": "커밋",
             "package": "패키지",
             "packages": "패키지",
             "wikis": "Wiki",
@@ -18410,7 +18438,7 @@ I18N["ko-KR"]["topics"] = { // 探索-->主题页面
 
             "Related Topics": "相关主题",
             "Updated": "更新于",
-            "Sponsor": "협찬",
+            "Sponsor": "후원",
 
             "Language:": "语言:",
                 "Filter by language": "按语言筛选",
@@ -18434,9 +18462,9 @@ I18N["ko-KR"]["topics"] = { // 探索-->主题页面
 
     },
     "regexp": [ // 正则翻译
-        [/followers?/, "个关注者"],
+        [/followers?/, "팔로워"],
         [/Here are ([\d,]+) public repositories? matching this topic.../, "有 $1 个公共仓库与此主题相匹配"],
-        [/Topic: ([^ ]+)/, "主题：$1"],
+        [/Topic: ([^ ]+)/, "주제：$1"],
     ],
 };
 
@@ -18462,7 +18490,7 @@ I18N["ko-KR"]["trending"] = { // 热门页面
         "Repositories": "저장소",
         "Developers": "开发者",
 
-        "Sponsor": "협찬",
+        "Sponsor": "후원",
         "Built by": "构建者",
 
         "Spoken Language:": "母语：",
@@ -18703,7 +18731,7 @@ I18N["ko-KR"]["sponsors"] = { // 赞助界面
             "You depend on": "您依赖于",
             // [/(\d+) repositor(y|ies) they own or maintain/, "他们拥有或维护 $1 个仓库"],
             // [/others? sponsor, including (\d+) organizations?/, "位其他赞助者，包括 $1 个组织"],
-            "sponsors": "赞助者",
+            "sponsors": "후원",
             "others sponsor": "位其他赞助者",
             // [/(\d+)% towards goal/, "实现目标的 $1%"],
 
@@ -18715,7 +18743,7 @@ I18N["ko-KR"]["sponsors"] = { // 赞助界面
             "searching for people you can sponsor": "寻找可以接受您赞助的人",
             "and filtering by language!": "并通过语言筛选！",
             "Clear filter": "清除筛选器",
-            "Sponsor": "협찬",
+            "Sponsor": "후원",
 
             // 仓库列表
             "Repository list": "仓库列表",
@@ -18826,7 +18854,7 @@ I18N["ko-KR"]["account/choose"] = { // 账户升级选择
         // https://github.com/account/choose?action=upgrade
             "Which do you want to upgrade?": "您想升级哪个？",
             "Your personal account": "您的个人账户",
-            "Organization": "组织",
+            "Organization": "조직",
             "Create a new organization": "创建新组织",
             "Try GitHub Enterprise": "试用 GitHub 企业版",
     },
@@ -19324,7 +19352,7 @@ I18N["ko-KR"]["marketplace"] = { // GitHub 市场
             "Get API key": "获取 API 密钥",
 
             "Enter a message...": "键入信息...",
-                "Submit message": "发送",
+                "Submit message": "전송",
 
             // 中间横条
             "README": "리드미",
@@ -19389,7 +19417,7 @@ I18N["ko-KR"]["marketplace"] = { // GitHub 市场
                 "Attach an image": "附加图像",
                     "Remove": "移除",
                 "Type your prompt…": "键入提示词…",
-                    "Send now": "发送",
+                    "Send now": "전송",
 
             // 参数设置
                 "Parameters": "参数",
@@ -19582,7 +19610,7 @@ I18N["ko-KR"]["orgs"] = { // 组织页面
             // [/doesn't have any pinned public repositories yet./, "还没有任何置顶的公共仓库。"],
 
             "followers": "关注者",
-            "Sponsor": "협찬",
+            "Sponsor": "후원",
 
             "Send feedback": "发送反馈",
 
@@ -21600,7 +21628,7 @@ I18N["ko-KR"]["orgs/settings/personal-access-token"] = { // 组织设置 - 个�
                     "Secrets": "机密",
                     "Variables": "变量",
                     "Workflows": "工作流程",
-                    "Organization": "组织",
+                    "Organization": "조직",
                         "API Insights": "API 透视",
                         "Blocking users": "拉黑用户",
                         "Custom organization roles": "自定义组织角色",
@@ -22007,7 +22035,7 @@ I18N["ko-KR"]["projects"] = { // 项目页面(含仓库项目)
                 "issue search": "이슈搜索",
                 "Loading search results…": "载入搜索结果…",
                 "Search results": "搜索结果",
-                "More": "更多",
+                "More": "더 보기",
                 "Loading more...": "载入更多...",
             "Fullscreen": "全屏",
             "Exit fullscreen": "退出全屏",
@@ -23174,7 +23202,7 @@ I18N["ko-KR"]["repository/actions/metrics/usage"] = { // 仓库 - 洞察 - 操�
                 "Text will be ignored since log searching is not yet available:": "由于尚未提供日志搜索功能，文本将被忽略：",
 
         "Workflows": "工作流",
-            "Row Actions": "更多", // 暂译
+            "Row Actions": "더 보기", // 暂译
             "View performance": "查看数据看板",
         "Jobs": "作业",
             "Job": "作业",
@@ -23328,7 +23356,7 @@ I18N["ko-KR"]["repository/actions/metrics/performance"] = {
             "Get started with GitHub Actions": "快速开始",
 
         "Workflow": "工作流",
-            "Row Actions": "更多", // 暂译
+            "Row Actions": "더 보기", // 暂译
             "View usage": "查看使用情况",
         "Workflow runs": "工作流运行",
 
@@ -23425,7 +23453,7 @@ I18N["ko-KR"]["copilot"] = {
 
                         "Please don’t include sensitive, confidential, or personal data. Your anonymous feedback helps us improve our services in line with our": "请不要包含敏感、机密或个人数据。您的匿名反馈有助于我们改进服务，根据",
                         "Privacy Policy": "隐私政策",
-                        "Send": "发送",
+                        "Send": "전송",
         // 聊天窗口
         "Install Copilot in your favorite code editor": "安装 Copilot 到您的代码编辑器",
             "Copilot is available for a multitude of editors to fit your needs": "Copilot 可用于多种编辑器，以满足您的需求",
@@ -23456,7 +23484,7 @@ I18N["ko-KR"]["copilot"] = {
                         "Chat with your favorite tools and services": "使用您最喜欢的工具和服务聊天",
                         "Browse the marketplace to find extensions for the tools and services you rely on": "浏览市场以查找您所依赖的工具和服务的扩展",
                         "Browse marketplace": "前往市场",
-            "Send now": "发送",
+            "Send now": "전송",
 
         // 漏洞相关
             "Path Injection": "路径注入",
@@ -23801,4 +23829,4 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
         //[/Verified since (.+)/, "验证自 $1"],
         [/(\d+) views?/, "$1 次观看"],
     ],
-};
+}

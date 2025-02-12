@@ -26,10 +26,10 @@
         ],
         "js": [
           "korean.js",
-          "content.js"
+          "content.js",
+          "time.js"
         ],
         "run_at": "document_start"
       }
     ]
-  }
-  
+}
