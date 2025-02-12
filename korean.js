@@ -2062,7 +2062,7 @@ I18N["ko-KR"]["page-profile-public"] = { // 个人首页（含组织）
                 "128th pull request merged": "128번째 끌어오기 요청 병합함",
                 "1024th pull request merged": "1024번째 끌어오기 요청 병합함",
             // Starstruck
-                "Starstruck": "별친놈",
+                "Starstruck": "별표 애호가",
                 "⭐️ 16 stars": "⭐️ 별표 16개",
                 "⭐️ 128 stars": "⭐️ 별표 128개",
                 "⭐️ 512 stars": "⭐️ 별표 512개",
