@@ -1052,7 +1052,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "organizations": "조직",
             "repositories": "저장소",
             "users": "사용자",
-            "Activate": "활성화하기",
+            "Activate": "활성화",
             "command mode": "명령 모드",
           
             "Use filters in issues, pull requests, discussions, and projects": "이슈, 끌어오기 요청, 토론, 그리고 프로젝트에서 필터 사용하기",
@@ -1952,7 +1952,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         [/(\d+) of your repositor(y|ies)/, "사용자님의 $1개의 저장소"],
         [/(\d+) members?/, "$1 명의 멤버"], // 조직 플로팅 정보 카드
         [/is being deleted./, "삭제 중이에요."], // 저장소 및 조직 삭제 중
-        [/Your repository \"([^ ]+)\" was successfully deleted./, "당신의 저장소 “$1”가 성공적으로 삭제되었어요."], // 저장소 삭제
+        [/Your repository \"([^ ]+)\" was successfully deleted./, "사용자님의 저장소 “$1”가 성공적으로 삭제되었어요."], // 저장소 삭제
         [/(\d+) releases?/, "$1 개의 릴리즈"],
         [/(\d+k?) followers?/, "팔로워 $1명"],
         [/(\d+) users?/, "$1명의 사용자"],
@@ -1962,7 +1962,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         [/(\d+) issues? needs? help/, "$1 개의 이슈에 도움이 필요해요"],
         [/Join discussion/, "토론에 참여하기"],
         // [/Updated/, "업데이트됨"],
-        [/You’re an owner of the ([^ ]+) organization!/, "당신은 $1 조직의 소유자에요!"], // 조직
+        [/You’re an owner of the ([^ ]+) organization!/, "사용자님은 $1 조직의 소유자에요!"], // 조직
         [/Create a repository for ([^ ]+)/, "$1 을 위해 저장소 만들기"], // 조직
         [/Edit ([^ ]+)’s settings/, "$1 의 설정 편집하기"], // 조직
         [/Check out ([^ ]+)’s public profile/, "$1 의 공개 프로필 보기"], // 조직
@@ -1970,7 +1970,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         [/You're seeing this because you collaborated with ([^ ]+)/, "이 메시지가 보이는 이유는 $1 과(와) 협업했기 때문이에요"],
         [/You're seeing this because you starred ([^ ]+)/, "이 메시지가 보이는 이유는 $1 에 별표를 눌렀기 때문이에요"],
         [/You're seeing this because you follow ([^ ]+)/, "이 메시지가 보이는 이유는 $1 을 팔로우했기 때문이에요"],
-        [/You and/, "당신과"],
+        [/You and/, "사용자님과"],
         [/You reacted with (thumbs up|thumbs down|laugh|hooray|confused|heart|rocket|eyes)/, function (all, reacted) {
             var reactedKey = {
                 'thumbs up': "좋아요",
@@ -1983,7 +1983,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
                 eyes: "관심"
             };
 
-            return '당신' + reactedKey[reacted];
+            return '사용자님' + reactedKey[reacted];
         }],
         [/(\d+) (?:people|person) reacted with (thumbs up|thumbs down|laugh|hooray|confused|heart|rocket|eyes)/, function (all, number, reacted) {
             var reactedKey = {
@@ -2001,11 +2001,11 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         }],
         [/Support ([^ ]+)'s open source work/, "​$1 의 오픈 소스 작업 지원하기"],
         [/Start a new repository for/, "새 저장소 만들기:"],
-        [/([^ ]+) requested changes, you commented/, "$1 가 변경 요청을 했고, 당신은 댓글을 남겼어요."], // 끌어오기 요청 플로팅 정보 카드
+        [/([^ ]+) requested changes, you commented/, "$1 가 변경 요청을 했고, 사용자님은 댓글을 남겼어요."], // 끌어오기 요청 플로팅 정보 카드
         // 상단 알림
         // 후임자 관련
-        [/You are now the designated successor for ([^ ]+)'s account./, "당신은 이제 $1 의 지정 후임자가 되었어요."],
-        [/You have declined to become the designated successor for ([^ ]+)'s account./, "당신은 이미 $1 계정의 지정 후임자가 되는 것을 거절하셨어요."],
+        [/You are now the designated successor for ([^ ]+)'s account./, "사용자님은 이제 $1 의 지정 후임자가 되었어요."],
+        [/You have declined to become the designated successor for ([^ ]+)'s account./, "사용자님은 이미 $1 계정의 지정 후임자가 되는 것을 거절하셨어요."],
         // 끌어오기 요청 상태
         [/merged (\d+) commits?/, "커밋 $1개가 병합되었어요."],
     ],
@@ -2549,7 +2549,7 @@ I18N["ko-KR"]["page-profile/projects"] = { // 个人首页- 项目标签卡
 
         // 项目标签卡 ?tab=projects >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             "There aren't any projects yet": "아직 아무 프로젝트도 없네요",
-            "Provide quick access to relevant projects.": "관련된 프로젝트에 대한 빠른 액세스를 제공해요.",
+            "Provide quick access to relevant projects.": "관련된 프로젝트에 대한 빠른 접근을 제공해요.",
             "Add projects to view them here.": "프로젝트를 추가해보세요.",
 
             "Welcome to the all-new projects": "완전 새로운 프로젝트에 오신 걸 환영해요!",
@@ -2657,7 +2657,7 @@ I18N["ko-KR"]["page-profile/projects"] = { // 个人首页- 项目标签卡
             "Manage access": "엑세스 관리",
             "Who has access": "엑세스 가능한 사람",
             "Private project": "비공개 프로젝트",
-            "Only those with access to this project can view it.": "이 프로젝트에 액세스할 수 있는 사람만 볼 수 있어요.",
+            "Only those with access to this project can view it.": "이 프로젝트에 접근할 수 있는 사람만 볼 수 있어요.",
             "Invite collaborators": "협업자 초대",
             "Manage access": "엑세스 관리",
             "Custom fields": "사용자 지정 필드",
@@ -2708,10 +2708,10 @@ I18N["ko-KR"]["page-profile/sponsoring"] = { // 个人首页- 赞助标签卡
     "static": { // 静态翻译
         ...I18N["ko-KR"]["page-profile-public"]["static"],
             "has sponsored": "님이 후원함 :",
-            "organization or maintainer in the past": "과거의 조직 혹은 유지보수자",
-            "organization or maintainer": "조직 혹은 유지보수자",
+            "organization or maintainer in the past": "과거의 조직 혹은 유지 관리자",
+            "organization or maintainer": "조직 혹은 유지 관리자",
             "Bulk Sponsor": "후원",
-            "Sponsor multiple maintainers in one easy transaction.": "하나의 간편한 거래로 여러 유지보수자를 후원해보세요.",
+            "Sponsor multiple maintainers in one easy transaction.": "하나의 간편한 거래로 여러 유지 관리자를 후원해보세요.",
             "Get started": "시작하기",
             "Past sponsorship": "과거 후원",
             "Sponsored": "후원함 :",
@@ -2905,7 +2905,7 @@ I18N["ko-KR"]["page-profile/stars"] = { // 个人首页 - 星标标签卡
 I18N["ko-KR"]["confirm-access"] = { // “授权访问” 对话框
     "static": { // 静态翻译
         // 授权访问 sudo 模式身份验证
-            "Confirm access": "授权访问",
+            "Confirm access": "접근 확인",
             "Signed in as": "登录身份为",
             "Authentication code": "验证码",
                 "More information about sudo mode authentication": "更多关于 sudo 模式身份验证的信息",
@@ -2927,7 +2927,7 @@ I18N["ko-KR"]["confirm-access"] = { // “授权访问” 对话框
             "We could not verify your identity": "我们无法核实您的身份",
             "Retry": "请重试",
 
-            "Password": "密码",
+            "Password": "비밀번호",
             "Forgot password?": "忘记密码？",
             "Confirm": "确认",
 
@@ -3049,10 +3049,10 @@ I18N["ko-KR"]["orgs-settings-menu"] = { // 组织设置 公共部分
                 "Secrets and variables": "비밀 및 변수",
                     "Private registries": "비공개 레지스트리",
         
-            "Third-party Access": "타사 액세스",
+            "Third-party Access": "타사 접근",
             "OAuth app policy": "OAuth 앱 정책",
             "GitHub Apps": "GitHub 앱",
-            "Personal access tokens": "개인 액세스 토큰",
+            "Personal access tokens": "개인 접근 토큰",
                 "Active tokens": "활성 토큰",
                 "Pending requests": "대기 중인 요청",
         
@@ -3107,7 +3107,7 @@ I18N["ko-KR"]["settings/profile"] = { // 设置 - 个人资料
             //"You can add or remove verified email addresses in your": "您可以添加或删除邮件地址在您的",
             //"personal email settings": "邮箱设置",
             "Bio": "설명",
-            "Tell us a little bit about yourself": "당신에 대해 더 알고 싶어요",
+            "Tell us a little bit about yourself": "사용자님에 대해 더 알고 싶어요",
             "You can": "다른 사람이나 어떤 조직의 사람들을",
             "@mention": "@언급",
             "other users and organizations to link to them.": "할 수 있어요.",
@@ -3137,23 +3137,23 @@ I18N["ko-KR"]["settings/profile"] = { // 设置 - 个人资料
                 "Profile updated successfully —": "성공적으로 적용됐어요. —",
                 "view your profile.": "내 프로필 보기",
 
-            "Contributions & activity": "贡献与活动",
-                "Make profile private and hide activity": "将个人资料设置为私密，并隐藏活动",
-                    "Enabling this will hide your contributions and activity from your GitHub profile and from social features like followers, stars, feeds, leaderboards and releases.": "启用此功能后，您的贡献和活动将会从您的 GitHub 个人资料中隐藏起来，也不会被关注者、观星者、动态提要、排行榜和发布等社交功能所发现。",
-                "Include private contributions on my profile": "在我的个人资料显示私人贡献",
-                    "Your contribution graph, achievements, and activity overview will show your private contributions without revealing any repository or organization information.": "您的贡献图、成就和活动概览将显示您的私人贡献，而不会透露任何仓库或组织信息。",
-                    "Read more": "了解更多",
-            "Update preferences": "更新设置",
+                "Contributions & activity": "기여 및 활동",
+                "Make profile private and hide activity": "프로필을 비공개로 설정하고 활동 숨기기",
+                    "Enabling this will hide your contributions and activity from your GitHub profile and from social features like followers, stars, feeds, leaderboards and releases.": "이 기능을 활성화하면 기여 및 활동이 GitHub 프로필에서 숨겨지고, 팔로워, 별표, 피드, 리더보드, 릴리즈 같은 소셜 기능에서도 보이지 않아요.",
+                "Include private contributions on my profile": "내 프로필에 비공개 기여 포함하기",
+                    "Your contribution graph, achievements, and activity overview will show your private contributions without revealing any repository or organization information.": "기여 그래프, 업적, 활동 개요에서 비공개 기여가 표시되지만, 저장소나 조직 정보는 노출되지 않아요.",
+                    "Read more": "자세히 알아보기",
+            "Update preferences": "설정 업데이트하기",
 
-            "Profile settings": "个人资料设置",
-                "Display PRO badge": "显示 PRO 徽章",
-                    "This will display the": "将会显示",
-                    "badge on your public profile page.": "徽章在您的个人资料中。",
-                "Show Achievements on my profile": "在我的个人资料上显示成就",
-                    "Your achievements will be shown on your profile.": "您的成就将显示在您的个人资料中。",
+            "Profile settings": "프로필 설정",
+                "Display PRO badge": "PRO 배지 표시하기",
+                    "This will display the": "이 기능을 활성화하면",
+                    "badge on your public profile page.": "공개 프로필 페이지에 배지가 표시돼요.",
+                "Show Achievements on my profile": "내 프로필에 업적 표시하기",
+                    "Your achievements will be shown on your profile.": "업적이 내 프로필에 표시돼요.",
 
-            "GitHub Developer Program": "GitHub 开发者计划",
-                "has guides, API and webhook references, information about creating GitHub Apps and other resources for building applications that integrate with GitHub. Make sure your contact information is up-to-date below. Thanks for being a member!": "包含指南、API 和 Web 钩子、有关创建 GitHub 应用的信息以及用于构建与 GitHub 集成的应用的其他资源。确保您的联系信息是最新的。感谢您的加入！",
+            "GitHub Developer Program": "GitHub 개발자 프로그램",
+                "has guides, API and webhook references, information about creating GitHub Apps and other resources for building applications that integrate with GitHub. Make sure your contact information is up-to-date below. Thanks for being a member!": "가이드, API 및 웹훅 문서, GitHub 앱 생성 정보, GitHub과 통합되는 애플리케이션을 개발하는 데 필요한 리소스를 제공해요. 아래 연락처 정보를 최신 상태로 유지해주세요. 가입해 주셔서 감사합니다!",
 
             "Support email address": "기술 지원 이메일 주소",
                 "An email address where GitHub users can contact you for support.": "GitHub 사용자가 지원을 요청할 때 연락할 수 있는 이메일 주소예요.",
@@ -3204,98 +3204,100 @@ I18N["ko-KR"]["settings/admin"] = { // 设置 - 账户
     "static": { // 静态翻译
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Account settings 账户设置 https://github.com/settings/admin
-            "Change username": "更改用户名",
-            "Changing your username can have": "更改您的用户名可能会有",
-            "unintended side effects": "意想不到的副作用",
-                "Really change your username?": "确定要更改您的用户名？",
-                "Unexpected bad things will happen if you don’t read this!": "请仔细阅读以下提示信息！！！",
-                "We": "我们",
-                "will not": "不会",
-                "will": "会",
-                "set up redirects for your old profile page.": "为您的旧资料页设置重定向",
-                "set up redirects for Pages sites.": "为 GitHub Pages 站点设置重定向。",
-                "create redirects for your repositories (web and git access).": "为您的仓库设置重定向（ web 和 git 访问）。",
-                "Renaming may take a few minutes to complete.": "重命名可能需要几分钟的时间来完成。",
-                "I understand, let’s change my username": "我明白了，依然更改我的用户名",
+            // Account settings 账户设置 https://github.com/settings/admin
+            "Change username": "사용자 이름 변경하기",
+            "Changing your username can have": "사용자 이름 변경 시",
+            "unintended side effects": "예상치 못한 부작용이 있을 수 있어요",
+                "Really change your username?": "정말로 사용자 이름을 변경할까요?", //쀐
+                "Unexpected bad things will happen if you don’t read this!": "이 내용을 읽지 않으면 뜻밖의 문제가 생길 수 있어요!",
+                "We": "저희는",
+                "will not": "절대",
+                "will": " ",
+                "set up redirects for your old profile page.": "이전 프로필 페이지에 리디렉션을 설정해드리지 않아요.",
+                "set up redirects for Pages sites.": "GitHub Pages 사이트에 리디렉션을 설정해드리지 않아요.",
+                "create redirects for your repositories (web and git access).": "저장소(웹 및 git 접근)에 리디렉션을 만들어드릴게요.",
+                "Renaming may take a few minutes to complete.": "이름 변경은 완료되기까지 몇 분 정도 소요될 수 있어요.",
+                "I understand, let’s change my username": "이해했어요, 사용자 이름을 변경할게요.",
 
-                "Enter a new username": "输入新用户名",
-                "Choose a new username": "选择新用户名",
-                "Change my username": "更改我的用户名",
-                "Trademark Policy": "商标政策",
-                "are available.": "都可以使用。",
-                "Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.": "用户名只能包含字母数字字符或单个连字符，不能以连字符开始或结束。",
-            "Looking to manage account security settings? You can find them in the": "想管理账户安全设置？您可以在",
-            "page.": "页面找到它们。",
+                "Enter a new username": "새 사용자 이름 입력하기",
+                "Choose a new username": "새 사용자 이름 선택하기",
+                "Change my username": "사용자 이름 변경하기",
+                "Trademark Policy": "상표 정책",
+                "are available.": "사용 가능합니다.",
+                "Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.": "사용자 이름은 영문자와 숫자, 또는 단일 하이픈만 포함할 수 있으며, 하이픈으로 시작하거나 끝날 수 없어요.",
+            "Looking to manage account security settings? You can find them in the": "계정 보안 설정을 관리하고 싶으세요? ",
+            "page.": "페이지에서 관리해보세요.",
 
-            "Link Patreon account": "关联 Patreon 账户",
-                "Connect a Patreon account for": "关联",
-                "to sponsor maintainers with. Get recognition on GitHub for sponsorships made on Patreon when the sponsored person has linked Patreon and GitHub, too, and has a public GitHub Sponsors profile.": "的 Patreon 账户，以便赞助维护者。当被赞助者也关联 Patreon 和 GitHub 账户时，在 Patreon 上获得的赞助也会显示在 GitHub 上，并显示 GitHub 赞助者的公开个人资料。",
-                "Connect with Patreon": "关联 Patreon 账户",
-                "Successfully connected your GitHub account with Patreon.": "已成功将您的 GitHub 账户与 Patreon 关联。",
+            "Link Patreon account": "Patreon 계정 연결하기",
+                "Connect a Patreon account for": " ",
+                "to sponsor maintainers with. Get recognition on GitHub for sponsorships made on Patreon when the sponsored person has linked Patreon and GitHub, too, and has a public GitHub Sponsors profile.": "의 Patreon 계정을 연결하여 유지 관리자들을 후원해보세요. 후원받는 사람이 Patreon과 GitHub를 연동하고 공개된 GitHub Sponsors 프로필을 가지고 있다면, Patreon에서 진행된 후원이 GitHub에서도 인정을 받게 돼요.",
+                "Connect with Patreon": "Patreon 계정 연결하기",
+                "Successfully connected your GitHub account with Patreon.": "GitHub 계정과 Patreon 계정이 성공적으로 연결되었어요.",
 
-            "Unlink Patreon account": "取消关联 Patreon 账户",
-                "Disconnect the Patreon account": "取消 Patreon 账户",
-                "for": "그리고",
-                "to sponsor maintainers with. Any sponsorships made on Patreon will no longer receive recognition on GitHub.": "的关联，在 Patreon 上进行的任何赞助将不会在 GitHub 显示。",
-                "Successfully disconnected your GitHub account from Patreon.": "已成功解除您的 GitHub 账户与 Patreon 的关联。",
+            "Unlink Patreon account": "Patreon 계정 연결 해제하기",
+                "Disconnect the Patreon account": "Patreon 계정 연결 해제하기",
+                "for": "그리고", //쀐
+                //유지 관리자 후원에 사용하기 위해 연결해요. 
+                "to sponsor maintainers with. Any sponsorships made on Patreon will no longer receive recognition on GitHub.": "Patreon에서 진행한 후원은 더 이상 GitHub에 표시되지 않아요.",
+                "Successfully disconnected your GitHub account from Patreon.": "GitHub 계정과 Patreon 계정 연결이 성공적으로 해제되었어요.",
 
-            "Export account data": "导出账户数据",
-            "Export all repositories and profile metadata for": "导出所有仓库和配置元数据，自",
-            ". Exports will be available for 7 days.": "。导出结果将有 7 天有效期。",
-            "Start export": "开始导出",
-            "Recent exports": "近期导出",
-            "New export": "新建导出",
-            "We're preparing your export! We'll send you an email when it's finished.": "我们正在为您准备导出！我们完成后会发一封电子邮件。",
-            "New exports cannot be requested while an export is currently in progress": "当前正在导出中，无法请求新的导出",
-            "Resend email with link": "重新发送带有链接的邮件",
-            "Download deleted": "导出内容已删除",
-            "Job queued to delete file.": "正在排队删除文件的作业。",
+            "Export account data": "계정 데이터 내보내기",
+            "Export all repositories and profile metadata for": " ",
+            ". Exports will be available for 7 days.": "의 모든 저장소와 프로필 메타데이터를 내보낼 수 있어요. 내보낸 데이터는 7일 동안 유효해요.",
+            "Start export": "내보내기 시작하기",
+            "Recent exports": "최근 내보내기",
+            "New export": "새 내보내기",
+            "We're preparing your export! We'll send you an email when it's finished.": "내보내기를 준비 중이에요! 완료되면 이메일로 알려드릴게요.",
+            "New exports cannot be requested while an export is currently in progress": "현재 내보내기가 진행 중일 때는 새 내보내기를 요청할 수 없어요.",
+            "Resend email with link": "링크가 포함된 이메일 재전송하기",
+            "Download deleted": "내보낸 데이터가 삭제되었어요.",
+            "Job queued to delete file.": "파일 삭제 작업이 대기 중이에요.",
 
-            "Successor settings": "设置继任者",
-            // 未指定
-            "designated below": "（下面指定的）",
-            ", in the event of my death. I understand that this appointment of a successor does not override legally binding next-of-kin rules or estate laws of any relevant jurisdiction, and does not create a binding will.": "。我明白，这种指定继任者的做法并不凌驾于具有法律约束力的近亲规则或任何相关司法管辖区的遗产法，也不产生具有约束力的遗嘱。",
-            "Learn more about account successors.": "了解更多关于账户继任者的信息。",
-            "Add Successor": "添加继任者",
-            "Search by username, full name, or email address": "搜索用户名、全名、或电子邮箱",
-            "You have not designated a successor.": "您还没有指定继任者。",
-            // 等待回应
-            "Pending": "待处理",
-            "Copy invite link": "复制邀请链接",
-            // 已指定
-            "Learn more about account successors": "了解更多关于账户继任者的信息",
-            "Revoke": "撤销",
-            // 被谢绝
-            "Declined": "被谢绝",
+            "Successor settings": "후임자 설정",
+            // 미지정
+            "designated below": " ",
+            ", in the event of my death. I understand that this appointment of a successor does not override legally binding next-of-kin rules or estate laws of any relevant jurisdiction, and does not create a binding will.": " ",
+            "Learn more about account successors.": "계정 후임자에 대해 더 알아보기.",
+            "Add Successor": "후임자 추가하기",
+            "Search by username, full name, or email address": "사용자 이름, 전체 이름, 또는 이메일 주소로 검색하기",
+            "You have not designated a successor.": "아직 후임자를 지정하지 않으셨어요.",
+            // 대기 중
+            "Pending": "처리 중",
+            "Copy invite link": "초대 링크 복사하기",
+            // 지정됨
+            "Learn more about account successors": "계정 후임자에 대해 더 알아보기",
+            "Revoke": "취소하기",
+            // 거절됨
+            "Declined": "거절됨",
 
-            "Delete account": "删除账户",
-            "Once you delete your account, there is no going back. Please be certain.": "您一旦删除了您的账户，将再也无法恢复。请确认！",
-                "Your account is currently an owner in these organizations:": "您的账户目前是以下组织的所有者：", // 存在组织
-                "You must": "您必须先",
-                "remove yourself": "删除您自己",
-                "transfer ownership": "转让所有权",
-                "delete": "删除",
-                "these organizations before you can delete your user.": "这些组织，您才可以删除您的用户。",
-            "Delete your account": "删除账户",
-            "Are you sure you don’t want to just": "您确定不希望仅仅是",
-            "downgrade your account": "降级您的账户",
-            "to a": "为",
-            "FREE": "免费",
-            "account? We won’t charge your payment information anymore.": "账户吗？我们不会再收取您的支付信息。",
-                "Are you sure you want to do this?": "您确定要这么做吗？",
-                "This is extremely important.": "这是极其重要的。",
-                "We will": "我们将",
-                ", along with all of your forks, wikis, issues, pull requests, and GitHub Pages sites.": "以及您所有的复刻、Wiki、이슈、拉取请求和 GitHub Pages 站点。",
-                "You will no longer be billed, and after 90 days your username will be available to anyone on GitHub.": "您将不再被收取费用，并且 90 天后您的用户名将被 GitHub 上的任何人使用。",
-                "For more help, read our article \"": "如需更多帮助，请阅读我们的文章 “",
-                "Deleting your user account": "删除您的账户",
-                "\".": "”。",
-                "Your username or email:": "您的用户名或电子邮箱：",
-                "To verify, type": "为了验证，请输入",
-                "below:": "在下面：",
-                "Confirm your password:": "确认您的密码：",
-                "Cancel plan and delete this account": "取消计划并删除此账户",
+            "Delete account": "계정 삭제하기",
+            "Once you delete your account, there is no going back. Please be certain.": "계정을 삭제하면 되돌릴 수 없어요. 신중하게 결정해 주세요.",
+                "Your account is currently an owner in these organizations:": "현재 사용자님의 계정은 다음 조직들의 소유자에요:",
+                "You must": "먼저 반드시",
+                "remove yourself": "본인을 제거하시거나",
+                "transfer ownership": "소유권을 이전하시거나",
+                "delete": "삭제하시고",
+                "these organizations before you can delete your user.": "이 조직들을 처리해야 계정을 삭제할 수 있어요.",
+            "Delete your account": "계정 삭제하기",
+            "Are you sure you don’t want to just": "정말로 단순히",
+            "downgrade your account": "계정을 다운그레이드하지 않으시겠어요?",
+            "to a": "로,",
+            "FREE": "무료",
+            "account? We won’t charge your payment information anymore.": "계정으로 전환하시겠어요? 이제 더 이상 결제 정보가 청구되지 않아요.",
+                "Are you sure you want to do this?": "정말로 진행하시겠어요?",
+                "This is extremely important.": "매우 중요한 사항이에요.",
+                "We will": "저희가",
+                ", along with all of your forks, wikis, issues, pull requests, and GitHub Pages sites.": ", 모든 포크, 위키, 이슈, 끌어오기 요청, 그리고 GitHub Pages 사이트도 함께",
+                "You will no longer be billed, and after 90 days your username will be available to anyone on GitHub.": "요금이 더 이상 청구되지 않고, 90일 후에는 해당 사용자 이름이 GitHub의 누구에게나 사용 가능해져요.",
+                "For more help, read our article \"": "더 많은 도움을 원하시면, 저희 기사 “",
+                "Deleting your user account": "계정 삭제하기",
+                "\".": "”를 읽어보세요.",
+                "Your username or email:": "사용자 이름 또는 이메일:",
+                "To verify, type": "확인을 위해 입력해 주세요:",
+                "below:": "다음에서:",
+                "Confirm your password:": "비밀번호 확인:",
+                "Cancel plan and delete this account": "플랜 취소 후 계정 삭제하기",
+            // "and": "그리고",
 
     },
     "regexp": [ // 正则翻译
@@ -3304,7 +3306,7 @@ I18N["ko-KR"]["settings/admin"] = { // 设置 - 账户
         [/immediately delete all of your repositor(y|ies) \((\d+)\)/, "立即删除您所有的仓库（$1个）"],
 
         // 设置继任者
-        [/By clicking \"Add Successor\" below, I acknowledge that I am the owner of the([^@]+@[^\n]+) account, and am authorizing GitHub to transfer content within that account to my GitHub Successor,/, "通过点击下面的 “添加继任者”，我确认我是 $1 账户的所有者，并授权 GitHub 在我死亡的情况下将此账户内的内容转让给我的 GitHub 继任者"],
+        [/By clicking \"Add Successor\" below, I acknowledge that I am the owner of the([^@]+@[^\n]+) account, and am authorizing GitHub to transfer content within that account to my GitHub Successor,/, "아래의 “후임자 추가하기”를 클릭함으로써, 나는 $1 계정의 소유자임을 확인하며, 만약 내가 사망할 경우 GitHub가 그 계정 내의 콘텐츠를 내 GitHub 후임자에게 이전하도록 허용하는 것에 동의해요. 이 후임자 지정은 법적으로 구속력 있는 상속 규칙이나 관련 관할 구역의 유산 법률을 무시하지 않으며, 구속력 있는 유언을 생성하지 않음을 이해해요."],
         [/This link will only work for ([^ ]+)./, "此链接仅对 $1 有效。"],
 
         // 顶部提醒
@@ -3344,38 +3346,38 @@ I18N["ko-KR"]["settings/appearance"] = { // 设置 - 外观
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
         // Appearance 外观 https://github.com/settings/appearance
-            "Theme preferences": "主题首选项",
-            "Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.": "选择 GitHub 在您眼中的样子。选择单一主题，或与您的系统同步并自动在白天和夜晚的主题之间切换。选择将立即生效并自动保存。",
-            "Theme mode": "主题模式",
-                "Single theme": "单一主题",
-                "Sync with system": "与系统同步",
-            "GitHub will use your selected theme": "GitHub 将使用您选择的主题",
-            "GitHub theme will match your system active settings": "GitHub 主题将匹配您的系统设置",
-            "Light default": "亮 - 默认",
-            "Light high contrast": "亮 - 高对比",
-            "Light Protanopia & Deuteranopia": "亮 - 红绿色盲",
-            "Light Tritanopia": "亮 - 蓝色盲",
-            "Dark default": "暗 - 默认",
-            "Dark high contrast": "暗 - 高对比",
-            "Dark Protanopia & Deuteranopia": "暗 - 红绿色盲",
-            "Dark Tritanopia": "暗 - 蓝色盲",
-            "Dark dimmed": "昏暗",
-            "Day theme": "日间主题",
-            "Night theme": "夜间主题",
-            "Active": "激活",
-            "This theme will be active when your system is set to “light mode”": "当您的系统设置为 “浅色模式” 时，该主题将被激活。",
-            "This theme will be active when your system is set to “dark mode”": "当您的系统设置为 “深色模式” 时，该主题将被激活。",
-
-            "Emoji skin tone preference": "表情符号肤色首选项",
-            "Preferred default emoji skin tone": "默认的表情符号肤色",
-
-            "Tab size preference": "制表符首选项",
-            "Choose the number of spaces a tab is equal to when rendering code": "在渲染代码时，选择一个制表符等于多少个空格",
-            "8 (Default)": "8 (默认)",
-
-            "Markdown editor font preference": "Markdown 编辑器字体首选项",
-            "Font preference for plain text editors that support Markdown styling (e.g. pull request and issue descriptions, comments.)": "支持 Markdown 样式的纯文本编辑器的字体首选项（例如拉取请求和이슈描述、评论。）",
-            "Use a fixed-width (monospace) font when editing Markdown": "编辑 Markdown 时使用固定宽度（等宽）字体",
+            "Theme preferences": "테마 환경설정",
+            "Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.": "GitHub이 어떻게 보일지 선택해보세요. 단일 테마를 선택하거나 시스템과 동기화하여 낮과 밤 테마를 자동으로 전환할 수 있어요. 선택 사항은 즉시 적용되고 자동으로 저장돼요.",
+            "Theme mode": "테마 모드",
+                "Single theme": "단일 테마",
+                "Sync with system": "시스템과 동기화",
+            "GitHub will use your selected theme": "GitHub은 선택한 테마를 사용할 거예요.",
+            "GitHub theme will match your system active settings": "GitHub 테마는 시스템의 활성 설정과 일치할 거예요.",
+            "Light default": "라이트 - 기본",
+            "Light high contrast": "라이트 - 고대비",
+            "Light Protanopia & Deuteranopia": "라이트 - 적녹색맹",
+            "Light Tritanopia": "라이트 - 청색맹",
+            "Dark default": "다크 - 기본",
+            "Dark high contrast": "다크 - 고대비",
+            "Dark Protanopia & Deuteranopia": "다크 - 적녹색맹",
+            "Dark Tritanopia": "다크 - 청색맹",
+            "Dark dimmed": "다크 - 어두운",
+            "Day theme": "낮 테마",
+            "Night theme": "밤 테마",
+            "Active": "활성화됨",
+            "This theme will be active when your system is set to “light mode”": "시스템이 “라이트 모드”로 설정되었을 때 이 테마가 활성화돼요.",
+            "This theme will be active when your system is set to “dark mode”": "시스템이 “다크 모드”로 설정되었을 때 이 테마가 활성화돼요.",
+        
+            "Emoji skin tone preference": "이모지 피부 톤 선호도",
+            "Preferred default emoji skin tone": "기본 이모지 피부 톤 선호도",
+        
+            "Tab size preference": "탭 크기 선호도",
+            "Choose the number of spaces a tab is equal to when rendering code": "코드를 렌더링할 때 탭이 몇 개의 공백에 해당하는지 선택해보세요.",
+            "8 (Default)": "8 (기본값)",
+        
+            "Markdown editor font preference": "Markdown 편집기 글꼴 선호도",
+            "Font preference for plain text editors that support Markdown styling (e.g. pull request and issue descriptions, comments.)": "Markdown 스타일을 지원하는 일반 텍스트 편집기(예: 끌어오기 요청 및 이슈 설명, 댓글 등)의 글꼴 선호도를 설정해보세요.",
+            "Use a fixed-width (monospace) font when editing Markdown": "Markdown 편집 시 고정 폭(등폭) 글꼴을 사용해보세요.",
 
     },
     "regexp": [ // 正则翻译
@@ -3387,66 +3389,67 @@ I18N["ko-KR"]["settings/accessibility"] = { // 设置 - 无障碍
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
         // Accessibility 无障碍 https://github.com/settings/accessibility
-            "GitHub keyboard shortcuts": "GitHub 键盘快捷键",
-            "General": "通常",
-            "Character keys": "字符键",
-                "GitHub shortcuts": "GitHub 快捷键",
-                "that don't use modifier keys in their activation. For example, the": "，这些快捷键在激活时不使用修改键。例如，",
-                "shortcut to navigate notifications, or": "快捷键来导航到通知，或",
-                "to view context relevant shortcuts.": "查看与上下文相关的快捷键。",
-                "Learn more about character key shortcuts": "了解更多关于字符快捷键的信息",
-
-            "Command palette": "命令面板",
-                "Modify the shortcuts to trigger the Command Palette for the default search mode and the command mode": "修改快捷键以触发默认搜索模式和命令模式的命令面板",
-                "Search mode": "搜索模式",
-                    "control + k or control + alt + k (default)": "control + k 或 control + alt + k (默认)",
-                    "Disabled": "禁用",
-                "Command mode": "命令模式",
-                    "control + shift + k (default)": "control + shift + k (默认)",
-                "Save keyboard shortcut preferences": "保存键盘快捷键首选项",
-                "Save command palette preferences": "保存命令面板首选项",
-
-            // 顶部提醒
-            "Keyboard shortcut preference successfully saved.": "键盘快捷键首选项已成功保存。",
-
-            "Motion": "动态",
-            "Autoplay animated images": "自动播放动态图片",
-            "Select whether animated images should play automatically.": "选择是否需要自动播放动态图片。",
-            "Sync with system": "与系统同步",
-            "Adopts your system preference for reduced motion": "采用您的系统偏好以减少运动",
-            "Enabled": "启用",
-            "Automatically plays animated images": "自动播放动态图片",
-            "Prevents animated images from playing automatically": "防止自动播放动态图片",
-            "Save motion preferences": "保存动态首选项",
-
-            // 顶部提醒
-            "Motion preferences successfully saved.": "动态首选项已成功保存。",
-
-            "Content": "内容",
-            "Link underlines": "链接下划线",
-            "Toggle the visibility of underlines on links that are adjacent to text.": "切换文本相邻链接上下划线的可见性。",
-            "Hide link underlines": "隐藏链接下划线",
-            "Show link underlines": "显示链接下划线",
-            "Save content preferences": "保存内容首选项",
-
-            "Hovercards": "悬浮卡",
-                "Enable previewing link content via mouse hover or keyboard focus before navigation. Move focus to hovercard content using": "在导航之前，可通过鼠标悬停或键盘聚焦预览链接内容。使用以下方法将焦点移至悬停卡片内容",
-                "Save hovercard preferences": "保存悬浮卡偏好设置",
-
-            // 顶部提醒
-            "Link underline preferences successfully saved.": "链接下划线首选项已成功保存。",
-
-            "Editor settings": "编辑器设置",
-                "URL paste behavior": "URL 粘贴行为",
-                "Select if URLs should be formatted on paste. You can use": "选择是否应在粘贴时格式化 URL。您可以使用",
-                "to paste a link in the opposite way.": "以相反的方式粘贴链接。",
-                "Formatted link": "格式化链接",
-                    "Pasting a URL while having text selected will format to a Markdown link": "在选择了文本的情况下，粘贴 URL 将格式化为 Markdown 链接",
-                "Plain text": "纯文本",
-                    "Pasting a URL while having text selected will replace the text": "在选择了文本的情况下，粘贴 URL 将替换文本",
-                "Save editor settings": "保存编辑器设置",
-                    // 顶部提醒
-                    "Paste behavior preferences successfully saved.": "粘贴行为首选项已成功保存。",
+        "GitHub keyboard shortcuts": "GitHub 키보드 단축키",
+        "General": "일반",
+        "Character keys": "문자 키",
+            "Activate": " ",
+            "GitHub shortcuts": "GitHub 단축키",
+            "that don't use modifier keys in their activation. For example, the": "수정 키 없이 활성화되는 단축키예요. 예를 들어,",
+            "shortcut to navigate notifications, or": "은 알림 탐색을 위한 단축키고, 또는",
+            "to view context relevant shortcuts.": "로 상황에 맞는 단축키들을 확인해보세요.",
+            "Learn more about character key shortcuts": "문자 키 단축키에 대해 더 알아보세요.",
+        
+        "Command palette": "명령 팔레트",
+            "Modify the shortcuts to trigger the Command Palette for the default search mode and the command mode": "기본 검색 모드와 명령 모드에서 명령 팔레트를 호출하도록 단축키를 수정해보세요.",
+            "Search mode": "검색 모드",
+                "control + k or control + alt + k (default)": "control + k 또는 control + alt + k (기본값)",
+                "Disabled": "비활성화됨",
+            "Command mode": "명령 모드",
+                "control + shift + k (default)": "control + shift + k (기본값)",
+            "Save keyboard shortcut preferences": "키보드 단축키 환경설정 저장하기",
+            "Save command palette preferences": "명령 팔레트 환경설정을 저장하기",
+        
+        // 상단 알림
+        "Keyboard shortcut preference successfully saved.": "키보드 단축키 환경설정이 성공적으로 저장되었어요.",
+        
+        "Motion": "모션",
+        "Autoplay animated images": "애니메이션 이미지 자동 재생",
+        "Select whether animated images should play automatically.": "애니메이션 이미지가 자동으로 재생되도록 할지 선택해보세요.",
+        "Sync with system": "시스템과 동기화하기",
+        "Adopts your system preference for reduced motion": "시스템의 모션 감소 설정을 따릅니다.",
+        "Enabled": "사용함",
+        "Automatically plays animated images": "애니메이션 이미지를 자동 재생해요.",
+        "Prevents animated images from playing automatically": "애니메이션 이미지가 자동 재생되지 않도록 해요.",
+        "Save motion preferences": "모션 환경설정을 저장해보세요.",
+        
+        // 상단 알림
+        "Motion preferences successfully saved.": "모션 환경설정이 성공적으로 저장되었어요.",
+        
+        "Content": "콘텐츠",
+        "Link underlines": "링크 밑줄",
+        "Toggle the visibility of underlines on links that are adjacent to text.": "텍스트와 인접한 링크의 밑줄 표시 여부를 전환해보세요.",
+        "Hide link underlines": "링크 밑줄 숨기기",
+        "Show link underlines": "링크 밑줄 보이기",
+        "Save content preferences": "콘텐츠 환경설정을 저장해보세요.",
+        
+        "Hovercards": "호버 카드",
+            "Enable previewing link content via mouse hover or keyboard focus before navigation. Move focus to hovercard content using": "탐색 전에 마우스 호버나 키보드 포커스를 통해 링크 내용을 미리 볼 수 있도록 활성화해보세요. 다음을 사용하여 호버 카드 내용으로 포커스를 이동시켜보세요.",
+            "Save hovercard preferences": "호버 카드 환경설정을 저장해보세요.",
+        
+        // 상단 알림
+        "Link underline preferences successfully saved.": "링크 밑줄 환경설정이 성공적으로 저장되었어요.",
+        
+        "Editor settings": "편집기 설정",
+            "URL paste behavior": "URL 붙여넣기 동작",
+            "Select if URLs should be formatted on paste. You can use": "URL을 붙여넣을 때 형식을 적용할지 선택해보세요. 다음을 사용해보실 수 있어요:",
+            "to paste a link in the opposite way.": "반대 방식으로 링크를 붙여넣어보세요.",
+            "Formatted link": "서식 있는 링크",
+                "Pasting a URL while having text selected will format to a Markdown link": "텍스트가 선택된 상태에서 URL을 붙여넣으면 Markdown 링크로 서식이 지정돼요.",
+            "Plain text": "일반 텍스트",
+                "Pasting a URL while having text selected will replace the text": "텍스트가 선택된 상태에서 URL을 붙여넣으면 텍스트가 대체돼요.",
+            "Save editor settings": "편집기 설정을 저장해보세요.",
+                // 상단 알림
+                "Paste behavior preferences successfully saved.": "붙여넣기 동작 환경설정이 성공적으로 저장되었어요.",
 
     },
     "regexp": [ // 正则翻译
@@ -3458,86 +3461,86 @@ I18N["ko-KR"]["settings/notifications"] = { // 设置 - 通知
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
         // Notification center 通知 https://github.com/settings/notifications
-            "Default notifications email": "默认邮件通知设置",
-                "Choose where you'd like emails to be sent. You can add more email addresses. Use custom routes to specify different email addresses to be used for individual organizations.": "请选择希望接收通知邮件的邮箱。您可以添加多个邮箱地址。可借助自定义路由为不同的组织指定不同的邮箱地址。",
-                "Custom routing": "自定义路由",
+            "Default notifications email": "기본 알림 이메일 설정",
+                "Choose where you'd like emails to be sent. You can add more email addresses. Use custom routes to specify different email addresses to be used for individual organizations.": "알림 이메일을 받을 주소를 선택해보세요. 이메일 주소를 추가할 수 있어요. 사용자 지정 라우팅을 사용해 각 조직마다 다른 이메일 주소를 지정할 수도 있어요.",
+                "Custom routing": "사용자 지정 라우팅",
 
-            "Automatically watch repositories": "自动关注仓库",
-                "When you're given push access to a repository, automatically receive notifications for it.": "当您给一个仓库推送权限时，自动接收相关通知。",
-            "Automatically watch teams": "自动关注团队",
-                "Anytime you join a new team, you will automatically be subscribed to updates and receive notification when that team is @mentioned.": "当您加入新团队时，您将自动订阅更新，并在该团队 @提及 时收到通知。",
+            "Automatically watch repositories": "저장소 자동 관찰하기",
+                "When you're given push access to a repository, automatically receive notifications for it.": "저장소에 푸시 권한이 부여되면, 해당 저장소의 알림을 자동으로 받아보세요.",
+            "Automatically watch teams": "팀 자동 관찰하기",
+                "Anytime you join a new team, you will automatically be subscribed to updates and receive notification when that team is @mentioned.": "새 팀에 가입하면, 해당 팀의 업데이트를 자동 구독하고 @언급될 때 알림을 받아보실 수 있어요.",
 
-                "On": "开启",
-                "Off": "关闭",
+                "On": "켜기",
+                "Off": "끄기",
 
-            "Subscriptions": "订阅",
-                "Watching": "关注仓库",
-                    "Notifications for all repositories, teams, or conversations you're watching.": "所有您正在关注的仓库、团队或对话所发出的通知。",
-                    "View watched repositories": "查看正在关注的仓库",
-                    "Notify me:": "提醒我：",
-                    "Select notification channels": "选择通知渠道",
+            "Subscriptions": "구독",
+                "Watching": "저장소 관찰하기",
+                    "Notifications for all repositories, teams, or conversations you're watching.": "관찰 중인 모든 저장소, 팀 또는 대화의 알림이에요.",
+                    "View watched repositories": "관찰 중인 저장소 보기",
+                    "Notify me:": "알림 받기:",
+                    "Select notification channels": "알림 채널 선택하기",
                     "Close": "닫기",
-                    "on GitHub, Email, CLI": "在 GitHub、电子邮件、CLI 上",
-                    "on GitHub, CLI": "在 GitHub、CLI 上",
-                    "on GitHub, Email, CLI": "在 GitHub、电子邮件、CLI 上",
-                    "on GitHub, Email": "在 GitHub、电子邮件 上",
-                    "On GitHub": "在 GitHub 上",
-                    "on GitHub": "在 GitHub 上",
-                "Don't notify": "取消通知",
+                    "on GitHub, Email, CLI": "GitHub, 이메일, CLI에서",
+                    "on GitHub, CLI": "GitHub, CLI에서",
+                    "on GitHub, Email, CLI": "GitHub, 이메일, CLI에서",
+                    "on GitHub, Email": "GitHub, 이메일에서",
+                    "On GitHub": "GitHub에서",
+                    "on GitHub": "GitHub에서",
+                "Don't notify": "알림 받지 않기",
 
-                "Participating, @mentions and custom": "参与、@提及和自定义",
-                    "Notifications for the conversations you are participating in, or if someone cites you with an @mention. Also for all activity when subscribed to specific events.": "您参与的对话、或有人 @您、以及您订阅的特定事件所发出的通知。",
+                "Participating, @mentions and custom": "참여, @언급 및 사용자 지정",
+                    "Notifications for the conversations you are participating in, or if someone cites you with an @mention. Also for all activity when subscribed to specific events.": "참여 중인 대화나 누군가가 @언급할 때, 그리고 특정 이벤트를 구독했을 때의 모든 활동에 대한 알림이에요.",
 
-                "Customize email updates": "自定义电子邮件更新",
-                    "Choose which additional events you'll receive emails for when participating or watching.": "选择参与或关注时，您将收到哪些额外活动的电子邮件。",
-                    "Select events": "选择事件",
-                    "Reviews": "审查",
-                    "Reviews, Pushes": "审查、推送",
-                    "Reviews, Pushes, Comments": "审查、推送、评论",
-                    "Reviews, Pushes, Comments, My own updates": "审查、推送、评论、自我更新",
-                    "Pull Request reviews": "拉取请求审核",
-                    "Pull Request pushes": "拉取请求推送",
-                    "Comments on Issues and Pull Requests": "关于이슈和拉取请求的评论",
-                    "Includes your own updates": "包括您自己的更新",
-                "Ignored repositories": "忽略的仓库",
-                "You'll never be notified.": "您将永远不会收到通知。",
-                "View ignored repositories": "查看忽略的仓库",
+                "Customize email updates": "이메일 업데이트 사용자 지정하기",
+                    "Choose which additional events you'll receive emails for when participating or watching.": "참여하거나 저장소를 관찰할 때, 추가로 이메일을 받을 이벤트를 선택해보세요.",
+                    "Select events": "이벤트 선택하기",
+                    "Reviews": "리뷰",
+                    "Reviews, Pushes": "리뷰, 푸시",
+                    "Reviews, Pushes, Comments": "리뷰, 푸시, 댓글",
+                    "Reviews, Pushes, Comments, My own updates": "리뷰, 푸시, 댓글, 내 업데이트",
+                    "Pull Request reviews": "끌어오기 요청 리뷰",
+                    "Pull Request pushes": "끌어오기 요청 푸시",
+                    "Comments on Issues and Pull Requests": "이슈 및 끌어오기 요청 댓글",
+                    "Includes your own updates": "본인 업데이트 포함",
+                "Ignored repositories": "무시된 저장소",
+                "You'll never be notified.": "알림을 절대 받지 않으실 거예요.",
+                "View ignored repositories": "무시된 저장소 보기",
 
-            "System": "系统",
+            "System": "시스템",
                 "Actions": "액션",
-                    "Notifications for workflow runs on repositories set up with": "仓库的工作流程通知，设置在",
-                    ". (": "。（",
-                    "Failed workflows only": "仅工作流程失败时",
-                    "Only notify for failed workflows": "只对失败的工作流程进行通知",
+                    "Notifications for workflow runs on repositories set up with": "설정된 저장소의 워크플로우 실행 알림이에요:",
+                    ". (": " (",
+                    "Failed workflows only": "실패한 워크플로우만",
+                    "Only notify for failed workflows": "실패한 워크플로우에 대해서만 알림받기",
 
-            "Dependabot alerts: New vulnerabilities": "Dependabot 警报：新漏洞",
-                "When you're given access to": "当您获得",
-                "Dependabot alerts": "Dependabot 警报",
-                "automatically receive notifications when a new vulnerability is found in one of your dependencies.": " 访问权限时，当您的某个依赖关系中发现新的漏洞时，就会自动收到通知。",
+            "Dependabot alerts: New vulnerabilities": "Dependabot 경고: 새로운 취약점",
+                "When you're given access to": "접근 권한을 받으면",
+                "Dependabot alerts": "Dependabot 경고를",
+                "automatically receive notifications when a new vulnerability is found in one of your dependencies.": "의존성 중 하나에서 새로운 취약점이 발견되면 자동으로 알림을 받아보세요.",
 
-            "Email weekly digest": "每周电子邮件摘要",
-                "Email a weekly summary summarizing alerts for up to 10 of your repositories.": "通过电子邮件发送每周摘要，汇总最多 10 个仓库的警报。",
-                "Don't send": "不发送",
-                "Send weekly": "每周发送",
-                "Send daily": "每日发送",
+            "Email weekly digest": "주간 이메일 요약",
+                "Email a weekly summary summarizing alerts for up to 10 of your repositories.": "최대 10개의 저장소에 대한 경고를 요약한 주간 이메일 요약을 보내드려요.",
+                "Don't send": "보내지 않기",
+                "Send weekly": "주간 전송하기",
+                "Send daily": "일일 전송하기",
 
-            "\'Deploy key\' alert email": "“部署密钥” 警报电子邮件",
-                "When you are given admin permissions to an organization, automatically receive notifications when a new deploy key is added.": "当您获得组织的管理员权限时，会在添加新部署密钥时自动接收通知。",
+            "\'Deploy key\' alert email": "‘배포 키’ 경고 이메일",
+                "When you are given admin permissions to an organization, automatically receive notifications when a new deploy key is added.": "조직의 관리자 권한을 받으면, 새 배포 키가 추가될 때 자동으로 알림을 받아보세요.",
 
-        // 通知 自定义路由 https://github.com/settings/notifications/custom_routing
-                "/ Custom Routing": "/ 自定义路由",
-                    "You can send notifications to different": "您可借助自定义路由为不同的组织指定不同的邮箱地址",
-                    "verified": "（经验证的邮箱）",
-                    "email addresses depending on the organization that owns the repository.": "。",
-                    "is your current default email for notifications.": "是您目前默认的通知邮箱。",
+        // 알림 사용자 지정 라우팅 https://github.com/settings/notifications/custom_routing
+                "/ Custom Routing": "/ 사용자 지정 라우팅",
+                    "You can send notifications to different": "저장소를 소유한 조직에 따라 다른",
+                    "verified": "인증된 (이메일)",
+                    "email addresses depending on the organization that owns the repository.": "이메일 주소로 알림을 보내실 수 있어요.",
+                    "is your current default email for notifications.": "는 현재 기본 알림 이메일이에요.",
 
-                    "No custom routes yet.": "尚无自定义路由",
-                    "Add new route": "添加新路由",
-                        "Pick organization": "挑选组织",
-                            "Select an item": "选择一项",
-                        "Search organizations": "搜索组织",
-                        "Select Email": "选择邮箱",
-                        "Saved": "已保存",
+                    "No custom routes yet.": "아직 사용자 지정 라우팅이 없어요.",
+                    "Add new route": "새 라우트 추가하기",
+                        "Pick organization": "조직 선택하기",
+                            "Select an item": "항목 선택하기",
+                        "Search organizations": "조직 검색하기",
+                        "Select Email": "이메일 선택하기",
+                        "Saved": "저장됨",
 
     },
     "regexp": [ // 正则翻译
@@ -3549,522 +3552,515 @@ I18N["ko-KR"]["settings/billing"] = { // 设置 - 账单和计划
         ...I18N["ko-KR"]["settings-menu"]["static"],
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"], // 组织设置
 
-        // 顶部提示
-            "Successfully updated billing information.": "成功更新支付信息。",
+        // 상단 알림
+        "Successfully updated billing information.": "결제 정보가 성공적으로 업데이트되었어요.",
 
-        // 账单和计划 https://github.com/settings/billing/summary
-            "Billing summary": "账单摘要",
-            "Your next payment": "您的下一次应付款",
-            "This amount does not include the spend on usage of metered service. View your": "该金额不包括使用计量服务的支出。在下面查看您的",
-            "usage this month": "本月使用情况",
-            "below.": "。",
+        // 청구 및 플랜 https://github.com/settings/billing/summary
+            "Billing summary": "청구 요약",
+            "Your next payment": "다음 결제 예정액",
+            "This amount does not include the spend on usage of metered service. View your": "이 금액은 계량 서비스 사용 비용을 포함하지 않아요. ",
+            "usage this month": "이번 달 사용량",
+            "below.": "에서 확인해보세요",
 
-            // 组织设置
-                "Current monthly bill": "当前月度账单",
-                "Switch to yearly billing and save": "切换到按年计费并保存",
+            // 조직 설정
+                "Current monthly bill": "현재 월 청구액",
+                "Switch to yearly billing and save": "연간 결제로 전환하고 절약해보세요",
+                "Next payment due": "다음 결제 예정일",
 
-                "Next payment due": "下一次应付款",
+            "Payment information": "결제 정보",
+            "Manage spending limit": "지출 한도 관리하기",
+            "View payment history": "결제 내역 보기",
+            "Switch to yearly billing": "연간 결제로 전환하기",
+            "Switch to monthly billing": "월간 결제로 전환하기",
 
-            "Payment information": "支付信息",
-            "Manage spending limit": "管理支出限额",
-            "View payment history": "查看支付记录",
-            "Switch to yearly billing": "切换到按年计费",
-            "Switch to monthly billing": "切换到月度计费",
+            "Current plan": "현재 플랜",
+                "Compare all plans": "모든 플랜 비교하기",
+                    "per month": "월 기준",
 
-            "Current plan": "当前计划",
-                "Compare all plans": "比较所有计划",
-                    "per month": "每月",
-
-                "GitHub Free": "GitHub 免费",
-                "The basics for all developers": "基础计划（所有开发者）",
-                //"GitHub Pro": "GitHub 专业",
-
-                "The basics for organizations and developers": "组织和开发者的基本计划", // 组织设置
-                "Unlimited public/private repos": "无限的公共/私有仓库",
-                "Unlimited collaborators": "无限协作者",
-                "2,000 Actions minutes/month": "每月 2,000 分钟 GitHub Actions",
-                "500MB of Packages storage": "500MB 的包存储空间",
-                "120 core-hours of Codespaces compute per developer": "每位开发者拥有 120 个核心小时的代码空间计算能力",
-                "15GB of Codespaces storage per developer": "每位开发者拥有 15GB 的代码空间存储空间",
-                "Community support": "社区支持",
+                "GitHub Free": "GitHub 무료",
+                "The basics for all developers": "모든 개발자를 위한 기본 플랜",
+                //"GitHub Pro": "GitHub 전문",
+                "The basics for organizations and developers": "조직과 개발자를 위한 기본 플랜", // 조직 설정
+                "Unlimited public/private repos": "무제한 공개/비공개 저장소",
+                "Unlimited collaborators": "무제한 협업자",
+                "2,000 Actions minutes/month": "매월 2,000 분의 액션 사용 시간",
+                "500MB of Packages storage": "500MB의 패키지 저장공간",
+                "120 core-hours of Codespaces compute per developer": "개발자당 120 코어 시간의 코드스페이스 컴퓨트 제공",
+                "15GB of Codespaces storage per developer": "개발자당 15GB의 코드스페이스 저장공간 제공",
+                "Community support": "커뮤니티 지원",
                 // pro
-                    "Downgrade to Free": "降级至免费版",
-                "3,000 Actions minutes/month": "每月 3,000 分钟 GitHub Actions",
-                "2GB of Packages storage": "2GB 的包存储空间",
-                "180 core-hours of Codespaces compute": "180 个核心小时的代码空间计算能力",
-                "20GB of Codespaces storage": "20GB 的代码空间存储空间",
-                "Code owners, required reviewers, GitHub Pages,": "代码所有者、所需审核者、GitHub Pages，",
-                "and more": "以及更多",
-                "advanced tools": "高级工具",
+                    "Downgrade to Free": "무료 버전으로 다운그레이드하기",
+                "3,000 Actions minutes/month": "매월 3,000 분의 액션 사용 시간",
+                "2GB of Packages storage": "2GB의 패키지 저장공간",
+                "180 core-hours of Codespaces compute": "180 코어 시간의 코드스페이스 컴퓨트",
+                "20GB of Codespaces storage": "20GB의 코드스페이스 저장공간",
+                "Code owners, required reviewers, GitHub Pages,": "코드 소유자, 필수 검토자, GitHub 페이지,",
+                "and more": "그리고 더 많은 기능",
+                "advanced tools": "고급 도구",
 
-                "Not included:": "不包含：",
-                "Free Codespaces usage per organization": "每个组织的免费代码空间使用量",
-                "Protected branches on all repos": "所有仓库上的受保护分支",
-                "Increase Codespaces": "提高代码空间",
-                "spend limits": "消费限额",
-                "Multiple reviewers in pull requests": "拉取请求中多个审查者",
-                "Required status checks": "状态检查",
-                "Code owners": "代码所有者",
-                "Required reviewers": "所需的审查者",
-                "Pages for static website hosting": "静态网站页面托管",
-                "Web-based support": "基于网络的支持",
-                "See all features and compare plans": "查看所有功能并比较计划",
+                "Not included:": "포함되지 않음:",
+                "Free Codespaces usage per organization": "조직별 무료 코드스페이스 사용량",
+                "Protected branches on all repos": "모든 저장소의 보호된 분기",
+                "Increase Codespaces": "코드스페이스 늘리기",
+                "spend limits": "소비 한도",
+                "Multiple reviewers in pull requests": "끌어오기 요청에서 여러 검토자",
+                "Required status checks": "필수 상태 검사",
+                "Code owners": "코드 소유자",
+                "Required reviewers": "필수 검토자",
+                "Pages for static website hosting": "정적 웹사이트 호스팅용 페이지",
+                "Web-based support": "웹 기반 지원",
+                "See all features and compare plans": "모든 기능 보기 및 플랜 비교하기",
 
-            "Start your first organization": "开设您的第一个组织账户",
-            "With CI/CD, Dependabot, and the world's largest developer community, GitHub gives your team everything they need to ship better software faster": "借助 CI/CD、Dependabot 和世界上最大的开发者社区，GitHub为您的团队提供了他们所需的一切，以更快地发布更好的软件。",
-            "Create an organization": "创建组织",
+            "Start your first organization": "첫 조직 만들기",
+            "With CI/CD, Dependabot, and the world's largest developer community, GitHub gives your team everything they need to ship better software faster": "CI/CD, Dependabot, 그리고 세계 최대의 개발자 커뮤니티와 함께, GitHub는 팀이 더 빠르게 더 나은 소프트웨어를 출시하는 데 필요한 모든 것을 제공해요.",
+            "Create an organization": "조직 만들기",
 
-            // [/In addition to your personal account, you manage (\d+) organizations?./, "除了您的个人账户之外，您还管理 $1 个组织。"],
-            "Manage your organizations": "管理您的组织",
-                "Create a new organization": "创建新组织",
+            // [/In addition to your personal account, you manage (\d+) organizations?./, "개인 계정 외에도, 사용자님은 $1개의 조직을 관리하고 있어요."],
+            "Manage your organizations": "조직 관리하기",
+                "Create a new organization": "새 조직 만들기",
 
-            "Add-ons": "附加组件",
+            "Add-ons": "추가 기능",
                 // "GitHub Copilot": "",
-                    "Your AI pair programmer": "您的人工智能助理程序员",
-                    "Your AI powered pair programmer": "您的人工智能助理程序员",
-                    "Upgrade to Copilot Pro": "升级至 Pro",
-                    "Active subscription": "已激活订阅",
-                        "Copilot Free": "免费版",
-                    "You can upgrade to Copilot Pro at any time. Check out this": "您可以随时升级到 Copilot Pro。详情请查看",
-                    "You are eligible to use GitHub Copilot for free.": "您有资格免费使用 GitHub Copilot。",
-                    "documentation": "文档",
-                    "for more details.": "。",
-                    //"Enable GitHub Copilot": "启用 GitHub Copilot",
-                    //"GitHub Copilot suggests code and entire functions in real-time, right from your editor": "GitHub Copilot 会在编辑器中实时建议代码和整个函数。",
-                    //"GitHub Copilot uses the GPT-3.5 Turbo model to suggest code and entire functions in real-time, right from your editor": "GitHub Copilot 使用 GPT-3.5 Turbo 模型实时在您的编辑器中提供代码和整个函数建议",
+                    "Your AI pair programmer": "사용자님의 AI 페어 프로그래머",
+                    "Your AI powered pair programmer": "사용자님의 AI 페어 프로그래머",
+                    "Upgrade to Copilot Pro": "Copilot Pro로 업그레이드하기",
+                    "Active subscription": "활성 구독",
+                        "Copilot Free": "Copilot 무료",
+                    "You can upgrade to Copilot Pro at any time. Check out this": "언제든지 Copilot Pro로 업그레이드할 수 있어요. 자세한 내용은",
+                    "You are eligible to use GitHub Copilot for free.": "GitHub Copilot을 무료로 사용할 자격이 있어요.",
+                    "documentation": "문서",
+                    "for more details.": "를 참고해보세요.",
+                    //"Enable GitHub Copilot": "GitHub Copilot 활성화하기",
+                    //"GitHub Copilot suggests code and entire functions in real-time, right from your editor": "GitHub Copilot은 편집기에서 실시간으로 코드와 전체 함수를 제안해줘요.",
+                    //"GitHub Copilot uses the GPT-3.5 Turbo model to suggest code and entire functions in real-time, right from your editor": "GitHub Copilot은 GPT-3.5 Turbo 모델을 사용해 편집기에서 실시간으로 코드와 전체 함수를 제안해줘요.",
+                     // 조직 설정
+                    "Learn more about Copilot Business": "GitHub Copilot 비즈니스에 대해 더 알아보세요",
+                    "Copilot Business": "GitHub Copilot 비즈니스",
+                    "GitHub Copilot uses the OpenAI large language models to suggest code and entire functions in real-time, right from your editor. You can set up a GitHub Copilot Business subscription for your organization.": "GitHub Copilot은 OpenAI 대형 언어 모델을 사용하여 편집기에서 실시간으로 코드와 전체 함수를 제안해줘요. 조직을 위해 GitHub Copilot 비즈니스 구독을 설정할 수 있어요.",
+                    "Sign up for Copilot Business": "GitHub Copilot 비즈니스 가입하기",
 
-                     // 组织设置
-                    "Learn more about Copilot Business": "了解更多关于 GitHub Copilot 商业版的信息",
-                    "Copilot Business": "GitHub Copilot 商业版",
-                    "GitHub Copilot uses the OpenAI large language models to suggest code and entire functions in real-time, right from your editor. You can set up a GitHub Copilot Business subscription for your organization.": "GitHub Copilot 使用 OpenAI 大型语言模型，可在编辑器中实时建议代码和整个函数。您可以为您的组织设置 GitHub Copilot 商业版订阅。",
-                    "Sign up for Copilot Business": "注册 GitHub Copilot 商业版",
+            "Usage this month": "이번 달 사용량",
+                "Get usage report": "사용 보고서 받기",
+                    "A full detailed report will be generated including usage for all eligible": "모든 해당 제품의 사용량을 포함한 자세한 보고서가 생성될 거예요",
+                    "products.": "제품 사용량이에요.",
+                    "You’ll receive an email at": "준비되면 해당 이메일로 보내드릴게요:",
+                    "as soon as it’s ready (it may take up to a couple of hours).": "준비되면 (최대 몇 시간이 걸릴 수 있어요).",
+                    "Send report to email": "이메일로 보고서 보내기",
+                "Included": "포함됨",
+                "Paid": "결제됨",
+                "Total": "총액",
+                // 작업
+                    "Usage minutes": "사용 분",
+                    "Price / minute": "분당 단가",
+                    "Ubuntu 2-core": "2코어 Ubuntu",
+                    "Windows 2-core": "2코어 Windows",
+                    "macOS 3-core": "3코어 macOS",
+                    "Included minutes quota only applies to Ubuntu 2-core, Windows 2-core and macOS 3-core runners. Windows 2-core and macOS 3-core runners consume included minutes at higher rates.": "포함된 분 사용 한도는 2코어 Ubuntu, 2코어 Windows, 3코어 macOS 실행기에만 적용돼요. 2코어 Windows와 3코어 macOS 실행기는 포함된 분을 더 빠르게 사용해요.",
+                // 패키지
+                    "Data transfer out": "데이터 전송",
+                    "Data transfer out (rounded)": "데이터 전송 (반올림)",
+                    "Price estimate / GB": "GB당 예상 단가",
+                // 패키지 및 액션 저장공간
+                    "Storage for Actions and Packages": "액션 및 패키지 저장공간",
+                    "Shared storage consists of Actions artifacts and Packages usage. This graph shows the account's storage usage in GB-months. Removing stored artifacts will not reduce this number, but it will lower its rate of growth. To see your account's current storage, download a usage report.": "공유 저장공간은 액션 아티팩트와 패키지 사용량으로 구성돼요. 이 그래프는 계정의 저장공간 사용량을 GB-월 단위로 보여줘요. 저장된 아티팩트를 삭제해도 이 숫자는 줄어들지 않지만, 증가 속도는 낮아져요. 현재 계정의 저장공간을 확인하려면 사용 보고서를 다운로드해보세요.",
+                    "Storage": "저장공간",
+                    "Shared Storage": "공유 저장공간",
+                // 코드스페이스
+                    "Usage hours": "사용 시간",
+                    "Core hours are calculated by multiplying the compute types by their per-hour rates, which can vary": "코어 시간은 계산 유형에 시간당 요금을 곱하여 계산되며, 요금은 다를 수 있어요.",
+                    "Price / hour": "시간당 단가",
+                    "2-core": "2코어",
+                    "4-core": "4코어",
+                    "8-core": "8코어",
+                    "16-core": "16코어",
+                    "32-core": "32코어",
+                    "Storage usage is updated daily and billed monthly": "저장공간 사용량은 매일 업데이트되며, 매월 청구돼요.",
+                    "Price / GB": "GB당 단가",
+                    "Prebuild Storage": "사전 구축 저장공간",
+                // Git LFS 데이터
+                    "Git LFS Data": "Git LFS 데이터",
+                    "Add more data": "데이터 추가하기",
+                    "Bandwidth": "대역폭",
+                "See billing documentation": "청구 문서 보기",
+                "monthly spending limit": "월별 지출 한도",
+                "monthly spending limit |": "월별 지출 한도 |",  // 조직 설정
+                "Set up a spending limit": "지출 한도 설정하기",
 
-            "Usage this month": "本月使用情况",
-                "Get usage report": "获取使用报告",
-                    "A full detailed report will be generated including usage for all eligible": "我们将生成一份完整详细的报告，其中包括所有符合条件的",
-                    "products.": "产品使用情况。",
-                    "You’ll receive an email at": "一旦准备就绪，您将收到",
-                    "as soon as it’s ready (it may take up to a couple of hours).": "的电子邮件（可能需要几个小时）。",
-                    "Send report to email": "发送报告到邮箱",
-                "Included": "包含",
-                "Paid": "支出",
-                "Total": "总价",
-                // 操作
-                    "Usage minutes": "使用分钟数",
-                    "Price / minute": "单价 / 分钟",
-                    "Ubuntu 2-core": "双核 Ubuntu",
-                    "Windows 2-core": "双核 Windows",
-                    "macOS 3-core": "三核 macOS",
-                    "Included minutes quota only applies to Ubuntu 2-core, Windows 2-core and macOS 3-core runners. Windows 2-core and macOS 3-core runners consume included minutes at higher rates.": "包含的分钟配额仅适用于 双核 Ubuntu、双核 Windows 和三核 macOS 运行器。双核 Windows 和三核 macOS 运行器以更高的速度消耗包括的分钟数。",
-                // 软件包
-                    "Data transfer out": "数据转出",
-                    "Data transfer out (rounded)": "数据转出（四舍五入）",
-                    "Price estimate / GB": "估算单价 / GB",
-                // 软件包与操作的存储空间
-                    "Storage for Actions and Packages": "软件包与操作的存储空间",
-                    "Shared storage consists of Actions artifacts and Packages usage. This graph shows the account's storage usage in GB-months. Removing stored artifacts will not reduce this number, but it will lower its rate of growth. To see your account's current storage, download a usage report.": "共享存储由操作产生的文件和软件包使用组成。此图以每月 GB 数为单位显示账户的存储使用情况。删除存储的文件不会减少这个数字，但会降低其增长率。若要查看您账户的当前存储空间，请下载使用情况报告。",
-                    "Storage": "存储空间",
-                    "Shared Storage": "共享存储空间",
-                // 代码空间
-                    "Usage hours": "使用小时数",
-                    "Core hours are calculated by multiplying the compute types by their per-hour rates, which can vary": "核心小时数是通过将计算类型乘以其每小时费率来计算的，该费率可能会有所不同",
-                    "Price / hour": "单价 / 小时",
-                    "2-core": "双核",
-                    "4-core": "四核",
-                    "8-core": "八核",
-                    "16-core": "十六核",
-                    "32-core": "三十二核",
-                    "Storage usage is updated daily and billed monthly": "存储使用情况每天更新，每月计费",
-                    "Price / GB": "单价 / GB",
-                    "Prebuild Storage": "预构建存储",
-                // Git LFS 数据
-                    "Git LFS Data": "Git LFS 数据",
-                    "Add more data": "添加更多数据",
-                    "Bandwidth": "带宽",
-                "See billing documentation": "查看计费政策",
-                "monthly spending limit": "每月支出限额",
-                "monthly spending limit |": "每月支出限额 |",  // 组织设置
-                "Set up a spending limit": "设置支出限额",
+            "GitHub Sponsors": "GitHub 스폰서",
+                "Connect with the community that builds the tools you use": "사용하는 도구를 개발하는 커뮤니티와 연결해보세요",
+                "Start sponsoring": "스폰서 시작하기",
+                "You're currently not sponsoring anyone.": "현재 스폰서로 등록된 사람이 없어요.",
+                "Learn more about GitHub Sponsors": "GitHub 스폰서에 대해 더 알아보세요",
+                "Switch to invoiced billing": "청구서를 통한 결제로 전환하기", // 조직
 
-            "GitHub Sponsors": "GitHub 赞助",
-                "Connect with the community that builds the tools you use": "与构建您使用的工具的社区联系",
-                "Start sponsoring": "开始赞助",
-                "You're currently not sponsoring anyone.": "您目前没有赞助任何人。",
-                "Learn more about GitHub Sponsors": "了解更多关于 GitHub 赞助的信息",
-                "Switch to invoiced billing": "切换到发票账单", // 组织
+            "GitHub Marketplace": "GitHub 장터",
+                "Change plan": "플랜 변경하기",
+                "Cancel plan": "플랜 취소하기",
+                "Do you have any questions? Contact": "궁금한 점 있으세요? 연락해보세요:",
 
-            "GitHub Marketplace": "GitHub 市场",
-                "Change plan": "更改计划",
-                "Cancel plan": "取消计划",
-                "Do you have any questions? Contact": "您有任何问题吗？请联系",
+            // 조직 설정
+            "Billing Management": "결제 관리",
+                "Receipts are sent to billing managers and email recipients.": "영수증은 결제 관리자와 이메일 수신자에게 전송돼요.",
 
-            // 组织设置
-            "Billing Management": "账单管理",
-                "Receipts are sent to billing managers and email recipients.": "收据会被发送给账单管理员和邮件接收者。",
+                "Billing managers": "결제 관리자",
+                    "You have not invited any billing managers": "아직 결제 관리자를 초대하지 않았어요.",
+                    "Invite": "초대하기",
 
-                "Billing managers": "账单管理员",
-                    "You have not invited any billing managers": "您尚未邀请任何账单管理员",
-                    "Invite": "邀请",
+                "Email recipients": "이메일 수신자",
+                    "Add": "추가하기",
+                    "Primary": "주 계정",
 
-                "Email recipients": "邮件接收者",
-                    "Add": "添加",
-                    "Primary": "主账户",
+                    // 결제 이메일 편집 대화상자
+                        "Edit billing email address": "결제 이메일 주소 편집하기",
+                        "Billing primary email": "결제 주 이메일",
+                        "Update": "업데이트하기",
 
-                    // 编辑账单电子邮箱对话框
-                        "Edit billing email address": "编辑账单电子邮箱",
-                        "Billing primary email": "账单主账户邮箱",
-                        "Update": "更新",
+                    // 결제 수신자 추가 대화상자
+                        "Add billing recipient": "결제 수신자 추가하기",
+                        "Add billing recipient email": "결제 수신자 이메일 추가하기",
 
-                    // 添加账单接收者对话框
-                        "Add billing recipient": "添加账单接收者",
-                        "Add billing recipient email": "添加账单接收者邮箱",
+                "Metered billing via Azure": "Azure를 통한 계량 청구",
+                    "Add Azure Subscription": "Azure 구독 추가하기",
+                    "To manage metered billing for this account through Microsoft Azure an Azure Subscription ID must be added to your account.": "Microsoft Azure를 통해 이 계정의 계량 청구를 관리하려면 Azure 구독 ID를 계정에 추가해야 해요.",
 
-                "Metered billing via Azure": "通过 Azure 计量计费",
-                    "Add Azure Subscription": "添加 Azure 订阅",
-                    "To manage metered billing for this account through Microsoft Azure an Azure Subscription ID must be added to your account.": "通过 Microsoft Azure 管理此账户的计量计费，必须将 Azure 订阅 ID 添加到您的账户中。",
-
-        // 支付信息 https://github.com/settings/billing/payment_information
+        // 결제 정보 https://github.com/settings/billing/payment_information
             // pro
-                "Your recurring charges & discounts": "您的定期费用和折扣",
-                    "GitHub Coupon": "GitHub 优惠券",
-                        "* Discount applies for GitHub Pro": "* 适用于 GitHub Pro 的折扣",
+                "Your recurring charges & discounts": "정기 결제 비용 및 할인 내역",
+                    "GitHub Coupon": "GitHub 쿠폰",
+                        "* Discount applies for GitHub Pro": "* GitHub Pro에 할인 적용돼요",
 
-            "Billing & plans": "账单和计划",
-            "/ Payment information": "/ 支付信息",
+            "Billing & plans": "청구 및 플랜",
+            "/ Payment information": "/ 결제 정보",
 
-            "Please update your billing information in order to add a payment method.": "请更新您的账单信息，以便添加支付方式。",
+            "Please update your billing information in order to add a payment method.": "결제 수단을 추가하려면 결제 정보를 업데이트해주세요.",
 
-            "Billing information": "账单信息",
-                "Remove": "移除",
-                    "Remove your billing information?": "确定移除账单信息？",
-                    "You are about to remove the billing information for this account.": "您即将删除此账户的账单信息。",
-                    "Are you sure you want to do this?": "您确定要这样做吗？",
-                    "Remove billing information": "移除账单信息",
-            // 组织设置
-            "An organization owner's personal billing information must be linked with this organization account.": "组织所有者的个人账单信息必须与该组织账户关联。",
-            "Update your billing information": "更新您的账单信息",
-            "to be able to link it with this organization.": "以便将其与该组织关联。",
+            "Billing information": "청구 정보",
+                "Remove": "제거하기",
+                    "Remove your billing information?": "결제 정보를 제거할까요?",
+                    "You are about to remove the billing information for this account.": "이 계정의 결제 정보를 제거하려고 해요.",
+                    "Are you sure you want to do this?": "정말로 진행할까요?",
+                    "Remove billing information": "결제 정보 제거하기",
+            // 조직 설정
+            "An organization owner's personal billing information must be linked with this organization account.": "조직 소유자의 개인 결제 정보는 이 조직 계정과 연동되어야 해요.",
+            "Update your billing information": "결제 정보 업데이트하기",
+            "to be able to link it with this organization.": "이 조직과 연동할 수 있도록요.",
 
-            "First name": "名字",
-            "Last name": "姓氏",
-            "Add your business information to show on every invoice": "添加您的企业信息，在每张发票上显示",
-            "Address": "地址",
-                "(Street, P.O. box)": "（街道，邮政信箱）",
-            "Address line 2": "地址第 2 行",
-                "(Apartment, suite, unit)": "（公寓、套房、单元）",
-            "City": "城市",
-            "Country/Region": "国家/地区",
-                "Choose your country": "选择您所在的国家/地区",
-            "State/Province": "州/省",
-            "Postal/Zip code": "邮政编码",
-                "Required for certain countries": "某些国家/地区需要",
-                "(9-digit zip code for US)": "(美国为 9 位邮政编码）",
-            "VAT/GST ID": "增值税/消费税编号",
-            "Save billing information": "保存账单信息",
-            "You have not added any billing information.": "您尚未添加账单方式。",
+            "First name": "이름",
+            "Last name": "성",
+            "Add your business information to show on every invoice": "모든 인보이스에 표시될 기업 정보를 추가해주세요.",
+            "Address": "주소",
+                "(Street, P.O. box)": "(도로명, 우편함)",
+            "Address line 2": "주소 2",
+                "(Apartment, suite, unit)": "(아파트, 스위트, 유닛)",
+            "City": "도시",
+            "Country/Region": "국가/지역",
+                "Choose your country": "국가 선택하기",
+            "State/Province": "주/도",
+            "Postal/Zip code": "우편번호",
+                "Required for certain countries": "일부 국가에서는 필수에요",
+                "(9-digit zip code for US)": "(미국의 경우 9자리 우편번호)",
+            "VAT/GST ID": "부가세/GST ID",
+            "Save billing information": "결제 정보 저장하기",
+            "You have not added any billing information.": "아직 결제 정보를 추가하지 않았어요.",
 
-            "Payment method": "支付方式",
-            "Add Information": "添加信息",
-            "You have not added a payment method.": "您尚未添加支付方式。",
-            "Credit or debit card": "信用卡或借记卡",
-                "504 Gateway Time-out": "504 网关超时",
-                "You may see an authorization hold on your provided payment method after accruing significant usage of metered services. Authorization holds are temporary and are released as quickly as possible.": "在您大量使用计量服务后，您可能会看到您提供的付款方式被授权暂停。授权暂停是暂时的，会尽快解除。",
+            "Payment method": "결제 수단",
+            "Add Information": "정보 추가하기",
+            "You have not added a payment method.": "아직 결제 수단을 추가하지 않았어요.",
+            "Credit or debit card": "신용카드 또는 체크카드",
+                "504 Gateway Time-out": "504 게이트웨이 타임아웃",
+                "You may see an authorization hold on your provided payment method after accruing significant usage of metered services. Authorization holds are temporary and are released as quickly as possible.": "계량 서비스 사용량이 많아지면 제공하신 결제 수단에 승인 보류가 발생할 수 있어요. 승인 보류는 일시적이며 가능한 한 빨리 해제됩니다.",
+            "Last payment": "마지막 결제",
+            "You have not made any payments.": "아직 결제를 진행하지 않으셨어요.",
+            "Coupon": "쿠폰",
+            "Redeem a coupon": "쿠폰 사용하기",
+            "You don't have an active coupon.": "현재 사용 가능한 쿠폰이 없어요.",
+            "* Discount only applies for GitHub Pro": "* 할인은 GitHub Pro에만 적용돼요.",
+            "Additional Information": "추가 정보",
+                "Add specific contact or tax information to your receipts, like your full business name, VAT/GST identification number, or address of record here. We’ll make sure it shows up on every receipt.": "영수증에 표시될 구체적인 연락처나 세금 정보를 추가해보세요. 예를 들어, 기업 전체 이름, 부가세/GST 번호, 혹은 등록된 주소 등을 입력할 수 있어요. 모든 영수증에 표시되도록 할게요.",
+            "Add information": "정보 추가하기",
+            "No additional information added to your receipts.": "영수증에 추가 정보가 없어요.",
 
-            "Last payment": "最后一次支付",
-            "You have not made any payments.": "您尚未支付任何款项。",
+            // 대화상자
+            "Extra billing information": "추가 결제 정보",
+            "This information will appear on all your receipts.": "이 정보는 모든 영수증에 표시돼요.",
+            "For your security, do not include any confidential or financial information (like credit card numbers).": "안전을 위해, 기밀이나 재무 정보(예: 신용카드 번호)는 포함하지 마세요.",
+            "Full business name or address of record": "기업 전체 이름 또는 등록 주소",
+            "Save contact information": "연락처 정보 저장하기",
 
-            "Coupon": "优惠劵",
-            "Redeem a coupon": "兑换优惠券",
-            "You don't have an active coupon.": "您没有有效的优惠券。",
-            "* Discount only applies for GitHub Pro": "* 优惠仅限 GitHub Pro。",
+            "Invoice": "인보이스",
+                "Receive an invoice for your GitHub purchases": "GitHub 구매에 대한 인보이스 받기",
+                "The data from Billing Information, such as your address and VAT/GST ID will appear on your invoices.": "청구 정보의 데이터, 예를 들어 주소와 부가세/GST ID가 인보이스에 표시돼요.",
+                "Update your information displayed on your invoices in the": "인보이스에 표시된 정보를 업데이트하려면",
+                "billing information section": "청구 정보 섹션에서",
+                "Automatically receive an invoice alongside the payment receipt": "결제 영수증과 함께 자동으로 인보이스 받기",
+                    "* Enables invoices for all NEW payments.": "* 모든 신규 결제에 대해 인보이스를 활성화해요.",
+                "Save invoice preference": "인보이스 선호도 저장하기",
 
-            "Additional Information": "附加信息",
-                "Add specific contact or tax information to your receipts, like your full business name, VAT/GST identification number, or address of record here. We’ll make sure it shows up on every receipt.": "在您的收据上添加具体的联系方式或税务信息，例如您的企业全称、VAT/GST 识别号码或记录地址。我们将确保它显示在每张收据上。",
-            "Add information": "添加信息",
-            "No additional information added to your receipts.": "您的收据上没有添加任何额外的信息。",
+        // 결제 수단 https://github.com/settings/billing/payment
+            "/ Payment method": "/ 결제 수단",
+            "Loading payment information…": "결제 정보를 불러오는 중…",
+            "Pay with": "결제 수단:",
+                "Credit card": "신용카드",
+                    "Card Number": "카드 번호",
+                    "Expiration Date": "만료일",
+                        "- Select One -": "- 하나 선택 -",
+                    "Address 1": "주소 1",
+                    "Address 2": "주소 2",
+                    "Country": "국가/지역",
+                    "City": "도시",
+                    "State": "주/도",
+                    "Postal Code": "우편번호",
+                    "Submit": "제출하기",
+                "PayPal account": "PayPal 계정",
+                    "Sign in to": "로그인하기:",
+                    "Connecting to PayPal…": "PayPal에 연결 중…",
+            "Back to billing settings": "결제 설정으로 돌아가기",
+            "There are no upcoming charges to your account.": "계정에 예정된 결제가 없어요.",
 
-            // 对话框
-            "Extra billing information": "额外的账单信息",
-            "This information will appear on all your receipts.": "此信息将出现在您的所有收据上。",
-            "For your security, do not include any confidential or financial information (like credit card numbers).": "为了您的安全，请勿包含任何机密或财务信息（如信用卡号）。",
-            "Full business name or address of record": "企业全称或记录地址",
-            "Save contact information": "保存联系信息",
+        // 지출 한도 https://github.com/settings/billing/spending_limit
+            "/ Monthly spending limits": "/ 월별 지출 한도",
+            "/ Monthly spending limit": "/ 월별 지출 한도", // 조직 설정
+            "Set up a monthly spending limit. You can adjust it at any time. Read more information about": "월별 지출 한도를 설정해보세요. 언제든지 조정할 수 있어요. 자세한 내용은",
+            "spending limits": "지출 한도",
+            "Actions spending limits": "GitHub 액션 지출 한도", // 조직 설정
+            "Packages spending limits": "패키지 지출 한도", // 조직 설정
 
-            "Invoice": "发票",
-                "Receive an invoice for your GitHub purchases": "接收 GitHub 购物发票",
+            "Payment method is missing": "결제 수단이 없습니다.",
+            "You can’t increase the spending limits until you set up a valid payment method.": "유효한 결제 수단을 설정하기 전까지는 지출 한도를 늘릴 수 없어요.",
+                // 교육 인증
+                "Coupons do not apply to any overages.": "쿠폰은 초과 사용량에 적용되지 않아요.",
+                    "Any incurred overages will be paid in full by the added payment method.": "발생한 초과 비용은 추가된 결제 수단으로 전액 결제돼요.",
+            "Add payment method": "결제 수단 추가하기",
 
-                "The data from Billing Information, such as your address and VAT/GST ID will appear on your invoices.": "账单信息中的数据，如您的地址和增值税/消费税 ID，将显示在您的发票上。",
-                "Update your information displayed on your invoices in the": "更新发票上显示信息中的",
-                "billing information section": "账单信息栏",
+            "Actions & Packages": "액션 및 패키지",
+            "Limit spending": "지출 제한하기",
+                "Set up a spending limit on a monthly basis": "월별 지출 한도 설정하기",
+                "Update limit": "한도 업데이트하기",
+                // [/Leaving it at (\$\d+\.\d{2}) will avoid any extra expenses/, "($1 달러로 유지하면 추가 비용을 피할 수 있어요.)"],
+            "Unlimited spending": "지출 무제한",
+                "Pay as much as needed to keep Actions & Packages running": "액션 및 패키지가 계속 실행되도록 필요한 만큼 결제하기",
 
-                "Automatically receive an invoice alongside the payment receipt": "在收到付款收据的同时自动接收发票",
-                    "* Enables invoices for all NEW payments.": "* 为所有新付款启用发票。",
-                "Save invoice preference": "保存发票首选项",
+            "Email alerts": "이메일 알림",
+            "Receive email notifications when usage reaches 75%, 90% and 100% thresholds.": "사용량이 75%, 90%, 100%에 도달하면 이메일 알림을 받아보세요.",
+            "Included resources alerts": "포함된 리소스 알림",
+            "Spending limit alerts": "지출 한도 알림",
 
-        // 支付方式 https://github.com/settings/billing/payment
-            "/ Payment method": "/ 支付方式",
-            "Loading payment information…": "正在加载支付信息…",
-            "Pay with": "支付方式：",
-                "Credit card": "信用卡",
-                    "Card Number": "卡号",
-                    "Expiration Date": "终止日期",
-                        "- Select One -": "- 选择一个 -",
-                    "Address 1": "地址 1",
-                    "Address 2": "地址 2",
-                    "Country": "国家/地区",
-                    "City": "城市",
-                    "State": "州/省",
-                    "Postal Code": "邮政编码",
-                    "Submit": "提交",
-                "PayPal account": "PayPal 账户",
-                    "Sign in to": "登录到",
-                    "Connecting to PayPal…": "正在连接到 PayPal…",
-            "Back to billing settings": "返回账单设置",
-            "There are no upcoming charges to your account.": "您的账户没有即将发生的费用。",
+            // 코드스페이스
+                "Pay as much as needed to keep Codespaces running": "코드스페이스가 계속 실행되도록 필요한 만큼 결제하기",
 
-        // 支出限额 https://github.com/settings/billing/spending_limit
-            "/ Monthly spending limits": "/ 每月支付限额",
-            "/ Monthly spending limit": "/ 每月支付限额", // 组织设置
-            "Set up a monthly spending limit. You can adjust it at any time. Read more information about": "设置每月支出限额。您可以随时调整它。阅读更多关于",
-            "spending limits": "支付限额",
-            "Actions spending limits": "GitHub 操作支付限额", // 组织设置
-            "Packages spending limits": "软件包支付限额", // 组织设置
+        // 결제 내역 https://github.com/account/billing/history
+            "/ Payment history": "/ 결제 내역",
+            "Amounts shown in USD": "표시 금액은 USD 기준이에요.",
 
-            "Payment method is missing": "缺失支付方式",
-            "You can’t increase the spending limits until you set up a valid payment method.": "在您设置有效的支付方式之前，您无法提高支出限额。",
-                // 教育认证
-                "Coupons do not apply to any overages.": "优惠券不适用于任何超额部分。",
-                    "Any incurred overages will be paid in full by the added payment method.": "任何超额费用都将通过添加的付款方式全额支付。",
-            "Add payment method": "添加支付方式",
-
-            "Actions & Packages": "操作与软件包",
-            "Limit spending": "限制支出",
-                "Set up a spending limit on a monthly basis": "设置每月支出限额",
-                "Update limit": "更新限额",
-                // [/Leaving it at (\$\d+\.\d{2}) will avoid any extra expenses/, "将其限制在 $1 美元将避免任何额外的费用。"],
-            "Unlimited spending": "不限制支出",
-                "Pay as much as needed to keep Actions & Packages running": "按需支付，以保持操作和软件包的运行",
-
-            "Email alerts": "电子邮件提醒",
-            "Receive email notifications when usage reaches 75%, 90% and 100% thresholds.": "当使用率达到 75%、90% 和 100% 的阈值时，会收到电子邮件通知。",
-            "Included resources alerts": "包含资源提醒",
-            "Spending limit alerts": "支出限额提醒",
-
-            // 代码空间
-                "Pay as much as needed to keep Codespaces running": "按需支付，以保持代码空间的运行",
-
-        // 账单历史 https://github.com/account/billing/history
-            "/ Payment history": "/ 支付历史",
-            "Amounts shown in USD": "以美元显示的金额",
-
-        // 用户计划 https://github.com/account/billing/plans
+        // 사용자 플랜 https://github.com/account/billing/plans
         // https://github.com/account/billing/plans
-            "Compare plans": "比较计划",
-            "Free": "免费",
-                "All the basics": "所有基础",
-            "Pro": "专业",
-                "Advanced tools for private repos": "用于私人仓库的高级工具",
-            // 具体内容
-                "Code management": "代码管理",
-                    "Public repositories": "公共仓库",
-                        "Host open source projects in public GitHub repositories, accessible via web or command line. Public repositories are accessible to anyone at GitHub.com.": "在 GitHub 公共仓库中托管开源项目，可通过网络或命令行访问。任何人都可以访问 GitHub.com 上的公共仓库。",
-                    "Private repositories": "私有仓库",
-                        "Host code in private GitHub repositories, accessible via appliance, web, and command line. Private repositories are only accessible to you and people you share them with.": "在私有 GitHub 仓库中托管代码，可通过设备、网络和命令行访问。只有您和与您共享的人才能访问私有仓库。",
+            "Compare plans": "플랜 비교하기",
+            "Free": "무료",
+                "All the basics": "기본 모든 기능",
+            "Pro": "전문",
+                "Advanced tools for private repos": "비공개 저장소를 위한 고급 도구",
+            // 구체 내용
+                "Code management": "코드 관리",
+                    "Public repositories": "공개 저장소",
+                        "Host open source projects in public GitHub repositories, accessible via web or command line. Public repositories are accessible to anyone at GitHub.com.": "웹이나 명령줄을 통해 접근할 수 있는 공개 GitHub 저장소에 오픈 소스 프로젝트를 호스팅해보세요. GitHub.com에서 누구나 접근할 수 있어요.",
+                    "Private repositories": "비공개 저장소",
+                        "Host code in private GitHub repositories, accessible via appliance, web, and command line. Private repositories are only accessible to you and people you share them with.": "기기, 웹, 명령줄을 통해 접근 가능한 비공개 GitHub 저장소에 코드를 호스팅해보세요. 비공개 저장소는 본인과 공유한 사람만 접근할 수 있어요.",
 
-                "Code workflow": "代码工作流",
-                    "GitHub Codespaces": "GitHub 代码空间",
-                        "Spin up fully configured dev environments in the cloud with the power of your favorite editor. A \"core hour\" denotes compute usage. On a 2-core machine, you would get 60 hours free. On a 4-core machine, you would get 30 hours free, etc. Free hours are assigned to personal accounts, rather than free organizations.": "利用您喜爱的编辑器的强大功能，在云中快速配置完整的开发环境。“核心小时” 表示计算使用量。在双核机器上，您将获得 60 小时的免费时长。在 4 核机器上，您将获得 30 小时的免费时长，以此类推。免费时长数分配给个人账户，而不是免费组织。",
-                    "GitHub Actions": "Github 操作",
-                        "Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub. Minutes are free for public repositories.": "利用 GitHub Actions 的几分钟执行时间，实现软件开发工作流程自动化。编写任务并组合它们，即可在 GitHub 上构建、测试和部署任何代码项目。对于公共仓库，执行时间是免费的。",
-                        "Learn more about billing": "了解更多关于账单的信息",
-                    "GitHub Packages": "Github 软件包",
-                        "Host your own software packages or use them as dependencies in other projects. Both private and public hosting available. Packages are free for public repositories.": "托管您的软件包，或将其用作其他项目的依赖项。提供私有和公共托管。对于公共仓库，软件包是免费的。",
-                    "Code reviews": "代码审查",
-                        "Review new code, see visual code changes, and confidently merge code changes with automated status checks.": "审查新代码，查看可视化的代码更改，并通过自动化状态检查自行地合并代码更改。",
-                    // 拉取请求
-                        "Allow contributors to easily notify you of changes they've pushed to a repository – with access limited to the contributors you specify. Easily merge changes you accept.": "允许贡献者轻松通知您他们推送到仓库的更改，访问权限仅限于您指定的贡献者。轻松合并您接受的更改。",
-                    "Protected branches": "受保护的分支",
-                        "Enforce restrictions on how code branches are merged, including requiring reviews by selected collaborators, or allowing only specific contributors to work on a particular branch.": "对代码分支的合并方式实施限制，包括要求由选定的协作者进行审查，或仅允许特定的贡献者在特定分支上工作。",
-                    // 代码所有者
-                        "Automatically request reviews – or require approval – by selected contributors when changes are made to sections of code that they own.": "当选定的贡献者对其拥有的代码部分进行修改时，自动要求审查或要求批准。",
-                    "Draft pull requests": "拉取请求草案",
-                        "Easily discuss and collaborate on pull requests before submitting to formal review.": "在提交正式审查之前，轻松讨论和协作拉取请求。",
-                    "Multiple pull request assignees": "多个拉取请求受理人",
-                        "Assign more than one person to a pull request.": "为拉取请求指派多人受理。",
-                    "Repository insights": "仓库洞察",
-                        "See data about activity and contributions within your repositories, including trends. You can use this data to improve collaboration and make development faster and more effective.": "查看有关仓库中的活动和贡献数据，包括趋势。您可以利用这些数据来改善协作，使开发更加迅速和有效。",
-                    // 定时提醒
-                        "Send scheduled messages to you or your team listing open pull requests.": "按计划的向您或您的团队发送信息，列出打开的拉取请求。",
-                    "Automatic code review assignment": "自动代码审查分配",
-                        "Automatically assign code reviews to members of your team based on one of two algorithms.": "根据两种算法之一，自动为团队成员分配代码审查。",
-                    "Environment protection rules": "环境保护规则",
-                        "When a workflow job references an environment, the job won't start until all of the environment's protection rules pass.": "当工作流作业引用环境时，只有环境的所有保护规则都通过后，作业才会启动。",
-                    "Environment deployment branches and secrets": "环境部署分支和机密",
-                        "A job cannot access secrets that are defined in an environment unless it is running on the specified branch.": "除非作业在指定的分支上运行，否则无法访问环境中定义的机密。",
+                "Code workflow": "코드 워크플로우",
+                    "GitHub Codespaces": "GitHub 코드스페이스",
+                        "Spin up fully configured dev environments in the cloud with the power of your favorite editor. A \"core hour\" denotes compute usage. On a 2-core machine, you would get 60 hours free. On a 4-core machine, you would get 30 hours free, etc. Free hours are assigned to personal accounts, rather than free organizations.": "좋아하는 에디터의 힘으로 클라우드에서 완전히 구성된 개발 환경을 실행해보세요. '코어 시간'은 컴퓨트 사용량을 나타내며, 2코어 머신에서는 60시간, 4코어 머신에서는 30시간의 무료 사용 시간이 제공돼요. 무료 사용 시간은 무료 조직이 아니라 개인 계정에 할당돼요.",
+                    "GitHub Actions": "GitHub 액션",
+                        "Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub. Minutes are free for public repositories.": "GitHub 액션의 실행 시간을 사용해 소프트웨어 개발 워크플로우를 자동화해보세요. 작업을 작성하고 결합하여 GitHub에서 어떤 코드 프로젝트든 빌드, 테스트, 배포할 수 있어요. 공개 저장소의 경우 실행 시간이 무료에요.",
+                        "Learn more about billing": "청구에 대해 더 알아보기",
+                    "GitHub Packages": "GitHub 패키지",
+                        "Host your own software packages or use them as dependencies in other projects. Both private and public hosting available. Packages are free for public repositories.": "자신의 소프트웨어 패키지를 호스팅하거나 다른 프로젝트의 의존성으로 사용할 수 있어요. 비공개와 공개 호스팅 모두 가능하며, 공개 저장소의 경우 패키지는 무료에요.",
+                    "Code reviews": "코드 리뷰",
+                        "Review new code, see visual code changes, and confidently merge code changes with automated status checks.": "새 코드를 검토하고, 시각적으로 변경 사항을 확인한 후, 자동화된 상태 검사와 함께 자신 있게 코드 변경을 병합해보세요.",
+                    // 끌어오기 요청
+                        "Allow contributors to easily notify you of changes they've pushed to a repository – with access limited to the contributors you specify. Easily merge changes you accept.": "기여자가 저장소에 푸시한 변경 사항을 쉽게 알릴 수 있도록 하고, 지정한 기여자에게만 접근 권한을 제한해요. 승인한 변경 사항은 쉽게 병합할 수 있어요.",
+                    "Protected branches": "보호된 분기",
+                        "Enforce restrictions on how code branches are merged, including requiring reviews by selected collaborators, or allowing only specific contributors to work on a particular branch.": "코드 분기의 병합 방식에 제한을 두어, 선택한 협업자의 리뷰를 요구하거나 특정 기여자만 특정 분기에서 작업할 수 있도록 해보세요.",
+                    // 코드 소유자
+                        "Automatically request reviews – or require approval – by selected contributors when changes are made to sections of code that they own.": "자신이 소유한 코드 부분에 변경이 발생하면 선택한 기여자에게 자동으로 리뷰를 요청하거나 승인을 요구해보세요.",
+                    "Draft pull requests": "끌어오기 요청 초안",
+                        "Easily discuss and collaborate on pull requests before submitting to formal review.": "정식 리뷰 제출 전, 끌어오기 요청에 대해 쉽게 논의하고 협업해보세요.",
+                    "Multiple pull request assignees": "여러 끌어오기 요청 담당자",
+                        "Assign more than one person to a pull request.": "끌어오기 요청에 여러 사람을 담당자로 지정해보세요.",
+                    "Repository insights": "저장소 인사이트",
+                        "See data about activity and contributions within your repositories, including trends. You can use this data to improve collaboration and make development faster and more effective.": "저장소 내 활동 및 기여 데이터, 추세 등을 확인해보세요. 이 데이터를 활용하여 협업을 개선하고 개발 속도를 높일 수 있어요.",
+                    // 정기 알림
+                        "Send scheduled messages to you or your team listing open pull requests.": "열린 끌어오기 요청 목록을 팀 또는 본인에게 정기적으로 전송해보세요.",
+                    "Automatic code review assignment": "자동 코드 리뷰 할당",
+                        "Automatically assign code reviews to members of your team based on one of two algorithms.": "두 가지 알고리즘 중 하나를 기반으로 팀원들에게 코드 리뷰를 자동으로 할당해보세요.",
+                    "Environment protection rules": "환경 보호 규칙",
+                        "When a workflow job references an environment, the job won't start until all of the environment's protection rules pass.": "워크플로우 작업이 환경을 참조할 때, 환경의 모든 보호 규칙이 통과될 때까지 작업이 시작되지 않아요.",
+                    "Environment deployment branches and secrets": "환경 배포 분기 및 비밀",
+                        "A job cannot access secrets that are defined in an environment unless it is running on the specified branch.": "작업이 지정된 분기에서 실행되지 않으면, 환경에 정의된 비밀에 접근할 수 없어요.",
 
-                "Collaboration": "协作",
-                    "Collaborators for public repositories": "公共仓库协作者",
-                        "Invite any GitHub member, or all GitHub members, to work with you on code in a public repository you control – including making changes and opening issues.": "邀请任何 GitHub 成员或所有 GitHub 成员，在您控制的公共仓库上与您共同处理代码，包括进行更改和提出이슈。",
-                    "Collaborators for private repositories": "私有仓库协作者",
-                        "Invite any GitHub member, or all GitHub members, to work with you on code in a private repository you control – including making changes and opening issues.": "邀请任何 GitHub 成员或所有 GitHub 成员，在您控制的私有仓库上与您共同处理代码，包括进行更改和提出이슈。",
+                "Collaboration": "협업",
+                    "Collaborators for public repositories": "공개 저장소 협업자",
+                        "Invite any GitHub member, or all GitHub members, to work with you on code in a public repository you control – including making changes and opening issues.": "자신이 관리하는 공개 저장소에서 코드를 함께 작업할 GitHub 멤버(혹은 모든 멤버)를 초대해보세요 – 코드 변경 및 이슈 제기도 포함돼요.",
+                    "Collaborators for private repositories": "비공개 저장소 협업자",
+                        "Invite any GitHub member, or all GitHub members, to work with you on code in a private repository you control – including making changes and opening issues.": "자신이 관리하는 비공개 저장소에서 코드를 함께 작업할 GitHub 멤버(혹은 모든 멤버)를 초대해보세요 – 코드 변경 및 이슈 제기도 포함돼요.",
                     // 이슈
-                        "Track bugs, enhancements, and other requests, prioritize work, and communicate with stakeholders as changes are proposed and merged.": "跟踪漏洞、增强功能和其他请求，确定工作的优先级，并在提出和合并变更时与利益相关者沟通。",
-                    // 项目
-                        "Visualize and manage issues and pull requests across tables, boards, and roadmaps with custom fields and views that you can arrange to suit your workflow.": "通过自定义字段和视图，在表格、面板和路线图上可视化管理이슈和拉取请求，以适应您的工作流程。",
-                    "Milestones": "里程碑",
-                        "Track progress on groups of issues or pull requests in a repository, and map groups to overall project goals.": "跟踪仓库中이슈或拉取请求组的进展，并将组映射到整体项目目标。",
-                    // 团队讨论
-                        "Discuss any topic, unattached to a specific project or issue. Control who has access, notify discussion participants with updates, and link from anywhere.": "讨论任何主题，不与特定项目或이슈相关。控制访问权限，通知讨论参与者最新情况，并从任何地方进行链接。",
-                    "Organization and team management": "组织和团队管理",
-                        "Manage access to projects on a team-by-team, or individual user, basis.": "以团队或个人用户为基础管理对项目的访问。",
-                    "Pages and wikis": "GitHub Pages 和 Wiki",
-                        "Host documentation and simple websites for your project in a wiki format that contributors can easily edit either on the web or command line.": "以 Wiki 格式为您的项目托管文档和简单网站，贡献者可以轻松在网络或命令行上进行编辑。",
-                    "Multiple issue assignees": "多个이슈受理人",
-                        "Assign more than one person to an issue.": "为이슈指派多人受理",
-                    "GitHub organizations give you team-based access control and discussions.": "GitHub 组织为您提供基于团队的访问控制和讨论。",
-                        "Learn more about organizations": "了解更多关于组织的信息",
+                        "Track bugs, enhancements, and other requests, prioritize work, and communicate with stakeholders as changes are proposed and merged.": "버그, 기능 개선 및 기타 요청을 추적하고, 작업 우선순위를 정하며, 변경 사항이 제안되고 병합될 때 이해관계자와 소통해보세요.",
+                    // 프로젝트
+                        "Visualize and manage issues and pull requests across tables, boards, and roadmaps with custom fields and views that you can arrange to suit your workflow.": "사용자 워크플로우에 맞게 조정할 수 있는 커스텀 필드와 뷰를 활용해, 표, 보드, 로드맵 상에서 이슈와 끌어오기 요청을 시각화 및 관리해보세요.",
+                    "Milestones": "마일스톤",
+                        "Track progress on groups of issues or pull requests in a repository, and map groups to overall project goals.": "저장소 내 이슈나 끌어오기 요청 그룹의 진행 상황을 추적하고, 이를 전체 프로젝트 목표에 맞춰보세요.",
+                    // 팀 토론
+                        "Discuss any topic, unattached to a specific project or issue. Control who has access, notify discussion participants with updates, and link from anywhere.": "특정 프로젝트나 이슈에 얽매이지 않고 어떤 주제든 토론해보세요. 접근 권한을 제어하고, 업데이트로 토론 참가자들에게 알리며, 어디서든 링크할 수 있어요.",
+                    "Organization and team management": "조직 및 팀 관리",
+                        "Manage access to projects on a team-by-team, or individual user, basis.": "팀별 또는 개별 사용자별로 프로젝트 접근을 관리해보세요.",
+                    "Pages and wikis": "GitHub 페이지와 Wiki",
+                        "Host documentation and simple websites for your project in a wiki format that contributors can easily edit either on the web or command line.": "위키 형식으로 프로젝트의 문서와 간단한 웹사이트를 호스팅해보세요. 기여자들은 웹이나 명령줄에서 쉽게 편집할 수 있어요.",
+                    "Multiple issue assignees": "여러 이슈 담당자",
+                        "Assign more than one person to an issue.": "이슈에 여러 사람을 담당자로 지정해보세요.",
+                    "GitHub organizations give you team-based access control and discussions.": "GitHub 조직은 팀 기반의 접근 제어와 토론 기능을 제공해요.",
+                        "Learn more about organizations": "조직에 대해 더 알아보기",
 
-                "Security and compliance": "安全性与合规性",
-                    "Code scanning": "代码扫描",
-                        "Integrate automated security review into your pull requests with CodeQL. Find, prioritize, and fix vulnerabilities in your repositories without disrupting your workflow.": "使用 CodeQL 将自动化安全审查集成到您的拉取请求中。在不中断工作流程的情况下，发现、优先处理并修复仓库中的漏洞。",
-                    "Secret scanning": "机密扫描",
-                        "Detect credentials exposed in your git history, comments, or discussions. Prevent further exposures with push protection, which proactively blocks secrets from being pushed into your code.": "检测您的 git 历史记录、评论或讨论中暴露的凭证。通过推送保护，主动阻止机密被推送到您的代码中，防止进一步的暴露。",
-                    "Dependency review": "依赖审查",
-                        "Understand the security impact of newly introduced dependencies during pull requests, before they get merged.": "在拉取请求合并之前，了解新引入的依赖关系对安全的影响。",
-                    "Security overview": "安全概述",
-                        "Get a centralized view of your organization's security risks. Know where security features have and haven’t yet been configured.": "集中查看组织的安全风险。了解哪些安全功能已经配置，哪些尚未配置。",
-                    "Dependabot alerts": "Dependabot 警报",
-                        "Get notified when there are new vulnerabilities affecting dependencies in your repositories.": "当您的仓库中出现影响依赖项的新漏洞时，您会收到通知。",
-                    "Dependabot security updates": "Dependabot 安全更新",
-                        "Keep projects secure by automatically opening pull requests that update vulnerable dependencies to secure versions.": "通过自动打开拉取请求，更新易受攻击的依赖项至安全版本，保持项目的安全性。",
-                    "Dependabot version updates": "Dependabot 版本更新",
-                        "Keep projects up-to-date by automatically opening pull requests that update out-of-date dependencies.": "通过自动打开拉取请求，更新过时的依赖项，保持项目的最新状态。",
-                    "Repository rules": "仓库规则",
-                        "Enforce branch and tag protections across repositories. Rule insights allow you to review rule enforcement and understand its impact.": "跨仓库实施分支和标签保护限制。规则洞察允许您审查规则执行并了解其影响。",
-                    "Required reviews": "批准审查",
-                        "Ensure that pull requests have a specific number of approving reviews before collaborators can make changes to a protected branch.": "确保拉取请求通过特定数量的批准审查后，协作者才能对受保护分支进行更改。",
-                    // 所需的状态检查
-                        "Ensure that all required CI tests are passing before collaborators can make changes to a protected branch.": "确保所有必要的 CI 测试通过后，协作者才能对受保护分支进行更改。",
-                    "GitHub Security Advisories": "GitHub 安全公告",
-                        "Privately discuss, fix, and publish information about security vulnerabilities found in your repository.": "私人讨论，修复和发布仓库代码中的安全漏洞的信息。",
-                    "Role-based access control": "基于角色的访问控制",
-                        "Define users' level of access to your code, data and settings.": "定义用户访问代码、数据和设置的级别。",
-                    "Required 2FA": "双因素身份验证（2FA）",
-                        "Use an extra layer of security with two factor authentication (2FA) when logging into GitHub.": "登录 GitHub 时，使用双因素身份验证（2FA）作为额外的安全层。",
-                    // 审计日志
-                        "Quickly review the actions performed by members of your organization.": "快速审查组织成员执行的操作。",
-                    "Enterprises can connect to advanced systems like LDAP and SAML single sign-on (SSO).": "企业可以连接到如 LDAP 和 SAML 单一登录 (SSO) 等高级系统。",
-                        "Learn more about GitHub Enterprise": "了解更多关于 GitHub 企业版的信息。",
+                "Security and compliance": "보안 및 준수",
+                    "Code scanning": "코드 스캐닝",
+                        "Integrate automated security review into your pull requests with CodeQL. Find, prioritize, and fix vulnerabilities in your repositories without disrupting your workflow.": "CodeQL을 사용해 자동화된 보안 검토를 끌어오기 요청에 통합해보세요. 워크플로우를 방해하지 않고 저장소의 취약점을 발견, 우선순위 지정, 수정할 수 있어요.",
+                    "Secret scanning": "비밀 스캐닝",
+                        "Detect credentials exposed in your git history, comments, or discussions. Prevent further exposures with push protection, which proactively blocks secrets from being pushed into your code.": "git 기록, 댓글 또는 토론에서 노출된 자격 증명을 감지하고, 푸시 보호를 통해 코드에 비밀이 푸시되는 것을 사전에 차단해 추가 노출을 방지해보세요.",
+                    "Dependency review": "의존성 검토",
+                        "Understand the security impact of newly introduced dependencies during pull requests, before they get merged.": "끌어오기 요청 병합 전에 새로 도입된 의존성이 보안에 미치는 영향을 이해해보세요.",
+                    "Security overview": "보안 개요",
+                        "Get a centralized view of your organization's security risks. Know where security features have and haven’t yet been configured.": "조직의 보안 위험을 한눈에 파악하고, 어떤 보안 기능이 설정되었는지 파악해보세요.",
+                    "Dependabot alerts": "Dependabot 알림",
+                        "Get notified when there are new vulnerabilities affecting dependencies in your repositories.": "저장소의 의존성에 영향을 주는 새로운 취약점이 발생하면 알림을 받아보세요.",
+                    "Dependabot security updates": "Dependabot 보안 업데이트",
+                        "Keep projects secure by automatically opening pull requests that update vulnerable dependencies to secure versions.": "취약한 의존성을 안전한 버전으로 업데이트하는 끌어오기 요청을 자동으로 열어 프로젝트를 안전하게 유지해보세요.",
+                    "Dependabot version updates": "Dependabot 버전 업데이트",
+                        "Keep projects up-to-date by automatically opening pull requests that update out-of-date dependencies.": "자동으로 끌어오기 요청을 열어 오래된 의존성을 업데이트해 프로젝트를 최신 상태로 유지해보세요.",
+                    "Repository rules": "저장소 규칙",
+                        "Enforce branch and tag protections across repositories. Rule insights allow you to review rule enforcement and understand its impact.": "저장소 전반에 걸쳐 분기 및 꼬리표 보호 규칙을 적용해보세요. 규칙 인사이트를 통해 규칙 적용 내역과 영향을 확인할 수 있어요.",
+                    "Required reviews": "필수 승인 리뷰",
+                        "Ensure that pull requests have a specific number of approving reviews before collaborators can make changes to a protected branch.": "협업자가 보호된 분기에 변경을 가하기 전에 끌어오기 요청에 정해진 수의 승인 리뷰가 있어야 해요.",
+                    // 필수 상태 검사
+                        "Ensure that all required CI tests are passing before collaborators can make changes to a protected branch.": "협업자가 보호된 분기에 변경을 가하기 전에 모든 필수 CI 테스트가 통과되었는지 확인해보세요.",
+                    "GitHub Security Advisories": "GitHub 보안 공지",
+                        "Privately discuss, fix, and publish information about security vulnerabilities found in your repository.": "저장소에서 발견된 보안 취약점에 대해 비공개로 논의, 수정, 그리고 정보를 공개해보세요.",
+                    "Role-based access control": "역할 기반 접근 제어",
+                        "Define users' level of access to your code, data and settings.": "사용자가 코드, 데이터, 설정에 접근할 수 있는 수준을 정의해보세요.",
+                    "Required 2FA": "필수 2단계 인증(2FA)",
+                        "Use an extra layer of security with two factor authentication (2FA) when logging into GitHub.": "GitHub 로그인 시 2단계 인증(2FA)으로 추가 보안을 사용해보세요.",
+                    // 감사 로그
+                        "Quickly review the actions performed by members of your organization.": "조직 구성원이 수행한 작업을 빠르게 검토해보세요.",
+                    "Enterprises can connect to advanced systems like LDAP and SAML single sign-on (SSO).": "기업은 LDAP와 SAML 싱글 사인온(SSO) 같은 고급 시스템에 연결할 수 있어요.",
+                        "Learn more about GitHub Enterprise": "GitHub 엔터프라이즈에 대해 더 알아보기.",
 
-                "Marketplace and integrations": "市场和集成",
-                    // Github应用
-                        "Install apps that integrate directly with GitHub's API to improve development workflows – or build your own for private use or publication in the GitHub Marketplace.": "安装直接与 GitHub API 集成的应用，改进开发工作流程，或创建自己的应用，供个人使用或在 GitHub 市场发布。",
-                    "Status checks": "状态检查",
-                        "Define tests that GitHub automatically runs against code being committed to your repository, and get details about failures and what is causing them.": "定义 GitHub 针对提交到仓库的代码自动运行的测试，并获取有关失败和失败原因的详细信息。",
-                    "Enterprise Server customers create pre-receive hooks to automatically accept or reject a push.": "企业服务器客户创建预接收挂钩，以自动接受或拒绝推送。",
-                        "Learn more about pre-receive hooks": "了解更多关于预接收挂钩的信息。",
+                "Marketplace and integrations": "마켓 및 통합",
+                    // GitHub 앱
+                        "Install apps that integrate directly with GitHub's API to improve development workflows – or build your own for private use or publication in the GitHub Marketplace.": "GitHub API와 직접 통합되어 개발 워크플로우를 개선하는 앱을 설치하거나, 개인 사용 또는 GitHub 마켓에 공개할 목적으로 직접 앱을 만들어보세요.",
+                    "Status checks": "상태 검사",
+                        "Define tests that GitHub automatically runs against code being committed to your repository, and get details about failures and what is causing them.": "저장소에 커밋되는 코드에 대해 GitHub이 자동으로 실행하는 테스트를 정의하고, 실패 원인에 대한 자세한 정보를 확인해보세요.",
+                    "Enterprise Server customers create pre-receive hooks to automatically accept or reject a push.": "엔터프라이즈 서버 고객은 프리리시브 훅을 만들어 푸시를 자동으로 승인하거나 거부할 수 있어요.",
+                        "Learn more about pre-receive hooks": "프리리시브 훅에 대해 더 알아보기.",
 
-                "Support and deployment": "支持与部署",
-                    "Community Support": "社区支持",
-                        "Get help with most of your GitHub questions and issues in our Community Forum.": "在我们的社区论坛中，获取大多数有关 GitHub 问题和이슈的帮助。",
-                    "Standard Support": "标准支持",
-                        "GitHub Support can help you troubleshoot issues you run into while using GitHub. Get support via the web.": "GitHub 支持可帮助您解决使用 GitHub 时遇到的问题。通过网络获取支持。",
-                    "Enterprises also get Premium Support, invoice billing, and self-hosted deployment.": "企业还可以获得高级支持、发票计费和自托管部署。",
-                       // "Learn more about GitHub Enterprise": "了解更多关于 GitHub 企业版的信息。",
+                "Support and deployment": "지원 및 배포",
+                    "Community Support": "커뮤니티 지원",
+                        "Get help with most of your GitHub questions and issues in our Community Forum.": "GitHub 관련 질문과 이슈에 대해 커뮤니티 포럼에서 도움을 받아보세요.",
+                    "Standard Support": "표준 지원",
+                        "GitHub Support can help you troubleshoot issues you run into while using GitHub. Get support via the web.": "GitHub 지원이 GitHub 사용 중 발생하는 문제 해결을 도와드려요. 웹을 통해 지원을 받아보세요.",
+                    "Enterprises also get Premium Support, invoice billing, and self-hosted deployment.": "엔터프라이즈 고객은 프리미엄 지원, 인보이스 결제, 그리고 자체 호스팅 배포도 이용할 수 있어요.",
+                       // "Learn more about GitHub Enterprise": "GitHub 엔터프라이즈에 대해 더 알아보기.",
 
-                // 表格中内容
-                "per user/month": "每人/月",
-                "Upgrade to Pro": "升级到专业版",
-                "Unlimited": "无限",
-                "$0 spend limit": "$0 支出限额",
-                    "With policies and controls": "带策略及限制",
-                "180 core-hours compute/month and 20GB storage": "每月 180 个核心小时计算和 20GB 存储",
-                "2,000 minutes/month": "2000 分钟/月",
-                    "Free for public repositories": "免费用于公共仓库",
-                "3,000 minutes/month": "3,000 分钟/月",
-                "Public repositories": "公共仓库",
+                // 표 내용
+                "per user/month": "사용자당/월",
+                "Upgrade to Pro": "전문 버전으로 업그레이드하기",
+                "Unlimited": "무제한",
+                "$0 spend limit": "$0 지출 한도",
+                    "With policies and controls": "정책과 제어 기능 포함",
+                "180 core-hours compute/month and 20GB storage": "월 180 코어 시간 컴퓨트와 20GB 저장공간",
+                "2,000 minutes/month": "월 2,000 분",
+                    "Free for public repositories": "공개 저장소 무료",
+                "3,000 minutes/month": "월 3,000 분",
+                "Public repositories": "공개 저장소",
 
-        // 组织设置 邀请账单管理员 '/organizations/<org-login>/billing_managers/new'
-            "Billing": "账单",
-            "/ Add a billing manager": "/ 添加账单管理员",
+        // 조직 설정 - 결제 관리자 초대 '/organizations/<org-login>/billing_managers/new'
+            "Billing": "청구",
+            "/ Add a billing manager": "/ 결제 관리자 추가하기",
             "A": " ",
-            "billing manager": "账单管理员",
-            "is a user who manages the billing settings of your organization.": "是管理您组织的账单设置的用户。",
-            "will": "会",
-            "will not": "不会",
-            "have the ability to:": "具备以下能力：",
-                "Change the billing plan": "更改账单计划",
-                "Add, update, or remove payment methods": "添加、更新或删除支付方式",
-                // "": "查看支付记录",
-                "Download, and receive receipts": "下载并接收收据",
-                "View a list of billing managers": "查看账单管理员列表",
-                "Invite additional billing managers": "邀请其他账单管理员",
-                "Remove other existing billing managers": "移除其他现有的账单管理员",
-                "Start, modify, or cancel sponsorships": "开始、修改或取消赞助",
-            "be able to:": "能够：",
-                "Create or access repositories in your organization": "在您的组织中创建或访问仓库",
-                "See private members of your organization": "查看您组织的私人成员",
-                "Be seen in the list of organization members": "在组织成员列表中可见",
-                "Use the organization’s payment method": "使用组织的支付方式",
-                "Enable or manage Copilot": "启用或管理 GitHub Copilot",
-                "Purchase, edit, or cancel Marketplace subscriptions": "购买、编辑或取消市场订阅",
+            "billing manager": "결제 관리자",
+            "is a user who manages the billing settings of your organization.": "조직의 청구 설정을 관리하는 사용자에요.",
+            "will": "할 거에요",
+            "will not": "하지 않을 거에요",
+            "have the ability to:": "다음 작업을 할 수 있어요:",
+                "Change the billing plan": "청구 플랜 변경하기",
+                "Add, update, or remove payment methods": "결제 수단 추가, 업데이트 또는 제거하기",
+                // "": "결제 내역 보기",
+                "Download, and receive receipts": "영수증 다운로드 및 수신하기",
+                "View a list of billing managers": "결제 관리자 목록 보기",
+                "Invite additional billing managers": "추가 결제 관리자 초대하기",
+                "Remove other existing billing managers": "다른 기존 결제 관리자 제거하기",
+                "Start, modify, or cancel sponsorships": "스폰서십 시작, 수정 또는 취소하기",
+            "be able to:": "할 수 있어요:",
+                "Create or access repositories in your organization": "조직 내에서 저장소 만들기 또는 접근하기",
+                "See private members of your organization": "조직의 비공개 멤버 보기",
+                "Be seen in the list of organization members": "조직 멤버 목록에 표시되기",
+                "Use the organization’s payment method": "조직의 결제 수단 사용하기",
+                "Enable or manage Copilot": "GitHub Copilot 활성화 또는 관리하기",
+                "Purchase, edit, or cancel Marketplace subscriptions": "장터 구독 구매, 수정 또는 취소하기",
 
-            "Search by username, full name or email address": "搜索用户名、全名、或电子邮箱",
-            "Send invitation": "发送邀请",
+            "Search by username, full name or email address": "사용자 이름, 전체 이름 또는 이메일 주소로 검색하기",
+            "Send invitation": "초대 보내기",
 
-            // 加载
-            "Loading Actions data...": "加载操作数据……",
-            "Loading Packages data...": "加载软件包数据……",
-            "Loading Shared Storage data...": "加载共享存储数据……",
-            "Loading Codespaces data...": "加载代码空间数据……",
-            "Loading usage breakdown…": "正在加载使用明细……",
+            // 불러오는 중
+            "Loading Actions data...": "액션 데이터를 불러오는 중…",
+            "Loading Packages data...": "패키지 데이터를 불러오는 중…",
+            "Loading Shared Storage data...": "공유 저장공간 데이터를 불러오는 중…",
+            "Loading Codespaces data...": "코드스페이스 데이터를 불러오는 중…",
+            "Loading usage breakdown…": "사용 내역을 불러오는 중…",
+
 
     },
-    "regexp": [ // 正则翻译
-        [/The plan change was successful. @([^ ]+) has been updated to the pro yearly plan./, "计划变更成功。@$1 已更新为专业版年度计费。"],
-        [/The plan change was successful. @([^ ]+) has been updated to the pro monthly plan./, "计划变更成功。@$1 已更新为专业版月度计费。"],
-        [/We're preparing your report! We’ll send an email to ([^@]+@[^\n]+) when it’s ready./, "我们正在准备您的报告！完成后，我们将发送电子邮件至 $1。"], //顶部提醒
-        [/Included minutes quota resets? in (\d+) days?./, "包含的分钟配额将在 $1 天之内重置"],
-        [/Data transfer quota resets? in (\d+) days?./, "数据传输配额将在 $1 天之内重置"],
-        //[/Included minutes quota resets/, ""],
-        [/Included quotas resets? in (\d+) days?./, "包含的配额将在 $1 天之内重置"],
-        [/Bandwidth quota resets? in (\d+) days?./, "带宽使用配额将在 $1 天之内重置"],
-        [/In addition to your personal account, you manage (\d+) organizations?./, "除了您的个人账户之外，您还管理 $1 个组织。"],
-        [/Leaving it at (\$\d+\.\d{2}) will avoid any extra expenses/, "将其限制在 $1 美元将避免任何额外的费用。"],
-        [/isn’t a GitHub member/, "不是 GitHub 成员"], // 组织设置
-        [/of ([\d,]+\.\d{2}) min included/, "/ $1 分钟"],
+    "regexp": [ // 정규 표현식 번역
+        [/The plan change was successful. @([^ ]+) has been updated to the pro yearly plan./, "플랜 변경이 성공적으로 완료되었어요. @$1 님이 프로 연간 플랜으로 업데이트되었어요."],
+        [/The plan change was successful. @([^ ]+) has been updated to the pro monthly plan./, "플랜 변경이 성공적으로 완료되었어요. @$1 님이 프로 월간 플랜으로 업데이트되었어요."],
+        [/We're preparing your report! We’ll send an email to ([^@]+@[^\n]+) when it’s ready./, "보고서를 준비 중이에요! 준비되면 $1 으로 이메일을 보내드릴게요."], // 상단 알림
+        [/Included minutes quota resets? in (\d+) days?./, "포함된 분(minute) 쿼터가 $1일 내에 재설정돼요."],
+        [/Data transfer quota resets? in (\d+) days?./, "데이터 전송 쿼터가 $1일 내에 재설정돼요."],
+        //[/Included minutes quota resets/, "포함된 분(minute) 쿼터 재설정"],
+        [/Included quotas resets? in (\d+) days?./, "포함된 쿼터가 $1일 내에 재설정돼요."],
+        [/Bandwidth quota resets? in (\d+) days?./, "대역폭 사용 쿼터가 $1일 내에 재설정돼요."],
+        [/In addition to your personal account, you manage (\d+) organizations?./, "개인 계정 외에도, 당신은 $1개의 조직을 관리하고 있어요."],
+        [/Leaving it at (\$\d+\.\d{2}) will avoid any extra expenses/, "$1 달러로 제한하면 추가 비용을 피할 수 있어요."],
+        [/isn’t a GitHub member/, "GitHub 멤버가 아니에요."], // 조직 설정
+        [/of ([\d,]+\.\d{2}) min included/, "/ $1 분"],
         [/(?:GB )?of ([^ ]+) GB(?: included)?/, "/ $1 GB"],
         //[/of ([^ ]+) GB( included)?/, "/ $1 GB"],
-        [/of (\d+\.\d{2}) included core hours used/, "/ $1 核心小时数"],
-        [/of (\d+\.\d{2}) included GB-month used/, "/ $1 GB/每月"],
-        [/Last (\d+) days/, "最近 $1 天"],
-        [/([^ ]+) support/, "$1 支持"],
-        [/Included minutes quota only applies to Ubuntu 2-core, Windows 2-core and macOS 3-core runners\. Windows 2-core and macOS 3-core runners consume included minutes at higher rates\. Your (\d+\.\d+) included minutes used consists of (.*)/, "包含的分钟配额仅适用于 双核 Ubuntu、双核 Windows 和三核 macOS 运行器。双核 Windows 和三核 macOS 运行器以更高的速度消耗包括的分钟数。您已使用的 $1 分钟包含分钟数由 $2 组成。"],
-        [/(\$\d+\.\d{2}) off per month for (\d+) years/, "每月优惠 $1，为期 $2 年"],
-        [/(\$\d+\.\d{2})\/month/, "$1/月"],
-        [/(\$\d+\.\d{2}) off \/ month/, "-$1/月"],
-        [/(\$\d+\.\d{2})\/year/, "$1/年"],
-        [/(\$\d+\.\d{2}) off \/ year/, "-$1/年"],
-        //[/(Due by|until|On|Expires) (Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?) (\d+), (\d+)/, function(all, opt, month, day, yesr){
+        [/of (\d+\.\d{2}) included core hours used/, "/ $1 핵심 시간"],
+        [/of (\d+\.\d{2}) included GB-month used/, "/ $1 GB/월"],
+        [/Last (\d+) days/, "최근 $1일"],
+        [/([^ ]+) support/, "$1 지원"],
+        [/Included minutes quota only applies to Ubuntu 2-core, Windows 2-core and macOS 3-core runners\. Windows 2-core and macOS 3-core runners consume included minutes at higher rates\. Your (\d+\.\d+) included minutes used consists of (.*)/, "포함된 분(minute) 쿼터는 Ubuntu 2코어, Windows 2코어 및 macOS 3코어 실행기에만 적용돼요. Windows 2코어와 macOS 3코어 실행기는 포함된 분을 더 빠른 속도로 소모해요. 당신이 사용한 $1 분은 다음으로 구성되어 있어요: $2"],
+        [/(\$\d+\.\d{2}) off per month for (\d+) years/, "매월 $1 할인, $2년 동안"],
+        [/(\$\d+\.\d{2})\/month/, "$1/월"],
+        [/(\$\d+\.\d{2}) off \/ month/, "-$1/월"],
+        [/(\$\d+\.\d{2})\/year/, "$1/년"],
+        [/(\$\d+\.\d{2}) off \/ year/, "-$1/년"],
+        //[/ (Due by|until|On|Expires) (Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?) (\d+), (\d+)/, function(all, opt, month, day, year){
         //    var monthKey = {
-        //        "Jan": "1月", "Feb": "2月", "Mar": "3月", "Apr": "4月", "May": "5月", "Jun": "6月", "Jul": "7月", "Aug": "8月", "Sep": "9月", "Oct": "10月", "Nov": "11月", "Dec": "12月"
+        //        "Jan": "1월", "Feb": "2월", "Mar": "3월", "Apr": "4월", "May": "5월", "Jun": "6월", "Jul": "7월", "Aug": "8월", "Sep": "9월", "Oct": "10월", "Nov": "11월", "Dec": "12월"
         //    };
         //    var optKey = {
-        //        "Due by": "截止", "until": "直到", "On": "开始", "Expires": "到期"
+        //        "Due by": "마감", "until": "까지", "On": "시작", "Expires": "만료"
         //    };
-        //    return year + '年' + monthKey[month] + day + '日 ' + optKey[opt];
+        //    return year + '년' + monthKey[month] + day + '일 ' + optKey[opt];
         //}],
-        //[/Due by (.+)/, "$1 截止"],
+        //[/Due by (.+)/, "$1 마감"],
         [/(Due by|On|Expires) (.+)/, (match, opt, p1) => {
-            var optKey = {"Due by": "结算", "On": "开始", "Expires": "到期"};
+            var optKey = {"Due by": "마감", "On": "시작", "Expires": "만료"};
             const dateRegExp = I18N["ko-KR"]["public"]["time-regexp"];
             const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
             return `${translatedDate}` + optKey[opt];
         }],
-        [/until (.+)./, (match, p1) => { // p1为(.+)
+        [/until (.+)./, (match, p1) => { // p1은 (.+) 입니다.
             const dateRegExp = I18N["ko-KR"]["public"]["time-regexp"];
             const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
-            return `直到 ${translatedDate}。`; // 这里写翻译结果
+            return `까지 ${translatedDate}.`; // 여기에 번역 결과를 작성해요.
         }],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
@@ -4079,1322 +4075,1353 @@ I18N["ko-KR"]["settings/emails"] = { // 设置 - 电子邮箱
     "static": { // 静态翻译
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Emails 电子邮箱 https://github.com/settings/emails
-            // 黄框警告
-            "You have a single verified email associated with your GitHub account. Add an additional verified email address in case you lose access to your primary email.": "您的 GitHub 账户只有一个经过验证的电子邮箱。添加另一个经过验证的电子邮箱地址吧，那样即使主电子邮箱无法使用也不要紧。",
+        // 이메일 电子邮箱 https://github.com/settings/emails
+            // 노란색 경고 상자
+            "You have a single verified email associated with your GitHub account. Add an additional verified email address in case you lose access to your primary email.": "사용자님의 GitHub 계정에 인증된 이메일이 하나만 연결되어 있어요. 주 이메일에 접근할 수 없게 될 경우를 대비해 추가 인증 이메일 주소를 등록해보세요.",
 
-            "Email settings": "电子邮箱设置",
-            "Primary": "主账户",
-            "Unverified email addresses cannot receive notifications or be used to reset your password.": "未经验证的电子邮件地址无法接收通知或用于重置您的密码。",
-            "This email will be used for account-related notifications and can also be used for password resets.": "该电子邮箱将用于与账户有关的通知，也可用于密码重置。",
-            "Not visible in emails": "在电子邮件中不可见",
-            "Visible in emails": "在电子邮件中可见",
-                "This email may be used as the 'author' or 'committer' address for web-based Git operations, e.g., edits and merges.": "该电子邮箱可用作基于 Web 的 Git 操作（例如：编辑和合并）的 ‘作者’ 或 ‘提交者’ 地址。",
-            "Receives notifications": "接收通知",
-            "This email address is the default used for GitHub notifications, i.e., replies to issues, pull requests, etc.": "该电子邮箱默认用于 GitHub 的通知，即对이슈和拉取请求的回复，等等。",
-            "At least one email is required.": "至少需要一个电子邮箱。",
-            // 删除按钮 提醒信息
-                "At least one verified email is required.": "至少需要1个经过验证的电子邮箱",
-                "Are you sure you want to remove this email from your account? Once removed, commits attributed to this email address will no longer be associated with your account.": "您确定要从您的账户中删除此电子邮箱吗？删除后，归因于该电子邮箱地址的提交将不再与您的账户相关联。",
-                "Are you sure you want to remove this email from your account? Once removed, commits attributed to this email address will no longer be associated with your account. One of your other emails will become your primary address.": "您确定要从您的账户中删除此电子邮箱吗？删除后，归因于该电子邮箱地址的提交将不再与您的账户相关联。您的其他电子邮箱之一将成为您的主要地址。",
+            "Email settings": "이메일 설정",
+            "Primary": "주 이메일",
+            "Unverified email addresses cannot receive notifications or be used to reset your password.": "인증되지 않은 이메일 주소는 알림을 받을 수 없거나 비밀번호 재설정에 사용할 수 없어요.",
+            "This email will be used for account-related notifications and can also be used for password resets.": "이 이메일은 계정 관련 알림에 사용되며 비밀번호 재설정에도 활용돼요.",
+            "Not visible in emails": "이메일에 표시되지 않음",
+            "Visible in emails": "이메일에 표시됨",
+                "This email may be used as the 'author' or 'committer' address for web-based Git operations, e.g., edits and merges.": "이 이메일은 웹 기반 Git 작업(예: 편집 및 병합) 시 '작성자' 또는 '커미터' 주소로 사용될 수 있어요.",
+            "Receives notifications": "알림 수신",
+            "This email address is the default used for GitHub notifications, i.e., replies to issues, pull requests, etc.": "이 이메일 주소는 GitHub 알림의 기본 주소로 사용되며, 예를 들어 이슈나 끌어오기 요청에 대한 답장이 여기에 발송돼요.",
+            "At least one email is required.": "최소 하나의 이메일이 필요해요.",
+            // 삭제 버튼 경고 메시지
+                "At least one verified email is required.": "최소 하나의 인증된 이메일이 필요해요.",
+                "Are you sure you want to remove this email from your account? Once removed, commits attributed to this email address will no longer be associated with your account.": "이 이메일을 계정에서 삭제하시겠어요? 삭제되면 이 이메일 주소에 귀속된 커밋은 더 이상 사용자님의 계정과 연결되지 않아요.",
+                "Are you sure you want to remove this email from your account? Once removed, commits attributed to this email address will no longer be associated with your account. One of your other emails will become your primary address.": "이 이메일을 계정에서 삭제하시겠어요? 삭제되면 이 이메일 주소에 귀속된 커밋은 더 이상 사용자님의 계정과 연결되지 않고, 다른 이메일 중 하나가 주 이메일로 설정돼요.",
 
-            "At least one non-backup email is required.": "至少需要一个非备用电子邮箱",
-            "Backup": "备用电子邮箱",
-            "This email will be used as an additional destination for security-relevant account notifications and can also be used for password resets.": "该电子邮箱将用作接收账户安全相关通知的额外方式，也可以用于密码重置。",
-            "Add email address": "添加电子邮箱",
-            "Email address": "电子邮箱",
-                // 顶部提醒
-                "Resend verification email": "重新发送验证邮件",
-                "Your email was verified.": "您的电子邮箱地址验证成功！",
+            "At least one non-backup email is required.": "최소 하나의 백업이 아닌 이메일이 필요해요.",
+            "Backup": "백업 이메일",
+            "This email will be used as an additional destination for security-relevant account notifications and can also be used for password resets.": "이 이메일은 보안 관련 계정 알림의 추가 수신처로 사용되며 비밀번호 재설정에도 활용돼요.",
+            "Add email address": "이메일 추가하기",
+            "Email address": "이메일 주소",
+                // 상단 알림
+                "Resend verification email": "인증 이메일 재전송하기",
+                "Your email was verified.": "사용자님의 이메일이 인증되었어요!",
 
-            "Primary email address": "主电子邮箱",
-            // 未电子邮箱隐私
-            "will be used for account-related notifications and can be used for password resets.": "将用于与账户相关的通知，并可用于密码重置。",
-            // 电子邮箱隐私
-            "Because you have email privacy enabled,": "因为您已经启用了电子邮箱隐私，",
-            "will be used for account-related notifications as well as password resets.": "将用于与账户相关的通知以及密码重置。",
-            "will be used for web-based Git operations, e.g., edits and merges.": "将用于基于 Web 的 Git 操作，例如编辑和合并。",
-            // 顶部提醒
-            "Your primary email was changed to": "您的主电子邮箱已更改为",
-            ". Your default notification email address is still set to": "。您的默认通知电子邮箱仍然设置为",
-            ". Would you like to update that as well?": "。您也想更新它吗？",
-            "Yes， update my notification email": "是的，更新我的通知电子邮箱",
+            "Primary email address": "주 이메일 주소",
+            // 이메일 비공개 관련
+            "will be used for account-related notifications and can be used for password resets.": "계정 관련 알림에 사용되며 비밀번호 재설정에도 활용돼요.",
+            // 이메일 개인정보 보호
+            "Because you have email privacy enabled,": "사용자님께서 이메일 개인정보 보호 기능을 사용 중이므로,",
+            "will be used for account-related notifications as well as password resets.": "계정 관련 알림과 비밀번호 재설정에 사용돼요.",
+            "will be used for web-based Git operations, e.g., edits and merges.": "웹 기반 Git 작업(예: 편집 및 병합)에 사용돼요.",
+            // 상단 알림
+            "Your primary email was changed to": "사용자님의 주 이메일이 다음으로 변경되었어요:",
+            ". Your default notification email address is still set to": "。기본 알림 이메일 주소는 여전히 다음으로 설정되어 있어요:",
+            ". Would you like to update that as well?": "。같이 업데이트할까요?",
+            "Yes， update my notification email": "네, 내 알림 이메일 업데이트하기",
 
-            "Backup email address": "备用电子邮箱",
-            "Your backup GitHub email address will be used as an additional destination for security-relevant account notifications and can also be used for password resets.": "您的备用 GitHub 电子邮箱将用作接收账户安全相关通知的额外方式，也可以用于密码重置。",
-            "Allow all verified emails": "允许所有已验证的电子邮箱",
-                // 顶部提醒
-                "All verified emails can now be used for password resets.": "所有已验证的电子邮箱现在均可用于密码重置。",
-            "Only allow primary email": "仅允许主电子邮箱",
-                // 顶部提醒
-                "Only your primary email address can now be used for password resets.": "现在只有您的主电子邮箱可用于密码重置。",
-            "Please add a verified email, in addition to your primary email, in order to choose a backup email address.": "请在您的主电子邮箱之外，添加一个经验证的电子邮箱，以便选择一个备用电子邮箱。",
+            "Backup email address": "백업 이메일 주소",
+            "Your backup GitHub email address will be used as an additional destination for security-relevant account notifications and can also be used for password resets.": "사용자님의 백업 GitHub 이메일 주소는 보안 관련 계정 알림의 추가 수신처로 사용되며 비밀번호 재설정에도 활용돼요.",
+            "Allow all verified emails": "모든 인증된 이메일 허용하기",
+                // 상단 알림
+                "All verified emails can now be used for password resets.": "모든 인증된 이메일이 이제 비밀번호 재설정에 사용될 수 있어요.",
+            "Only allow primary email": "주 이메일만 허용하기",
+                // 상단 알림
+                "Only your primary email address can now be used for password resets.": "이제 주 이메일만 비밀번호 재설정에 사용될 수 있어요.",
+            "Please add a verified email, in addition to your primary email, in order to choose a backup email address.": "백업 이메일 주소를 선택하기 위해 주 이메일 외에 인증된 이메일을 추가해보세요.",
 
-            "Keep my email addresses private": "保持我的电子邮箱地址的私密性",
-                // 顶部提醒
-                "Your primary email address is now public. To select which email to display on your profile, visit": "您的主电子邮箱地址现已公开。要选择在您的个人资料中显示哪个电子邮箱，请访问",
-                "profile settings.": "个人资料设置。",
-                "Your primary email address is now private. If you previously made your email public, we’ve removed it from your profile.": "您的主电子邮箱地址现已设为私密。如果您以前公开过您的电子邮箱，我们已经从您的个人资料中删除了它。",
-            "We’ll remove your public profile email and use": "我们将删除您的公开个人资料中的电子邮箱，并使用",
-            "when performing web-based Git operations (e.g. edits and merges) and sending email on your behalf. If you want command line Git operations to use your private email you must": "执行基于 Web 的 Git 操作（例如：编辑和合并）并以您的名义发送电子邮件。如果您想在命令行 Git 操作中使用您的私人电子邮箱，您必须",
-            "set your email in Git": "在 Git 中设置您的电子邮箱",
-            "Previously authored commits associated with a public email will remain public.": "以前创建的与公共电子邮件相关的提交将保持公开状态。",
+            "Keep my email addresses private": "내 이메일 주소 비공개 유지하기",
+                // 상단 알림
+                "Your primary email address is now public. To select which email to display on your profile, visit": "사용자님의 주 이메일 주소가 이제 공개되었어요. 프로필에 표시할 이메일을 선택하려면 다음을 방문해주세요:",
+                "profile settings.": "프로필 설정.",
+                "Your primary email address is now private. If you previously made your email public, we’ve removed it from your profile.": "사용자님의 주 이메일 주소가 이제 비공개로 변경되었어요. 이전에 이메일을 공개하셨다면, 프로필에서 삭제되었어요.",
+            "We’ll remove your public profile email and use": "공개된 프로필 이메일은 삭제하고,",
+            "when performing web-based Git operations (e.g. edits and merges) and sending email on your behalf. If you want command line Git operations to use your private email you must": "웹 기반 Git 작업(예: 편집 및 병합)과 사용자님을 대신하여 이메일 전송 시 이 이메일을 사용할 거예요. 명령줄 Git 작업에서도 비공개 이메일을 사용하고 싶으시다면,",
+            "set your email in Git": "Git에서 사용자님의 이메일을 설정해주세요.",
+            "Previously authored commits associated with a public email will remain public.": "이전에 공개 이메일로 작성된 커밋은 그대로 공개 상태로 유지돼요.",
 
-            "Block command line pushes that expose my email": "阻止在命令行推送中暴露我的电子邮箱",
-                // 顶部提醒
-                "Commits pushed with a private email will no longer be blocked.": "使用私人电子邮箱推送的提交将不再被阻止。",
-                "Commits pushed with a private email will now be blocked and you will see a warning.": "使用私人电子邮箱推送的提交将被阻止，您会看到一个警告。",
-            "When you push to GitHub, we’ll check the most recent commit. If the author email on that commit is a private email on your GitHub account, we will block the push and warn you about exposing your private email.": "当您推送到 GitHub 时，我们会检查最近的提交。如果该提交的作者电子邮箱是您 GitHub 账户上的私人电子邮箱，我们会阻止推送并警告您不要暴露您的私人电子邮箱。",
+            "Block command line pushes that expose my email": "내 이메일이 노출되는 명령줄 푸시 차단하기",
+                // 상단 알림
+                "Commits pushed with a private email will no longer be blocked.": "비공개 이메일로 푸시된 커밋은 더 이상 차단되지 않아요.",
+                "Commits pushed with a private email will now be blocked and you will see a warning.": "비공개 이메일로 푸시된 커밋은 이제 차단되며, 경고 메시지가 표시될 거예요.",
+            "When you push to GitHub, we’ll check the most recent commit. If the author email on that commit is a private email on your GitHub account, we will block the push and warn you about exposing your private email.": "사용자님이 GitHub에 푸시할 때, 가장 최근의 커밋을 확인할 거예요. 만약 그 커밋의 작성자 이메일이 사용자님의 GitHub 계정에 등록된 비공개 이메일이라면, 푸시를 차단하고 비공개 이메일 노출에 대해 경고할 거예요.",
 
-            "Email preferences": "邮件首选项",
-                "Subscriptions through our various marketing platforms. Each email address has its own subscriptions.": "通过我们的各种营销平台进行订阅。每个电子邮件地址都有自己的订阅。",
-                "Manage": "管理",
+            "Email preferences": "이메일 환경설정",
+                "Subscriptions through our various marketing platforms. Each email address has its own subscriptions.": "저희 다양한 마케팅 플랫폼을 통한 구독이에요. 각 이메일 주소마다 별도의 구독 설정이 있어요.",
+                "Manage": "관리하기",
 
-        // 订阅偏好 https://github.com/settings/emails/subscriptions
-            "Subscription preferences for": "订阅首选项",
-            "⏳Please wait while we find your subscriptions...⌛": "⏳请稍候，我们正在查找您的订阅...⌛",
-            "No subscriptions found": "未找到订阅信息",
-            "Save subscription preferences": "保存订阅首选项",
-            "Back to email settings": "返回电子邮件设置",
-            "To stop receiving emails for the topics below, uncheck any topics you don't want to receive, then click Save subscription preferences": "若要停止接收以下主题的电子邮件，请取消选中您不想接收的主题，然后点击 “保存订阅首选项”",
-            "General info and offers from GitHub": "GitHub 的一般信息和优惠",
-            "Get tips, solutions and exclusive offers from GitHub about products, services and events we think you might find interesting.": "从 GitHub 获取我们认为您可能感兴趣的产品、服务和活动的提示、解决方案和独家优惠。",
-            "Unsubscribe from all topics": "取消订阅所有主题",
+        // 구독 환경설정 https://github.com/settings/emails/subscriptions
+            "Subscription preferences for": "구독 환경설정 대상:",
+            "⏳Please wait while we find your subscriptions...⌛": "⏳구독 정보를 찾는 중이에요...⌛",
+            "No subscriptions found": "구독 정보가 없어요.",
+            "Save subscription preferences": "구독 환경설정 저장하기",
+            "Back to email settings": "이메일 설정으로 돌아가기",
+            "To stop receiving emails for the topics below, uncheck any topics you don't want to receive, then click Save subscription preferences": "아래 주제의 이메일 수신을 중단하려면, 받고 싶지 않은 주제의 선택을 해제한 후 ‘구독 환경설정 저장하기’를 클릭해주세요.",
+            "General info and offers from GitHub": "GitHub의 일반 정보 및 혜택",
+            "Get tips, solutions and exclusive offers from GitHub about products, services and events we think you might find interesting.": "사용자님께서 관심을 가지실 만한 제품, 서비스 및 이벤트에 대한 GitHub의 팁, 솔루션, 그리고 독점 혜택을 받아보세요.",
+            "Unsubscribe from all topics": "모든 주제 구독 취소하기",
     },
-    "regexp": [ // 正则翻译
-        [/This email will not be used as the 'from' address for web-based Git operations, e\.g\., edits and merges. We will instead use ([^@]+@users.noreply.github.com)\./, "该电子邮箱不会用作基于 Web 的 Git 操作（例如编辑和合并）的 “发件人” 地址。我们将改为使用 $1。"],
-        [/Your primary email was changed to ([^@]+@[^\n]+)\./, "您的主电子邮箱已更改为 $1"],
-        [/Subscription preferences for ([^@]+@[^\n]+)/, "$1 的订阅偏好"],
-        [/We sent a verification email to ([^@]+@[^\s]+)\. Please follow the instructions in it\./, "我们已向 $1 发送了验证邮件，请登录邮箱已完成验证。"],
-        [/Delete ([^@]+@[^\n]+)/, "删除 $1"],
-        [/Error adding ([^@]+@[^:]+): email is already in use/, "$1 的邮箱已经在使用中"],
+    "regexp": [ // 정규식 번역
+        [/This email will not be used as the 'from' address for web-based Git operations, e\.g\., edits and merges. We will instead use ([^@]+@users.noreply.github.com)\./, "이 전자메일은 웹 기반 Git 작업(예: 편집 및 병합)에서 ‘발신자’ 주소로 사용되지 않아요. 대신 $1 을 사용해요."],
+        [/Your primary email was changed to ([^@]+@[^\n]+)\./, "사용자님의 주 전자메일 주소가 $1 로 변경되었어요."],
+        [/Subscription preferences for ([^@]+@[^\n]+)/, "$1 의 구독 환경설정"],
+        [/We sent a verification email to ([^@]+@[^\s]+)\. Please follow the instructions in it\./, "저희가 $1 로 인증 전자메일을 보냈어요. 전자메일에 있는 안내를 따라주세요."],
+        [/Delete ([^@]+@[^\n]+)/, "삭제하기: $1"],
+        [/Error adding ([^@]+@[^:]+): email is already in use/, "$1 의 전자메일이 이미 사용 중이에요."],
     ],
 };
 
-I18N["ko-KR"]["settings/security"] = { // 设置 - 密码和身份身份验证
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/security"] = { // 설정 - 비밀번호와 인증
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
         ...I18N["ko-KR"]["confirm-access"]["static"],
 
-        // 密码和身份身份验证 - 账户安全 https://github.com/settings/security
-            "Change password": "更改密码",
-            "Old password": "旧密码",
-            "New password": "新密码",
-            "Confirm new password": "确认新密码",
-            "Make sure it's": "请确保",
-            "at least 15 characters": "至少需要15个字符",
-            "OR": " 或者",
-            "at least 8 characters": "至少需要8个字符",
-            "including a number": "包括数字",
-            "and a lowercase letter": "和小写字母",
-            "Password is too short (minimum is 8 characters)": "密码太短（最少8个字符）",
-            "Password is too short (minimum is 8 characters), needs at least 1 lowercase letter, and is in a list of passwords commonly used on other websites": "密码太短（最少8个字符），至少需要1个小写字母，而且已在其他网站常用密码列表中",
-            "Password is too short (minimum is 8 characters), needs at least 1 lowercase letter, cannot include your login, and is in a list of passwords commonly used on other websites": "密码太短（最少为8个字符），至少需要1个小写字母，而且不能包括您的登录名，以及在其他网站常用的密码列表中。",
-            "Password is too short (minimum is 8 characters), needs at least 1 number, cannot include your login, and is in a list of passwords commonly used on other websites": "密码太短（最少8个字符），需要至少1个数字，不能包含您的登录名，以及在其他网站常用的密码列表中",
-            "Password is too short (minimum is 8 characters) and is in a list of passwords commonly used on other websites": "密码太短（最少为8个字符），而且已在其他网站常用的密码列表中。",
-            "Password needs at least 1 lowercase letter and is in a list of passwords commonly used on other websites": "密码需要至少 1 个小写字母，而且已在其他网站常用的密码列表中",
-            "Password is in a list of passwords commonly used on other websites": "密码在其他网站常用的密码列表中",
-            "Update password": "更新密码",
-            "I forgot my password": "我忘记了我的密码",
+        // 비밀번호와 인증 - 계정 보안 https://github.com/settings/security
+            "Change password": "비밀번호 변경하기",
+            "Old password": "이전 비밀번호",
+            "New password": "새 비밀번호",
+            "Confirm new password": "새 비밀번호 확인하기",
+            "Make sure it's": "반드시 확인해 주세요:",
+            "at least 15 characters": "최소 15자 이상이어야 해요",
+            "OR": " 또는",
+            "at least 8 characters": "최소 8자 이상이어요",
+            "including a number": "숫자를 포함해 주세요",
+            "and a lowercase letter": "소문자도 포함해 주세요",
+            "Password is too short (minimum is 8 characters)": "비밀번호가 너무 짧아요 (최소 8자)",
+            "Password is too short (minimum is 8 characters), needs at least 1 lowercase letter, and is in a list of passwords commonly used on other websites": "비밀번호가 너무 짧아요 (최소 8자), 최소 1개의 소문자가 필요하고, 다른 웹사이트에서 자주 사용되는 비밀번호 목록에 있어요",
+            "Password is too short (minimum is 8 characters), needs at least 1 lowercase letter, cannot include your login, and is in a list of passwords commonly used on other websites": "비밀번호가 너무 짧아요 (최소 8자), 최소 1개의 소문자가 필요하며, 로그인 정보를 포함할 수 없고, 다른 웹사이트에서 자주 사용되는 비밀번호 목록에 있어요",
+            "Password is too short (minimum is 8 characters), needs at least 1 number, cannot include your login, and is in a list of passwords commonly used on other websites": "비밀번호가 너무 짧아요 (최소 8자), 최소 1개의 숫자가 필요하며, 로그인 정보를 포함할 수 없고, 다른 웹사이트에서 자주 사용되는 비밀번호 목록에 있어요",
+            "Password is too short (minimum is 8 characters) and is in a list of passwords commonly used on other websites": "비밀번호가 너무 짧아요 (최소 8자) 그리고 다른 웹사이트에서 자주 사용되는 목록에 있어요",
+            "Password needs at least 1 lowercase letter and is in a list of passwords commonly used on other websites": "비밀번호에는 최소 1개의 소문자가 필요하며, 다른 웹사이트에서 자주 사용되는 목록에 있어요",
+            "Password is in a list of passwords commonly used on other websites": "비밀번호가 다른 웹사이트에서 자주 사용되는 목록에 있어요",
+            "Update password": "비밀번호 업데이트하기",
+            "I forgot my password": "비밀번호를 잊어버렸어요",
 
-            "Strengthen your account by ensuring your password is strong.": "确保密码的安全性，以保护您的账户。",
-            "Learn more about creating a strong password": "了解更多关于创建强密码的信息",
+            "Strengthen your account by ensuring your password is strong.": "비밀번호가 강력한지 확인하여 계정을 안전하게 지켜주세요.",
+            "Learn more about creating a strong password": "강력한 비밀번호 만드는 방법을 더 알아보세요.",
 
-            "Passkeys": "通行密钥",
-                "Passwordless sign-in with passkeys": "使用通行密钥进行无密码登录",
-                "Passkeys are webauthn credentials that validate your identity using touch, facial recognition, a device password, or a PIN. They can be used as a password replacement or as a 2FA method. Passkeys can be used for sign-in as a simple and secure alternative to your password and two-factor credentials.": "通行密钥是一种 WebAuthn 凭证，可以使用触摸、面部识别、设备密码或 PIN 码验证您的身份。它们可以作为密码替代品或作为双因素身份验证（2FA）方法使用。通行密钥可以作为一种简单且安全的替代方式用于登录，替代您的密码和双因素身份验证凭证。",
-                "This browser or device does not fully support passkeys - you may be able to use a passkey from another device.": "此浏览器或设备不完全支持通行密钥 - 您可以尝试使用来自其他设备的通行密钥。",
-                "This browser or device is reporting partial passkey support, but you may be able to use a passkey from a nearby device.": "此浏览器或设备不完全支持通行密钥 - 您可以尝试使用来自其他设备的通行密钥。",
-                "Add a passkey": "添加通行密钥",
+            "Passkeys": "패스키",
+                "Passwordless sign-in with passkeys": "패스키로 비밀번호 없이 로그인하기",
+                "Passkeys are webauthn credentials that validate your identity using touch, facial recognition, a device password, or a PIN. They can be used as a password replacement or as a 2FA method. Passkeys can be used for sign-in as a simple and secure alternative to your password and two-factor credentials.": "패스키는 터치, 얼굴 인식, 기기 비밀번호 또는 PIN으로 사용자의 신원을 확인하는 WebAuthn 자격증명이에요. 비밀번호 대신 또는 2단계 인증 수단으로 사용할 수 있어요. 패스키는 비밀번호와 2단계 인증 자격증명의 간단하고 안전한 대안으로 로그인할 때 사용할 수 있어요.",
+                "This browser or device does not fully support passkeys - you may be able to use a passkey from another device.": "이 브라우저 또는 기기는 패스키를 완전히 지원하지 않아요 - 다른 기기의 패스키를 사용해 보실 수 있어요.",
+                "This browser or device is reporting partial passkey support, but you may be able to use a passkey from a nearby device.": "이 브라우저 또는 기기는 패스키를 부분적으로 지원하지만, 가까운 다른 기기의 패스키를 사용해 보실 수 있어요.",
+                "Add a passkey": "패스키 추가하기",
 
-                "Passkeys are webauthn credentials that validate your identity using touch, facial recognition, a device password, or a PIN. They can be used as a password replacement or as a 2FA method.": "通行密钥是一种 WebAuthn 凭证，可以使用触摸、面部识别、设备密码或 PIN 码验证您的身份。它们可以作为密码替代品或作为双因素身份验证（2FA）方法使用。",
-                "Learn more about passkeys": "了解更多关于通行密钥的信息",
+                "Passkeys are webauthn credentials that validate your identity using touch, facial recognition, a device password, or a PIN. They can be used as a password replacement or as a 2FA method.": "패스키는 터치, 얼굴 인식, 기기 비밀번호 또는 PIN으로 사용자의 신원을 확인하는 WebAuthn 자격증명이에요. 비밀번호 대신 또는 2단계 인증 방법으로 사용할 수 있어요.",
+                "Learn more about passkeys": "패스키에 대해 더 알아보세요.",
 
-                "Your passkeys": "您的通行密钥",
-                "| Last used": "| 最后使用",
+                "Your passkeys": "내 패스키",
+                "| Last used": "| 마지막 사용",
                 // | Last used less than 1 小时之前
-                "Edit passkey nickname": "编辑通行密钥昵称",
+                "Edit passkey nickname": "패스키 별칭 수정하기",
                 // [/Delete `([^ ]+)` passkey/, "删除 “$1” 通行密钥"],
 
-                // 删除密钥对话框
-                    "Delete passkey?": "删除通行密钥？",
-                    // [Are you sure you want to delete your `([^ ]+)` passkey?/, "您确定要删除您的 “$1” 通行密钥吗？"],
-                    "You will no longer be able to use it to sign-in to your account.": "您将无法再使用它登录您的账户。",
-                    "Note: You may continue to see this passkey as an option during sign-in until you also delete it from your browser, device or associated account's password management settings.": "注意：您可能会在登录过程中继续看到此通行密钥作为一个选项，直到您将其从浏览器、设备或关联账户的密码管理设置中删除。",
-                    "Deleting…": "删除中…",
+                // 삭제 키 대화상자
+                    "Delete passkey?": "패스키 삭제할까요?",
+                    // [/Are you sure you want to delete your `([^ ]+)` passkey?/, "您确定要删除您的 “$1” 通行密钥吗？"],
+                    "You will no longer be able to use it to sign-in to your account.": "이 패스키로 더 이상 계정에 로그인할 수 없게 돼요.",
+                    "Note: You may continue to see this passkey as an option during sign-in until you also delete it from your browser, device or associated account's password management settings.": "참고: 브라우저, 기기 또는 관련 계정의 비밀번호 관리 설정에서 삭제하기 전까지 로그인 옵션에 계속 표시될 수 있어요.",
+                    "Deleting…": "삭제 중…",
 
-            // 双因素身份验证
-                // 顶部提醒
-                    "You can now manage your two-factor authentication methods from this page.": "您现在可以从此页面管理您的双因素身份验证方法。",
-                    "Two-factor authentication successfully disabled.": "成功禁用双因素身份验证。",
-                    "SMS/Text message successfully configured.": "短信/文本信息配置成功。",
+            // 2단계 인증
+                // 상단 알림
+                    "You can now manage your two-factor authentication methods from this page.": "이 페이지에서 2단계 인증 방법을 관리할 수 있어요.",
+                    "Two-factor authentication successfully disabled.": "2단계 인증이 성공적으로 비활성화되었어요.",
+                    "SMS/Text message successfully configured.": "SMS/문자 메시지가 성공적으로 설정되었어요.",
 
-            "Two-factor authentication": "双因素身份验证",
-                "Two-factor authentication is not enabled yet.": "尚未启用双因素身份验证。",
-                "Enable two-factor authentication": "启用双因素身份验证",
+            "Two-factor authentication": "2단계 인증",
+                "Two-factor authentication is not enabled yet.": "아직 2단계 인증이 활성화되지 않았어요.",
+                "Enable two-factor authentication": "2단계 인증 활성화하기",
 
-                "Because of your contributions on GitHub, two-factor authentication is required for your account. Thank you for helping keep the ecosystem safe!": "基于您在 GitHub 上的贡献，您的账户需要双因素身份验证。感谢您帮助维护生态系统安全！",
-                "Because of your contributions on GitHub, two-factor authentication will be required for your account starting": "基于您在 GitHub 上的贡献，从",
-                ". Thank you for helping keep the ecosystem safe!": " 开始，您的账户将需要双因素身份验证，感谢您帮助维护生态系统的安全！",
-                "Learn more about our two-factor authentication initiative": "了解更多关于我们的双因素身份验证的倡议",
+                "Because of your contributions on GitHub, two-factor authentication is required for your account. Thank you for helping keep the ecosystem safe!": "GitHub에 기여해 주셔서, 사용자님의 계정에 2단계 인증이 필요해요. 생태계의 안전을 지켜주셔서 감사합니다!",
+                "Because of your contributions on GitHub, two-factor authentication will be required for your account starting": "GitHub에 기여해 주셔서, 앞으로 사용자님의 계정에는 2단계 인증이 필요할 거예요:",
+                ". Thank you for helping keep the ecosystem safe!": " 생태계의 안전을 지켜주셔서 감사합니다!",
+                "Learn more about our two-factor authentication initiative": "2단계 인증 이니셔티브에 대해 더 알아보세요.",
 
-                "Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to sign in.": "双因素身份验证不仅仅要求密码登录，还为您的账户增加了一层额外的安全性。",
-                "Learn more about two-factor authentication": "了解更多关于双因素身份验证的信息",
+                "Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to sign in.": "2단계 인증은 단순한 비밀번호 외에도 추가적인 보안 계층을 제공해요.",
+                "Learn more about two-factor authentication": "2단계 인증에 대해 더 알아보세요.",
 
 
-                "Enable": "启用",
-                "Enabled": "启用",
-                    "Two-factor authentication is required for at least one organization or enterprise account you're affiliated with.": "至少有一个您所属的组织或企业账户需要进行双因素身份验证。",
-                "Disable": "停用",
+                "Enable": "활성화하기",
+                "Enabled": "활성화됨",
+                    "Two-factor authentication is required for at least one organization or enterprise account you're affiliated with.": "사용자님가 소속된 조직 또는 기업 계정 중 최소 하나에는 2단계 인증이 필요해요.",
+                "Disable": "비활성화하기",
 
-            "Preferred 2FA method": "首选 2FA 方法",
-                "Set your preferred method to use for two-factor authentication when signing into GitHub.": "设置登录 GitHub 时用于双因素身份验证的首选方法。",
+            "Preferred 2FA method": "선호하는 2FA 방식",
+                "Set your preferred method to use for two-factor authentication when signing into GitHub.": "GitHub 로그인 시 사용할 선호하는 2단계 인증 방식을 설정해 주세요.",
 
-            "Two-factor methods": "双因素身份验证方式",
-                "Configured": "已配置",
+            "Two-factor methods": "2단계 인증 방법들",
+                "Configured": "설정됨",
 
-                "Authenticator app": "身份验证器应用",
-                    "Use an authentication app or browser extension to get two-factor authentication codes when prompted.": "在出现提示时，使用身份验证应用或浏览器扩展获取双因素身份验证码。",
-                    "Use an authentication app or browser extension to generate one-time codes.": "使用身份验证应用或浏览器扩展生成一次性代码。",
+                "Authenticator app": "인증 앱",
+                    "Use an authentication app or browser extension to get two-factor authentication codes when prompted.": "인증 앱이나 브라우저 확장을 사용하여 2단계 인증 코드를 받아보세요.",
+                    "Use an authentication app or browser extension to generate one-time codes.": "인증 앱이나 브라우저 확장을 사용하여 일회용 코드를 생성해 보세요.",
 
-                    "Manage Authenticator app": "管理身份验证器应用",
+                    "Manage Authenticator app": "인증 앱 관리하기",
 
-                    "Authenticator apps and browser extensions like": "身份验证器应用和浏览器扩展，例如",
-                    ", etc. generate one-time passwords that are used as a second factor to verify your identity when prompted during sign-in.": "等生成一次性密码，在登录过程中出现提示时用作第二验证因素来验证您的身份。",
+                    "Authenticator apps and browser extensions like": "예를 들어, 인증 앱 및 브라우저 확장들은",
+                    ", etc. generate one-time passwords that are used as a second factor to verify your identity when prompted during sign-in.": "등이 로그인 시 2단계 인증으로 사용되는 일회용 비밀번호를 생성해요.",
 
-                    "Scan the QR code": "扫描二维码",
-                    "Re-scan the QR code": "重新扫描二维码",
-                    "Use an authenticator app or browser extension to scan.": "请使用身份验证器应用或浏览器扩展进行扫描。",
-                    "Learn more about enabling 2FA": "了解更多关于启用 2FA 的信息",
+                    "Scan the QR code": "QR 코드 스캔하기",
+                    "Re-scan the QR code": "QR 코드 재스캔하기",
+                    "Use an authenticator app or browser extension to scan.": "인증 앱이나 브라우저 확장을 사용하여 스캔해 보세요.",
+                    "Learn more about enabling 2FA": "2단계 인증 활성화에 대해 더 알아보세요.",
 
-                    "Unable to scan? You can use the": "无法扫描？您可以使用",
-                    "setup key": "设置密钥",
-                    "to manually configure your authenticator app.": "手动配置您的身份验证器应用。",
-                        "Your two-factor secret": "您的双因素密钥",
+                    "Unable to scan? You can use the": "스캔이 어려우신가요? 대신",
+                    "setup key": "설정 키",
+                    "to manually configure your authenticator app.": "를 사용하여 인증 앱을 수동으로 설정해 보세요.",
+                        "Your two-factor secret": "내 2단계 인증 비밀키",
 
-                    "Verify the code from the app": "验证来自身份验证器应用的验证码",
-                    "Two-factor code verification failed. Please try again.": "双因素身份验证码验证失败。请重试。",
+                    "Verify the code from the app": "앱에서 받은 코드를 확인해 보세요.",
+                    "Two-factor code verification failed. Please try again.": "2단계 인증 코드 확인에 실패했어요. 다시 시도해 주세요.",
 
-                "SMS/Text message": "短信/文字信息",
-                    "Manage SMS/Text message": "管理短信/文字信息",
+                "SMS/Text message": "SMS/문자 메시지",
+                    "Manage SMS/Text message": "SMS/문자 메시지 관리하기",
 
-                    "Get one-time codes sent to your phone via SMS to complete authentication requests.": "通过短信向您的手机发送一次性代码，以完成认证请求。",
+                    "Get one-time codes sent to your phone via SMS to complete authentication requests.": "인증 요청을 완료하기 위해 SMS로 휴대폰에 일회용 코드를 받아보세요.",
 
-                    "Get authentication codes by SMS on your mobile phone when signing into GitHub. Make sure that": "登录 GitHub 时通过手机短信获取验证码。确保",
-                    "your country or region is supported": "支持您的国家/地区",
-                    "for SMS delivery.": "用于短信发送。",
+                    "Get authentication codes by SMS on your mobile phone when signing into GitHub. Make sure that": "GitHub 로그인 시 SMS로 인증 코드를 받아보세요. 반드시",
+                    "your country or region is supported": "해당 국가 또는 지역이 지원되는지 확인해 주세요.",
+                    "for SMS delivery.": "SMS 전송을 위해요.",
 
-                    "Verify account": "验证账户",
-                    "Before setting up SMS, please verify that you're a human.": "在设置短信之前，请验证您是人类。",
+                    "Verify account": "계정 확인하기",
+                    "Before setting up SMS, please verify that you're a human.": "SMS 설정 전에 본인 확인을 해 주세요.",
 
-                    "Country code": "国家代码",
-                    "Your phone number": "您的手机号码",
-                    "Send authentication code": "发送验证码",
-                    "Sent. It may take a minute for the SMS to arrive.": "已发送。短信可能需要一分钟时间才能送达。",
-                    "Verify the code sent to your phone": "验证发送到您手机的验证码",
+                    "Country code": "국가 코드",
+                    "Your phone number": "휴대폰 번호",
+                    "Send authentication code": "인증 코드 보내기",
+                    "Sent. It may take a minute for the SMS to arrive.": "보냈어요. SMS 도착까지 1분 정도 걸릴 수 있어요.",
+                    "Verify the code sent to your phone": "휴대폰으로 받은 코드를 확인해 주세요.",
 
-                    // [/You will receive one-time codes at this phone number:/, "您将通过以下电话号码收到一次性验证码："], // 已设置短信/文字信息
+                    // [/You will receive one-time codes at this phone number:/, "您将通过以下电话号码收到一次性验证码："], // 이미 설정된 SMS/문자 메시지
 
-                "Security keys": "安全密钥",
-                    "Security keys are webauthn credentials that can only be used as a second factor of authentication.": "安全密钥是 WebAuthn 凭证，只能用作第二验证因素。",
-                    "Hide": "隐藏",
-                    "No security keys": "没有安全密钥",
+                "Security keys": "보안 키",
+                    "Security keys are webauthn credentials that can only be used as a second factor of authentication.": "보안 키는 WebAuthn 자격증명으로, 오직 2단계 인증의 두 번째 요소로만 사용할 수 있어요.",
+                    "Hide": "숨기기",
+                    "No security keys": "보안 키가 없어요.",
 
-                    "Register new security key": "注册新安全密钥",
-                    "Enter a nickname for this security key": "输入安全密钥的昵称",
-                    "Waiting for input from browser interaction...": "等待来自浏览器交互的输入...",
-                    "Security key registration failed.": "安全密钥注册失败。",
-                    "Try again": "请重试",
+                    "Register new security key": "새 보안 키 등록하기",
+                    "Enter a nickname for this security key": "이 보안 키의 별칭을 입력해 주세요.",
+                    "Waiting for input from browser interaction...": "브라우저 상호작용으로 입력을 기다리고 있어요...",
+                    "Security key registration failed.": "보안 키 등록에 실패했어요.",
+                    "Try again": "다시 시도해 주세요.",
 
                 "GitHub Mobile": "GitHub Mobile",
-                    "GitHub Mobile can be used for two-factor authentication by installing the GitHub Mobile app and signing in to your account.": "通过安装 GitHub Mobile 应用并登录账户，可以使用 GitHub Mobile 来进行双因素身份验证。",
-                    "Manage GitHub Mobile": "管理 GitHub Mobile",
+                    "GitHub Mobile can be used for two-factor authentication by installing the GitHub Mobile app and signing in to your account.": "GitHub Mobile 앱을 설치하고 로그인하면 2단계 인증에 사용할 수 있어요.",
+                    "Manage GitHub Mobile": "GitHub Mobile 관리하기",
 
-                    // [/(\d+) devices?/, "$1 设备"], // 设置--> 密码和身份验证页
-                    "Show": "显示",
+                    // [/(\d+) devices?/, "$1 设备"], // 설정 -> 비밀번호와 인증 페이지
+                    "Show": "보이기",
 
-            "Recovery options": "恢复选项",
-                "Your two-factor authentication recovery codes have not been downloaded or printed in the last one year. Make sure your recovery codes are up-to-date by viewing and downloading or printing them again.": "您的双因素身份验证恢复码在过去一年中未被下载或打印。请通过查看并再次下载或打印恢复码，确保您的恢复码是最新的。",
+            "Recovery options": "복구 옵션",
+                "Your two-factor authentication recovery codes have not been downloaded or printed in the last one year. Make sure your recovery codes are up-to-date by viewing and downloading or printing them again.": "지난 1년 동안 2단계 인증 복구 코드를 다운로드하거나 인쇄하지 않으셨어요. 복구 코드를 다시 확인하고 다운로드 또는 인쇄하여 최신 상태인지 확인해 주세요.",
 
-                "Recovery codes": "恢复码",
-                    "Recovery codes can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes.": "恢复码可用于在您无法访问设备且无法接收双因素身份验证码的情况下访问您的账户。",
-                    "Viewed": "已查看",
-                    "View": "查看",
+                "Recovery codes": "복구 코드",
+                    "Recovery codes can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes.": "복구 코드는 기기에 접근할 수 없거나 2단계 인증 코드를 받을 수 없을 때 계정에 접근하는 데 사용해요.",
+                    "Viewed": "확인됨",
+                    "View": "보기",
 
     },
-    "regexp": [ // 正则翻译
-        [/(\d+) devices?/, "$1 个设备"], // 设置--> 密码和身份验证页
-        [/You will receive one-time codes at this phone number:/, "您将通过以下电话号码收到一次性验证码："], // 已设置短信/文字信息
-        [/Delete `([^ ]+)` passkey/, "删除 “$1” 通行密钥"],
-        [/Are you sure you want to delete your `([^ ]+)` passkey?/, "您确定要删除您的 “$1” 通行密钥吗？"],
+    "regexp": [ // 정규식 번역
+        [/(\d+) devices?/, "$1 개의 기기"],
+        [/You will receive one-time codes at this phone number:/, "이 휴대폰 번호로 일회용 코드를 받아보실 거예요:"],
+        [/Delete `([^ ]+)` passkey/, "“$1” 패스키 삭제하기"],
+        [/Are you sure you want to delete your `([^ ]+)` passkey?/, "정말로 “$1” 패스키를 삭제하시겠어요?"],
     ],
 };
 
 I18N["ko-KR"]["settings/auth"] = {
-    "static": { // 静态翻译
+    "static": { // 정적 번역
 
-        // 查看恢复码 https://github.com/settings/auth/recovery-codes
-            // 顶部提醒
-                "New two-factor recovery codes successfully generated. Save them in a safe, durable location and discard your previous codes.": "已成功生成新的双因素身份验证恢复码。将它们保存在安全、耐用的位置，并丢弃以前的恢复码。", // 生成新恢复码
+        // 복구 코드 확인 https://github.com/settings/auth/recovery-codes
+            // 상단 알림
+                "New two-factor recovery codes successfully generated. Save them in a safe, durable location and discard your previous codes.": "새로운 이중 인증 복구 코드를 성공적으로 생성했어요. 안전하고 견고한 곳에 저장하시고 이전 코드는 폐기해 주세요.", // 새 복구 코드 생성
 
-            "Two-factor recovery codes": "双因素身份验证恢复码",
-                "Recovery codes can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes.": "恢复码可用于在您无法访问设备且无法接收双因素身份验证码的情况下访问您的账户。",
-                "Your two-factor authentication recovery codes have not been downloaded or printed in the last one year. Make sure your recovery codes are up-to-date by downloading or printing them again.": "您的双因素身份验证恢复码在过去一年中没有下载或打印过。请重新下载或打印恢复代码，确保您的恢复代码是最新的。",
+            "Two-factor recovery codes": "이중 인증 복구 코드",
+                "Recovery codes can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes.": "기기에 접근할 수 없거나 이중 인증 코드를 받지 못하는 경우, 복구 코드를 사용해 사용자님의 계정에 접근할 수 있어요.",
+                "Your two-factor authentication recovery codes have not been downloaded or printed in the last one year. Make sure your recovery codes are up-to-date by downloading or printing them again.": "사용자님의 이중 인증 복구 코드는 지난 1년 동안 다운로드나 인쇄가 이루어지지 않았어요. 복구 코드가 최신 상태인지 다시 다운로드하거나 인쇄해 보세요.",
 
-            "Recovery codes": "恢复码",
-                "Keep your recovery codes as safe as your password. We recommend saving them with a password manager such as": "保持您的恢复码与您的密码一样安全。我们建议使用密码管理器保存它们，例如",
-                "Keep your recovery codes in a safe spot.": "将您的恢复码保存在一个安全的地方。",
-                "These new codes have replaced your old codes. Save them in a safe spot.": "这些新恢复码已取代您的旧恢复。请将它们保存在安全的地方。", // 生成新恢复码
-                "These codes are the last resort for accessing your account in case you lose your password and second factors. If you cannot find these codes, you": "这些恢复码是在您丢失密码和第二验证因素的情况下访问您账户的最后手段。如果您找不到这些恢复码，您",
-                "will": "将",
-                "lose access to your account.": "无法访问您的账户。",
+            "Recovery codes": "복구 코드",
+                "Keep your recovery codes as safe as your password. We recommend saving them with a password manager such as": "복구 코드를 비밀번호만큼 안전하게 보관해 주세요. 예를 들어, 비밀번호 관리자를 사용하여 저장하는 것을 권장해요.",
+                "Keep your recovery codes in a safe spot.": "복구 코드를 안전한 곳에 보관해 주세요.",
+                "These new codes have replaced your old codes. Save them in a safe spot.": "이 새로운 코드는 기존 코드를 대체했어요. 안전한 곳에 보관해 주세요.", // 새 복구 코드 생성
+                "These codes are the last resort for accessing your account in case you lose your password and second factors. If you cannot find these codes, you": "이 코드는 비밀번호와 이중 인증 수단을 잃어버렸을 때 계정에 접근할 수 있는 마지막 수단이에요. 만약 이 코드를 찾지 못하신다면,",
+                "will": "하시게 될 거예요",
+                "lose access to your account.": "계정에 접근하지 못하게 될 거예요.",
 
-                "Download": "下载",
-                "Print": "打印",
-                "Copy": "复制",
+                "Download": "다운로드하기",
+                "Print": "인쇄하기",
+                "Copy": "복사하기",
 
-            "Generate new recovery codes": "生成新恢复码",
-                "When you generate new recovery codes, you must download or print the new codes.": "当您生成新恢复码时，您必须下载或打印新恢复码。",
-                "Your old codes won't work anymore.": "您的旧恢复码将失效。",
+            "Generate new recovery codes": "새 복구 코드 생성하기",
+                "When you generate new recovery codes, you must download or print the new codes.": "새 복구 코드를 생성할 때는 반드시 새 코드를 다운로드하거나 인쇄해 주세요.",
+                "Your old codes won't work anymore.": "이전 코드는 더 이상 사용하실 수 없어요.",
 
-            "Back to settings": "返回设置",
+            "Back to settings": "설정으로 돌아가기",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규 표현식 번역
     ],
 };
 
 I18N["ko-KR"]["settings/sessions"] = {
-    "static": { // 静态翻译
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // 会话详情 https://github.com/settings/sessions
-            "Web sessions": "网络会话",
-            "GitHub Mobile can be used to verify your identity when signing in from a new device and as a two-factor authentication method.": "GitHub Mobile 可用于从新设备登录时验证您的身份，并作为一种双因素身份验证方法。",
-            "Learn more about authentication with GitHub Mobile.": "了解更多关于 GitHub Mobile 身份验证的信息。",
-            "To get started, install GitHub Mobile for": "首先，安装 GitHub Mobile 适用于",
-            "and sign in to your account.": "并登录您的账户。",
+        // 세션 세부정보 https://github.com/settings/sessions
+            "Web sessions": "웹 세션",
+            "GitHub Mobile can be used to verify your identity when signing in from a new device and as a two-factor authentication method.": "새로운 기기에서 로그인할 때 사용자님의 신원을 확인하고, 이중 인증 수단으로 GitHub Mobile을 사용할 수 있어요.",
+            "Learn more about authentication with GitHub Mobile.": "GitHub Mobile 인증에 대해 더 알아보세요.",
+            "To get started, install GitHub Mobile for": "시작하려면, GitHub Mobile을 설치해 보세요:",
+            "and sign in to your account.": "그리고 사용자님의 계정에 로그인해 주세요.",
 
-            "This is a list of devices that have logged into your account. Revoke any sessions that you do not recognize.": "这是已登录您账户的设备列表。 撤销任何您不认识的会话。",
-            "See more": "查看更多",
-            "Your current session": "您当前的会话",
-            "Last accessed on": "最后访问日期：",
+            "This is a list of devices that have logged into your account. Revoke any sessions that you do not recognize.": "사용자님의 계정에 로그인한 기기 목록입니다. 확인되지 않는 세션은 취소해 주세요.",
+            "See more": "더 보기",
+            "Your current session": "현재 세션",
+            "Last accessed on": "마지막 접근일:",
 
-            "GitHub Mobile sessions": "GitHub Mobile 会话",
-            "This is a list of devices that have logged into your account via the GitHub Mobile app. Revoke any session that you do not recognize or you can": "这是已通过 GitHub Mobile 应用登录到您账户的设备列表。撤销任何您不认识的会话，或者您可以",
-            "revoke": "撤消",
-            "your GitHub Mobile app authorization to sign out of all your devices.": "您的 GitHub Mobile 应用授权，以登出您的所有设备。",
-            "Revoke": "撤消",
-            "Registered -": "注册于 -",
-            "Last accessed -": "最后访问 -",
-            "Last used for authentication -": "最后一次认证 -",
-            "Never used": "未使用",
+            "GitHub Mobile sessions": "GitHub Mobile 세션",
+            "This is a list of devices that have logged into your account via the GitHub Mobile app. Revoke any session that you do not recognize or you can": "GitHub Mobile 앱을 통해 사용자님의 계정에 로그인한 기기 목록입니다. 확인되지 않는 세션은 취소하시거나",
+            "revoke": "취소하기",
+            "your GitHub Mobile app authorization to sign out of all your devices.": "사용자님의 GitHub Mobile 앱 권한을 취소하여 모든 기기에서 로그아웃할 수 있어요.",
+            "Revoke": "취소하기",
+            "Registered -": "등록일 -",
+            "Last accessed -": "마지막 접근 -",
+            "Last used for authentication -": "마지막 인증 사용 -",
+            "Never used": "사용하지 않음",
 
-        // 会话详情 https://github.com/settings/sessions/<id>
-            "Session details": "会话详情",
-            "Revoke session": "撤销会话",
-            "Device:": "设备：",
-            "Last location:": "最后的位置：",
-            "Signed in:": "登录：",
-            "View all sessions": "查看所有会话",
+        // 세션 세부정보 https://github.com/settings/sessions/<id>
+            "Session details": "세션 세부정보",
+            "Revoke session": "세션 취소하기",
+            "Device:": "기기:",
+            "Last location:": "마지막 위치:",
+            "Signed in:": "로그인:",
+            "View all sessions": "모든 세션 보기",
     },
-    "regexp": [ // 正则翻译
-        [/Seen in/, "登录于"],
+    "regexp": [ // 정규 표현식 번역
+        [/Seen in/, "로그인한 곳:"],
     ],
 };
 
-I18N["ko-KR"]["settings/keys"] = { // 设置 - SSH 与 GPG 公钥
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/keys"] = { // 설정 - SSH 및 GPG 공개 키
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // SSH and GPG keys SSH 与 GPG 公钥 https://github.com/settings/keys
-            "SSH keys": "SSH 密钥",
-            "New SSH key": "新建 SSH 密钥",
-            "Authentication keys": "认证密钥",
-            "There are no SSH keys associated with your account.": "没有与您的账户关联的 SSH 密钥。",
-            "This is a list of SSH keys associated with your account. Remove any keys that you do not recognize.": "这是与您的账户相关的 SSH 密钥的列表。删除任何您无法识别的密钥。",
-            "Last used within the last week": "上周内最后一次使用",
-            "Check out our guide to": "请看我们的指南",
-            "connecting to GitHub using SSH keys": "使用 SSH 密钥连接到 GitHub",
-            "or troubleshoot": "或解决",
-            "common SSH problems": "常见的 SSH 问题",
+        // SSH와 GPG 키 https://github.com/settings/keys
+            "SSH keys": "SSH 키",
+            "New SSH key": "새 SSH 키",
+            "Authentication keys": "인증 키",
+            "There are no SSH keys associated with your account.": "사용자님의 계정과 연결된 SSH 키가 없어요.",
+            "This is a list of SSH keys associated with your account. Remove any keys that you do not recognize.": "사용자님의 계정과 연결된 SSH 키 목록입니다. 확인되지 않는 키는 제거해 주세요.",
+            "Last used within the last week": "지난 주 내 마지막 사용",
+            "Check out our guide to": "다음 가이드를 확인해 보세요:",
+            "connecting to GitHub using SSH keys": "SSH 키를 사용하여 GitHub에 연결하기",
+            "or troubleshoot": "또는 문제 해결하기:",
+            "common SSH problems": "일반적인 SSH 문제들",
 
-            "GPG keys": "GPG 密钥",
-            "New GPG key": "新建 GPG 密钥",
-            "There are no GPG keys associated with your account.": "没有与您的账户关联的 GPG 密钥。",
-            "This is a list of GPG keys associated with your account. Remove any keys that you do not recognize.": "这是与您的账户相关的 GPG 密钥的列表。删除任何您无法识别的密钥。",
+            "GPG keys": "GPG 키",
+            "New GPG key": "새 GPG 키",
+            "There are no GPG keys associated with your account.": "사용자님의 계정과 연결된 GPG 키가 없어요.",
+            "This is a list of GPG keys associated with your account. Remove any keys that you do not recognize.": "사용자님의 계정과 연결된 GPG 키 목록입니다. 확인되지 않는 키는 제거해 주세요.",
 
-            "Email address:": "电子邮件地址：",
-            "Key ID:": "密钥 ID：",
-            "Subkeys:": "子密钥：",
-            "Added": "添加于",
+            "Email address:": "이메일 주소:",
+            "Key ID:": "키 ID:",
+            "Subkeys:": "서브키:",
+            "Added": "추가됨",
 
-            "Learn how to": "了解如何",
-            "generate a GPG key and add it to your account": "生成 GPG 密钥并将其添加到您的账户",
+            "Learn how to": "방법 알아보기:",
+            "generate a GPG key and add it to your account": "GPG 키를 생성하여 사용자님의 계정에 추가하기",
 
-            "Vigilant mode": "警戒模式",
-            "Flag unsigned commits as unverified": "将未签名的提交标记为未验证",
-            "This will include any commit attributed to your account but not signed with your GPG or S/MIME key.": "这将包括任何归属于您的账户但没有用您的 GPG 或 S/MIME 密钥签名的提交。",
-            "Note that this will include your existing unsigned commits.": "请注意，这将包括您现有的未签名的提交。",
-            "Learn about vigilant mode": "了解警戒模式",
+            "Vigilant mode": "경계 모드",
+            "Flag unsigned commits as unverified": "서명되지 않은 커밋을 미인증으로 표시하기",
+            "This will include any commit attributed to your account but not signed with your GPG or S/MIME key.": "사용자님의 계정에 속하지만 GPG 또는 S/MIME 키로 서명되지 않은 커밋이 모두 포함돼요.",
+            "Note that this will include your existing unsigned commits.": "기존의 서명되지 않은 커밋도 포함됨을 유의해 주세요.",
+            "Learn about vigilant mode": "경계 모드에 대해 알아보세요",
 
-            // SSH 密钥删除 对话框
-            "Are you sure you want to delete this SSH key?": "您确定要删除此 SSH 密钥吗？",
-            "This action": "该操作",
-            "CANNOT": "不能",
-            "be undone. This will permanently delete the SSH key and if you’d like to use it in the future, you will need to upload it again.": "被撤销。这将永久地删除 SSH 密钥，如果您想在未来使用它，您将需要再次上传它。",
-            "I understand, delete this SSH key": "我明白了，删除此 SSH 密钥",
+            // SSH 키 삭제 대화상자
+            "Are you sure you want to delete this SSH key?": "이 SSH 키를 삭제하시겠어요?",
+            "This action": "이 작업은",
+            "CANNOT": "취소할 수 없어요",
+            "be undone. This will permanently delete the SSH key and if you’d like to use it in the future, you will need to upload it again.": "되돌릴 수 없어요. 이 작업은 SSH 키를 영구적으로 삭제하며, 나중에 사용하시려면 다시 업로드하셔야 해요.",
+            "I understand, delete this SSH key": "알겠어요, 이 SSH 키 삭제하기",
 
-            // GPG 密钥删除 对话框
-            "Are you sure you want to delete this GPG key?": "您确定要删除此 GPG 密钥吗？",
-            "be undone. This will permanently delete the GPG key, and if you’d like to use it in the future, you will need to upload it again.": "被撤销。这将永久地删除 GPG 密钥，如果您想在未来使用它，您将需要再次上传它。",
-            "Any commits you signed with this key will become unverified after removing it.": "删除后，您使用此密钥签名的任何提交都将变成未验证。",
-            "I understand, delete this GPG key": "我明白了，删除此 GPG 密钥",
-            "Okay, you have successfully deleted that key.": "好的，您已成功删除该密钥。",
+            // GPG 키 삭제 대화상자
+            "Are you sure you want to delete this GPG key?": "이 GPG 키를 삭제하시겠어요?",
+            "be undone. This will permanently delete the GPG key, and if you’d like to use it in the future, you will need to upload it again.": "되돌릴 수 없어요. 이 작업은 GPG 키를 영구적으로 삭제하며, 나중에 사용하시려면 다시 업로드하셔야 해요.",
+            "Any commits you signed with this key will become unverified after removing it.": "이 키로 서명한 커밋은 삭제 후 미인증 상태로 표시돼요.",
+            "I understand, delete this GPG key": "알겠어요, 이 GPG 키 삭제하기",
+            "Okay, you have successfully deleted that key.": "네, 해당 키를 성공적으로 삭제하셨어요.",
 
-            // 顶部提醒
-            "Key is invalid. You must supply a key in OpenSSH public key format": "密钥无效。您必须提供 OpenSSH 公钥格式的密钥",
-            "We got an error doing that.": "我们在这样做时出错了。",
-            "We got an error adding your GPG key. Please verify the input is a valid GPG key.": "添加您的 GPG 密钥时出错。请确认输入的是有效的 GPG 密钥。",
+            // 상단 알림
+            "Key is invalid. You must supply a key in OpenSSH public key format": "키가 유효하지 않아요. OpenSSH 공개 키 형식의 키를 제공해 주세요.",
+            "We got an error doing that.": "작업 중 오류가 발생했어요.",
+            "We got an error adding your GPG key. Please verify the input is a valid GPG key.": "GPG 키 추가 중 오류가 발생했어요. 입력한 값이 유효한 GPG 키인지 확인해 주세요.",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규 표현식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/ssh"] = { // 设置 - SSH 与 GPG 公钥 - 添加 SSH 公钥
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/ssh"] = { // 설정 - SSH 및 GPG 공개 키 - SSH 공개 키 추가
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // 添加 SSH 公钥 https://github.com/settings/ssh/new
-            "Add new SSH Key": "添加新 SSH 密钥",
-            "Title": "标题",
-            "Key type": "密钥类型",
-                "Authentication Key": "认证密钥",
-                "Signing Key": "签名密钥",
-            "Key": "密钥",
-            "Add SSH key": "添加 SSH 密钥",
+        // SSH 공개 키 추가 https://github.com/settings/ssh/new
+            "Add new SSH Key": "새 SSH 키 추가하기",
+            "Title": "제목",
+            "Key type": "키 유형",
+                "Authentication Key": "인증 키",
+                "Signing Key": "서명 키",
+            "Key": "키",
+            "Add SSH key": "SSH 키 추가하기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규 표현식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/gpg"] = { // 设置 - SSH 与 GPG 公钥 - 添加 GPG 公钥
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/gpg"] = { // 설정 - SSH 및 GPG 공개 키 - GPG 공개 키 추가
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // 添加 GPG 公钥 https://github.com/settings/gpg/new
-            "Add new GPG key": "添加新 GPG 密钥",
-            "Title": "标题",
-            "Key": "密钥",
-            "Add GPG key": "添加 GPG 密钥",
+        // GPG 공개 키 추가 https://github.com/settings/gpg/new
+            "Add new GPG key": "새 GPG 키 추가하기",
+            "Title": "제목",
+            "Key": "키",
+            "Add GPG key": "GPG 키 추가하기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규 표현식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/organizations"] = { // 设置 - 组织
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/organizations"] = { // 설정 - 조직
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Organizations 组织 https://github.com/settings/organizations
-            "You are not a member of any organizations.": "您暂无任何组织。",
-
-            "Owner": "所有者",
-            "Member": "成员",
-            "Compare plans": "比较计划",
-            "Leave": "离开",
-
-            "Transform account": "账户变更",
-            "You cannot transform this account into an organization until you leave all organizations that you’re a member of.": "在您离开您所属的所有组织之前，您无法将此账户转换为组织。", // 存在所属组织时
-            "You cannot transform this account into an organization because you have an active GitHub Sponsors account.": "由于您有一个活跃的 GitHub 赞助者账户，因此您无法将此账户转换为组织。", // 存在赞助者账户时
-            "Account Transformation Warning": "账户变更警告",
-            "What you are about to do is an irreversible and destructive process. Please be aware:": "这将是一个不可逆转的过程，请确认：",
-            "Any user-specific information (OAuth tokens, SSH keys, Job Profile, etc) will be erased": "任何用户特定的信息（OAuth 令牌, SSH 密钥, 职位简介, 等）将被删除。",
-            "You will no longer be able to create or modify gists owned by the converted personal account": "您将无法再创建或修改已转换的个人账户所拥有的代码片段",
-            "create a new personal account": "创建一个新的个人账户",
-            "The total amount of collaborators across private repositories will be the total amount of seats for the organization": "跨私人仓库的协作者总数将是该组织的席位总数",
-
+        // Organizations 조직 https://github.com/settings/organizations
+            "You are not a member of any organizations.": "사용자님은 아직 어떠한 조직에도 소속되어 있지 않아요.",
+            
+            "Owner": "소유자",
+            "Member": "멤버",
+            "Compare plans": "요금제 비교하기",
+            "Leave": "탈퇴하기",
+            "Start free for 30 days": "30일 무료체험하기",
+            
+            "Transform account": "계정 전환하기",
+            "You cannot transform this account into an organization until you leave all organizations that you’re a member of.": "가입하신 모든 조직을 탈퇴하시기 전에는 이 계정을 조직으로 전환할 수 없어요.",
+            "You cannot transform this account into an organization because you have an active GitHub Sponsors account.": "활성화된 GitHub 스폰서 계정이 있어서 이 계정을 조직으로 전환할 수 없어요.",
+            "Account Transformation Warning": "계정 전환 경고",
+            "What you are about to do is an irreversible and destructive process. Please be aware:": "앞으로 진행할 작업은 되돌릴 수 없고 파괴적인 과정이에요. 확인해 주세요:",
+            "Any user-specific information (OAuth tokens, SSH keys, Job Profile, etc) will be erased": "사용자별 정보(OAuth 토큰, SSH 키, 직업 프로필 등)는 모두 삭제돼요.",
+            "You will no longer be able to create or modify gists owned by the converted personal account": "전환된 개인 계정에 속한 gists를 더 이상 생성하거나 수정할 수 없어요.",
+            "create a new personal account": "새 개인 계정 만들기",
+            "The total amount of collaborators across private repositories will be the total amount of seats for the organization": "비공개 저장소의 협업자 총 수가 조직의 총 좌석 수가 돼요."
     },
-    "regexp": [ // 正则翻译
-        [/Turn ([^ ]+) into an organization/, "变更 $1 为组织"],
-        [/You will no longer be able to sign in to ([^ ]+) \(all administrative privileges will be bestowed upon the owners you choose\)/, "您将无法再登录 $1（所有管理权限都将授予您选择的所有者）"],
-        [/Any commits and comments credited to ([^ ]+) will no longer be linked to this GitHub account/, "任何归功于 $1 的提交和评论将不再与此 GitHub 账户相关联"],
-        [/Any GitHub Apps installed on ([^ ]+) will be uninstalled/, "$1 上安装的任何 GitHub 应用程序都将被卸载"],
-        [/If you are using ([^ ]+) as a personal account, you should/, "如果您将 $1 用作个人账户，您应该在将 $1 转变为组织之前先"],
-        [/before transforming ([^ ]+) into an organization./, "。"],
-        [/Outside collaborator on (\d+) repositor(y|ies)/, "$1 个仓库的外部协作者"], // 设置 - 组织
-        [/Member and collaborator on (\d+) repositor(y|ies)/, "$1 个仓库的成员和协作者"],
-        [/Are you positive you want to leave ([^ ]+)\? You will lose access to all repositories and teams./, "您确定要离开 $1 吗？您将失去对所有仓库和团队的访问权。"], // 设置 - 组织 离开按钮 提醒
-        [/Are you positive you want to leave ([^ ]+)\? You will lose access to all repositories./, "您确定要离开 $1 吗？您将失去对所有仓库的访问权。"], // 设置 - 组织 离开按钮 提醒
+    "regexp": [ // 정규식 번역
+        [/Turn ([^ ]+) into an organization/, "$1 을(를) 조직으로 전환하기"],
+        [/You will no longer be able to sign in to ([^ ]+) \(all administrative privileges will be bestowed upon the owners you choose\)/, "사용자님은 더 이상 $1 에 로그인할 수 없어요 (모든 관리 권한은 선택하신 소유자에게 부여돼요)"],
+        [/Any commits and comments credited to ([^ ]+) will no longer be linked to this GitHub account/, "$1 에 기인한 모든 커밋과 댓글은 더 이상 이 GitHub 계정과 연동되지 않아요"],
+        [/Any GitHub Apps installed on ([^ ]+) will be uninstalled/, "$1 에 설치된 모든 GitHub 앱이 제거될 거예요"],
+        [/If you are using ([^ ]+) as a personal account, you should/, "만약 $1 을 개인 계정으로 사용 중이시라면, 조직으로 전환하기 전에"],
+        [/before transforming ([^ ]+) into an organization./, " $1 을 조직으로 전환하기 전에요."],
+        [/Outside collaborator on (\d+) repositor(y|ies)/, "$1 개의 저장소에 대한 외부 협업자"],
+        [/Member and collaborator on (\d+) repositor(y|ies)/, "$1 개의 저장소에 대한 멤버 및 협업자"],
+        [/Are you positive you want to leave ([^ ]+)\? You will lose access to all repositories and teams./, "정말 $1 을 탈퇴하시겠어요? 모든 저장소와 팀에 대한 접근 권한을 잃게 돼요."],
+        [/Are you positive you want to leave ([^ ]+)\? You will lose access to all repositories./, "정말 $1 을 탈퇴하시겠어요? 모든 저장소에 대한 접근 권한을 잃게 돼요."]
     ],
 };
 
-I18N["ko-KR"]["settings/enterprises"] = { // 设置 - 企业版
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/enterprises"] = { // 설정 - 기업
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
         // 企业版 https://github.com/settings/enterprises
-        "Enterprises": "企业版",
-        "You don't have any enterprises": "您还没有任何企业版",
-        "Designed for businesses or teams who collaborate on GitHub.com": "专为在 GitHub.com 上协作的企业或团队而设计",
-
-        "Start a free trial": "开启免费体验",
-        "Learn more about enterprises": "了解更多关于企业版信息",
+        "Enterprises": "기업",
+        "You don't have any enterprises": "사용자님은 아직 어떠한 기업에도 가입되어 있지 않아요.",
+        "Designed for businesses or teams who collaborate on GitHub.com": "GitHub.com에서 협업하는 기업이나 팀을 위해 설계되었어요.",
+        
+        "Start a free trial": "무료 체험 시작하기",
+        "Learn more about enterprises": "기업에 대해 더 알아보기"
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/blocked_users"] = { // 设置 - 黑名单
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/blocked_users"] = { // 설정 - 차단된 사용자
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Blocked users 黑名单 https://github.com/settings/blocked_users
-            "Block a user": "拉黑用户",
-            "Blocking a user prevents the following on all your repositories:": "拉黑用户可以防止所有仓库中的以下操作：",
-            "opening or commenting on issues or pull requests": "打开或评论이슈或拉取请求",
-            "starring, forking, or watching": "加星标、复刻、关注",
-            "adding or editing wiki pages": "添加或编辑 Wiki 页面",
-            "Additionally, blocked users are not able to:": "此外，被拉黑用户无法：",
-            "invite you as a collaborator to their repositories": "邀请您作为其仓库的协作者",
-            "follow your account’s public activity": "关注您的账户的公共活动",
-            "send you notifications by @mentioning your username in public repositories": "在公共仓库中通过 @您 向您发送通知",
-            "Search by username, full name or email address": "搜索用户名、全名、或电子邮箱",
-                "Learn more about blocking a user": "了解更多关于拉黑用户的信息",
-            "Block user": "拉黑用户",
-            "You have not blocked any users.": "您还没有拉黑任何用户。",
-            "Unblock": "取消拉黑",
-            "Warn me when a blocked user is a prior contributor to a repository": "请警告我，当被拉黑的用户是仓库的先前贡献者时",
-            "On repositories you haven’t contributed to yet, we’ll warn you when a user you’ve blocked has previously made contributions.": "在您还没有贡献的仓库里，当您拉黑的用户之前有贡献时，我们会警告您。",
-
+        // Blocked users 차단된 사용자 https://github.com/settings/blocked_users
+            "Block a user": "사용자 차단하기",
+            "Blocking a user prevents the following on all your repositories:": "사용자 차단 시, 모든 저장소에서 아래 작업들이 제한돼요:",
+            "opening or commenting on issues or pull requests": "이슈나 끌어오기 요청 열기 및 댓글 달기",
+            "starring, forking, or watching": "별표, 포크 또는 워칭하기",
+            "adding or editing wiki pages": "Wiki 페이지 추가나 편집하기",
+            "Additionally, blocked users are not able to:": "추가로, 차단된 사용자는 아래 작업을 할 수 없어요:",
+            "invite you as a collaborator to their repositories": "사용자님을 그들의 저장소 협업자로 초대하기",
+            "follow your account’s public activity": "사용자님의 공개 활동 팔로우하기",
+            "send you notifications by @mentioning your username in public repositories": "공개 저장소에서 사용자님을 @언급하여 알림 보내기",
+            "Search by username, full name or email address": "사용자명, 전체 이름 또는 이메일 주소로 검색하기",
+                "Learn more about blocking a user": "사용자 차단에 대해 더 알아보기",
+            "Block user": "사용자 차단하기",
+            "You have not blocked any users.": "아직 차단한 사용자가 없어요.",
+            "Unblock": "차단 해제하기",
+            "Warn me when a blocked user is a prior contributor to a repository": "차단한 사용자가 저장소에 이전에 기여한 경우 경고해 주세요",
+            "On repositories you haven’t contributed to yet, we’ll warn you when a user you’ve blocked has previously made contributions.": "아직 사용자님이 기여하지 않은 저장소에서, 차단한 사용자가 이전에 기여한 기록이 있으면 경고해 드려요."
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/interaction_limits"] = { // 设置 - 互动限制
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/interaction_limits"] = { // 설정 - 상호작용 제한
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Interaction limits 互动限制 https://github.com/settings/interaction_limits
-            "Temporary interaction limits": "临时互动限制",
-            "Temporarily restrict which external users can interact with your repositories (comment, open issues, or create pull requests) for a configurable period of time.": "在配置的时间段内，可临时限制哪些外部用户与您的仓库互动（评论、打开이슈或创建拉取请求）。",
-            "This may be used to force a \"cool-down\" period during heated discussions or prevent unwanted interactions.": "可用于在激烈讨论期间，强制进入 “冷静” 期或防止不必要的互动。",
-            "Interaction limits may already exist in your account's": "互动限制可能已经存在于您的",
-            "public repositories": "公开仓库",
-            ". Any changes here will override those limits.": " 的设置中。此处的全局设置将覆盖那些仓库的局部设置。",
-            "Limit to existing users": "仅限现有用户",
-                "Users that have recently created their account will be unable to interact with your repositories.": "最近创建账户的用户将无法与您的仓库互动。",
-            "Limit to prior contributors": "仅限于先前的贡献者",
-                "Users that have not previously committed to the default branch of one of your repositories will be unable to interact with that repository.": "以前从未提交到您某个仓库默认分支的用户将无法与该仓库互动。",
-            "Limit to repository collaborators": "仅限仓库协作者",
-                "Users that are not collaborators of one of your repositories will not be able to interact with that repository.": "不是您某个仓库的协作者将无法与该仓库互动。",
-            "New users": "新用户",
-            "Users": "用户",
-            "Contributors": "贡献者",
-            "Collaborators": "协作者",
-            // 交互限制时间 下拉菜单
-            "Enable interaction limits for:": "启用交互限制：",
-            "24 hours": "24 小时",
-            "3 days": "3 天",
-            "1 week": "1 周",
-            "1 month": "1 个月",
-            "6 months": "6 个月",
+        // Interaction limits 상호작용 제한 https://github.com/settings/interaction_limits
+            "Temporary interaction limits": "일시적인 상호작용 제한",
+            "Temporarily restrict which external users can interact with your repositories (comment, open issues, or create pull requests) for a configurable period of time.": "설정 가능한 기간 동안 외부 사용자가 사용자님의 저장소와 상호작용(댓글 달기, 이슈 열기, 끌어오기 요청 생성)을 할 수 없도록 일시적으로 제한해요.",
+            "This may be used to force a \"cool-down\" period during heated discussions or prevent unwanted interactions.": "격렬한 토론 중에 휴식 시간을 강제하거나 원치 않는 상호작용을 방지하는 데 사용할 수 있어요.",
+            "Interaction limits may already exist in your account's": "사용자님의 계정에 이미 상호작용 제한이 있을 수 있어요",
+            "public repositories": "공개 저장소",
+            ". Any changes here will override those limits.": " 의 설정 중이에요. 여기서 변경하는 설정은 해당 제한을 덮어써요.",
+            "Limit to existing users": "기존 사용자로 제한하기",
+                "Users that have recently created their account will be unable to interact with your repositories.": "최근에 계정을 생성한 사용자는 사용자님의 저장소와 상호작용할 수 없게 돼요.",
+            "Limit to prior contributors": "이전에 기여한 사용자로 제한하기",
+                "Users that have not previously committed to the default branch of one of your repositories will be unable to interact with that repository.": "사용자님의 저장소 중 하나의 기본 분기에 이전에 커밋한 적이 없는 사용자는 해당 저장소와 상호작용할 수 없어요.",
+            "Limit to repository collaborators": "저장소 협업자로 제한하기",
+                "Users that are not collaborators of one of your repositories will not be able to interact with that repository.": "사용자님의 저장소 협업자가 아닌 사용자는 해당 저장소와 상호작용할 수 없어요.",
+            "New users": "신규 사용자",
+            "Users": "사용자",
+            "Contributors": "기여자",
+            "Collaborators": "협업자",
+            // 交互限制时间 下拉 메뉴
+            "Enable interaction limits for:": "다음 기간 동안 상호작용 제한 활성화:",
+            "24 hours": "24 시간",
+            "3 days": "3 일",
+            "1 week": "1 주",
+            "1 month": "1 달",
+            "6 months": "6 달",
             // 顶部提醒
-            "User interaction limit settings saved.": "用户交互限制设置已保存。",
-
+            "User interaction limit settings saved.": "사용자 상호작용 제한 설정이 저장되었어요."
     },
-    "regexp": [ // 正则翻译
-        [/Enabled with (.+) remaining./, "已启用，还剩 $1。"],
+    "regexp": [ // 정규식 번역
+        [/Enabled with (.+) remaining./, "활성화되었고, 아직 $1 남았어요."]
     ],
 };
 
-I18N["ko-KR"]["settings/code_review_limits"] = { // 设置 - 代码审查限制
-    "static": { // 静态翻译
+
+I18N["ko-KR"]["settings/code_review_limits"] = { // 설정 - 코드 리뷰 제한
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // 顶部提示
-            "Code review limit settings saved.": "代码审查限制设置已保存。",
+        // 상단 알림
+            "Code review limit settings saved.": "코드 리뷰 제한 설정이 저장되었어요.",
 
-        // Code review limits 代码审查限制 https://github.com/settings/code_review_limits
-            "Restrict users who are permitted to approve or request changes on pull requests in your public repositories.": "限制允许批准或请求更改公共仓库中拉取请求的用户。",
-            "Code review limits may already be specified by individual repositories. Any changes here will override those limits until unset.": "代码审查限制可能已经由各个仓库指定。此处的任何更改都将覆盖这些限制，直至取消设置。",
-            "Code review limits are currently managed individually for all repositories. Enable limits to permit only users who have explicitly been granted access to each repository to submit reviews that \"approve\" or \"request changes\". Remove limits to allow all users to submit pull request reviews. All users able to submit comment pull request reviews will continue to be able to do so.": "目前，所有仓库代码审查限制都是单独管理的。启用限制，只允许明确授予每个仓库访问权的用户提交 “批准” 或 “请求更改” 的审查。删除限制，允许所有用户提交拉取请求审查。所有能够提交评论拉取请求审查的用户将继续能够这样做。",
-            "Code review limits are currently": "目前，所有仓库都",
-            "enabled": "启用",
-            "disabled": "禁用",
-            "for all repositories. Only users explicitly granted access to these repositories may submit pull request reviews that \"approve\" or \"request changes\". All users able to submit comment pull request reviews continue to be able to do so.": "代码审查限制。只有被明确授予访问这些仓库权限的用户才能提交 “批准” 或 “请求更改” 的拉取请求审查。所有能够提交评论拉取请求审查的用户仍可继续提交。",
-            "for all repositories. All users are able to submit pull request reviews, including those that \"approve\" or \"request changes\". Limit reviews to only permit users who have explicitly been granted access to each repository to submit reviews that \"approve\" or \"request changes\".": "代码审查限制。所有用户都可以提交拉取请求审查，包括那些 “批准” 或 “请求更改” 的审查。限制审查，只允许明确授予每个仓库访问权的用户提交 “批准” 或 “请求更改” 的审查。",
-            "Unset": "撤销",
-            "Limit reviews on all repositories": "限制对所有仓库的审查",
-            "Remove review limits from all repositories": "取消对所有仓库的审查限制",
+        // 코드 리뷰 제한 https://github.com/settings/code_review_limits
+            "Restrict users who are permitted to approve or request changes on pull requests in your public repositories.": "공개 저장소의 끌어오기 요청에서 승인하거나 변경 요청할 수 있는 사용자들을 제한해 주세요.",
+            "Code review limits may already be specified by individual repositories. Any changes here will override those limits until unset.": "코드 리뷰 제한은 개별 저장소에서 이미 지정되어 있을 수 있어요. 여기서의 변경 사항은 제한이 해제될 때까지 기존 제한을 덮어쓰게 돼요.",
+            "Code review limits are currently managed individually for all repositories. Enable limits to permit only users who have explicitly been granted access to each repository to submit reviews that \"approve\" or \"request changes\". Remove limits to allow all users to submit pull request reviews. All users able to submit comment pull request reviews will continue to be able to do so.": "현재 모든 저장소의 코드 리뷰 제한은 개별적으로 관리되고 있어요. 제한을 활성화하면 각 저장소에 대해 명시적으로 접근 권한이 부여된 사용자만 ‘승인’ 또는 ‘변경 요청’ 리뷰를 제출할 수 있어요. 제한을 해제하면 모든 사용자가 끌어오기 요청 리뷰를 제출할 수 있어요. 댓글 끌어오기 요청 리뷰를 제출할 수 있는 사용자들은 계속해서 제출할 수 있어요.",
+            "Code review limits are currently": "현재 모든 저장소는",
+            "enabled": "활성화되어 있어요",
+            "disabled": "비활성화되어 있어요",
+            "for all repositories. Only users explicitly granted access to these repositories may submit pull request reviews that \"approve\" or \"request changes\". All users able to submit comment pull request reviews continue to be able to do so.": "모든 저장소에 대해 적용돼요. 해당 저장소에 명시적으로 접근 권한이 부여된 사용자만 ‘승인’ 또는 ‘변경 요청’ 끌어오기 요청 리뷰를 제출할 수 있어요. 댓글 끌어오기 요청 리뷰는 계속 제출할 수 있어요.",
+            "for all repositories. All users are able to submit pull request reviews, including those that \"approve\" or \"request changes\". Limit reviews to only permit users who have explicitly been granted access to each repository to submit reviews that \"approve\" or \"request changes\".": "모든 저장소에 대해 적용돼요. 모든 사용자가 ‘승인’ 또는 ‘변경 요청’을 포함한 끌어오기 요청 리뷰를 제출할 수 있어요. 리뷰 제한을 활성화하면 각 저장소에 명시적으로 접근 권한이 부여된 사용자만 ‘승인’ 또는 ‘변경 요청’ 리뷰를 제출할 수 있어요.",
+            "Unset": "해제하기",
+            "Limit reviews on all repositories": "모든 저장소에 대한 리뷰 제한하기",
+            "Remove review limits from all repositories": "모든 저장소의 리뷰 제한 해제하기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/repositories"] = { // 设置 - 仓库
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/repositories"] = { // 설정 - 저장소
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Repository 仓库 https://github.com/settings/repositories
-            "Repository default branch": "仓库默认分支",
-            "Choose the default branch for your new personal repositories. You might want to change the default name due to different workflows, or because your integrations still require “master” as the default branch name. You can always change the default branch name on individual repositories.": "为您新的个人仓库选择默认的分支。由于工作流程的不同，或者由于您的集成仍然需要 “master” 作为默认分支名，您可能想改变默认名称。您可以随时改变个人仓库的默认分支名称。",
-            "Learn more about default branches.": "了解更多关于默认分支的信息。",
-            "Update": "更新",
-            "Deleted repositories": "删除的仓库",
-            "Leave": "离开",
+        // 저장소 https://github.com/settings/repositories
+            "Repository default branch": "저장소 기본 분기",
+            "Choose the default branch for your new personal repositories. You might want to change the default name due to different workflows, or because your integrations still require “master” as the default branch name. You can always change the default branch name on individual repositories.": "새로운 개인 저장소의 기본 분기를 선택해 주세요. 작업 흐름이 다르거나 통합 시스템이 여전히 “master”를 기본 분기명으로 요구하기 때문에 기본 이름을 변경하고 싶으실 수 있어요. 개별 저장소에서는 언제든지 기본 분기명을 변경할 수 있어요.",
+            "Learn more about default branches.": "기본 분기에 대해 더 알아보세요.",
+            "Update": "업데이트",
+            "Deleted repositories": "삭제된 저장소",
+            "Leave": "나가기",
 
     },
-    "regexp": [ // 正则翻译
-        [/(\d+) collaborators?/, "$1 位协作者"]
+    "regexp": [ // 정규식 번역
+        [/(\d+) collaborators?/, "$1 명의 협업자"]
     ],
 };
 
-I18N["ko-KR"]["settings/deleted_repositories"] = { // 设置 - 仓库 - 删除的仓库
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/deleted_repositories"] = { // 설정 - 저장소 - 삭제된 저장소
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // 删除的仓库 https://github.com/settings/deleted_repositories
-            "Deleted repositories": "删除的仓库",
-            "It may take up to an hour for repositories to be displayed here. You can only restore repositories that are not forks, or have not been forked.": "仓库可能需要一个小时的时间才能显示在这里。您只能恢复不是复刻或没有被复刻的仓库。",
-            "Learn more about restoring deleted repositories": "了解更多关于恢复已删除仓库的信息",
+        // 삭제된 저장소 https://github.com/settings/deleted_repositories
+            "Deleted repositories": "삭제된 저장소",
+            "It may take up to an hour for repositories to be displayed here. You can only restore repositories that are not forks, or have not been forked.": "저장소가 여기에 표시되기까지 최대 한 시간이 걸릴 수 있어요. 포크가 아니거나 포크된 적이 없는 저장소만 복원할 수 있어요.",
+            "Learn more about restoring deleted repositories": "삭제된 저장소 복원에 대해 더 알아보세요",
 
-            "These repositories were deleted, but can't be restored by you. Contact support if you want to restore them.": "这些仓库已被删除，但您无法恢复。如果您想恢复它们，请联系 GitHub 支持人员。",
+            "These repositories were deleted, but can't be restored by you. Contact support if you want to restore them.": "이 저장소들은 삭제되었으나, 사용자님께서 복원할 수 없어요. 복원하고 싶으시면 지원팀에 연락해 주세요.",
 
-            "Deleted": "删除于",
-            // [/by/, "由"], // 删除的仓库
-            "Restore": "恢复",
-            "Queue…": "排队中…",
-            "Done!": "完成!",
+            "Deleted": "삭제됨",
+            // [/by/, "由"], // 삭제된 저장소
+            "Restore": "복원하기",
+            "Queue…": "대기 중…",
+            "Done!": "완료!",
 
-            // 恢复仓库 对话框
+            // 저장소 복원 대화상자
             // [/Are you sure you want to restore ([^ ]+)?/, "您确定要恢复 $1 吗？"],
-            "This repository will be in a private state when it is restored. To change this state, go to settings once the repo is restored.": "此仓库在恢复时将处于私有状态。要更改此状态，请在仓库恢复后转到设置。",
-            "Any team or collaborator permissions that previously existed for this repository will not be restored. If you require specific team or collaborator permissions, you will need to configure them in settings.": "此仓库以前存在的任何团队或协作者的权限将不会被恢复。如果您需要特定的团队或协作者权限，则需要在设置中配置。",
-            "I understand, restore this repository": "我明白了，依然恢复该仓库。",
+            "This repository will be in a private state when it is restored. To change this state, go to settings once the repo is restored.": "이 저장소는 복원되면 비공개 상태가 돼요. 상태를 변경하려면 저장소 복원 후 설정으로 이동해 주세요.",
+            "Any team or collaborator permissions that previously existed for this repository will not be restored. If you require specific team or collaborator permissions, you will need to configure them in settings.": "이 저장소의 이전 팀이나 협업자 권한은 복원되지 않아요. 특정 팀이나 협업자 권한이 필요하시면 설정에서 다시 구성해 주세요.",
+            "I understand, restore this repository": "알겠어요, 이 저장소를 복원할게요.",
 
     },
-    "regexp": [ // 正则翻译
-        [/No recoverable repositories were found for ([^ ]+)\./, "没有找到 $1 的可恢复仓库。"],
-        [/by/, "由"], // 删除的仓库
-        [/Are you sure you want to restore ([^ ]+)?/, "您确定要恢复 $1 吗？"], // 删除的仓库
+    "regexp": [ // 정규식 번역
+        [/No recoverable repositories were found for ([^ ]+)\./, "$1 에 대해 복원 가능한 저장소를 찾지 못했어요."],
+        [/by/, "에 의해"], // 삭제된 저장소
+        [/Are you sure you want to restore ([^ ]+)?/, "$1 을(를) 복원하시겠어요?"],
     ],
 };
 
-I18N["ko-KR"]["settings/codespaces"] = { // 设置 - 代码空间
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/codespaces"] = { // 설정 - 코드스페이스
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // 代码空间 https://github.com/settings/codespaces
-            "Dotfiles": "点文件",
-            "Automatically install dotfiles": "自动安装点文件",
-            "Codespaces can automatically install your dotfiles into every codespace you create.": "代码空间可以自动将您点文件安装到您创建的每个代码空间。",
-            "Learn how to set up your dotfiles for Codespaces.": "了解如何为代码空间设置点文件。",
-            "Select repository": "选择仓库",
-            "Search for a repository": "搜索仓库",
-            "Changes saved": "更改已保存",
+        // 코드스페이스 https://github.com/settings/codespaces
+            "Dotfiles": "도트파일",
+            "Automatically install dotfiles": "도트파일을 자동으로 설치하기",
+            "Codespaces can automatically install your dotfiles into every codespace you create.": "코드스페이스는 사용자가 생성하는 모든 코드스페이스에 도트파일을 자동으로 설치할 수 있어요.",
+            "Learn how to set up your dotfiles for Codespaces.": "코드스페이스에 도트파일을 설정하는 방법을 알아보세요.",
+            "Select repository": "저장소 선택하기",
+            "Search for a repository": "저장소 검색하기",
+            "Changes saved": "변경 사항이 저장되었어요",
 
-            "Secrets": "机密",
-            "Codespace user secrets": "代码空间用户机密",
-            "New secret": "新建机密",
-            "Development environment secrets are environment variables that are encrypted. They are available to any codespace you create using repositories with access to that secret.": "开发环境机密是加密的环境变量。它们可用于您可访问该机密的仓库创建的任何代码空间。",
-            "There are no Codespace secrets.": "尚无代码空间机密",
-            "Secrets created at the user level can be shared with specified repositories.": "在用户级别创建的机密可以与指定的仓库共享。",
+            "Secrets": "기밀",
+            "Codespace user secrets": "코드스페이스 사용자 기밀",
+            "New secret": "새 기밀 만들기",
+            "Development environment secrets are environment variables that are encrypted. They are available to any codespace you create using repositories with access to that secret.": "개발 환경 기밀은 암호화된 환경 변수에요. 해당 기밀에 접근할 수 있는 저장소를 사용하는 모든 코드스페이스에서 사용할 수 있어요.",
+            "There are no Codespace secrets.": "코드스페이스 기밀이 없어요.",
+            "Secrets created at the user level can be shared with specified repositories.": "사용자 레벨에서 생성된 기밀은 지정된 저장소와 공유할 수 있어요.",
 
-            // [/(\d+) repositor(y|ies)/, "$1 个仓库"],
-            "Updated": "更新于",
-            // [/Are you sure you want to delete ([^ ]+)\?/, "您确定要删除 $1 吗？"],
+            // [/(\d+) repositor(y|ies)/, "$1 개의 저장소"],
+            "Updated": "업데이트됨",
+            // [/Are you sure you want to delete ([^ ]+)\?/, "$1 삭제하시겠어요?"],
 
-            "GPG verification": "GPG 验证",
-                "Codespaces can have GPG commit signing capabilities so that GitHub can verify that commits made in the codespace come from a trusted source. When enabled, this setting will be applied to your list of trusted repositories.": "代码空间可以具有 GPG 提交签名功能，以便 GitHub 可以验证代码空间中的提交是来自受信任的来源。启用后，该设置将被应用到您的受信任仓库列表中。",
+            "GPG verification": "GPG 검증",
+                "Codespaces can have GPG commit signing capabilities so that GitHub can verify that commits made in the codespace come from a trusted source. When enabled, this setting will be applied to your list of trusted repositories.": "코드스페이스는 GPG 커밋 서명 기능을 가질 수 있어요, 이를 통해 GitHub가 코드스페이스에서 만들어진 커밋이 신뢰할 수 있는 출처에서 왔는지 검증할 수 있어요. 활성화되면, 이 설정은 사용자님의 신뢰하는 저장소 목록에 적용돼요.",
                 // "Enabled": "启用",
-                    "GPG signing will be available in Codespaces": "GPG 签名将在代码空间中可用",
+                    "GPG signing will be available in Codespaces": "코드스페이스에서 GPG 서명이 사용 가능해요",
 
-            "Settings Sync": "设置同步",
-                "By enabling, your codespaces will be able to pull from VS Code Settings Sync service and push only for the trusted repositories you specify. Only enable this for repositories that you trust.": "通过启用，您的代码空间将能够从 VS Code 设置同步服务中提取数据，并仅推送您指定的受信任仓库。请只对您信任的仓库启用此功能。",
+            "Settings Sync": "설정 동기화",
+                "By enabling, your codespaces will be able to pull from VS Code Settings Sync service and push only for the trusted repositories you specify. Only enable this for repositories that you trust.": "활성화하면, 사용자님의 코드스페이스는 VS Code 설정 동기화 서비스에서 데이터를 가져올 수 있고, 지정한 신뢰하는 저장소에만 푸시할 수 있어요. 신뢰하는 저장소에 대해서만 활성화해주세요.",
                 // "Enabled": "启用",
-                    "VS Code Settings Sync will be available in Codespaces": "VS Code 设置同步将在代码空间中可用",
+                    "VS Code Settings Sync will be available in Codespaces": "코드스페이스에서 VS Code 설정 동기화가 사용 가능해요",
 
-            "Trusted repositories": "受信任仓库",
-                "The following repositories will be referenced by GPG verification and Settings Sync.": "以下仓库将被 GPG 验证和设置同步所引用。",
+            "Trusted repositories": "신뢰하는 저장소",
+                "The following repositories will be referenced by GPG verification and Settings Sync.": "다음 저장소들이 GPG 검증과 설정 동기화에 참조될 거예요.",
 
-                "All repositories": "所有仓库",
-                    "GPG signing and VS Code Settings Sync will be available for codespaces for all repositories": "GPG 签名和 VS Code 设置同步将适用于所有仓库的代码空间",
-                "Selected repositories": "选定的仓库",
-                    "GPG signing and VS Code Settings Sync will be available for codespaces from the selected repositories": "GPG 签名和 VS Code 设置同步将适用于选定仓库的代码空间",
-                    "Select repositories": "选择仓库",
-                    // [/Selected (\d+) repositor(y|ies)./, "选定 #1 个仓库"],
-                    "GPG and VS Code Settings Sync will be available for Codespaces from these repositories.": "GPG 和 VS Code 设置同步将可用于这些仓库的代码空间。",
+                "All repositories": "모든 저장소",
+                    "GPG signing and VS Code Settings Sync will be available for codespaces for all repositories": "모든 저장소의 코드스페이스에서 GPG 서명과 VS Code 설정 동기화가 사용 가능해요.",
+                "Selected repositories": "선택한 저장소",
+                    "GPG signing and VS Code Settings Sync will be available for codespaces from the selected repositories": "선택한 저장소의 코드스페이스에서 GPG 서명과 VS Code 설정 동기화가 사용 가능해요.",
+                    "Select repositories": "저장소 선택하기",
+                    // [/Selected (\d+) repositor(y|ies)./, "선택된 저장소 $1개"],
+                    "GPG and VS Code Settings Sync will be available for Codespaces from these repositories.": "이 저장소의 코드스페이스에서 GPG와 VS Code 설정 동기화가 사용 가능해요.",
 
-            "Access and security": "访问和安全",
-            "Deprecated": "弃用",
-            "Codespaces you create for your personal account can either be restricted to accessing the repository it was opened for, or granted read access to other repositories you own.": "您为您个人账户创建的代码空间可以限制访问已启用的仓库或您其他被赋予读取权限的仓库",
-            "Disabled": "禁用",
-            "Limit access of personal Codespaces to the repository they were opened for": "限制个人代码空间只能访问对其打开的仓库",
-            "All Codespaces can access other repositories I own": "所有代码空间都可以访问我拥有的其它仓库",
-            "Personal Codespaces created for specific repositories can access other repositories I own": "为特定仓库创建的个人代码空间可以访问我拥有的其它仓库",
+            "Access and security": "접근 및 보안",
+            "Deprecated": "더 이상 사용되지 않아요",
+            "Codespaces you create for your personal account can either be restricted to accessing the repository it was opened for, or granted read access to other repositories you own.": "개인 계정으로 생성한 코드스페이스는, 열어본 저장소에만 접근하도록 제한하거나, 사용자님이 소유한 다른 저장소에 읽기 권한을 부여할 수 있어요.",
+            "Disabled": "비활성화",
+            "Limit access of personal Codespaces to the repository they were opened for": "개인 코드스페이스가 열어본 저장소에만 접근하도록 제한하기",
+            "All Codespaces can access other repositories I own": "모든 코드스페이스가 사용자님이 소유한 다른 저장소에 접근할 수 있어요.",
+            "Personal Codespaces created for specific repositories can access other repositories I own": "특정 저장소를 위해 생성한 개인 코드스페이스는 사용자님이 소유한 다른 저장소에 접근할 수 있어요.",
 
-            "Editor preference": "编辑器偏好",
+            "Editor preference": "에디터 선호도",
                 // VS code
-                    "Connect to the cloud from your local desktop client. Requires": "从本地桌面客户端连接到云。要求",
-                    "with the": "安装",
-                    "GitHub Codespaces": "GitHub 代码空间",
-                    "extension.": "插件。",
+                    "Connect to the cloud from your local desktop client. Requires": "로컬 데스크톱 클라이언트에서 클라우드에 연결하기. 필요 조건:",
+                    "with the": "와 함께:",
+                    "GitHub Codespaces": "GitHub 코드스페이스",
+                    "extension.": "확장 프로그램이 필요해요.",
 
-                "Visual Studio Code for the Web": "网络版的 Visual Studio Code",
-                    "Edit and preview changes straight from the browser.": "直接从浏览器编辑和预览更改。",
+                "Visual Studio Code for the Web": "웹용 Visual Studio Code",
+                    "Edit and preview changes straight from the browser.": "브라우저에서 바로 편집하고 변경 사항을 미리보기 할 수 있어요.",
 
                 // "JetBrains Gateway": "",
-                    "Connect to the cloud from your local desktop client. Requires the": "从本地桌面客户端连接到云。要求",
-                    "plugin, and a JetBrains license.": "插件和 JetBrains 许可证。",
+                    "Connect to the cloud from your local desktop client. Requires the": "로컬 데스크톱 클라이언트에서 클라우드에 연결하기. 필요 조건:",
+                    "plugin, and a JetBrains license.": "플러그인과 JetBrains 라이센스가 필요해요.",
 
                 // JupyterLab
-                    "Edit and run notebooks from the browser with JupyterLab.": "使用 JupyterLab 从浏览器编辑和运行笔记本。",
+                    "Edit and run notebooks from the browser with JupyterLab.": "JupyterLab를 사용해 브라우저에서 노트북을 편집하고 실행해보세요.",
 
-            "Default idle timeout": "默认空闲超时",
-                "A codespace will suspend after a period of inactivity. You can specify a default idle timeout value, which will apply to all codespaces created after the default is changed. You will be charged for the entire time your codespace is running, even if it is idle. The maximum value is": "一段时间不活动后，代码空间将暂停。您可以指定一个默认的空闲超时值，该值将应用于更改默认值后创建的所有代码空间。您将在代码空间运行的整个过程中付费，即使它是空闲的。最大值是",
-                "minutes (4 hours).": "分钟（4小时）。",
-                "minutes": "分钟",
+            "Default idle timeout": "기본 유휴 시간 초과",
+                "A codespace will suspend after a period of inactivity. You can specify a default idle timeout value, which will apply to all codespaces created after the default is changed. You will be charged for the entire time your codespace is running, even if it is idle. The maximum value is": "일정 시간 동안 활동이 없으면 코드스페이스가 일시 중지돼요. 기본 유휴 시간 초과 값을 지정할 수 있으며, 이 값은 기본값 변경 이후 생성되는 모든 코드스페이스에 적용돼요. 코드스페이스가 실행 중인 전체 시간에 대해 요금이 부과되니 참고해주세요. 최대 값은",
+                "minutes (4 hours).": "분 (4시간).",
+                "minutes": "분",
 
-            "Default retention period": "默认保留期",
-                "Inactive codespaces are automatically deleted 30 days after the last time they were stopped. A shorter retention period can be set, and will apply to all codespaces created going forward. The default and maximum value is": "不活跃的代码空间在上次停止后 30 天自动删除。可以设置更短的保留期，并将应用于以后创建的所有代码空间。默认值和最大值是",
-                "days.": "天。",
-                "Learn about retention setting": "了解关于保留时间的设置",
-                "days": "天",
+            "Default retention period": "기본 보존 기간",
+                "Inactive codespaces are automatically deleted 30 days after the last time they were stopped. A shorter retention period can be set, and will apply to all codespaces created going forward. The default and maximum value is": "활동하지 않는 코드스페이스는 마지막 중지 시점 이후 30일 후 자동으로 삭제돼요. 더 짧은 보존 기간을 설정할 수 있으며, 이 값은 이후 생성되는 모든 코드스페이스에 적용돼요. 기본값 및 최대 값은",
+                "days.": "일.",
+                "Learn about retention setting": "보존 기간 설정에 대해 알아보세요",
+                "days": "일",
 
-            "Host image version preference": "主机镜像版本偏好",
-                "The host image defines the operating system in which development containers run. These images receive periodic upgrades for security, functionality, and performance. GitHub Codespaces offers early access to beta images to ensure compatibility with existing development container configurations. Any codespace created or resumed after changing this setting will use the specified image configuration.": "主机镜像定义了开发容器运行的操作系统。这些镜像会定期进行安全、功能和性能升级。GitHub 代码空间提供对测试版镜像的早期访问，以确保与现有开发容器配置的兼容性。更改此设置后创建或恢复的代码空间都将使用指定的镜像配置。",
-                "Learn more about host images": "了解更多关于主机镜像的信息",
-                "Stable": "稳定版",
-                    "Always use the latest stable configuration.": "始终使用最新的稳定版。",
-                "Beta": "测试版",
-                    "Use a beta image configuration when available. Otherwise, use the latest stable configuration.": "如果可用，请使用测试版映像配置。否则，请使用最新的稳定配置。",
+            "Host image version preference": "호스트 이미지 버전 선호도",
+                "The host image defines the operating system in which development containers run. These images receive periodic upgrades for security, functionality, and performance. GitHub Codespaces offers early access to beta images to ensure compatibility with existing development container configurations. Any codespace created or resumed after changing this setting will use the specified image configuration.": "호스트 이미지는 개발 컨테이너가 실행되는 운영 체제를 정의해요. 이 이미지들은 보안, 기능, 성능 향상을 위해 주기적으로 업그레이드돼요. GitHub 코드스페이스는 기존 개발 컨테이너 구성과의 호환성을 보장하기 위해 베타 이미지에 조기 접근할 수 있도록 제공해요. 이 설정을 변경한 후 생성되거나 재개되는 모든 코드스페이스는 지정된 이미지 구성을 사용하게 돼요.",
+                "Learn more about host images": "호스트 이미지에 대해 더 알아보세요",
+                "Stable": "안정판",
+                    "Always use the latest stable configuration.": "항상 최신 안정판 구성을 사용해보세요.",
+                "Beta": "베타",
+                    "Use a beta image configuration when available. Otherwise, use the latest stable configuration.": "베타 이미지 구성이 사용 가능하면 사용해보세요. 그렇지 않으면 최신 안정판 구성을 사용해주세요.",
 
-            "Region": "地区",
-                "Your default region will be used to designate compute resources to your codespaces. GitHub can set your region automatically based on your location, or you can set it yourself. Codespaces are deployed to a subset of Azure regions.": "您的默认区域将被用来为您的代码空间指定计算资源。 GitHub 可以根据您的位置自动设置您的区域，您也可以自己设置。代码空间部署到 Azure 区域的子集。",
-                "Set automatically": "自动设置",
-                "We will determine the closest available region based on your location (IP address) at codespace creation time.": "我们将在创建代码空间时根据您的位置（IP地址）确定最近的可用区域。",
-                "Set manually": "手动设置",
-                "Choose your default region": "选择您的默认区域",
-                    "United States": "美国",
-                        "US West": "美国西部",
-                        "US East": "美国东部",
-                    "Europe": "欧洲",
-                        "Europe West": "欧洲西部",
-                    "Asia Pacific": "亚太地区",
-                        "Southeast Asia": "东南亚",
-                    "Australia": "澳大利亚",
+            "Region": "지역",
+                "Your default region will be used to designate compute resources to your codespaces. GitHub can set your region automatically based on your location, or you can set it yourself. Codespaces are deployed to a subset of Azure regions.": "사용자님의 기본 지역은 코드스페이스에 컴퓨팅 자원을 할당하는 데 사용돼요. GitHub가 사용자님의 위치에 따라 자동으로 지역을 설정할 수도 있고, 직접 설정할 수도 있어요. 코드스페이스는 Azure의 일부 지역에 배포돼요.",
+                "Set automatically": "자동 설정하기",
+                "We will determine the closest available region based on your location (IP address) at codespace creation time.": "코드스페이스 생성 시 사용자님의 위치(IP 주소)를 기반으로 가장 가까운 사용 가능한 지역을 결정할 거예요.",
+                "Set manually": "수동 설정하기",
+                "Choose your default region": "기본 지역 선택하기",
+                    "United States": "미국",
+                        "US West": "미국 서부",
+                        "US East": "미국 동부",
+                    "Europe": "유럽",
+                        "Europe West": "유럽 서부",
+                    "Asia Pacific": "아시아 태평양",
+                        "Southeast Asia": "동남아시아",
+                    "Australia": "호주",
 
-            // 顶部提醒
-                "Secret added.": "机密已添加。",
-                "Secret deleted.": "机密已删除。",
-                "Secret updated.": "机密已更新。",
+            // 상단 알림
+                "Secret added.": "기밀이 추가되었어요.",
+                "Secret deleted.": "기밀이 삭제되었어요.",
+                "Secret updated.": "기밀이 업데이트되었어요.",
 
-        // 代码空间 机密新建 https://github.com/settings/codespaces/secrets/new
-            "/ New secret": "/ 新建机密",
-            "Add secret": "添加机密",
-                "Adding…": "添加中…",
+        // 코드스페이스 기밀 새로 만들기 https://github.com/settings/codespaces/secrets/new
+            "/ New secret": "/ 새 기밀",
+            "Add secret": "기밀 추가하기",
+                "Adding…": "추가 중이에요…",
 
-            "Name": "名称",
-                "YOUR_SECRET_NAME": "您的机密名称",
-                "Secret name is required and must not start with GITHUB": "机密名称是必需的，并且不能以 GITHUB 开头",
-            "Value": "值",
+            "Name": "이름",
+                "YOUR_SECRET_NAME": "사용자님의 기밀 이름",
+                "Secret name is required and must not start with GITHUB": "기밀 이름은 필수이며, GITHUB로 시작할 수 없어요",
+            "Value": "값",
 
-            "Repository access": "仓库权限",
-            "Available to": "适用于",
+            "Repository access": "저장소 접근 권한",
+            "Available to": "사용 대상",
             "repository": "저장소",
-            "This secret will not be active until at least 1 repository is selected.": "至少选择 1 个仓库，否则此机密不会处于活动状态。",
+            "This secret will not be active until at least 1 repository is selected.": "이 기밀은 최소 1개의 저장소가 선택되어야 활성화돼요.",
 
-        // 编辑机密 https://github.com/settings/codespaces/secrets/<机密名称>/edit
-            "/ Update secret": "/ 更新机密",
-            "Secret values are encrypted and cannot be displayed, but you can": "机密值已加密，无法显示，但您可以",
-            "enter a new value.": "输入一个新值。",
-            "Update secret": "更新机密",
-                "Updating…": "更新中…",
-            "Save changes": "保存更改",
+        // 기밀 편집 https://github.com/settings/codespaces/secrets/<기밀이름>/edit
+            "/ Update secret": "/ 기밀 업데이트",
+            "Secret values are encrypted and cannot be displayed, but you can": "기밀 값은 암호화되어 표시할 수 없지만, 새로운 값을",
+            "enter a new value.": "입력할 수 있어요.",
+            "Update secret": "기밀 업데이트하기",
+                "Updating…": "업데이트 중이에요…",
+            "Save changes": "변경 사항 저장하기",
 
     },
-    "regexp": [ // 正则翻译
-        [/Selected (\d+) repositor(y|ies)./, "选定 $1 个仓库"],
-        [/(\d+) repositor(y|ies)/, "$1 个仓库"],
-        [/Are you sure you want to delete ([^ ]+)\?/, "您确定要删除 $1 吗？"],
+    "regexp": [ // 정규식 번역
+        [/Selected (\d+) repositor(y|ies)./, "선택된 저장소 $1개"],
+        [/(\d+) repositor(y|ies)/, "$1 개의 저장소"],
+        [/Are you sure you want to delete ([^ ]+)\?/, "$1 삭제하시겠어요?"],
     ],
 };
 
-I18N["ko-KR"]["settings/packages"] = { // 设置 - 软件包
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/packages"] = { // 설정 - 패키지
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
-        ...I18N["ko-KR"]["orgs-settings-menu"]["static"], // 组织设置
+        ...I18N["ko-KR"]["orgs-settings-menu"]["static"], // 조직 설정
 
-        // Packages 软件包 https://github.com/settings/packages
-            "Packages permissions": "软件包权限",
+        // Packages 패키지 https://github.com/settings/packages
+            "Packages permissions": "패키지 권한",
 
-            // 组织设置
-                "Package creation": "包的创建",
-                "Members will be able to publish only the selected visibility types for packages and containers. Outside collaborators can never publish packages or containers.": "成员只能发布选定可见性类型的软件包和容器。外部协作者永远不能发布软件包或容器。",
+            // 조직 설정
+                "Package creation": "패키지 생성하기",
+                "Members will be able to publish only the selected visibility types for packages and containers. Outside collaborators can never publish packages or containers.": "회원은 선택된 공개 유형의 패키지와 컨테이너만 게시할 수 있어요. 외부 협업자는 절대 패키지나 컨테이너를 게시할 수 없어요.",
                 "Public": "공개",
-                    "Members will be able to create public packages, visible to anyone.": "成员将能够创建公共包，对任何人都可见。",
+                    "Members will be able to create public packages, visible to anyone.": "회원은 누구나 볼 수 있는 공개 패키지를 만들 수 있어요.",
                 "Private": "비공개",
-                    "Members will be able to create private packages, visible to organization members with permission.": "成员将能够创建私有包，对具有权限的组织成员可见。",
-                "Internal": "内部",
-                    "Members will be able to create internal packages, visible to all organization/enterprise members.": "成员将能够创建内部包，对所有组织/企业成员可见。",
+                    "Members will be able to create private packages, visible to organization members with permission.": "회원은 권한이 있는 조직 구성원만 볼 수 있는 비공개 패키지를 만들 수 있어요.",
+                "Internal": "내부",
+                    "Members will be able to create internal packages, visible to all organization/enterprise members.": "회원은 모든 조직/기업 구성원이 볼 수 있는 내부 패키지를 만들 수 있어요.",
 
-            "Default Package Setting": "默认软件包设置",
-            "Default package settings": "默认软件包设置", // 组织
-            "This setting will be applied to new Container, npm, rubygems and NuGet packages.": "此设置将应用于新的容器、npm、rubygems 和 NuGet 软件包。",
-            "Inherit access from source repository": "从源仓库继承访问权限",
-            "Save": "保存",
+            "Default Package Setting": "기본 패키지 설정",
+            "Default package settings": "기본 패키지 설정", // 조직
+            "This setting will be applied to new Container, npm, rubygems and NuGet packages.": "이 설정은 새로운 컨테이너, npm, rubygems 및 NuGet 패키지에 적용될 거예요.",
+            "Inherit access from source repository": "원본 저장소에서 접근 권한 상속하기",
+            "Save": "저장하기",
 
-            "Deleted Packages": "删除的软件包",
-            "Deleted packages": "删除的软件包", // 组织
-            "These are packages that have been previously deleted belonging to you. You can restore a package deleted within the last 30 days.": "这些是先前已删除的属于您的软件包。您可以恢复在过去 30 天内删除的包。",
-            "These are packages that have been previously deleted belonging to this organization. You can restore a package deleted within the last 30 days.": "这些是先前已删除的属于您组织的软件包。您可以恢复在过去 30 天内删除的包。", // 组织设置
-            "Search deleted packages": "搜索已删除的软件包",
+            "Deleted Packages": "삭제된 패키지",
+            "Deleted packages": "삭제된 패키지", // 조직
+            "These are packages that have been previously deleted belonging to you. You can restore a package deleted within the last 30 days.": "이것들은 사용자님께 속했던 이전에 삭제된 패키지들이에요. 지난 30일 이내에 삭제된 패키지는 복원할 수 있어요.",
+            "These are packages that have been previously deleted belonging to this organization. You can restore a package deleted within the last 30 days.": "이것들은 이 조직에 속했던 이전에 삭제된 패키지들이에요. 지난 30일 이내에 삭제된 패키지는 복원할 수 있어요.", // 조직 설정
+            "Search deleted packages": "삭제된 패키지 검색하기",
 
     },
-    "regexp": [ // 正则翻译
-        [/No recoverable packages were found for ([^ ]+)./, "没有找到 $1 的可恢复包。"],
+    "regexp": [ // 정규식 번역
+        [/No recoverable packages were found for ([^ ]+)./, "$1 에 대해 복원 가능한 패키지를 찾을 수 없어요."],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 I18N["ko-KR"]["orgs/settings/packages"] = I18N["ko-KR"]["settings/packages"];
 
-I18N["ko-KR"]["settings/copilot"] = { // 设置 - GitHub Copilot
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/copilot"] = { // 설정 - GitHub Copilot
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
         // GitHub Copilot https://github.com/settings/copilot
-            "Trained on billions of lines of code,": "经过数十亿行代码的训练，",
-            "turns natural language prompts into coding suggestions across dozens of languages.": "将自然语言提示转换为多种语言的编码建议。",
-            "Start free trial": "开始免费试用",
-            "After that $10/month": "结束试用后 $10 / 月",
-            "Get Copilot from an organization": "从组织中获取 GitHub Copilot",
-            "Organizations can provide their members (including you) and their teams access to GitHub Copilot.": "组织可以为其成员（包括您）及其团队提供使用 GitHub Copilot 的权限。",
-            "Organizations owned by enterprise accounts": "企业账户拥有的组织",
-            "are not currently listed.": "目前未包含在此计划中。",
-            "You do not belong to any organizations.": "您不属于任何组织。",
-            "Create an organization": "创建一个组织",
+            "Trained on billions of lines of code,": "수십억 줄의 코드로 훈련되었어요,",
+            "turns natural language prompts into coding suggestions across dozens of languages.": "자연어 프롬프트를 수십 가지 언어의 코드 제안으로 전환해줘요.",
+            "Start free trial": "무료 체험 시작하기",
+            "After that $10/month": "체험 후 $10/월이에요",
+            "Get Copilot from an organization": "조직에서 GitHub Copilot 받기",
+            "Organizations can provide their members (including you) and their teams access to GitHub Copilot.": "조직은 구성원(사용자님 포함)과 팀에게 GitHub Copilot 접근 권한을 제공할 수 있어요.",
+            "Organizations owned by enterprise accounts": "기업 계정이 소유한 조직은",
+            "are not currently listed.": "현재 목록에 포함되어 있지 않아요.",
+            "You do not belong to any organizations.": "사용자님은 어떠한 조직에도 속해 있지 않아요.",
+            "Create an organization": "조직 만들기",
 
-            "Ask admin for access": "向管理员请求访问权限",
-            "Requesting...": "请求中...",
-            "Remove request": "撤销请求",
-            "Cancelling...": "撤销中...",
-            "Buy Copilot Business": "购买 GitHub Copilot 企业版",
-            "Owner": "所有者",
-            "Member": "成员",
+            "Ask admin for access": "관리자에게 접근 권한 요청하기",
+            "Requesting...": "요청 중이에요...",
+            "Remove request": "요청 취소하기",
+            "Cancelling...": "취소 중이에요...",
+            "Buy Copilot Business": "GitHub Copilot 기업용 구매하기",
+            "Owner": "소유자",
+            "Member": "구성원",
 
-        // 免费版
-            "You are using Copilot for free": "您正在使用 Copilot 免费版",
-                "Responses are limited to 2,000 code completions and 50 chat messages per month.": "回复上限为每月 2,000 次代码完成和 50 条聊天信息。",
-            //"Copilot Free is active for your account": "您的账户已启用 Copilot 免费版",
-                //"Responses are capped at 2,000 code completions and 50 chat messages per month.": "回复上限为每月 2,000 次代码完成和 50 条聊天信息。",
-            "Get unlimited usage with Copilot Pro": "通过 Copilot Pro 无限制使用",
-                "Unlimited messages and interactions": "信息和互动无限制",
-                "Access to the latest models": "访问最新模型",
-                "Customize conversations to your private codebase and extensions": "为您的私人代码库和扩展定制会话",
-                "Start a free trial": "免费试用",
+        // 무료 버전
+            "You are using Copilot for free": "사용자님은 GitHub Copilot 무료 버전을 사용 중이에요",
+                "Responses are limited to 2,000 code completions and 50 chat messages per month.": "응답은 매월 2,000회 코드 완성과 50개의 채팅 메시지로 제한돼 있어요.",
+            //"Copilot Free is active for your account": "사용자님의 계정에서 Copilot 무료 버전이 활성화되었어요",
+                //"Responses are capped at 2,000 code completions and 50 chat messages per month.": "응답은 매월 2,000회 코드 완성과 50개의 채팅 메시지로 제한돼 있어요.",
+            "Get unlimited usage with Copilot Pro": "GitHub Copilot Pro로 무제한 사용하기",
+                "Unlimited messages and interactions": "메시지와 상호작용이 무제한이에요",
+                "Access to the latest models": "최신 모델에 접근할 수 있어요",
+                "Customize conversations to your private codebase and extensions": "사용자님의 개인 코드베이스와 확장 기능에 맞게 대화를 맞춤 설정해보세요",
+                "Start a free trial": "무료 체험 시작하기",
 
-            "Copilot policies": "Copilot 规则",
-                "Copilot in github.com": "在 github.com 中使用 Copilot",
-                    "You can use Copilot Chat in github.com, but not preview features.": "您可以在 github.com 中使用 Copilot Chat，但无预览功能。",
-                    "Learn more about Copilot in github.com": "了解更多关于在 github.com 中使用 Copilot 的信息",
-                "Suggestions matching public code (duplication detection filter)": "公共代码匹配的建议（重复检测过滤器）",
-                    "Copilot can allow or block suggestions matching public code. Learn more about": "Copilot 可允许或阻止与公共代码匹配的建议。了解更多关于",
-                    "code suggestions": "代码建议",
-                    "Allowed": "允许",
-                        "GitHub Copilot will show suggestions matching public code.": "GitHub Copilot 将显示与公共代码匹配的建议。",
-                    "Blocked": "阻止",
-                        "GitHub Copilot won't show suggestions matching public code.": "GitHub Copilot 不会显示与公共代码匹配的建议。",
-                "Allow GitHub to use my data for product improvements": "允许 GitHub 将数据用于产品改进",
-                //"Allow GitHub to use my code snippets from the code editor for product improvements": "允许 GitHub 将代码编辑器中的代码片段用于产品改进",
-                    "Allow GitHub, its affiliates and third parties to use my data, including Prompts, Suggestions, and Code Snippets, for product improvements. More information in the": "允许GitHub、其关联公司和第三方使用我的数据，包括提示、建议和代码片段，以改进产品。更多信息请查看",
-                    //"Allow GitHub, its affiliates and third parties to use my code snippets to research and improve GitHub Copilot suggestions, related models and product features. More information in the": "允许 GitHub、其附属机构和第三方使用我的代码片段来研究和改进 GitHub Copilot 建议、相关模型和产品功能。更多",
-                    "About GitHub Copilot privacy.": "关于 GitHub Copilot 隐私的信息。",
-                "Allow GitHub to use my data for AI model training": "允许 GitHub 将数据用于训练 AI 模型",
-                    "Allow GitHub, its affiliates and third parties to use my data, including Prompts, Suggestions, and Code Snippets, for AI model training. More information in the": "允许GitHub、其关联公司和第三方使用我的数据，包括提示、建议和代码片段，以训练 AI 模型。更多信息请查看",
-                "Copilot access to Bing": "访问必应",
-                    "Copilot can answer questions about new trends and give improved answers.": "Copilot 可以回答有关新趋势的问题，并给出改进的答案。",
-                    "See Microsoft Privacy Statement": "请参阅微软隐私声明",
+            "Copilot policies": "Copilot 정책",
+                "Copilot in github.com": "github.com에서 Copilot 사용하기",
+                    "You can use Copilot Chat in github.com, but not preview features.": "github.com에서는 Copilot Chat을 사용할 수 있어요, 단 미리보기 기능은 지원되지 않아요.",
+                    "Learn more about Copilot in github.com": "github.com에서 Copilot 사용에 대해 더 알아보기",
+                "Suggestions matching public code (duplication detection filter)": "공개 코드와 일치하는 제안 (중복 감지 필터)",
+                    "Copilot can allow or block suggestions matching public code. Learn more about": "Copilot은 공개 코드와 일치하는 제안을 허용하거나 차단할 수 있어요. 자세한 내용은",
+                    "code suggestions": "코드 제안",
+                    "Allowed": "허용",
+                        "GitHub Copilot will show suggestions matching public code.": "GitHub Copilot은 공개 코드와 일치하는 제안을 보여줄 거예요.",
+                    "Blocked": "차단",
+                        "GitHub Copilot won't show suggestions matching public code.": "GitHub Copilot은 공개 코드와 일치하는 제안을 보여주지 않을 거예요.",
+                "Allow GitHub to use my data for product improvements": "GitHub이 제품 개선을 위해 사용자님의 데이터를 사용하는 것을 허용하기",
+                //"Allow GitHub to use my code snippets from the code editor for product improvements": "GitHub이 코드 에디터의 코드 조각을 사용해 제품을 개선하는 것을 허용하기",
+                    "Allow GitHub, its affiliates and third parties to use my data, including Prompts, Suggestions, and Code Snippets, for product improvements. More information in the": "GitHub과 그 계열사 및 제3자가 사용자님의 데이터(프롬프트, 제안, 코드 조각 포함)를 제품 개선에 사용하는 것을 허용해 주세요. 자세한 내용은",
+                    //"Allow GitHub, its affiliates and third parties to use my code snippets to research and improve GitHub Copilot suggestions, related models and product features. More information in the": "GitHub과 그 계열사 및 제3자가 사용자님의 코드 조각을 사용해 GitHub Copilot 제안, 관련 모델 및 제품 기능을 연구하고 개선하는 것을 허용해 주세요. 자세한 내용은",
+                    "About GitHub Copilot privacy.": "GitHub Copilot 개인정보 보호에 대해 확인해 보세요.",
+                "Allow GitHub to use my data for AI model training": "GitHub이 AI 모델 훈련을 위해 사용자님의 데이터를 사용하는 것을 허용하기",
+                    "Allow GitHub, its affiliates and third parties to use my data, including Prompts, Suggestions, and Code Snippets, for AI model training. More information in the": "GitHub과 그 계열사 및 제3자가 사용자님의 데이터(프롬프트, 제안, 코드 조각 포함)를 AI 모델 훈련에 사용하는 것을 허용해 주세요. 자세한 내용은",
+                "Copilot access to Bing": "Copilot의 Bing 접근",
+                    "Copilot can answer questions about new trends and give improved answers.": "Copilot은 새로운 트렌드에 관한 질문에 답하고 개선된 답변을 제공할 수 있어요.",
+                    "See Microsoft Privacy Statement": "Microsoft 개인정보 보호정책 보기",
 
-                    "GitHub Copilot will answer questions about new trends and give improved answers": "GitHub Copilot 将回答有关新趋势的问题并给出改进的答案",
-                    "GitHub Copilot won't answer questions about new trends and give improved answers": "GitHub Copilot 将不会回答有关新趋势的问题并给出改进的答案",
-                "Anthropic Claude 3.5 Sonnet in Copilot": "Claude 3.5 模型", // 简化部分名称
-                    "You can use the latest Claude 3.5 Sonnet model.": "您可以使用最新 Claude 3.5 Sonnet 模型。",
-                    "Learn more about how GitHub Copilot serves Claude 3.5 Sonnet.": "了解更多关于 GitHub Copilot 如何为 Claude 3.5 Sonnet 提供服务。",
-                    "Select an option": "选择",
-                        "You will have access to the feature": "您将能够访问此功能",
-                        "You won’t have access to the feature": "您将不能访问此功能",
-                "Dashboard entry point": "仪表板入口",
-                    "Allows instant chatting when landing on GitHub.com": "允许登陆 GitHub.com 时即时聊天",
+                    "GitHub Copilot will answer questions about new trends and give improved answers": "GitHub Copilot은 새로운 트렌드에 관한 질문에 답하고 개선된 답변을 제공할 거예요",
+                    "GitHub Copilot won't answer questions about new trends and give improved answers": "GitHub Copilot은 새로운 트렌드에 관한 질문에 답하지 않고 개선된 답변을 제공하지 않을 거예요",
+                "Anthropic Claude 3.5 Sonnet in Copilot": "Copilot에서 Anthropic Claude 3.5 Sonnet 사용하기", // 간략화된 명칭
+                    "You can use the latest Claude 3.5 Sonnet model.": "최신 Claude 3.5 Sonnet 모델을 사용할 수 있어요.",
+                    "Learn more about how GitHub Copilot serves Claude 3.5 Sonnet.": "GitHub Copilot이 Claude 3.5 Sonnet에 어떻게 서비스를 제공하는지 더 알아보세요.",
+                    "Select an option": "옵션 선택하기",
+                        "You will have access to the feature": "이 기능을 사용할 수 있게 될 거예요",
+                        "You won’t have access to the feature": "이 기능을 사용할 수 없게 될 거예요",
+                "Dashboard entry point": "대시보드 진입점",
+                    "Allows instant chatting when landing on GitHub.com": "GitHub.com 접속 시 즉시 채팅할 수 있도록 해줘요",
 
-            "For more information about the data your organization receives regarding your use of GitHub Copilot, please review": "如需了解贵机构在使用 GitHub Copilot 时会收到哪些数据，请查看",
-                "GitHub's Privacy Statement": "GitHub 的《隐私声明》",
-            "It can take up to 30 minutes for the changes to take effect. Restart your code editor for the changes to take effect immediately.": "更改可能需要 30 分钟才能生效。重新启动代码编辑器，更改会立即生效。",
+            "For more information about the data your organization receives regarding your use of GitHub Copilot, please review": "조직이 사용자님의 GitHub Copilot 사용 관련 데이터에 대해 받는 정보에 관해서는 꼭 확인해 주세요",
+                "GitHub's Privacy Statement": "GitHub 개인정보 보호정책",
+            "It can take up to 30 minutes for the changes to take effect. Restart your code editor for the changes to take effect immediately.": "변경 사항이 적용되기까지 최대 30분이 걸릴 수 있어요. 즉시 적용하려면 코드 에디터를 재시작해 주세요.",
 
-        // 专业版
-            // 顶部提醒
-                "It appears you are not eligible to sign up to GitHub Copilot for free": "您似乎没有资格免费注册 GitHub Copilot",
-            "Your GitHub Copilot setup is incomplete. Select your preferences below to start using GitHub Copilot.": "您的 GitHub Copilot 设置不完整。请在下面选择您的偏好，开始使用 GitHub Copilot。",
+        // 프로 버전
+            // 상단 알림
+                "It appears you are not eligible to sign up to GitHub Copilot for free": "사용자님은 무료 GitHub Copilot 가입 자격이 없는 것 같아요",
+            "Your GitHub Copilot setup is incomplete. Select your preferences below to start using GitHub Copilot.": "사용자님의 GitHub Copilot 설정이 완전하지 않아요. 아래에서 선호도를 선택해 GitHub Copilot 사용을 시작해 주세요.",
 
-            "GitHub Copilot Pro is active for your account": "您的 GitHub Copilot Pro 帐户已激活",
-                "You currently have an active": "您当前拥有有效的",
-                "Copilot Pro subscription": "GitHub Copilot Pro 订阅",
-                "Get started by installing the extension in your preferred IDE.": "首先在您首选的 IDE 中安装扩展。",
-                "Copilot in your IDE": "集成在 IDE",
-                "Copilot in the CLI": "在终端中使用",
-                "Chat in GitHub Mobile": "在 GitHub Mobile 中使用",
-                "More features": "更多功能",
+            "GitHub Copilot Pro is active for your account": "사용자님의 GitHub Copilot Pro가 계정에 활성화되어 있어요",
+                "You currently have an active": "현재 활성화된",
+                "Copilot Pro subscription": "GitHub Copilot Pro 구독이 있어요",
+                "Get started by installing the extension in your preferred IDE.": "사용자님이 선호하는 IDE에 확장 기능을 설치하여 시작해 보세요.",
+                "Copilot in your IDE": "IDE 내의 Copilot",
+                "Copilot in the CLI": "터미널 내의 Copilot",
+                "Chat in GitHub Mobile": "GitHub Mobile에서 채팅하기",
+                "More features": "더 많은 기능",
 
-            // "Copilot policies": "Copilot 规则",
-                // "Copilot in github.com": "在 github.com 中使用 Copilot",
-                    "You can use Copilot Chat in github.com, Copilot for pull requests, and all of the preview features.": "您可以在 github.com 中使用 Copilot Chat，也可以使用 Copilot 拉取请求和所有预览功能。",
-                // "Copilot in the CLI": "在终端中使用",
-                    "You can use": "您可以",
-                    "GitHub Copilot for assistance in terminal": "GitHub Copilot 终端辅助工具",
-                "Copilot Chat in the IDE": "在 IDE 中使用 Copilot Chat",
-                    "GitHub Copilot Chat in the IDE": "在 IDE 中使用 Copilot Chat",
-                    "to explain a piece of code, propose bug fixes, or generate unit tests in a chat interface from your editor.": "在编辑器的聊天界面上解释代码、提出错误修复建议或生成单元测试。",
-                "Copilot Chat in GitHub Mobile": "在 GitHub Mobile 中使用 Copilot Chat",
-                    "personalized to a codebase.": "，个性化代码。",
-
+            // "Copilot policies": "Copilot 정책",
+                // "Copilot in github.com": "github.com에서 Copilot 사용하기",
+                    "You can use Copilot Chat in github.com, Copilot for pull requests, and all of the preview features.": "github.com에서는 Copilot Chat, 끌어오기 요청용 Copilot, 그리고 모든 미리보기 기능을 사용할 수 있어요.",
+                // "Copilot in the CLI": "터미널 내의 Copilot 사용하기",
+                    "You can use": "사용할 수 있어요",
+                    "GitHub Copilot for assistance in terminal": "터미널에서 GitHub Copilot 도움 기능을",
+                "Copilot Chat in the IDE": "IDE 내의 Copilot Chat",
+                    "GitHub Copilot Chat in the IDE": "IDE 내에서 GitHub Copilot Chat을",
+                    "to explain a piece of code, propose bug fixes, or generate unit tests in a chat interface from your editor.": "코드 한 조각을 설명하거나, 버그 수정을 제안하거나, 단위 테스트를 생성하기 위해 에디터의 채팅 인터페이스를 사용해 보세요.",
+                "Copilot Chat in GitHub Mobile": "GitHub Mobile 내의 Copilot Chat",
+                    "personalized to a codebase.": "개인 코드베이스에 맞춰 개인화되어 있어요.",
     },
-    "regexp": [ // 正则翻译
-        [/Outside collaborator on (\d+) repositor(y|ies)/, "$1 个仓库的外部协作者"],
-        [/Member and collaborator on (\d+) repositor(y|ies)/, "$1 个仓库的成员和协作者"],
+    "regexp": [ // 정규식 번역
+        [/Outside collaborator on (\d+) repositor(y|ies)/, "$1 개 저장소의 외부 협업자"],
+        [/Member and collaborator on (\d+) repositor(y|ies)/, "$1 개 저장소의 구성원 및 협업자"],
     ],
 };
 
-I18N["ko-KR"]["settings/pages"] = { // 设置 - GitHub Pages
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/pages"] = { // 설정 - GitHub 페이지
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
-        ...I18N["ko-KR"]["orgs-settings-menu"]["static"], // 组织设置菜单
+        ...I18N["ko-KR"]["orgs-settings-menu"]["static"], // 조직 설정 메뉴
 
         // GitHub Pages https://github.com/settings/pages
-            "Verified domains": "经验证的域名",
-            "Add a domain": "添加域名",
-            "There are no verified domains.": "暂无经验证的域名",
-            "There are no verified domains for this organization.": "此组织暂无经验证的域名", // 组织设置
-            "Verify domains to restrict who can publish GitHub Pages on them.": "验证域名以限制谁可以在上面发布 GitHub Pages。",
-            "One of your domains is unverified. Please verify it to prevent others from claiming it for their Pages sites.": "您添加的域名之一未经验证，请对其进行验证，以防止其他人在其主页网站上声明该信息。",
-            "Please verify your domain": "请验证您的域名",
-            "Continue verifying": "继续验证",
-            "Review verification steps": "查看验证步骤",
+            "Verified domains": "인증된 도메인",
+            "Add a domain": "도메인 추가하기",
+            "There are no verified domains.": "인증된 도메인이 없어요.",
+            "There are no verified domains for this organization.": "이 조직에 인증된 도메인이 없어요.", // 조직 설정
+            "Verify domains to restrict who can publish GitHub Pages on them.": "GitHub 페이지를 게시할 수 있는 대상을 제한하기 위해 도메인을 인증해 주세요.",
+            "One of your domains is unverified. Please verify it to prevent others from claiming it for their Pages sites.": "사용자님의 도메인 중 하나가 인증되지 않았어요. 다른 사용자가 자신의 페이지 사이트로 등록하지 못하도록 인증해 주세요.",
+            "Please verify your domain": "도메인을 인증해 주세요",
+            "Continue verifying": "인증 계속하기",
+            "Review verification steps": "인증 절차 확인하기",
 
-            // 域名删除对话框
-            "Delete verified domain": "删除已验证的域名",
-            "This is a destructive action. Your GitHub Pages sites may lose their custom domains.": "这是一个破坏性的操作，您的 GitHub Pages 网站可能会失去自定义域名。",
-            "Your GitHub Pages sites may be unpublished from their custom domains if another organization claims ownership of this domain.": "如果其他组织声称拥有此域名的所有权，您的 GitHub Pages 网站可能会被从此自定义域名中取消发布。",
-            "Please type": "请输入",
-            "to confirm.": "进行确认",
-            "I understand, delete verified domain": "我明白了，依然删除已验证的域名",
+            // 도메인 삭제 대화 상자
+            "Delete verified domain": "인증된 도메인 삭제하기",
+            "This is a destructive action. Your GitHub Pages sites may lose their custom domains.": "이 작업은 되돌릴 수 없어요. GitHub 페이지 사이트가 사용자님의 맞춤 도메인을 잃을 수 있어요.",
+            "Your GitHub Pages sites may be unpublished from their custom domains if another organization claims ownership of this domain.": "다른 조직이 이 도메인의 소유권을 주장하면, 사용자님의 GitHub 페이지 사이트가 맞춤 도메인에서 게시 해제될 수 있어요.",
+            "Please type": "입력해 주세요",
+            "to confirm.": "확인을 위해.",
+            "I understand, delete verified domain": "알겠습니다, 인증된 도메인 삭제할게요",
 
-        // GitHub Pages - 添加域名 https://github.com/settings/pages_verified_domains/new
-            "Add a verified domain": "经验证的域名",
-            "What domain would you like to add?": "您想添加什么域名？",
-            "Add domain": "添加域名",
-            "Domain name has already been added": "域名已添加",
-            "Add a DNS TXT record": "添加 DNS TXT 记录",
-            "Before we can verify": "在我们验证",
-            ", you'll need to complete these steps:": " 之前，您需要完成以下步骤：",
-            "Create a TXT record in your DNS configuration for the following hostname:": "在 DNS 配置中为以下主机创建 TXT 记录：",
-            "Use this code for the value of the TXT record:": "使用以下代码作为 TXT 记录的值：",
-            "Wait until your DNS configuration changes. This could take up to 24 hours to propagate.": "等待您的 DNS 变更解析生效，最长可能需要 24 小时。",
-            "Verify": "验证",
-            "Copy verification steps": "复制验证步骤",
-            "Your domain is verified. No further action is needed.": "您的域名已验证，无需其它操作。",
+            // GitHub Pages - 도메인 추가 https://github.com/settings/pages_verified_domains/new
+            "Add a verified domain": "인증된 도메인 추가하기",
+            "What domain would you like to add?": "어떤 도메인을 추가하시겠어요?",
+            "Add domain": "도메인 추가하기",
+            "Domain name has already been added": "해당 도메인은 이미 추가되었어요",
+            "Add a DNS TXT record": "DNS TXT 레코드 추가하기",
+            "Before we can verify": "인증하기 전에",
+            ", you'll need to complete these steps:": "다음 절차를 완료해 주세요:",
+            "Create a TXT record in your DNS configuration for the following hostname:": "다음 호스트명에 대해 DNS 설정에서 TXT 레코드를 생성해 주세요:",
+            "Use this code for the value of the TXT record:": "TXT 레코드 값으로 이 코드를 사용해 주세요:",
+            "Wait until your DNS configuration changes. This could take up to 24 hours to propagate.": "DNS 설정 변경 사항이 전파될 때까지 기다려 주세요. 최대 24시간이 걸릴 수 있어요.",
+            "Verify": "인증하기",
+            "Copy verification steps": "인증 절차 복사하기",
+            "Your domain is verified. No further action is needed.": "사용자님의 도메인이 인증되었어요. 추가 조치는 필요 없어요.",
     },
-    "regexp": [ // 正则翻译
-        [/Successfully verified/, "已成功验证"],
+    "regexp": [ // 정규식 번역
+        [/Successfully verified/, "성공적으로 인증되었어요"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 I18N["ko-KR"]["orgs/settings/pages"] = I18N["ko-KR"]["settings/pages"];
 
-I18N["ko-KR"]["settings/replies"] = { // 设置 - 快捷回复
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/replies"] = { // 설정 - 빠른 답글
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Saved replies 快捷回复 https://github.com/settings/replies
-            "Saved replies are re-usable text snippets that you can use throughout GitHub comment fields. Saved replies can save you time if you’re often typing similar responses.": "快捷回复是可重复使用的文本片段，您可以在整个 GitHub 评论区使用。如果您经常输入类似的回复，快捷回复可以节省您的时间。",
-            "Learn more about working with saved replies": "了解更多关于使用快捷回复的信息",
-            "No saved replies yet.": "暂时没有快捷回复。",
-            "Add a saved reply": "添加快捷回复",
-            "Saved reply title": "快捷回复的标题",
-            "Add a short title to your reply": "为您的快捷回复添加简短的标题",
-            "Add your saved reply": "添加您的快捷回复",
-            "Add saved reply": "添加快捷回复",
-            "Your saved reply was created successfully.": "您的快捷回复已成功创建。",
-            "Edit saved reply": "编辑快捷回复",
-            "Update saved reply": "更新快捷回复",
-            "Your saved reply was updated successfully.": "您的快捷回复已成功更新。",
+        // Saved replies 빠른 답글 https://github.com/settings/replies
+            "Saved replies are re-usable text snippets that you can use throughout GitHub comment fields. Saved replies can save you time if you’re often typing similar responses.": "빠른 답글은 GitHub 댓글 입력란에서 반복 사용 가능한 텍스트 스니펫이에요. 비슷한 답글을 자주 입력하신다면, 빠른 답글을 사용해 시간을 절약할 수 있어요.",
+            "Learn more about working with saved replies": "빠른 답글 사용에 대해 더 알아보기",
+            "No saved replies yet.": "아직 빠른 답글이 없어요.",
+            "Add a saved reply": "빠른 답글 추가하기",
+            "Saved reply title": "빠른 답글 제목",
+            "Add a short title to your reply": "답글에 짧은 제목을 추가해 주세요",
+            "Add your saved reply": "사용자님의 빠른 답글 추가하기",
+            "Add saved reply": "빠른 답글 추가하기",
+            "Your saved reply was created successfully.": "사용자님의 빠른 답글이 성공적으로 생성되었어요.",
+            "Edit saved reply": "빠른 답글 편집하기",
+            "Update saved reply": "빠른 답글 업데이트하기",
+            "Your saved reply was updated successfully.": "사용자님의 빠른 답글이 성공적으로 업데이트되었어요.",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/security_analysis"] = { // 设置 - 代码安全性与分析
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/security_analysis"] = { // 설정 - 코드 보안 및 분석
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // 代码安全性与分析 https://github.com/settings/security_analysis
-            "Security and analysis features help keep your repositories secure and updated. By enabling these features, you're granting us permission to perform read-only analysis on your repositories.": "安全和分析功能有助于确保您的仓库安全和更新。通过启用这些功能，您授予我们对您的仓库执行只读分析的权限。",
+        // 코드 보안 및 분석 https://github.com/settings/security_analysis
+            "Security and analysis features help keep your repositories secure and updated. By enabling these features, you're granting us permission to perform read-only analysis on your repositories.":
+                "보안 및 분석 기능은 사용자님의 저장소를 안전하고 최신 상태로 유지하는 데 도움이 돼요. 이 기능들을 활성화하시면, 사용자님의 저장소에 대해 읽기 전용 분석을 수행할 수 있도록 허용하신 것으로 간주해요.",
 
-            "User": "用户",
-                "Security and analysis features help keep you secure and updated, wherever you are.": "无论您身在何处，安全和分析功能都可以帮助您保持安全并及时更新。",
+            "User": "사용자",
+                "Security and analysis features help keep you secure and updated, wherever you are.":
+                    "보안 및 분석 기능은 사용자님께서 어디에 계시든 안전하고 최신 상태를 유지하실 수 있도록 도와드려요.",
 
-                "Keep your public pushes safe with push protection": "通过推送保护确保您的公共推送安全",
-                "GitHub will enable push protection for all GitHub Free individuals in January 2024. Enable below to try it now in beta.": "GitHub 将于 2024 年 1 月为所有 GitHub 免费用户启用推送保护。在下面启用以立即在测试版中尝试。",
-                    "Dismiss": "忽略",
+                "Keep your public pushes safe with push protection":
+                    "푸시 보호로 사용자님의 공개 푸시를 안전하게 유지해보세요.",
+                "GitHub will enable push protection for all GitHub Free individuals in January 2024. Enable below to try it now in beta.":
+                    "GitHub은 2024년 1월에 모든 GitHub 무료 사용자에 대해 푸시 보호 기능을 활성화할 예정이에요. 아래에서 활성화하셔서 베타 버전을 바로 사용해보세요.",
+                    "Dismiss": "무시하기",
 
-                "Push protection for yourself": "启用推送保护",
-                    "Block commits that contain": "阻止提交，包含",
-                    "supported secrets": "受支持的机密",
-                    "across all public repositories on GitHub.": "涵盖 GitHub 上的所有公共仓库。",
+                "Push protection for yourself": "푸시 보호 사용하기",
+                    "Block commits that contain": "포함된 내용이 있는 커밋 차단하기",
+                    "supported secrets": "지원되는 기밀",
+                    "across all public repositories on GitHub.":
+                        "모든 GitHub 공개 저장소에 적용돼요.",
 
-                    // 对话框
-                        "Enable push protection for yourself": "为自己启用推送保护",
-                            "Pushes that contain secrets will be blocked on public repositories. You'll have the option to bypass the block.": "包含机密的推送将在公共仓库中被阻止。您可以选择绕过该阻止。",
-                            "Enable push protection": "启用推送保护",
+                    // 대화 상자
+                        "Enable push protection for yourself": "내 푸시 보호 활성화",
+                            "Pushes that contain secrets will be blocked on public repositories. You'll have the option to bypass the block.":
+                                "기밀이 포함된 푸시는 공개 저장소에서 차단될 거예요. 차단을 우회할 옵션도 제공돼요.",
+                            "Enable push protection": "푸시 보호 활성화",
 
-                        "Disable push protection for yourself": "为自己禁用推送保护",
-                            "Pushes that contain secrets will not be blocked.": "包含机密的推送将不会被阻止。",
-                            "Disable push protection": "禁用推送保护",
+                        "Disable push protection for yourself": "내 푸시 보호 비활성화",
+                            "Pushes that contain secrets will not be blocked.":
+                                "기밀이 포함된 푸시는 차단되지 않아요.",
+                            "Disable push protection": "푸시 보호 비활성화",
 
-                        // 顶部提醒
-                            // [/Security settings updated for ([^ ]+)\'s repositories./, "更新了 $1 的仓库的安全设置。"],
+                        // 상단 알림
+                            // [/Security settings updated for ([^ ]+)\'s repositories./, "업데이트된 $1 저장소의 보안 설정."],
 
-            // 仓库
-                "Security and analysis features help keep your repositories secure and updated.": "安全和分析功能可帮助您确保仓库的安全和更新。",
+            // 저장소
+                "Security and analysis features help keep your repositories secure and updated.":
+                    "보안 및 분석 기능은 사용자님의 저장소를 안전하고 최신 상태로 유지하는 데 도움이 돼요.",
 
-            "Disable all": "禁用全部",
-            "Enable all": "启用全部",
+            "Disable all": "전체 비활성화",
+            "Enable all": "전체 활성화",
 
-            "Private vulnerability reporting": "私下漏洞报告",
-                "Allow your community to privately report potential security vulnerabilities to maintainers and repository owners.": "允许您的社区向维护者和仓库所有者私下报告潜在的安全漏洞。",
-                "Learn more about private vulnerability reporting": "了解更多关于私下漏洞报告的信息",
-                "Automatically enable for new public repositories": "为新公共仓库自动启用",
+            "Private vulnerability reporting": "비공개 취약점 보고",
+                "Allow your community to privately report potential security vulnerabilities to maintainers and repository owners.":
+                    "커뮤니티가 유지관리자와 저장소 소유자에게 잠재적인 보안 취약점을 비공개로 보고할 수 있도록 허용해보세요.",
+                "Learn more about private vulnerability reporting": "비공개 취약점 보고에 대해 더 알아보기",
+                "Automatically enable for new public repositories": "새 공개 저장소에 대해 자동 활성화하기",
 
-                // 对话框
-                    "Disable private vulnerability reporting": "禁用私下漏洞报告",
-                        // [/You're about to disable private vulnerability reporting on all public repositories in ([^ ]+)./, "您即将在 $1 的所有公共仓库中禁用私下漏洞报告。"],
-                        "Enable by default for new public repositories": "默认启用新公共仓库",
+                // 대화 상자
+                    "Disable private vulnerability reporting": "비공개 취약점 보고 비활성화",
+                        // [/You're about to disable private vulnerability reporting on all public repositories in ([^ ]+)./, "사용자님께서 $1의 모든 공개 저장소에서 비공개 취약점 보고를 비활성화하려고 하십니다."],
+                        "Enable by default for new public repositories": "새 공개 저장소 기본 활성화",
 
-                    "Enable private vulnerability reporting": "启用私下漏洞报告",
-                        // [/You're about to enable private vulnerability reporting on all public repositories in ([^ ]+)./, "您即将在 $1 的所有公共仓库中启用私下漏洞报告。"],
+                    "Enable private vulnerability reporting": "비공개 취약점 보고 활성화",
+                        // [/You're about to enable private vulnerability reporting on all public repositories in ([^ ]+)./, "사용자님께서 $1의 모든 공개 저장소에서 비공개 취약점 보고를 활성화하려고 하십니다."],
 
-            "Dependency graph": "依赖关系图",
-                "Understand your dependencies.": "了解您的依赖项。",
-                "Automatically enable for new private repositories": "为新私有仓库自动启用",
+            "Dependency graph": "의존성 그래프",
+                "Understand your dependencies.": "의존 관계를 이해해보세요.",
+                "Automatically enable for new private repositories": "새 비공개 저장소에 대해 자동 활성화하기",
 
-                // 对话框
-                    "Enable dependency graph": "启用依赖关系图",
-                        "You're about to enable dependency graph on all your private repositories.": "您即将启用您所有私有仓库上的依赖关系图。",
-                        "Enable by default for new private repositories": "默认为新私有仓库启用",
+                // 대화 상자
+                    "Enable dependency graph": "의존성 그래프 활성화",
+                        "You're about to enable dependency graph on all your private repositories.":
+                            "사용자님의 모든 비공개 저장소에서 의존성 그래프를 활성화하려고 하십니다.",
+                        "Enable by default for new private repositories": "새 비공개 저장소 기본 활성화",
 
-                    "Disable dependency graph": "禁用依赖关系图",
-                        "You're about to disable dependency graph on all your private repositories. This will also disable Dependabot alerts and Dependabot security updates on those repositories.": "您即将禁用您所有私有仓库上的依赖关系图。这也将禁用这些仓库的 Dependabot 警报和 Dependabot 安全更新。",
+                    "Disable dependency graph": "의존성 그래프 비활성화",
+                        "You're about to disable dependency graph on all your private repositories. This will also disable Dependabot alerts and Dependabot security updates on those repositories.":
+                            "사용자님의 모든 비공개 저장소에서 의존성 그래프를 비활성화하려고 하십니다. 이 경우, 해당 저장소의 Dependabot 경고와 Dependabot 보안 업데이트도 함께 비활성화됩니다.",
 
             // Dependabot
-                "Keep your dependencies secure and up-to-date.": "保持您的依赖关系的安全和最新",
-                "Learn more about Dependabot": "了解更多关于 Dependabot 的信息",
+                "Keep your dependencies secure and up-to-date.":
+                    "사용자님의 의존성을 안전하고 최신 상태로 유지해보세요.",
+                "Learn more about Dependabot": "Dependabot에 대해 더 알아보기",
 
-                "Dependabot alerts": "Dependabot 警报",
-                    "Receive alerts for vulnerabilities that affect your dependencies and manually generate Dependabot pull requests to resolve these vulnerabilities.": "接收影响您的依赖关系的漏洞警报，并手动生成 Dependabot 拉取请求以解决这些漏洞。",
-                        "Configure alert notifications": "配置警报通知",
-                    "Automatically enable for new repositories": "为新仓库自动启用",
+                "Dependabot alerts": "Dependabot 경고",
+                    "Receive alerts for vulnerabilities that affect your dependencies and manually generate Dependabot pull requests to resolve these vulnerabilities.":
+                        "사용자님의 의존성에 영향을 미치는 취약점에 대한 경고를 받고, 수동으로 Dependabot 끌어오기 요청을 생성하여 문제를 해결해보세요.",
+                        "Configure alert notifications": "경고 알림 구성하기",
+                    "Automatically enable for new repositories": "새 저장소에 대해 자동 활성화하기",
 
-                    // 对话框
-                        "Enable Dependabot alerts": "启用 Dependabot 警报",
-                            "You're about to enable Dependabot alerts on all your repositories. Alerts require the dependency graph, so we'll also turn that on for all repositories. No notifications will be sent while Dependabot alerts are being enabled.": "您即将启用您所有仓库上的 Dependabot 警报。Dependabot 警报需要依赖关系图，因此我们还将为所有仓库开启它。启用 Dependabot 警报时不会发送任何通知。",
-                                "Enable by default for new repositories": "默认为新仓库启用",
+                    // 대화 상자
+                        "Enable Dependabot alerts": "Dependabot 경고 활성화",
+                            "You're about to enable Dependabot alerts on all your repositories. Alerts require the dependency graph, so we'll also turn that on for all repositories. No notifications will be sent while Dependabot alerts are being enabled.":
+                                "사용자님의 모든 저장소에서 Dependabot 경고를 활성화하려고 하십니다. Dependabot 경고는 의존성 그래프가 필요하므로, 모든 저장소에 대해 의존성 그래프도 함께 활성화됩니다. Dependabot 경고 활성화 중에는 알림이 전송되지 않아요.",
+                                "Enable by default for new repositories": "새 저장소 기본 활성화",
 
-                        "Disable Dependabot alerts": "禁用 Dependabot 警报",
-                            "You're about to disable Dependabot alerts on all your repositories. This will also disable Dependabot security updates on those repositories.": "您即将禁用您所有仓库上的 Dependabot 警报。这也将禁用这些仓库的 Dependabot 安全更新。",
+                        "Disable Dependabot alerts": "Dependabot 경고 비활성화",
+                            "You're about to disable Dependabot alerts on all your repositories. This will also disable Dependabot security updates on those repositories.":
+                                "사용자님의 모든 저장소에서 Dependabot 경고를 비활성화하려고 하십니다. 이 경우, 해당 저장소의 Dependabot 보안 업데이트도 함께 비활성화됩니다.",
 
-                "Dependabot security updates": "Dependabot 安全更新",
-                    "Enabling this option will result in Dependabot automatically attempting to open pull requests to resolve every open Dependabot alert with an available patch.": "启用后，Dependabot 会自动尝试打开拉取请求，以使用可用补丁解决每个打开的 Dependabot 警报。",
-                        "Dependabot rules": "Dependabot 规则",
+                "Dependabot security updates": "Dependabot 보안 업데이트",
+                    "Enabling this option will result in Dependabot automatically attempting to open pull requests to resolve every open Dependabot alert with an available patch.":
+                        "이 옵션을 활성화하면, Dependabot이 사용 가능한 패치를 통해 모든 열린 Dependabot 경고를 해결하기 위해 자동으로 끌어오기 요청을 생성하려고 시도할 거예요.",
+                        "Dependabot rules": "Dependabot 규칙",
 
-                    // 对话框
-                        "Enable Dependabot security updates": "启用 Dependabot 安全更新",
-                            "You're about to enable Dependabot security updates on all your repositories. Dependabot security updates require the dependency graph and Dependabot alerts, so we'll also turn that on for all repositories.": "您即将启用您所有仓库上的 Dependabot 安全更新。Dependabot 安全更新需要依赖关系图和 Dependabot 警报，因此我们也将为所有仓库启用他们。",
+                    // 대화 상자
+                        "Enable Dependabot security updates": "Dependabot 보안 업데이트 활성화",
+                            "You're about to enable Dependabot security updates on all your repositories. Dependabot security updates require the dependency graph and Dependabot alerts, so we'll also turn that on for all repositories.":
+                                "사용자님의 모든 저장소에서 Dependabot 보안 업데이트를 활성화하려고 하십니다. Dependabot 보안 업데이트는 의존성 그래프와 Dependabot 경고가 필요하므로, 모든 저장소에 대해 이들 기능도 함께 활성화됩니다.",
+                        "Disable Dependabot security updates": "Dependabot 보안 업데이트 비활성화",
+                            "You're about to disable Dependabot security updates on all your repositories.":
+                                "사용자님의 모든 저장소에서 Dependabot 보안 업데이트를 비활성화하려고 하십니다.",
 
-                        "Disable Dependabot security updates": "禁用 Dependabot 安全更新",
-                            "You're about to disable Dependabot security updates on all your repositories.": "您即将禁用您所有仓库上的 Dependabot 安全更新。",
+                "Grouped security updates": "그룹화된 보안 업데이트",
+                    "Groups all available updates that resolve a Dependabot alert into one pull request (per package manager and directory of requirement manifests). This option may be overridden by group rules specified in dependabot.yml -":
+                        "Dependabot 경고를 해결하는 모든 가능한 업데이트를 (패키지 관리자와 요구사항 매니페스트 디렉토리별로) 하나의 끌어오기 요청으로 그룹화해요. 이 옵션은 dependabot.yml에 지정된 그룹 규칙에 의해 재설정될 수 있어요.",
+                    "Learn how to group updates.": "업데이트 그룹화 방법 알아보기",
 
-                "Grouped security updates": "分组安全更新",
-                    "Groups all available updates that resolve a Dependabot alert into one pull request (per package manager and directory of requirement manifests). This option may be overridden by group rules specified in dependabot.yml -": "将解决可靠警报的所有可用更新分组为一个拉取请求（每个包管理器和需求清单目录）。此选项可能会被 dependentabot.yml 中指定的分组规则覆盖 -",
-                    "Learn how to group updates.": "了解如何配置分组更新",
+                    // 대화 상자
+                        "Enable grouped security updates": "그룹화된 보안 업데이트 활성화",
+                            "You're about to enable grouped security updates on all your repositories. Grouped security updates require the dependency graph, Dependabot alerts and Dependabot security updates, so we'll also turn that on for all repositories.":
+                                "사용자님의 모든 저장소에서 그룹화된 보안 업데이트를 활성화하려고 하십니다. 그룹화된 보안 업데이트는 의존성 그래프, Dependabot 경고 및 Dependabot 보안 업데이트가 필요하므로, 모든 저장소에 대해 이들 기능도 함께 활성화됩니다.",
+                        "Disable grouped security updates": "그룹화된 보안 업데이트 비활성화",
+                            "You're about to disable grouped security updates on all your repositories.":
+                                "사용자님의 모든 저장소에서 그룹화된 보안 업데이트를 비활성화하려고 하십니다.",
 
-                    // 对话框
-                        "Enable grouped security updates": "启用分组安全更新",
-                            "You're about to enable grouped security updates on all your repositories. Grouped security updates require the dependency graph, Dependabot alerts and Dependabot security updates, so we'll also turn that on for all repositories.": "您即将启用您所有仓库上的分组安全更新。分组安全更新需要依赖关系图、Dependabot 警报和Dependabot 安全更新，因此我们也将为所有仓库启用他们。",
+                "Dependabot on Actions runners": "액션 실행기에서 Dependabot 사용하기",
+                    "Run Dependabot security and version updates on Actions runners.":
+                        "액션 실행기에서 Dependabot 보안 및 버전 업데이트를 실행해보세요.",
 
-                        "Disable grouped security updates": "禁用分组安全更新",
-                            "You're about to disable grouped security updates on all your repositories.": "您即将禁用您所有仓库上的分组安全更新。",
+                    // 대화 상자
+                        "Enable dependabot on actions": "액션에서 Dependabot 활성화",
+                            "You're about to enable dependabot on actions on all your repositories. Dependabot on actions requires Actions so we'll also turn that on for all repositories.":
+                                "사용자님의 모든 저장소에서 액션 내 Dependabot을 활성화하려고 하십니다. 액션 내 Dependabot은 액션 기능이 필요하므로, 모든 저장소에 대해 액션도 함께 활성화됩니다.",
+                        "Disable dependabot on actions": "액션에서 Dependabot 비활성화",
+                            "You're about to disable dependabot on actions on all your repositories.":
+                                "사용자님의 모든 저장소에서 액션 내 Dependabot을 비활성화하려고 하십니다.",
 
-                "Dependabot on Actions runners": "Dependabot 应用于操作运行器",
-                    "Run Dependabot security and version updates on Actions runners.": "在操作运行器上运行 Dependabot 安全和版本更新。",
+                "Dependabot on self-hosted runners": "자체 호스팅 실행기에서 Dependabot 사용하기",
+                    "Run Dependabot security and version updates on self-hosted Actions runners.":
+                        "자체 호스팅 액션 실행기에서 Dependabot 보안 및 버전 업데이트를 실행해보세요.",
 
-                    // 对话框
-                        "Enable dependabot on actions": "在操作中启用 Dependabot",
-                            "You're about to enable dependabot on actions on all your repositories. Dependabot on actions requires Actions so we'll also turn that on for all repositories.": "您将要在所有仓库操作中启用 dependabot 。操作中的 Dependabot需要操作，因此我们还将为所有仓库启用它。",
+                    // 대화 상자
+                        "Enable dependabot self-hosted": "자체 호스팅 실행기에서 Dependabot 활성화",
+                            "You're about to enable dependabot self-hosted on all your repositories. Dependabot self-hosted depends on Dependabot on Actions so we'll also turn that on for all repositories.":
+                                "사용자님의 모든 저장소에서 자체 호스팅 Dependabot을 활성화하려고 하십니다. 자체 호스팅 Dependabot은 액션 내 Dependabot에 의존하므로, 모든 저장소에 대해 해당 기능도 함께 활성화됩니다.",
+                        "Disable dependabot self-hosted": "자체 호스팅 실행기에서 Dependabot 비활성화",
+                            "You're about to disable dependabot self-hosted on all your repositories.":
+                                "사용자님의 모든 저장소에서 자체 호스팅 Dependabot을 비활성화하려고 하십니다.",
 
-                        "Disable dependabot on actions": "在操作中禁用 Dependabot",
-                            "You're about to disable dependabot on actions on all your repositories.": "您将要在所有仓库操作中禁用 Dependabot。",
+            "Secret scanning": "기밀 스캔",
+                "Receive alerts on GitHub for detected secrets, keys, or other tokens.":
+                    "GitHub에서 감지된 기밀, 키 또는 기타 토큰에 대한 경고를 받아보세요.",
+                "GitHub will always send alerts to partners for detected secrets in public repositories.":
+                    "GitHub은 공개 저장소에서 감지된 기밀에 대해 항상 파트너에게 경고를 전송해요.",
+                "Learn more about partner patterns": "파트너 패턴에 대해 더 알아보기",
 
-                "Dependabot on self-hosted runners": "Dependabot 应用于自托管运行器",
-                    "Run Dependabot security and version updates on self-hosted Actions runners.": "在自托管运行程序上运行 Dependabot 安全和版本更新。",
+                // 대화 상자
+                    "Enable secret scanning for eligible repositories?": "조건에 맞는 저장소에서 기밀 스캔을 활성화하시겠어요?",
+                        "This will turn on secret scanning for all public repositories.":
+                            "이렇게 하면 모든 공개 저장소에서 기밀 스캔이 활성화돼요.",
+                        "Enable for eligible repositories": "조건에 맞는 저장소 활성화",
 
-                    // 对话框
-                        "Enable dependabot self-hosted": "在自托管运行器上启用 Dependabot",
-                            "You're about to enable dependabot self-hosted on all your repositories. Dependabot self-hosted depends on Dependabot on Actions so we'll also turn that on for all repositories.": "您将在所有仓库上启用 dependabot 自托管。Dependabot 自托管依赖于操作中的 Dependabot，因此我们还将为所有仓库启用它。",
+                    "Disable secret scanning?": "기밀 스캔을 비활성화하시겠어요?",
+                        "This will disable secret scanning on all repositories where it is enabled.":
+                            "이렇게 하면 기밀 스캔이 활성화된 모든 저장소에서 기밀 스캔이 비활성화돼요.",
+                        "Disable secret scanning": "기밀 스캔 비활성화",
 
-                        "Disable dependabot self-hosted": "在自托管运行器上禁用 Dependabot",
-                            "You're about to disable dependabot self-hosted on all your repositories.": "您将在所有仓库上禁用 dependabot 自托管。",
+                "Push protection": "푸시 보호",
+                    // "Block commits that contain": "포함된 내용이 있는 커밋 차단하기",
+                    // "supported secrets": "지원되는 기밀",
+                    "Automatically enable for repositories added to secret scanning":
+                        "기밀 스캔이 적용된 저장소에 대해 자동 활성화하기",
 
-            "Secret scanning": "机密扫描",
-                "Receive alerts on GitHub for detected secrets, keys, or other tokens.": "在 GitHub 上接收有关检测到的机密、密钥或其他令牌的警报。",
-                "GitHub will always send alerts to partners for detected secrets in public repositories.": "GitHub 会随时向合作伙伴发送公共仓库中检测到的机密警报。",
-                "Learn more about partner patterns": "了解更多关于合作伙伴模式的信息",
-
-                // 对话框
-                    "Enable secret scanning for eligible repositories?": "启用符合条件的仓库的机密扫描？",
-                        "This will turn on secret scanning for all public repositories.": "这将为所有公共仓库启用机密扫描。",
-                        "Enable for eligible repositories": "启用符合条件的仓库",
-
-                    "Disable secret scanning?": "禁用机密扫描？",
-                        "This will disable secret scanning on all repositories where it is enabled.": "这将禁用所有仓库的机密扫描。",
-                        "Disable secret scanning": "禁用机密扫描",
-
-                "Push protection": "推送保护",
-                    // "Block commits that contain": "阻止提交，包含",
-                    // "supported secrets": "受支持的机密",
-                    "Automatically enable for repositories added to secret scanning": "自动启用对添加到机密扫描的仓库进行扫描",
-
-                    // 对话框
-                        "Enable push protection for eligible repositories?": "启用符合条件的仓库的推送保护？",
-                            "This will turn on push protection for all repositories that have secret scanning enabled.": "这将为所有已启用秘密扫描的仓库启用推送保护。",
-
-                        "Disable push protection?": "禁用推送保护？",
-                            "This will disable push protection on all repositories where it is enabled.": "这将禁用所有仓库的推送保护。",
-                            "You can still enable push protection at the repository level.": "您仍然可以在仓库级别启用推送保护。",
+                    // 대화 상자
+                        "Enable push protection for eligible repositories?": "조건에 맞는 저장소에서 푸시 보호를 활성화하시겠어요?",
+                            "This will turn on push protection for all repositories that have secret scanning enabled.":
+                                "이렇게 하면 기밀 스캔이 활성화된 모든 저장소에서 푸시 보호가 활성화돼요.",
+                        "Disable push protection?": "푸시 보호를 비활성화하시겠어요?",
+                            "This will disable push protection on all repositories where it is enabled.":
+                                "이렇게 하면 푸시 보호가 활성화된 모든 저장소에서 푸시 보호가 비활성화돼요.",
+                            "You can still enable push protection at the repository level.":
+                                "사용자님께서는 저장소 단위에서 푸시 보호를 개별로 활성화하실 수도 있어요.",
 
     },
-    "regexp": [ // 正则翻译
-        [/You're about to disable private vulnerability reporting on all public repositories in ([^ ]+)./, "您即将在 $1 的所有公共仓库中禁用私下漏洞报告。"],
-        [/You're about to enable private vulnerability reporting on all public repositories in ([^ ]+)./, "您即将在 $1 的所有公共仓库中启用私下漏洞报告。"],
-        [/Security settings updated for ([^ ]+)\'s repositories./, "更新了$1 的仓库的安全设置。"],
+    "regexp": [ // 정규 표현식 번역
+        [/You're about to disable private vulnerability reporting on all public repositories in ([^ ]+)./, "사용자님께서 $1의 모든 공개 저장소에서 비공개 취약점 보고를 비활성화하려고 하십니다."],
+        [/You're about to enable private vulnerability reporting on all public repositories in ([^ ]+)./, "사용자님께서 $1의 모든 공개 저장소에서 비공개 취약점 보고를 활성화하려고 하십니다."],
+        [/Security settings updated for ([^ ]+)\'s repositories./, "사용자님의 $1 저장소의 보안 설정이 업데이트되었어요."],
     ],
 };
 
-I18N["ko-KR"]["settings/installations"] = { // 设置 - 应用/安装的 GitHub 应用
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/installations"] = { // 설정 - GitHub 앱/설치
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        "Installed GitHub Apps": "安装的 GitHub 应用",
-        "Authorized GitHub Apps": "授权的 GitHub 应用",
-        "Authorized OAuth Apps": "授权的 OAuth 应用",
+        "Installed GitHub Apps": "설치된 GitHub 앱",
+        "Authorized GitHub Apps": "승인된 GitHub 앱",
+        "Authorized OAuth Apps": "승인된 OAuth 앱",
 
-        // 安装的 GitHub 应用 https://github.com/settings/installations
-            // 顶部提醒
-                // [/You're all set! (.*) has been uninstalled./, "一切就绪！$1 已被卸载。"],
-                // [/You're all set! A job has been queued to uninstall the \'(.*)\' app./, "一切就绪！卸载 “$1” 应用的任务已排队等候。"],
-                // [/Okay, (.*) was installed on the (@[^ ]+) account./, "好的，$1 已安装在 $2 账户上。"],
-                // [/Okay, (.*) was updated for the (@[^ ]+) account./, "好的，$1 账户的 $1 已更新。"],
+        // 설치된 GitHub 앱 https://github.com/settings/installations
+            // 상단 알림
+                // [/You're all set! (.*) has been uninstalled./, "모든 준비가 완료되었어요! $1 이(가) 제거되었어요."],
+                // [/You're all set! A job has been queued to uninstall the \'(.*)\' app./, "모든 준비가 완료되었어요! ‘$1’ 앱 제거 작업이 대기 중이에요."],
+                // [/Okay, (.*) was installed on the (@[^ ]+) account./, "알겠습니다, $2 계정에 $1 이(가) 설치되었어요."],
+                // [/Okay, (.*) was updated for the (@[^ ]+) account./, "알겠습니다, $2 계정의 $1 이(가) 업데이트되었어요."],
 
-            // "Installed GitHub Apps": "安装的 GitHub 应用",
-                "GitHub Apps augment and extend your workflows on GitHub with commercial, open source, and homegrown tools.": "GitHub 应用通过商业、开源和自主开发的工具来增强和扩展您在 GitHub 上的工作流程。",
-                "Permission updates requested.": "待处理的 GitHub 权限请求",
+            // "Installed GitHub Apps": "설치된 GitHub 앱",
+                "GitHub Apps augment and extend your workflows on GitHub with commercial, open source, and homegrown tools.": "GitHub 앱은 상업용, 오픈 소스, 그리고 자체 개발 도구들을 통해 GitHub에서의 작업 흐름을 보완하고 확장해요.",
+                "Permission updates requested.": "GitHub 권한 업데이트 요청이 있어요.",
 
-            "Pending GitHub Apps installation requests": "待处理的 GitHub 应用安装请求", // 组织设置
-                "Members in your organization can request that GitHub Apps be installed. Pending requests are listed below.": "您组织中的成员可以请求安装 GitHub 应用。下面列出了待处理的请求。",
+            "Pending GitHub Apps installation requests": "대기 중인 GitHub 앱 설치 요청", // 조직 설정
+                "Members in your organization can request that GitHub Apps be installed. Pending requests are listed below.": "조직의 구성원이 GitHub 앱 설치를 요청할 수 있어요. 대기 중인 요청들은 아래에 나열되어 있어요.",
 
-            "No installed applications": "没有已安装的应用",
-            "You have no applications installed on this account.": "此账户上没有安装任何应用。",
-            "Configure": "配置",
-            "Suspended": "已暂停",
+            "No installed applications": "설치된 앱이 없어요",
+            "You have no applications installed on this account.": "이 계정에 설치된 앱이 없어요.",
+            "Configure": "설정하기",
+            "Suspended": "일시 중지됨",
 
-        // 安装的 GitHub 应用设置 https://github.com/settings/installations/<id>
-            // 顶部提醒
-                // [/Your installation was suspended by you on/, "您的安装已暂停于"],
-                "Your app has been unsuspended": "您的应用已被取消暂停",
+        // 설치된 GitHub 앱 설정 https://github.com/settings/installations/<id>
+            // 상단 알림
+                // [/Your installation was suspended by you on/, "사용자님께서 설치를 일시 중지한 날짜:"],
+                "Your app has been unsuspended": "앱의 일시 중지가 해제되었어요.",
 
-            "Installed": "安装于",
-            "Developed by": "开发者",
-            "App settings": "应用设置",
-            "Permissions": "权限",
-                // [/is requesting an update to its permissions./, "正在请求更新其权限。"],
-                "Review request": "审核请求",
-                "Access public information (read-only)": "访问公开信息（只读）",
-                "Access user email addresses (read-only)": "访问用户电子邮件地址（只读）",
-                "Read all user profile data": "读取所有用户个人资料数据",
-                "Create gists": "创建代码片段",
-                "Full control of private repositories": "完全控制私有仓库",
-                "Update github action workflows": "更新 GitHub Action 工作流",
-                "Update all user data": "更新所有用户数据",
-                "Full control of codespaces": "完全控制 Codespaces",
-                "Read all user profile data": "读取所有用户个人资料数据",
+            "Installed": "설치됨",
+            "Developed by": "개발자",
+            "App settings": "앱 설정",
+            "Permissions": "권한",
+                // [/is requesting an update to its permissions./, "권한 업데이트를 요청하고 있어요."],
+                "Review request": "요청 검토하기",
+                "Access public information (read-only)": "공개 정보 접근 (읽기 전용)",
+                "Access user email addresses (read-only)": "사용자 이메일 주소 접근 (읽기 전용)",
+                "Read all user profile data": "모든 사용자 프로필 데이터 읽기",
+                "Create gists": "코드 조각 만들기",
+                "Full control of private repositories": "비공개 저장소 완전 제어",
+                "Update github action workflows": "GitHub 액션 워크플로우 업데이트하기",
+                "Update all user data": "모든 사용자 데이터 업데이트하기",
+                "Full control of codespaces": "Codespaces 완전 제어",
+                "Read all user profile data": "모든 사용자 프로필 데이터 읽기",
 
-            "Repository access": "仓库访问权限",
-            "All repositories": "所有仓库",
-                "This applies to all current": "这适用于所有当前",
+            "Repository access": "저장소 접근 권한",
+            "All repositories": "모든 저장소",
+                "This applies to all current": "현재 모든",
                 "and": "그리고",
-                "future repositories owned by the resource owner.": "资源所有者未来拥有的仓库。",
-                "Also includes public repositories (read-only).": "还包括公共仓库（只读）。",
-            "Only select repositories": "仅选定的仓库",
-                "Select at least one repository.": "至少选择一个仓库。",
-                "Also includes public repositories (read-only).": "还包括公共仓库（只读）。",
-                // [/Selected (\d+) repositor(y|ies)./, "选择了 $1 个仓库。"],
-            "Select repositories": "选择仓库",
-            "Search for a repository": "搜索仓库",
+                "future repositories owned by the resource owner.": "자원 소유자가 소유할 미래의 저장소에 적용돼요.",
+                "Also includes public repositories (read-only).": "공개 저장소 (읽기 전용)도 포함돼요.",
+            "Only select repositories": "선택한 저장소만",
+                "Select at least one repository.": "최소 한 개 이상의 저장소를 선택해 주세요.",
+                "Also includes public repositories (read-only).": "공개 저장소 (읽기 전용)도 포함돼요.",
+                // [/Selected (\d+) repositor(y|ies)./, "$1 개의 저장소 선택됨."],
+            "Select repositories": "저장소 선택하기",
+            "Search for a repository": "저장소 검색하기",
 
-            "Danger zone": "危险区",
-            "Suspend your installation": "暂停使用",
-            "This will block the app access to your resources.": "这将阻止应用访问您的资源。",
-            "Suspend": "暂停",
-                // 取消按钮 提醒信息
-                "Are you sure you want to suspend this GitHub App?": "您确定要暂停此 GitHub 应用吗？",
-            "This will remove the app and revoke access to all resources.": "这将删除应用并撤销对所有资源的访问权限。",
-            // [/Uninstall "(.*)"/, "卸载 “$1”"],
-            "Uninstall": "卸载",
-                // 取消按钮 提醒信息
-                // [/This action cannot be undone. Are you sure you want to uninstall this GitHub App from (\d+) repositor(y|ies)?/, "此操作无法撤消。您确定要从 1 个仓库中卸载此 GitHub 应用吗？"],
-            "Unsuspend your installation": "取消暂停",
-                "This grant the app access to your resources.": "这将授予应用访问您的资源。",
-                "Unsuspend": "取消暂停",
+            "Danger zone": "위험 구역",
+            "Suspend your installation": "설치를 일시 중지하기",
+            "This will block the app access to your resources.": "이 작업을 수행하면 앱이 사용자님의 자원에 접근하지 못하게 돼요.",
+            "Suspend": "일시 중지",
+                // 취소 버튼 경고 메시지
+                "Are you sure you want to suspend this GitHub App?": "정말로 이 GitHub 앱을 일시 중지하시겠어요?",
+            "This will remove the app and revoke access to all resources.": "이 작업을 수행하면 앱이 삭제되고 모든 자원에 대한 접근 권한이 취소돼요.",
+            // [/Uninstall "(.*)"/, "“$1” 제거하기"],
+            "Uninstall": "앱 제거하기",
+                // 취소 버튼 경고 메시지
+                // [/This action cannot be undone. Are you sure you want to uninstall this GitHub App from (\d+) repositor(y|ies)?/, "이 작업은 취소할 수 없어요. 정말로 이 GitHub 앱을 $1 개의 저장소에서 제거하시겠어요?"],
+            "Unsuspend your installation": "일시 중지 해제하기",
+                "This grant the app access to your resources.": "이 작업을 수행하면 앱이 사용자님의 자원에 접근할 수 있게 돼요.",
+                "Unsuspend": "일시 중지 해제하기",
 
-            "Report abuse": "남용 신고",
-            "Revoke": "撤销",
-            "Read more about connecting with third-party applications at": "了解更多关于与第三方应用连接的信息，请访问",
-            "GitHub Help": "GitHub 帮助",
+            "Report abuse": "남용 신고하기",
+            "Revoke": "권한 취소하기",
+            "Read more about connecting with third-party applications at": "타사 앱과의 연결에 대해 자세히 알아보시려면 다음을 참고해 주세요:",
+            "GitHub Help": "GitHub 도움말",
 
-        // 安装的 GitHub 应用授权更新 https://github.com/settings/installations/<id>/permissions/update
-            // [/The (.*) app by/, "$1 应用（由"],
-            "is requesting updated permissions": "创建）正在请求更新权限",
+        // 설치된 GitHub 앱 권한 업데이트 https://github.com/settings/installations/<id>/permissions/update
+            // [/The (.*) app by/, "$1 앱 (제작자:"],
+            "is requesting updated permissions": "업데이트된 권한을 요청하고 있어요.",
 
-            "Read and write": "读写权限",
-            "Read-only": "只读权限",
-            "Admin": "管理员权限",
-            "access to": "针对",
-            "New request": "新请求",
-            "Show unchanged permissions": "显示未更改的权限",
-            "Hide unchanged permissions": "隐藏未更改的权限",
-            "Accept new permissions": "接受新权限",
-            // [/The (.*) app will retain its current permissions if you choose not to accept the new permissions./, "如果您选择不接受新权限，“$1” 应用将保留其当前权限。"],
+            "Read and write": "읽기/쓰기 권한",
+            "Read-only": "읽기 전용 권한",
+            "Admin": "관리자 권한",
+            "access to": "접근 권한:",
+            "New request": "새 요청",
+            "Show unchanged permissions": "변경되지 않은 권한 보기",
+            "Hide unchanged permissions": "변경되지 않은 권한 숨기기",
+            "Accept new permissions": "새 권한 수락하기",
+            // [/The (.*) app will retain its current permissions if you choose not to accept the new permissions./, "새로운 권한을 수락하지 않으시면, “$1” 앱은 현재 권한을 유지할 거예요."],
 
-        // 授权的 GitHub 应用 https://github.com/settings/apps/authorizations
-            // "Authorized GitHub Apps": "授权的 GitHub 应用",
-            "No authorized applications": "无授权申请",
-            "You have no applications authorized to access your account.": "您没有授权访问您的账户的应用。",
+        // 승인된 GitHub 앱 https://github.com/settings/apps/authorizations
+            // "Authorized GitHub Apps": "승인된 GitHub 앱",
+            "No authorized applications": "승인된 앱이 없어요",
+            "You have no applications authorized to access your account.": "사용자님의 계정에 접근할 수 있도록 승인된 앱이 없어요.",
 
-        // 授权的 OAuth 应用 https://github.com/settings/applications
-            // "Authorized OAuth Apps": "授权的 OAuth 应用",
-            "You have granted": "您已经授权",
-            "access to your account.": "访问您的账户。",
-            "Revoke all": "撤销全部",
-            "Sort": "排序",
-            "Sort by": "排序方式",
-            "Alphabetical": "按字母排列",
-            "Recently used": "最近使用的",
-            "Least recently used": "最近使用最少的",
+        // 승인된 OAuth 앱 https://github.com/settings/applications
+            // "Authorized OAuth Apps": "승인된 OAuth 앱",
+            "You have granted": "사용자님께서 이미 승인하셨어요",
+            "access to your account.": "사용자님의 계정 접근 권한을.",
+            "Revoke all": "전체 권한 취소하기",
+            "Sort": "정렬",
+            "Sort by": "정렬 기준",
+            "Alphabetical": "알파벳 순",
+            "Recently used": "최근 사용",
+            "Least recently used": "가장 덜 사용",
 
-            "Never used · Owned by": "从未使用 · 作者",
-            "Last used within the last week · Owned by": "最后一次使用是最近 1 周之内 · 作者",
+            "Never used · Owned by": "한 번도 사용하지 않음 · 소유자:",
+            "Last used within the last week · Owned by": "최근 1주일 내 사용됨 · 소유자:",
 
-            "Report abuse": "남용 신고",
-            "Revoke": "撤销",
+            "Report abuse": "남용 신고하기",
+            "Revoke": "권한 취소하기",
 
-            // 撤销对话框
-            "Are you sure you want to revoke authorization?": "您确定要撤销授权吗？",
-            "I understand, revoke access": "我明白了，依然撤销访问",
+            // 전체 권한 취소 대화상자
+            "Are you sure you want to revoke authorization?": "정말로 승인 권한을 취소하시겠어요?",
+            "I understand, revoke access": "알겠습니다, 접근 권한 취소할게요",
 
-            // 全部撤销对话框
-            "Are you sure you want to revoke access for all applications?": "您确定要撤销对所有应用的访问权限吗？",
-            "This will revoke access for": "这将撤销访问",
-            "all third-party": "所有第三方",
-            "OAuth applications. This action cannot be undone.": "OAuth 应用。此操作无法撤消。",
-            "Any SSH keys created on your behalf by applications will also be deleted.": "任何由应用代表您创建的 SSH 密钥也将被删除。",
-            "Type your username to confirm.": "输入您的用户名进行确认。",
-            "I understand, revoke access for everything": "我明白了，依然撤销对一切的访问",
+            // 전체 취소 대화상자
+            "Are you sure you want to revoke access for all applications?": "정말로 모든 앱에 대한 접근 권한을 취소하시겠어요?",
+            "This will revoke access for": "이 작업은 다음에 대한 접근 권한을 취소해요:",
+            "all third-party": "모든 제3자",
+            "OAuth applications. This action cannot be undone.": "OAuth 앱. 이 작업은 취소할 수 없어요.",
+            "Any SSH keys created on your behalf by applications will also be deleted.": "앱이 사용자님을 대신하여 생성한 모든 SSH 키도 삭제돼요.",
+            "Type your username to confirm.": "확인을 위해 사용자님의 사용자명을 입력해 주세요.",
+            "I understand, revoke access for everything": "알겠습니다, 모든 접근 권한 취소할게요",
 
-            // 举报滥用对话框
-            "Report Abuse": "举报滥用",
-            "More options": "更多选项",
-            "Revoking will deny future access to your account": "撤销授权，将拒绝今后访问您的账户",
+            // 남용 신고 대화상자
+            "Report Abuse": "남용 신고하기",
+            "More options": "추가 옵션",
+            "Revoking will deny future access to your account": "권한 취소 시 앞으로 사용자님의 계정 접근이 차단돼요.",
 
-        // 授权的 GitHub 应用授权设置 https://github.com/settings/connections/applications/<client-id>
-        // 授权的 OAuth 应用授权设置 https://github.com/settings/connections/applications/<id>
-            "Never used": "从未使用",
-            "Last used within the last week": "最后一次使用是最近一周之内",
+        // 승인된 GitHub 앱 승인 설정 https://github.com/settings/connections/applications/<client-id>
+        // 승인된 OAuth 앱 승인 설정 https://github.com/settings/connections/applications/<id>
+            "Never used": "한 번도 사용하지 않음",
+            "Last used within the last week": "최근 1주일 내 사용됨",
 
-            "Developed by": "开发者:",
-            "Permissions": "权限",
-            "Revoke access": "撤销授权",
-                "Are you sure you want to revoke authorization?": "您确定要撤销授权吗？",
-                    // [/(.+) will no longer be able to access the GitHub API. You cannot undo this action./, "$1 将无法再访问 GitHub API。您无法撤销此操作。"],
-                "I understand, revoke access": "我明白了，依然撤销授权",
-                    "Revoking…": "撤消中…",
+            "Developed by": "개발자:",
+            "Permissions": "권한",
+            "Revoke access": "접근 권한 취소하기",
+                "Are you sure you want to revoke authorization?": "정말로 승인 권한을 취소하시겠어요?",
+                    // [/(.+) will no longer be able to access the GitHub API. You cannot undo this action./, "$1 은 더 이상 GitHub API에 접근할 수 없으며, 이 작업은 취소할 수 없어요."],
+                "I understand, revoke access": "알겠습니다, 접근 권한 취소할게요",
+                    "Revoking…": "권한 취소 중…",
 
-            "Applications act on your behalf to access your data based on the permissions you grant them. Organizations control which applications are allowed to access their private data. Applications you authorize will always have access to public data in your organizations.": "应用根据您授予的权限代表您访问数据。组织可控制允许哪些应用访问其私人数据。您授权的应用始终可以访问您组织中的公共数据。",
-            "Read about third-party access.": "了解关于第三方访问的信息。",
+            "Applications act on your behalf to access your data based on the permissions you grant them. Organizations control which applications are allowed to access their private data. Applications you authorize will always have access to public data in your organizations.": "앱은 사용자님께서 부여하신 권한을 바탕으로 대신하여 데이터에 접근해요. 조직에서는 어떤 앱이 비공개 데이터에 접근할 수 있는지를 제어해요. 사용자님께서 승인한 앱은 항상 조직 내의 공개 데이터에 접근할 수 있어요.",
+            "Read about third-party access.": "제3자 접근에 대해 읽어보세요.",
 
-            "Organization access": "组织权限",
-                "Grant": "批准",
-                "This organization allows the application to access organization data as described in the permissions above.": "该组织允许应用访问上述权限中所述的组织数据。",
-                "Request": "请求",
-                    "Until access is granted by an owner, the application cannot access the organization’s private data or modify its public data.": "在所有者授予访问权限之前，应用无法访问组织的私有数据或修改其公共数据。",
+            "Organization access": "조직 접근 권한",
+                "Grant": "승인하기",
+                "This organization allows the application to access organization data as described in the permissions above.": "이 조직은 위에서 설명한 권한에 따라 앱이 조직 데이터에 접근하는 것을 허용해요.",
+                "Request": "요청하기",
+                    "Until access is granted by an owner, the application cannot access the organization’s private data or modify its public data.": "소유자가 접근 권한을 승인하기 전까지 앱은 조직의 비공개 데이터에 접근하거나 공개 데이터를 수정할 수 없어요.",
 
-        // 组织 OAuth 应用策略设置 /orgs/<orgs-name>/policies/applications/<id>
-            "approval requested by": "请求批准:",
-            "Currently:": "当前",
-                "No private access": "无法访问私有",
-                "Approved": "已批准",
-            "Review third-party application access request": "审查第三方应用访问请求",
-                "Grant access": "批准访问",
-                "Granting access will give this application the ability to request access to private data in the": "授权该应用访问私有数据在",
-                "organization.": "组织。",
-
-                "Deny access": "拒绝访问",
-                "Denying access will remove this application’s ability to request access to private data in the": "拒绝该应用访问数据在",
-
-            // 顶部提醒
-                // [/(.*) is authorized to access this organization’s resources/, "$1 已获授权访问该组织的资源"],
-                // [/(.*) is denied access this organization’s resources/, "$1 被拒绝访问该组织的资源"],
-
-            "Applications act on your behalf to access your data based on the permissions you grant them. Organizations control which applications are allowed to access their private data. Applications authorized by members will always have access to public data in your organization.": "应用根据您授予的权限代表您访问数据。组织可控制允许哪些应用访问其私有数据。成员授权的应用始终可以访问组织中的公共数据。",
-            "Read about organization OAuth app access restrictions.": "了解有关组织 OAuth 应用访问限制的信息。",
-
+        // 조직 OAuth 앱 정책 설정 /orgs/<orgs-name>/policies/applications/<id>
+            "approval requested by": "승인 요청:",
+            "Currently:": "현재:",
+                "No private access": "비공개 접근 불가",
+                "Approved": "승인됨",
+            "Review third-party application access request": "제3자 앱 접근 요청 검토하기",
+                "Grant access": "접근 승인하기",
+                "Granting access will give this application the ability to request access to private data in the": "접근 권한을 승인하면 이 앱이 다음 조직의 비공개 데이터 접근을 요청할 수 있게 돼요:",
+                "organization.": "조직.",
+                
+                "Deny access": "접근 거부하기",
+                "Denying access will remove this application’s ability to request access to private data in the": "접근 권한을 거부하면 이 앱이 다음 조직의 비공개 데이터 접근 요청을 할 수 없게 돼요:",
+            
+            // 상단 알림
+                // [/(.*) is authorized to access this organization’s resources/, "$1 은(는) 이 조직의 자원에 접근할 수 있도록 승인되었어요."],
+                // [/(.*) is denied access this organization’s resources/, "$1 은(는) 이 조직의 자원 접근이 거부되었어요."],
+            
+            "Applications act on your behalf to access your data based on the permissions you grant them. Organizations control which applications are allowed to access their private data. Applications authorized by members will always have access to public data in your organization.": "앱은 사용자님께서 부여하신 권한을 바탕으로 대신하여 데이터에 접근해요. 조직에서는 어떤 앱이 비공개 데이터에 접근할 수 있는지를 제어해요. 구성원이 승인한 앱은 항상 조직 내의 공개 데이터에 접근할 수 있어요.",
+            "Read about organization OAuth app access restrictions.": "조직 OAuth 앱 접근 제한에 대해 읽어보세요.",
+            "No installed GitHub Apps": "설치된 GitHub 앱이 없어요",
+            "You have no GitHub Apps installed on this account.": "이 계정에 설치된 GitHub앱이 없어요",
+            "Visit Marketplace": "장터 방문하기",
+            "My GitHub Apps": "내 깃허브 앱 보기",
     },
-    "regexp": [ // 正则翻译
-        [/Your installation was suspended by you on/, "您的安装已暂停于"],
-        [/This action cannot be undone. Are you sure you want to uninstall this GitHub App from (\d+) repositor(y|ies)?/, "此操作无法撤消。您确定要从 $1 个仓库中卸载此 GitHub 应用吗？"],
-        [/Uninstall "(.*)"/, "卸载 “$1”"],
-        [/You will no longer be able to sign in to ([^ ]+) \(all administrative privileges will be bestowed upon the owners you choose\)/, "您将无法再登录 $1（所有管理权限都将授予您选择的所有者）"],
-        [/(\d+) applications?/, "$1 个应用"],
-        [/([^ ]+) will no longer be able to access your GitHub account. You cannot undo this action./, "$1 将无法再访问您的 GitHub 账户。您无法撤消此操作。"],
-        [/([^ ]+) has been revoked from your account./, "$1 已经从您的账户中被撤销了。"],
-        [/Last used within the last (\d+) weeks? · Owned by/, "最后一次使用是最近 $1 周之内 · 作者"],
-        [/Last used within the last (\d+) months? · Owned by/, "最后一次使用是最近 $1 月之内 · 作者"],
-        [/Selected (\d+) repositor(y|ies)./, "选择了 $1 个仓库。"],
-        [/You're all set! (.*) has been uninstalled./, "一切就绪！$1 已被卸载。"],
-        [/You're all set! A job has been queued to uninstall the \'(.*)\' app./, "一切就绪！卸载 “$1” 应用的任务已排队等候。"],
-        [/Okay, (.*) was installed on the (@[^ ]+) account./, "好的，$1 已安装在 $2 账户上。"],
-        [/Okay, (.*) was updated for the (@[^ ]+) account./, "好的，$2 账户的 $1 已更新。"],
-        [/Last used within the last (\d+) weeks?/, "最后一次使用是最近 $1 周之内"],
-        [/Last used within the last (\d+) months?/, "最后一次使用是最近 $1 月之内"],
-        [/(.+) will no longer be able to access the GitHub API. You cannot undo this action./, "$1 将无法再访问 GitHub API。您无法撤销此操作。"],
-        [/is requesting an update to its permissions./, "正在请求更新其权限。"],
-        [/The (.*) app by/, "$1 应用（由"],
-        [/The (.*) app will retain its current permissions if you choose not to accept the new permissions./, "如果您选择不接受新权限，“$1” 应用将保留其当前权限。"],
-        [/(.*) is authorized to access this organization’s resources/, "$1 已获授权访问该组织的资源"],
-        [/(.*) is denied access this organization’s resources/, "$1 被拒绝访问该组织的资源"],
+    "regexp": [ // 정규식 번역
+        [/Your installation was suspended by you on/, "사용자님께서 설치를 일시 중지한 날짜:"],
+        [/This action cannot be undone. Are you sure you want to uninstall this GitHub App from (\d+) repositor(y|ies)?/, "이 작업은 취소할 수 없어요. 정말로 이 GitHub 앱을 $1 개의 저장소에서 제거하시겠어요?"],
+        [/Uninstall "(.*)"/, "“$1” 제거하기"],
+        [/You will no longer be able to sign in to ([^ ]+) \(all administrative privileges will be bestowed upon the owners you choose\)/, "$1 에 더 이상 로그인할 수 없으며, 모든 관리자 권한은 사용자님께서 선택한 소유자에게 부여될 거예요."],
+        [/(\d+) applications?/, "$1 개의 앱"],
+        [/([^ ]+) will no longer be able to access your GitHub account. You cannot undo this action./, "$1 은 더 이상 사용자님의 GitHub 계정에 접근할 수 없으며, 이 작업은 취소할 수 없어요."],
+        [/([^ ]+) has been revoked from your account./, "$1 은(는) 사용자님의 계정에서 취소되었어요."],
+        [/Last used within the last (\d+) weeks? · Owned by/, "최근 $1 주 내 사용됨 · 소유자:"],
+        [/Last used within the last (\d+) months? · Owned by/, "최근 $1 달 내 사용됨 · 소유자:"],
+        [/Selected (\d+) repositor(y|ies)./, "$1 개의 저장소 선택됨."],
+        [/You're all set! (.*) has been uninstalled./, "모든 준비가 완료되었어요! $1 이(가) 제거되었어요."],
+        [/You're all set! A job has been queued to uninstall the \'(.*)\' app./, "모든 준비가 완료되었어요! ‘$1’ 앱 제거 작업이 대기 중이에요."],
+        [/Okay, (.*) was installed on the (@[^ ]+) account./, "알겠습니다, $2 계정에 $1 이(가) 설치되었어요."],
+        [/Okay, (.*) was updated for the (@[^ ]+) account./, "알겠습니다, $2 계정의 $1 이(가) 업데이트되었어요."],
+        [/Last used within the last (\d+) weeks?/, "최근 $1 주 내 사용됨"],
+        [/Last used within the last (\d+) months?/, "최근 $1 달 내 사용됨"],
+        [/(.+) will no longer be able to access the GitHub API. You cannot undo this action./, "$1 은 더 이상 GitHub API에 접근할 수 없으며, 이 작업은 취소할 수 없어요."],
+        [/is requesting an update to its permissions./, "권한 업데이트를 요청하고 있어요."],
+        [/The (.*) app by/, "$1 앱 (제작자:"],
+        [/The (.*) app will retain its current permissions if you choose not to accept the new permissions./, "새로운 권한을 수락하지 않으시면, “$1” 앱은 현재 권한을 유지할 거예요."],
+        [/(.*) is authorized to access this organization’s resources/, "$1 은(는) 이 조직의 자원에 접근할 수 있도록 승인되었어요."],
+        [/(.*) is denied access this organization’s resources/, "$1 은(는) 이 조직의 자원 접근이 거부되었어요."],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
@@ -5404,1184 +5431,1185 @@ I18N["ko-KR"]["settings/connections/applications"] = I18N["ko-KR"]["settings/ins
 I18N["ko-KR"]["orgs/settings/installations"] = I18N["ko-KR"]["settings/installations"];
 I18N["ko-KR"]["orgs/policies/applications"] = I18N["ko-KR"]["settings/installations"];
 
-I18N["ko-KR"]["settings/reminders"] = { // 设置 - 定时提醒
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/reminders"] = { // 설정 - 예약 알림
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // 定时提醒 https://github.com/settings/reminders
-            "Reminders allow you to push certain events to authorized instances of Microsoft Teams or Slack.": "提醒功能允许您将特定事件推送到 Microsoft Teams 或 Slack 的授权实例。",
-            "To use scheduled reminders, make sure that the Slack or Microsoft Teams integration is installed and up-to-date. If you need help with this, please contact your organization's owner.": "要使用定时提醒，请确保已安装 Slack 或 Microsoft Teams 集成并且是最新版本，如果您需要这方面的帮助，请联系您组织的所有者。",
-            "Available organizations": "可用的组织",
-            "Unavailable organizations": "不可用的组织",
-            "Configure Reminder": "配置提醒",
-            "No reminders": "没有提醒",
-            "Needs installing": "需要安装",
+        // 예약 알림 https://github.com/settings/reminders
+            "Reminders allow you to push certain events to authorized instances of Microsoft Teams or Slack.": "예약 알림을 사용하면 Microsoft Teams나 Slack의 권한 있는 인스턴스로 특정 이벤트를 전송할 수 있어요.",
+            "To use scheduled reminders, make sure that the Slack or Microsoft Teams integration is installed and up-to-date. If you need help with this, please contact your organization's owner.": "예약 알림을 사용하시려면 Slack 또는 Microsoft Teams 통합이 설치되어 있고 최신 버전인지 확인해주세요. 도움이 필요하시면 조직의 소유자님께 연락해보세요.",
+            "Available organizations": "사용 가능한 조직",
+            "Unavailable organizations": "사용할 수 없는 조직",
+            "Configure Reminder": "알림 구성하기",
+            "No reminders": "알림이 없어요",
+            "Needs installing": "설치가 필요해요",
 
-        // 新的预定提醒 https://github.com/settings/reminders/<orgs-name>
-            "New scheduled reminder": "新建预定提醒",
-            "Slack workspace": "Slack 工作区",
-            "Authorize Slack workspace": "授权 Slack 工作区",
-            "Days": "天",
-                "Weekdays": "工作日",
-                "Monday"    : "周一",
-                "Tuesday"   : "周二",
-                "Wednesday" : "周三",
-                "Thursday"  : "周四",
-                "Friday"    : "周五",
-                "Saturday"  : "周六",
-                "Sunday"    : "周日",
-            "Times": "时间",
-                "Filter": "筛选",
-            "Review requests assigned to you": "审查分配给您的请求",
-                "Receive reminders for reviews waiting on you.": "接收等待您的审查提醒。",
-            "Review requests assigned to your team": "审查分配给您团队的请求",
-                "Receive reminders for reviews waiting on your team.": "接收等待您的团队的审查提醒。",
-            "Enable real-time alerts": "启用实时警报",
-                "Receive immediate Slack messages when certain events happen": "当某些事件发生时，会立即收到 Slack 消息",
+        // 새 예약 알림 https://github.com/settings/reminders/<orgs-name>
+            "New scheduled reminder": "새 예약 알림",
+            "Slack workspace": "Slack 작업공간",
+            "Authorize Slack workspace": "Slack 작업공간 승인하기",
+            "Days": "일",
+                "Weekdays": "평일",
+                "Monday"    : "월요일",
+                "Tuesday"   : "화요일",
+                "Wednesday" : "수요일",
+                "Thursday"  : "목요일",
+                "Friday"    : "금요일",
+                "Saturday"  : "토요일",
+                "Sunday"    : "일요일",
+            "Times": "시간",
+                "Filter": "필터",
+            "Review requests assigned to you": "사용자님에게 할당된 검토 요청",
+                "Receive reminders for reviews waiting on you.": "사용자님을 기다리는 검토 요청에 대한 알림을 받아보세요.",
+            "Review requests assigned to your team": "사용자님 팀에 할당된 검토 요청",
+                "Receive reminders for reviews waiting on your team.": "사용자님 팀을 기다리는 검토 요청에 대한 알림을 받아보세요.",
+            "Enable real-time alerts": "실시간 알림 활성화하기",
+                "Receive immediate Slack messages when certain events happen": "특정 이벤트 발생 시 즉시 Slack 메시지를 받아보세요.",
 
-            "You will only receive notifications from public repositories in this organization because the current plan for": "您将只收到来自该组织中公共仓库的通知，因为目前",
-            "does not support reminders for private repositories.": "的计划不支持私人仓库的提醒。",
-            "Upgrade to Team": "升级为团队",
-            "Create reminder": "创建提醒者",
+            "You will only receive notifications from public repositories in this organization because the current plan for": "현재 사용 중인 플랜이 비공개 저장소의 알림을 지원하지 않기 때문에, 이 조직의 공개 저장소에서만 알림을 받으실 수 있어요:",
+            "does not support reminders for private repositories.": "비공개 저장소의 알림은 지원하지 않아요.",
+            "Upgrade to Team": "팀으로 업그레이드하기",
+            "Create reminder": "알림 만들기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/security-log"] = { // 设置 - 安全日志
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/security-log"] = { // 설정 - 보안 로그
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Security log 安全日志 https://github.com/settings/security-log
-            "Loading audit log entries…": "正在加载日志条目...",
-            "Filters": "筛选",
-                "Filter audit logs": "筛选审计日志",
-                "Yesterday's activity": "昨天的活动",
-                "Repository management": "仓库管理",
-                "Billing updates": "账单更新",
-                "Copilot activity": "Copilot 活动",
-                "Personal access token activity": "个人访问令牌活动",
-                "View advanced search syntax": "查看高级搜索语法",
-            "Filter by Member": "按用户筛选",
-            "Filter by Action": "按事件筛选",
-            "Search audit logs": "搜索审计日志",
-            "Search your security log": "搜索您的安全日志",
-            "Clear current search query": "清除当前的搜索查询",
-            "Events matching search query": "搜索查询匹配结果",
-            "Export": "导出",
-            "Recent events": "最近的事件",
-            "Unknown IP address": "未知 IP 地址",
-            "Unknown location": "未知位置",
-            // [/Found (\d+) events?/, "发现 $1 个活动"],
-            "Newer": "新的",
-            "Older": "旧的",
-            "ProTip!": "专业提示！",
-                "View all events created yesterday": "查看昨天创建的所有事件",
-                "View all events where you created something": "查看所有您创建内容时产生的事件",
-            "Country changed from your previous session": "国家或地区与上一次会话有所不同",
-            "Logged in": "登录",
-            "User signed in from an unrecognized device.": "用户从无法识别的设备登录。",
-            "User signed in from an unrecognized device and location.": "用户从无法识别的设备与位置登录。",
-            "New Device Used": "使用新设备",
-            "Created the repository": "创建了仓库",
-            "Created GitHub Pages site in": "创建了 GitHub Pages 在",
-            "Modified GitHub Pages source in": "修改了 GitHub Pages 源代码在",
-            "Created environment": "创造环境",
-            "Added": "添加",
-            "to the": "至",
+        // 보안 로그 https://github.com/settings/security-log
+            "Loading audit log entries…": "감사 로그 항목을 불러오는 중이에요...",
+            "Filters": "필터",
+                "Filter audit logs": "감사 로그 필터링하기",
+                "Yesterday's activity": "어제 활동",
+                "Repository management": "저장소 관리",
+                "Billing updates": "결제 업데이트",
+                "Copilot activity": "Copilot 활동",
+                "Personal access token activity": "개인 접근 토큰 활동",
+                "View advanced search syntax": "고급 검색 구문 보기",
+            "Filter by Member": "사용자별로 필터하기",
+            "Filter by Action": "이벤트별로 필터하기",
+            "Search audit logs": "감사 로그 검색하기",
+            "Search your security log": "보안 로그 검색하기",
+            "Clear current search query": "현재 검색어 지우기",
+            "Events matching search query": "검색어에 일치하는 이벤트",
+            "Export": "내보내기",
+            "Recent events": "최근 이벤트",
+            "Unknown IP address": "알 수 없는 IP 주소",
+            "Unknown location": "알 수 없는 위치",
+            // [/Found (\d+) events?/, "발견 $1 개의 이벤트"],
+            "Newer": "최신순",
+            "Older": "이전순",
+            "ProTip!": "프로 팁!",
+                "View all events created yesterday": "어제 생성된 모든 이벤트 보기",
+                "View all events where you created something": "사용자님이 생성한 모든 이벤트 보기",
+            "Country changed from your previous session": "이전 세션과 국가/지역이 달라졌어요",
+            "Logged in": "로그인함",
+            "User signed in from an unrecognized device.": "사용자님이 인식되지 않는 장치에서 로그인하셨어요.",
+            "User signed in from an unrecognized device and location.": "사용자님이 인식되지 않는 장치와 위치에서 로그인하셨어요.",
+            "New Device Used": "새로운 장치 사용됨",
+            "Created the repository": "저장소를 생성했어요.",
+            "Created GitHub Pages site in": "GitHub Pages 사이트를 생성했어요:",
+            "Modified GitHub Pages source in": "GitHub Pages 소스를 수정했어요:",
+            "Created environment": "환경을 생성했어요.",
+            "Added": "추가했어요.",
+            "to the": "에",
             "repository": "저장소",
-                "organization with": "组织，使用",
-                "read": "读取",
-                "permission": "权限",
-            "Added the following repositories to the": "添加以下仓库到",
-            "integration:": "集成：",
-            "Enabled GitHub Actions for": "启用仓库操作：",
-            "Created a secret for": "创建机密：",
-            "Created a token for": "创建令牌：",
-            "Regenerated a token for": "重新生成令牌：",
-            "Revoked a token for": "撤销令牌：",
-                "ending in": "结尾",
-                "for the": "用于",
-                "GitHub App": "GitHub 应用",
+                "organization with": "조직, 사용하여",
+                "read": "읽기",
+                "permission": "권한",
+            "Added the following repositories to the": "다음 저장소들을 추가했어요:",
+            "integration:": "통합:",
+            "Enabled GitHub Actions for": "GitHub 액션을 활성화했어요:",
+            "Created a secret for": "비밀을 생성했어요:",
+            "Created a token for": "토큰을 생성했어요:",
+            "Regenerated a token for": "토큰을 재생성했어요:",
+            "Revoked a token for": "토큰을 취소했어요:",
+                "ending in": "로 끝나는",
+                "for the": "에 대한",
+                "GitHub App": "GitHub 앱",
 
     },
-    "regexp": [ // 正则翻译
-        [/Found (\d+) events?/, "发现 $1 个活动"],
-        [/View ([^ ]+)'s profile/, "查看 $1 的资料"],
+    "regexp": [ // 정규식 번역
+        [/Found (\d+) events?/, "$1 개의 이벤트 발견"],
+        [/View ([^ ]+)'s profile/, "$1 의 프로필 보기"],
     ],
 };
 
-I18N["ko-KR"]["settings/sponsors-log"] = { // 设置 - 赞助日志
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/sponsors-log"] = { // 설정 - 후원 로그
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Sponsorship log 赞助日志 https://github.com/settings/sponsors-log
-            "Sponsors log": "赞助日志",
-            "New sponsorships, changes, and cancellations": "新的赞助、更改和取消",
-            "Period:": "周期：",
-            "Filter activity": "筛选活动",
-            "All-time": "所有时间",
-            "Past day": "过去一天",
-            "Past week": "过去一周",
-            "Past month": "过去一月",
-            "Past year": "过去一年",
-            "No sponsorship activity in this time period": "这段时间没有赞助活动",
-            "This is where you can review activity from your sponsorships.": "您可以在此处查看您的赞助活动。",
+        // Sponsorship log 후원 로그 https://github.com/settings/sponsors-log
+            "Sponsors log": "후원 로그",
+            "New sponsorships, changes, and cancellations": "새로운 후원, 변경, 취소 내역",
+            "Period:": "기간:",
+            "Filter activity": "활동 필터링",
+            "All-time": "전체 기간",
+            "Past day": "지난 하루",
+            "Past week": "지난 일주일",
+            "Past month": "지난 한 달",
+            "Past year": "지난 1년",
+            "No sponsorship activity in this time period": "이 기간 동안 후원 활동이 없어요.",
+            "This is where you can review activity from your sponsorships.": "여기에서 후원 활동 내역을 확인하실 수 있어요.",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규 표현식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/apps"] = { // 设置 - 开发者设置/GitHub 应用
-    "static": { // 静态翻译
-        "Developer Settings": "开发者设置",
-        "GitHub Apps": "GitHub 应用",
-        "OAuth Apps": "OAuth 应用",
-        "Personal access tokens": "个人访问令牌",
-            "Fine-grained tokens": "精细化的令牌",
-            "Tokens (classic)": "令牌（经典）",
+I18N["ko-KR"]["settings/apps"] = { // 설정 - 개발자 설정/GitHub 앱
+    "static": { // 정적 번역
+        "Developer Settings": "개발자 설정",
+        "GitHub Apps": "GitHub 앱",
+        "OAuth Apps": "OAuth 앱",
+        "Personal access tokens": "개인 접근 토큰",
+            "Fine-grained tokens": "세분화된 토큰",
+            "Tokens (classic)": "토큰(클래식)",
 
-        // GitHub 应用 https://github.com/settings/apps
-            // 顶部提醒
-                "Job queued to revoke all user tokens": "撤销所有用户令牌的任务已排队等待",
+        // GitHub 앱 https://github.com/settings/apps
+            // 상단 알림
+                "Job queued to revoke all user tokens": "모든 사용자 토큰 취소 작업이 대기 중이에요.",
 
-            "Register a new GitHub App": "注册新的 GitHub 应用",
-            "Want to build something that integrates with and extends GitHub?": "想要构建与 GitHub 集成和扩展的东西吗？",
-            "New GitHub App": "注册新 GitHub 应用",
-            "to get started developing on the GitHub API. You can also read more about building GitHub Apps in our": "，开始在 GitHub API 上进行开发。您还可以在我们的文档中阅读更多关于构建 GitHub 应用的信息",
-            "developer documentation": "开发者文档",
-            "A GitHub App can act on its own behalf, taking actions via the API directly instead of impersonating a user. Read more in our": "GitHub 应用可以代表自己执行操作，直接通过 API 执行操作，而不是冒充用户。阅读我们的更多内容", // 存在 app时
+            "Register a new GitHub App": "새 GitHub 앱 등록하기",
+            "Want to build something that integrates with and extends GitHub?": "GitHub와 통합 및 확장하는 무언가를 만들어보고 싶으세요?",
+            "New GitHub App": "새 GitHub 앱 등록하기",
+            "to get started developing on the GitHub API. You can also read more about building GitHub Apps in our": "GitHub API로 개발을 시작해 보세요. 또한 GitHub 앱 구축에 관한 자세한 내용은 저희의",
+            "developer documentation": "개발자 문서",
+            "A GitHub App can act on its own behalf, taking actions via the API directly instead of impersonating a user. Read more in our": "GitHub 앱은 사용자 대신 직접 API를 통해 작업할 수 있어요. 자세한 내용은 저희의", // 앱이 있을 때
 
-            // 无应用提示
-                "No GitHub Apps": "无 GitHub 应用",
-                    "Want to build something that integrates with and extends GitHub? Register a new GitHub App to get started developing on the GitHub API.": "想创建与 GitHub 集成并扩展 GitHub 的应用程序吗？注册一个新的 GitHub 应用程序，开始使用 GitHub API 进行开发。",
+            // 앱이 없을 때 안내
+                "No GitHub Apps": "GitHub 앱이 없어요.",
+                    "Want to build something that integrates with and extends GitHub? Register a new GitHub App to get started developing on the GitHub API.": "GitHub와 통합 및 확장하는 무언가를 만들어보고 싶으세요? 새 GitHub 앱을 등록해서 GitHub API 개발을 시작해 보세요.",
+ 
+                "View documentation": "문서 보기",
 
-                "View documentation": "查看文档",
-
-        // 注册 GitHub 应用 https://github.com/settings/apps/new
-            "Register new GitHub App": "注册新 GitHub 应用",
-            "GitHub App name": "GitHub 应用名称",
-            "The name of your GitHub App.": "您的 GitHub 应用的名称。",
-            "Markdown supported": "支持 Markdown 语法",
-            "This is displayed to users of your GitHub App": "展示给 GitHub 应用的使用者",
-            "Homepage URL": "主页地址",
-                "The full URL to your GitHub App’s website.": "GitHub 应用网站的主页地址",
-
-            "Identifying and authorizing users": "识别并授权用户",
-                "The full URL to redirect to after a user authorizes an installation.": "用户授权安装后重定向到的完整地址。",
-                "Callback URL documentation": "回调地址文档",
-                "Add Callback URL": "添加回调地址",
-
-                "Callback URL": "回调地址",
-                "Expire user authorization tokens": "用户授权令牌",
-                    "This will provide a": "这将提供一个",
-                    "which can be used to request an updated access token when this access token expires.": "，用于在此访问令牌到期时，请求更新访问令牌。",
-                "Request user authorization (OAuth) during installation": "在安装期间请求用户授权 (OAuth)",
-                    "Requests that the installing user grants access to their identity during installation of your App": "请求用户在安装应用期间授予其身份访问权限。",
-                    "Identifying and authorizing users for GitHub Apps documentation": "关于 GitHub 应用识别并授权用户的文档",
-                "Enable Device Flow": "启用设备流",
-                    "Allow this GitHub App to authorize users via the Device Flow.": "允许此 GitHub 应用通过设备流程授权用户。",
-                    "Read the": "阅读",
-                    "Device Flow documentation": "设备流程文档",
-
-            "Post installation": "安装完成后",
-                "Setup URL (optional)": "设置网址 (可选)",
-                    "Users will be redirected to this URL after installing your GitHub App to complete additional setup.": "用户在安装完 GitHub 应用后，会被重定向到这个网址，以完成额外的设置。",
-                    "Unavailable when requesting OAuth during installation.": "安装过程中请求 OAuth 时不可用。",
-                    "Users will be redirected to the 'User authorization callback URL' to complete additional setup.": "用户将被重定向到 “用户授权回调网址” 以完成其他设置。",
-                "Redirect on update": "更新时重定向",
-                    "Redirect users to the 'Setup URL' after installations are updated (E.g. repositories added/removed).": "在安装后更新时将用户重定向到 “设置网址”（例如: 添加/删除仓库）。",
-                    "Redirect users to the 'User authorization callback URL' after installations are updated (E.g repositories added/removed).": "在安装后更新时将用户重定向到 “用户授权回调网址”（例如: 添加/删除仓库）。",
-
-            "Webhook": "Web 钩子",
-                "Active": "激活",
-                    "We will deliver event details when this hook is triggered.": "当钩子被触发时，我们将提供事件详细信息。",
-                "Webhook URL": "Web 钩子网址",
-                    "Events will POST to this URL. Read our": "事件将 POST 到此网址。阅读",
-                    "webhook documentation": "关于 Web 钩子",
-                    "for more information.": "以获取更多信息。",
-                "Secret": "机密",
-                    "Read our": "阅读我们",
-                    "webhook secret documentation": "Web 钩子机密文档",
-
-            "Permissions": "权限",
-                "User permissions are granted on an individual user basis as part of the": "用户权限的授予是以单个用户为基础的，是一个环节",
-                "User authorization flow": "用户授权流程",
-                "permissions documentation": "权限文档",
-                "for information about specific permissions.": "以了解关于特定权限的信息。",
-
-                "Access:": "访问权限：",
-                "Select an access level": "选择访问级别",
-                "No access": "禁止访问",
-                "Read-only": "只读",
-                "Read and write": "读写",
-                "Admin": "管理员",
-
-                  "Selected": "项被选中",
-                  "mandatory": "强制",
-
-                "Repository permissions": "仓库权限",
-                    "Repository permissions permit access to repositories and related resources.": "仓库权限允许访问仓库和相关资源。",
-
+        // GitHub 앱 등록 https://github.com/settings/apps/new
+            "Register new GitHub App": "새 GitHub 앱 등록하기",
+            "GitHub App name": "GitHub 앱 이름",
+            "The name of your GitHub App.": "사용자님의 GitHub 앱 이름이에요.",
+            "Markdown supported": "Markdown 문법 지원해요",
+            "This is displayed to users of your GitHub App": "GitHub 앱 사용자에게 표시돼요.",
+            "Homepage URL": "홈페이지 URL",
+                "The full URL to your GitHub App’s website.": "GitHub 앱 웹사이트의 전체 URL이에요.",
+ 
+            "Identifying and authorizing users": "사용자 식별 및 인증",
+                "The full URL to redirect to after a user authorizes an installation.": "사용자께서 설치를 승인한 후 리디렉션할 전체 URL이에요.",
+                "Callback URL documentation": "콜백 URL 문서",
+                "Add Callback URL": "콜백 URL 추가하기",
+ 
+                "Callback URL": "콜백 URL",
+                "Expire user authorization tokens": "사용자 인증 토큰 만료시키기",
+                    "This will provide a": "이 기능은",
+                    "which can be used to request an updated access token when this access token expires.": "해당 토큰 만료 시 새 접근 토큰을 요청하는 데 사용될 수 있어요.",
+                "Request user authorization (OAuth) during installation": "설치 중에 사용자 인증 (OAuth) 요청하기",
+                    "Requests that the installing user grants access to their identity during installation of your App": "설치 중에 사용자께서 본인의 신원 접근을 허용해 주시도록 요청해요.",
+                    "Identifying and authorizing users for GitHub Apps documentation": "GitHub 앱의 사용자 식별 및 인증에 관한 문서",
+                "Enable Device Flow": "디바이스 흐름 활성화하기",
+                    "Allow this GitHub App to authorize users via the Device Flow.": "이 GitHub 앱이 디바이스 흐름을 통해 사용자 인증을 할 수 있도록 허용해요.",
+                    "Read the": "문서 읽어보기",
+                    "Device Flow documentation": "디바이스 흐름 문서",
+ 
+            "Post installation": "설치 완료 후",
+                "Setup URL (optional)": "설정 URL (선택 사항)",
+                    "Users will be redirected to this URL after installing your GitHub App to complete additional setup.": "사용자께서 GitHub 앱 설치 후 추가 설정을 완료하시도록 이 URL로 리디렉션돼요.",
+                    "Unavailable when requesting OAuth during installation.": "설치 중 OAuth 요청 시에는 사용 불가능해요.",
+                    "Users will be redirected to the 'User authorization callback URL' to complete additional setup.": "추가 설정을 완료하려면 사용자께서 '사용자 인증 콜백 URL'로 리디렉션돼요.",
+                "Redirect on update": "업데이트 시 리디렉션하기",
+                    "Redirect users to the 'Setup URL' after installations are updated (E.g. repositories added/removed).": "설치 업데이트 후(예: 저장소 추가/삭제 시) 사용자께서 '설정 URL'로 리디렉션되도록 해요.",
+                    "Redirect users to the 'User authorization callback URL' after installations are updated (E.g repositories added/removed).": "설치 업데이트 후(예: 저장소 추가/삭제 시) 사용자께서 '사용자 인증 콜백 URL'로 리디렉션되도록 해요.",
+ 
+            "Webhook": "웹훅",
+                "Active": "활성화",
+                    "We will deliver event details when this hook is triggered.": "훅이 트리거되면 이벤트 상세 정보를 전달해드려요.",
+                "Webhook URL": "웹훅 URL",
+                    "Events will POST to this URL. Read our": "이벤트가 이 URL로 POST돼요. 저희의",
+                    "webhook documentation": "웹훅 문서",
+                    "for more information.": "을 읽어보세요.",
+                "Secret": "시크릿",
+                    "Read our": "저희의",
+                    "webhook secret documentation": "웹훅 시크릿 문서",
+ 
+            "Permissions": "권한",
+                "User permissions are granted on an individual user basis as part of the": "사용자 권한은 개별 사용자 단위로 부여돼요, 이는",
+                "User authorization flow": "사용자 인증 흐름",
+                "permissions documentation": "권한 문서",
+                "for information about specific permissions.": "를 참고하세요.",
+ 
+                "Access:": "접근 권한:",
+                "Select an access level": "접근 수준 선택하기",
+                "No access": "접근 금지",
+                "Read-only": "읽기 전용",
+                "Read and write": "읽기/쓰기",
+                "Admin": "관리자",
+ 
+                  "Selected": "선택됨",
+                  "mandatory": "필수",
+ 
+                "Repository permissions": "저장소 권한",
+                    "Repository permissions permit access to repositories and related resources.": "저장소 권한은 저장소와 관련 리소스에 접근할 수 있도록 해줘요.",
+ 
                     "Actions": "액션",
-                        "Workflows, workflow runs and artifacts.": "工作流程、工作流程的运行和工件。",
-                    "Administration": "管理",
-                        "Repository creation, deletion, settings, teams, and collaborators.": "仓库创建、删除、设置、团队和协作者。",
-                    "Attestations": "证书",
-                        "Create and retrieve attestations for a repository.": "创建和检索仓库的证书。",
-                    "Checks": "检查",
-                        "Checks on code.": "检查代码。",
-                    "Code scanning alerts": "代码扫描警报",
-                        "View and manage code scanning alerts.": "查看和管理代码扫描警报。",
+                        "Workflows, workflow runs and artifacts.": "워크플로, 워크플로 실행 및 아티팩트에 관한 내용이에요.",
+                    "Administration": "관리",
+                        "Repository creation, deletion, settings, teams, and collaborators.": "저장소 생성, 삭제, 설정, 팀 및 협업자 관련이에요.",
+                    "Attestations": "증명서",
+                        "Create and retrieve attestations for a repository.": "저장소의 증명서를 생성하고 조회할 수 있어요.",
+                    "Checks": "체크",
+                        "Checks on code.": "코드를 체크해요.",
+                    "Code scanning alerts": "코드 스캔 알림",
+                        "View and manage code scanning alerts.": "코드 스캔 알림을 조회 및 관리할 수 있어요.",
                     // "": "코드스페이스",
-                        "Create, edit, delete and list Codespaces.": "创建、编辑、删除和列出代码空间。",
-                    "Codespaces lifecycle admin": "代码空间的生命周期管理",
-                        "Manage the lifecycle of Codespaces, including starting and stopping.": "管理代码空间的生命周期，包括启动和停止。",
-                    "Codespaces metadata": "代码空间元数据",
-                        "Access Codespaces metadata including the devcontainers and machine type.": "访问代码空间元数据，包括开发容器和机器类型。",
-                    "Codespaces secrets": "代码空间机密",
-                        "Restrict Codespaces user secrets modifications to specific repositories.": "限制代码空间的用户机密对特定仓库的修改。",
-                    "Commit statuses": "提交状态",
-                        "Commit statuses.": "提交状态。",
-                    "Contents": "内容",
-                        "Repository contents, commits, branches, downloads, releases, and merges.": "仓库内容、提交、分支、下载、发布和合并。",
+                        "Create, edit, delete and list Codespaces.": "코드스페이스를 생성, 편집, 삭제 및 목록을 볼 수 있어요.",
+                    "Codespaces lifecycle admin": "코드스페이스 라이프사이클 관리",
+                        "Manage the lifecycle of Codespaces, including starting and stopping.": "코드스페이스의 라이프사이클(시작 및 중지 포함)을 관리해요.",
+                    "Codespaces metadata": "코드스페이스 메타데이터",
+                        "Access Codespaces metadata including the devcontainers and machine type.": "코드스페이스 메타데이터(개발 컨테이너 및 머신 타입 포함)를 조회할 수 있어요.",
+                    "Codespaces secrets": "코드스페이스 시크릿",
+                        "Restrict Codespaces user secrets modifications to specific repositories.": "코드스페이스 사용자 시크릿 수정 권한을 특정 저장소로 제한할 수 있어요.",
+                    "Commit statuses": "커밋 상태",
+                        "Commit statuses.": "커밋 상태에 관한 정보에요.",
+                    "Contents": "내용",
+                        "Repository contents, commits, branches, downloads, releases, and merges.": "저장소 내용, 커밋, 분기, 다운로드, 릴리즈 및 병합 내역이에요.",
                     // 自定义属性
-                        "View and set values for a repository's custom properties, when allowed by the property.": "在属性允许的情况下，查看和设置仓库自定义属性的值。",
-                    "Dependabot alerts": "Dependabot 警报",
-                        "Retrieve Dependabot alerts.": "检索 Dependabot 警报。",
-                    "Dependabot secrets": "Dependabot 机密",
-                        "Manage Dependabot repository secrets.": "管理 Dependabot 仓库的机密。",
-                    "Deployments": "部署",
-                        "Deployments and deployment statuses.": "部署和部署状态。",
+                        "View and set values for a repository's custom properties, when allowed by the property.": "속성 허용 시, 저장소의 사용자 정의 속성 값을 조회 및 설정할 수 있어요.",
+                    "Dependabot alerts": "Dependabot 알림",
+                        "Retrieve Dependabot alerts.": "Dependabot 알림을 조회할 수 있어요.",
+                    "Dependabot secrets": "Dependabot 시크릿",
+                        "Manage Dependabot repository secrets.": "Dependabot 저장소 시크릿을 관리할 수 있어요.",
+                    "Deployments": "배포",
+                        "Deployments and deployment statuses.": "배포 및 배포 상태에 관한 내용이에요.",
                     "Discussions": "토론",
-                        "Discussions and related comments and labels.": "讨论及相关评论和标签。",
-                    "Environments": "环境",
-                        "Manage repository environments.": "管理仓库环境。",
+                        "Discussions and related comments and labels.": "토론 및 관련 댓글과 라벨이에요.",
+                    "Environments": "환경",
+                        "Manage repository environments.": "저장소 환경을 관리할 수 있어요.",
                     "Issues": "이슈",
-                        "Issues and related comments, assignees, labels, and milestones.": "이슈及相关评论、受理人、标签和里程碑。",
-                    "Merge queues": "合并列队",
-                        "Manage a repository's merge queues": "管理仓库的合并队列。",
-                    "Metadata": "元数据",
-                        "Search repositories, list collaborators, and access repository metadata.": "搜索仓库、列出协作者，访问仓库元数据。",
+                        "Issues and related comments, assignees, labels, and milestones.": "이슈와 관련 댓글, 담당자, 라벨, 마일스톤이에요.",
+                    "Merge queues": "병합 큐",
+                        "Manage a repository's merge queues": "저장소의 병합 큐를 관리할 수 있어요.",
+                    "Metadata": "메타데이터",
+                        "Search repositories, list collaborators, and access repository metadata.": "저장소 검색, 협업자 목록 조회, 저장소 메타데이터 접근이 가능해요.",
                     "Packages": "패키지",
-                        "Packages published to the GitHub Package Platform.": "发布软件包到 GitHub Package 平台。",
+                        "Packages published to the GitHub Package Platform.": "GitHub 패키지 플랫폼에 게시된 패키지에 관한 내용이에요.",
                     "Pages": "GitHub Pages",
-                        "Retrieve Pages statuses, configuration, and builds, as well as create new builds.": "检索页面状态、配置和构建，以及创建新的构建。",
+                        "Retrieve Pages statuses, configuration, and builds, as well as create new builds.": "Pages 상태, 구성, 빌드 조회 및 새 빌드 생성이 가능해요.",
                     "Projects": "프로젝트",
-                        "Manage classic projects within a repository.": "管理仓库中的经典项目。",
+                        "Manage classic projects within a repository.": "저장소 내 클래식 프로젝트를 관리할 수 있어요.",
                     "Pull requests": "끌어오기 요청",
-                        "Pull requests and related comments, assignees, labels, milestones, and merges.": "拉取请求及相关评论、受让人、标签、里程碑和合并。",
-                    "Repository security advisories": "仓库安全公告",
-                        "View and manage repository security advisories.": "查看和管理安全公告",
-                    "Secret scanning alerts": "机密扫描警报",
-                        "View and manage secret scanning alerts.": "查看和管理机密扫描警报。",
-                    "Secrets": "机密",
-                        "Manage Actions repository secrets.": "管理操作仓库机密。",
-                    "Single file": "单个文件",
-                        "Manage just a single file.": "只管理单个文件。",
-                        "Path": "路径",
-                        "The content paths to single files your app can access.": "应用可以访问的单个文件的内容路径。",
-                    "Variables": "变量",
-                        "Manage Actions repository variables.": "管理操作仓库变量。",
-                    "Webhooks": "Web 钩子",
-                        "Manage the post-receive hooks for a repository.": "管理仓库的接收后钩子。",
-                    "Workflows": "工作流程",
-                        "Update GitHub Action workflow files.": "更新 GitHub Action 工作流程文件。",
-
-                "Organization permissions": "组织权限",
-                    "Organization permissions permit access to organization related resources.": "组织权限允许访问组织相关资源。",
-
-                    "API Insights": "API 洞察",
-                        "View statistics on how the API is being used for an organization.": "查看有关组织如何使用 API 的统计信息。",
-                    // 管理
-                        "Manage access to an organization.": "管理对组织的访问。",
-                    "Blocking users": "拉黑用户",
-                        "View and manage users blocked by the organization.": "查看和管理被组织拉黑的用户。",
-                    "Custom organization roles": "自定义组织角色",
-                        "Create, edit, delete and list custom organization roles. View system organization roles.": "创建、编辑、删除和列出自定义组织角色。查看系统组织角色。",
-                    "Custom properties": "自定义属性",
-                        "View custom properties, write repository values, and administer definitions.": "查看自定义属性、写入仓库值并管理定义。",
-                    "Custom repository roles": "自定义仓库角色",
-                        "Create, edit, delete and list custom repository roles.": "创建、编辑、删除和列出自定义仓库角色。",
-                    "Events": "活动",
-                        "View events triggered by an activity in an organization.": "查看组织中某项活动所触发的事件。",
-                    "GitHub Copilot Business": "GitHub Copilot 商业版",
-                        "Manage Copilot Business seats and settings": "管理 GitHub Copilot 商业版席位和设置",
-                    "Knowledge bases": "知识库",
-                        "View and manage knowledge bases for an organization.": "查看和管理组织的知识库。",
-                    "Members": "成员",
-                        "Organization members and teams.": "组织成员和团队。",
-                    "Organization announcement banners": "组织公告横幅",
-                        "View and modify announcement banners for an organization.": "查看并修改组织的公告横幅。",
-                    "Organization codespaces": "组织代码空间",
-                        "Manage Codespaces for an organization.": "管理组织的代码空间。",
-                    "Organization codespaces secrets": "组织代码空间机密",
-                        "Manage Codespaces Secrets for an organization.": "管理组织的代码空间机密。",
-                    "Organization codespaces settings": "组织代码空间设置",
-                        "Manage Codespaces settings for an organization.": "管理组织的代码空间设置。",
-                    "Organization dependabot secrets": "组织 Dependabot 机密",
-                        "Manage Dependabot organization secrets.": "管理 Dependabot 组织的机密。",
-                    "Organization private registries": "组织私有注册表",
-                        "Manage private registries for an organization.": "管理组织的私有注册表。",
-                    "Personal access token requests": "个人访问令牌请求",
-                        "Manage personal access token requests from organization members.": "管理来自组织成员的个人访问令牌请求。",
-                    "Personal access tokens": "个人访问令牌",
-                        "View and revoke personal access tokens that have been granted access to an organization.": "查看和撤销已被授予组织访问权限的个人访问令牌。",
-                    "Plan": "计划",
-                        "View an organization's plan.": "查看组织的计划。",
-                    // 项目
-                        "Manage projects for an organization.": "管理组织的项目。",
-                    // 机密
-                        "Manage Actions organization secrets.": "管理操作组织机密",
-                    "Self-hosted runners": "自托管运行器",
-                        "View and manage Actions self-hosted runners available to an organization.": "查看和管理组织可用的 “操作自托管运行器”。",
-                    "Team discussions": "团队讨论",
-                        "Manage team discussions and related comments.": "管理团队讨论及相关评论。",
-                    // 变量
-                        "Manage Actions organization variables.": "管理操作组织变量。",
-                    // Web 钩子
-                        "Manage the post-receive hooks for an organization.": "管理组织的接收后钩子。",
-
-                "Account permissions": "账户权限",
-                    "These permissions are granted on an individual user basis as part of the User authorization flow.": "这些权限是在单个用户的基础上授予的，作为用户授权流程的一部分",
-
-                    "Block another user": "拉黑其他用户",
-                        "View and manage users blocked by the user.": "查看和管理被用户拉黑的用户。",
-                    "Codespaces user secrets": "代码空间用户机密",
-                        "Manage Codespaces user secrets.": "管理代码空间用户机密。",
-                    "Copilot Chat ": "",
-                        "This application will receive your GitHub ID, your GitHub Copilot Chat session messages (not including messages sent to another application), and timestamps of provided GitHub Copilot Chat session messages. This permission must be enabled for Copilot Extensions.": "此应用将接收您的 GitHub ID、GitHub Copilot Chat 会话消息（不包括发送到其他应用的消息）以及所提供的 GitHub Copilot Chat 会话消息的时间戳。Copilot 扩展必须启用此权限。",
-                    "Copilot Editor Context": "Copilot 编辑器语境",
-                        "This application will receive bits of Editor Context (e.g. currently opened file) whenever you send it a message through Copilot Chat.": "每当您通过 Copilot Chat 向应用发送消息时，该应用都会收到一些编辑器上下文（例如当前打开的文件）。",
-                    "Email addresses": "电子邮箱地址",
-                        "Manage a user's email addresses.": "管理用户的电子邮箱地址。",
-                    // 活动
-                        "View events triggered by a user's activity.": "查看用户活动触发的事件。",
-                    // 关注者
-                        "A user's followers": "用户的关注者",
-                    "GPG keys": "GPG 密钥",
-                        "View and manage a user's GPG keys.": "查看和管理用户的 GPG 密钥。",
+                        "Pull requests and related comments, assignees, labels, milestones, and merges.": "끌어오기 요청 및 관련 댓글, 담당자, 라벨, 마일스톤, 병합 내역이에요.",
+                    "Repository security advisories": "저장소 보안 공지",
+                        "View and manage repository security advisories.": "저장소 보안 공지를 조회 및 관리할 수 있어요.",
+                    "Secret scanning alerts": "시크릿 스캔 알림",
+                        "View and manage secret scanning alerts.": "시크릿 스캔 알림을 조회 및 관리할 수 있어요.",
+                    "Secrets": "시크릿",
+                        "Manage Actions repository secrets.": "액션 저장소 시크릿을 관리할 수 있어요.",
+                    "Single file": "단일 파일",
+                        "Manage just a single file.": "단일 파일만 관리할 수 있어요.",
+                        "Path": "경로",
+                        "The content paths to single files your app can access.": "앱이 접근할 수 있는 단일 파일의 콘텐츠 경로에요.",
+                    "Variables": "변수",
+                        "Manage Actions repository variables.": "액션 저장소 변수를 관리할 수 있어요.",
+                    "Webhooks": "웹훅",
+                        "Manage the post-receive hooks for a repository.": "저장소의 포스트-리시브 훅을 관리할 수 있어요.",
+                    "Workflows": "워크플로",
+                        "Update GitHub Action workflow files.": "GitHub 액션 워크플로 파일을 업데이트할 수 있어요.",
+ 
+                "Organization permissions": "조직 권한",
+                    "Organization permissions permit access to organization related resources.": "조직 권한은 조직 관련 리소스에 접근할 수 있도록 해줘요.",
+ 
+                    "API Insights": "API 인사이트",
+                        "View statistics on how the API is being used for an organization.": "조직에서 API 사용 통계를 조회할 수 있어요.",
+                    // 관리
+                        "Manage access to an organization.": "조직 접근을 관리할 수 있어요.",
+                    "Blocking users": "사용자 차단하기",
+                        "View and manage users blocked by the organization.": "조직에서 차단한 사용자를 조회 및 관리할 수 있어요.",
+                    "Custom organization roles": "사용자 정의 조직 역할",
+                        "Create, edit, delete and list custom organization roles. View system organization roles.": "사용자 정의 조직 역할을 생성, 편집, 삭제 및 목록 조회할 수 있어요. 시스템 조직 역할도 확인할 수 있어요.",
+                    "Custom properties": "사용자 정의 속성",
+                        "View custom properties, write repository values, and administer definitions.": "사용자 정의 속성을 조회하고, 저장소 값을 입력하며 정의를 관리할 수 있어요.",
+                    "Custom repository roles": "사용자 정의 저장소 역할",
+                        "Create, edit, delete and list custom repository roles.": "사용자 정의 저장소 역할을 생성, 편집, 삭제 및 목록 조회할 수 있어요.",
+                    "Events": "이벤트",
+                        "View events triggered by an activity in an organization.": "조직 내 활동으로 발생한 이벤트를 조회할 수 있어요.",
+                    "GitHub Copilot Business": "GitHub Copilot 비즈니스",
+                        "Manage Copilot Business seats and settings": "Copilot 비즈니스 좌석 및 설정을 관리할 수 있어요.",
+                    "Knowledge bases": "지식 베이스",
+                        "View and manage knowledge bases for an organization.": "조직의 지식 베이스를 조회 및 관리할 수 있어요.",
+                    "Members": "멤버",
+                        "Organization members and teams.": "조직 멤버 및 팀 관련이에요.",
+                    "Organization announcement banners": "조직 공지 배너",
+                        "View and modify announcement banners for an organization.": "조직의 공지 배너를 조회 및 수정할 수 있어요.",
+                    "Organization codespaces": "조직 코드스페이스",
+                        "Manage Codespaces for an organization.": "조직의 코드스페이스를 관리할 수 있어요.",
+                    "Organization codespaces secrets": "조직 코드스페이스 시크릿",
+                        "Manage Codespaces Secrets for an organization.": "조직 코드스페이스 시크릿을 관리할 수 있어요.",
+                    "Organization codespaces settings": "조직 코드스페이스 설정",
+                        "Manage Codespaces settings for an organization.": "조직 코드스페이스 설정을 관리할 수 있어요.",
+                    "Organization dependabot secrets": "조직 Dependabot 시크릿",
+                        "Manage Dependabot organization secrets.": "조직의 Dependabot 시크릿을 관리할 수 있어요.",
+                    "Organization private registries": "조직 개인 레지스트리",
+                        "Manage private registries for an organization.": "조직의 개인 레지스트리를 관리할 수 있어요.",
+                    "Personal access token requests": "개인 접근 토큰 요청",
+                        "Manage personal access token requests from organization members.": "조직 멤버의 개인 접근 토큰 요청을 관리할 수 있어요.",
+                    "Personal access tokens": "개인 접근 토큰",
+                        "View and revoke personal access tokens that have been granted access to an organization.": "조직 접근 권한이 부여된 개인 접근 토큰을 조회하고 취소할 수 있어요.",
+                    "Plan": "플랜",
+                        "View an organization's plan.": "조직의 플랜을 조회할 수 있어요.",
+                    // 프로젝트
+                        "Manage projects for an organization.": "조직의 프로젝트를 관리할 수 있어요.",
+                    // 시크릿
+                        "Manage Actions organization secrets.": "액션 조직 시크릿을 관리할 수 있어요.",
+                    "Self-hosted runners": "자체 호스팅 러너",
+                        "View and manage Actions self-hosted runners available to an organization.": "조직에서 사용 가능한 액션 자체 호스팅 러너를 조회 및 관리할 수 있어요.",
+                    "Team discussions": "팀 토론",
+                        "Manage team discussions and related comments.": "팀 토론 및 관련 댓글을 관리할 수 있어요.",
+                    // 변수
+                        "Manage Actions organization variables.": "액션 조직 변수를 관리할 수 있어요.",
+                    // 웹훅
+                        "Manage the post-receive hooks for an organization.": "조직의 포스트-리시브 훅을 관리할 수 있어요.",
+ 
+                "Account permissions": "계정 권한",
+                    "These permissions are granted on an individual user basis as part of the User authorization flow.": "이 권한들은 사용자 인증 흐름의 일환으로 개별 사용자에게 부여돼요.",
+ 
+                    "Block another user": "다른 사용자 차단하기",
+                        "View and manage users blocked by the user.": "사용자께서 차단한 사용자를 조회 및 관리할 수 있어요.",
+                    "Codespaces user secrets": "코드스페이스 사용자 시크릿",
+                        "Manage Codespaces user secrets.": "코드스페이스 사용자 시크릿을 관리할 수 있어요.",
+                    "Copilot Chat ": "Copilot 채팅",
+                        "This application will receive your GitHub ID, your GitHub Copilot Chat session messages (not including messages sent to another application), and timestamps of provided GitHub Copilot Chat session messages. This permission must be enabled for Copilot Extensions.": "이 애플리케이션은 사용자님의 GitHub ID, GitHub Copilot 채팅 세션 메시지(다른 애플리케이션으로 전송된 메시지 제외)와 메시지 타임스탬프를 받게 돼요. Copilot 확장을 사용하려면 이 권한을 활성화해야 해요.",
+                    "Copilot Editor Context": "Copilot 에디터 컨텍스트",
+                        "This application will receive bits of Editor Context (e.g. currently opened file) whenever you send it a message through Copilot Chat.": "Copilot 채팅을 통해 메시지를 보낼 때마다 에디터 컨텍스트(예: 현재 열려있는 파일) 일부를 받게 돼요.",
+                    "Email addresses": "이메일 주소",
+                        "Manage a user's email addresses.": "사용자님의 이메일 주소를 관리할 수 있어요.",
+                    // 활동
+                        "View events triggered by a user's activity.": "사용자 활동으로 발생한 이벤트를 조회할 수 있어요.",
+                    // 팔로워
+                        "A user's followers": "사용자님의 팔로워에요.",
+                    "GPG keys": "GPG 키",
+                        "View and manage a user's GPG keys.": "사용자님의 GPG 키를 조회 및 관리할 수 있어요.",
                     // Gist
-                        "Create and modify a user's gists and comments.": "创建和修改用户的代码片段和评论。",
-                    "Git SSH keys": "Git SSH 密钥",
+                        "Create and modify a user's gists and comments.": "사용자님의 Gist와 댓글을 생성 및 수정할 수 있어요.",
+                    "Git SSH keys": "Git SSH 키",
                     "Interaction limits": "상호 작용 제한",
-                        "Interaction limits on repositories": "仓库的交互限制",
-                    // 计划
-                        "View a user's plan.": "查看用户的计划。",
-                    "Profile": "个人信息",
-                        "Manage a user's profile settings.": "管理用户的个人信息设置。",
-                    "SSH signing keys": "SSH 签名密钥",
-                        "View and manage a user's SSH signing keys.": "查看和管理用户的 SSH 签名密钥。",
-                    "Starring": "星标",
-                        "List and manage repositories a user is starring.": "列出和管理用户已加星标的仓库。",
-                    "Watching": "关注",
-                        "List and change repositories a user is subscribed to.": "列出和更改用户订阅的仓库。",
-
-            // 以下的事件 与 钩子页面 一致
-            // 添加钩子 页面 /<user-name>/<repo-name>/settings/hooks/new
-            "Subscribe to events": "订阅事件",
-                "Based on the permissions you’ve selected, what events would you like to subscribe to?": "根据您选择的权限，您想订阅哪些事件？",
-                "Installation target": "安装目标",
-                    "A GitHub App installation target is renamed.": "GitHub 应用安装目标已重命名。",
-                "Meta": "元数据",
-                    "When this App is deleted and the associated hook is removed.": "当该应用被删除和相关的钩子被删除时。",
-                "Security advisory": "安全提示",
-                    "Security advisory published, updated, or withdrawn.": "安全提示的发布、更新或撤销。",
-                "Branch protection configuration": "分支保护配置",
-                    "All branch protections disabled or enabled for a repository.": "禁用或启用仓库的所有分支保护。",
-                "Branch protection rule": "分支保护规则",
-                    "Branch protection rule created, deleted or edited.": "分支保护规则的创建、删除或编辑。",
-                "Code scanning alert": "代码扫描警报",
-                    "Code Scanning alert created, fixed in branch, or closed": "代码扫描警报的创建、在分支中修复或关闭。",
-                "Check run": "检查运行",
-                    "Check run is created, requested, rerequested, or completed.": "检查运行的创建、请求、重新请求或完成。",
-                "Check suite": "检查套件",
-                    "Check suite is requested, rerequested, or completed.": "检查套件的请求、重新请求或完成。",
-                "Commit comment": "提交评论",
-                    "Commit or diff commented on.": "提交或差异评论。",
+                        "Interaction limits on repositories": "저장소의 상호 작용 제한이에요.",
+                    // 플랜
+                        "View a user's plan.": "사용자님의 플랜을 조회할 수 있어요.",
+                    "Profile": "프로필",
+                        "Manage a user's profile settings.": "사용자님의 프로필 설정을 관리할 수 있어요.",
+                    "SSH signing keys": "SSH 서명 키",
+                        "View and manage a user's SSH signing keys.": "사용자님의 SSH 서명 키를 조회 및 관리할 수 있어요.",
+                    "Starring": "별표",
+                        "List and manage repositories a user is starring.": "사용자님이 별표를 누른 저장소를 조회 및 관리할 수 있어요.",
+                    "Watching": "구독",
+                        "List and change repositories a user is subscribed to.": "사용자님이 구독 중인 저장소를 조회 및 변경할 수 있어요.",
+ 
+            // 아래 이벤트는 웹훅 페이지와 동일해요
+            // 훅 추가 페이지 /<user-name>/<repo-name>/settings/hooks/new
+            "Subscribe to events": "이벤트 구독하기",
+                "Based on the permissions you’ve selected, what events would you like to subscribe to?": "선택한 권한에 따라 구독할 이벤트를 선택해 보세요.",
+                "Installation target": "설치 대상",
+                    "A GitHub App installation target is renamed.": "GitHub 앱 설치 대상의 명칭이 변경되었어요.",
+                "Meta": "메타데이터",
+                    "When this App is deleted and the associated hook is removed.": "앱이 삭제되고 관련 훅이 제거될 때에요.",
+                "Security advisory": "보안 권고",
+                    "Security advisory published, updated, or withdrawn.": "보안 권고가 게시, 업데이트 또는 철회되었어요.",
+                "Branch protection configuration": "분기 보호 구성",
+                    "All branch protections disabled or enabled for a repository.": "저장소의 모든 분기 보호가 활성화 또는 비활성화되었어요.",
+                "Branch protection rule": "분기 보호 규칙",
+                    "Branch protection rule created, deleted or edited.": "분기 보호 규칙이 생성, 삭제 또는 편집되었어요.",
+                "Code scanning alert": "코드 스캔 알림",
+                    "Code Scanning alert created, fixed in branch, or closed": "코드 스캔 알림이 생성되거나, 분기에서 수정되었거나, 닫혔어요.",
+                "Check run": "체크 실행",
+                    "Check run is created, requested, rerequested, or completed.": "체크 실행이 생성, 요청, 재요청 또는 완료되었어요.",
+                "Check suite": "체크 스위트",
+                    "Check suite is requested, rerequested, or completed.": "체크 스위트가 요청, 재요청 또는 완료되었어요.",
+                "Commit comment": "커밋 댓글",
+                    "Commit or diff commented on.": "커밋 또는 변경사항에 대해 댓글이 달렸어요.",
                 //"创建": "",
-                    "Branch or tag created.": "分支或标签的创建。",
-                "Custom property": "自定义属性",
-                    "Custom property is created, updated, or deleted.": "自定义属性的创建、更新或删除。",
-                "Custom property values": "自定义属性值",
-                    "Custom property values are changed for a repository": "仓库自定义属性值的更改。",
-                "Discussion": "讨论",
-                    "Discussion created, edited, closed, reopened, pinned, unpinned, locked, unlocked, transferred, answered, unanswered, labeled, unlabeled, had its category changed, or was deleted.": "讨论的创建、编辑、关闭、重新打开、置顶、取消置顶、锁定、解锁、转移、答复、取消答复、标记、取消标记、更改其类别或删除。",
-                "Discussion comment": "讨论评论",
-                    "Discussion comment created, edited, or deleted.": "讨论评论的创建、编辑或删除。",
+                    "Branch or tag created.": "분기 또는 꼬리표가 생성되었어요.",
+                "Custom property": "사용자 정의 속성",
+                    "Custom property is created, updated, or deleted.": "사용자 정의 속성이 생성, 업데이트 또는 삭제되었어요.",
+                "Custom property values": "사용자 정의 속성 값",
+                    "Custom property values are changed for a repository": "저장소의 사용자 정의 속성 값이 변경되었어요.",
+                "Discussion": "토론",
+                    "Discussion created, edited, closed, reopened, pinned, unpinned, locked, unlocked, transferred, answered, unanswered, labeled, unlabeled, had its category changed, or was deleted.": "토론이 생성, 편집, 종료, 재개, 고정, 고정 해제, 잠금, 잠금 해제, 전환, 답변, 미답변, 라벨 추가, 라벨 제거, 카테고리 변경 또는 삭제되었어요.",
+                "Discussion comment": "토론 댓글",
+                    "Discussion comment created, edited, or deleted.": "토론 댓글이 생성, 편집 또는 삭제되었어요.",
                 //"删除": "",
-                    "Branch or tag deleted.": "分支或标签的删除。",
-                "Dependabot alert": "Dependabot 警报",
-                    "Dependabot alert auto_dismissed, auto_reopened, created, dismissed, reopened, fixed, or reintroduced.": "Dependabot 警报的自动解除、自动重新打开、创建、解除、重新打开、修复或重新引入。",
-                "Deploy key": "部署密钥",
-                    "A deploy key is created or deleted from a repository.": "在仓库中部署密钥的创建或删除。",
-                "Deployment": "部署",
-                    "Repository was deployed or a deployment was deleted.": "仓库的部署或删除部署。",
-                "Deployment protection rule": "部署保护规则",
-                    "Deployment protection rule requested for an environment.": "环境请求部署保护规则。",
-                "Deployment review": "部署审查",
-                    "Deployment review requested, approved or rejected": "部署审查的请求、批准或拒绝",
-                "Deployment status": "部署状态",
-                    "Deployment status updated from the API.": "通过 API 更新部署状态。",
-                "Exemption request push ruleset": "推送规则集豁免请求",
-                    "Push ruleset bypass request was created, cancelled, completed, received a response, or a response was dismissed. Note: Delegated bypass for push rules is currently in beta and subject to change.": "推送规则集旁路请求已创建、取消、完成、收到响应或驳回响应。注：推送规则的委托旁路目前处于测试阶段，可能会有更改。",
-                "Exemption request secret scanning": "秘密扫描豁免请求",
-                    "Secret scanning push protection bypass request was created, cancelled, completed, received a response, or a response was dismissed. Note: Delegated bypass for push protection is currently in beta and subject to change.": "秘密扫描推送保护旁路请求已创建、取消、完成、收到响应或驳回响应。注：推送保护的授权旁路目前处于测试阶段，可能会有更改。",
+                    "Branch or tag deleted.": "분기 또는 꼬리표가 삭제되었어요.",
+                "Dependabot alert": "Dependabot 알림",
+                    "Dependabot alert auto_dismissed, auto_reopened, created, dismissed, reopened, fixed, or reintroduced.": "Dependabot 알림이 자동 해제, 자동 재개, 생성, 해제, 재개, 수정 또는 재도입되었어요.",
+                "Deploy key": "배포 키",
+                    "A deploy key is created or deleted from a repository.": "저장소에서 배포 키가 생성되거나 삭제되었어요.",
+                "Deployment": "배포",
+                    "Repository was deployed or a deployment was deleted.": "저장소가 배포되었거나 배포가 삭제되었어요.",
+                "Deployment protection rule": "배포 보호 규칙",
+                    "Deployment protection rule requested for an environment.": "환경에 대해 배포 보호 규칙이 요청되었어요.",
+                "Deployment review": "배포 검토",
+                    "Deployment review requested, approved or rejected": "배포 검토가 요청, 승인 또는 거부되었어요.",
+                "Deployment status": "배포 상태",
+                    "Deployment status updated from the API.": "API를 통해 배포 상태가 업데이트되었어요.",
+                "Exemption request push ruleset": "푸시 규칙집 예외 요청",
+                    "Push ruleset bypass request was created, cancelled, completed, received a response, or a response was dismissed. Note: Delegated bypass for push rules is currently in beta and subject to change.": "푸시 규칙집 예외 요청이 생성, 취소, 완료, 응답 수신 또는 응답 해제되었어요. 참고: 푸시 규칙 위임 예외는 현재 베타 단계이며 변경될 수 있어요.",
+                "Exemption request secret scanning": "시크릿 스캔 예외 요청",
+                    "Secret scanning push protection bypass request was created, cancelled, completed, received a response, or a response was dismissed. Note: Delegated bypass for push protection is currently in beta and subject to change.": "시크릿 스캔 푸시 보호 예외 요청이 생성, 취소, 완료, 응답 수신 또는 응답 해제되었어요. 참고: 푸시 보호 위임 예외는 현재 베타 단계이며 변경될 수 있어요.",
                 //"复刻": "",
-                    "Repository forked.": "仓库复刻。",
-                "Gollum": "咕噜",
-                    "Wiki page updated.": "Wiki 页面的更新。",
-                "Issue comment": "이슈评论",
-                    "Issue comment created, edited, or deleted.": "이슈评论的创建、编辑或删除。",
+                    "Repository forked.": "저장소가 포크되었어요.",
+                "Gollum": "골룸",
+                    "Wiki page updated.": "Wiki 페이지가 업데이트되었어요.",
+                "Issue comment": "이슈 댓글",
+                    "Issue comment created, edited, or deleted.": "이슈 댓글이 생성, 편집 또는 삭제되었어요.",
                 //"이슈": "",
-                    "Issue opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned, locked, or unlocked.": "이슈的打开、编辑、删除、转移、置顶、取消置顶、关闭、重新打开、分配、取消分配、标记、取消标记、设置里程碑、取消里程碑、锁定或解锁。",
-                "Label": "标签",
-                    "Label created, edited or deleted.": "标签的创建、编辑或删除。",
-                "Milestone": "里程碑",
-                    "Milestone created, closed, opened, edited, or deleted.": "里程碑的创建、关闭、打开、编辑或删除。",
-                "Member": "成员",
-                    "Collaborator added to, removed from, or has changed permissions for a repository.": "协作者添加到仓库、从仓库中删除或更改了仓库的权限。",
-                "Membership": "团队成员",
-                    "Team membership added or removed.": "团队成员的添加或删除。",
-                "Merge group": "合并组",
-                    "Merge Group requested checks, or was destroyed.": "合并组的请求检查或销毁。",
-                "Merge queue entry": "合并队列条目",
-                    "Merge Queue entry added": "合并队列条目的添加。",
+                    "Issue opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned, locked, or unlocked.": "이슈가 열리거나, 편집, 삭제, 전환, 고정, 고정 해제, 종료, 재개, 할당, 할당 취소, 라벨 추가, 라벨 제거, 마일스톤 설정, 마일스톤 해제, 잠금 또는 잠금 해제되었어요.",
+                "Label": "라벨",
+                    "Label created, edited or deleted.": "라벨이 생성, 편집 또는 삭제되었어요.",
+                "Milestone": "마일스톤",
+                    "Milestone created, closed, opened, edited, or deleted.": "마일스톤이 생성, 종료, 열림, 편집 또는 삭제되었어요.",
+                "Member": "멤버",
+                    "Collaborator added to, removed from, or has changed permissions for a repository.": "저장소에 협업자가 추가되거나 제거되었거나 권한이 변경되었어요.",
+                "Membership": "팀 멤버십",
+                    "Team membership added or removed.": "팀 멤버십이 추가되거나 제거되었어요.",
+                "Merge group": "병합 그룹",
+                    "Merge Group requested checks, or was destroyed.": "병합 그룹이 체크를 요청하거나 제거되었어요.",
+                "Merge queue entry": "병합 큐 항목",
+                    "Merge Queue entry added": "병합 큐 항목이 추가되었어요.",
                 "Organization": "조직",
-                    "Organization deleted, renamed, member invited, member added, or member removed.": "组织的删除、重命名以及成员的邀请、添加或删除。",
-                "Page build": "构建 GitHub Pages",
-                    "Pages site built.": "GitHub Pages 站点的建立。",
-                "Personal access token request": "个人访问令牌请求",
-                    "Personal access token request created, approved, denied, or cancelled.": "个人访问令牌请求的创建、批准、拒绝或取消。",
-                "Project": "项目",
-                    "Project created, updated, or deleted.": "项目的创建、更新或删除。",
-                "Project card": "项目面板卡",
-                    "Project card created, updated, or deleted.": "项目面板卡的创建、更新或删除",
-                "Project column": "项目栏目",
-                    "Project column created, updated, moved or deleted.": "项目栏目的创建、更新、移动或删除。",
-                "Projects v2 item": "项目 v2 条目",
-                    "Project item created, edited, deleted, archived, restored, converted, or reordered.": "项目条目的创建、编辑、删除、归档、恢复、转换或重新排序。",
-                "Projects v2": "项目 v2",
-                    "Project created, updated, deleted, closed, or reopened.": "项目的创建、更新、删除、关闭或重新打开。",
-                "Projects v2 status update": "项目 v2 状态更新",
-                    "Project status updates created, updated, or deleted.": "项目状态更新的创建、更新或删除。",
-                // 公共
-                    "Repository changes from private to public.": "仓库从私有更改为公共。",
-                "Pull request": "拉取请求",
-                    "Pull request assigned, auto merge disabled, auto merge enabled, closed, converted to draft, demilestoned, dequeued, edited, enqueued, labeled, locked, milestoned, opened, ready for review, reopened, review request removed, review requested, synchronized, unassigned, unlabeled, or unlocked.": "拉取请求的分配、禁用自动合并、启用自动合并、关闭、转换为草案、取消里程碑、取消队列、编辑、队列、标记、锁定、设置里程碑、打开、准备审查、重新打开、取消审查请求、请求审查、同步、取消分配、取消标记或解锁。",
-                "Pull request review": "拉取请求审查",
-                    "Pull request review submitted, edited, or dismissed.": "拉取请求审查的提交、编辑或驳回。",
-                "Pull request review comment": "拉取请求审查意见",
-                    "Pull request diff comment created, edited, or deleted.": "拉取请求差异评论的创建、编辑或删除。",
-                "Pull request review thread": "拉取请求线程",
-                    "A pull request review thread was resolved or unresolved.": "拉取请求的审查线程解决或未解决。",
-                "Push": "推送",
-                    "Git push to a repository.": "Git 推送到仓库。",
-                "Registry package": "注册软件包",
-                    "Registry package published or updated in a repository.": "仓库中注册软件包的发布或更新。",
-                "Release": "发行版",
-                    "Release created, edited, published, unpublished, or deleted.": "发行版的创建、编辑、发布、取消发布或删除。",
+                    "Organization deleted, renamed, member invited, member added, or member removed.": "조직이 삭제, 이름 변경, 멤버 초대, 추가 또는 제거되었어요.",
+                "Page build": "GitHub Pages 빌드",
+                    "Pages site built.": "GitHub Pages 사이트가 빌드되었어요.",
+                "Personal access token request": "개인 접근 토큰 요청",
+                    "Personal access token request created, approved, denied, or cancelled.": "개인 접근 토큰 요청이 생성, 승인, 거부 또는 취소되었어요.",
+                "Project": "프로젝트",
+                    "Project created, updated, or deleted.": "프로젝트가 생성, 업데이트 또는 삭제되었어요.",
+                "Project card": "프로젝트 카드",
+                    "Project card created, updated, or deleted.": "프로젝트 카드가 생성, 업데이트 또는 삭제되었어요.",
+                "Project column": "프로젝트 칼럼",
+                    "Project column created, updated, moved or deleted.": "프로젝트 칼럼이 생성, 업데이트, 이동 또는 삭제되었어요.",
+                "Projects v2 item": "프로젝트 v2 항목",
+                    "Project item created, edited, deleted, archived, restored, converted, or reordered.": "프로젝트 항목이 생성, 편집, 삭제, 보관, 복원, 전환 또는 재정렬되었어요.",
+                "Projects v2": "프로젝트 v2",
+                    "Project created, updated, deleted, closed, or reopened.": "프로젝트가 생성, 업데이트, 삭제, 종료 또는 재개되었어요.",
+                "Projects v2 status update": "프로젝트 v2 상태 업데이트",
+                    "Project status updates created, updated, or deleted.": "프로젝트 상태 업데이트가 생성, 업데이트 또는 삭제되었어요.",
+                // 공통
+                    "Repository changes from private to public.": "저장소가 비공개에서 공개로 변경되었어요.",
+                "Pull request": "끌어오기 요청",
+                    "Pull request assigned, auto merge disabled, auto merge enabled, closed, converted to draft, demilestoned, dequeued, edited, enqueued, labeled, locked, milestoned, opened, ready for review, reopened, review request removed, review requested, synchronized, unassigned, unlabeled, or unlocked.": "끌어오기 요청이 할당, 자동 병합 비활성화, 자동 병합 활성화, 종료, 초안 전환, 마일스톤 해제, 큐 제거, 편집, 큐 추가, 라벨 추가, 잠금, 마일스톤 설정, 열림, 검토 준비, 재개, 검토 요청 제거, 검토 요청, 동기화, 할당 취소, 라벨 제거 또는 잠금 해제되었어요.",
+                "Pull request review": "끌어오기 요청 검토",
+                    "Pull request review submitted, edited, or dismissed.": "끌어오기 요청 검토가 제출, 편집 또는 기각되었어요.",
+                "Pull request review comment": "끌어오기 요청 검토 댓글",
+                    "Pull request diff comment created, edited, or deleted.": "끌어오기 요청 차이 댓글이 생성, 편집 또는 삭제되었어요.",
+                "Pull request review thread": "끌어오기 요청 검토 스레드",
+                    "A pull request review thread was resolved or unresolved.": "끌어오기 요청 검토 스레드가 해결되었거나 미해결 상태에요.",
+                "Push": "푸시",
+                    "Git push to a repository.": "저장소로 Git 푸시가 이루어졌어요.",
+                "Registry package": "레지스트리 패키지",
+                    "Registry package published or updated in a repository.": "저장소에서 레지스트리 패키지가 게시 또는 업데이트되었어요.",
+                "Release": "릴리즈",
+                    "Release created, edited, published, unpublished, or deleted.": "릴리즈가 생성, 편집, 게시, 비게시 또는 삭제되었어요.",
                 "Repository": "저장소",
-                    "Repository created, deleted, archived, unarchived, publicized, privatized, edited, renamed, or transferred.": "仓库的创建、删除、归档、取消归档、公开、私有化、编辑、重命名或转让。",
-                "Repository dispatch": "仓库调度",
-                    "When a message is dispatched from a repository.": "当信息从仓库发出时。",
-                "Repository ruleset": "仓库规则集",
-                    "Repository ruleset created, deleted or edited.": "仓库规则集的创建、删除或编辑。",
-                "Security and analysis": "安全和分析",
-                    "Code security features enabled or disabled for a repository.": "启用或禁用仓库的代码安全功能。",
-                "Secret scanning alert": "机密扫描警报",
-                    "Secrets scanning alert created, resolved, reopened, validated, or publicly leaked.": "机密扫描警报的创建、解决、重新打开、验证或公开泄露。",
-                "Secret scanning alert location": "机密扫描警报位置",
-                    "Secrets scanning alert location created.": "机密扫描警报位置的创建。",
-                "Secret scanning scan": "机密扫描",
-                    "Secrets scanning scan completed.": "机密扫描已完成",
-                // 星标
-                    "A star is created or deleted from a repository.": "星标或取消仓库星标。",
+                    "Repository created, deleted, archived, unarchived, publicized, privatized, edited, renamed, or transferred.": "저장소가 생성, 삭제, 보관, 보관 해제, 공개, 비공개, 편집, 이름 변경 또는 이전되었어요.",
+                "Repository dispatch": "저장소 디스패치",
+                    "When a message is dispatched from a repository.": "저장소에서 메시지가 디스패치될 때에요.",
+                "Repository ruleset": "저장소 규칙집",
+                    "Repository ruleset created, deleted or edited.": "저장소 규칙집이 생성, 삭제 또는 편집되었어요.",
+                "Security and analysis": "보안 및 분석",
+                    "Code security features enabled or disabled for a repository.": "저장소의 코드 보안 기능이 활성화 또는 비활성화되었어요.",
+                "Secret scanning alert": "시크릿 스캔 알림",
+                    "Secrets scanning alert created, resolved, reopened, validated, or publicly leaked.": "시크릿 스캔 알림이 생성, 해결, 재개, 검증 또는 공개 누출되었어요.",
+                "Secret scanning alert location": "시크릿 스캔 알림 위치",
+                    "Secrets scanning alert location created.": "시크릿 스캔 알림 위치가 생성되었어요.",
+                "Secret scanning scan": "시크릿 스캔",
+                    "Secrets scanning scan completed.": "시크릿 스캔이 완료되었어요.",
+                // 별표
+                    "A star is created or deleted from a repository.": "저장소에 별표가 생성되거나 취소되었어요.",
                 //"状态": "",
-                    "Commit status updated from the API.": "通过 API 更新提交状态。",
+                    "Commit status updated from the API.": "API를 통해 커밋 상태가 업데이트되었어요.",
                 //"团队": "",
-                    "Team is created, deleted, edited, or added to/removed from a repository.": "团队的创建、删除、编辑以及向仓库添加团队、从仓库中移除团队。",
-                "Team add": "团队添加",
-                    "Team added or modified on a repository.": "仓库团队的添加或修改。",
+                    "Team is created, deleted, edited, or added to/removed from a repository.": "팀이 생성, 삭제, 편집되었거나 저장소에 추가/제거되었어요.",
+                "Team add": "팀 추가",
+                    "Team added or modified on a repository.": "저장소 팀이 추가되거나 수정되었어요.",
                 "Watch": "구독",
-                    "User stars a repository.": "用户星标仓库。",
-                "Workflow dispatch": "工作流程调度",
-                    "A manual workflow run is requested.": "请求手动运行工作流程。",
-                "Workflow job": "工作流程作业",
-                    "Workflow job queued, waiting, in progress, or completed on a repository.": "仓库中工作流作业的队列、等待、正在进行或完成。",
-                "Workflow run": "工作流程运行",
-                    "Workflow run requested or completed on a repository.": "仓库中工作流程运行的请求或完成。",
-                "Org block": "组织黑名单", // 组织设置
-                    "A user has been blocked or unblocked.": "用户拉黑或解除拉黑。",
-                "Repository advisory": "仓库公告",
-                    "Repository advisory published or reported.": "仓库公告发布或报告。",
-                "Sub issues": "子提议",
-                    "Sub-issues added or removed, and parent issues added or removed.": "子이슈和父이슈的添加或删除。",
-
-            "Where can this GitHub App be installed?": "这款 GitHub 应用可以安装在哪里？",
-                "Only on this account": "仅在当前账户",
+                    "User stars a repository.": "사용자님이 저장소에 별표를 눌렀어요.",
+                "Workflow dispatch": "워크플로 디스패치",
+                    "A manual workflow run is requested.": "수동 워크플로 실행이 요청되었어요.",
+                "Workflow job": "워크플로 작업",
+                    "Workflow job queued, waiting, in progress, or completed on a repository.": "저장소에서 워크플로 작업이 대기, 진행 중 또는 완료되었어요.",
+                "Workflow run": "워크플로 실행",
+                    "Workflow run requested or completed on a repository.": "저장소에서 워크플로 실행이 요청되었거나 완료되었어요.",
+                "Org block": "조직 차단", // 조직 설정
+                    "A user has been blocked or unblocked.": "사용자가 차단되었거나 차단 해제되었어요.",
+                "Repository advisory": "저장소 공지",
+                    "Repository advisory published or reported.": "저장소 공지가 게시되었거나 보고되었어요.",
+                "Sub issues": "하위 이슈",
+                    "Sub-issues added or removed, and parent issues added or removed.": "하위 이슈와 상위 이슈가 추가 또는 제거되었어요.",
+ 
+            "Where can this GitHub App be installed?": "이 GitHub 앱을 어디에 설치할 수 있나요?",
+                "Only on this account": "현재 계정에만 설치하기",
                     // [/Only allow this GitHub App to be installed on the (@[^ ]+) account./, "仅允许在 $1 帐户上安装此 GitHub 应用。"],
-                "Any account": "任何账户",
-                    "Allow this GitHub App to be installed by any user or organization.": "允许任何用户或组织安装此 GitHub 应用。",
-
-            "Create GitHub App": "创建 GitHub 应用",
-
-        // 某个 GitHub 应用 https://github.com/settings/apps/<app-name>
-            // 顶部提醒
-                // GitHub App 注册成功
-                "Registration successful. You must": "注册成功。您必须",
-                "generate a private key": "生成私钥",
-                "in order to install your GitHub App.": "才能安装 GitHub 应用。",
-                // GitHub App 已更新
-                "Got it. Your GitHub App has been updated.": "GitHub 应用已更新。",
-                "The GitHub App is now public. Anyone is free to install it.": "GitHub 应用已公开化。任何人都可以自由安装。",
-                "The GitHub App is now private. It can only be installed on this account.": "GitHub 应用已私有化。只能安装在此账户上。",
-
-            "Developer settings": "开发者设置",
-            // 左侧栏
-                "General": "通常",
-                "Permissions & events": "权限与事件",
-                "Install App": "安装应用",
-                "Advanced": "高级",
-                "Optional features": "可选功能",
-                "Public page": "公共页面",
-
-            // 关于
-                "Owned by:": "拥有者：",
-                "Using your App ID to get installation tokens? You can now": "使用您的 App ID 获取安装令牌？您现在可以",
-                "use your Client ID instead": "使用您的 Client ID",
-                "Revoke all user tokens": "撤销所有用户令牌",
-                "GitHub Apps can use OAuth credentials to identify users. Learn more about identifying users by reading our": "GitHub 应用可以使用 OAuth 凭据来识别用户。了解更多关于识别用户的信息，请阅读我们的",
-                "integration developer documentation": "集成开发者文档",
-
-                "Public link": "公共链接",
-
-                // 撤销所有用户令牌对话框
-                "Revoke all user tokens?": "撤销所有用户令牌？",
-                    "Are you sure you want to revoke": "您确定要撤销此应用的",
-                    "all": "所有",
-                    "user tokens for this application?": "用户令牌吗？",
-                    "All users of this application will be forced back through the": "该应用的所有用户都将被迫返回",
-                    "authorization flow": "授权流程",
-                    "before they can use your application again.": "，然后才能再次使用您的应用。",
-                    "All SSH keys created by this application will also be deleted.": "此应用创建的所有 SSH 密钥也将被删除。",
-                    "This action is not reversible.": "此操作不可逆转。",
-                    "I understand, revoke all user tokens": "我明白了，依然撤销所有用户令牌",
-
-            "Client secrets": "客户端机密",
-                "Generate a new client secret": "生成客户端机密",
-                "You need a client secret to authenticate as the application to the API.": "您需要一个客户端机密，才能以应用的身份验证 API。",
-
-            "Basic information": "基本信息",
-                "Save changes": "保存更改",
-
-            "Display information": "显示信息",
-                "Drag & drop": "拖放",
-                "Upload a logo...": "上传 Logo ...",
-                    "Uploading...": "上传中...",
-                "You can also drag and drop a picture from your computer.": "您也可以从电脑中拖放图片。",
-
-                "Delete this image": "删除图片",
-                "Badge background color": "徽章背景颜色",
-                "The hex value of the badge background color. Hex colors should only contain numbers and letters from a-f.": "徽章背景颜色的十六进制值。十六进制颜色只能包含 a-f 之间的数字和字母。",
-                // 剪裁对话框
-                    "Crop your new avatar": "裁剪您的新头像",
-                    "Set new avatar": "设置新头像",
-                // 顶部提醒
-                    "Your avatar has been updated. It may take a few minutes to update across the site.": "您的头像已更新。整个网站的更新可能需要几分钟的时间。",
-                    "This avatar has been deleted.": "该头像已被删除。",
-
-            // 市场
-                "List your GitHub App in the": "上架您的 GitHub 应用到",
-                "GitHub Marketplace": "GitHub 市场",
-                "so that other users can discover it.": "以便其他用户可以发现它。",
-                "List in Marketplace": "上架应用",
-
-                "Edit how your GitHub App is presented in the Marketplace directory, including screenshots and links.": "编辑 GitHub 应用在市场索引中的展示方式，包括截图和链接。",
-                "Edit Marketplace listing": "编辑市场上架信息",
-
-            "Private keys": "私钥",
-                "Generate a private key": "生成私钥",
-                "You need a private key to sign access token requests.": "您需要私钥来签署访问令牌请求。",
-
-                "Learn more about private keys": "了解更多关于私钥的信息",
-                "Private key": "私钥",
-                "Added": "已添加于",
-
-            "IP allow list": "IP 允许列表",
-                "Enter the IP addresses of your GitHub App to allow organizations with": "输入 GitHub 应用的 IP 地址，以便在安装时允许在",
-                "IP allow lists": "IP 允许列表",
-                "to selectively inherit the App's IP allow list when installed.": "的组织有选择地继承应用的 IP 允许列表。",
-                "Learn more about App IP allow lists": "了解更多关于应用 IP 允许列表的信息",
-
-                "There are no IP addresses on the allow list yet.": "允许列表中尚无 IP 地址。",
-                "IP address or range in CIDR notation": "以 CIDR 表示的 IP 地址或范围",
-                "Short description of IP address or range": "IP 地址或范围的简短描述",
-
-                "Check IP address": "检查 IP 地址",
-                    "Enter an IP address to check whether it is permitted by enabled entries on the IP allow list.": "输入 IP 地址，检查 IP 允许列表中的启用条目是否允许该地址。",
-
-        // 某个 GitHub 应用 - 权限 https://github.com/settings/apps/<app-name>/permissions
-            "Changes to permissions will be applied to all future installations. Current users will be prompted to accept any changes and enable the new permissions on their installation.": "对权限的更改将应用于今后的所有安装。系统将提示当前用户接受任何更改，并在其安装中启用新权限。",
-
-            "Add a note to users": "为用户添加注释",
-                "This note will be displayed on the permissions update approval page.": "该注释将显示在权限更新批准审查页面上。",
-                    "Add a note to your users explaining why you are requesting these changes.": "向您的用户添加注释，解释您请求这些更改的原因。",
-
-                "Are you sure you want to update permissions?": "您确定要更新权限吗？",
-                    "Current users will be prompted to accept these changes and enable the new permissions on their installation.": "系统将提示当前用户接受这些更改，并在其安装中启用新权限。",
-
-        // 某个 GitHub 应用 - 助理 https://github.com/settings/apps/<app-name>/agent
-            "A Copilot configuration allows your GitHub App to integrate with Copilot. Learn more about building GitHub Copilot Extensions in the": "Copilot 配置允许您的 GitHub 应用与 Copilot 集成。了解更多关于构建 GitHub Copilot 扩展的信息，请访问",
-            "documentation": "文档",
-
-            "Accept the Marketplace Developer agreement to create your Copilot Extension": "接受市场开发者协议以创建您的 Copilot 扩展",
-                "By clicking \"Accept Terms\" below, you agree to the": "点击下面的 “接受条款”，即表示您同意以下条款",
-                "GitHub Copilot Extension Developer Policy": "GitHub Copilot 扩展开发者政策",
-                "Pre-release License terms": "预发布许可条款",
-                "on behalf of": "代表",
-                ". Please check to make sure that you are agreeing to these terms on behalf of the correct account.": "。请检查以确保您代表正确的帐户同意这些条款。",
-                "Accept Terms": "接受条款",
-
-            "To enable Copilot functionality, you must first accept the Marketplace Developer agreement": "要启用 Copilot 功能，您必须首先接受市场开发者协议",
-            "To enable Copilot functionality, you must first grant your app permission to read Copilot Messages. To do so, navigate to Permissions & Events > Account Permissions > Read-only for Copilot Chat": "要启用 Copilot 功能，必须先授予应用读取 Copilot 消息的权限。为此，请导航至权限和事件 > 帐户权限 > Copilot 聊天 - 只读",
-
-        // 某个 GitHub 应用 - 安装 https://github.com/settings/apps/<app-name>/installations
-            // [/Install (.*)/, "安装 $1"],
-            // [/Choose an account to install (.*) on:/, "选择要安装 $1 的账户："],
-            "Install": "安装",
-            // [/Install (.*) on this account./, "安装 $1 到此账户上。"],
-            "Installed": "已安装",
-            // [/(.*) is installed on this account./, "$1 已安装在此账户上。"],
-
-        // 某个 GitHub 应用 - 高级 https://github.com/settings/apps/<app-name>/advanced
-            "Danger zone": "危险区",
-                "Transfer ownership of this GitHub App": "转让此 GitHub 应用的所有权",
-                    "Transferring may be delayed until the new owner approves the transfer.": "转让可能会延迟，直至新所有者批准转让",
-                    "Transfer ownership": "转让所有权",
-                        // [/Where should we transfer (.*)\?/, "将 $1 转让给谁？"],
-                        "Type the name of the GitHub App to confirm": "键入要确认的 GitHub 应用名称",
-                        "New owner’s GitHub username or organization name": "新所有者的 GitHub 用户名或组织名称",
-                        "Transfer this GitHub App": "转让所有权",
-                "Delete this GitHub App": "删除此 GitHub 应用",
-                    "This cannot be undone. Please be certain.": "此操作无法撤销。请确认。",
-
-                    "Delete GitHub App": "删除 GitHub 应用",
-                        "Delete GitHub App?": "删除 GitHub 应用？",
-                            "Unexpected bad things will happen if you don’t read this!": "请仔细阅读以下提示信息！！！",
-                            "This action": "此操作",
-                            "CANNOT": "无法",
-                            "be undone. This will permanently delete the": "撤销。这将永久删除",
-                            "GitHub App.": "GitHub 应用。",
-
-                            "This will also uninstall the GitHub App from": "这还将卸载 GitHub 应用从",
-                            // [/(\d+) accounts?/, "$1 个账户"],
-
-                            "Please type in the name of the GitHub App to confirm.": "请键入 GitHub 应用的名称进行确认。",
-                            "I understand the consequences, delete this GitHub App": "我明白后果，依然删除该 GitHub 应用",
-                "Make this GitHub App public": "公开 GitHub 应用",
-                    "Allow this GitHub App to be installed on other accounts.": "允许在其他账户中安装此 GitHub 应用。",
-
-                    "Make public": "转为公开",
-                        // [/Any user or organization will be able to install this GitHub App. Are you sure you want to make (.*) public\?/, "任何用户或组织都可以安装此 GitHub 应用。您确定要公开 $1 吗？"],
-                "Make this GitHub App private": "私有化 GitHub 应用",
-                    "Private GitHub Apps cannot be installed on other accounts.": "私有 GitHub 应用不能安装在其他账户上。",
-                    "Make private": "转为私有",
-                        "This integration cannot be made private since it is already installed on other accounts.": "此应用无法转为私有，因为它已安装在其他账户上。",
-                "Make this application private": "私有化应用",
-                    "Private applications cannot be installed on other accounts.": "私有应用不能安装在其他账户上。",
-                        // [/This GitHub app will only be installable on the ([^ ]+) account. Are you sure you want to make (.*) private\?/, "此 GitHub 应用只能安装在 $1 账户上。您确定要将 $2 设为私有吗？"],
-
-        // 某个 GitHub 应用 - 可选功能 https://github.com/settings/apps/<app-name>/beta
-            // [/Activate optional features for (.*)/, "激活 $1 的可选功能"],
-            // [/Choose a feature to activate for (.*):/, "选择要为 $1 激活的功能："],
-
-            "User-to-server token expiration": "用户到服务器访问令牌过期",
-                "User-to-server access tokens will expire after 8 hours. A Refresh Token will be provided which can be exchanged for a new access token.": "用户到服务器访问令牌将在 8 小时后过期。我们将提供一个刷新令牌，用户可以用它换取新的访问令牌。",
-                "Opt-out": "选择退出",
-                "Opt-in": "选择加入",
-                    "Disable user-to-server token expiration for this app.": "禁用此应用的用户到服务器访问令牌过期。",
-
+                "Any account": "어떤 계정에도 설치 가능",
+                    "Allow this GitHub App to be installed by any user or organization.": "어떤 사용자나 조직에서도 이 GitHub 앱을 설치할 수 있도록 해요.",
+ 
+            "Create GitHub App": "GitHub 앱 만들기",
+ 
+        // 특정 GitHub 앱 https://github.com/settings/apps/<app-name>
+            // 상단 알림
+                // GitHub 앱 등록 성공
+                "Registration successful. You must": "등록에 성공했어요. 반드시",
+                "generate a private key": "개인 키를 생성해야 해요.",
+                "in order to install your GitHub App.": "그래야 GitHub 앱을 설치할 수 있어요.",
+                // GitHub 앱 업데이트됨
+                "Got it. Your GitHub App has been updated.": "알겠어요. GitHub 앱이 업데이트되었어요.",
+                "The GitHub App is now public. Anyone is free to install it.": "GitHub 앱이 이제 공개되었어요. 누구나 자유롭게 설치할 수 있어요.",
+                "The GitHub App is now private. It can only be installed on this account.": "GitHub 앱이 이제 비공개로 전환되었어요. 현재 계정에만 설치할 수 있어요.",
+ 
+            "Developer settings": "개발자 설정",
+            // 왼쪽 메뉴
+                "General": "일반",
+                "Permissions & events": "권한 및 이벤트",
+                "Install App": "앱 설치하기",
+                "Advanced": "고급",
+                "Optional features": "선택적 기능",
+                "Public page": "공개 페이지",
+ 
+            // 정보
+                "Owned by:": "소유자:",
+                "Using your App ID to get installation tokens? You can now": "앱 ID로 설치 토큰을 받으시나요? 이제는",
+                "use your Client ID instead": "클라이언트 ID를 사용해 보실 수 있어요.",
+                "Revoke all user tokens": "모든 사용자 토큰 취소하기",
+                "GitHub Apps can use OAuth credentials to identify users. Learn more about identifying users by reading our": "GitHub 앱은 OAuth 자격 증명을 사용해 사용자를 식별할 수 있어요. 사용자 식별에 관한 자세한 내용은 저희의",
+                "integration developer documentation": "통합 개발자 문서를",
+ 
+                "Public link": "공개 링크",
+ 
+                // 모든 사용자 토큰 취소 대화상자
+                "Revoke all user tokens?": "모든 사용자 토큰을 취소할까요?",
+                    "Are you sure you want to revoke": "이 앱의",
+                    "all": "모든",
+                    "user tokens for this application?": "사용자 토큰을 취소하시겠어요?",
+                    "All users of this application will be forced back through the": "이 앱의 모든 사용자는 다시",
+                    "authorization flow": "인증 과정을",
+                    "before they can use your application again.": "이용할 수 있게 돼요.",
+                    "All SSH keys created by this application will also be deleted.": "이 앱이 생성한 모든 SSH 키도 삭제될 거예요.",
+                    "This action is not reversible.": "이 작업은 되돌릴 수 없어요.",
+                    "I understand, revoke all user tokens": "알겠습니다, 모든 사용자 토큰 취소하기",
+ 
+            "Client secrets": "클라이언트 시크릿",
+                "Generate a new client secret": "새 클라이언트 시크릿 생성하기",
+                "You need a client secret to authenticate as the application to the API.": "API 인증을 위해 앱으로서 클라이언트 시크릿이 필요해요.",
+ 
+            "Basic information": "기본 정보",
+                "Save changes": "변경 사항 저장하기",
+ 
+            "Display information": "표시 정보",
+                "Drag & drop": "드래그 & 드롭",
+                "Upload a logo...": "로고 업로드하기...",
+                    "Uploading...": "업로드 중...",
+                "You can also drag and drop a picture from your computer.": "컴퓨터에서 그림을 드래그 앤 드롭할 수도 있어요.",
+ 
+                "Delete this image": "이 이미지 삭제하기",
+                "Badge background color": "배지 배경 색상",
+                "The hex value of the badge background color. Hex colors should only contain numbers and letters from a-f.": "배지 배경 색상의 16진수 값이에요. 16진수 색상은 a-f 사이의 숫자와 문자만 포함해야 해요.",
+                // 크롭 대화상자
+                    "Crop your new avatar": "새 아바타 크롭하기",
+                    "Set new avatar": "새 아바타 설정하기",
+                // 상단 알림
+                    "Your avatar has been updated. It may take a few minutes to update across the site.": "아바타가 업데이트되었어요. 사이트 전체에 반영되기까지 몇 분 정도 걸릴 수 있어요.",
+                    "This avatar has been deleted.": "이 아바타가 삭제되었어요.",
+ 
+            // 마켓플레이스
+                "List your GitHub App in the": "GitHub 앱을",
+                "GitHub Marketplace": "GitHub 마켓플레이스",
+                "so that other users can discover it.": "에 등록해서 다른 사용자들이 발견할 수 있도록 해요.",
+                "List in Marketplace": "마켓플레이스에 등록하기",
+ 
+                "Edit how your GitHub App is presented in the Marketplace directory, including screenshots and links.": "마켓플레이스 디렉토리에서 GitHub 앱이 어떻게 표시되는지, 스크린샷과 링크를 포함해 편집할 수 있어요.",
+                "Edit Marketplace listing": "마켓플레이스 등록 정보 수정하기",
+ 
+            "Private keys": "개인 키",
+                "Generate a private key": "개인 키 생성하기",
+                "You need a private key to sign access token requests.": "접근 토큰 요청 서명을 위해 개인 키가 필요해요.",
+ 
+                "Learn more about private keys": "개인 키에 대해 더 알아보기",
+                "Private key": "개인 키",
+                "Added": "추가됨:",
+ 
+            "IP allow list": "IP 허용 목록",
+                "Enter the IP addresses of your GitHub App to allow organizations with": "조직이 설치할 때, 이 GitHub 앱의 IP 주소를 입력해 IP 허용 목록을 상속하도록 할 수 있어요.",
+                "IP allow lists": "IP 허용 목록",
+                "to selectively inherit the App's IP allow list when installed.": "조직이 선택적으로 앱의 IP 허용 목록을 상속할 수 있어요.",
+                "Learn more about App IP allow lists": "앱 IP 허용 목록에 대해 더 알아보기",
+ 
+                "There are no IP addresses on the allow list yet.": "아직 허용 목록에 IP 주소가 없어요.",
+                "IP address or range in CIDR notation": "CIDR 표기법의 IP 주소 또는 범위",
+                "Short description of IP address or range": "IP 주소 또는 범위에 대한 간단한 설명",
+ 
+                "Check IP address": "IP 주소 확인하기",
+                    "Enter an IP address to check whether it is permitted by enabled entries on the IP allow list.": "IP 허용 목록의 활성 항목에서 해당 IP 주소가 허용되는지 확인해 보세요.",
+ 
+        // 특정 GitHub 앱 - 권한 https://github.com/settings/apps/<app-name>/permissions
+            "Changes to permissions will be applied to all future installations. Current users will be prompted to accept any changes and enable the new permissions on their installation.": "권한 변경은 향후 모든 설치에 적용되며, 현재 사용자께서는 변경 사항을 수락하고 새 권한을 활성화하라는 메시지를 받게 돼요.",
+ 
+            "Add a note to users": "사용자께 메모 추가하기",
+                "This note will be displayed on the permissions update approval page.": "이 메모는 권한 업데이트 승인 페이지에 표시돼요.",
+                    "Add a note to your users explaining why you are requesting these changes.": "왜 이러한 변경을 요청하는지 사용자께 설명하는 메모를 추가해 보세요.",
+ 
+                "Are you sure you want to update permissions?": "권한을 업데이트하시겠어요?",
+                    "Current users will be prompted to accept these changes and enable the new permissions on their installation.": "현재 사용자께서는 변경 사항을 수락하고 새 권한을 활성화하라는 메시지를 받게 돼요.",
+ 
+        // 특정 GitHub 앱 - 에이전트 https://github.com/settings/apps/<app-name>/agent
+            "A Copilot configuration allows your GitHub App to integrate with Copilot. Learn more about building GitHub Copilot Extensions in the": "Copilot 설정을 통해 GitHub 앱이 Copilot과 통합될 수 있어요. GitHub Copilot 확장 만들기에 대해 더 알고 싶으시면",
+            "documentation": "문서를",
+ 
+            "Accept the Marketplace Developer agreement to create your Copilot Extension": "Copilot 확장을 만들려면 마켓플레이스 개발자 계약을 수락해 주세요.",
+                "By clicking \"Accept Terms\" below, you agree to the": "아래의 \"수락하기\" 버튼을 클릭하시면, 다음의",
+                "GitHub Copilot Extension Developer Policy": "GitHub Copilot 확장 개발자 정책",
+                "Pre-release License terms": "프리릴리즈 라이선스 조건",
+                "on behalf of": "의 behalf로",
+                ". Please check to make sure that you are agreeing to these terms on behalf of the correct account.": "계정이 올바른지 확인하시고 해당 조건에 동의해 주세요.",
+                "Accept Terms": "수락하기",
+ 
+            "To enable Copilot functionality, you must first accept the Marketplace Developer agreement": "Copilot 기능을 활성화하려면 먼저 마켓플레이스 개발자 계약을 수락해야 해요.",
+            "To enable Copilot functionality, you must first grant your app permission to read Copilot Messages. To do so, navigate to Permissions & Events > Account Permissions > Read-only for Copilot Chat": "Copilot 기능을 활성화하려면 먼저 앱에 Copilot 메시지 읽기 권한을 부여해야 해요. 이를 위해 '권한 및 이벤트 > 계정 권한 > Copilot 채팅 - 읽기 전용'으로 이동해 주세요.",
+ 
+        // 특정 GitHub 앱 - 설치 https://github.com/settings/apps/<app-name>/installations
+            // [/Install (.*)/, "설치하기: $1"],
+            // [/Choose an account to install (.*) on:/, "어느 계정에 $1 설치할지 선택하세요:"],
+            "Install": "설치하기",
+            // [/Install (.*) on this account./, "이 계정에 $1 설치하기"],
+            "Installed": "설치됨",
+            // [/(.*) is installed on this account./, "$1 이(가) 이 계정에 설치되었어요."],
+ 
+        // 특정 GitHub 앱 - 고급 https://github.com/settings/apps/<app-name>/advanced
+            "Danger zone": "위험 구역",
+                "Transfer ownership of this GitHub App": "이 GitHub 앱의 소유권 이전하기",
+                    "Transferring may be delayed until the new owner approves the transfer.": "소유권 이전은 새 소유자가 승인할 때까지 지연될 수 있어요.",
+                    "Transfer ownership": "소유권 이전하기",
+                        // [/Where should we transfer (.*)\?/, "$1 을(를) 어디로 이전할까요?"],
+                        "Type the name of the GitHub App to confirm": "확인을 위해 GitHub 앱 이름을 입력해 주세요.",
+                        "New owner’s GitHub username or organization name": "새 소유자의 GitHub 사용자명 또는 조직 이름",
+                        "Transfer this GitHub App": "이 GitHub 앱 소유권 이전하기",
+                "Delete this GitHub App": "이 GitHub 앱 삭제하기",
+                    "This cannot be undone. Please be certain.": "이 작업은 취소할 수 없으니, 신중하게 결정해 주세요.",
+ 
+                    "Delete GitHub App": "GitHub 앱 삭제하기",
+                        "Delete GitHub App?": "GitHub 앱을 삭제할까요?",
+                            "Unexpected bad things will happen if you don’t read this!": "주의사항을 읽지 않으면 예상치 못한 문제가 발생할 수 있어요!",
+                            "This action": "이 작업은",
+                            "CANNOT": "취소할 수 없어요",
+                            "be undone. This will permanently delete": "되돌릴 수 없으며, 영구적으로 삭제할 거예요.",
+                            "GitHub App.": "GitHub 앱을.",
+ 
+                            "This will also uninstall the GitHub App from": "이 작업은 또한 GitHub 앱을 다음 계정에서 제거할 거예요:",
+                            // [/(\d+) accounts?/, "$1 개의 계정"],
+ 
+                            "Please type in the name of the GitHub App to confirm.": "확인을 위해 GitHub 앱 이름을 입력해 주세요.",
+                            "I understand the consequences, delete this GitHub App": "결과를 이해했으며, 그래도 이 GitHub 앱을 삭제할게요.",
+                "Make this GitHub App public": "이 GitHub 앱을 공개하기",
+                    "Allow this GitHub App to be installed on other accounts.": "다른 계정에서도 설치할 수 있도록 허용해요.",
+ 
+                    "Make public": "공개로 전환하기",
+                        // [/Any user or organization will be able to install this GitHub App. Are you sure you want to make (.*) public\?/, "어떤 사용자나 조직에서도 이 GitHub 앱을 설치할 수 있어요. 정말로 $1 을(를) 공개할까요?"],
+                "Make this GitHub App private": "이 GitHub 앱을 비공개로 전환하기",
+                    "Private GitHub Apps cannot be installed on other accounts.": "비공개 GitHub 앱은 다른 계정에 설치할 수 없어요.",
+                    "Make private": "비공개로 전환하기",
+                        "This integration cannot be made private since it is already installed on other accounts.": "이미 다른 계정에 설치되어 있어서 이 앱은 비공개로 전환할 수 없어요.",
+                "Make this application private": "이 애플리케이션을 비공개로 전환하기",
+                    "Private applications cannot be installed on other accounts.": "비공개 애플리케이션은 다른 계정에 설치할 수 없어요.",
+                        // [/This GitHub app will only be installable on the ([^ ]+) account. Are you sure you want to make (.*) private\?/, "이 GitHub 앱은 단 $1 계정에만 설치 가능해요. 정말로 $2 을(를) 비공개로 전환할까요?"],
+ 
+        // 특정 GitHub 앱 - 선택적 기능 https://github.com/settings/apps/<app-name>/beta
+            // [/Activate optional features for (.*)/, "$1 의 선택적 기능 활성화하기"],
+            // [/Choose a feature to activate for (.*):/, "$1 에 활성화할 기능 선택하기:"],
+ 
+            "User-to-server token expiration": "사용자-서버 토큰 만료",
+                "User-to-server access tokens will expire after 8 hours. A Refresh Token will be provided which can be exchanged for a new access token.": "사용자-서버 접근 토큰은 8시간 후에 만료돼요. 새 접근 토큰으로 교환할 수 있는 리프레시 토큰이 제공될 거예요.",
+                "Opt-out": "옵트아웃",
+                "Opt-in": "옵트인",
+                    "Disable user-to-server token expiration for this app.": "이 앱의 사용자-서버 토큰 만료를 비활성화할 수 있어요.",
+ 
     },
-    "regexp": [ // 正则翻译
-        [/Only allow this GitHub App to be installed on the (@[^ ]+) account./, "仅允许在 $1 帐户上安装此 GitHub 应用。"],
-        [/Choose an account to install (.*) on:/, "选择要安装 $1 的账户："],
-        [/Install (.*) on this account./, "安装 $1 到此账户上。"],
-        [/Install (.*)/, "安装 $1"],
-        [/(.*) is installed on this account./, "$1 已安装在此账户上。"],
-        [/Where should we transfer (.*)\?/, "将 $1 转让给谁？"],
-        [/Any user or organization will be able to install this GitHub App. Are you sure you want to make (.*) public\?/, "任何用户或组织都可以安装此 GitHub 应用。您确定要公开 $1 吗？"],
-        [/This GitHub app will only be installable on the ([^ ]+) account. Are you sure you want to make (.*) private\?/, "此 GitHub 应用只能安装在 $1 账户上。您确定要将 $2 设为私有吗？"],
-        [/(\d+) accounts?/, "$1 个账户"],
-        [/Activate optional features for (.*)/, "激活 $1 的可选功能"],
-        [/Choose a feature to activate for (.*):/, "选择要为 $1 激活的功能："],
+    "regexp": [ // 정규 표현식 번역
+        [/Only allow this GitHub App to be installed on the (@[^ ]+) account./, "단 $1 계정에만 이 GitHub 앱을 설치할 수 있어요."],
+        [/Choose an account to install (.*) on:/, "어느 계정에 $1 설치할지 선택하세요:"],
+        [/Install (.*) on this account./, "이 계정에 $1 설치하기"],
+        [/Install (.*)/, "설치하기: $1"],
+        [/(.*) is installed on this account./, "$1 이(가) 이 계정에 설치되었어요."],
+        [/Where should we transfer (.*)\?/, "$1 을(를) 어디로 이전할까요?"],
+        [/Any user or organization will be able to install this GitHub App. Are you sure you want to make (.*) public\?/, "어떤 사용자나 조직에서도 이 GitHub 앱을 설치할 수 있어요. 정말로 $1 을(를) 공개할까요?"],
+        [/This GitHub app will only be installable on the ([^ ]+) account. Are you sure you want to make (.*) private\?/, "이 GitHub 앱은 단 $1 계정에만 설치 가능해요. 정말로 $2 을(를) 비공개로 전환할까요?"],
+        [/(\d+) accounts?/, "$1 개의 계정"],
+        [/Activate optional features for (.*)/, "$1 의 선택적 기능 활성화하기"],
+        [/Choose a feature to activate for (.*):/, "$1 에 활성화할 기능 선택하기:"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 I18N["ko-KR"]["orgs/settings/apps/new"] = I18N["ko-KR"]["settings/apps"];
 
-I18N["ko-KR"]["settings/developers"] = { // 设置 - 开发者设置/OAuth 应用
-    "static": { // 静态翻译
-            "Developer Settings": "开发者设置",
-            "GitHub Apps": "GitHub 应用",
-            "OAuth Apps": "OAuth 应用",
-            "Personal access tokens": "个人访问令牌",
-                "Fine-grained tokens": "精细化的令牌",
-                "Tokens (classic)": "令牌（经典）",
+I18N["ko-KR"]["settings/developers"] = { // 설정 - 개발자 설정/OAuth 앱
+    "static": { // 정적 번역
+            "Developer Settings": "개발자 설정",
+            "GitHub Apps": "GitHub 앱",
+            "OAuth Apps": "OAuth 앱",
+            "Personal access tokens": "개인 접근 토큰",
+                "Fine-grained tokens": "세분화된 토큰",
+                "Tokens (classic)": "토큰 (클래식)",
 
-        // OAuth 应用 https://github.com/settings/developers
-            "No OAuth applications": "没有 OAuth 应用",
-            "OAuth applications are used to access the GitHub API.": "OAuth 应用用于访问 GitHub API。",
-            "Read the docs": "阅读文档",
-            "to find out more.": "以了解更多情况。",
-            "Register a new application": "注册新 OAuth 应用",
+        // OAuth 앱 https://github.com/settings/developers
+            "No OAuth applications": "OAuth 앱이 없어요",
+            "OAuth applications are used to access the GitHub API.": "OAuth 앱은 GitHub API에 접근하기 위해 사용해요.",
+            "Read the docs": "문서 읽어보기",
+            "to find out more.": "자세한 정보를 확인해보세요.",
+            "Register a new application": "새 OAuth 앱 등록하기",
 
-            "No OAuth apps": "无 OAuth 应用",
-            "OAuth apps are used to access the GitHub API. Read the docs to find out more.": "OAuth 应用程序用于访问 GitHub API。阅读文档了解详情。",
-            "New OAuth app": "注册新 OAuth 应用",
+            "No OAuth apps": "OAuth 앱이 없어요",
+            "OAuth apps are used to access the GitHub API. Read the docs to find out more.": "OAuth 앱은 GitHub API 접근을 위해 사용돼요. 자세한 내용은 문서를 읽어보세요.",
+            "New OAuth app": "새 OAuth 앱 등록하기",
 
-            "View documentation": "查看文档",
+            "View documentation": "문서 보기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규 표현식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/applications/new"] = { // 设置 - 开发者设置/OAuth 应用
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/applications/new"] = { // 설정 - 개발자 설정/OAuth 앱
+    "static": { // 정적 번역
 
-        // 注册 OAuth 应用 https://github.com/settings/applications/new
-            "Developer Settings": "开发者设置",
+        // OAuth 앱 등록 https://github.com/settings/applications/new
+            "Developer Settings": "개발자 설정",
 
-            "Register a new OAuth app": "注册 OAuth 应用",
-            "Application name": "应用名",
-            "Something users will recognize and trust.": "让用户识别和信任。",
-            "Homepage URL": "主页地址",
-            "The full URL to your application homepage.": "您的应用主页地址。",
-            "Application description": "应用描述",
-            "Application description is optional": "应用描述 (可选)",
-            "This is displayed to all users of your application.": "所有用户都能看到您的应用描述。",
-            "Authorization callback URL": "认证回调地址",
-            "Your application’s callback URL. Read our": "您的应用授权回调地址。阅读我们",
-            "OAuth documentation": "OAuth 文档",
-            "for more information.": "了解更多信息。",
-            "Enable Device Flow": "启用设备流程",
-            "Allow this OAuth App to authorize users via the Device Flow.": "允许此 OAuth 应用通过设备流程授权用户。",
-            "Read the": "阅读",
-            "Device Flow documentation": "设备流程文档",
-            "Register application": "注册应用",
+            "Register a new OAuth app": "OAuth 앱 등록하기",
+            "Application name": "앱 이름",
+            "Something users will recognize and trust.": "사용자들이 인식하고 신뢰할 수 있도록 해주세요.",
+            "Homepage URL": "홈페이지 URL",
+            "The full URL to your application homepage.": "앱의 홈페이지 전체 URL을 입력해 주세요.",
+            "Application description": "앱 설명",
+            "Application description is optional": "앱 설명 (선택 사항)",
+            "This is displayed to all users of your application.": "이 설명은 앱을 사용하는 모든 사용자에게 표시돼요.",
+            "Authorization callback URL": "인증 콜백 URL",
+            "Your application’s callback URL. Read our": "앱의 인증 콜백 URL이에요. 아래의",
+            "OAuth documentation": "OAuth 문서",
+            "for more information.": "를 읽어보시어 자세한 정보를 확인해보세요.",
+            "Enable Device Flow": "디바이스 플로우 활성화하기",
+            "Allow this OAuth App to authorize users via the Device Flow.": "이 OAuth 앱이 디바이스 플로우를 통해 사용자 인증을 할 수 있도록 허용해요.",
+            "Read the": "읽어보세요",
+            "Device Flow documentation": "디바이스 플로우 문서",
+            "Register application": "앱 등록하기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규 표현식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 I18N["ko-KR"]["orgs/settings/applications/new"] = I18N["ko-KR"]["settings/applications/new"];
 
-I18N["ko-KR"]["settings/tokens"] = { // 设置 - 开发者设置/个人访问令牌
-    "static": { // 静态翻译
-            "Developer Settings": "开发者设置",
-            "GitHub Apps": "GitHub 应用",
-            "OAuth Apps": "OAuth 应用",
-            "Personal access tokens": "个人访问令牌",
-                "Fine-grained tokens": "精细化的令牌",
-                "Tokens (classic)": "令牌（经典）",
+I18N["ko-KR"]["settings/tokens"] = { // 설정 - 개발자 설정/개인 접근 토큰
+    "static": { // 정적 번역
+            "Developer Settings": "개발자 설정",
+            "GitHub Apps": "GitHub 앱",
+            "OAuth Apps": "OAuth 앱",
+            "Personal access tokens": "개인 접근 토큰",
+                "Fine-grained tokens": "세분화된 토큰",
+                "Tokens (classic)": "토큰 (클래식)",
 
-        // 开发者设置/精细化的个人访问令牌 https://github.com/settings/tokens?type=beta
-            "Fine-grained personal access tokens": "精细化的个人访问令牌",
-                "Need an API token for scripts or testing?": "需要用于脚本或测试的 API 令牌？",
-                "Generate a personal access token": "生成个人访问令牌",
-                "for quick access to the": "用于快速访问",
+        // 개발자 설정/세분화된 개인 접근 토큰 https://github.com/settings/tokens?type=beta
+            "No personal access token created": "생성된 개인 토큰이 없어요",
 
-                "These are fine-grained, repository-scoped tokens suitable for personal": "这些都是精细化的、仓库域的令牌，适合个人",
-                "use and for using Git over HTTPS.": "使用和通过 HTTPS 使用 Git。",
+            "Fine-grained personal access tokens": "세분화된 개인 접근 토큰",
+                "Need an API token for scripts or testing?": "스크립트나 테스트용 API 토큰이 필요하세요?",
+                "Generate a personal access token": "개인 접근 토큰 생성하기",
+                "for quick access to the": "를 사용하여 빠르게 접근하세요",
 
-                "Make sure to copy your personal access token now as you will not be able to see this again.": "请务必立即复制您的个人访问令牌，因为您将无法再次看到它。",
-                "Loading expiration ...": "载入有效期 ...",
-                "This token has expired.": "此令牌已过期。",
-                    "To set a new expiration date, you must regenerate the token.": "要设置新的有效期，您必须重新生成令牌。",
+                "These are fine-grained, repository-scoped tokens suitable for personal": "이 토큰은 세분화되어 있으며, 개인용으로 적합한 저장소 범위 토큰이에요.",
+                "use and for using Git over HTTPS.": "그리고 HTTPS를 통한 Git 사용에도 적합해요.",
 
-                "No fine-grained tokens created": "没有创建精细化的个人访问令牌",
-                    "Need an API token for scripts or testing? Generate a personal access token for quick access to the GitHub API.": "需要用于脚本或测试的 API 令牌？生成个人访问令牌，快速访问 GitHub API。",
+                "Make sure to copy your personal access token now as you will not be able to see this again.": "다시 확인할 수 없으니 지금 바로 개인 접근 토큰을 복사해 주세요.",
+                "Loading expiration ...": "만료 시간 불러오는 중 ...",
+                "This token has expired.": "이 토큰은 만료되었어요.",
+                    "To set a new expiration date, you must regenerate the token.": "새 만료 날짜를 설정하려면 토큰을 재생성해야 해요.",
 
-            // 顶部提醒
-                "Deleted personal access token": "已删除个人访问令牌",
+                "No fine-grained tokens created": "세분화된 개인 접근 토큰이 생성되지 않았어요",
+                    "Need an API token for scripts or testing? Generate a personal access token for quick access to the GitHub API.": "스크립트나 테스트용 API 토큰이 필요하세요? GitHub API에 빠르게 접근하기 위해 개인 접근 토큰을 생성해보세요.",
 
-        // 开发者设置/个人访问令牌（经典） https://github.com/settings/tokens
-            "Personal access tokens (classic)": "个人访问令牌（经典）",
-            "Generate new token": "生成新令牌",
-                "Fine-grained, repo-scoped": "精细化、 仓库域",
-                "Generate new token (classic)": "生成新令牌（经典）",
-                    "For general use": "一般用途",
-            "Revoke all": "全部撤销",
-            "Tokens you have generated that can be used to access the": "生成令牌用于访问",
-            "Expires": "有效期至",
-            "Expired": "有效期至",
-            "This token has no expiration date": "此令牌未设置有效期",
-            "Regenerate": "重新生成",
-            "this token to take advantage of the": "此令牌使用",
-            "new token formats": "新的令牌格式",
-            "Personal access tokens (classic) function like ordinary OAuth access tokens. They can be used instead of a password for Git over HTTPS, or can be used to": "个人访问令牌（经典）的功能类似于普通的 OAuth 访问令牌。它们可以用来代替 HTTPS 上 Git 的密码，或者可以用来",
-            "authenticate to the API over Basic Authentication": "通过 ‘基本身份验证’ 对 API 进行身份验证",
+            // 상단 알림
+                "Deleted personal access token": "개인 접근 토큰이 삭제되었어요",
 
-            "Never used": "尚未使用",
-            "Last used within the last week": "最后一次使用是最近 1 周之内",
+        // 개발자 설정/개인 접근 토큰 (클래식) https://github.com/settings/tokens
+            "Personal access tokens (classic)": "개인 접근 토큰 (클래식)",
+            "Generate new token": "새 토큰 생성하기",
+                "Fine-grained, repo-scoped": "세분화된, 저장소 범위",
+                "Generate new token (classic)": "새 토큰 생성하기 (클래식)",
+                    "For general use": "일반 용도로",
+            "Revoke all": "전체 취소하기",
+            "Tokens you have generated that can be used to access the": "생성한 토큰은 다음에 접근하기 위해 사용돼요:",
+            "Expires": "만료일",
+            "Expired": "만료됨",
+            "This token has no expiration date": "이 토큰은 만료일이 없어요",
+            "Regenerate": "재생성하기",
+            "this token to take advantage of the": "이 토큰을 사용하여",
+            "new token formats": "새로운 토큰 형식을 사용해 보세요",
+            "Personal access tokens (classic) function like ordinary OAuth access tokens. They can be used instead of a password for Git over HTTPS, or can be used to": "개인 접근 토큰 (클래식)은 일반 OAuth 접근 토큰처럼 작동해요. HTTPS를 통한 Git 사용 시 비밀번호 대신 사용하거나,",
+            "authenticate to the API over Basic Authentication": "기본 인증을 통해 API에 인증할 수 있어요.",
 
-            // 全部撤销对话框
-            "Are you sure you want to revoke access for all personal access tokens?": "对话框您确定要撤销所有个人访问令牌的访问权限吗？",
-            "This will revoke access for": "这将撤销访问",
-            "all personal access tokens": "所有个人访问令牌",
-            ", but will not revoke access for any authorized third-party OAuth applications. This action cannot be undone.": "，但不会撤销任何授权第三方 OAuth 应用的访问权限。此操作无法撤消。",
-            "Any SSH keys created on your behalf by personal access tokens will also be deleted.": "任何由个人访问令牌代表您创建的 SSH 密钥也将被删除",
-            "Type your username to confirm": "输入您的用户名进行确认",
-            "I understand, revoke access for everything": "我明白了，依然撤销对一切的访问",
+            "Never used": "사용된 적 없음",
+            "Last used within the last week": "최근 1주일 내에 사용됨",
 
-        // 创建精细化个人访问令牌 https://github.com/settings/personal-access-tokens/new
-            "New fine-grained personal access token": "新建精细化个人访问令牌",
-            "Create a fine-grained, repository-scoped token suitable for personal API use and for using Git over HTTPS.": "创建精细化的、仓库域的令牌，适合个人 API 使用和通过 HTTPS 使用 Git。",
-            "Token name": "令牌名称",
-                "A unique name for this token. May be visible to resource owners or users with possession of the token.": "此令牌的唯一名称。可能对资源所有者或持有该令牌的用户可见。",
-                "Name can't be blank": "名称不能为空",
-                "is a vaild name.": "是一个有效的名称。",
-                "is an invalid name. The token name has already been taken.": "是一个无效的名称。令牌名称已被占用。",
-            "Description": "描述",
-            "What is this token for?": "这个令牌是用来做什么的？",
-            "Resource owner": "资源所有者",
-            "Authorizing...": "授权中...",
+            // 전체 취소 대화상자
+            "Are you sure you want to revoke access for all personal access tokens?": "정말로 모든 개인 접근 토큰의 접근 권한을 취소하시겠어요?",
+            "This will revoke access for": "다음의 접근 권한을 취소할 거예요:",
+            "all personal access tokens": "모든 개인 접근 토큰",
+            ", but will not revoke access for any authorized third-party OAuth applications. This action cannot be undone.": "，하지만 승인된 제3자 OAuth 앱의 접근 권한은 취소되지 않아요. 이 작업은 취소할 수 없어요.",
+            "Any SSH keys created on your behalf by personal access tokens will also be deleted.": "개인 접근 토큰으로 생성된 모든 SSH 키도 삭제될 거예요.",
+            "Type your username to confirm": "확인을 위해 사용자명을 입력해 주세요",
+            "I understand, revoke access for everything": "알겠습니다, 모든 접근 권한을 취소할게요.",
 
-            "Custom expiration can't be blank. Please choose a date.": "自定义过期时间不能为空。请选择日期。",
+        // 세분화된 개인 접근 토큰 생성하기 https://github.com/settings/personal-access-tokens/new
+            "New fine-grained personal access token": "새 세분화된 개인 접근 토큰 생성하기",
+            "Create a fine-grained, repository-scoped token suitable for personal API use and for using Git over HTTPS.": "개인 API 사용과 HTTPS를 통한 Git 사용에 적합한 세분화된 저장소 범위 토큰을 생성해보세요.",
+            "Token name": "토큰 이름",
+                "A unique name for this token. May be visible to resource owners or users with possession of the token.": "이 토큰의 고유한 이름이에요. 리소스 소유자나 토큰을 보유한 사용자에게 보일 수 있어요.",
+                "Name can't be blank": "이름은 비워둘 수 없어요",
+                "is a vaild name.": "는 유효한 이름이에요.",
+                "is an invalid name. The token name has already been taken.": "는 유효하지 않은 이름이에요. 이미 사용 중인 토큰 이름입니다.",
+            "Description": "설명",
+            "What is this token for?": "이 토큰은 무엇을 위해 사용되나요?",
+            "Resource owner": "리소스 소유자",
+            "Authorizing...": "인증 중이에요...",
 
-            "Repository access": "仓库访问",
-                "Public Repositories (read-only)": "公共仓库（只读）",
-                "All repositories": "所有仓库",
-                    "This applies to all current": "这适用于资源所有者拥有的所有当前",
-                    "future repositories owned by the resource owner.": "未来的仓库。",
-                    "Also includes public repositories (read-only).": "还包括公共仓库（只读）。",
-                "Only select repositories": "仅选定的仓库",
-                    "Select at least one repository. Max 50 repositories.": "至少选择一个仓库。最多 50 个仓库。",
-                    "Select repositories": "选择仓库",
-                    "Search for a repository": "搜索仓库",
-                    // [/Selected (\d+) repositor(y|ies)./, "选定 #1 个仓库"],
-                        "No repositories found.": "未找到仓库。",
+            "Custom expiration can't be blank. Please choose a date.": "사용자 지정 만료일은 비워둘 수 없어요. 날짜를 선택해 주세요.",
 
-            // 权限
-            "Permissions": "权限",
-                "Read our": "阅读我们的",
-                "permissions documentation": "权限文档",
-                "for information about specific permissions.": "以了解关于具体权限的信息。",
+            "Repository access": "저장소 접근",
+                "Public Repositories (read-only)": "공개 저장소 (읽기 전용)",
+                "All repositories": "모든 저장소",
+                    "This applies to all current": "현재 소유한 모든",
+                    "future repositories owned by the resource owner.": "향후 저장소에 적용돼요.",
+                    "Also includes public repositories (read-only).": "공개 저장소 (읽기 전용)도 포함돼요.",
+                "Only select repositories": "선택된 저장소만",
+                    "Select at least one repository. Max 50 repositories.": "최소 한 개의 저장소를 선택해 주세요. 최대 50개까지 가능해요.",
+                    "Select repositories": "저장소 선택하기",
+                    "Search for a repository": "저장소 검색하기",
+                    // [/Selected (\d+) repositor(y|ies)./, "선택된 저장소 $1개"],
+                        "No repositories found.": "저장소를 찾을 수 없어요.",
 
-                "Access:": "访问权限：",
-                "Select an access level": "选择访问级别",
-                "No access": "禁止访问",
-                "Read-only": "只读",
-                "Read and write": "读写",
-                "Admin": "管理员",
+            // 권한
+            "Permissions": "권한",
+                "Read our": "저희의",
+                "permissions documentation": "권한 문서",
+                "for information about specific permissions.": "를 읽어보시어 구체적인 권한 정보를 확인해 주세요.",
 
-                "Selected": "项被选中",
-                "mandatory": "强制",
+                "Access:": "접근 권한:",
+                "Select an access level": "접근 수준 선택하기",
+                "No access": "접근 불가",
+                "Read-only": "읽기 전용",
+                "Read and write": "읽기 및 쓰기",
+                "Admin": "관리자",
 
-                "Repository permissions": "仓库权限",
-                    "Repository permissions permit access to repositories and related resources.": "仓库权限允许访问仓库和相关资源。",
+                "Selected": "선택됨",
+                "mandatory": "필수",
+
+                "Repository permissions": "저장소 권한",
+                    "Repository permissions permit access to repositories and related resources.": "저장소 권한은 저장소와 관련 자원에 접근할 수 있도록 해줘요.",
 
                     "Actions": "액션",
-                        "Workflows, workflow runs and artifacts.": "工作流程、工作流程的运行和工件。",
-                    "Administration": "管理",
-                        "Repository creation, deletion, settings, teams, and collaborators.": "仓库创建、删除、设置、团队和协作者。",
-                    "Attestations": "证书",
-                        "Create and retrieve attestations for a repository.": "创建和检索仓库的证书。",
-                    "Checks": "检查",
-                        "Checks on code.": "检查代码。",
-                    "Code scanning alerts": "代码扫描警报",
-                        "View and manage code scanning alerts.": "查看和管理代码扫描警报。",
+                        "Workflows, workflow runs and artifacts.": "워크플로우, 워크플로우 실행 및 산출물.",
+                    "Administration": "관리",
+                        "Repository creation, deletion, settings, teams, and collaborators.": "저장소 생성, 삭제, 설정, 팀, 협업자 관리를 할 수 있어요.",
+                    "Attestations": "증명서",
+                        "Create and retrieve attestations for a repository.": "저장소에 대한 증명서를 생성하고 확인할 수 있어요.",
+                    "Checks": "체크",
+                        "Checks on code.": "코드 체크.",
+                    "Code scanning alerts": "코드 스캔 경고",
+                        "View and manage code scanning alerts.": "코드 스캔 경고를 확인하고 관리해 보세요.",
                     // "": "코드스페이스",
-                        "Create, edit, delete and list Codespaces.": "创建、编辑、删除和列出代码空间。",
-                    "Codespaces lifecycle admin": "代码空间的生命周期管理",
-                        "Manage the lifecycle of Codespaces, including starting and stopping.": "管理代码空间的生命周期，包括启动和停止。",
-                    "Codespaces metadata": "代码空间元数据",
-                        "Access Codespaces metadata including the devcontainers and machine type.": "访问代码空间元数据，包括开发容器和机器类型。",
-                    "Codespaces secrets": "代码空间机密",
-                        "Restrict Codespaces user secrets modifications to specific repositories.": "限制代码空间的用户机密对特定仓库的修改。",
-                    "Commit statuses": "提交状态",
-                        "Commit statuses.": "提交状态。",
-                    "Contents": "内容",
-                        "Repository contents, commits, branches, downloads, releases, and merges.": "仓库内容、提交、分支、下载、发布和合并。",
-                    // 自定义属性
-                        "View and set values for a repository's custom properties, when allowed by the property.": "在属性允许的情况下，查看和设置仓库自定义属性的值。",
-                    "Dependabot alerts": "Dependabot 警报",
-                        "Retrieve Dependabot alerts.": "检索 Dependabot 警报。",
-                    "Dependabot secrets": "Dependabot 机密",
-                        "Manage Dependabot repository secrets.": "管理 Dependabot 仓库的机密。",
-                    "Deployments": "部署",
-                        "Deployments and deployment statuses.": "部署和部署状态。",
+                        "Create, edit, delete and list Codespaces.": "코드 공간을 생성, 편집, 삭제 및 나열할 수 있어요.",
+                    "Codespaces lifecycle admin": "코드 공간 라이프사이클 관리",
+                        "Manage the lifecycle of Codespaces, including starting and stopping.": "코드 공간의 라이프사이클(시작 및 중지 포함)을 관리해 보세요.",
+                    "Codespaces metadata": "코드 공간 메타데이터",
+                        "Access Codespaces metadata including the devcontainers and machine type.": "코드 공간의 메타데이터(개발 컨테이너와 머신 유형 포함)에 접근해 보세요.",
+                    "Codespaces secrets": "코드 공간 비밀",
+                        "Restrict Codespaces user secrets modifications to specific repositories.": "특정 저장소에 대해서만 코드 공간 사용자 비밀 수정을 제한해 보세요.",
+                    "Commit statuses": "커밋 상태",
+                        "Commit statuses.": "커밋 상태.",
+                    "Contents": "내용",
+                        "Repository contents, commits, branches, downloads, releases, and merges.": "저장소 내용, 커밋, 분기, 다운로드, 릴리즈 및 병합.",
+                    // 사용자 지정 속성
+                        "View and set values for a repository's custom properties, when allowed by the property.": "허용되는 경우, 저장소의 사용자 지정 속성 값을 확인하고 설정할 수 있어요.",
+                    "Dependabot alerts": "Dependabot 경고",
+                        "Retrieve Dependabot alerts.": "Dependabot 경고를 확인해 보세요.",
+                    "Dependabot secrets": "Dependabot 비밀",
+                        "Manage Dependabot repository secrets.": "Dependabot 저장소 비밀을 관리해 보세요.",
+                    "Deployments": "배포",
+                        "Deployments and deployment statuses.": "배포 및 배포 상태.",
                     "Discussions": "토론",
-                        "Discussions and related comments and labels.": "讨论及相关评论和标签。",
-                    "Environments": "环境",
-                        "Manage repository environments.": "管理仓库环境。",
+                        "Discussions and related comments and labels.": "토론과 관련 댓글 및 라벨.",
+                    "Environments": "환경",
+                        "Manage repository environments.": "저장소 환경을 관리해 보세요.",
                     "Issues": "이슈",
-                        "Issues and related comments, assignees, labels, and milestones.": "이슈及相关评论、受理人、标签和里程碑。",
-                    "Merge queues": "合并列队",
-                        "Manage a repository's merge queues": "管理仓库的合并队列。",
-                    "Metadata": "元数据",
-                        "Search repositories, list collaborators, and access repository metadata.": "搜索仓库、列出协作者，访问仓库元数据。",
+                        "Issues and related comments, assignees, labels, and milestones.": "이슈와 관련 댓글, 담당자, 라벨, 마일스톤.",
+                    "Merge queues": "병합 대기열",
+                        "Manage a repository's merge queues": "저장소의 병합 대기열을 관리해 보세요.",
+                    "Metadata": "메타데이터",
+                        "Search repositories, list collaborators, and access repository metadata.": "저장소 검색, 협업자 목록 확인, 저장소 메타데이터 접근이 가능해요.",
                     "Packages": "패키지",
-                        "Packages published to the GitHub Package Platform.": "发布软件包到 GitHub Package 平台。",
+                        "Packages published to the GitHub Package Platform.": "GitHub Package 플랫폼에 게시된 패키지.",
                     "Pages": "GitHub Pages",
-                        "Retrieve Pages statuses, configuration, and builds, as well as create new builds.": "检索页面状态、配置和构建，以及创建新的构建。",
+                        "Retrieve Pages statuses, configuration, and builds, as well as create new builds.": "페이지 상태, 구성, 빌드를 확인하거나 새 빌드를 생성할 수 있어요.",
                     "Projects": "프로젝트",
-                        "Manage classic projects within a repository.": "管理仓库中的经典项目。",
+                        "Manage classic projects within a repository.": "저장소 내의 클래식 프로젝트를 관리해 보세요.",
                     "Pull requests": "끌어오기 요청",
-                        "Pull requests and related comments, assignees, labels, milestones, and merges.": "拉取请求及相关评论、受让人、标签、里程碑和合并。",
-                    "Repository security advisories": "仓库安全公告",
-                        "View and manage repository security advisories.": "查看和管理安全公告",
-                    "Secret scanning alerts": "机密扫描警报",
-                        "View and manage secret scanning alerts.": "查看和管理机密扫描警报。",
-                    "Secrets": "机密",
-                        "Manage Actions repository secrets.": "管理操作仓库机密。",
-                    "Variables": "变量",
-                        "Manage Actions repository variables.": "管理操作仓库变量。",
-                    "Webhooks": "Web 钩子",
-                        "Manage the post-receive hooks for a repository.": "管理仓库的接收后钩子。",
-                    "Workflows": "工作流程",
-                        "Update GitHub Action workflow files.": "更新 GitHub Actions 工作流程文件。",
+                        "Pull requests and related comments, assignees, labels, milestones, and merges.": "끌어오기 요청과 관련 댓글, 담당자, 라벨, 마일스톤, 병합.",
+                    "Repository security advisories": "저장소 보안 공지",
+                        "View and manage repository security advisories.": "저장소 보안 공지를 확인하고 관리해 보세요.",
+                    "Secret scanning alerts": "비밀 스캔 경고",
+                        "View and manage secret scanning alerts.": "비밀 스캔 경고를 확인하고 관리해 보세요.",
+                    "Secrets": "비밀",
+                        "Manage Actions repository secrets.": "액션 저장소 비밀을 관리해 보세요.",
+                    "Variables": "변수",
+                        "Manage Actions repository variables.": "액션 저장소 변수를 관리해 보세요.",
+                    "Webhooks": "웹후크",
+                        "Manage the post-receive hooks for a repository.": "저장소의 포스트-리시브 웹후크를 관리해 보세요.",
+                    "Workflows": "워크플로우",
+                        "Update GitHub Action workflow files.": "GitHub 액션 워크플로우 파일을 업데이트해 보세요.",
 
-                "Account permissions": "账户权限",
-                    "User permissions permit access to resources under your personal GitHub account.": "用户权限允许访问您个人 GitHub 账户下的资源。",
+                "Account permissions": "계정 권한",
+                    "User permissions permit access to resources under your personal GitHub account.": "사용자 권한은 본인의 GitHub 계정 자원에 접근할 수 있게 해줘요.",
 
-                    "Block another user": "拉黑其他用户",
-                        "View and manage users blocked by the user.": "查看和管理被用户拉黑的用户。",
-                    "Codespaces user secrets": "代码空间用户机密",
-                        "Manage Codespaces user secrets.": "管理代码空间用户机密。",
-                    "Email addresses": "电子邮箱地址",
-                        "Manage a user's email addresses.": "管理用户的电子邮箱地址。",
-                    // 关注者
-                        "A user's followers": "用户的关注者",
-                    "GPG keys": "GPG 密钥",
-                        "View and manage a user's GPG keys.": "查看和管理用户的 GPG 密钥。",
+                    "Block another user": "다른 사용자 차단하기",
+                        "View and manage users blocked by the user.": "본인이 차단한 사용자를 확인하고 관리해 보세요.",
+                    "Codespaces user secrets": "코드 공간 사용자 비밀",
+                        "Manage Codespaces user secrets.": "코드 공간 사용자 비밀을 관리해 보세요.",
+                    "Email addresses": "이메일 주소",
+                        "Manage a user's email addresses.": "사용자의 이메일 주소를 관리해 보세요.",
+                    // 팔로워
+                        "A user's followers": "사용자의 팔로워",
+                    "GPG keys": "GPG 키",
+                        "View and manage a user's GPG keys.": "사용자의 GPG 키를 확인하고 관리해 보세요.",
                     // Gist
-                        "Create and modify a user's gists and comments.": "创建和修改用户的代码片段和评论。",
-                    "Git SSH keys": "Git SSH 密钥",
+                        "Create and modify a user's gists and comments.": "사용자의 gists와 댓글을 생성 및 수정해 보세요.",
+                    "Git SSH keys": "Git SSH 키",
                     "Interaction limits": "상호 작용 제한",
-                        "Interaction limits on repositories": "仓库的交互限制",
-                    "Plan": "计划",
-                        "View a user's plan.": "查看用户的计划。",
-                    "Private repository invitations": "私有仓库邀请",
-                        "View a user's invitations to private repositories": "查看用户对私有仓库的邀请",
-                    "Profile": "个人信息",
-                        "Manage a user's profile settings.": "管理用户的个人信息设置。",
-                    "SSH signing keys": "SSH 签名密钥",
-                        "View and manage a user's SSH signing keys.": "查看和管理用户的 SSH 签名密钥。",
-                    "Starring": "星标",
-                        "List and manage repositories a user is starring.": "列出和管理用户已加星标的仓库。",
-                    "Watching": "关注",
-                        "List and change repositories a user is subscribed to.": "列出和更改用户订阅的仓库。",
+                        "Interaction limits on repositories": "저장소의 상호 작용 제한",
+                    "Plan": "플랜",
+                        "View a user's plan.": "사용자의 플랜을 확인해 보세요.",
+                    "Private repository invitations": "비공개 저장소 초대",
+                        "View a user's invitations to private repositories": "비공개 저장소 초대를 확인해 보세요.",
+                    "Profile": "프로필",
+                        "Manage a user's profile settings.": "사용자 프로필 설정을 관리해 보세요.",
+                    "SSH signing keys": "SSH 서명 키",
+                        "View and manage a user's SSH signing keys.": "사용자의 SSH 서명 키를 확인하고 관리해 보세요.",
+                    "Starring": "별표",
+                        "List and manage repositories a user is starring.": "사용자가 별표를 누른 저장소를 확인하고 관리해 보세요.",
+                    "Watching": "팔로잉",
+                        "List and change repositories a user is subscribed to.": "사용자가 구독한 저장소를 확인하고 변경해 보세요.",
 
-                "Organization permissions": "组织权限",
-                    "Organization permissions permit access to organization related resources.": "组织权限允许访问组织相关资源。",
+                "Organization permissions": "조직 권한",
+                    "Organization permissions permit access to organization related resources.": "조직 권한은 조직 관련 자원에 접근할 수 있게 해줘요.",
 
-                    // 管理
-                        "Manage access to an organization.": "管理对组织的访问。",
-                    "Blocking users": "拉黑用户",
-                        "View and manage users blocked by the organization.": "查看和管理被组织拉黑的用户。",
-                    "Custom properties": "自定义属性",
-                        "View custom properties, write repository values, and administer definitions.": "查看自定义属性、写入仓库值并管理定义。",
-                    "Custom repository roles": "自定义仓库角色",
-                        "Create, edit, delete and list custom repository roles.": "创建、编辑、删除和列出自定义仓库角色。",
-                    "Events": "活动",
-                        "View events triggered by an activity in an organization.": "查看组织中某项活动所触发的事件。",
-                    "GitHub Copilot for Business": "GitHub Copilot 商业版",
-                        "Manage Copilot for Business seats and settings": "管理 GitHub Copilot 商业版席位和设置",
-                    "Members": "成员",
-                        "Organization members and teams.": "组织成员和团队。",
-                    "Organization announcement banners": "组织公告横幅",
-                        "View and modify announcement banners for an organization.": "查看并修改组织的公告横幅。",
-                    "Organization codespaces": "组织代码空间",
-                        "Manage Codespaces for an organization.": "管理组织的代码空间。",
-                    "Organization codespaces secrets": "组织代码空间机密",
-                        "Manage Codespaces Secrets for an organization.": "管理组织的代码空间机密。",
-                    "Organization codespaces settings": "组织代码空间设置",
-                        "Manage Codespaces settings for an organization.": "管理组织的代码空间设置。",
-                    "Organization dependabot secrets": "组织 Dependabot 机密",
-                        "Manage Dependabot organization secrets.": "管理 Dependabot 组织的机密。",
-                    "Plan": "计划",
-                        "View an organization's plan.": "查看组织的计划。",
-                    // 项目
-                        "Manage projects for an organization.": "管理组织的项目。",
-                    // 机密
-                        "Manage Actions organization secrets.": "管理操作组织机密",
-                    "Self-hosted runners": "自托管运行器",
-                        "View and manage Actions self-hosted runners available to an organization.": "查看和管理组织可用的 “操作自托管运行器”。",
-                    "Team discussions": "团队讨论",
-                        "Manage team discussions and related comments.": "管理团队讨论及相关评论。",
-                    // 变量
-                        "Manage Actions organization variables.": "管理操作组织变量。",
-                    // Web 钩子
-                        "Manage the post-receive hooks for an organization.": "管理组织的接收后钩子。",
+                    // 관리
+                        "Manage access to an organization.": "조직 접근을 관리해 보세요.",
+                    "Blocking users": "사용자 차단하기",
+                        "View and manage users blocked by the organization.": "조직에서 차단한 사용자를 확인하고 관리해 보세요.",
+                    "Custom properties": "사용자 지정 속성",
+                        "View custom properties, write repository values, and administer definitions.": "사용자 지정 속성을 확인하고, 저장소 값을 작성하며, 정의를 관리해 보세요.",
+                    "Custom repository roles": "사용자 지정 저장소 역할",
+                        "Create, edit, delete and list custom repository roles.": "사용자 지정 저장소 역할을 생성, 편집, 삭제 및 나열해 보세요.",
+                    "Events": "이벤트",
+                        "View events triggered by an activity in an organization.": "조직 내 활동으로 발생한 이벤트를 확인해 보세요.",
+                    "GitHub Copilot for Business": "GitHub Copilot 비즈니스",
+                        "Manage Copilot for Business seats and settings": "GitHub Copilot 비즈니스 좌석 및 설정을 관리해 보세요.",
+                    "Members": "멤버",
+                        "Organization members and teams.": "조직 멤버와 팀.",
+                    "Organization announcement banners": "조직 공지 배너",
+                        "View and modify announcement banners for an organization.": "조직의 공지 배너를 확인하고 수정해 보세요.",
+                    "Organization codespaces": "조직 코드 공간",
+                        "Manage Codespaces for an organization.": "조직의 코드 공간을 관리해 보세요.",
+                    "Organization codespaces secrets": "조직 코드 공간 비밀",
+                        "Manage Codespaces Secrets for an organization.": "조직의 코드 공간 비밀을 관리해 보세요.",
+                    "Organization codespaces settings": "조직 코드 공간 설정",
+                        "Manage Codespaces settings for an organization.": "조직의 코드 공간 설정을 관리해 보세요.",
+                    "Organization dependabot secrets": "조직 Dependabot 비밀",
+                        "Manage Dependabot organization secrets.": "조직의 Dependabot 비밀을 관리해 보세요.",
+                    "Plan": "플랜",
+                        "View an organization's plan.": "조직의 플랜을 확인해 보세요.",
+                    // 프로젝트
+                        "Manage projects for an organization.": "조직의 프로젝트를 관리해 보세요.",
+                    // 비밀
+                        "Manage Actions organization secrets.": "액션 조직 비밀을 관리해 보세요.",
+                    "Self-hosted runners": "셀프 호스티드 실행기",
+                        "View and manage Actions self-hosted runners available to an organization.": "조직에서 사용 가능한 액션 셀프 호스티드 실행기를 확인하고 관리해 보세요.",
+                    "Team discussions": "팀 토론",
+                        "Manage team discussions and related comments.": "팀 토론과 관련 댓글을 관리해 보세요.",
+                    // 변수
+                        "Manage Actions organization variables.": "액션 조직 변수를 관리해 보세요.",
+                    // 웹후크
+                        "Manage the post-receive hooks for an organization.": "조직의 포스트-리시브 웹후크를 관리해 보세요.",
 
-            // 概述
+            // 개요
                 // [/(\d+) permissions for none of your repositories/, ""],
-                "permission": "项权限",
-                "Organization permission": "项组织权限",
+                "permission": "권한 항목",
+                "Organization permission": "조직 권한 항목",
                 "s": " ",
                 "for": " ",
-                "none": "无",
-                "all": "所有",
-                "of your repositories": "您的仓库",
-                "Account permission": "项账户权限",
+                "none": "없음",
+                "all": "모든",
+                "of your repositories": "사용자님의 저장소",
+                "Account permission": "계정 권한 항목",
 
-                "This token will expire": "此令牌将过期：",
-                "on an unselected custom date.": "未选择的自定义日期。",
-                "This token will be ready for use immediately.": "该令牌将即可可用。",
+                "This token will expire": "이 토큰은 만료될 거예요:",
+                "on an unselected custom date.": "선택되지 않은 사용자 지정 날짜에.",
+                "This token will be ready for use immediately.": "이 토큰은 즉시 사용 가능해요.",
 
         // https://github.com/settings/personal-access-tokens/<id>
-            "No description": "暂无描述",
-            "Created": "创建于",
-            "Access on": "访问:",
-            "Select the repositories this token can access. Personal access tokens can always read from all public repositories on GitHub.com": "选择此令牌可以访问的仓库。个人访问令牌始终可以读取 GitHub.com 上所有公共仓库中的内容。",
-            "This token does not have access to any repositories.": "此令牌无权访问任何仓库。",
-            "User permissions": "用户权限",
-            "This token does not have any user permissions.": "此令牌没有任何用户权限。",
-            "This token does not have any repository permissions.": "此令牌没有任何仓库权限。",
+            "No description": "설명이 없어요",
+            "Created": "생성됨",
+            "Access on": "접근:",
+            "Select the repositories this token can access. Personal access tokens can always read from all public repositories on GitHub.com": "이 토큰이 접근할 저장소를 선택해 주세요. 개인 접근 토큰은 GitHub.com의 모든 공개 저장소를 항상 읽을 수 있어요.",
+            "This token does not have access to any repositories.": "이 토큰은 어떠한 저장소에도 접근할 수 없어요.",
+            "User permissions": "사용자 권한",
+            "This token does not have any user permissions.": "이 토큰은 사용자 권한이 없어요.",
+            "This token does not have any repository permissions.": "이 토큰은 저장소 권한이 없어요.",
 
-            // 顶部提醒
-                "Your personal access token has been updated": "您的个人访问令牌已更新",
+            // 상단 알림
+                "Your personal access token has been updated": "개인 접근 토큰이 업데이트되었어요",
 
-        // 重新生成精细化个人访问令牌 https://github.com/settings/personal-access-tokens/<id>/regenerate
-            "Regenerate fine-grained personal access token": "重新生成精细化个人访问令牌",
+        // 세분화된 개인 접근 토큰 재생성 https://github.com/settings/personal-access-tokens/<id>/regenerate
+            "Regenerate fine-grained personal access token": "세분화된 개인 접근 토큰 재생성하기",
 
-        // 创建新个人访问令牌 https://github.com/settings/tokens/new
-            "New personal access token (classic)": "新建个人访问令牌（经典）",
-            "Note": "备注",
-                "Note can't be blank": "备注不能为空",
-            "What’s this token for?": "这个令牌有什么用？",
+        // 새 개인 접근 토큰 생성 https://github.com/settings/tokens/new
+            "New personal access token (classic)": "새 개인 접근 토큰 (클래식)",
+            "Note": "메모",
+                "Note can't be blank": "메모는 비워둘 수 없어요",
+            "What’s this token for?": "이 토큰은 무엇을 위해 사용되나요?",
 
-            "Expiration": "有效期",
-            // "This token expires": "该令牌有效期至",
-            ". To set a new expiration date, you must": "。要设置一个新的有效期，您必须",
+            "Expiration": "만료일",
+            // "This token expires": "이 토큰의 만료일:",
+            ". To set a new expiration date, you must": "。새 만료일을 설정하려면,",
+            // 만료일 드롭다운 메뉴
+            "7 days": "7일",
+            "30 days": "30일",
+            "60 days": "60일",
+            "90 days": "90일",
+            "Custom...": "사용자 지정...",
+            "No expiration": "만료일 없음",
+            "The token will never expire!": "이 토큰은 절대 만료되지 않아요!",
+            "GitHub strongly recommends that you set an expiration date for your token to help keep your information secure.": "GitHub은 사용자의 정보를 안전하게 보호하기 위해 토큰에 만료일을 설정할 것을 강력히 권장해요.",
 
-            // 有效期 下拉菜单
-            "7 days": "7 天",
-            "30 days": "30 天",
-            "60 days": "60 天",
-            "90 days": "90 天",
-            "Custom...": "自定义...",
-            "No expiration": "无有效期",
-            "The token will never expire!": "此令牌永不过期！",
-            "GitHub strongly recommends that you set an expiration date for your token to help keep your information secure.": "GitHub 强烈建议您为令牌设置有效期，以帮助确保您的信息安全。",
+            "Select scopes": "범위 선택하기",
+            "Scopes define the access for personal tokens.": "범위는 개인 토큰의 접근 권한을 정의해요.",
+            "Read more about OAuth scopes.": "OAuth 범위에 대해 더 읽어보세요.",
+            "Full control of private repositories": "비공개 저장소 완전 제어",
+            "Access commit status": "커밋 상태 접근",
+            "Access deployment status": "배포 상태 접근",
+            "Access public repositories": "공개 저장소 접근",
+            "Access repository invitations": "저장소 초대 접근",
+            "Read and write security events": "보안 이벤트 읽기 및 쓰기",
+            "Update GitHub Action workflows": "GitHub 액션 워크플로우 업데이트",
+            "Upload packages to GitHub Package Registry": "GitHub Package Registry에 패키지 업로드",
+            "Download packages from GitHub Package Registry": "GitHub Package Registry에서 패키지 다운로드",
+            "Delete packages from GitHub Package Registry": "GitHub Package Registry에서 패키지 삭제",
+            "Full control of orgs and teams, read and write org projects": "조직 및 팀 완전 제어, 조직 프로젝트 읽기 및 쓰기",
+            "Read and write org and team membership, read and write org projects": "조직 및 팀 멤버십 읽기 및 쓰기, 조직 프로젝트 읽기 및 쓰기",
+            "Read org and team membership, read org projects": "조직 및 팀 멤버십 읽기, 조직 프로젝트 읽기",
+            "Manage org runners and runner groups": "조직 실행기 및 실행기 그룹 관리",
+            "Full control of user public keys": "사용자 공개 키 완전 제어",
+            "Write user public keys": "사용자 공개 키 쓰기",
+            "Read user public keys": "사용자 공개 키 읽기",
+            "Full control of repository hooks": "저장소 훅 완전 제어",
+            "Write repository hooks": "저장소 훅 쓰기",
+            "Read repository hooks": "저장소 훅 읽기",
+            "Full control of organization hooks": "조직 훅 완전 제어",
+            "Create gists": "코드 스니펫 생성",
+            "Access notifications": "알림 접근",
+            "Update ALL user data": "모든 사용자 데이터 업데이트",
+            "Read ALL user profile data": "모든 사용자 프로필 데이터 읽기",
+            "Access user email addresses (read-only)": "사용자 이메일 주소 접근 (읽기 전용)",
+            "Follow and unfollow users": "사용자 팔로우 및 언팔로우",
+            "Delete repositories": "저장소 삭제",
+            "Read and write team discussions": "팀 토론 읽기 및 쓰기",
+            "Read team discussions": "팀 토론 읽기",
+            "Full control of enterprises": "기업 완전 제어",
+            "Manage enterprise runners and runner groups": "기업 실행기 및 실행기 그룹 관리",
+            "Read and write enterprise billing data": "기업 결제 데이터 읽기 및 쓰기",
+            "Read enterprise profile data": "기업 프로필 데이터 읽기",
+            "Provisioning of users and groups via SCIM": "SCIM을 통한 사용자 및 그룹 프로비저닝",
+            "Full control of audit log": "감사 로그 완전 제어",
+            "Read access of audit log": "감사 로그 읽기",
+            "Full control of codespaces": "코드 공간 완전 제어",
+            "Ability to create, read, update, and delete codespace secrets": "코드 공간 비밀 생성, 읽기, 업데이트, 삭제 권한",
+            "Full control of GitHub Copilot settings and seat assignments": "GitHub Copilot 설정 및 좌석 배정 완전 제어",
+                "View and edit Copilot Business seat assignments": "GitHub Copilot 비즈니스 좌석 배정 확인 및 편집",
+            "Full control of projects": "프로젝트 완전 제어",
+            "Read access of projects": "프로젝트 읽기 접근",
+            "Full control of public user GPG keys": "공개 사용자 GPG 키 완전 제어",
+            "(Developer Preview)": "（개발자 미리보기）",
+            "Write public user GPG keys": "공개 사용자 GPG 키 쓰기",
+            "Read public user GPG keys": "공개 사용자 GPG 키 읽기",
+            "Full control of public user SSH signing keys": "공개 사용자 SSH 서명 키 완전 제어",
+            "Write public user SSH signing keys": "공개 사용자 SSH 서명 키 쓰기",
+            "Read public user SSH signing keys": "공개 사용자 SSH 서명 키 읽기",
+            "Generate token": "토큰 생성하기",
+                // 상단 알림
+                "Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved.": "선택한 일부 범위는 다른 범위에 포함되어 있어요. 최소한의 필요한 범위만 저장되었어요.",
+                "Note has already been taken": "메모가 이미 사용 중이에요",
 
-            "Select scopes": "选择作用域",
-            "Scopes define the access for personal tokens.": "作用域定义了个人令牌的访问范围。",
-            "Read more about OAuth scopes.": "了解更多关于 OAuth 作用域的信息。",
-            "Full control of private repositories": "完全控制私有仓库",
-            "Access commit status": "访问提交状态",
-            "Access deployment status": "访问部署状态",
-            "Access public repositories": "访问公共仓库",
-            "Access repository invitations": "访问仓库邀请",
-            "Read and write security events": "读写安全事件",
-            "Update GitHub Action workflows": "更新 GitHub Actions 工作流程",
-            "Upload packages to GitHub Package Registry": "将包上传到 GitHub Packages 包注册",
-            "Download packages from GitHub Package Registry": "从 GitHub Packages 包注册表下载包",
-            "Delete packages from GitHub Package Registry": "从 GitHub Packages 包注册表中删除包",
-            "Full control of orgs and teams, read and write org projects": "完全控制组织和团队，读写组织项目",
-            "Read and write org and team membership, read and write org projects": "读写组织和团队成员，读写组织项目",
-            "Read org and team membership, read org projects": "读取组织和团队成员，读取组织项目",
-            "Manage org runners and runner groups": "管理组织运行器和运行器组",
-            "Full control of user public keys": "完全控制用户公钥",
-            "Write user public keys": "写入用户公钥",
-            "Read user public keys": "读取用户公钥",
-            "Full control of repository hooks": "完全控制仓库钩子",
-            "Write repository hooks": "写入仓库钩子",
-            "Read repository hooks": "读取仓库钩子",
-            "Full control of organization hooks": "完全控制组织钩子",
-            "Create gists": "创建代码片段",
-            "Access notifications": "访问通知",
-            "Update ALL user data": " 更新所有用户数据",
-            "Read ALL user profile data": "读取所有用户个人资料数据",
-            "Access user email addresses (read-only)": "访问用户电子邮箱地址（只读）",
-            "Follow and unfollow users": "关注和取消关注用户",
-            "Delete repositories": "删除仓库",
-            "Read and write team discussions": "读写团队讨论",
-            "Read team discussions": "读取团队讨论",
-            "Full control of enterprises": "完全控制企业",
-            "Manage enterprise runners and runner groups": "管理企业运行器和运行器组",
-            "Read and write enterprise billing data": "读写企业计费数据",
-            "Read enterprise profile data": "读取企业个人数据",
-            "Provisioning of users and groups via SCIM": "通过 SCIM 配置用户和组",
-            "Full control of audit log": "完全控制审核日志",
-            "Read access of audit log": "读取审核日志",
-            "Full control of codespaces": "完全控制代码空间",
-            "Ability to create, read, update, and delete codespace secrets": "创建、读取、更新和删除代码空间机密",
-            "Full control of GitHub Copilot settings and seat assignments": "完全控制 GitHub Copilot 设置和席位分配",
-                "View and edit Copilot Business seat assignments": "查看和编辑 GitHub Copilot 商业版席位分配",
-            "Full control of projects": "完全控制项目",
-            "Read access of projects": "读取项目",
-            "Full control of public user GPG keys": "完全控制公共用户 GPG 密钥",
-            "(Developer Preview)": "（开发者预览版）",
-            "Write public user GPG keys": "写入公共用户 GPG 密钥",
-            "Read public user GPG keys": "读取公共用户 GPG 密钥",
-            "Full control of public user SSH signing keys": "完全控制公共用户 SSH 签名密钥",
-            "Write public user SSH signing keys": "写入公共用户 SSH 签名密钥",
-            "Read public user SSH signing keys": "读取公共用户 SSH 签名密钥",
-            "Generate token": "生成令牌",
-                // 顶部提醒
-                "Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved.": "您选择的一些作用域包含在其他作用域中。只保存了必要作用域的最小集合。",
-                "Note has already been taken": "备注已存在",
+            "Make sure to copy your personal access token now. You won’t be able to see it again!": "지금 바로 개인 접근 토큰을 복사해 두세요. 다시 확인할 수 없어요!",
 
-            "Make sure to copy your personal access token now. You won’t be able to see it again!": "确保立即复制您的个人访问令牌。您将无法再看到它！",
+            "Are you sure you want to delete this token?": "정말 이 토큰을 삭제하시겠어요?",
+            "Any applications or scripts using this token will no longer be able to access the GitHub API. You cannot undo this action.": "이 토큰을 사용하는 앱이나 스크립트는 더 이상 GitHub API에 접근할 수 없게 돼요. 이 작업은 취소할 수 없어요.",
+            "I understand, delete this token": "알겠습니다, 이 토큰을 삭제할게요.",
 
-            "Are you sure you want to delete this token?": "您确定要删除此令牌吗？",
-            "Any applications or scripts using this token will no longer be able to access the GitHub API. You cannot undo this action.": "任何使用此令牌的应用或脚本将无法再访问 GitHub API。您无法撤消此操作。",
-            "I understand, delete this token": "我明白了，依然删除该令牌。",
+        // 개인 접근 토큰 편집 https://github.com/settings/tokens/<id>
+            "Edit personal access token (classic)": "개인 접근 토큰 (클래식) 편집하기",
+            "If you’ve lost or forgotten this token, you can regenerate it, but be aware that any scripts or applications using this token will need to be updated.": "이 토큰을 잃어버리거나 잊으셨다면 재생성할 수 있어요. 단, 이 토큰을 사용하는 모든 스크립트나 앱을 업데이트해야 한다는 점을 유념해 주세요.",
+            "This token has no expiration date. To set a new expiration date, you must": "이 토큰은 만료일이 없어요. 새 만료일을 설정하려면,",
+            "regenerate the token": "토큰을 재생성해야 해요",
+            "Update token": "토큰 업데이트하기",
+            "Delete personal access token": "개인 접근 토큰 삭제하기",
+            "Delete token": "토큰 삭제하기",
+            "Delete this token": "이 토큰 삭제하기",
 
-        // 编辑个人访问令牌 https://github.com/settings/tokens/<id>
-            "Edit personal access token (classic)": "编辑个人访问令牌（经典）",
-            "If you’ve lost or forgotten this token, you can regenerate it, but be aware that any scripts or applications using this token will need to be updated.": "如果您丢失或忘记了此令牌，则可以重新生成它，但请注意，需要更新使用此令牌的任何脚本或应用。",
-            "This token has no expiration date. To set a new expiration date, you must": "此令牌未设置有效期。要设置新的有效期，您必须",
-            "regenerate the token": "重新生成令牌",
-            "Update token": "更新令牌",
-            "Delete personal access token": "删除个人访问令牌",
-            "Delete token": "删除令牌",
-            "Delete this token": "删除令牌",
-
-        // 重新生成个人访问令牌 https://github.com/settings/tokens/<id>/regenerate
-            "Regenerate personal access token (classic)": "重新生成个人访问令牌（经典）",
-            "Submitting this form will generate a new token. Be aware that any scripts or applications using this token will need to be updated.": "提交此表单将产生一个新的令牌。请注意，任何使用该令牌的脚本或应用将需要更新。",
-            "Regenerate token": "重新生成令牌",
+        // 개인 접근 토큰 재생성 https://github.com/settings/tokens/<id>/regenerate
+            "Regenerate personal access token (classic)": "개인 접근 토큰 (클래식) 재생성하기",
+            "Submitting this form will generate a new token. Be aware that any scripts or applications using this token will need to be updated.": "이 양식을 제출하면 새 토큰이 생성돼요. 이 토큰을 사용하는 모든 스크립트나 앱을 업데이트해야 한다는 점에 유의해 주세요.",
+            "Regenerate token": "토큰 재생성하기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규 표현식 번역
         [/The token will expire on ([^ ]+), ([^ ]+) (\d+) (\d+)/, function(all, week, month, day, year){
             var weekKey = {
-                "Sun"  : "周日",
-                "Mon"  : "周一",
-                "Tue"  : "周二",
-                "Wed"  : "周三",
-                "Thu"  : "周四",
-                "Fri"  : "周五",
-                "Sat"  : "周六"
+                "Sun"  : "일요일",
+                "Mon"  : "월요일",
+                "Tue"  : "화요일",
+                "Wed"  : "수요일",
+                "Thu"  : "목요일",
+                "Fri"  : "금요일",
+                "Sat"  : "토요일"
             };
             var monthKey = {
-                "Jan": "1月",
-                "Feb": "2月",
-                "Mar": "3月",
-                "Apr": "4月",
-                "May": "5月",
-                "Jun": "6月",
-                "Jul": "7月",
-                "Aug": "8月",
-                "Sep": "9月",
-                "Oct": "10月",
-                "Nov": "11月",
-                "Dec": "12月"
+                "Jan": "1월",
+                "Feb": "2월",
+                "Mar": "3월",
+                "Apr": "4월",
+                "May": "5월",
+                "Jun": "6월",
+                "Jul": "7월",
+                "Aug": "8월",
+                "Sep": "9월",
+                "Oct": "10월",
+                "Nov": "11월",
+                "Dec": "12월"
             };
 
-            return '该令牌有效期至' + year + '年' + monthKey[month] + day + '日，' + weekKey[week];
+            return '이 토큰은 ' + year + '년 ' + monthKey[month] + day + '일, ' + weekKey[week] + '에 만료될 거예요';
         }],
-        [/Last used within the last (\d+) weeks?/, "最后一次使用是最近 $1 周之内"],
-        [/Last used within the last (\d+) months?/, "最后一次使用是最近 $1 月之内"],
-        [/Selected (\d+) repositor(y|ies)./, "选定 $1 个仓库"],
-        [/Access:/, "访问权限:"],
+        [/Last used within the last (\d+) weeks?/, "최근 $1주일 내에 사용됨"],
+        [/Last used within the last (\d+) months?/, "최근 $1개월 내에 사용됨"],
+        [/Selected (\d+) repositor(y|ies)./, "선택된 저장소 $1개"],
+        [/Access:/, "접근:"],
     ],
 };
 I18N["ko-KR"]["settings/personal-access-tokens"] = I18N["ko-KR"]["settings/tokens"];
@@ -7011,7 +7039,7 @@ I18N["ko-KR"]["page-new-repo"] = { // 저장소 - 새로 만들기/가져오기/
 
             "Please enter your credentials if required for cloning your remote repository.": "원격 저장소를 복제하려면 필요한 경우 자격 증명을 입력해보세요.",
             "Your username for your source repository": "원본 저장소 사용자명",
-            "Your access token or password for your source repository": "원본 저장소의 액세스 토큰 또는 비밀번호",
+            "Your access token or password for your source repository": "원본 저장소의 접근 토큰 또는 비밀번호",
 
             "Your new repository details": "새 저장소 정보",
             //"Owner": "所有者",
@@ -16700,7 +16728,7 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
             "Signed in as": "登录身份为",
             "to continue to": "继续登录",
             "Username or email address": "用户名或电子邮箱",
-            "Password": "密码",
+            "Password": "비밀번호",
             "Forgot password?": "忘记密码？",
             "Sign in": "登录",
             "Sign in with a passkey": "使用通行密钥登录",
@@ -16950,7 +16978,7 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
             "Return to Sign in": "返回登录",
 
         // ...I18N["ko-KR"]["confirm-access"]["static"], // [留待后期合并] 授权访问 sudo 模式身份验证
-            "Confirm access": "授权访问",
+            "Confirm access": "접근 확인",
             "Signed in as": "登录身份为",
             "Authentication code": "验证码",
                 "More information about sudo mode authentication": "更多关于 sudo 模式身份验证的信息",
@@ -16976,7 +17004,7 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
 
             "We just sent you a message via SMS with your authentication code. Enter the code in the form above to verify your identity.": "我们刚刚通过短信向您发送了一条消息，其中包含您的验证码。在上面的表格中输入验证码以验证您的身份。",
 
-            // "Password": "密码",
+            // "Password": "비밀번호",
             // "Forgot password?": "忘记密码？",
             "Confirm": "确认",
 
@@ -21489,7 +21517,7 @@ I18N["ko-KR"]["orgs/settings/secrets"] = { // 组织设置 - 机密和变量
                 "Token": "令牌",
                 "Username and password": "用户名和密码",
                 "Username": "用户名",
-                "Password": "密码",
+                "Password": "비밀번호",
                 "Add Registry": "添加注册表",
 
         // 编辑私有登记表 /organizations/<org-login>/settings/secrets/private_registries/<>
