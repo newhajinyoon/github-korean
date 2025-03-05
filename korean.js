@@ -7742,47 +7742,47 @@ I18N["ko-KR"]["repository/milestones"] = { // 仓库 - 里程碑页面
         ...I18N["ko-KR"]["repository-public"]["static"],
 
         // 里程碑页面 /<user-name>/<repo-name>/milestones
-            "Labels": "标签",
-            "Milestones": "里程碑",
+            "Labels": "라벨",
+            "Milestones": "마일스톤",
 
-            "You haven’t created any Milestones.": "您尚未创建任何里程碑。",
-            "Use Milestones to create collections of Issues and Pull Requests for a particular release or project.": "使用里程碑为特定版本或项目创建이슈和拉取请求的集合。",
+            "You haven’t created any Milestones.": "아직 마일스톤을 생성하지 않았습니다.",
+            "Use Milestones to create collections of Issues and Pull Requests for a particular release or project.": "마일스톤을 사용하여 특정 릴리스 또는 프로젝트의 이슈와 풀 리퀘스트를 모아보세요.",
 
             // 组织 仓库 里程碑
-            "No Milestones found!": "没有发现里程碑!",
-            "If this project had milestones, we’d show you them here. Promise!": "如果该项目有里程碑，我们会在此处向您展示。",
+            "No Milestones found!": "마일스톤을 찾을 수 없습니다!",
+            "If this project had milestones, we’d show you them here. Promise!": "이 프로젝트에 마일스톤이 있다면 여기에 표시됩니다. 약속해요!",
 
-            "Create a Milestone": "创建里程碑",
+            "Create a Milestone": "마일스톤 생성",
 
-            "Sort": "排序",
-                "Recently updated": "最近更新",
-                "Furthest due date": "最迟到期日",
-                "Closest due date": "最近到期日",
-                "Least complete": "最不完整",
-                "Most complete": "最完整",
-                "Alphabetically": "按字母顺序",
-                "Reverse alphabetically": "按字母倒序",
-                "Most issues": "最多的이슈",
-                "Least issues": "最少的이슈",
+            "Sort": "정렬",
+                "Recently updated": "최신순",
+                "Furthest due date": "마감일이 가장 늦은 순",
+                "Closest due date": "마감일이 가장 빠른 순",
+                "Least complete": "완성도가 낮은 순",
+                "Most complete": "완성도가 높은 순",
+                "Alphabetically": "알파벳 순",
+                "Reverse alphabetically": "알파벳 역순",
+                "Most issues": "이슈가 가장 많은 순",
+                "Least issues": "이슈가 가장 적은 순",
 
-            "No due date": "没有截止日期",
+            "No due date": "마감일 없음",
             // [/Due by (.*)/, "截止日期 $1"], // 里程碑截止日期
-            "Last updated": "最后更新",
-            "(more)": "（更多）",
-            "Show less": "显示更少",
+            "Last updated": "마지막 업데이트",
+            "(more)": "（더보기）",
+            "Show less": "(간략히)",
             // 完成进度条
-            "complete": "已完成",
-            "open": "打开",
-            "closed": "关闭",
+            "complete": "완료됨",
+            "open": "열기",
+            "closed": "닫힘",
 
         // 新建里程碑页面 /<user-name>/<repo-name>/milestones/new
-            "New milestone": "新建里程牌",
-                "Create a new milestone to help organize your issues and pull requests. Learn more about": "创建一个新的里程碑来帮助组织您的이슈和拉取请求。了解更多关于",
-                "milestones and issues": "里程碑和이슈",
-            "Title": "标题",
-            "Due date (optional)": "截止日期（可选）",
-            "Description": "描述",
-            "Create milestone": "创建里程碑",
+            "New milestone": "새 마일스톤",
+                "Create a new milestone to help organize your issues and pull requests. Learn more about": "새 마일스톤을 생성하여 이슈와 풀 리퀘스트를 정리하세요. 자세히 알아보기",
+                "milestones and issues": "마일스톤과 이슈",
+            "Title": "제목",
+            "Due date (optional)": "마감일 (선택사항)",
+            "Description": "설명",
+            "Create milestone": "마일스톤 생성",
 
     },
     "regexp": [ // 正则翻译
