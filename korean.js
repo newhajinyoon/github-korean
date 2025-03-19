@@ -1689,7 +1689,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         "You don’t have any repositories yet!": "아직 저장소가 없어요!",
         "Create your first repository": "첫 번째 저장소를 만들어보세요",
         "or": "아니면",
-        "Learn more about Git and GitHub": "Git과 GitHub에 대해 더 알아보세요.",
+        "Learn more about Git and GitHub": "Git과 GitHub에 대해 더 알아보기",
     
         // 교육판
         "Join GitHub Education!": "GitHub 교육에 가입해보세요!",
@@ -3397,7 +3397,7 @@ I18N["ko-KR"]["settings/accessibility"] = { // 设置 - 无障碍
             "that don't use modifier keys in their activation. For example, the": "수정 키 없이 활성화되는 단축키예요. 예를 들어,",
             "shortcut to navigate notifications, or": "은 알림 탐색을 위한 단축키고, 또는",
             "to view context relevant shortcuts.": "로 상황에 맞는 단축키들을 확인해보세요.",
-            "Learn more about character key shortcuts": "문자 키 단축키에 대해 더 알아보세요.",
+            "Learn more about character key shortcuts": "문자 키 단축키에 대해 더 알아보기",
         
         "Command palette": "명령 팔레트",
             "Modify the shortcuts to trigger the Command Palette for the default search mode and the command mode": "기본 검색 모드와 명령 모드에서 명령 팔레트를 호출하도록 단축키를 수정해보세요.",
@@ -8456,7 +8456,7 @@ I18N["ko-KR"]["repository/issues"] = { // 仓库 - 이슈页面
                         "All comments and reactions will be the same as the issue": "所有评论和反应将与이슈相同",
                         "Category for new discussion": "新讨论的类别",
                             "Announcements": "公告",
-                            "General": "通常",
+                            "General": "일반",
                             "Ideas": "想法",
                             "Polls": "投票",
                             "Q&A": "问与答",
@@ -8564,7 +8564,7 @@ I18N["ko-KR"]["repository/issues"] = { // 仓库 - 이슈页面
                     "You must choose a category for the discussion to belong to. You will be able to change this after the conversion is complete.": "您必须为讨论选择一个所属类别。转换完成后，您可以更改类别。",
                     "Choose a category": "选择类别",
                         "Announcements": "公告",
-                        "General": "通常",
+                        "General": "일반",
                         "Ideas": "想法",
                         "Polls": "投票",
                         "Q&A": "问与答",
@@ -10524,7 +10524,7 @@ I18N["ko-KR"]["repository/discussions"] = { // 讨论页面
             "Categories without section": "无栏目分类",
             "Announcements": "公告",
                 "Updates from maintainers": "维护者的更新信息",
-            "General": "通常",
+            "General": "일반",
                 "Chat about anything and everything here": "在这里谈论任何事情",
             "Ideas": "想法",
                 "Share ideas for new features": "分享对新功能的想法",
@@ -10540,14 +10540,14 @@ I18N["ko-KR"]["repository/discussions"] = { // 讨论页面
             "New category": "新建分类",
 
             "Edit Announcements category": "编辑 “公告” 分类",
-            "Edit General category": "编辑 “通常” 分类",
+            "Edit General category": "编辑 “일반” 分类",
             "Edit Ideas category": "编辑 “想法” 分类",
             "Edit Polls category": "编辑 “投票” 分类",
             "Edit Q&A category": "编辑 “问与答” 分类",
             "Edit Show and tell category": "编辑 “展示与讲述” 分类",
 
             "Delete Announcements category": "删除 “公告” 分类",
-            "Delete General category": "删除 “通常” 分类",
+            "Delete General category": "删除 “일반” 分类",
             "Delete Ideas category": "删除 “想法” 分类",
             "Delete Polls category": "删除 “投票” 分类",
             "Delete Q&A category": "删除 “问与答” 分类",
@@ -10587,21 +10587,21 @@ I18N["ko-KR"]["repository/discussions"] = { // 讨论页面
 
             // 顶部提醒
                 "Category Announcements has been created.": "分类 “公告” 已创建",
-                "Category General has been created.": "分类 “通常” 已创建",
+                "Category General has been created.": "分类 “일반” 已创建",
                 "Category Ideas has been created.": "分类 “想法” 已创建",
                 "Category Polls has been created.": "分类 “投票” 已创建",
                 "Category Q&A has been created.": "分类 “问与答” 已创建",
                 "Category Show and tell has been created.": "分类 “展示与讲述” 已创建",
 
                 "Category Announcements has been updated.": "分类 “公告” 已更新",
-                "Category General has been updated.": "分类 “通常” 已更新",
+                "Category General has been updated.": "分类 “일반” 已更新",
                 "Category Ideas has been updated.": "分类 “想法” 已更新",
                 "Category Polls has been updated.": "分类 “投票” 已更新",
                 "Category Q&A has been updated.": "分类 “问与答” 已更新",
                 "Category Show and tell has been updated.": "分类 “展示与讲述” 已更新",
 
                 "Category Announcements has been deleted.": "分类 “公告” 已删除",
-                "Category General has been deleted.": "分类 “通常” 已删除",
+                "Category General has been deleted.": "分类 “일반” 已删除",
                 "Category Ideas has been deleted.": "分类 “想法” 已删除",
                 "Category Polls has been deleted.": "分类 “投票” 已删除",
                 "Category Q&A has been deleted.": "分类 “问与答” 已删除",
@@ -10667,13 +10667,13 @@ I18N["ko-KR"]["repository/discussions"] = { // 讨论页面
                 "Discussion has successfully been pinned.": "讨论已成功置顶。",
                 "Discussion has been unpinned.": "讨论已取消置顶。",
                 "Discussion pinned to Announcements": "在 “公告” 上置顶讨论",
-                "Discussion pinned to General": "在 “通常” 上置顶讨论",
+                "Discussion pinned to General": "在 “일반” 上置顶讨论",
                 "Discussion pinned to Ideas": "在 “想法” 上置顶讨论",
                 "Discussion pinned to Polls": "在 “投票” 上置顶讨论",
                 "Discussion pinned to Q&A": "在 “问与答” 上置顶讨论",
                 "Discussion pinned to Show and tell": "在 “展示与讲述” 上置顶讨论",
                 "Discussion unpinned from Announcements": "取消在 “公告” 上置顶讨论",
-                "Discussion unpinned from General": "取消在 “通常” 上置顶讨论",
+                "Discussion unpinned from General": "取消在 “일반” 上置顶讨论",
                 "Discussion unpinned from Ideas": "取消在 “想法” 上置顶讨论",
                 "Discussion unpinned from Polls": "取消在 “投票” 上置顶讨论",
                 "Discussion unpinned from Q&A": "取消在 “问与答” 上置顶讨论",
@@ -10820,9 +10820,9 @@ I18N["ko-KR"]["repository/discussions"] = { // 讨论页面
                 "Pin this discussion to this category": "将此讨论置顶到此类别",
                     "This will pin this discussion to the top of the Announcements category.": "这将此讨论置顶到 “公告” 类别顶部。",
                     "Pin to Announcements": "置顶到 “公告”",
-            "Pin discussion to General": "将讨论置顶到 “通常”",
-                    "This will pin this discussion to the top of the General category.": "这将此讨论置顶到 “通常” 类别顶部。",
-                    "Pin to General": "置顶到 “通常”",
+            "Pin discussion to General": "将讨论置顶到 “일반”",
+                    "This will pin this discussion to the top of the General category.": "这将此讨论置顶到 “일반” 类别顶部。",
+                    "Pin to General": "置顶到 “일반”",
             "Pin discussion to Ideas": "将讨论置顶到 “想法”",
                     "This will pin this discussion to the top of the Ideas category.": "这将此讨论置顶到 “想法” 类别顶部。",
                     "Pin to Ideas": "置顶到 “想法”",
@@ -10837,7 +10837,7 @@ I18N["ko-KR"]["repository/discussions"] = { // 讨论页面
                     "Pin to Show and tell": "置顶到 “展示与讲述”",
             "Unpin discussion from this category": "从此类别取消置顶",
                 "Are you sure you want to unpin this discussion from Announcements?": "您确定要从 “公告” 中取消置顶此讨论吗？",
-                "Are you sure you want to unpin this discussion from General?": "您确定要从 “通常” 中取消置顶此讨论吗？",
+                "Are you sure you want to unpin this discussion from General?": "您确定要从 “일반” 中取消置顶此讨论吗？",
                 "Are you sure you want to unpin this discussion from Ideas?": "您确定要从 “想法” 中取消置顶此讨论吗？",
                 "Are you sure you want to unpin this discussion from Polls?": "您确定要从 “投票” 中取消置顶此讨论吗？",
                 "Are you sure you want to unpin this discussion from Q&A?": "您确定要从 “问与答” 中取消置顶此讨论吗？",
@@ -11742,7 +11742,7 @@ I18N["ko-KR"]["repository/new"] = { // 仓库 - 新建/编辑/上传/删除文�
                             "(Boolean): If": "(布尔值）：若",
                             ", the form will not be submittable until this is filled out. Only for public repositories.": "，则填写此信息后才能提交表格。仅适用于公共仓库。",
                     "Textarea": "文本区域",
-                        "Very similar to inputs, textareas are multiple-line form input fields. Typically used if you'd like a contributor to provide an answer longer than a few words. Contributors may use markdown formatting in their responses.": "文本区域与输入非常相似，都是多行表单输入字段。如果希望贡献者提供长于几个单词的答案，通常会使用文本区域。贡献者可以在回复中使用标记符格式。",
+                        "Very similar to inputs, textareas are multiple-line form input fields. Typically used if you'd like a contributor to provide an answer longer than a few words. Contributors may use markdown formatting in their responses.": "文本区域与输入非常相似，都是多行表单输入字段。如果希望贡献者提供长于几个单词的答案，일반会使用文本区域。贡献者可以在回复中使用标记符格式。",
                         // 可选属性
                             "(String): If a value is provided, user-submitted text will be formatted into a codeblock automatically.": "(字符串）：如果提供该值，用户提交的文本将自动格式化为代码块。",
                     "Dropdown": "下拉菜单",
@@ -11959,11 +11959,11 @@ I18N["ko-KR"]["repository/wiki"] = { // 仓库 - wiki 页面
                                 "To create a reference link, use two sets of square brackets.": "要创建引用链接，请使用两组方括号。",
                                 "will link to the internal reference": "将链接到",
                         "Emphasis": "强调",
-                            // 星号（*）和下划线（_）被视为强调，并用 `<em>` 标签包裹，这在大多数浏览器中通常显示为斜体。双星号（**）或双下划线（__）被视为使用 `<strong>` 标签的粗体。要创建斜体或粗体文本，只需用单个/双个星号/下划线包裹您的单词。例如，**我的双重强调文本** 变成我的双重强调文本，*我的单一强调文本* 变成我的单一强调文本。
+                            // 星号（*）和下划线（_）被视为强调，并用 `<em>` 标签包裹，这在大多数浏览器中일반显示为斜体。双星号（**）或双下划线（__）被视为使用 `<strong>` 标签的粗体。要创建斜体或粗体文本，只需用单个/双个星号/下划线包裹您的单词。例如，**我的双重强调文本** 变成我的双重强调文本，*我的单一强调文本* 变成我的单一强调文本。
                                 "Asterisks (": "星号（",
                                 ") and underscores (": "）和下划线（",
                                 ") are treated as emphasis and are wrapped with an": "）被视为强调，并用",
-                                "tag, which usually displays as italics in most browsers. Double asterisks (": "标签包裹，这在大多数浏览器中通常显示为斜体。双星号（",
+                                "tag, which usually displays as italics in most browsers. Double asterisks (": "标签包裹，这在大多数浏览器中일반显示为斜体。双星号（",
                                 ") or double underscores (": "）或双下划线（",
                                 ") are treated as bold using the": "）被视为使用",
                                 "tag. To create italic or bold text, simply wrap your words in single/double asterisks/underscores. For example,": "标签的粗体。要创建斜体或粗体文本，只需用单个/双个星号/下划线包裹您的单词。例如，",
@@ -12408,7 +12408,7 @@ I18N["ko-KR"]["repository/releases"] = { // 仓库 - 发行版页面
                 "People will be able to leave comments and reactions on this release using Discussions.": "人们将能够使用“讨论”对此版本发表评论和反应。",
                         "Category:": "类别：",
                             "Announcements": "公告",
-                            "General": "通常",
+                            "General": "일반",
                             "Ideas": "想法",
                             "Polls": "投票",
                             "Q&A": "问与答",
@@ -12433,7 +12433,7 @@ I18N["ko-KR"]["repository/releases"] = { // 仓库 - 发行版页面
 
             // 右侧栏
             "Tagging suggestions": "标签建议",
-            "It’s common practice to prefix your version names with the letter": "通常的做法是在版本名称前加上字母",
+            "It’s common practice to prefix your version names with the letter": "일반的做法是在版本名称前加上字母",
             ". Some good tag names might be": "。一些好的标签名称可能是",
             "If the tag isn’t meant for production use, add a pre-release version after the version name. Some good pre-release versions might be": "如果标签不是用于生产的，就在版本名后面加上预发布版本。一些好的预发布版本可能是",
 
@@ -13461,7 +13461,7 @@ I18N["ko-KR"]["repository/graphs/community"] = { // 仓库 -> 洞察 - 社区
                 "anonymous": "匿名",
 
                 "Not enough data yet.": "还没有足够的数据。",
-                "It usually takes about a week to populate this chart.": "填充此图表通常需要大约一周的时间。",
+                "It usually takes about a week to populate this chart.": "填充此图表일반需要大约一周的时间。",
                 "Read more about insights": "阅读更多关于见解的信息",
 
             "Discussions daily contributors": "每日讨论的贡献者",
@@ -13607,7 +13607,7 @@ I18N["ko-KR"]["repository/graphs/traffic"] = { // 仓库 -> 洞察 - 流量
             "Path": "路径",
 
             "We don’t have enough data to show anything useful.": "我们没有足够的数据来显示任何有用的东西。",
-            "It usually takes about a week to populate this graph.": "通常需要一周左右的时间来填充此图表。",
+            "It usually takes about a week to populate this graph.": "일반需要一周左右的时间来填充此图表。",
             "It looks like traffic to your repository is a little light. Go spread the word and check back later!": "看起来您的仓库的流量有点少呀。去宣传一下吧，稍后再回来查看！",
 
             "Crunching the latest data, just for you. Hang tight…": "正在为您准备最新数据，请稍后…",
@@ -13949,7 +13949,7 @@ I18N["ko-KR"]["repository-settings-menu"] = { // 仓库设置公共部分
 
 
             // 左侧菜单
-            "General": "通常",
+            "General": "일반",
 
             "Access": "访问",
                 // "Collaborators": "协作者",
@@ -13965,7 +13965,7 @@ I18N["ko-KR"]["repository-settings-menu"] = { // 仓库设置公共部分
                 "Rules": "规则",
                     "Rulesets": "规则集",
                 // "Actions": "액션",
-                    // "General": "通常",
+                    // "General": "일반",
                     "Runners": "运行器",
                 "Webhooks": "Web 钩子",
                 "Environments": "环境",
@@ -13988,333 +13988,332 @@ I18N["ko-KR"]["repository-settings-menu"] = { // 仓库设置公共部分
     ],
 };
 
-I18N["ko-KR"]["repository/settings"] = { // 仓库设置 - 通常 /<user-name>/<repo-name>/settings
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings"] = { // 저장소 설정 - 보통 /<user-name>/<repo-name>/settings
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 通常 - 设置页面 /<user-name>/<repo-name>/settings ====================================
-            "Repository name": "仓库名称",
-            "Rename": "重命名",
-                // [/is available./, "名称可用。"],
+        // 보통 - 설정 페이지 /<user-name>/<repo-name>/settings ====================================
+            "Repository name": "저장소 이름",
+            "Rename": "이름 변경하기",
+                // [/is available./, "이름 사용 가능해요."],
                 "The repository": "저장소",
-                "already exists on this account.": "已经存在于此账户。",
-                "Your new repository will be created as": "您的新仓库将被创建为",
-                // 顶部提醒
-                "Repository name was not changed": "仓库名称未更改",
+                "already exists on this account.": "이미 이 계정에 존재해요.",
+                "Your new repository will be created as": "새 저장소가 다음 이름으로 생성될 거예요:",
+                // 상단 알림
+                "Repository name was not changed": "저장소 이름이 변경되지 않았어요.",
 
-            "Template repository": "模板库",
-                "Template repositories let users generate new repositories with the same directory structure and files.": "模板仓库允许用户生成具有相同目录结构和文件的新仓库。",
-                "A repository with LFS content cannot be used as a template.": "带有 LFS 内容的仓库不能作为模板使用。",
-                "Learn more about template repositories": "了解更多关于模板库的信息",
+            "Template repository": "템플릿 저장소",
+                "Template repositories let users generate new repositories with the same directory structure and files.": "템플릿 저장소를 사용하면 사용자가 동일한 디렉토리 구조와 파일을 가진 새 저장소를 생성할 수 있어요.",
+                "A repository with LFS content cannot be used as a template.": "LFS 콘텐츠가 있는 저장소는 템플릿으로 사용할 수 없어요.",
+                "Learn more about template repositories": "템플릿 저장소에 대해 더 알아보세요.",
 
-                "Require contributors to sign off on web-based commits": "要求贡献者在基于 Web 的提交上签署",
-                "Enabling this setting will require contributors to sign off on commits made through GitHub’s web interface. Signing off is a way for contributors to affirm that their commit complies with the repository's terms, commonly the": "启用此设置将要求贡献者签署通过 GitHub 的 Web 界面所做的提交。签署是贡献者确认他们的提交符合仓库条款的一种方式，通常是",
-                "Developer Certificate of Origin (DCO)": "开发者来源证书（DCO）",
-                "Learn more about signing off on commits": "了解更多关于签署提交的信息",
+                "Require contributors to sign off on web-based commits": "웹 기반 커밋에 대해 기여자가 서명하도록 요구하기",
+                "Enabling this setting will require contributors to sign off on commits made through GitHub’s web interface. Signing off is a way for contributors to affirm that their commit complies with the repository's terms, commonly the": "이 설정을 활성화하면 기여자가 GitHub의 웹 인터페이스를 통해 수행한 커밋에 대해 서명해야 해요. 서명은 기여자가 커밋이 저장소의 조건, 보통은 다음과 같이 준수됨을 확인하는 방법이에요:",
+                "Developer Certificate of Origin (DCO)": "개발자 출처 증명서 (DCO)",
+                "Learn more about signing off on commits": "커밋 서명에 대해 더 알아보세요.",
 
-            "This setting is enabled on the upstream repository. Disabling this setting may block commits from being merged upstream.": "此设置在上游仓库中启用。禁用此设置可能会阻止提交向上游合并。",
+            "This setting is enabled on the upstream repository. Disabling this setting may block commits from being merged upstream.": "이 설정은 상위 저장소에서 활성화되어 있어요. 이 설정을 비활성화하면 상위 저장소로의 커밋 병합이 차단될 수 있어요.",
 
-            "Default branch": "默认分支",
-            "The default branch is considered the “base” branch in your repository, against which all pull requests and code commits are automatically made, unless you specify a different branch.": "默认分支被认为是仓库中的 “基础” 分支，所有的拉取请求和代码提交都是针对该分支进行的，除非您指定一个不同的分支。",
-            "Rename branch": "重命名分支",
-                // 重命名分支对话框
-                "Rename this branch": "重命名分支",
-                "Rename": "重命名",
-                "to:": "为：",
-                // [/is already the branch name./, "已经是分支的名称了。"],
-                // [/Your branch name will be/, "您的分支的名称将重命名为"],
-                "Most projects name the default branch": "大多数项目将默认分支名为",
-                "Renaming this branch:": "重命名此分支：",
-                    // 该分支存在来自其他分支的拉取请求时
-                        "Will update": "将更新",
-                        "pull request targeting this branch.": "条针对该分支的拉取请求。",
-                        "pull requests targeting this branch.": "条针对该分支的拉取请求。",
-                        "branch protection rule that explicitly targets": "条分支保护规则明确针对",
+            "Default branch": "기본 분기",
+            "The default branch is considered the “base” branch in your repository, against which all pull requests and code commits are automatically made, unless you specify a different branch.": "기본 분기는 저장소에서 '기준' 분기로 간주되며, 다른 분기를 지정하지 않는 한 모든 끌어오기 요청과 코드 커밋이 자동으로 이 분기를 대상으로 이루어져요.",
+            "Rename branch": "분기 이름 변경하기",
+                // 분기 이름 변경 대화창
+                "Rename this branch": "이 분기 이름 변경하기",
+                "Rename": "이름 변경하기",
+                "to:": "다음:",
+                // [/is already the branch name./, "이미 분기 이름이에요."],
+                // [/Your branch name will be/, "사용자님의 분기 이름이 다음으로 변경될 거예요:"],
+                "Most projects name the default branch": "대부분의 프로젝트는 기본 분기 이름을",
+                "Renaming this branch:": "이 분기를 다음으로 이름 변경하기:",
+                    // 이 분기에 다른 분기에서 생성된 끌어오기 요청이 있을 때
+                        "Will update": "업데이트할 거예요,",
+                        "pull request targeting this branch.": "이 분기를 대상으로 한 끌어오기 요청이 업데이트될 거예요.",
+                        "pull requests targeting this branch.": "이 분기를 대상으로 한 끌어오기 요청들이 업데이트될 거예요.",
+                        "branch protection rule that explicitly targets": "이 분기를 명시적으로 대상으로 하는 분기 보호 규칙을,",
+                    
+                    // 이 분기가 다른 분기를 위한 끌어오기 요청에 사용될 때
+                        "Will close": "닫을 거예요,",
+                        "open pull request for this branch.": "이 분기에 대한 열린 끌어오기 요청을 닫을 거예요.",
+                    
+                    // GitHub Pages가 있는 분기의 이름 변경 시
+                        "Will unpublish current GitHub Pages site.": "현재 GitHub Pages 사이트의 게시를 취소할 거예요.",
+                            "Your current GitHub Pages site will become unpublished. A new commit on the renamed branch will publish the GitHub Pages site again.": "현재 GitHub Pages 사이트는 게시 취소 상태가 될 거예요. 이름 변경된 분기에서 새로운 커밋이 이루어지면 GitHub Pages 사이트가 다시 게시될 거예요.",
+                    
+                    "Will not update your members' local environments.": "회원님의 로컬 환경은 업데이트되지 않을 거예요.",
+                "Renaming this branch will not update your members' local environments.": "이 분기 이름 변경은 회원님의 로컬 환경을 업데이트하지 않아요.",
+                    "Your members will have to manually update their local environments. We'll let them know when they visit the repository, or you can share the following commands.": "회원님들의 로컬 환경은 수동으로 업데이트해야 해요. 회원님들이 저장소를 방문할 때 안내해드리거나, 다음 명령어들을 공유하실 수 있어요.",
+                "Saving…": "저장 중…",
 
-                    // 该分支存在用于其他分支的拉取请求时
-                        "Will close": "将关闭",
-                        "open pull request for this branch.": "个该分支的拉取请求。",
-
-                    // 重命名 GitHub Pages 所在分支
-                        "Will unpublish current GitHub Pages site.": "将取消当前发布的 GitHub Pages 站点。",
-                            "Your current GitHub Pages site will become unpublished. A new commit on the renamed branch will publish the GitHub Pages site again.": "您当前的 GitHub Pages 站点将被取消发布。重命名分支上的新提交将再次发布 GitHub Pages 站点。",
-
-                    "Will not update your members' local environments.": "不会更新您成员的本地环境。",
-                "Renaming this branch will not update your members' local environments.": "重命名此分支不会更新您成员的本地环境。",
-                    "Your members will have to manually update their local environments. We'll let them know when they visit the repository, or you can share the following commands.": "您的成员将不得不手动更新他们的本地环境。我们会在他们访问仓库时通知他们，或者您可以共享以下命令。",
-                "Saving…": "保存中…",
-
-            "Switch to another branch": "切换到另一分支",
-                // 分支切换对话框
-                "Switch default branch to another branch": "将默认分支切换到另一分支",
-                // [/Choose another branch to use as the default branch of ([^ ]+) instead of/,"选择另一分支作为 $1 的默认分支而不是"], // 分支切换 对话框
-                "Update": "更新",
-                "Switch default branch": "切换默认分支",
-                "Filter branches": "筛选分支",
-                "default": "默认",
-                // 更新默认分支对话框
-                "Update default branch": "更新默认分支",
-                "Changing your default branch": "更改您的默认分支",
-                "can have unintended consequences that can affect new pull requests and clones.": "可能会产生意想不到的后果，影响新的拉取请求和克隆。",
-                "I understand, update the default branch.": "我明白了，依然更新默认分支",
-                // 顶部提醒
-                    // [/Default branch changed to ([^ ])/, "默认分支更改为 $1"]
-
-            "Social preview": "社交预览",
-            // 关于私有库提醒
-            "You can upload a social image, but it will not be visible publicly while": "您可以上传社交图片，但当",
-            "is private.": "是私密时，它不会公开显示。",
-            "Upload an image to customize your repository’s social media preview.": "上传图像以自定义仓库的社交媒体预览。",
-            "Images should be at least 640×320px (1280×640px for best display).": "图片至少应为 640×320 像素（1280×640 像素以获得最佳显示效果）。",
-            "Download template": "下载模板",
-            "Edit": "编辑",
-                "Upload an image…": "上传图片…",
-                "Remove image": "删除图片",
-
-            "Features": "功能",
+            "Switch to another branch": "다른 분기로 전환하기",
+                // 분기 전환 대화창
+                "Switch default branch to another branch": "기본 분기를 다른 분기로 전환하기",
+                // [/Choose another branch to use as the default branch of ([^ ]+) instead of/,"$1 의 기본 분기로 사용하기 위해 다른 분기를 선택해주세요"] // 분기 전환 대화창
+                "Update": "업데이트하기",
+                "Switch default branch": "기본 분기 전환하기",
+                "Filter branches": "분기 필터링하기",
+                "default": "기본",
+                // 기본 분기 업데이트 대화창
+                "Update default branch": "기본 분기 업데이트하기",
+                "Changing your default branch": "기본 분기를 변경하는 것은",
+                "can have unintended consequences that can affect new pull requests and clones.": "예기치 않은 결과가 발생하여 새로운 끌어오기 요청 및 클론에 영향을 줄 수 있어요.",
+                "I understand, update the default branch.": "이해했어요, 기본 분기를 업데이트해주세요.",
+                // 상단 알림
+                    // [/Default branch changed to ([^ ])/, "기본 분기가 $1(으)로 변경되었어요"]
+            
+            "Social preview": "소셜 미리보기",
+            // 개인 저장소 관련 알림
+            "You can upload a social image, but it will not be visible publicly while": "소셜 이미지를 업로드할 수 있어요, 하지만",
+            "is private.": "저장소가 비공개일 경우, 공개되지 않아요.",
+            "Upload an image to customize your repository’s social media preview.": "저장소의 소셜 미디어 미리보기를 커스터마이즈하기 위해 이미지를 업로드해주세요.",
+            "Images should be at least 640×320px (1280×640px for best display).": "이미지는 최소 640×320픽셀, 최적 표시를 위해서는 1280×640픽셀이면 좋아요.",
+            "Download template": "템플릿 다운로드하기",
+            "Edit": "편집하기",
+                "Upload an image…": "이미지 업로드하기…",
+                "Remove image": "이미지 삭제하기",
+            
+            "Features": "기능들",
             // "Wikis": "",
-                "Wikis host documentation for your repository.": "Wikis 为您的仓库托管文档。",
-                "Restrict editing to collaborators only": "仅限协作者进行编辑",
-                "Restrict editing to users in teams with push access only": "仅限具有推送访问权限的团队中的成员进行编辑", //组织仓库
-                    "Public wikis will still be readable by everyone.": "公共 Wikis 仍然可供所有人阅读。",
-
-            // 私人库 启用 Wiki 提醒
-                "Upgrade or make this repository public to enable Wikis": "升级或公开此仓库，以启用 Wiki",
-                "GitHub Wikis is a simple way to let others contribute content. Any GitHub user can create and edit pages to use for documentation, examples, support, or anything you wish.": "GitHub Wikis 是一种让他人贡献内容的简单方法。任何 GitHub 用户都可以创建和编辑页面，用于文档、示例、支持或任何您想要的东西。",
-                // "Upgrade": "升级",
-                    "Learn more about wikis": "了解更多关于 Wiki 的信息",
-
+                "Wikis host documentation for your repository.": "Wikis는 저장소의 문서를 호스팅해요.",
+                "Restrict editing to collaborators only": "협업자만 편집하도록 제한하기",
+                "Restrict editing to users in teams with push access only": "푸시 권한이 있는 팀의 사용자만 편집하도록 제한하기", // 조직 저장소
+                    "Public wikis will still be readable by everyone.": "공개된 Wikis는 모두가 읽을 수 있어요.",
+            
+            // 개인 저장소 Wiki 활성화 알림
+                "Upgrade or make this repository public to enable Wikis": "Wikis를 사용하려면 저장소를 업그레이드하거나 공개해주세요.",
+                "GitHub Wikis is a simple way to let others contribute content. Any GitHub user can create and edit pages to use for documentation, examples, support, or anything you wish.": "GitHub Wikis는 다른 사람들이 콘텐츠를 기여할 수 있는 간단한 방법이에요. 모든 GitHub 사용자가 문서, 예시, 지원 또는 원하는 용도로 페이지를 생성하고 편집할 수 있어요.",
+                // "Upgrade": "업그레이드",
+                    "Learn more about wikis": "Wikis에 대해 더 알아보기",
+            
             // 이슈
-            "Issues integrate lightweight task tracking into your repository. Keep projects on track with issue labels and milestones, and reference them in commit messages.": "이슈将轻量级任务跟踪集成到您的仓库中。使用이슈标签和里程碑保持项目正常运行，并在提交消息中引用它们。",
-            "Get organized with issue templates": "使用이슈模板进行组织",
-            "Give contributors issue templates that help you cut through the noise and help them push your project forward.": "为贡献者提供이슈模板，帮助您消除干扰并帮助他们推进您的项目。",
-            "Set up templates": "设置模板",
-
-            "Allow forking": "允许复刻", // 组织仓库
-            "If disabled, existing forks will be unaffected.": "如果禁用，现有复刻将不受影响。", // 组织仓库
-
-            // 赞助
-            "Sponsorships": "赞助",
-            "Sponsorships help your community know how to financially support this repository.": "赞助可帮助您的社区了解如何在资金上支持此仓库。",
-            "Display a \"Sponsor\" button": "显示 “赞助” 按钮",
-            "Add links to GitHub Sponsors or third-party methods your repository accepts for financial contributions to your project.": "添加指向 GitHub 赞助者或您的仓库接受的第三方收款链接，以便为您的项目提供资金捐助。",
-            "Set up sponsor button": "设置赞助按钮",
-            "Edit funding links": "编辑赞助链接",
-
-            // 项目
-            "Projects on GitHub help you organize and prioritize your work. You can create projects for specific feature work, comprehensive roadmaps, or even release checklists.": "GitHub 上的项目可以帮助您组织工作并确定其优先次序。您可以为特定的功能工作、全面的路线图、甚至是发布清单创建项目",
-
-            "Preserve this repository": "保留这个仓库",
-            "Include this code in the": "将此代码包含在",
-            "GitHub Archive Program": "GitHub 存档计划中",
-
-            "Table of contents": "目录",
-            "Autogenerate table of contents for markdown files in this repository. the table of contents will be displayed near the top of the file.": "自动生成此仓库中 Markdown 文件的目录。目录将显示在文件顶部附近。",
-
+            "Issues integrate lightweight task tracking into your repository. Keep projects on track with issue labels and milestones, and reference them in commit messages.": "이슈는 저장소에 가벼운 작업 추적을 통합해요. 이슈 레이블과 마일스톤으로 프로젝트를 체계적으로 관리하고, 커밋 메시지에서 참조할 수 있어요.",
+            "Get organized with issue templates": "이슈 템플릿으로 체계적으로 정리해보세요.",
+            "Give contributors issue templates that help you cut through the noise and help them push your project forward.": "기여자에게 이슈 템플릿을 제공하여 혼란을 줄이고 프로젝트 진행에 도움을 줄 수 있어요.",
+            "Set up templates": "템플릿 설정하기",
+            
+            "Allow forking": "포크 허용하기", // 조직 저장소
+            "If disabled, existing forks will be unaffected.": "비활성화하면, 기존 포크에는 영향이 없어요.", // 조직 저장소
+            
+            // 후원
+            "Sponsorships": "후원",
+            "Sponsorships help your community know how to financially support this repository.": "후원을 통해 커뮤니티가 이 저장소를 재정적으로 지원하는 방법을 알 수 있어요.",
+            "Display a \"Sponsor\" button": "“후원하기” 버튼 표시하기",
+            "Add links to GitHub Sponsors or third-party methods your repository accepts for financial contributions to your project.": "프로젝트에 대한 재정 지원을 위해 GitHub 스폰서나 제3자 후원 방법에 대한 링크를 추가해주세요.",
+            "Set up sponsor button": "후원 버튼 설정하기",
+            "Edit funding links": "후원 링크 편집하기",
+            
+            // 프로젝트
+            "Projects on GitHub help you organize and prioritize your work. You can create projects for specific feature work, comprehensive roadmaps, or even release checklists.": "GitHub의 프로젝트는 작업을 체계적으로 정리하고 우선순위를 지정하는 데 도움을 줘요. 특정 기능 작업, 종합적인 로드맵 또는 릴리즈 체크리스트를 위해 프로젝트를 생성할 수 있어요.",
+            
+            "Preserve this repository": "이 저장소를 보존하기",
+            "Include this code in the": "이 코드를 포함하기",
+            "GitHub Archive Program": "GitHub 아카이브 프로그램에",
+            
+            "Table of contents": "목차",
+            "Autogenerate table of contents for markdown files in this repository. the table of contents will be displayed near the top of the file.": "이 저장소의 Markdown 파일에 대한 목차를 자동 생성해요. 목차는 파일 상단 근처에 표시될 거예요.",
+            
             // "Discussions": "토론",
-            "Discussions is the space for your community to have conversations, ask questions and post answers without opening issues.": "讨论是您的社区进行对话、提问和发布答案的地方，而无需打开이슈。",
-            "Get started with Discussions": "开始讨论",
-            "Engage your community by having discussions right in your repository, where your community already lives": "通过在您的社区已经存在的仓库中进行讨论来吸引您的社区",
-            "Set up discussions": "建立讨论",
-
-            // 项目
-            "Projects on GitHub are created at the repository owner's level (organization or user) and can be linked to a repository's Projects tab. Projects are suitable for cross-repository development efforts such as feature work, complex product roadmaps or even Issue triage.": "GitHub 上的项目是在仓库所有者级别（组织或用户）创建的，并且可以链接到仓库的项目选项卡。项目适用于跨仓库的开发工作，例如功能工作、复杂的产品路线图，甚至问题分流。",
-
+            "Discussions is the space for your community to have conversations, ask questions and post answers without opening issues.": "토론은 커뮤니티가 대화하고, 질문하며, 답변을 게시할 수 있는 공간이에요. 이슈를 열지 않아도 돼요.",
+            "Get started with Discussions": "토론 시작하기",
+            "Engage your community by having discussions right in your repository, where your community already lives": "커뮤니티가 이미 있는 저장소에서 토론을 진행하여 커뮤니티를 활성화해보세요.",
+            "Set up discussions": "토론 설정하기",
+            
+            // 프로젝트
+            "Projects on GitHub are created at the repository owner's level (organization or user) and can be linked to a repository's Projects tab. Projects are suitable for cross-repository development efforts such as feature work, complex product roadmaps or even Issue triage.": "GitHub의 프로젝트는 저장소 소유자(조직 또는 사용자) 수준에서 생성되며, 저장소의 프로젝트 탭에 연결할 수 있어요. 프로젝트는 기능 작업, 복잡한 제품 로드맵 또는 이슈 분류와 같은 저장소 간 개발 작업에 적합해요.",
+            
             // "Pull requests": "끌어오기 요청",
-                "When merging pull requests, you can allow any combination of merge commits, squashing, or rebasing. At least one option must be enabled. If you have linear history requirement enabled on any protected branch, you must enable squashing or rebasing.": "当合并拉取请求时，您可以允许合并提交、压缩或变基的任意组合。必须至少启用一个选项。如果您在任何受保护分支上启用了线性历史要求，则必须启用压缩或变基。",
-
-                "You must select at least one option": "您必须至少选择一个选项",
-                "Allow merge commits": "允许合并提交",
-                    "Add all commits from the head branch to the base branch with a merge commit.": "使用合并提交将所有从头部分支的提交添加到基础分支。",
-                        "Default commit message": "默认提交信息",
-                            "Presented when merging a pull request with merge.": "当合并拉取请求时时出现。",
-                        "Default message": "默认信息",
-                        "Pull request title": "拉取请求标题",
-                        "Pull request title and commit details": "拉取请求标题和提交详情",
-                        "Pull request title and description": "拉取请求标题和描述",
-
-                "Allow squash merging": "允许压缩合并",
-                    "Combine all commits from the head branch into a single commit in the base branch.": "将来自头部分支的所有提交合并到基础分支中的单个提交中。",
-                        // "Default commit message": "默认提交信息",
-                            "Presented when merging a pull request with squash.": "当使用压缩合并拉取请求时显示。",
-                        "Default to pull request title and commit details": "默认为拉取请求标题和提交详细信息",
-
-                    "Default to PR title for squash merge commits": "默认将拉取请求的标题作为压缩合并提交的信息",
-                    "This will pre-populate the commit message with the PR title when performing a squash merge.": "在执行压缩合并时，将在提交信息中添加拉取请求的标题。",
-
-                "Allow rebase merging": "允许变基合并",
-                    "Add all commits from the head branch onto the base branch individually.": "将来自头部分支的所有提交单独添加到基础分支。",
-
-                "Control how and when users are prompted to update their branches if there are new changes available in the base branch.": "如果基础分支中有可用的新更改，则控制提示用户更新其分支的方式和时间。",
-                "Always suggest updating pull request branches": "始终建议更新拉取请求分支",
-                    "Whenever there are new changes available in the base branch, present an “update branch” option in the pull request.": "每当基础分支中有可用的新更改时，就在拉取请求中显示 “更新分支” 选项。",
-
-                "You can allow setting pull requests to merge automatically once all required reviews and status checks have passed.": "一旦所有必需的审查和状态检查都通过，您可以允许设置拉取请求自动合并。",
-
-                "Allow auto-merge": "允许自动合并",
-                    "Waits for merge requirements to be met and then merges automatically.": "等待满足合并要求，然后自动合并。",
-                    "Why is this option disabled?": "为什么该选项被禁用？",
-
-                "After pull requests are merged, you can have head branches deleted automatically.": "合并拉取请求后，您可以自动删除头部分支。",
-
-                    "Automatically delete head branches": "自动删除头部分支",
-                        "Deleted branches will still be able to be restored.": "删除的分支仍然可以恢复。",
-
-            "Archives": "档案",
-            "When creating source code archives, you can choose to include files stored using Git LFS in the archive.": "创建源代码存档时，您可以选择在存档中包含使用 Git LFS 存储的文件。",
-
-            "Include Git LFS objects in archives": "在档案中包含 Git LFS 对象",
-            "Git LFS usage in archives is billed at the same rate as usage with the client.": "归档中的 Git LFS 使用率与客户端的使用率相同。",
-
-            "Pushes": "推送",
-            "Limit how many branches and tags can be updated in a single push": "限制一次推送中可以更新多少个分支和标签",
-                "Pushes will be rejected if they attempt to update more than this.": "如果推送尝试更新超过该值，则推送将被拒绝。",
-                "Learn more about this setting": "了解更多关于此设置的信息",
-                ", and send us your": "，并向我们发送您的",
-                "feedback": "反馈",
-
-                "Up to": "在一次推送中最多可以更新",
-                "branches and tags can be updated in a push": "个分支和标签",
-
-                // 提醒
-                "Must be a whole number between 2 and 1000": "必须是 2 到 1000 之间的整数",
-
-            "Danger Zone": "危险区",
-            "Change repository visibility": "更改仓库可见性",
-            "You cannot change the visibility of a fork. please": "您无法更改复刻仓库的可见性。请",
-            "Duplicate the repository": "复制仓库",
-            "For security reasons, you cannot change the visibility of a fork.": "出于安全原因，您无法更改复刻仓库的可见性。",
-
-            // 更改仓库可见性对话框
-            "Change visibility": "更改可见性",
-                "Change to private": "更改为私有",
-                "Change to public": "更改为公开",
-            "This repository is currently public.": "该仓库当前是公开的。",
-            "This repository is currently private.": "该仓库当前是私有的。",
-            "I want to make this repository public": "我想将此仓库设为公开",
-                "The code will be visible to everyone who can visit https://github.com": "所有可以访问 https://github.com 的人都可以看到代码",
-                "Attachments uploaded to this repository's issues and pull requests will not be accessible unless it is made private again.": "上传到此仓库的이슈和拉取请求的附件将无法访问，除非再次设为私有。",
-                "Anyone can fork your repository.": "任何人都可以复刻您的仓库。",
-                "All push rulesets will be disabled.": "所有推送规则集都将被禁用。",
-                "Your changes will be published as activity.": "您的更改将作为活动发布。",
-                "Make this repository public": "我想将此仓库设为公开",
-            "I want to make this repository private": "我想将此仓库设为私有",
-                "Making this repository private could permanently erase these counts by removing stars and watchers associated to users that will no longer have access to this repository:": "该仓库私有化，将会通过解除星标者和关注者，删除这些计数。他们将无法访问该仓库：",
-                    "star": "星标者",
-                    "stars": "星标者",
-                    "watcher": "关注者",
-                    "watchers": "关注者",
-                "If you decide to make this repository public in the future, it will not be possible to restore these stars and watchers and this will affect its repository rankings.": "即使您决定将来公开此仓库，也无法恢复这些星标者和关注者，这将影响其仓库排名。",
-                "Dependency graph and Dependabot alerts will remain enabled with permission to perform read-only analysis on this repository.": "依赖关系图和 Dependabot 警报将保持启用，并有权限对该仓库进行只读分析。",
-                "Dependency graph and Dependabot alerts will remain enabled with permission to perform read-only analysis on this repository. Any custom Dependabot alert rules will be disabled unless GitHub Advanced Security is enabled for this repository.": "依赖关系图和 Dependabot 警报将继续启用，并允许对该仓库执行只读分析。除非为该仓库启用了 GitHub 高级安全功能，否则任何自定义的 Dependabot 警报规则都将被禁用。",
-                "Code scanning will become unavailable.": "代码扫描将变得不可用。",
-                "Current forks will remain public and will be detached from this repository.": "当前的复刻将保持公开，并将从该仓库中分离出来。",
-                "Make this repository private": "将此仓库设为私有",
-                "I have read and understand these effects": "我已阅读并理解这些影响",
-
-                "Warning: this is a destructive action": "警告：这是一个破坏性的行为",
-                "To confirm, type the number of stars on this repository in the box below": "要确认，请在下面的框中输入此仓库的星标数",
-
-            "Disable branch protection rules": "禁用分支保护规则",
-                "Disable branch protection rules enforcement and APIs": "禁用分支保护规则执行和 API",
-
-                // 顶部提醒
-                    "Branch protection settings saved.": "分支保护设置已保存。",
-
-            // 禁用分支保护对话框
-                "This will hide the branch protection settings and disable branch protection rules for this repository.": "这将隐藏分支保护设置，并禁用该仓库的分支保护规则。",
-                "Disabling branch protection rules allows you to enforce branch and tag protections exclusively with Repository Rules.": "禁用分支保护规则后，允许您仅使用仓库规则来执行分支和标签保护。",
-
-                "This action will disable:": "此操作将禁用：",
-                    "Branch protection rule enforcement": "分支保护执行",
-                    "Branch protection rule APIs": "分支保护 API",
-                // [/(\d+) branch protection rules?/, "$1 项分支保护规则"],
-                "will be disabled as part of this action": "作为此操作的一部分将被禁用",
-
-            "Re-enable branch protection rules": "重新启用分支保护规则",
-                "Re-enable branch protection rules enforcement and APIs": "重新启用分支保护规则执行和 API",
-
-            // 重新启用分支保护对话框
-                "Re-enable branch protection": "重新启用分支保护",
-                "will be re-enabled as part of this action": "作为此操作的一部分将被重新启用",
-
-            "Transfer ownership": "转让所有权",
-            "Transfer": "转让",
-            "Transfer this repository to another user or to an organization where you have the ability to create repositories.": "将此仓库转让给另一位用户或您可以创建仓库的组织。",
-
-            "Archive this repository": "存档仓库",
-            "Mark this repository as archived and read-only.": "将此仓库标记为已存档和只读。",
-
-            // 存档仓库对话框
-            "Archive repository": "存档仓库",
-            "This repository will become read-only.": "该仓库将设置为只读。",
-            "You will still be able to fork the repository and unarchive it at any time.": "您仍然可以随时访问复刻仓库并取消存档。",
-            "Unexpected bad things will happen if you don’t read this!": "如果您不阅读此说明，将会发生意想不到的事情！",
-            "All scheduled workflows will stop running.": "所有预定的工作流程将停止运行。",
-            "Security features will be unavailable:": "安全功能将无法使用：",
-            "Code scanning": "代码扫描",
-            "Before you archive, please consider:": "在您存档之前，请考虑：",
-            "Updating any repository settings": "更新仓库设置",
-            "Closing all open issues and pull requests": "关闭所有打开的이슈和拉取请求",
-            "Making a note in your README": "在您的 README 中做个说明",
-            "Please type": "请键入",
-            "to confirm.": "进行确定。",
-            "I understand the consequences, archive this repository": "我明白后果，依然存档该仓库",
-            // "This repository has been archived by the owner. It is now read-only.": "此仓库已由所有者存档。它现在是只读的。",
-
-            // 顶部提醒
-            // [/Your repository \"([^ ]+)\" was successfully archived./, "您的仓库 “$1” 已成功存档。"], //仓库存档
-
-            "Unarchive this repository": "解除仓库存档",
-            "Mark this repository as unarchived and read-write.": "将此仓库标记为未存档和可读写。",
-
-            // 解除仓库存档对话框
-            "Unarchive repository": "解除仓库存档",
-            "This will make": "这将使",
-            "read-write.": "可读写。",
-            "Once unarchived, the following can be modified and commented on:": "一旦解除存档，就可以对以下内容进行修改和评论：",
+                "When merging pull requests, you can allow any combination of merge commits, squashing, or rebasing. At least one option must be enabled. If you have linear history requirement enabled on any protected branch, you must enable squashing or rebasing.": "끌어오기 요청을 병합할 때, 병합 커밋, 스쿼시 또는 리베이스의 조합을 허용할 수 있어요. 적어도 하나의 옵션은 활성화되어야 해요. 만약 보호된 분기에서 선형 히스토리 요구사항을 활성화했다면, 스쿼시나 리베이스를 활성화해야 해요.",
+            
+                "You must select at least one option": "적어도 하나의 옵션을 선택해야 해요.",
+                "Allow merge commits": "병합 커밋 허용하기",
+                    "Add all commits from the head branch to the base branch with a merge commit.": "헤드 분기의 모든 커밋을 병합 커밋으로 베이스 분기에 추가해요.",
+                        "Default commit message": "기본 커밋 메시지",
+                            "Presented when merging a pull request with merge.": "병합으로 끌어오기 요청을 병합할 때 표시돼요.",
+                        "Default message": "기본 메시지",
+                        "Pull request title": "끌어오기 요청 제목",
+                        "Pull request title and commit details": "끌어오기 요청 제목 및 커밋 세부 사항",
+                        "Pull request title and description": "끌어오기 요청 제목 및 설명",
+            
+                "Allow squash merging": "스쿼시 병합 허용하기",
+                    "Combine all commits from the head branch into a single commit in the base branch.": "헤드 분기의 모든 커밋을 하나의 커밋으로 베이스 분기에 합쳐요.",
+                        // "Default commit message": "기본 커밋 메시지",
+                            "Presented when merging a pull request with squash.": "스쿼시 병합으로 끌어오기 요청을 병합할 때 표시돼요.",
+                        "Default to pull request title and commit details": "끌어오기 요청 제목 및 커밋 세부 사항을 기본으로 사용하기",
+            
+                    "Default to PR title for squash merge commits": "스쿼시 병합 커밋 시, 끌어오기 요청 제목을 기본으로 사용하기",
+                    "This will pre-populate the commit message with the PR title when performing a squash merge.": "스쿼시 병합을 수행할 때, 커밋 메시지가 끌어오기 요청 제목으로 미리 채워질 거예요.",
+            
+                "Allow rebase merging": "리베이스 병합 허용하기",
+                    "Add all commits from the head branch onto the base branch individually.": "헤드 분기의 모든 커밋을 베이스 분기에 개별적으로 추가해요.",
+            
+                "Control how and when users are prompted to update their branches if there are new changes available in the base branch.": "베이스 분기에 새로운 변경 사항이 있을 때, 사용자에게 분기 업데이트를 언제 어떻게 안내할지 제어해요.",
+                "Always suggest updating pull request branches": "항상 끌어오기 요청 분기 업데이트를 제안하기",
+                    "Whenever there are new changes available in the base branch, present an “update branch” option in the pull request.": "베이스 분기에 새로운 변경 사항이 있을 때마다, 끌어오기 요청에 '분기 업데이트' 옵션을 제시해요.",
+            
+                "You can allow setting pull requests to merge automatically once all required reviews and status checks have passed.": "필수 검토와 상태 확인이 모두 통과되면, 끌어오기 요청을 자동으로 병합하도록 설정할 수 있어요.",
+            
+                "Allow auto-merge": "자동 병합 허용하기",
+                    "Waits for merge requirements to be met and then merges automatically.": "병합 요건이 충족될 때까지 기다린 후 자동으로 병합해요.",
+                    "Why is this option disabled?": "이 옵션이 왜 비활성화되어 있는지요?",
+            
+                "After pull requests are merged, you can have head branches deleted automatically.": "끌어오기 요청이 병합된 후, 헤드 분기를 자동으로 삭제할 수 있어요.",
+            
+                    "Automatically delete head branches": "헤드 분기 자동 삭제하기",
+                        "Deleted branches will still be able to be restored.": "삭제된 분기는 여전히 복원할 수 있어요.",
+            
+            "Archives": "아카이브",
+            "When creating source code archives, you can choose to include files stored using Git LFS in the archive.": "소스 코드 아카이브를 생성할 때, Git LFS로 저장된 파일을 포함할지 선택할 수 있어요.",
+            
+            "Include Git LFS objects in archives": "아카이브에 Git LFS 객체 포함하기",
+            "Git LFS usage in archives is billed at the same rate as usage with the client.": "아카이브 내 Git LFS 사용량은 클라이언트 사용량과 동일한 요금으로 부과돼요.",
+            
+            "Pushes": "푸시",
+            "Limit how many branches and tags can be updated in a single push": "한 번의 푸시에서 업데이트할 수 있는 분기와 태그의 개수를 제한하기",
+                "Pushes will be rejected if they attempt to update more than this.": "이보다 많은 업데이트를 시도하면 푸시가 거부될 거예요.",
+                "Learn more about this setting": "이 설정에 대해 더 알아보세요.",
+                ", and send us your": "，그리고 사용자님의",
+                "feedback": "피드백을 보내주세요.",
+            
+                "Up to": "최대",
+                "branches and tags can be updated in a push": "개의 분기와 태그를 한 푸시에서 업데이트할 수 있어요.",
+            
+                // 알림
+                "Must be a whole number between 2 and 1000": "2에서 1000 사이의 정수여야 해요.",
+            
+            "Danger Zone": "위험 구역",
+            "Change repository visibility": "저장소 공개 여부 변경하기",
+            "You cannot change the visibility of a fork. please": "포크 저장소의 공개 여부는 변경할 수 없어요. 부디",
+            "Duplicate the repository": "저장소 복제하기",
+            "For security reasons, you cannot change the visibility of a fork.": "보안상의 이유로 포크 저장소의 공개 여부는 변경할 수 없어요.",
+            
+            // 저장소 공개 여부 변경 대화창
+            "Change visibility": "공개 여부 변경하기",
+                "Change to private": "비공개로 변경하기",
+                "Change to public": "공개로 변경하기",
+            "This repository is currently public.": "현재 이 저장소는 공개 상태에 있어요.",
+            "This repository is currently private.": "현재 이 저장소는 비공개 상태에 있어요.",
+            "I want to make this repository public": "저장소를 공개로 전환하고 싶어요",
+                "The code will be visible to everyone who can visit https://github.com": "https://github.com 에 방문할 수 있는 모든 사람이 코드를 볼 수 있어요",
+                "Attachments uploaded to this repository's issues and pull requests will not be accessible unless it is made private again.": "이 저장소의 이슈 및 끌어오기 요청에 업로드된 첨부 파일은 다시 비공개로 전환하지 않는 한 접근할 수 없어요.",
+                "Anyone can fork your repository.": "누구나 사용자님의 저장소를 포크할 수 있어요.",
+                "All push rulesets will be disabled.": "모든 푸시 규칙 세트가 비활성화될 거예요.",
+                "Your changes will be published as activity.": "사용자님의 변경 사항은 활동으로 게시될 거예요.",
+                "Make this repository public": "이 저장소를 공개로 전환하기",
+            "I want to make this repository private": "이 저장소를 비공개로 전환하고 싶어요",
+                "Making this repository private could permanently erase these counts by removing stars and watchers associated to users that will no longer have access to this repository:": "이 저장소를 비공개로 전환하면, 저장소에 접근할 수 없게 되는 사용자와 연관된 별표와 주시자 수가 영구적으로 삭제될 수 있어요:",
+                    "star": "별표",
+                    "stars": "별표",
+                    "watcher": "주시자",
+                    "watchers": "주시자",
+                "If you decide to make this repository public in the future, it will not be possible to restore these stars and watchers and this will affect its repository rankings.": "앞으로 이 저장소를 공개로 전환하더라도, 별표와 주시자를 복원할 수 없으며, 저장소 순위에 영향을 줄 거예요.",
+                "Dependency graph and Dependabot alerts will remain enabled with permission to perform read-only analysis on this repository.": "의존성 그래프와 Dependabot 알림은 이 저장소에 대해 읽기 전용 분석 권한과 함께 계속 활성화될 거예요.",
+                "Dependency graph and Dependabot alerts will remain enabled with permission to perform read-only analysis on this repository. Any custom Dependabot alert rules will be disabled unless GitHub Advanced Security is enabled for this repository.": "의존성 그래프와 Dependabot 알림은 읽기 전용 분석 권한과 함께 계속 활성화되며, GitHub 고급 보안 기능이 활성화되지 않으면 사용자 지정 Dependabot 알림 규칙은 모두 비활성화될 거예요.",
+                "Code scanning will become unavailable.": "코드 스캔은 사용 불가능해질 거예요.",
+                "Current forks will remain public and will be detached from this repository.": "현재의 포크는 공개 상태로 남으며, 이 저장소와 분리될 거예요.",
+                "Make this repository private": "이 저장소를 비공개로 전환하기",
+                "I have read and understand these effects": "이 영향들을 읽고 이해했어요.",
+            
+                "Warning: this is a destructive action": "경고: 이 작업은 파괴적인 행동이에요",
+                "To confirm, type the number of stars on this repository in the box below": "확인을 위해, 아래 상자에 이 저장소의 별표 수를 입력해주세요",
+            
+            "Disable branch protection rules": "분기 보호 규칙 비활성화하기",
+                "Disable branch protection rules enforcement and APIs": "분기 보호 규칙 시행과 API를 비활성화하기",
+            
+                // 상단 알림
+                    "Branch protection settings saved.": "분기 보호 설정이 저장되었어요.",
+            
+            // 분기 보호 비활성화 대화창
+                "This will hide the branch protection settings and disable branch protection rules for this repository.": "이 작업은 분기 보호 설정을 숨기고, 이 저장소의 분기 보호 규칙을 비활성화할 거예요.",
+                "Disabling branch protection rules allows you to enforce branch and tag protections exclusively with Repository Rules.": "분기 보호 규칙을 비활성화하면, 저장소 규칙만으로 분기와 태그 보호를 시행할 수 있어요.",
+                "This action will disable:": "이 작업은 다음을 비활성화할 거예요:",
+                    "Branch protection rule enforcement": "분기 보호 규칙 시행",
+                    "Branch protection rule APIs": "분기 보호 API",
+                // [/(\d+) branch protection rules?/, "$1 개의 분기 보호 규칙"],
+                "will be disabled as part of this action": "이 작업의 일부로 비활성화될 거예요.",
+            
+            "Re-enable branch protection rules": "분기 보호 규칙 재활성화하기",
+                "Re-enable branch protection rules enforcement and APIs": "분기 보호 규칙 시행과 API를 재활성화하기",
+            
+            // 분기 보호 재활성화 대화창
+                "Re-enable branch protection": "분기 보호 재활성화하기",
+                "will be re-enabled as part of this action": "이 작업의 일부로 재활성화될 거예요.",
+            
+            "Transfer ownership": "소유권 이전하기",
+            "Transfer": "이전하기",
+            "Transfer this repository to another user or to an organization where you have the ability to create repositories.": "이 저장소를 다른 사용자 또는 저장소를 생성할 수 있는 조직으로 이전해주세요.",
+            
+            "Archive this repository": "이 저장소를 아카이브하기",
+            "Mark this repository as archived and read-only.": "이 저장소를 아카이브 처리하여 읽기 전용으로 만드세요.",
+            
+            // 저장소 아카이브 대화창
+            "Archive repository": "저장소 아카이브하기",
+            "This repository will become read-only.": "이 저장소는 읽기 전용으로 전환될 거예요.",
+            "You will still be able to fork the repository and unarchive it at any time.": "언제든지 저장소를 포크하거나 아카이브 해제할 수 있어요.",
+            "Unexpected bad things will happen if you don’t read this!": "이 내용을 읽지 않으면 예상치 못한 문제가 발생할 수 있어요!",
+            "All scheduled workflows will stop running.": "모든 예약된 워크플로우가 중단될 거예요.",
+            "Security features will be unavailable:": "보안 기능은 사용할 수 없게 될 거예요:",
+            "Code scanning": "코드 스캔",
+            "Before you archive, please consider:": "아카이브 전에, 다음 사항을 고려해주세요:",
+            "Updating any repository settings": "모든 저장소 설정 업데이트",
+            "Closing all open issues and pull requests": "모든 열린 이슈와 끌어오기 요청 닫기",
+            "Making a note in your README": "README에 메모 남기기",
+            "Please type": "입력해주세요",
+            "to confirm.": "확인을 위해.",
+            "I understand the consequences, archive this repository": "영향을 이해했으니, 이 저장소를 아카이브해주세요.",
+            // "This repository has been archived by the owner. It is now read-only.": "이 저장소는 소유자에 의해 아카이브되었어요. 이제 읽기 전용이에요.",
+            
+            // 상단 알림
+            // [/Your repository \"([^ ]+)\" was successfully archived./, "사용자님의 저장소 “$1”가 성공적으로 아카이브되었어요."] // 저장소 아카이브
+            
+            "Unarchive this repository": "이 저장소 아카이브 해제하기",
+            "Mark this repository as unarchived and read-write.": "이 저장소를 아카이브 해제하여 읽기/쓰기 가능하게 만드세요.",
+            
+            // 저장소 아카이브 해제 대화창
+            "Unarchive repository": "저장소 아카이브 해제하기",
+            "This will make": "이 작업은",
+            "read-write.": "읽기/쓰기가 가능하게 할 거예요.",
+            "Once unarchived, the following can be modified and commented on:": "아카이브가 해제되면, 다음 항목들은 수정 및 댓글 작성이 가능해요:",
             "Pull requests": "끌어오기 요청",
-            "Labels": "标签",
+            "Labels": "레이블",
             "Releases": "릴리즈",
-            "Milestones": "里程碑",
-            "Security features will become available:": "安全功能将不可用：",
-            "I understand the consequences, unarchive this repository": "我明白后果，依然解除该仓库存档",
-
-            "Delete this repository": "删除仓库",
-            "Once you delete a repository, there is no going back. Please be certain.": "您一旦删除仓库，将再也无法恢复。请确认。",
-
-            // 顶部提醒
-            // [/Your repository \"([^ ]+)\" was successfully unarchived./, "您的仓库 “$1” 已成功解除存档。"], //仓库解除存档
-
-            // 删除仓库对话框
-                // [/Delete/, "删除"],
-                "I want to delete this repository": "我想删除这个仓库",
-
-                "This will permanently delete the": "这将永久删除",
-                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all collaborator associations.": "仓库、Wiki、이슈、评论、软件包、机密、工作流程，并删除所有协作者关联。",
-                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all team associations.": "仓库、Wiki、이슈、评论、软件包、机密、工作流程，并删除所有团队关联。", // 组织仓库
-                "This will not change your billing plan. If you want to downgrade, you can do so in your Billing Settings.": "这并不会更改您的结算方案。 如果您想降级，可以在结算设置中进行降级。",
-
+            "Milestones": "마일스톤",
+            "Security features will become available:": "보안 기능이 사용 가능해질 거예요:",
+            "I understand the consequences, unarchive this repository": "영향을 이해했으니, 이 저장소의 아카이브를 해제해주세요.",
+            
+            "Delete this repository": "저장소 삭제하기",
+            "Once you delete a repository, there is no going back. Please be certain.": "저장소를 삭제하면 되돌릴 수 없어요. 신중하게 결정해주세요.",
+            
+            // 상단 알림
+            // [/Your repository \"([^ ]+)\" was successfully unarchived./, "사용자님의 저장소 “$1”가 성공적으로 아카이브 해제되었어요."] // 저장소 아카이브 해제
+            
+            // 저장소 삭제 대화창
+                // [/Delete/, "삭제하기"],
+                "I want to delete this repository": "이 저장소를 삭제하고 싶어요",
+            
+                "This will permanently delete the": "이 작업은 영구적으로 삭제할 거예요",
+                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all collaborator associations.": "저장소, Wiki, 이슈, 댓글, 패키지, 비밀, 워크플로우 실행 및 모든 협업자 연관 정보를 삭제할 거예요.",
+                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all team associations.": "저장소, Wiki, 이슈, 댓글, 패키지, 비밀, 워크플로우 실행 및 모든 팀 연관 정보를 삭제할 거예요.", // 조직 저장소
+                "This will not change your billing plan. If you want to downgrade, you can do so in your Billing Settings.": "이 작업은 사용자님의 결제 플랜을 변경하지 않아요. 만약 다운그레이드하고 싶으시다면, 결제 설정에서 변경할 수 있어요.",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/is available./, "名称可用。"],
-        [/Make ([^ ]+) private/, "将 $1 设为私有"],
-        [/Make ([^ ]+) public/, "将 $1 设为公开"],
-        [/(\d+) stars?/, "$1 位星标者"],
-        [/(\d+) watchers?/, "$1 位关注者"],
-        [/To confirm, type \"([^ ]+)\" in the box below/, "要确认，请在下面的方框中输入 \"$1\""],
-        [/Your repository \"([^ ]+)\" was successfully archived./, "您的仓库 “$1” 已成功存档。"], //仓库存档
-        [/Your repository \"([^ ]+)\" was successfully unarchived./, "您的仓库 “$1” 已成功解除存档。"], //仓库解除存档
-        [/is already the branch name./, "已经是分支的名称了。"],
-        [/Your branch name will be/, "您的分支的名称将重命名为"],
-        [/Choose another branch to use as the default branch of ([^ ]+) instead of/,"选择另一分支作为 $1 的默认分支而不是"], // 分支切换 对话框
-        [/(\d+) branch protection rules?/, "$1 项分支保护规则"], // 禁用/重启启用分支保护
-        [/Delete/, "删除"],
-        [/Default branch changed to ([^ ])/, "默认分支更改为 $1"],
+        [/is available./, "이름 사용 가능해요."],
+        [/Make ([^ ]+) private/, "$1 을(를) 비공개로 설정하기"],
+        [/Make ([^ ]+) public/, "$1 을(를) 공개로 설정하기"],
+        [/(\d+) stars?/, "$1 명의 별표"],
+        [/(\d+) watchers?/, "$1 명의 주시자"],
+        [/To confirm, type \"([^ ]+)\" in the box below/, "확인을 위해, 아래 상자에 \"$1\"을(를) 입력해주세요"],
+        [/Your repository \"([^ ]+)\" was successfully archived./, "사용자님의 저장소 “$1”가 성공적으로 아카이브되었어요."], // 저장소 아카이브
+        [/Your repository \"([^ ]+)\" was successfully unarchived./, "사용자님의 저장소 “$1”가 성공적으로 아카이브 해제되었어요."], // 저장소 아카이브 해제
+        [/is already the branch name./, "이미 분기 이름이에요."],
+        [/Your branch name will be/, "사용자님의 분기 이름이 다음으로 변경될 거예요:"],
+        [/Choose another branch to use as the default branch of ([^ ]+) instead of/,"$1 의 기본 분기로 사용하기 위해 다른 분기를 선택해주세요"],
+        [/(\d+) branch protection rules?/, "$1 개의 분기 보호 규칙"],
+        [/Delete/, "삭제하기"],
+        [/Default branch changed to ([^ ])/, "기본 분기가 $1(으)로 변경되었어요"],
     ],
 };
+
 
 I18N["ko-KR"]["repository/settings/access"] = { // 仓库设置 - 协作者/(组织仓库 协作者和团队) /<user-name>/<repo-name>/settings/access
     "static": { // 静态翻译
@@ -20644,7 +20643,7 @@ I18N["ko-KR"]["orgs/settings/repository-defaults"] = { // 组织设置 - 仓库 
                 // [/New repositories created in ([^ ]+) will use main as their default branch./, "在 $1 中创建的新仓库将使用 main 作为其默认分支。"],
 
             "Commit signoff": "提交签署",
-                "Choose whether repositories will require contributors to sign off on commits they make through GitHub's web interface. Signing off is a way for contributors to affirm that their commit complies with the repository's terms, commonly the": "选择仓库是否要求贡献者签署通过 GitHub 的 Web 界面所做的提交。签署是贡献者确认他们的提交符合仓库条款的一种方式，通常是",
+                "Choose whether repositories will require contributors to sign off on commits they make through GitHub's web interface. Signing off is a way for contributors to affirm that their commit complies with the repository's terms, commonly the": "选择仓库是否要求贡献者签署通过 GitHub 的 Web 界面所做的提交。签署是贡献者确认他们的提交符合仓库条款的一种方式，일반是",
                 "Developer Certificate of Origin (DCO)": "开发者来源证书（DCO）",
                 "Learn more about signing off on commits": "了解更多关于签署提交的信息",
                 "All repositories": "所有仓库",
@@ -23479,7 +23478,7 @@ I18N["ko-KR"]["copilot"] = {
                     "Model capabilities": "模型限制",
                     "Limited capabilities (o1-mini)": "功能限制（o1-mini）",
                     "Limited capabilities (o1)": "功能限制（o1）",
-                        "While this model is better at reasoning, it is generally slower for everyday tasks and has limited capabilities in retrieving external data. Here are a few of the common actions that are not supported:": "虽然这种模型的推理能力更强，但在执行日常任务时通常速度较慢，而且检索外部数据的能力有限。以下是一些不支持的常见操作：",
+                        "While this model is better at reasoning, it is generally slower for everyday tasks and has limited capabilities in retrieving external data. Here are a few of the common actions that are not supported:": "虽然这种模型的推理能力更强，但在执行日常任务时일반速度较慢，而且检索外部数据的能力有限。以下是一些不支持的常见操作：",
                         "Not supported": "不支持",
                             "Using knowledge bases": "使用知识库",
                             "Retrieving issues": "检索이슈",
