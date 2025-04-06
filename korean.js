@@ -15243,7 +15243,7 @@ I18N["ko-KR"]["repository/settings/hooks"] = { // 저장소 설정 - 웹훅 /<us
             "Last delivery was successful.": "마지막 전달이 성공적으로 이루어졌어요.",
 
             // 삭제 대화상자
-                "Delete webhook?": "웹훅 삭제할까요?",
+                "Delete webhook?": "웹훅을 삭제할까요?",
                 "This action cannot be undone. Future events will no longer be delivered to this webhook": "이 작업은 되돌릴 수 없어요. 앞으로의 이벤트는 더 이상 이 웹훅으로 전달되지 않아요.",
                 "Yes, delete webhook": "네, 웹훅 삭제하기",
 
