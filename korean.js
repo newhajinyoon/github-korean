@@ -13939,54 +13939,54 @@ I18N["ko-KR"]["repository/forks"] = { // 仓库 -> 洞察 - 复刻
 
 // 洞察 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-I18N["ko-KR"]["repository-settings-menu"] = { // 仓库设置公共部分
-    "static": { // 静态翻译
-        // >>>>>>>>>>>>>>>>>>   仓库设置 公共部分  <<<<<<<<<<<<<<<<<<<
-            // 顶部提醒栏
-            "Most repository settings are hidden for archived repositories. This repository must be unarchived to change them.": "对于存档的仓库，大多数仓库设置都是隐藏的。 必须解除仓库存档才能更改它们。",
-            "This repository has been archived by the owner. It is now read-only.": "此仓库已由所有者存档。它现在是只读的。",
-            "Repository settings saved.": "仓库设置已保存。",
+I18N["ko-KR"]["repository-settings-menu"] = { // 저장소 설정 공통 부분
+    "static": { // 정적 번역
+        // >>>>>>>>>>>>>>>>>>   저장소 설정 공통 부분  <<<<<<<<<<<<<<<<<<<
+            // 상단 알림 표시줄
+            "Most repository settings are hidden for archived repositories. This repository must be unarchived to change them.": "보관된 저장소의 대부분의 설정은 숨겨져 있어요. 변경하려면 저장소 보관을 해제해야 해요.",
+            "This repository has been archived by the owner. It is now read-only.": "이 저장소는 소유자에 의해 보관되었어요. 이제 읽기 전용이에요.",
+            "Repository settings saved.": "저장소 설정이 저장되었어요.",
 
-
-            // 左侧菜单
+            // 왼쪽 메뉴
             "General": "일반",
 
-            "Access": "访问",
-                // "Collaborators": "协作者",
-                "Collaborators and teams": "协作者和团队", // 组织仓库
-                "Team and member roles": "团队和成员职责",  // 组织仓库
-                "Moderation options": "节制选项",
+            "Access": "접근",
+                // "Collaborators": "협업자",
+                "Collaborators and teams": "협업자 및 팀", // 조직 저장소
+                "Team and member roles": "팀 및 멤버 역할",  // 조직 저장소
+                "Moderation options": "관리 옵션",
                     "Interaction limits": "상호 작용 제한",
                     "Code review limits": "코드 검토 제한",
 
-            "Code and automation": "代码与自动化",
+            "Code and automation": "코드 및 자동화",
+                "Branches": "분기",
                 "branches": "분기",
                 "Tags": "꼬리표",
-                "Rules": "规则",
-                    "Rulesets": "规则集",
+                "Rules": "규칙",
+                    "Rulesets": "규칙 집합",
                 // "Actions": "액션",
                     // "General": "일반",
-                    "Runners": "运行器",
-                "Webhooks": "Web 钩子",
-                "Environments": "环境",
+                    "Runners": "실행기",
+                "Webhooks": "웹훅",
+                "Environments": "환경",
                 "Pages": "GitHub Pages",
-                "Custom properties": "自定义属性",  // 组织仓库
+                "Custom properties": "사용자 지정 속성",  // 조직 저장소
 
             // "Security": "보안",
-            "Code security": "代码安全性",
-                "Code security and analysis": "代码安全性与分析",
-                "Deploy keys": "部署密钥",
-                "Secrets and variables": "机密和变量",
+            "Code security": "코드 보안",
+                "Code security and analysis": "코드 보안 및 분석",
+                "Deploy keys": "배포 키",
+                "Secrets and variables": "비밀 및 변수",
 
-            "Integrations": "集成",
-                "GitHub Apps": "GitHub 应用",
-                "Email notifications": "邮件通知",
-                "Autolink references": "自动链接引用",
-
+            "Integrations": "통합",
+                "GitHub Apps": "GitHub 앱",
+                "Email notifications": "이메일 알림",
+                "Autolink references": "자동 링크 참조",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
+
 
 I18N["ko-KR"]["repository/settings"] = { // 저장소 설정 - 보통 /<user-name>/<repo-name>/settings
     "static": { // 정적 번역
@@ -14315,1780 +14315,1728 @@ I18N["ko-KR"]["repository/settings"] = { // 저장소 설정 - 보통 /<user-nam
 };
 
 
-I18N["ko-KR"]["repository/settings/access"] = { // 仓库设置 - 协作者/(组织仓库 协作者和团队) /<user-name>/<repo-name>/settings/access
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/access"] = { // 저장소 설정 - 협업자/(조직 저장소 협업자 및 팀) /<user-name>/<repo-name>/settings/access
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 协作者 / 协作者和团队 - 访问管理页面 /<user-name>/<repo-name>/settings/access ====================================
-            // 顶部提醒
-                "Repository invitation URLs work for invited users only. You may only share this URL with an invited user.": "仓库邀请 URL 仅适用于受邀请的用户。您只能与受邀请的用户共享此 URL。",
+        // 협업자 / 협업자 및 팀 - 접근 관리 페이지 /<user-name>/<repo-name>/settings/access ====================================
+            // 상단 알림
+                "Repository invitation URLs work for invited users only. You may only share this URL with an invited user.": "저장소 초대 URL은 초대된 사용자만 사용할 수 있어요. 초대된 사용자에게만 이 URL을 공유할 수 있어요.",
+            "Manage visibility": "가시성 관리",
+            "Who has access": "누가 접근할 수 있나요",
+            "public repository": "공개 저장소",
+            "Public repository": "공개 저장소",
+            "This repository is public and visible to anyone": "이 저장소는 공개되어 있으며, 누구나 볼 수 있어요.",
+            "This repository is public and visible to anyone.": "이 저장소는 공개되어 있으며, 누구나 볼 수 있어요.",
+            "private repository": "비공개 저장소",
+            "Only those with access to this repository can view it.": "이 저장소에 접근 권한이 있는 사용자만 볼 수 있어요.",
+            "Manage": "관리하기",
 
-            "Who has access": "谁有权访问",
-            "public repository": "公共仓库",
-            "Public repository": "公共仓库",
-            "This repository is public and visible to anyone": "该仓库是公开的，对任何人都可见",
-            "This repository is public and visible to anyone.": "该仓库是公开的，对任何人都可见。",
-            "private repository": "私有仓库",
-            "Only those with access to this repository can view it.": "只有拥有该仓库访问权的用户才能查看。",
-            "Manage": "管理",
+            "Direct access": "직접 접근",
+            "collaborators have access to this repository. Only you can contribute to this repository.": "명의 협업자가 이 저장소에 접근할 수 있어요. 사용자님만 이 저장소에 기여할 수 있어요.",
+            "has access to this repository.": "명이 이 저장소에 접근할 수 있어요.",
+            // 조직 저장소
+            "teams or members have access to this repository. Only": "팀 또는 멤버가 이 저장소에 접근할 수 있어요. 오직",
+            "Owners": "소유자",
+            "can contribute to this repository.": "만 이 저장소에 기여할 수 있어요.",
 
-            "Direct access": "直接访问",
-            "collaborators have access to this repository. Only you can contribute to this repository.": "个协作者有权访问此仓库。 只有您可以对此仓库做出贡献。",
-            "has access to this repository.": "位有权访问此仓库。",
-            // 组织仓库
-            "teams or members have access to this repository. Only": "团队或成员有权访问此仓库。只有",
-            "Owners": "所有者",
-            "can contribute to this repository.": "可以为此仓库做出贡献。",
+            // 조직 저장소
+            "Base role": "기본 역할",
+            "All": "모두",
+            // [/(\d+) members?/, "$1 명의 멤버"],
+            "can access this repository.": "이 저장소에 접근할 수 있어요.",
 
-            // 组织仓库
-            "Base role": "基本角色",
-            "All": "所有",
-            // [/(\d+) members?/, "$1 位成员"],
-            "can access this repository.": "可以访问此仓库。",
+            "Manage access": "접근 관리하기",
+            "You haven't invited any collaborators yet": "아직 협업자를 초대하지 않았어요.",
+            "Add people": "사람 추가하기",
+            // "users": "사용자님들", 이것이 작동 안되는 이유는 무엇인가
+            // "user": "사용자님",
+            "have access to this repository.": "이(가) 이 저장소에 접근 할 수 있어요.",
 
-            "Manage access": "访问管理",
-            "You haven't invited any collaborators yet": "您尚未邀请任何协作者",
-            // "invite a collaborator": "邀请协作者",
-            "Add people": "添加他人",
-
-            "Select all": "全选",
-                // [/(\d+) members? selected…/, "已选择 $1 名成员..."],
-                "Remove Access": "删除访问权限",
+            "Select all": "모두 선택하기",
+                // [/(\d+) members? selected…/, "$1 명의 멤버 선택됨..."],
+                "Remove Access": "접근 권한 삭제하기",
             "Type": "유형",
-                "Filter by member type": "按成员类型筛选",
-                    "Pending Invitations": "待处理邀请",
-            "Find a collaborator…": "寻找协作者...",
+                "Filter by member type": "멤버 유형별 필터링",
+                    "Pending Invitations": "대기 중인 초대",
+            "Find a collaborator…": "협업자 찾기...",
 
-            "Pending Invite": "待处理邀请",
-            // [/Awaiting ([^ ]+)’s response/, "等待 $1 的回复"],
-            "Remove": "移除",
+            "Pending Invite": "대기 중인 초대",
+            "Remove": "삭제하기",
 
-            // 邀请对话框
-                "Add a collaborator to": "添加协作者到",
-                "Search by username, full name, or email": "搜索用户名、全名、或电子邮箱",
-                "Find people": "查找",
-                "Invite collaborator": "邀请协作者",
-                "Select a collaborator above": "从上方选择协作者",
-                "Add": "添加",
-                "to this repository": "到这个仓库",
+            // 초대 대화 상자
+                "Add a collaborator to": "협업자 추가하기 :",
+                "Search by username, full name, or email": "사용자 이름, 전체 이름 또는 이메일로 검색하기",
+                "Find people": "사람 찾기",
+                "Invite collaborator": "협업자 초대하기",
+                "Select a collaborator above": "위에서 협업자 선택하기",
+                "Add": "추가하기",
+                "to this repository": "이 저장소에",
 
-            // 组织仓库
-            "Create team": "创建组织",
-            "You haven't added any teams or people yet": "您尚未添加团队或成员",
-            "Organization owners can manage individual and team access to the organization's repositories. Team maintainers can also manage a team's repository access.": "组织所有者可以管理成员和团队对组织仓库的访问。团队维护者也可以管理一个团队的仓库访问。",
-            "Learn more about organization access": "了解更多关于组织访问权限的信息",
-            "Add teams": "添加团队",
+            // 조직 저장소
+            "Create team": "팀 만들기",
+            "You haven't added any teams or people yet": "아직 팀이나 멤버를 추가하지 않았어요.",
+            "Organization owners can manage individual and team access to the organization's repositories. Team maintainers can also manage a team's repository access.": "조직 소유자는 개별 멤버와 팀의 조직 저장소 접근 권한을 관리할 수 있어요. 팀 유지 관리자는 팀의 저장소 접근을 관리할 수도 있어요.",
+            "Learn more about organization access": "조직 접근 권한에 대해 더 알아보기",
+            "Add teams": "팀 추가하기",
 
-            "Add people to": "添加成员到",
-            "Select a member above": "在上面选择一名成员",
-            "Add teams to": "添加团队",
-            "Search by team name": "按团队名称搜索",
-            "Select a team above": "在上面选择一个团队",
+            "Add people to": "사람 추가하기 :",
+            "Select a member above": "위에서 멤버 선택하기",
+            "Add teams to": "팀 추가하기 :",
+            "Search by team name": "팀 이름으로 검색하기",
+            "Select a team above": "위에서 팀 선택하기",
 
     },
-    "regexp": [ // 正则翻译
-        [/(\d+) members? selected…/, "已选择 $1 名成员..."],
-        [/(\d+) members?/, "$1 位成员"],
-        [/(\d+) collaborators?/, "$1 位协作者"],
-        [/(\d+) invitations?/, "$1 个邀请"],
-        [/Awaiting ([^ ]+)’s response/, "等待 $1 的回复"],
-        [/([^ ]+) • Invite collaborator/, "$1 • 邀请协作者"],
+    "regexp": [ // 정규식 번역
+        [/(\d+) members? selected…/, "$1 명의 멤버 선택됨..."],
+        [/(\d+) members?/, "$1 명의 멤버"],
+        [/(\d+) collaborators?/, "$1 명의 협업자"],
+        [/(\d+) invitations?/, "$1 개의 초대"],
+        [/Awaiting ([^ ]+)’s response/, "$1 님의 응답을 기다리는 중"],
+        [/([^ ]+) • Invite collaborator/, "$1 • 협업자 초대하기"],
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["repository/settings/interaction_limits"] = { // 仓库设置 - 互动限制 /<user-name>/<repo-name>/settings/interaction_limits
-    "static": { // 静态翻译
+
+I18N["ko-KR"]["repository/settings/interaction_limits"] = { // 저장소 설정 - 상호작용 제한 /<user-name>/<repo-name>/settings/interaction_limits
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 审查设置 (仓库)互动限制 /<user-name>/<repo-name>/settings/interaction_limits
-        // 同全局 同组织仓库
-            "Temporary interaction limits": "临时互动限制",
-            "Temporarily restrict which external users can interact with your repository (comment, open issues, or create pull requests) for a configurable period of time.": "在配置的时间段内，可临时限制哪些外部用户与您的仓库互动（评论、打开이슈或创建拉取请求）。",
-            "This may be used to force a \"cool-down\" period during heated discussions or prevent unwanted interactions.": "可用于在激烈讨论期间，强制进入 “冷静” 期或防止不必要的互动。",
+        // 저장소 상호작용 제한 설정 (검토 설정) /<user-name>/<repo-name>/settings/interaction_limits
+        // 전체 및 조직 저장소와 동일
+            "Temporary interaction limits": "일시적 상호작용 제한",
+            "Temporarily restrict which external users can interact with your repository (comment, open issues, or create pull requests) for a configurable period of time.": "구성 가능한 기간 동안 외부 사용자가 사용자님의 저장소와 상호작용(댓글 작성, 이슈 열기 또는 끌어오기 요청 생성)을 일시적으로 제한할 수 있어요.",
+            "This may be used to force a \"cool-down\" period during heated discussions or prevent unwanted interactions.": "격렬한 토론 중에 '냉각' 기간을 강제로 적용하거나 불필요한 상호작용을 방지하는 데 사용해 보세요.",
 
-            "You can restrict repository interactions across your account in your": "您可以限制仓库交互，在您的账户设置中的",
-            "account settings": "互动限制",
+            "You can restrict repository interactions across your account in your": "사용자님의 계정 설정에서 저장소와의 상호작용을 제한할 수 있어요.",
+            "account settings": "계정 설정",
 
-            // [/You can restrict repository interactions across the ([^ ]+) organization in your/, "您可以在您的 $1 组织中限制仓库交互"],
+            // [/You can restrict repository interactions across the ([^ ]+) organization in your/, "사용자님의 $1 조직 내에서 저장소와의 상호작용을 제한할 수 있어요."],
 
-            "Limit to existing users": "仅限现有用户",
-                "Users that have recently created their account will be unable to interact with the repository.": "最近创建账户的用户将无法与该仓库互动。",
-            "Limit to prior contributors": "仅限于先前的贡献者",
-                "Users that have not previously": "以前从未",
-                "committed": "提交",
-                // [/to the ([^ ]+) branch of this repository will be unable to interact with the repository./, "到该仓库的 $1 分支的用户将无法与该仓库互动。"],
-            "Limit to repository collaborators": "仅限仓库协作者",
-                "Users that are not": "不是",
+            "Limit to existing users": "기존 사용자로 제한하기",
+                "Users that have recently created their account will be unable to interact with the repository.": "최근에 계정을 생성한 사용자는 저장소와 상호작용할 수 없어요.",
+            "Limit to prior contributors": "이전에 기여한 사용자로 제한하기",
+                "Users that have not previously": "이전에 한 번도",
+                "committed": "커밋한",
+                // [/to the ([^ ]+) branch of this repository will be unable to interact with the repository./, "이 저장소의 $1 분기에 해당하는 사용자들은 저장소와 상호작용할 수 없어요."],
+            "Limit to repository collaborators": "저장소 협업자로 제한하기",
+                "Users that are not": "협업자가 아닌",
                 // "collaborators": "",
                 // "of one of your repositories will not be able to interact with that repository.": "",
-                "will not be able to interact with the repository.": "将无法与该仓库互动。",
+                "will not be able to interact with the repository.": "저장소와 상호작용할 수 없어요.",
 
-            "New users": "新用户",
-            "Users": "用户",
-            "Contributors": "贡献者",
-            "Collaborators": "协作者",
-            "Organization members": "组织成员", //组织仓库
+            "New users": "새 사용자",
+            "Users": "사용자",
+            "Contributors": "기여자",
+            "Collaborators": "협업자",
+            "Organization members": "조직 구성원", // 조직 저장소
 
-            "Enable": "启用",
-            "Disable": "禁用",
-            // 交互限制时间 下拉菜单
-            "Enable interaction limits for:": "启用交互限制：",
-            "24 hours": "24 小时",
-            "3 days": "3 天",
-            "1 week": "1 周",
-            "1 month": "1 个月",
-            "6 months": "6 个月",
+            "Enable": "사용",
+            "Disable": "사용 안 함",
+            // 상호작용 제한 시간 드롭다운 메뉴
+            "Enable interaction limits for:": "상호작용 제한 사용 기간:",
+            "24 hours": "24시간",
+            "3 days": "3일",
+            "1 week": "1주",
+            "1 month": "1개월",
+            "6 months": "6개월",
 
-            // 顶部提醒
-            "Repository interaction limit settings saved.": "仓库交互限制设置已保存。",
+            // 상단 알림
+            "Repository interaction limit settings saved.": "저장소 상호작용 제한 설정이 저장되었어요.",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-            [/You can restrict repository interactions across the ([^ ]+) organization in your/, "您可以在您的 $1 组织中限制仓库交互"],
-            [/to the ([^ ]+) branch of this repository will be unable to interact with the repository./, "到该仓库的 $1 分支的用户将无法与该仓库互动。"],
+            [/You can restrict repository interactions across the ([^ ]+) organization in your/, "사용자님의 $1 조직 내에서 저장소와의 상호작용을 제한할 수 있어요."],
+            [/to the ([^ ]+) branch of this repository will be unable to interact with the repository./, "이 저장소의 $1 분기에 해당하는 사용자들은 저장소와 상호작용할 수 없어요."],
     ],
 };
 
-I18N["ko-KR"]["repository/settings/code_review_limits"] = { // 仓库设置 - 代码审查限制 /<user-name>/<repo-name>/settings/code_review_limits
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/code_review_limits"] = { // 저장소 설정 - 코드 리뷰 제한 /<user-name>/<repo-name>/settings/code_review_limits
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // Code review limits 代码审查限制 /<user-name>/<repo-name>/settings/code_review_limits
-            "Restrict users who are permitted to approve or request changes on pull requests in this repository.": "限制允许批准或请求更改该仓库中拉取请求的用户。",
-            "Limit to users explicitly granted": "限于明确授予",
-            "read": "读取",
-            "or higher access": "或 更高权限的用户",
-                "When enabled, only users explicitly granted access to this repository will be able to submit pull request reviews that \"approve\" or \"request changes\". All users able to submit comment pull request reviews will continue to be able to do so.": "启用后，只有被明确授予该仓库访问权的用户才能提交 “批准” 或 “请求更改” 的拉取请求审查。所有能够提交评论拉取请求审查的用户将继续能够这样做。",
+        // 코드 리뷰 제한 /<user-name>/<repo-name>/settings/code_review_limits
+            "Restrict users who are permitted to approve or request changes on pull requests in this repository.": "이 저장소의 끌어오기 요청에서 승인하거나 변경 요청할 수 있는 사용자를 제한해 보세요.",
+            "Limit to users explicitly granted": "명시적으로 읽기 또는 더 높은 권한이 부여된 사용자로 제한하기",
+            "read": " ",
+            "or higher access": " ",
+                "When enabled, only users explicitly granted access to this repository will be able to submit pull request reviews that \"approve\" or \"request changes\". All users able to submit comment pull request reviews will continue to be able to do so.": "사용 설정 시, 명시적으로 이 저장소의 접근 권한을 부여받은 사용자만 끌어오기 요청 리뷰에서 '승인' 또는 '변경 요청'을 제출할 수 있어요. 댓글 형식의 끌어오기 요청 리뷰를 제출할 수 있는 모든 사용자는 계속해서 그렇게 할 수 있어요.",
 
-            // 顶部提醒
-                "Code review limit settings saved.": "代码审查限制设置已保存。",
+            // 상단 알림
+                "Code review limit settings saved.": "코드 리뷰 제한 설정이 저장되었어요.",
     },
-    "regexp": [ // 正则翻译
-        ...I18N["ko-KR"]["repository-public"]["regexp"],
-    ],
-};
-
-I18N["ko-KR"]["repository/settings/branches"] = { // 仓库设置 - 分支 /<user-name>/<repo-name>/settings/branches
-    "static": { // 静态翻译
-        ...I18N["ko-KR"]["repository-public"]["static"],
-        ...I18N["ko-KR"]["repository-settings-menu"]["static"],
-
-        // 分支管理页面 /<user-name>/<repo-name>/settings/branches====================================
-            "Branch protection rules": "分支保护规则",
-            "Add rule": "添加规则",
-
-            "Define branch protection rules to disable force pushing, prevent branches from being deleted, and optionally require status checks before merging. New to branch protection rules?": "定义分支保护规则，以禁止强制推送，防止分支被删除，并可选择要求在合并前进行状态检查。初次接触分支保护规则？",
-
-            "No branch protection rules defined yet.": "尚未定义分支保护规则。",
-
-            "You haven't protected any of your branches": "您没有保护任何分支",
-            "Classic branch protections have not been configured": "未配置经典分支保护",
-            "Define branch rules to disable force pushing, prevent branches from being deleted, or require pull requests before merging. Learn more about": "定义分支规则，以禁止强制推送、防止分支被删除或在合并前要求提交拉取请求。了解更多：",
-            //"Define a protected branch rule to disable force pushing, prevent branches from being deleted, and optionally require status checks before merging.": "定义分支保护规则，以禁用强制推送，防止分支被删除，并可选择在合并前进行状态检查。",
-            "repository rules": "仓库规则",
-            "protected branches": "受保护分支",
-            "Add branch ruleset": "添加分支规则集",
-            "Add classic branch protection rule": "添加经典分支保护规则",
-            //"Learn more about protected branches": "了解更多关于受保护分支的信息",
-            //"Add branch protection rule": "添加分支保护规则",
-
-            // 私有库 分支保护 未执行 提醒
-            "Your protected branch rules won't be enforced on this private repository until you move to a GitHub Team or Enterprise organization account.": "您的受保护分支规则不会在这个私有仓库上执行，直到您迁移至 GitHub 团队或企业组织账户。",
-            "Move to an organization": "转移到组织",
-
-            "Not enforced": "未执行",
-                "Rules on your private repos can't be enforced until you upgrade to GitHub Team or Enterprise.": "在您升级到 GitHub 团队或企业版之前，您的私有仓库的规则不能被执行。",
-
-            // [/Currently applies to (\d+) branchs?/, "目前适用于 $1 个分支"], // 仓库设置-->分支-->分支保护规则
-
-            // 删除分支保护规则
-            "Delete this branch protection rule?": "删除此分支保护规则？",
-            "This action cannot be undone.": "此操作无法撤消。",
-            "I understand, delete this rule.": "我明白了，依然删除此规则。",
-
-            // 顶部提醒
-            "Branch protection rule settings saved.": "分支保护规则设置已保存。",
-            "Branch protection rule created.": "分支保护规则已创建。",
-            "Branch protection rule was successfully deleted.": "分支保护规则已成功删除。",
-
-
-    },
-    "regexp": [ // 正则翻译
-        ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/Currently applies to (\d+) branch(?:es|)/, "目前适用于 $1 个分支"], // 仓库设置-->分支-->分支保护规则
-    ],
-};
-
-I18N["ko-KR"]["repository/settings/branch_protection_rules"] = { // 仓库设置 - 分支/分支保护 /<user-name>/<repo-name>/settings/branch_protection_rules
-    "static": { // 静态翻译
-        ...I18N["ko-KR"]["repository-public"]["static"],
-        ...I18N["ko-KR"]["repository-settings-menu"]["static"],
-
-        // 新建分支保护规则 页面 /<user-name>/<repo-name>/settings/branch_protection_rules/new====================================
-            "Branch protection rule": "分支保护规则",
-
-            "Protect your most important branches": "保护您最重要的分支",
-                "Branch protection rules": "分支保护规则",
-                "define whether collaborators can delete or force push to the branch and set requirements for any pushes to the branch, such as passing status checks or a linear commit history.": "定义协作者是否可以删除或强制推送到分支，并对任何推送到分支的内容设置要求，如通过状态检查或线性提交历史。",
-
-                "Your GitHub Free plan": "您的 GitHub 免费计划",
-                "Your organization's GitHub Free plan": "您组织的 GitHub 免费计划", // 组织仓库
-                "can only enforce rules on its public repositories, like this one.": "只能对其公共仓库执行规则，例如这个。",
-
-                "Your rules won't be enforced on this private repository until you": "您的规则将不会在此私有仓库上强制执行，直到您",
-                "move to a GitHub Team or Enterprise organization account": "迁移至 GitHub 团队或企业组织账户",
-                "upgrade this organization to GitHub Team or Enterprise": "升级组织至 GitHub 团队或企业版", // 组织仓库
-
-            "Branch name pattern": "分支名称模式",
-            "Protect matching branches": "保护匹配的分支",
-                "Require a pull request before merging": "要求在合并前提交拉取请求",
-                    "When enabled, all commits must be made to a non-protected branch and submitted via a pull request before they can be merged into a branch that matches this rule.": "启用后，所有提交都必须提交到不受保护的分支，并通过拉取请求提交，然后才能将它们合并到与此规则匹配的分支中。",
-                    "Require approvals": "要求批准审查",
-                        "When enabled, pull requests targeting a matching branch require a number of approvals and no changes requested before they can be merged.": "启用后，针对匹配分支的拉取请求需要若干次批准审查，并且在合并之前无需请求更改。",
-                        "Required number of approvals before merging:": "合并前所需的批准审查数量：",
-                    "Dismiss stale pull request approvals when new commits are pushed": "当新的提交被推送时，撤销陈旧的拉取请求批准审查",
-                        "New reviewable commits pushed to a matching branch will dismiss pull request review approvals.": "推送到匹配分支的新的可审查提交将撤销之前的拉取请求的批准审查。",
-                    "Require review from Code Owners": "要求代码所有者进行审查",
-                        "Require an approved review in pull requests including files with a designated code owner.": "要求在拉取请求中进行批准审查，包括有指定代码所有者的文件。",
-                    "Restrict who can dismiss pull request reviews": "限制谁可以驳回拉取请求审查", // 组织仓库
-                        "Specify people, teams, or apps allowed to dismiss pull request reviews.": "指定允许驳回拉取请求审查的人员、团队或应用。",
-                        "People, teams, or apps that can dismiss reviews.": "允许驳回审查的人员、团队或应用。",
-                            "Organization and repository administrators": "组织和仓库管理员",
-                                "These members can always dismiss.": "这些成员总是允许驳回。",
-                                "These members cannot dismiss.": "这些成员不允许驳回。",
-                    "Allow specified actors to bypass required pull requests": "允许指定的参与者绕过所需的拉取请求", //组织仓库
-                        "Specify people, teams, or apps who are allowed to bypass required pull requests.": "指定允许绕过所需拉取请求的人员、团队或应用。",
-                        "People, teams, or apps who can bypass required pull requests": "允许绕过所需拉取请求的人员、团队或应用",
-                            // "Organization and repository administrators": "组织和仓库管理员",
-                                "These members can always bypass required pull requests.": "这些成员始终允许绕过所需的拉取请求。",
-                                "These members cannot bypass.": "这些成员不允许绕过。",
-                    "Require approval of the most recent reviewable push": "要求批准最新的可审查推送",
-                        "Whether the most recent reviewable push must be approved by someone other than the person who pushed it.": "最新的可审核推送是否必须得到推送者以外的其他人批准。",
-                "Require status checks to pass before merging": "要求在合并前通过状态检查",
-                    "Choose which": "选择那些",
-                    "status checks": "状态检查",
-                    "must pass before branches can be merged into a branch that matches this rule. When enabled, commits must first be pushed to another branch, then merged or pushed directly to a branch that matches this rule after status checks have passed.": "必须通过，才能将分支合并到符合此规则的分支。启用后，提交的内容必须先推送到另一个分支，然后在状态检查通过后再合并或直接推送到符合此规则的分支。",
-
-                    "Require branches to be up to date before merging": "要求分支在合并前必须是最新的",
-                        "This ensures pull requests targeting a matching branch have been tested with the latest code. This setting will not take effect unless at least one status check is enabled (see below).": "这可确保针对匹配分支的拉取请求已使用最新的代码进行了测试。除非启用了至少一个状态检查，否则这个设置不会生效（见下文）。",
-
-                    "Do not require status checks on creation": "不要求在创建时进行状态检查",
-                        "Allow repositories and branches to be created if a check would otherwise prohibit it.": "允许创建仓库和分支，否则检查将禁止创建。",
-
-                    "Search for status checks in the last week for this repository": "搜索此仓库最近一周的状态检查",
-                    "Status checks that are required.": "需要进行的状态检查。",
-
-                    "No status checks found": "尚无状态检查",
-                        "Sorry, we couldn’t find any status checks in the last week for this repository.": "抱歉，我们最近一周未找此仓库的任何状态检查。",
-                    "Learn more about status checks": "了解更多关于状态检查的信息",
-                "Require conversation resolution before merging": "要求在合并前解决对话",
-                    "When enabled, all conversations on code must be resolved before a pull request can be merged into a branch that matches this rule.": "启用后，必须先解决所有有关代码的对话，然后才能将拉取请求合并到与此规则匹配的分支中。",
-                    "Learn more about requiring conversation completion before merging": "了解更多关于合并前要求完成对话的信息",
-                "Require signed commits": "要求带签名的提交",
-                    "Commits pushed to matching branches must have verified signatures.": "推送到匹配分支的提交必须带有经过验证的签名。",
-                "Require linear history": "要求线性历史记录",
-                    "Prevent merge commits from being pushed to matching branches.": "防止合并后的提交被推送到匹配的分支。",
-                "Require merge queue": "要求合并队列", // 组织仓库
-                    "Merges to matching branches must be performed via a merge queue.": "对匹配分支的合并必须通过合并队列执行。",
-                    "Make sure to configure your CI to build branches created by the queue.": "确保您配置 CI 以构建由队列创建的分支",
-                    "Merge method": "合并模式",
-                        "Method to use when merging changes from queued pull requests.": "合并来自列队拉取请求的更改时使用的模式。",
-                        "Method:": "模式：",
-                            "Merge commit": "合并提交",
-                            "Squash and merge": "压缩合并",
-                            "Rebase and merge": "变基合并",
-                    "Build concurrency": "构建并发",
-                        "Limit the number of queued pull requests building at the same time.": "限制同时构建的列队拉取请求的数量。",
-                        "Maximum pull requests to build:": "构建的最大拉取请求：",
-                    "Merge limits": "合并限制",
-                        "Limit the number of pull requests merged into the protected branch in a single merge operation.": "限制在单个合并操作中合并到受保护分支的拉取请求的数量。",
-                        "Minimum pull requests to merge:": "合并的最小拉取请求：",
-                            "or after": "或",
-                            "minutes": "分钟之后",
-                        "Maximum pull requests to merge:": "合并的最大拉取请求：",
-                        "Only merge non-failing pull requests": "仅合并未失败的拉取请求",
-                    "Status check timeout": "状态检查超时",
-                        "Time (in minutes) a required status check must report a conclusion within to not be considered failed.": "所需的状态检查必须在规定的时间（以分钟为单位）内报告结论才不会被视为失败。",
-                        "Consider check failed after:": "考虑检查失败：",
-                "Require deployments to succeed before merging": "要求部署成功后再合并",
-                    "Choose which environments must be successfully deployed to before branches can be merged into a branch that matches this rule.": "选择必须成功部署到哪些环境才能将分支合并到与此规则匹配的分支中。",
-                            "No deployment environments found": "尚无部署环境",
-                            "Sorry, we couldn’t find any deployments for this repository.": "抱歉，我们未找到此仓库的任何部署。",
-                            "Deployment environments found in this repository": "在此仓库中找到的部署环境",
-                                "Required": "必须",
-                "Lock branch": "锁定分支",
-                    "Branch is read-only. Users cannot push to the branch.": "分支为只读。用户无法推送到该分支。",
-                "Do not allow bypassing the above settings": "不允许绕过上述设置",
-                    "The above settings will apply to administrators and custom roles with the \"bypass branch protections\" permission.": "上述设置将应用于具有 “绕过分支保护” 权限的管理员和自定义角色。",
-                "Restrict who can push to matching branches": "限制谁可以推送到匹配的分支", // 组织仓库
-                    "Specify people, teams, or apps allowed to push to matching branches. Required status checks will still prevent these people, teams, and apps from merging if the checks fail.": "指定允许推送到匹配分支的人员、团队或应用。如果检查失败，所需的状态检查仍然会阻止这些人、团队和应用的合并。",
-
-                    "Restrict pushes that create matching branches": "限制创建匹配分支的推送",
-                        "Only people, teams, or apps allowed to push will be able to create new branches matching this rule.": "只有允许推送的人员、团队或应用才能创建符合此规则的新分支。",
-                        "People, teams, or apps with push access": "允许推送的人员、团队或应用",
-                            "Organization administrators, repository administrators, and users with the Maintain role.": "组织管理员、仓管理员和具有维护角色的用户。",
-                            "Organization administrators, repository administrators, the merge queue, and users with the Maintain role.": "组织管理员、仓管理员、合并队列和具有维护角色的用户。", // 开启需要合并队列
-                                "Admins can always push. Users with the Maintain role can push when required status checks pass.": "管理员始终允许推送。具有维护角色的用户允许在所需状态检查通过时推送。",
-                                "These members can push when required status checks pass.": "这些成员允许在所需状态检查通过时推送。",
-
-            "Rules applied to everyone including administrators": "规则适用于每个人，包括管理员",
-                "Allow force pushes": "允许强制推送",
-                    "Everyone": "所有人",
-                        "Permit force pushes for all users with push access.": "允许所有有推送权限的用户强制推送。",
-                    "Specify who can force push": "指定谁允许强制推送",
-                        "Only these people, teams, or apps are allowed to force push.": "仅允许这些人、团队或应用强制推送。",
-                        "Search for people, teams, or apps": "搜索人员、团队或应用",
-                        "People, teams, or apps who can force push": "允许强制推送的人员、团队或应用",
-                            "Organization and repository administrators (automatic)": "组织和仓库管理员（自动）",
-                "Allow deletions": "允许删除",
-                    "Allow users with push access to delete matching branches.": "允许具有推送权限的用户删除匹配的分支。",
-
-            "Create": "创建",
-
-            // 顶部提醒
-            "Branch protection rule created.": "分支保护规则已创建。",
-
-        // 编辑分支保护规则 页面 /<user-name>/<repo-name>/settings/branch_protection_rules/<id>===================================
-            // [/Applies to (\d+) branchs?/, "应用于 $1 个分支"], //仓库设置-->分支-->分支保护规则-->编辑
-
-            "Save changes": "保存更改",
-
-    },
-    "regexp": [ // 正则翻译
-        ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/Applies to (\d+) branch(?:es|)/, "应用于 $1 个分支"], //仓库设置-->分支-->分支保护规则-->编辑
-    ],
-};
-
-I18N["ko-KR"]["repository/settings/tag_protection"] = { // 仓库设置 - 标签 /<user-name>/<repo-name>/settings/tag_protection
-    "static": { // 静态翻译
-        ...I18N["ko-KR"]["repository-public"]["static"],
-        ...I18N["ko-KR"]["repository-settings-menu"]["static"],
-
-        // 标签 页面 /<user-name>/<repo-name>/settings/tag_protection===============================
-            // 顶部提醒
-                "Tag protection rule created.": "标签保护规则已创建。",
-                "Tag protection rule deleted.": "标签保护规则已删除。",
-
-            // 顶部窗口
-            "Level up your tag protections with Repository Rules": "利用仓库规则提升标签保护级别",
-            "Protected tags are being deprecated. To continue protecting tags, please migrate to a tag ruleset by August 30th. You can learn more about the sunset in our": "受保护的标签将被废弃。要继续保护标签，请在 8 月 30 日前迁移到标签规则集。您可以在我们的",
-            "changelog": "更改日志",
-            "and can get started now by migrating to rulesets.": "中了解更多信息，并且可以立即开始迁移到规则集。",
-
-            "Protected tags": "受保护的标签",
-            "Protected tags are available to Pro, Team, and Enterprise users": "专业版、团队版和企业版用户均可使用受保护的标签", //私有库
-            "Protected tags can only be created or deleted by users with enhanced permissions defined by your organization owners.": "受保护的标签只能由具有由组织所有者定义的增强权限的用户创建或删除。",
-            "Learn more about protected tags": "了解更多关于受保护标签的信息",
-            "No protected tag rules exist yet": "尚无受保护的标签规则存在",
-            "Protected tags have been deprecated": "受保护的标签已弃用",
-            "Go to rulesets to create new tag rules": "转到规则集创建新标签规则",
-            "New rule": "新建规则",
-            "Import to rulesets": "导入规则集",
-                "Import your tag protection rules into repository rules": "将您的标签保护规则导入仓库规则集",
-                    "Migrate your protected tags to one or more repository rulesets. This will implement the same tag protections you currently have today. Once created, the tag rulesets can take advantage of new ruleset features:": "将受保护的标签迁移到一个或多个仓库规则集。这将实现与当前相同的标签保护。创建后，标签规则集可利用规则集的新功能：",
-                        "Requiring status checks to pass": "要求通过状态检查",
-                        "Signed commits": "要求签名提交",
-                        "Requiring linear history": "需要线性历史",
-                        "and more": "和更多",
-                    "Create separate rulesets for creating and deleting protected tags": "为创建和删除受保护的标签创建单独的规则集",
-                        "Users and Teams with at least Maintainer role will be able to create new protected tags. Administrators will be able to delete protected tags. This is the same behavior as existing tag protections.": "至少具有维护者角色的用户和团队可以创建新的受保护标签。管理员可以删除受保护标签。这与现有标签保护的行为相同。",
-                    "Create one ruleset for all protected tag operations": "为所有受保护的标签操作创建规则集",
-                        "Administrators will be able to create and delete protected tags.": "管理员可以创建和删除受保护的标签。",
-
-                    "Learn more about tag rulesets": "了解更多关于标签规则集的信息",
-                    "Import": "导入",
-
-            "Delete tag protection rule": "删除标签保护规则",
-                "Delete tag protection rule?": "删除标签保护规则？",
-                    "Are you sure you want to delete this tag protection rule? Anyone who can write to this repository will be able to create tags with this pattern.": "您确定要删除此标签保护规则吗？任何可以写入此仓库的人都能够使用此模式创建标签。",
-                    "Yes, remove this tag protection rule": "是的，删除此标签保护规则",
-
-            // [/(\d+) rules?/, "$1 条规则"],
-
-        // 新建标签规则 页面 /<user-name>/<repo-name>/settings/tag_protection/new===============================
-            "/ New rule": "/ 新建规则",
-            "Tag name pattern": "标签名称模式",
-            "Example: You can use": "示例：您可以使用",
-            "to target tags named": "来锁定名为",
-            ", and so on.": "等的标签。",
-
-            "Add rule": "添加规则",
-
-    },
-    "regexp": [ // 正则翻译
-        [/(\d+) rules?/, "$1 条规则"],
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["repository/settings/rules"] = { // 仓库设置 - 规则 - 规则集 /<user-name>/<repo-name>/settings/rules
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/branches"] = { // 저장소 설정 - 분기 /<user-name>/<repo-name>/settings/branches
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
-        ...I18N["ko-KR"]["orgs-settings-menu"]["static"], // 组织设置
+
+        // 분기 관리 페이지 /<user-name>/<repo-name>/settings/branches====================================
+            "Branch protection rules": "분기 보호 규칙",
+            "Add rule": "규칙 추가하기",
+
+            "Define branch protection rules to disable force pushing, prevent branches from being deleted, and optionally require status checks before merging. New to branch protection rules?": "분기 보호 규칙을 정의하여 강제 푸시를 비활성화하고, 분기가 삭제되는 것을 방지하며, 선택적으로 병합 전 상태 확인을 요구할 수 있어요. 분기 보호 규칙이 처음이신가요?",
+            "No branch protection rules defined yet.": "아직 분기 보호 규칙이 정의되지 않았어요.",
+
+            "You haven't protected any of your branches": "아무 분기도 보호하지 않으셨어요.",
+            "Classic branch protections have not been configured": "클래식 분기 보호가 구성되지 않았어요.",
+            "Define branch rules to disable force pushing, prevent branches from being deleted, or require pull requests before merging. Learn more about": "강제 푸시를 비활성화하거나, 분기 삭제를 방지하거나, 병합 전에 끌어오기 요청을 요구하도록 분기 규칙을 정의해 보세요. 자세히 알아보기:",
+            //"Define a protected branch rule to disable force pushing, prevent branches from being deleted, and optionally require status checks before merging.": "정의된 분기 보호 규칙을 통해 강제 푸시를 비활성화하고, 분기 삭제를 방지하며, 선택적으로 병합 전 상태 확인을 요구할 수 있어요.",
+            "repository rules": "저장소 규칙",
+            "protected branches": "보호된 분기",
+            "Add branch ruleset": "분기 규칙 집합 추가하기",
+            "Add classic branch protection rule": "클래식 분기 보호 규칙 추가하기",
+            //"Learn more about protected branches": "보호된 분기에 대해 자세히 알아보기",
+            //"Add branch protection rule": "분기 보호 규칙 추가하기",
+
+            // 개인 저장소 분기 보호 미적용 알림
+            "Your protected branch rules won't be enforced on this private repository until you move to a GitHub Team or Enterprise organization account.": "해당 개인 저장소에서는 GitHub 팀 또는 기업 조직 계정으로 이전하기 전까지 보호된 분기 규칙이 적용되지 않아요.",
+            "Move to an organization": "조직으로 이전하기",
+
+            "Not enforced": "적용되지 않음",
+                "Rules on your private repos can't be enforced until you upgrade to GitHub Team or Enterprise.": "GitHub 팀 또는 기업 버전으로 업그레이드하기 전까지 개인 저장소의 규칙은 적용되지 않아요.",
+
+            // [/Currently applies to (\d+) branch(?:es|)/, "현재 $1 개의 분기에 적용됨"], // 저장소 설정-->분기-->분기 보호 규칙
+
+            // 분기 보호 규칙 삭제
+            "Delete this branch protection rule?": "이 분기 보호 규칙을 삭제할까요?",
+            "This action cannot be undone.": "이 작업은 취소할 수 없어요.",
+            "I understand, delete this rule.": "이해했어요, 그래도 규칙을 삭제할게요.",
+
+            // 상단 알림
+            "Branch protection rule settings saved.": "분기 보호 규칙 설정이 저장되었어요.",
+            "Branch protection rule created.": "분기 보호 규칙이 생성되었어요.",
+            "Branch protection rule was successfully deleted.": "분기 보호 규칙이 성공적으로 삭제되었어요.",
+    },
+    "regexp": [ // 정규식 번역
+        ...I18N["ko-KR"]["repository-public"]["regexp"],
+        [/Currently applies to (\d+) branch(?:es|)/, "현재 $1 개의 분기에 적용됨"], // 저장소 설정-->분기-->분기 보호 규칙
+    ],
+};
+
+I18N["ko-KR"]["repository/settings/branch_protection_rules"] = { // 저장소 설정 - 분기/분기 보호 /<user-name>/<repo-name>/settings/branch_protection_rules
+    "static": { // 정적 번역
+        ...I18N["ko-KR"]["repository-public"]["static"],
+        ...I18N["ko-KR"]["repository-settings-menu"]["static"],
+
+        // 새 분기 보호 규칙 페이지 /<user-name>/<repo-name>/settings/branch_protection_rules/new====================================
+            "Branch protection rule": "분기 보호 규칙",
+
+            "Protect your most important branches": "가장 중요한 분기를 보호해 보세요",
+                "Branch protection rules": "분기 보호 규칙",
+                "define whether collaborators can delete or force push to the branch and set requirements for any pushes to the branch, such as passing status checks or a linear commit history.": "협업자가 분기를 삭제하거나 강제 푸시할 수 있는지 여부를 설정하고, 상태 체크 통과 또는 선형 커밋 히스토리와 같은 분기로의 푸시에 대한 요구사항을 설정해 보세요.",
+
+                "Your GitHub Free plan": "사용자님의 GitHub 무료 플랜",
+                "Your organization's GitHub Free plan": "사용자님 조직의 GitHub 무료 플랜", // 조직 저장소
+                "can only enforce rules on its public repositories, like this one.": "이와 같이 공개 저장소에만 규칙을 적용할 수 있어요.",
+
+                "Your rules won't be enforced on this private repository until you": "이 개인 저장소에서는 사용자님의 규칙이 강제 적용되지 않아요, 사용자님께서",
+                "move to a GitHub Team or Enterprise organization account": "GitHub 팀 또는 기업 조직 계정으로 이전해 주셔야 해요",
+                "upgrade this organization to GitHub Team or Enterprise": "해당 조직을 GitHub 팀 또는 기업 버전으로 업그레이드해 주셔야 해요", // 조직 저장소
+
+            "Branch name pattern": "분기 이름 패턴",
+            "Protect matching branches": "일치하는 분기 보호하기",
+                "Require a pull request before merging": "병합 전에 끌어오기 요청 필요하기",
+                    "When enabled, all commits must be made to a non-protected branch and submitted via a pull request before they can be merged into a branch that matches this rule.": "사용 설정 시, 모든 커밋은 보호되지 않은 분기에 이루어지고 끌어오기 요청을 통해 제출되어야 이 규칙과 일치하는 분기로 병합할 수 있어요.",
+                    "Require approvals": "승인 필요하기",
+                        "When enabled, pull requests targeting a matching branch require a number of approvals and no changes requested before they can be merged.": "사용 설정 시, 일치하는 분기를 대상으로 한 끌어오기 요청은 정해진 승인 횟수와 변경 요청이 없을 때만 병합할 수 있어요.",
+                        "Required number of approvals before merging:": "병합 전 필요한 승인 횟수:",
+                    "Dismiss stale pull request approvals when new commits are pushed": "새 커밋 푸시 시 오래된 끌어오기 요청 승인 취소하기",
+                        "New reviewable commits pushed to a matching branch will dismiss pull request review approvals.": "일치하는 분기로 새로 푸시된 검토 가능한 커밋은 끌어오기 요청 승인들을 취소할 거예요.",
+                    "Require review from Code Owners": "코드 소유자 승인 필요하기",
+                        "Require an approved review in pull requests including files with a designated code owner.": "지정된 코드 소유자가 있는 파일을 포함한 끌어오기 요청에서 승인된 리뷰가 필요해요.",
+                    "Restrict who can dismiss pull request reviews": "누가 끌어오기 요청 승인을 취소할 수 있는지 제한하기", // 조직 저장소
+                        "Specify people, teams, or apps allowed to dismiss pull request reviews.": "끌어오기 요청 승인을 취소할 수 있는 사람, 팀 또는 앱을 지정해 보세요.",
+                        "People, teams, or apps that can dismiss reviews.": "승인 취소가 가능한 사람, 팀 또는 앱.",
+                            "Organization and repository administrators": "조직 및 저장소 관리자",
+                                "These members can always dismiss.": "이 멤버들은 항상 승인 취소할 수 있어요.",
+                                "These members cannot dismiss.": "이 멤버들은 승인 취소할 수 없어요.",
+                    "Allow specified actors to bypass required pull requests": "지정된 참여자가 필수 끌어오기 요청을 우회하도록 허용하기", // 조직 저장소
+                        "Specify people, teams, or apps who are allowed to bypass required pull requests.": "필수 끌어오기 요청을 우회할 수 있는 사람, 팀 또는 앱을 지정해 보세요.",
+                        "People, teams, or apps who can bypass required pull requests": "필수 끌어오기 요청을 우회할 수 있는 사람, 팀 또는 앱",
+                                "These members can always bypass required pull requests.": "이 멤버들은 항상 필수 끌어오기 요청을 우회할 수 있어요.",
+                                "These members cannot bypass.": "이 멤버들은 우회할 수 없어요.",
+                    "Require approval of the most recent reviewable push": "최신 검토 가능한 푸시 승인 필요하기",
+                        "Whether the most recent reviewable push must be approved by someone other than the person who pushed it.": "가장 최근의 검토 가능한 푸시가 푸시한 사람 이외의 다른 사람에게 승인 받아야 하는지 설정해 보세요.",
+                "Require status checks to pass before merging": "병합 전에 상태 체크 통과 필요하기",
+                    "Choose which": "어떤",
+                    "status checks": "상태 체크들이",
+                    "must pass before branches can be merged into a branch that matches this rule. When enabled, commits must first be pushed to another branch, then merged or pushed directly to a branch that matches this rule after status checks have passed.": "이 규칙과 일치하는 분기로 병합되기 전에 통과해야 해요. 사용 설정 시, 커밋은 먼저 다른 분기에 푸시되고, 상태 체크 통과 후에 해당 분기로 병합되거나 직접 푸시되어야 해요.",
+                    "Require branches to be up to date before merging": "병합 전에 분기가 최신 상태여야 함",
+                        "This ensures pull requests targeting a matching branch have been tested with the latest code. This setting will not take effect unless at least one status check is enabled (see below).": "이 설정은 일치하는 분기를 대상으로 한 끌어오기 요청이 최신 코드로 테스트되었는지 보장해 줘요. 아래와 같이 최소 하나의 상태 체크가 활성화되지 않으면 적용되지 않아요.",
+                    "Do not require status checks on creation": "생성 시 상태 체크 요구 안 함",
+                        "Allow repositories and branches to be created if a check would otherwise prohibit it.": "체크 때문에 생성이 불가능한 상황에서도 저장소와 분기를 생성할 수 있도록 해요.",
+                    "Search for status checks in the last week for this repository": "이 저장소의 최근 일주일간 상태 체크 검색하기",
+                    "Status checks that are required.": "필수 상태 체크들.",
+                    "No status checks found": "상태 체크를 찾지 못했어요",
+                        "Sorry, we couldn’t find any status checks in the last week for this repository.": "죄송해요, 이 저장소에서 최근 일주일간 상태 체크를 찾지 못했어요.",
+                    "Learn more about status checks": "상태 체크에 대해 자세히 알아보기",
+                "Require conversation resolution before merging": "병합 전에 대화 해결 요구하기",
+                    "When enabled, all conversations on code must be resolved before a pull request can be merged into a branch that matches this rule.": "사용 설정 시, 이 규칙과 일치하는 분기로 병합되기 전에 코드 관련 모든 대화가 해결되어야 해요.",
+                    "Learn more about requiring conversation completion before merging": "병합 전에 대화 완료 요구에 대해 자세히 알아보기",
+                "Require signed commits": "서명된 커밋 요구하기",
+                    "Commits pushed to matching branches must have verified signatures.": "일치하는 분기로 푸시된 커밋은 검증된 서명이 필요해요.",
+                "Require linear history": "선형 히스토리 요구하기",
+                    "Prevent merge commits from being pushed to matching branches.": "일치하는 분기로 병합 커밋이 푸시되는 것을 방지해요.",
+                "Require merge queue": "병합 대기열 요구하기", // 조직 저장소
+                    "Merges to matching branches must be performed via a merge queue.": "일치하는 분기로의 병합은 반드시 병합 대기열을 통해 이루어져야 해요.",
+                    "Make sure to configure your CI to build branches created by the queue.": "병합 대기열에서 생성된 분기를 빌드하도록 CI를 구성해 보세요.",
+                    "Merge method": "병합 방식",
+                        "Method to use when merging changes from queued pull requests.": "대기열에 있는 끌어오기 요청의 변경 사항을 병합할 때 사용할 방식을 지정해 보세요.",
+                        "Method:": "방식:",
+                            "Merge commit": "병합 커밋",
+                            "Squash and merge": "압축 후 병합",
+                            "Rebase and merge": "리베이스 후 병합",
+                    "Build concurrency": "빌드 동시 실행",
+                        "Limit the number of queued pull requests building at the same time.": "동시에 빌드되는 대기열 끌어오기 요청 수를 제한해 보세요.",
+                        "Maximum pull requests to build:": "빌드할 최대 끌어오기 요청 수:",
+                    "Merge limits": "병합 제한",
+                        "Limit the number of pull requests merged into the protected branch in a single merge operation.": "한 번의 병합 작업에서 보호된 분기로 병합되는 끌어오기 요청 수를 제한해 보세요.",
+                        "Minimum pull requests to merge:": "병합할 최소 끌어오기 요청 수:",
+                            "or after": "또는",
+                            "minutes": "분 후에",
+                        "Maximum pull requests to merge:": "병합할 최대 끌어오기 요청 수:",
+                        "Only merge non-failing pull requests": "실패하지 않은 끌어오기 요청만 병합하기",
+                    "Status check timeout": "상태 체크 시간 초과",
+                        "Time (in minutes) a required status check must report a conclusion within to not be considered failed.": "필수 상태 체크가 실패로 간주되지 않도록 결론을 보고해야 하는 시간을(분 단위) 설정해 보세요.",
+                        "Consider check failed after:": "이후 체크 실패로 간주:",
+                "Require deployments to succeed before merging": "병합 전에 배포 성공 요구하기",
+                    "Choose which environments must be successfully deployed to before branches can be merged into a branch that matches this rule.": "이 규칙과 일치하는 분기로 병합되기 전에 성공적으로 배포되어야 하는 환경을 선택해 보세요.",
+                            "No deployment environments found": "배포 환경을 찾지 못했어요",
+                            "Sorry, we couldn’t find any deployments for this repository.": "죄송해요, 이 저장소의 배포를 찾지 못했어요.",
+                            "Deployment environments found in this repository": "이 저장소에서 찾은 배포 환경들",
+                                "Required": "필수",
+                "Lock branch": "분기 잠그기",
+                    "Branch is read-only. Users cannot push to the branch.": "분기는 읽기 전용이에요. 사용자님은 해당 분기에 푸시할 수 없어요.",
+                "Do not allow bypassing the above settings": "위 설정을 우회하는 것 허용 안 함",
+                    "The above settings will apply to administrators and custom roles with the \"bypass branch protections\" permission.": "위의 설정은 '분기 보호 우회' 권한이 있는 관리자와 맞춤 역할에 적용돼요.",
+                "Restrict who can push to matching branches": "일치하는 분기로 푸시할 수 있는 사람 제한하기", // 조직 저장소
+                    "Specify people, teams, or apps allowed to push to matching branches. Required status checks will still prevent these people, teams, and apps from merging if the checks fail.": "일치하는 분기로 푸시할 수 있는 사람, 팀 또는 앱을 지정해 보세요. 필수 상태 체크가 실패하면 이들에 의한 병합은 여전히 차단돼요.",
+                    "Restrict pushes that create matching branches": "일치하는 분기를 생성하는 푸시 제한하기",
+                        "Only people, teams, or apps allowed to push will be able to create new branches matching this rule.": "푸시가 허용된 사람, 팀 또는 앱만 이 규칙과 일치하는 새 분기를 생성할 수 있어요.",
+                        "People, teams, or apps with push access": "푸시 접근 권한이 있는 사람, 팀 또는 앱",
+                            "Organization administrators, repository administrators, and users with the Maintain role.": "조직 관리자, 저장소 관리자, 그리고 유지 역할을 가진 사용자님.",
+                            "Organization administrators, repository administrators, the merge queue, and users with the Maintain role.": "조직 관리자, 저장소 관리자, 병합 대기열, 그리고 유지 역할을 가진 사용자님.", // 병합 대기열 필요 시
+                                "Admins can always push. Users with the Maintain role can push when required status checks pass.": "관리자는 항상 푸시할 수 있어요. 유지 역할을 가진 사용자님은 필수 상태 체크가 통과되면 푸시할 수 있어요.",
+                                "These members can push when required status checks pass.": "이 멤버들은 필수 상태 체크가 통과되면 푸시할 수 있어요.",
+
+            "Rules applied to everyone including administrators": "관리자를 포함한 모든 사용자에게 적용되는 규칙",
+                "Allow force pushes": "강제 푸시 허용하기",
+                    "Everyone": "모든 사용자",
+                        "Permit force pushes for all users with push access.": "푸시 권한이 있는 모든 사용자에게 강제 푸시를 허용해 보세요.",
+                    "Specify who can force push": "강제 푸시 가능한 사용자 지정하기",
+                        "Only these people, teams, or apps are allowed to force push.": "오직 이 사람, 팀 또는 앱만 강제 푸시할 수 있어요.",
+                        "Search for people, teams, or apps": "사람, 팀 또는 앱 검색하기",
+                        "People, teams, or apps who can force push": "강제 푸시가 가능한 사람, 팀 또는 앱",
+                            "Organization and repository administrators (automatic)": "조직 및 저장소 관리자 (자동)",
+                "Allow deletions": "삭제 허용하기",
+                    "Allow users with push access to delete matching branches.": "푸시 권한이 있는 사용자님이 일치하는 분기를 삭제할 수 있도록 허용해 보세요.",
+
+            "Create": "생성하기",
+
+            // 상단 알림
+            "Branch protection rule created.": "분기 보호 규칙이 생성되었어요.",
+
+        // 편집 분기 보호 규칙 페이지 /<user-name>/<repo-name>/settings/branch_protection_rules/<id>===================================
+            // [/Applies to (\d+) branchs?/, "일치하는 $1 개 분기에 적용됨"], // 저장소 설정-->분기-->분기 보호 규칙-->편집
+
+            "Save changes": "변경 사항 저장하기",
+
+    },
+    "regexp": [ // 정규식 번역
+        ...I18N["ko-KR"]["repository-public"]["regexp"],
+        [/Applies to (\d+) branch(?:es|)/, "일치하는 $1 개 분기에 적용됨"], // 저장소 설정-->분기-->분기 보호 규칙-->편집
+    ],
+};
+
+
+I18N["ko-KR"]["repository/settings/tag_protection"] = { // 저장소 설정 - 꼬리표 /<user-name>/<repo-name>/settings/tag_protection
+    "static": { // 정적 번역
+        ...I18N["ko-KR"]["repository-public"]["static"],
+        ...I18N["ko-KR"]["repository-settings-menu"]["static"],
+
+        // 꼬리표 페이지 /<user-name>/<repo-name>/settings/tag_protection===============================
+            // 상단 알림
+                "Tag protection rule created.": "꼬리표 보호 규칙이 생성되었어요.",
+                "Tag protection rule deleted.": "꼬리표 보호 규칙이 삭제되었어요.",
+
+            // 상단 창
+            "Level up your tag protections with Repository Rules": "저장소 규칙으로 꼬리표 보호 수준을 높여보세요.",
+            "Protected tags are being deprecated. To continue protecting tags, please migrate to a tag ruleset by August 30th. You can learn more about the sunset in our": "보호된 꼬리표는 더 이상 사용되지 않아요. 꼬리표 보호를 계속하시려면 8월 30일 전까지 꼬리표 규칙 집합으로 이전해 보세요. 더 자세한 내용은 저희의",
+            "changelog": "변경 로그",
+            "and can get started now by migrating to rulesets.": "를 참고하시고, 규칙 집합으로의 이전을 지금 바로 시작해 보세요.",
+
+            "Protected tags": "보호된 꼬리표",
+            "Protected tags are available to Pro, Team, and Enterprise users": "전문가, 팀, 기업 사용자분들께서는 보호된 꼬리표를 사용하실 수 있어요", // 개인 저장소
+            "Protected tags can only be created or deleted by users with enhanced permissions defined by your organization owners.": "보호된 꼬리표는 조직 소유자가 정의한 강화된 권한을 가진 사용자분들만 생성하거나 삭제할 수 있어요.",
+            "Learn more about protected tags": "보호된 꼬리표에 대해 자세히 알아봐주세요.",
+            "No protected tag rules exist yet": "아직 보호된 꼬리표 규칙이 존재하지 않아요.",
+            "Protected tags have been deprecated": "보호된 꼬리표는 더 이상 사용되지 않아요.",
+            "Go to rulesets to create new tag rules": "규칙 집합으로 이동하여 새로운 꼬리표 규칙 만들기를 해보세요.",
+            "New rule": "새로운 규칙",
+            "Import to rulesets": "규칙 집합으로 가져오기",
+                "Import your tag protection rules into repository rules": "꼬리표 보호 규칙을 저장소 규칙으로 가져와 보세요.",
+                    "Migrate your protected tags to one or more repository rulesets. This will implement the same tag protections you currently have today. Once created, the tag rulesets can take advantage of new ruleset features:": "현재 설정된 보호된 꼬리표를 하나 이상의 저장소 규칙 집합으로 이전해 보세요. 그러면 오늘날 사용 중인 것과 동일한 꼬리표 보호가 적용돼요. 생성 후 꼬리표 규칙 집합은 새로운 규칙 집합 기능들을 활용할 수 있어요:",
+                        "Requiring status checks to pass": "상태 점검 통과 요구하기",
+                        "Signed commits": "서명된 커밋 요구하기",
+                        "Requiring linear history": "선형 히스토리 요구하기",
+                        "and more": "및 기타",
+                    "Create separate rulesets for creating and deleting protected tags": "보호된 꼬리표 생성과 삭제를 위한 별도의 규칙 집합 만들기를 해보세요.",
+                        "Users and Teams with at least Maintainer role will be able to create new protected tags. Administrators will be able to delete protected tags. This is the same behavior as existing tag protections.": "최소한 유지보수자 역할이 있는 사용자 및 팀은 새로운 보호된 꼬리표를 생성할 수 있고, 관리자는 보호된 꼬리표를 삭제할 수 있어요. 이는 기존 꼬리표 보호와 동일한 동작이에요.",
+                    "Create one ruleset for all protected tag operations": "모든 보호된 꼬리표 작업을 위한 하나의 규칙 집합 만들기를 해보세요.",
+                        "Administrators will be able to create and delete protected tags.": "관리자는 보호된 꼬리표를 생성 및 삭제할 수 있어요.",
+
+                    "Learn more about tag rulesets": "꼬리표 규칙 집합에 대해 자세히 알아봐주세요.",
+                    "Import": "가져오기",
+
+            "Delete tag protection rule": "꼬리표 보호 규칙 삭제하기",
+                "Delete tag protection rule?": "꼬리표 보호 규칙을 삭제할까요?",
+                    "Are you sure you want to delete this tag protection rule? Anyone who can write to this repository will be able to create tags with this pattern.": "이 꼬리표 보호 규칙을 삭제하시겠어요? 이 저장소에 쓰기 권한이 있는 모든 분들이 이 패턴의 꼬리표를 생성할 수 있어요.",
+                    "Yes, remove this tag protection rule": "네, 이 꼬리표 보호 규칙을 삭제할게요.",
+
+            // [/(\d+) rules?/, "$1 규칙"],
+
+        // 새로운 꼬리표 규칙 페이지 /<user-name>/<repo-name>/settings/tag_protection/new===============================
+            "/ New rule": "/ 새로운 규칙",
+            "Tag name pattern": "꼬리표 이름 패턴",
+            "Example: You can use": "예시: 다음을 사용해 보세요",
+            "to target tags named": "라는 이름의 꼬리표를 대상으로 하여",
+            ", and so on.": " 등으로 지정할 수 있어요.",
+
+            "Add rule": "규칙 추가하기",
+
+    },
+    "regexp": [ // 정규식 번역
+        [/(\d+) rules?/, "$1 규칙"],
+        ...I18N["ko-KR"]["repository-public"]["regexp"],
+    ],
+};
+
+
+I18N["ko-KR"]["repository/settings/rules"] = { // 저장소 설정 - 규칙 - 규칙 집합 /<user-name>/<repo-name>/settings/rules
+    "static": { // 정적 번역
+        ...I18N["ko-KR"]["repository-public"]["static"],
+        ...I18N["ko-KR"]["repository-settings-menu"]["static"],
+        ...I18N["ko-KR"]["orgs-settings-menu"]["static"], // 조직 설정
         ...I18N["ko-KR"]["confirm-access"]["static"],
 
-        // 仓库规则集页面 /<user-name>/<repo-name>/rules
-        // 规则集 页面 /<user-name>/<repo-name>/settings/rules
-            "Your rulesets won't be enforced on this private repository until you upgrade this organization account to GitHub Team.": "在您将此组织账户升级到 GitHub Team 之前，您的规则集不会在此私有仓库上强制执行。", // 组织 私有仓库
+        // 저장소 규칙 집합 페이지 /<user-name>/<repo-name>/rules
+        // 규칙 집합 페이지 /<user-name>/<repo-name>/settings/rules
+            "Your rulesets won't be enforced on this private repository until you upgrade this organization account to GitHub Team.": "이 조직 계정을 GitHub Team 으로 업그레이드하기 전까지, 이 개인 저장소에서는 규칙 집합이 강제 적용되지 않아요.",
+            
+            "Organization rulesets won't be enforced": "해당 조직 계정을 GitHub 기업으로 업그레이드하기 전까지,", // 조직 설정
+            "until you upgrade this organization account to GitHub Enterprise.": "조직 규칙 집합은 강제 적용되지 않아요.", // 조직 설정
 
-            "Organization rulesets won't be enforced": "在您将该组织账户升级到 GitHub 企业版之前，", // 组织设置
-            "until you upgrade this organization account to GitHub Enterprise.": "组织规则集将不会强制执行。", // 组织设置
+            "You haven't created any rulesets": "아직 규칙 집합을 생성하지 않으셨어요.",
+                "Define whether collaborators can delete or force push and set requirements for any pushes, such as passing status checks or a linear commit history.": "협업자가 삭제하거나 강제 푸시할 수 있는지 여부를 정의하고, 상태 검사 통과나 선형 커밋 기록 등의 푸시에 대한 요구사항을 설정해 보세요.",
+                "Learn more about rulesets.": "규칙 집합에 대해 자세히 알아보세요.",
 
-            "You haven't created any rulesets": "您尚未创建任何规则集",
-                "Define whether collaborators can delete or force push and set requirements for any pushes, such as passing status checks or a linear commit history.": "定义协作者是否可以删除或强制推送，并为任何推送设置要求，如通过状态检查或线性提交历史。",
-                "Learn more about rulesets.": "了解更多关于规则集的信息。",
+            "Rulesets": "규칙 집합",
+            "New ruleset": "새 규칙 집합 만들기",
+                "New branch ruleset": "새 분기 규칙 집합 만들기",
+                    "New tag ruleset": "새 꼬리표 규칙 집합 만들기",
+                    "Import a ruleset": "규칙 집합 가져오기",
 
-            "Rulesets": "规则集",
-            "New ruleset": "新建规则集",
-                "New branch ruleset": "新建分支规则集",
-                    "New tag ruleset": "新建标签规则集",
-                    "Import a ruleset": "导入规则集",
+            "No rulesets have been added yet": "아직 규칙 집합이 추가되지 않았어요.",
 
-            "No rulesets have been added yet": "尚未添加任何规则集",
+            "All": "전체",
+            "• targeting": "• 대상",
+            ", targeting": ", 대상",
 
-            "All": "全部",
-            "• targeting": "• 针对",
-            ", targeting": ", 针对",
+            "Export ruleset": "규칙 집합 내보내기",
+            "Delete ruleset": "규칙 삭제하기",
 
-            "Export ruleset": "导出规则集",
-            "Delete ruleset": "删除规则",
+            // 규칙 삭제 대화 상자
+                "Delete ruleset?": "규칙 삭제할까요?",
+                "Are you sure you want to delete this ruleset? This action cannot be undone.": "정말 이 규칙 집합을 삭제하시겠어요? 이 작업은 취소할 수 없어요.",
 
-            // 删除规则对话框
-                "Delete ruleset?": "删除规则？",
-                "Are you sure you want to delete this ruleset? This action cannot be undone.": "您确定要删除此规则集吗？此操作无法撤消。",
+        // 새 분기 규칙 /<user-name>/<repo-name>/settings/rules/new?target=branch&enforcement=disabled
+        // 새 꼬리표 규칙 /<user-name>/<repo-name>/settings/rules/new?target=tag&enforcement=disabled
+        // 규칙 편집 /<user-name>/<repo-name>/settings/rules/<id>
 
-        // 新建分支规则 /<user-name>/<repo-name>/settings/rules/new?target=branch&enforcement=disabled
-        // 新建标签规则 /<user-name>/<repo-name>/settings/rules/new?target=tag&enforcement=disabled
-        // 编辑规则 /<user-name>/<repo-name>/settings/rules/<id>
-
-            "Protect your most important branches": "保护您最重要的分支",
-                "define whether collaborators can delete or force push and set requirements for any pushes, such as passing status checks or a linear commit history.": "定义协作者是否可以删除或强制推送，并为任何推送设置要求，如通过状态检查或线性提交历史。",
+            "Protect your most important branches": "가장 중요한 분기를 보호해 보세요.",
+                "define whether collaborators can delete or force push and set requirements for any pushes, such as passing status checks or a linear commit history.": "협업자가 삭제하거나 강제 푸시할 수 있는지 여부를 정의하고, 상태 검사 통과나 선형 커밋 기록 등의 푸시에 대한 요구사항을 설정해 보세요.",
 
             "Tag": "꼬리표",
             "Tags": "꼬리표",
 
-            "Name": "名称",
-                "Ruleset name cannot be empty": "规则集名称不能为空",
-            "Enforcement status": "执行状态",
-                "Active": "激活",
-                    "Rules will be enforced": "规则将被执行",
-                    "Enable Organization Ruleset": "启用组织规则集", // 组织设置
-                        "I want rules enforced on targeted repositories in this ruleset.": "我希望此规则集中强制执行针对目标仓库的规则。",
-                "Evaluate": "评估", // 组织设置
-                    "Evaluate Rulesets to trial rules and view insights": "评估规则集，以试用规则并查看洞察",
-                    "Evaluate mode is only available to Enterprise organizations.": "评估模式仅适用于企业组织。",
-                        "Upgrade to Enterprise to use this mode.": "升级到企业版即可使用此模式。",
-                "Disabled": "禁用",
-                    "Do not evaluate or enforce rules": "不评估或执行规则",
+            "Name": "이름",
+                "Ruleset name cannot be empty": "규칙 집합 이름은 비워둘 수 없어요.",
+            "Enforcement status": "적용 상태",
+                "Active": "활성화",
+                    "Rules will be enforced": "규칙이 강제 적용돼요.",
+                    "Enable Organization Ruleset": "조직 규칙 집합 사용하기", // 조직 설정
+                        "I want rules enforced on targeted repositories in this ruleset.": "이 규칙 집합에서 대상 저장소에 규칙을 적용하고 싶어요.",
+                "Evaluate": "평가하기", // 조직 설정
+                    "Evaluate Rulesets to trial rules and view insights": "규칙 집합을 평가하여 규칙을 시험해 보고 인사이트를 확인해 보세요.",
+                    "Evaluate mode is only available to Enterprise organizations.": "평가 모드는 기업 조직에서만 사용 가능해요.",
+                        "Upgrade to Enterprise to use this mode.": "이 모드를 사용하려면 기업 버전으로 업그레이드해 보세요.",
+                "Disabled": "비활성화",
+                    "Do not evaluate or enforce rules": "규칙을 평가하거나 적용하지 않아요.",
 
-            "Bypass list": "旁路列表",
-                "Exempt roles, teams, or apps from this ruleset by adding them to the bypass list": "通过将角色、团队或应用程序添加到旁路列表，使其免受此规则集的约束",
-                "Exempt roles or teams from this ruleset by adding them to the bypass list": "通过将角色或团队添加到旁路列表，使其免受此规则集的约束", // 组织设置
-                "Add bypass": "添加旁路",
+            "Bypass list": "우회 목록",
+                "Exempt roles, teams, or apps from this ruleset by adding them to the bypass list": "우회 목록에 역할, 팀 또는 앱을 추가하여 이 규칙 집합에서 제외해 보세요.",
+                "Exempt roles or teams from this ruleset by adding them to the bypass list": "우회 목록에 역할 또는 팀을 추가하여 이 규칙 집합에서 제외해 보세요.", // 조직 설정
+                "Add bypass": "우회 추가하기",
 
-                 // 添加旁路对话框
-                    "Choose which roles, teams, and apps can bypass this ruleset": "选择哪些角色、团队和应用可绕过此规则集",
+                 // 우회 추가 대화 상자
+                    "Choose which roles, teams, and apps can bypass this ruleset": "어떤 역할, 팀, 앱이 이 규칙 집합을 우회할 수 있는지 선택해 보세요.",
 
-                    "Filter items": "筛选",
+                    "Filter items": "항목 필터링하기",
 
-                    "No suggestions": "暂无建议",
+                    "No suggestions": "추천 항목이 없어요.",
 
-                    "Suggestions": "建议",
-                        "Role": "角色",
-                        "App": "应用",
-                        "Organization admin": "组织管理员",
-                        "Repository admin": "仓库管理员",
-                        "Maintain": "维护",
-                        "triage": "分类",
-                        "maintain": "维持",
-                        "read": "读取",
-                        "write": "写入",
-                        "vulnerability_reporter": "漏洞报告员",
-                        "Add selected": "添加所选",
+                    "Suggestions": "추천 항목",
+                        "Role": "역할",
+                        "App": "앱",
+                        "Organization admin": "조직 관리자",
+                        "Repository admin": "저장소 관리자",
+                        "Maintain": "유지",
+                        "triage": "분류",
+                        "maintain": "유지",
+                        "read": "읽기",
+                        "write": "쓰기",
+                        "vulnerability_reporter": "취약점 보고자",
+                        "Add selected": "선택한 항목 추가하기",
 
-                "Always allow": "总是允许",
-                "Allow for pull requests only": "仅允许拉取请求",
-                    "Allow": "允许",
-                        "Always": "总是",
-                        "For pull requests only": "仅适用于拉取请求",
-                    "Delete bypass": "删除旁路",
+                "Always allow": "항상 허용하기",
+                "Allow for pull requests only": "끌어오기 요청에만 허용하기",
+                    "Allow": "허용하기",
+                        "Always": "항상",
+                        "For pull requests only": "끌어오기 요청에만",
+                    "Delete bypass": "우회 삭제하기",
 
-                "Bypass list is empty": "旁路列表为空",
+                "Bypass list is empty": "우회 목록이 비어 있어요.",
 
-            "Targets": "目标",
-                "Which branches do you want to make a ruleset for?": "您想为哪些分支制定规则集？",
-                "Which tags do you want to make a ruleset for?": "您想为哪些标签制定规则集？", // 标签
-                "Which repositories and branches do you want to make a ruleset for?": "您想为哪些仓库和分支创建规则集？", // 组织设置
+            "Targets": "대상",
+                "Which branches do you want to make a ruleset for?": "어떤 분기를 대상으로 규칙 집합을 만들고 싶으세요?",
+                "Which tags do you want to make a ruleset for?": "어떤 꼬리표를 대상으로 규칙 집합을 만들고 싶으세요?", // 꼬리표
+                "Which repositories and branches do you want to make a ruleset for?": "어떤 저장소와 분기를 대상으로 규칙 집합을 만들고 싶으세요?", // 조직 설정
 
-                // 组织设置
-                    "Target repositories": "目标仓库",
-                        "Repository targeting determines which repositories will be protected by this ruleset. Use inclusion patterns to expand the list of repositories under this ruleset. Use exclusion patterns to exclude repositories.": "仓库目标确定哪些仓库将受此规则集保护。使用包含模式来扩展此规则集下的仓库列表。使用排除模式来排除仓库。",
-                    "Target:": "目标：",
-                        "All repositories": "所有仓库",
-                            "Target all repositories within the organization": "组织内的所有仓库",
-                        "Dynamic list by name": "按名称动态列表",
-                            "Target repositories based on name": "基于名称的目标仓库",
-                        "Dynamic list by property": "按属性动态列表",
-                            "Target repositories based on properties": "基于属性的目标仓库",
-                        "Select repositories": "选择仓库",
-                            "Target a specific list of selected repositories": "以选定仓库列表为目标",
+                // 조직 설정
+                    "Target repositories": "대상 저장소",
+                        "Repository targeting determines which repositories will be protected by this ruleset. Use inclusion patterns to expand the list of repositories under this ruleset. Use exclusion patterns to exclude repositories.": "대상 저장소 설정은 이 규칙 집합이 보호할 저장소를 결정해요. 포함 패턴을 사용해 저장소 목록을 확장하고, 제외 패턴을 사용해 저장소를 제외해 보세요.",
+                    "Target:": "대상:",
+                        "All repositories": "모든 저장소",
+                            "Target all repositories within the organization": "조직 내 모든 저장소를 대상으로 해요.",
+                        "Dynamic list by name": "이름 기준 동적 목록",
+                            "Target repositories based on name": "이름에 따라 저장소를 대상으로 해요.",
+                        "Dynamic list by property": "속성 기준 동적 목록",
+                            "Target repositories based on properties": "속성에 따라 저장소를 대상으로 해요.",
+                        "Select repositories": "저장소 선택하기",
+                            "Target a specific list of selected repositories": "선택된 저장소 목록을 대상으로 해요.",
 
-                    "Targeting criteria": "目标规则",
-                        "No repository targets have been added yet": "尚未添加仓库目标",
+                    "Targeting criteria": "대상 규칙",
+                        "No repository targets have been added yet": "아직 저장소 대상이 추가되지 않았어요.",
 
-                        "Prevent renaming of target repositories": "防止重命名目标仓库",
-                            "When checked, target repositories can only be renamed by those with bypass permission.": "选中后，目标仓库只能由具有绕过权限的成员重命名。",
+                        "Prevent renaming of target repositories": "대상 저장소의 이름 변경 방지하기",
+                            "When checked, target repositories can only be renamed by those with bypass permission.": "선택 시, 우회 권한이 있는 사용자만 대상 저장소의 이름을 변경할 수 있어요.",
 
-                            "Repositories that match the matching pattern will be targeted by this ruleset.": "与匹配规则相匹配的仓库将成为该规则集的目标。",
-                            "Repositories that do not match the matching pattern will be targeted by this ruleset.": "与匹配规则不匹配的仓库将成为该规则集的目标。",
+                            "Repositories that match the matching pattern will be targeted by this ruleset.": "일치하는 패턴의 저장소는 이 규칙 집합의 대상이 돼요.",
+                            "Repositories that do not match the matching pattern will be targeted by this ruleset.": "일치하지 않는 저장소도 이 규칙 집합의 대상으로 지정돼요.",
 
-                    "Target by repository properties": "目标仓库属性",
-                        "Repository targeting determines which repositories will be protected by this ruleset.": "仓库目标确定哪些仓库将受此规则集保护",
+                    "Target by repository properties": "저장소 속성으로 대상 지정하기",
+                        "Repository targeting determines which repositories will be protected by this ruleset.": "대상 저장소 설정은 이 규칙 집합이 보호할 저장소를 결정해요.",
 
-                        "Add a target": "添加目标",
-                            "Include by property": "包含属性",
-                            "Exclude by property": "排除属性",
+                        "Add a target": "대상 추가하기",
+                            "Include by property": "속성 포함하기",
+                            "Exclude by property": "속성 제외하기",
 
-                        "Include repositories by custom property": "按自定义属性包含仓库",
-                            "Custom properties allow you to create your own metadata for repositories": "自定义属性允许您为仓库创建自己的元数据，",
-                            "include": "包括",
-                            "exclude": "排除",
-                            "Property": "属性",
-                                "Select property": "选择属性",
-                                    "Select an item": "选择项目",
-                                        "Search for properties": "搜索属性",
+                        "Include repositories by custom property": "사용자 정의 속성으로 저장소 포함하기",
+                            "Custom properties allow you to create your own metadata for repositories": "사용자 정의 속성을 통해 저장소에 대한 메타데이터를 직접 생성할 수 있어요.",
+                            "include": "포함",
+                            "exclude": "제외",
+                            "Property": "속성",
+                                "Select property": "속성 선택하기",
+                                    "Select an item": "항목 선택하기",
+                                        "Search for properties": "속성 검색하기",
 
-                    // 仓库
-                        "Select items": "选择项目",
+                    // 저장소
+                        "Select items": "항목 선택하기",
                             "Repos": "저장소",
 
-                "Target": "目标",
-                    "Branch targeting determines which branches will be protected by this ruleset. Use inclusion patterns to expand the list of branches under this ruleset. Use exclusion patterns to exclude branches.": "分支目标确定哪些分支将受此规则集保护。使用包含模式来扩展该规则集下的分支列表。使用排除模式来排除分支。",
-                    "Tag targeting determines which tags will be protected by this ruleset. Use inclusion patterns to expand the list of tags under this ruleset. Use exclusion patterns to exclude tags.": "标签目标确定哪些标签将受此规则集保护。使用包含模式来扩展该规则集下的标签列表。使用排除模式来排除标签。", // 标签
+                "Target": "대상",
+                    "Branch targeting determines which branches will be protected by this ruleset. Use inclusion patterns to expand the list of branches under this ruleset. Use exclusion patterns to exclude branches.": "분기 대상 설정은 이 규칙 집합이 보호할 분기를 결정해요. 포함 패턴을 사용해 분기 목록을 확장하고, 제외 패턴을 사용해 분기를 제외해 보세요.",
+                    "Tag targeting determines which tags will be protected by this ruleset. Use inclusion patterns to expand the list of tags under this ruleset. Use exclusion patterns to exclude tags.": "꼬리표 대상 설정은 이 규칙 집합이 보호할 꼬리표를 결정해요. 포함 패턴을 사용해 꼬리표 목록을 확장하고, 제외 패턴을 사용해 꼬리표를 제외해 보세요.", // 꼬리표
 
-                    "Branch targeting criteria": "目标分支规则",
-                    "Tag targeting criteria": "目标标签规则", // 标签
-                        "Add target": "添加目标",
-                            "Include default branch": "包含默认分支",
-                            "Include all branches": "包含所有分支",
-                            "Include all tags": "包含所有标签", // 标签
-                            "Target by inclusion or exclusion pattern": "通过包含或排除规则确定目标",
-                            "Include by pattern": "包含规则",
-                            "Exclude by pattern": "排除规则",
+                    "Branch targeting criteria": "분기 대상 규칙",
+                    "Tag targeting criteria": "꼬리표 대상 규칙", // 꼬리표
+                        "Add target": "대상 추가하기",
+                            "Include default branch": "기본 분기 포함하기",
+                            "Include all branches": "모든 분기 포함하기",
+                            "Include all tags": "모든 꼬리표 포함하기", // 꼬리표
+                            "Target by inclusion or exclusion pattern": "포함 또는 제외 패턴으로 대상 지정하기",
+                            "Include by pattern": "포함 패턴",
+                            "Exclude by pattern": "제외 패턴",
 
-                        "Branch targeting has not been configured": "尚未配置分支目标",
-                        "Tag targeting has not been configured": "尚未配置标签目标", // 标签
+                        "Branch targeting has not been configured": "분기 대상 설정이 구성되지 않았어요.",
+                        "Tag targeting has not been configured": "꼬리표 대상 설정이 구성되지 않았어요.", // 꼬리표
 
-                        "Default": "默认",
-                        "All branches": "所有分支",
-                        "All tags": "所有标签", // 标签
+                        "Default": "기본값",
+                        "All branches": "모든 분기",
+                        "All tags": "모든 꼬리표", // 꼬리표
 
-                        "Applies to": "适用于",
-                        "target:": "个目标：",
-                        "targets:": "个目标：",
-                        "Targets have changed and branch match list will update on save.": "目标已更改，分支匹配列表将在保存时更新。",
-                            "Targets have changed and": "目标已更改，",
+                        "Applies to": "적용 대상",
+                        "target:": "대상:",
+                        "targets:": "대상:",
+                        "Targets have changed and branch match list will update on save.": "대상이 변경되어 저장 시 분기 매칭 목록이 업데이트돼요.",
+                            "Targets have changed and": "대상이 변경되어,",
                             "branch": "분기",
                             "branches": "분기",
-                            "match list will update on save.": "匹配列表将在保存时更新。",
-                        "targets including": "个目标，包括",
-                        "Targets have changed and repository match list will update on save.": "目标已更改，仓库匹配列表将在保存时更新。", // 组织设置
+                            "match list will update on save.": "매칭 목록이 저장 시 업데이트돼요.",
+                        "targets including": "대상 포함:",
+                        "Targets have changed and repository match list will update on save.": "대상이 변경되어 저장 시 저장소 매칭 목록이 업데이트돼요.", // 조직 설정
 
-                        // 包含规则 对话框
-                            "Branches that match the matching pattern will be targeted by this ruleset.": "与匹配规则相匹配的分支将成为该规则集的目标。",
-                            "Tags that match the matching pattern will be targeted by this ruleset.": "与匹配规则相匹配的标签将成为该规则集的目标。", // 标签
-                            "naming pattern": "命名规则",
-                                "Pattern cannot be empty": "规则不能为空",
-                            "Example patterns: \"": "示例：\"",
-                            "Learn more about fnmatch": "了解更多关于 fnmatch 的信息",
-                            "Add Inclusion pattern": "添加包含规则",
+                        // 포함 규칙 대화 상자
+                            "Branches that match the matching pattern will be targeted by this ruleset.": "일치하는 패턴의 분기는 이 규칙 집합의 대상이 돼요.",
+                            "Tags that match the matching pattern will be targeted by this ruleset.": "일치하는 패턴의 꼬리표는 이 규칙 집합의 대상이 돼요.", // 꼬리표
+                            "naming pattern": "이름 규칙",
+                                "Pattern cannot be empty": "규칙은 비워둘 수 없어요.",
+                            "Example patterns: \"": "예시: \"",
+                            "Learn more about fnmatch": "fnmatch에 대해 자세히 알아보세요.",
+                            "Add Inclusion pattern": "포함 패턴 추가하기",
 
-                        // 排除规则 对话框
-                            "Branches that do not match the matching pattern will be targeted by this ruleset.": "与匹配规则不匹配的分支将成为该规则集的目标。",
-                            "Tags that do not match the matching pattern will be targeted by this ruleset.": "与匹配规则不匹配的标签将成为该规则集的目标。", // 标签
-                            "Add Exclusion pattern": "添加排除规则",
+                        // 제외 규칙 대화 상자
+                            "Branches that do not match the matching pattern will be targeted by this ruleset.": "일치하지 않는 분기는 이 규칙 집합의 대상이 돼요.",
+                            "Tags that do not match the matching pattern will be targeted by this ruleset.": "일치하지 않는 꼬리표는 이 규칙 집합의 대상이 돼요.", // 꼬리표
+                            "Add Exclusion pattern": "제외 패턴 추가하기",
 
-            // 规则
-                "Which rules should be applied to the targets that you have selected?": "哪些规则应适用于您选择的目标？",
-                "Which rules should be applied?": "应适用哪些规则？",
+            // 규칙
+                "Which rules should be applied to the targets that you have selected?": "선택한 대상에 어떤 규칙을 적용할까요?",
+                "Which rules should be applied?": "어떤 규칙을 적용할까요?",
 
-                "protections": "保护",
-                    "Restrict creations": "限制创建",
-                        "Only allow users with bypass permission to create matching refs.": "只允许具有绕过权限的用户创建匹配的引用。",
-                    "Restrict updates": "限制更新",
-                        "Only allow users with bypass permission to update matching refs.": "只允许具有绕过权限的用户更新匹配的引用。",
-                            "Allow fork syncing": "允许复刻仓库同步",
-                                 "Branch can pull changes from its upstream repository": "分支可从上游仓库中拉取更改",
-                    "Restrict deletions": "限制删除",
-                        "Only allow users with bypass permissions to delete matching refs.": "只允许具有绕过权限的用户删除匹配的引用。",
-                    "Require linear history": "需要线性历史",
-                        "Prevent merge commits from being pushed to matching refs.": "防止合并后的提交被推送到匹配的引用。",
-                    "Require merge queue": "要求合并队列", // 组织仓库
-                        "Merges must be performed via a merge queue.": "合并必须通过合并队列进行。",
-                        "Merge method": "合并模式",
-                            "Method to use when merging changes from queued pull requests.": "合并来自列队拉取请求的更改时使用的模式。",
-
-                                "Merge commit": "合并提交",
-                                "Squash and merge": "压缩合并",
-                                "Rebase and merge": "变基合并",
-                        "Build concurrency": "构建并发",
-                            "Limit the number of queued pull requests requesting checks and workflow runs at the same time.": "限制同时请求检查和工作流运行的队列拉取请求数量。",
-                        "Minimum group size": "最小分组数",
-                            "The minimum number of PRs that will be merged together in a group.": "将合并为一组的拉取请求的最小数量。",
-                        "Maximum group size": "最大分组数",
-                            "The maximum number of PRs that will be merged together in a group.": "将合并为一组的拉取请求的最大数量。",
-                        "Wait time to meet minimum group size (minutes)": "达到最小分组数的等待时间（分钟）",
-                            "The time merge queue should wait after the first PR is added to the queue for the minimum group size to be met. After this time has elapsed, the minimum group size will be ignored and a smaller group will be merged.": "第一个拉取请求添加到队列后，合并队列为达到最小分组规模所需的等待时间。超过这一时间后，将忽略最小分组大小，合并一个较小的分组",
-                        "Require all queue entries to pass required checks": "要求所有队列条目通过必要的检查",
-                            "When this setting is disabled, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge.": "禁用此设置后，只有位于合并组头部的提交（即包含组内所有拉取请求 变更的提交）必须通过合并所需的检查。",
-                        "Status check timeout (minutes)": "状态检查超时（分钟）",
-                            "Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed": "报告结论所需的状态检查的最长时间。超过此时间后，未报告结论的检查将被视为失败",
-                    "Require deployments to succeed": "要求部署成功",
-                        "Choose which environments must be successfully deployed to before refs can be pushed into a ref that matches this rule.": "选择必须成功部署到哪些环境，后才能将引用推送到与此规则匹配的引用中。",
-                        "Hide additional settings": "隐藏附加设置",
-                        "Show additional settings": "显示附加设置",
-                            "Search for deployment environments": "搜索部署环境",
-                            "No deployment environments found": "未找到部署环境",
-                            "Learn more about deployment environments": "了解更多关于部署环境的信息",
-                    "Require signed commits": "要求带签名的提交",
-                        "Commits pushed to matching refs must have verified signatures.": "推送到匹配引用的提交必须带有经过验证的签名。",
-                    "Require a pull request before merging": "要求在合并前提交拉取请求",
-                        "Require all commits be made to a non-target branch and submitted via a pull request before they can be merged.": "要求所有的提交都必须在非目标分支上进行，并在合并前通过拉取请求提交。",
-                            "Required approvals": "要求批准审查",
-                                "The number of approving reviews that are required before a pull request can be merged.": "拉取请求合并前所需的批准审查次数。",
-                            "Dismiss stale pull request approvals when new commits are pushed": "当新的提交被推送时，撤销陈旧的拉取请求批准审查",
-                                "New, reviewable commits pushed will dismiss previous pull request review approvals.": "推送新的可审查提交将撤销之前的拉取请求的批准审查。",
-                            "Require review from Code Owners": "要求代码所有者进行审查",
-                                "Require an approving review in pull requests that modify files that have a designated code owner.": "要求对具有指定代码所有者的文件修改的拉取请求中进行批准审查。",
-                            "Require approval of the most recent reviewable push": "要求批准最新的可审查推送",
-                                "Whether the most recent reviewable push must be approved by someone other than the person who pushed it.": "最新的可审核推送是否必须得到推送者以外的其他人批准。",
-                            "Require conversation resolution before merging": "要求在合并前解决对话",
-                                "All conversations on code must be resolved before a pull request can be merged.": "在合并拉取请求之前，必须解决有关代码的所有对话。",
-                    "Require status checks to pass": "要求通过状态检查",
-                        "Choose which status checks must pass before the ref is updated. When enabled, commits must first be pushed to another ref where the checks pass.": "更新引用之前必须选择通过哪些状态检查。启用后，提交必须首先推送到检查通过的另一个引用。",
-                            "Require branches to be up to date before merging": "要求分支在合并前必须是最新的",
-                                "Whether pull requests targeting a matching branch must be tested with the latest code. This setting will not take effect unless at least one status check is enabled.": "针对匹配分支的拉取请求，使用最新代码进行测试。至少启用一项状态检查，否则此设置不会生效。",
-                                "Do not require status checks on creation": "不要求在创建时进行状态检查",
-                                    "Allow repositories and branches to be created if a check would otherwise prohibit it.": "允许创建仓库和分支，否则检查将禁止创建。",
-                                // "Enter the name of a status check": "输入状态检查的名称",
-                                    // [/Add '(.*)'/, "添加 $1"],
-                                "No required checks": "无需进行必要的检查",
-                                    "Add checks": "添加检查",
-                                        "Add Checks": "添加检查",
-                                            "Search for checks": "搜索检查",
-                                            "No results": "无结果",
-                                "No checks have been added": "未添加任何检查",
-                                "Learn more about status checks": "了解更多关于状态检查的信息",
-                    "Block force pushes": "阻止强制推送",
-                        "Prevent users with push access from force pushing to refs.": "防止具有推送权限的用户强制推送到引用。",
-                    "Require code scanning results": "需要代码扫描结果",
-                        "Choose which tools must provide code scanning results before the reference is updated. When configured, code scanning must be enabled and have results for both the commit and the reference being updated.": "选择哪些工具必须在更新引用之前提供代码扫描结果。配置后，代码扫描必须启用，并为提交和正在更新的引用提供结果。",
-                        "Required tools and alert thresholds": "所需工具和警报阈值",
-                            "Add tool": "添加工具",
-                                "Tool name": "工具名称",
-                                "Enter the name of a code scanning tool": "输入代码扫描工具名称",
+                "protections": "보호",
+                    "Restrict creations": "생성 제한하기",
+                        "Only allow users with bypass permission to create matching refs.": "우회 권한이 있는 사용자만 일치하는 참조를 생성할 수 있도록 제한해 보세요.",
+                    "Restrict updates": "업데이트 제한하기",
+                        "Only allow users with bypass permission to update matching refs.": "우회 권한이 있는 사용자만 일치하는 참조를 업데이트할 수 있도록 제한해 보세요.",
+                            "Allow fork syncing": "포크 동기화 허용하기",
+                                 "Branch can pull changes from its upstream repository": "분기가 상위 저장소로부터 변경 사항을 가져올 수 있어요.",
+                    "Restrict deletions": "삭제 제한하기",
+                        "Only allow users with bypass permissions to delete matching refs.": "우회 권한이 있는 사용자만 일치하는 참조를 삭제할 수 있도록 제한해 보세요.",
+                    "Require linear history": "선형 히스토리 필요하기",
+                        "Prevent merge commits from being pushed to matching refs.": "일치하는 참조에 병합 커밋이 푸시되는 것을 방지해 보세요.",
+                    "Require merge queue": "병합 큐 필요하기", // 조직 저장소
+                        "Merges must be performed via a merge queue.": "병합은 반드시 병합 큐를 통해 수행되어야 해요.",
+                        "Merge method": "병합 방식",
+                            "Method to use when merging changes from queued pull requests.": "대기 중인 끌어오기 요청의 변경 사항을 병합할 때 사용할 방식을 선택해 보세요.",
+                                "Merge commit": "병합 커밋",
+                                "Squash and merge": "스쿼시 후 병합",
+                                "Rebase and merge": "리베이스 후 병합",
+                        "Build concurrency": "빌드 동시성",
+                            "Limit the number of queued pull requests requesting checks and workflow runs at the same time.": "동시에 요청되는 검사와 워크플로 실행을 위한 대기 중인 끌어오기 요청 수를 제한해 보세요.",
+                        "Minimum group size": "최소 그룹 크기",
+                            "The minimum number of PRs that will be merged together in a group.": "한 그룹으로 병합될 최소 끌어오기 요청 수를 설정해 보세요.",
+                        "Maximum group size": "최대 그룹 크기",
+                            "The maximum number of PRs that will be merged together in a group.": "한 그룹으로 병합될 최대 끌어오기 요청 수를 설정해 보세요.",
+                        "Wait time to meet minimum group size (minutes)": "최소 그룹 크기 충족을 위한 대기 시간 (분)",
+                            "The time merge queue should wait after the first PR is added to the queue for the minimum group size to be met. After this time has elapsed, the minimum group size will be ignored and a smaller group will be merged.": "첫 번째 끌어오기 요청이 대기열에 추가된 후 최소 그룹 크기 충족을 위해 대기하는 시간이에요. 이 시간이 지나면 최소 그룹 크기는 무시되고 작은 그룹이 병합돼요.",
+                        "Require all queue entries to pass required checks": "모든 대기 항목이 필수 검사를 통과하도록 요구하기",
+                            "When this setting is disabled, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge.": "이 설정이 비활성화되면, 병합 그룹의 첫 번째 커밋(그룹 내 모든 끌어오기 요청의 변경 사항이 포함된 커밋)만이 병합을 위해 필수 검사를 통과하면 돼요.",
+                        "Status check timeout (minutes)": "상태 검사 타임아웃 (분)",
+                            "Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed": "필수 상태 검사가 결론을 보고하기 위한 최대 시간이에요. 이 시간이 지나면 결론을 보고하지 않은 검사는 실패한 것으로 간주돼요.",
+                    "Require deployments to succeed": "배포 성공 요구하기",
+                        "Choose which environments must be successfully deployed to before refs can be pushed into a ref that matches this rule.": "이 규칙과 일치하는 참조에 푸시되기 전에, 어떤 환경에 성공적으로 배포되어야 하는지 선택해 보세요.",
+                        "Hide additional settings": "추가 설정 숨기기",
+                        "Show additional settings": "추가 설정 보이기",
+                            "Search for deployment environments": "배포 환경 검색하기",
+                            "No deployment environments found": "배포 환경을 찾을 수 없어요.",
+                            "Learn more about deployment environments": "배포 환경에 대해 자세히 알아보세요.",
+                    "Require signed commits": "서명된 커밋 요구하기",
+                        "Commits pushed to matching refs must have verified signatures.": "일치하는 참조에 푸시되는 커밋은 검증된 서명이 있어야 해요.",
+                    "Require a pull request before merging": "병합 전에 끌어오기 요청 요구하기",
+                        "Require all commits be made to a non-target branch and submitted via a pull request before they can be merged.": "모든 커밋은 대상이 아닌 분기에서 이루어지고, 끌어오기 요청을 통해 제출되어야 병합할 수 있어요.",
+                            "Required approvals": "필수 승인 수",
+                                "The number of approving reviews that are required before a pull request can be merged.": "끌어오기 요청 병합 전에 필요한 승인 리뷰 수를 설정해 보세요.",
+                            "Dismiss stale pull request approvals when new commits are pushed": "새로운 커밋이 푸시되면 오래된 끌어오기 요청 승인을 취소하기",
+                                "New, reviewable commits pushed will dismiss previous pull request review approvals.": "새로운 검토 가능한 커밋이 푸시되면 이전의 끌어오기 요청 승인은 취소돼요.",
+                            "Require review from Code Owners": "코드 소유자 리뷰 요구하기",
+                                "Require an approving review in pull requests that modify files that have a designated code owner.": "지정된 코드 소유자가 있는 파일을 수정하는 끌어오기 요청에는 승인 리뷰가 필요해요.",
+                            "Require approval of the most recent reviewable push": "가장 최근의 검토 가능한 푸시에 대한 승인 요구하기",
+                                "Whether the most recent reviewable push must be approved by someone other than the person who pushed it.": "가장 최근의 검토 가능한 푸시가 푸시한 사람 이외의 다른 사람에 의해 승인되어야 하는지 여부를 설정해 보세요.",
+                            "Require conversation resolution before merging": "병합 전에 대화 해결 요구하기",
+                                "All conversations on code must be resolved before a pull request can be merged.": "끌어오기 요청 병합 전에 코드 관련 모든 대화가 해결되어야 해요.",
+                    "Require status checks to pass": "상태 검사 통과 요구하기",
+                        "Choose which status checks must pass before the ref is updated. When enabled, commits must first be pushed to another ref where the checks pass.": "참조 업데이트 전에 통과해야 할 상태 검사를 선택해 보세요. 활성화되면 커밋은 먼저 다른 참조에 푸시되어 검사를 통과해야 해요.",
+                            "Require branches to be up to date before merging": "병합 전에 분기가 최신 상태여야 해요.",
+                                "Whether pull requests targeting a matching branch must be tested with the latest code. This setting will not take effect unless at least one status check is enabled.": "일치하는 분기를 대상으로 하는 끌어오기 요청이 최신 코드로 테스트되어야 하는지 여부를 설정해 보세요. 최소 한 개의 상태 검사가 활성화되어야 이 설정이 적용돼요.",
+                                "Do not require status checks on creation": "생성 시 상태 검사 요구 안 함",
+                                    "Allow repositories and branches to be created if a check would otherwise prohibit it.": "검사로 인해 생성이 제한되더라도 저장소와 분기를 생성할 수 있도록 허용해 보세요.",
+                                "No required checks": "필수 검사 없음",
+                                    "Add checks": "검사 추가하기",
+                                        "Add Checks": "검사 추가하기",
+                                            "Search for checks": "검사 검색하기",
+                                            "No results": "결과 없음",
+                                "No checks have been added": "추가된 검사가 없어요.",
+                                "Learn more about status checks": "상태 검사에 대해 자세히 알아보세요.",
+                    "Block force pushes": "강제 푸시 차단하기",
+                        "Prevent users with push access from force pushing to refs.": "푸시 권한이 있는 사용자가 강제 푸시하는 것을 방지해 보세요.",
+                    "Require code scanning results": "코드 스캐닝 결과 요구하기",
+                        "Choose which tools must provide code scanning results before the reference is updated. When configured, code scanning must be enabled and have results for both the commit and the reference being updated.": "참조 업데이트 전에 코드 스캐닝 결과를 제공할 도구를 선택해 보세요. 설정 시, 코드 스캐닝이 활성화되어 커밋과 업데이트되는 참조 모두에 결과가 있어야 해요.",
+                        "Required tools and alert thresholds": "필수 도구 및 경고 임계값",
+                            "Add tool": "도구 추가하기",
+                                "Tool name": "도구 이름",
+                                "Enter the name of a code scanning tool": "코드 스캐닝 도구의 이름을 입력해 보세요.",
                         "Security alerts": "보안 알림",
-                            "None": "无",
-                            "Critical": "关键",
-                            "High or higher": "高风险及以上",
-                            "Medium or higher": "中风险及以上",
-                        "Alerts": "警报",
-                            "Errors": "仅错误",
-                            "Errors and Warnings": "错误和警告",
-                        "Tools that must provide code scanning results for this rule to pass.": "必须提供代码扫描结果才能通过此规则的工具。",
-                        "Learn more about enabling code scanning.": "了解更多关于启用代码扫描的信息。",
+                            "None": "없음",
+                            "Critical": "치명적",
+                            "High or higher": "높은 수준 이상",
+                            "Medium or higher": "중간 수준 이상",
+                        "Alerts": "경고",
+                            "Errors": "오류만",
+                            "Errors and Warnings": "오류 및 경고",
+                        "Tools that must provide code scanning results for this rule to pass.": "이 규칙을 통과하기 위해 코드 스캐닝 결과를 제공해야 하는 도구들입니다.",
+                        "Learn more about enabling code scanning.": "코드 스캐닝 활성화에 대해 자세히 알아보세요.",
 
-                    // 组织设置
-                    "Require workflows to pass before merging": "要求合并前，工作流通过状态检查",
-                        "Require all changes made to a targeted branch to pass the specified workflows before they can be merged.": "要求目标分支上的所有更改在合并前通过指定的工作流",
-                        "Workflow configurations": "工作流程配置",
-                            "No workflow configurations found": "尚无工作流配置",
+                    // 조직 설정
+                    "Require workflows to pass before merging": "병합 전에 워크플로 통과 요구하기",
+                        "Require all changes made to a targeted branch to pass the specified workflows before they can be merged.": "대상 분기의 모든 변경 사항이 병합되기 전에 지정된 워크플로를 통과해야 해요.",
+                        "Workflow configurations": "워크플로 구성",
+                            "No workflow configurations found": "워크플로 구성이 없어요.",
+                        "Add workflow": "워크플로 추가하기",
+                            "Add required workflow": "필수 워크플로 추가하기",
+                                // 저장소
+                                    "Select a repository": "저장소 선택하기",
+                                "Select branch or tag": "분기 또는 꼬리표 선택하기",
+                                    "Branch or tag": "분기 또는 꼬리표",
+                                    "Pin to commit": "커밋에 고정하기",
+                                        "Always reference the current commit": "항상 현재 커밋을 참조해 보세요.",
+                                "Enter a SHA": "SHA 입력하기",
+                                    "Enter a valid SHA": "유효한 SHA를 입력해 주세요.",
+                                    "Enter the SHA for the commit you want to reference": "참조할 커밋의 SHA를 입력해 보세요.",
+                                    "Invalid SHA": "유효하지 않은 SHA",
+                                "Pick a workflow file": "워크플로 파일 선택하기",
+                                    "Please select a workflow path": "워크플로 경로를 선택해 주세요.",
 
-                        "Add workflow": "添加工作流",
-                            "Add required workflow": "添加所需的工作流",
-                                // 仓库
-                                    "Select a repository": "选择仓库",
-                                "Select branch or tag": "选择分支或标签",
-                                    "Branch or tag": "分支或标签",
-                                    "Pin to commit": "固定到提交",
-                                        "Always reference the current commit": "始终引用当前提交",
-                                "Enter a SHA": "输入 SHA",
-                                    "Enter a valid SHA": "输入有效的 SHA",
-                                    "Enter the SHA for the commit you want to reference": "输入要引用的提交的 SHA",
-                                    "Invalid SHA": "无效的 SHA",
-                                "Pick a workflow file": "选择工作流文件",
-                                    "Please select a workflow path": "请选择工作流路径",
+            "Restrictions": "제한", // 조직 설정
+                "Restrict commit metadata": "커밋 메타데이터 제한하기",
+                    "Restrict commit author email addresses, committer email addresses, commit message content, and other metadata": "커밋 작성자 이메일, 커밋터 이메일, 커밋 메시지 내용 및 기타 메타데이터를 제한해 보세요.",
 
-            "Restrictions": "限制", // 组织设置
-                "Restrict commit metadata": "限制提交元数据",
-                    "Restrict commit author email addresses, committer email addresses, commit message content, and other metadata": "限制提交作者电子邮箱地址、提交者电子邮箱地址、提交消息内容和其他元数据",
+                    "Metadata restrictions": "메타데이터 제한",
+                        "No metadata restrictions have been added": "아직 메타데이터 제한이 추가되지 않았어요.",
+                        "Learn more about": "자세히 알아보기:",
+                        "metadata": "메타데이터",
+                        "restrictions": "제한",
+                        "Add restriction": "제한 추가하기",
+                            // 메타데이터 제한 추가 대화 상자
+                                "Add a metadata restriction": "메타데이터 제한을 추가해 보세요.",
+                                    "Applies To": "적용 대상",
+                                        "Commit message": "커밋 메시지",
+                                        "Author email": "작성자 이메일",
+                                        "Committer email": "커밋터 이메일",
+                                        "Branch name": "분기 이름",
+                                    "Requirement": "요구사항",
+                                        "Must": "반드시",
+                                        "start with a matching pattern": "일치하는 패턴으로 시작해야 해요",
+                                        "end with a matching pattern": "일치하는 패턴으로 끝나야 해요",
+                                        "contain a matching pattern": "일치하는 패턴을 포함해야 해요",
+                                        "match a given regex pattern": "지정된 정규 표현식과 일치해야 해요",
+                                        "Must not": "반드시 그렇지 않아야 해요",
+                                    "Matching pattern": "일치하는 패턴",
+                                    "Description": "설명",
+                                    "How this rule will appear to your": "이 규칙이 사용자님의",
+                                    "organization": "조직",
+                                    "'s users throughout": "의 사용자들에게 표시돼요",
+                "Restrict branch names": "분기 이름 제한하기",
 
-                    "Metadata restrictions": "元数据限制",
-                        "No metadata restrictions have been added": "尚无元素限制",
-                        "Learn more about": "了解更多关于",
-                        "metadata": "元素",
-                        "restrictions": "限制",
+                "Exempt roles, teams, or apps from this ruleset by adding them to the bypass list.": "역할, 팀 또는 앱을 우회 목록에 추가하여 이 규칙 집합에서 제외해보세요.",
+                
+            "Revert": "되돌리기",
+            "Reverting...": "되돌리는 중...",
+            "changes": "변경 사항",
+            "change": "변경 사항",
 
-                        "Add restriction": "添加限制",
-                            // 添加元数据限制 对话框
-                                "Add a metadata restriction": "添加元数据限制",
-                                    "Applies To": "适用于",
-                                        "Commit message": "提交信息",
-                                        "Author email": "作者电子邮箱地址",
-                                        "Committer email": "提交者电子邮箱地址",
-                                        "Branch name": "分支名称",
-                                    "Requirement": "要求",
-                                        "Must": "必须",
-                                        "start with a matching pattern": "以匹配规则开头",
-                                        "end with a matching pattern": "以匹配规则结束",
-                                        "contain a matching pattern": "包含匹配规则",
-                                        "match a given regex pattern": "匹配给定的正则表达式规则",
-                                        "Must not": "不得",
-                                    "Matching pattern": "匹配规则",
-                                    "Description": "描述",
-                                        // [/Commit message must start with a matching pattern/, "提交信息必须以匹配规则开头"],
-                                        // [/Commit message must end with a matching pattern/, "提交信息必须以匹配规则结束"],
-                                        // [/Commit message must contain with a matching pattern/, "提交信息必须包含匹配规则"],
-                                        // [/Commit message must match a given regex pattern/, "提交信息必须匹配给定的正则表达式规则"],
-                                        // [/Commit message must not start with a matching pattern/, "提交信息不得以匹配规则开头"],
-                                        // [/Commit message must not end with a matching pattern/, "提交信息不得以匹配规则结束"],
-                                        // [/Commit message must not contain a matching pattern/, "提交信息不得包含匹配规则"],
-                                        // [/Commit message must not match a given regex pattern/, "提交信息不得匹配给定的正则表达式规则"],
-
-                                        // [/Author email must start with a matching pattern/, "作者电子邮箱地址必须以匹配规则开头"],
-                                        // [/Author email must end with a matching pattern/, "作者电子邮箱地址必须以匹配规则结束"],
-                                        // [/Author email must contain a matching pattern/, "作者电子邮箱地址必须包含匹配规则"],
-                                        // [/Author email must match a given regex pattern/, "作者电子邮箱地址必须匹配给定的正则表达式规则"],
-                                        // [/Author email must not start with a matching pattern/, "作者电子邮箱地址不得以匹配规则开头"],
-                                        // [/Author email must not end with a matching pattern/, "作者电子邮箱地址不得以匹配规则结束"],
-                                        // [/Author email must not contain a matching pattern/, "作者电子邮箱地址不得包含匹配规则"],
-                                        // [/Author email must not match a given regex pattern/, "作者电子邮箱地址不得匹配给定的正则表达式规则"],
-
-                                        // [/Committer email must start with a matching pattern/, "提交者电子邮箱地址必须以匹配规则开头"],
-                                        // [/Committer email must end with a matching pattern/, "提交者电子邮箱地址必须以匹配规则结束"],
-                                        // [/Committer email must contain a matching pattern/, "提交者电子邮箱地址必须包含匹配规则"],
-                                        // [/Committer email must match a given regex pattern/, "提交者电子邮箱地址必须匹配给定的正则表达式规则"],
-                                        // [/Committer email must not start with a matching pattern/, "提交者电子邮箱地址不得以匹配规则开头"],
-                                        // [/Committer email must not end with a matching pattern/, "提交者电子邮箱地址不得以匹配规则结束"],
-                                        // [/Committer email must not contain a matching pattern/, "提交者电子邮箱地址不得包含匹配规则"],
-                                        // [/Committer email must not match a given regex pattern/, "提交者电子邮箱地址不得匹配给定的正则表达式规则"],
-
-                                        // [/Branch name must start with a matching pattern/, "分支名称必须以匹配规则开头"],
-                                        // [/Branch name must end with a matching pattern/, "分支名称必须以匹配规则结束"],
-                                        // [/Branch name must contain a matching pattern/, "分支名称必须包含匹配规则"],
-                                        // [/Branch name must match a given regex pattern/, "分支名称必须匹配给定的正则表达式规则"],
-                                        // [/Branch name must not start with a matching pattern/, "分支名称不得以匹配规则开头"],
-                                        // [/Branch name must not end with a matching pattern/, "分支名称不得以匹配规则结束"],
-                                        // [/Branch name must not contain a matching pattern/, "分支名称不得包含匹配规则"],
-                                        // [/Branch name must not match a given regex pattern/, "分支名称不得匹配给定的正则表达式规则"],
-
-                                    "How this rule will appear to your": "这个规则将如何在您的",
-                                    "organization": "组织",
-                                    "'s users throughout": "内的用户中显示",
-                "Restrict branch names": "限制分支名",
-
-            "Revert": "撤销",
-            "Reverting...": "撤销...",
-            "changes": "更改",
-            "change": "更改",
-
-            // 右下角提示
-                "Unauthorized": "未经授权",
-                "Ruleset created": "规则集已创建",
-                "Changes reverted": "更改已恢复",
-                "No changes have been made": "未作任何更改",
-                "Invalid rules: 'Required status checks'": "无效规则：“必需的状态检查”",
-
-
+            // 우측 하단 알림
+                "Unauthorized": "권한 없음",
+                "Ruleset created": "규칙 집합이 생성되었어요",
+                "Changes reverted": "변경 사항이 되돌려졌어요",
+                "No changes have been made": "변경된 사항이 없어요",
+                "Invalid rules: 'Required status checks'": "잘못된 규칙: '필수 상태 검사'",
     },
-    "regexp": [ // 正则翻译
-        [/Applies to (\d+) target/, "适用于 $1 个目标"],
+    "regexp": [ // 정규식 번역
+        [/Applies to (\d+) target/, "적용 대상 $1개"],
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/(\d+) branch rules?/, "$1 条分支规则"],
-        [/(\d+) rules?/, "$1 条规则"],
-        [/(\d+) branch(?:es|)?/, "$1 个分支"],
-        [/(\d+) tags?/, " $1 个标签"],
-        [/Add '(.*)'/, "添加 $1"],
-        [/Commit message must start with a matching pattern/, "提交信息必须以匹配规则开头"],
-        [/Commit message must end with a matching pattern/, "提交信息必须以匹配规则结束"],
-        [/Commit message must contain with a matching pattern/, "提交信息必须包含匹配规则"],
-        [/Commit message must match a given regex pattern/, "提交信息必须匹配给定的正则表达式规则"],
-        [/Commit message must not start with a matching pattern/, "提交信息不得以匹配规则开头"],
-        [/Commit message must not end with a matching pattern/, "提交信息不得以匹配规则结束"],
-        [/Commit message must not contain a matching pattern/, "提交信息不得包含匹配规则"],
-        [/Commit message must not match a given regex pattern/, "提交信息不得匹配给定的正则表达式规则"],
-        [/Author email must start with a matching pattern/, "作者电子邮箱地址必须以匹配规则开头"],
-        [/Author email must end with a matching pattern/, "作者电子邮箱地址必须以匹配规则结束"],
-        [/Author email must contain a matching pattern/, "作者电子邮箱地址必须包含匹配规则"],
-        [/Author email must match a given regex pattern/, "作者电子邮箱地址必须匹配给定的正则表达式规则"],
-        [/Author email must not start with a matching pattern/, "作者电子邮箱地址不得以匹配规则开头"],
-        [/Author email must not end with a matching pattern/, "作者电子邮箱地址不得以匹配规则结束"],
-        [/Author email must not contain a matching pattern/, "作者电子邮箱地址不得包含匹配规则"],
-        [/Author email must not match a given regex pattern/, "作者电子邮箱地址不得匹配给定的正则表达式规则"],
-        [/Committer email must start with a matching pattern/, "提交者电子邮箱地址必须以匹配规则开头"],
-        [/Committer email must end with a matching pattern/, "提交者电子邮箱地址必须以匹配规则结束"],
-        [/Committer email must contain a matching pattern/, "提交者电子邮箱地址必须包含匹配规则"],
-        [/Committer email must match a given regex pattern/, "提交者电子邮箱地址必须匹配给定的正则表达式规则"],
-        [/Committer email must not start with a matching pattern/, "提交者电子邮箱地址不得以匹配规则开头"],
-        [/Committer email must not end with a matching pattern/, "提交者电子邮箱地址不得以匹配规则结束"],
-        [/Committer email must not contain a matching pattern/, "提交者电子邮箱地址不得包含匹配规则"],
-        [/Committer email must not match a given regex pattern/, "提交者电子邮箱地址不得匹配给定的正则表达式规则"],
-        [/Branch name must start with a matching pattern/, "分支名称必须以匹配规则开头"],
-        [/Branch name must end with a matching pattern/, "分支名称必须以匹配规则结束"],
-        [/Branch name must contain a matching pattern/, "分支名称必须包含匹配规则"],
-        [/Branch name must match a given regex pattern/, "分支名称必须匹配给定的正则表达式规则"],
-        [/Branch name must not start with a matching pattern/, "分支名称不得以匹配规则开头"],
-        [/Branch name must not end with a matching pattern/, "分支名称不得以匹配规则结束"],
-        [/Branch name must not contain a matching pattern/, "分支名称不得包含匹配规则"],
-        [/Branch name must not match a given regex pattern/, "分支名称不得匹配给定的正则表达式规则"],
+        [/(\d+) branch rules?/, "$1개의 분기 규칙"],
+        [/(\d+) rules?/, "$1개의 규칙"],
+        [/(\d+) branch(?:es|)?/, "$1개의 분기"],
+        [/(\d+) tags?/, "$1개의 꼬리표"],
+        [/Add '(.*)'/, "추가 $1"],
+        [/Commit message must start with a matching pattern/, "커밋 메시지는 일치하는 패턴으로 시작해야 해요"],
+        [/Commit message must end with a matching pattern/, "커밋 메시지는 일치하는 패턴으로 끝나야 해요"],
+        [/Commit message must contain with a matching pattern/, "커밋 메시지는 일치하는 패턴을 포함해야 해요"],
+        [/Commit message must match a given regex pattern/, "커밋 메시지는 지정된 정규 표현식과 일치해야 해요"],
+        [/Commit message must not start with a matching pattern/, "커밋 메시지는 일치하는 패턴으로 시작하면 안 돼요"],
+        [/Commit message must not end with a matching pattern/, "커밋 메시지는 일치하는 패턴으로 끝나면 안 돼요"],
+        [/Commit message must not contain a matching pattern/, "커밋 메시지는 일치하는 패턴을 포함하면 안 돼요"],
+        [/Commit message must not match a given regex pattern/, "커밋 메시지는 지정된 정규 표현식과 일치하면 안 돼요"],
+        [/Author email must start with a matching pattern/, "작성자 이메일은 일치하는 패턴으로 시작해야 해요"],
+        [/Author email must end with a matching pattern/, "작성자 이메일은 일치하는 패턴으로 끝나야 해요"],
+        [/Author email must contain a matching pattern/, "작성자 이메일은 일치하는 패턴을 포함해야 해요"],
+        [/Author email must match a given regex pattern/, "작성자 이메일은 지정된 정규 표현식과 일치해야 해요"],
+        [/Author email must not start with a matching pattern/, "작성자 이메일은 일치하는 패턴으로 시작하면 안 돼요"],
+        [/Author email must not end with a matching pattern/, "작성자 이메일은 일치하는 패턴으로 끝나면 안 돼요"],
+        [/Author email must not contain a matching pattern/, "작성자 이메일은 일치하는 패턴을 포함하면 안 돼요"],
+        [/Author email must not match a given regex pattern/, "작성자 이메일은 지정된 정규 표현식과 일치하면 안 돼요"],
+        [/Committer email must start with a matching pattern/, "커밋터 이메일은 일치하는 패턴으로 시작해야 해요"],
+        [/Committer email must end with a matching pattern/, "커밋터 이메일은 일치하는 패턴으로 끝나야 해요"],
+        [/Committer email must contain a matching pattern/, "커밋터 이메일은 일치하는 패턴을 포함해야 해요"],
+        [/Committer email must match a given regex pattern/, "커밋터 이메일은 지정된 정규 표현식과 일치해야 해요"],
+        [/Committer email must not start with a matching pattern/, "커밋터 이메일은 일치하는 패턴으로 시작하면 안 돼요"],
+        [/Committer email must not end with a matching pattern/, "커밋터 이메일은 일치하는 패턴으로 끝나면 안 돼요"],
+        [/Committer email must not contain a matching pattern/, "커밋터 이메일은 일치하는 패턴을 포함하면 안 돼요"],
+        [/Committer email must not match a given regex pattern/, "커밋터 이메일은 지정된 정규 표현식과 일치하면 안 돼요"],
+        [/Branch name must start with a matching pattern/, "분기 이름은 일치하는 패턴으로 시작해야 해요"],
+        [/Branch name must end with a matching pattern/, "분기 이름은 일치하는 패턴으로 끝나야 해요"],
+        [/Branch name must contain a matching pattern/, "분기 이름은 일치하는 패턴을 포함해야 해요"],
+        [/Branch name must match a given regex pattern/, "분기 이름은 지정된 정규 표현식과 일치해야 해요"],
+        [/Branch name must not start with a matching pattern/, "분기 이름은 일치하는 패턴으로 시작하면 안 돼요"],
+        [/Branch name must not end with a matching pattern/, "분기 이름은 일치하는 패턴으로 끝나면 안 돼요"],
+        [/Branch name must not contain a matching pattern/, "분기 이름은 일치하는 패턴을 포함하면 안 돼요"],
+        [/Branch name must not match a given regex pattern/, "분기 이름은 지정된 정규 표현식과 일치하면 안 돼요"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
+
 I18N["ko-KR"]["orgs/settings/rules"] = I18N["ko-KR"]["repository/settings/rules"];
 I18N["ko-KR"]["repository/rules"] = I18N["ko-KR"]["repository/settings/rules"];
 
-I18N["ko-KR"]["repository/settings/actions"] = { // 仓库设置 - 操作 /<user-name>/<repo-name>/settings/actions
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/actions"] = { // 저장소 설정 - 액션 /<user-name>/<repo-name>/settings/actions
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 操作页面 /<user-name>/<repo-name>/settings/actions
-            "Actions permissions": "操作权限",
-                "This setting has been disabled by organization administrators.": "此设置已被组织管理员禁用。", // 组织仓库
-                "Allow all actions and reusable workflows": "允许所有操作和可复用的工作流程",
-                    "Any action or reusable workflow can be used, regardless of who authored it or where it is defined.": "可以使用任何操作或可复用的工作流程，而不管它是谁创作的或在哪里定义的。",
-            "Disable actions": "禁用操作",
-                "The Actions tab is hidden and no workflows can run.": "“操作” 选项卡将被隐藏，无法运行任何工作流程。",
-            // [/Allow ([^ ]+) actions and reusable workflows/, "允许 $1 的操作和可复用的工作流程"],
-                // [/Any action or reusable workflow defined in a repository within ([^ ]+) can be used./, "可以使用在 $1 的仓库中定义的任何操作或可复用的工作流程。"], // 操作页面
-            // [/Allow ([^ ]+), and select non-([^ ]+), actions and reusable workflows/, "允许 $1，并选择非 $2、操作和可复用的工作流程"],
-                // [/Any action or reusable workflow that matches the specified criteria, plus those defined in a repository within ([^ ]+), can be used./, "可以使用符合指定条件的操作或工作流程，以及在 $1 的仓库中定义的操作或可复用的工作流程。"], // 操作页面
-                "Learn more about allowing specific actions and reusable workflows to run.": "了解更多关于允许运行特定操作和可复用的工作流程的信息。",
-                "Allow actions created by GitHub": "允许由 GitHub 创建的操作",
-                "Allow actions by Marketplace": "允许来自市场的操作，",
-                "verified creators": "由经验证的创建者创建",
-                "Allow specified actions and reusable workflows": "允许指定的操作和可复用的工作流程",
-                "Enter a comma-separated list of actions and reusable workflows": "输入以逗号分隔的操作和可复用的工作流程列表",
-                "Wildcards, tags, and SHAs are allowed.": "允许使用通配符、标签和 SHA。",
-                "Action examples:": "操作示例：",
-                "Reusable workflow examples:": "可复用的工作流程示例：",
-                "Entire organization or repository examples:": "整个组织或仓库的示例：",
-                // "Save": "保存",
-                "Saving...": "保存中...",
-                // 顶部提醒
-                    "Actions policy updated.": "操作政策已更新",
+        // 액션 페이지 /<user-name>/<repo-name>/settings/actions
+            "Actions permissions": "액션 권한",
+                "This setting has been disabled by organization administrators.": "이 설정은 조직 관리자에 의해 사용 중지되었어요.", // 조직 저장소
+                "Allow all actions and reusable workflows": "모든 액션과 재사용 가능한 워크플로우 허용하기",
+                    "Any action or reusable workflow can be used, regardless of who authored it or where it is defined.": "누가 작성했는지 또는 어디에 정의되었는지에 관계없이 모든 액션과 재사용 가능한 워크플로우를 사용할 수 있어요.",
+            "Disable actions": "액션 사용 안 함",
+                "The Actions tab is hidden and no workflows can run.": "‘액션’ 탭이 숨겨지고 어떤 워크플로우도 실행되지 않아요.",
+            // [/Allow ([^ ]+) actions and reusable workflows/, "허용 $1 의 액션과 재사용 가능한 워크플로우"],
+                // [/Any action or reusable workflow defined in a repository within ([^ ]+) can be used./, "$1 저장소 내에서 정의된 모든 액션이나 재사용 가능한 워크플로우를 사용할 수 있어요."], // 액션 페이지
+            // [/Allow ([^ ]+), and select non-([^ ]+), actions and reusable workflows/, "허용 $1, 그리고 $2 이외의 액션과 재사용 가능한 워크플로우 선택하기"],
+                // [/Any action or reusable workflow that matches the specified criteria, plus those defined in a repository within ([^ ]+), can be used./, "지정된 기준과 일치하는 액션이나 워크플로우, 그리고 $1 저장소 내에서 정의된 액션이나 재사용 가능한 워크플로우를 사용할 수 있어요."], // 액션 페이지
+                "Learn more about allowing specific actions and reusable workflows to run.": "특정 액션과 재사용 가능한 워크플로우 실행 허용에 대해 자세히 알아봐요.",
+                "Allow actions created by GitHub": "GitHub에서 만든 액션 허용하기",
+                "Allow actions by Marketplace": "장터에서 만든 액션 허용하기",
+                "verified creators": "인증된 작성자",
+                "Allow specified actions and reusable workflows": "지정된 액션과 재사용 가능한 워크플로우 허용하기",
+                "Enter a comma-separated list of actions and reusable workflows": "콤마로 구분된 액션과 재사용 가능한 워크플로우 목록을 입력해 주세요.",
+                "Wildcards, tags, and SHAs are allowed.": "와일드카드, 태그, 그리고 SHA 사용이 허용돼요.",
+                "Action examples:": "액션 예시:",
+                "Reusable workflow examples:": "재사용 가능한 워크플로우 예시:",
+                "Entire organization or repository examples:": "전체 조직 또는 저장소 예시:",
+                // "Save": "저장",
+                "Saving...": "저장 중이에요...",
+                // 상단 알림
+                    "Actions policy updated.": "액션 정책이 업데이트되었어요.",
 
-            "Artifact and log retention": "工件和日志保留",
-                "Choose the repository settings for artifacts and logs.": "选择工件和日志的仓库设置。",
-                "Your organization has set a maximum limit of": "您的组织已将上限设置为", //组织仓库
-                "days.": "天。", //组织仓库
-                "Learn more about the artifact and log retention policy.": "了解更多关于工件和日志保留政策的信息。",
+            "Artifact and log retention": "아티팩트 및 로그 보관",
+                "Choose the repository settings for artifacts and logs.": "저장소의 아티팩트 및 로그 보관 설정을 선택해 주세요.",
+                "Your organization has set a maximum limit of": "사용자님의 조직에서 최대 한도를",
+                "days.": "일로 설정했어요.",
+                "Learn more about the artifact and log retention policy.": "아티팩트 및 로그 보관 정책에 대해 자세히 알아봐요.",
 
-                // 输入框提示
-                "Duration must be 1 or more.": "不能小于 1",
-                "Duration must be 90 or less": "不能大于 90",
+                // 입력창 안내 메시지
+                "Duration must be 1 or more.": "기간은 1 이상이어야 해요.",
+                "Duration must be 90 or less": "기간은 90 이하이어야 해요.",
 
-                "days": "天",
+                "days": "일",
 
-            "Fork pull request workflows": "复刻拉取请求工作流程",
-                "Run workflows from fork pull requests": "从复刻拉取请求运行工作流程",
-                    "This tells Actions to run workflows from pull requests originating from repository forks. Note that doing so will give maintainers of those forks the ability to use tokens with read permissions on the source repository.": "这告诉 Actions 运行工作流程，来自仓库复刻的拉取请求。请注意，这样做将使这些复刻的维护者有能力在源码库上使用具有读取权限的令牌。",
-                "Send write tokens to workflows from fork pull requests.": "从复刻拉取请求，发送可写令牌到工作流程",
-                    "This tells Actions to send tokens with": "这告诉 Actions 发送令牌",
-                    "write": "写入",
-                    "permissions to workflows from pull requests originating from repository forks. Note that doing so will give maintainers of those forks": "权限到工作流程，来自仓库复刻的拉取请求。请注意，这样做将授予这些复刻的维护者",
-                    "permissions against the source repository.": "权限，针对源仓库。",
-                "Send secrets to workflows from fork pull requests.": "从复刻拉取请求，发送机密到工作流程",
-                    "This tells Actions to send repository secrets to workflows from pull requests originating from repository forks.": "这告诉 Actions 发送仓库机密到工作流程，来自仓库复刻的拉取请求。",
+            "Fork pull request workflows": "포크 끌어오기 요청 워크플로우",
+                "Run workflows from fork pull requests": "포크된 끌어오기 요청에서 워크플로우 실행하기",
+                    "This tells Actions to run workflows from pull requests originating from repository forks. Note that doing so will give maintainers of those forks the ability to use tokens with read permissions on the source repository.": "이 설정은 저장소 포크에서 생성된 끌어오기 요청의 워크플로우를 실행하도록 액션에 지시해요. 이렇게 하면 해당 포크의 관리자가 소스 저장소에 대한 읽기 권한 토큰을 사용할 수 있음을 유의해 주세요.",
+                "Send write tokens to workflows from fork pull requests.": "포크된 끌어오기 요청에서 워크플로우로 쓰기 토큰 보내기",
+                    "This tells Actions to send tokens with": "이 설정은 액션에 토큰을 보내도록 지시해요",
+                    "write": "쓰기",
+                    "permissions to workflows from pull requests originating from repository forks. Note that doing so will give maintainers of those forks": "권한을 포크된 끌어오기 요청의 워크플로우로 전달해요. 이렇게 하면 해당 포크의 관리자가",
+                    "permissions against the source repository.": "소스 저장소에 대한 권한을 갖게 됨을 유의해 주세요.",
+                "Send secrets to workflows from fork pull requests.": "포크된 끌어오기 요청에서 워크플로우로 기밀 정보 보내기",
+                    "This tells Actions to send repository secrets to workflows from pull requests originating from repository forks.": "이 설정은 저장소 포크에서 생성된 끌어오기 요청의 워크플로우로 저장소 기밀 정보를 보내도록 액션에 지시해요.",
 
-            "Approval for running fork pull request workflows from contributors": "允许贡献者运行复刻拉取请求工作流",
-                "Choose which subset of users will require approval before running workflows on their pull requests. Both the pull request author and the actor of the pull request event triggering the workflow will be checked to determine if approval is required. If approval is required, a user with write access to the repository must": "选择在拉取请求上运行工作流之前需要批准的用户子集。将检查拉取请求作者和触发工作流的拉取请求事件的行为者，以确定是否需要批准。如果需要批准，则必须由具有写权限的用户",
-                "approve the pull request workflow to be run.": "批准才能运行拉取请求工作流。",
-            "Fork pull request workflows from outside collaborators": "从外部协作者，复刻拉取请求工作流程",
-                "Choose which subset of outside collaborators will require approval to run workflows on their pull requests.": "选择哪些外部协作者的子集需要批准才能对他们的拉取请求运行工作流程。",
-                "Learn more about approving workflow runs from public forks.": "了解更多关于批准来自公共复刻的工作流运行的信息。",
-            "Require approval for first-time contributors who are new to GitHub": "要求对首次加入 GitHub 的贡献者进行批准审查",
-                "Only first-time contributors who recently created a GitHub account will require approval to run workflows.": "只有最近创建 GitHub 账户的首次贡献者才需要获得批准才能运行工作流程。",
-                "Only users who are both new on GitHub and who have never had a commit or pull request merged into this repository will require approval to run workflows.": "只有新加入 GitHub 和从未有提交或拉取请求合并到该仓库的用户才需要批准运行工作流。",
-            "Require approval for first-time contributors": "要求对首次贡献者进行批准审查",
-                "Only first-time contributors will require approval to run workflows.": "只有首次贡献者才需要获得批准才能运行工作流程。",
-                "Only users who have never had a commit or pull request merged into this repository will require approval to run workflows.": "只有从未有提交或拉动请求合并到该仓库的用户才需要批准运行工作流。",
-            "Require approval for all outside collaborators": "要求对所有外部协作者进行批准审查",
-                "All outside collaborators will always require approval to run workflows on their pull requests.": "所有外部协作者将始终需要批准才能在他们的拉取请求上运行工作流程。",
-            "Require approval for all external contributors": "要求对所有外部贡献者进行批准审查",
-                "All users that are not a member or owner of this repository will require approval to run workflows.": "所有不是该仓库成员或所有者的用户都需要获得批准才能运行工作流。",
+            "Approval for running fork pull request workflows from contributors": "기여자가 실행하는 포크 끌어오기 요청 워크플로우 승인하기",
+                "Choose which subset of users will require approval before running workflows on their pull requests. Both the pull request author and the actor of the pull request event triggering the workflow will be checked to determine if approval is required. If approval is required, a user with write access to the repository must": "끌어오기 요청에서 워크플로우 실행 전에 승인이 필요한 사용자 집합을 선택해 주세요. 끌어오기 요청 작성자와 워크플로우를 트리거하는 이벤트의 행위자가 모두 확인되어 승인이 필요한지 판단할 거예요. 만약 승인이 필요하다면, 저장소에 쓰기 권한이 있는 사용자가",
+                "approve the pull request workflow to be run.": "해당 끌어오기 요청 워크플로우 실행을 승인해 줘야 해요.",
+            "Fork pull request workflows from outside collaborators": "외부 협업자가 생성한 포크 끌어오기 요청 워크플로우",
+                "Choose which subset of outside collaborators will require approval to run workflows on their pull requests.": "외부 협업자 중에서 끌어오기 요청 워크플로우 실행 전에 승인이 필요한 사용자 집합을 선택해 주세요.",
+                "Learn more about approving workflow runs from public forks.": "공개 포크에서 워크플로우 실행 승인을 받는 방법에 대해 자세히 알아봐요.",
+            "Require approval for first-time contributors who are new to GitHub": "GitHub에 처음 가입한 기여자에 대해 실행 승인을 요구하기",
+                "Only first-time contributors who recently created a GitHub account will require approval to run workflows.": "최근에 GitHub 계정을 생성한 최초 기여자만 워크플로우 실행 전에 승인이 필요해요.",
+                "Only users who are both new on GitHub and who have never had a commit or pull request merged into this repository will require approval to run workflows.": "GitHub에 새로 가입했고, 이 저장소에 커밋이나 끌어오기 요청이 한 번도 병합된 적이 없는 사용자만 워크플로우 실행 전에 승인이 필요해요.",
+            "Require approval for first-time contributors": "최초 기여자에 대해 실행 승인을 요구하기",
+                "Only first-time contributors will require approval to run workflows.": "최초 기여자만 워크플로우 실행 전에 승인이 필요해요.",
+                "Only users who have never had a commit or pull request merged into this repository will require approval to run workflows.": "이 저장소에 커밋이나 끌어오기 요청이 병합된 적이 없는 사용자만 워크플로우 실행 전에 승인이 필요해요.",
+            "Require approval for all outside collaborators": "모든 외부 협업자에 대해 실행 승인을 요구하기",
+                "All outside collaborators will always require approval to run workflows on their pull requests.": "모든 외부 협업자는 끌어오기 요청에서 워크플로우 실행 전에 항상 승인이 필요해요.",
+            "Require approval for all external contributors": "모든 외부 기여자에 대해 실행 승인을 요구하기",
+                "All users that are not a member or owner of this repository will require approval to run workflows.": "이 저장소의 구성원이나 소유자가 아닌 모든 사용자는 워크플로우 실행 전에 승인이 필요해요.",
 
-            "Workflow permissions": "工作流程权限",
-                "Choose the default permissions granted to the GITHUB_TOKEN when running workflows in this repository. You can specify more granular permissions in the workflow using YAML.": "在仓库中运行工作流程时，选择授予 GITHUB_TOKEN 的默认权限。您可以使用 YAML 在工作流程中指定更细化的权限。",
-                "Learn more about managing permissions.": "了解更多关于管理权限的信息。",
-                "Read and write permissions": "读取和写入权限",
-                    "Workflows have read and write permissions in the repository for all scopes.": "工作流程在仓库中对所有作用域具有读和写的权限。",
-                "Read repository contents and packages permissions": "读取仓库的内容和软件包的权限",
-                    "Workflows have read permissions in the repository for the contents and packages scopes only.": "工作流程在仓库中仅对内容和软件包作用域具有只读的权限。",
-                    "Choose whether GitHub Actions can create pull requests or submit approving pull request reviews.": "选择 GitHub Actions 是否可以创建拉取请求或提交批准拉取请求审查。",
-                        "Allow GitHub Actions to create and approve pull requests": "允许 GitHub Actions 创建和批准拉取请求",
+            "Workflow permissions": "워크플로우 권한",
+                "Choose the default permissions granted to the GITHUB_TOKEN when running workflows in this repository. You can specify more granular permissions in the workflow using YAML.": "이 저장소에서 워크플로우 실행 시 GITHUB_TOKEN에 부여할 기본 권한을 선택해 주세요. YAML을 사용해 워크플로우 내에서 더 세분화된 권한을 지정할 수 있어요.",
+                "Learn more about managing permissions.": "권한 관리에 대해 자세히 알아봐요.",
+                "Read and write permissions": "읽기 및 쓰기 권한",
+                    "Workflows have read and write permissions in the repository for all scopes.": "워크플로우는 저장소 내 모든 범위에서 읽기와 쓰기 권한을 가지고 있어요.",
+                "Read repository contents and packages permissions": "저장소 내용 및 패키지 읽기 권한",
+                    "Workflows have read permissions in the repository for the contents and packages scopes only.": "워크플로우는 저장소 내 내용과 패키지 범위에 대해서만 읽기 권한을 가지고 있어요.",
+                    "Choose whether GitHub Actions can create pull requests or submit approving pull request reviews.": "GitHub 액션이 끌어오기 요청 생성이나 승인 리뷰 제출을 할 수 있는지 선택해 주세요.",
+                        "Allow GitHub Actions to create and approve pull requests": "GitHub 액션이 끌어오기 요청을 생성하고 승인할 수 있도록 허용하기",
 
-                // 顶部提醒
-                    "Default workflow permissions settings saved.": "已保存默认工作流程权限设置。",
+                // 상단 알림
+                    "Default workflow permissions settings saved.": "기본 워크플로우 권한 설정이 저장되었어요.",
 
-        // 运行器页面 /<user-name>/<repo-name>/settings/actions/runners
-            "New self-hosted runner": "新建自托管运行器",
-            "Host your own runners and customize the environment used to run jobs in your GitHub Actions workflows.": "托管您自己的运行器，并定制用于在您的 GitHub Actions 工作流程中运行作业的环境。",
-            "Learn more about self-hosted runners": "了解更多关于自托管运行器的信息",
-            "There are no runners configured": "暂无设置运行器",
-            "Learn more about using runners": "了解更多关于使用运行器的信息",
-            "to run actions on your own servers.": "在您自己的服务器上运行操作的信息。",
+        // 실행기 페이지 /<user-name>/<repo-name>/settings/actions/runners
+            "New self-hosted runner": "새 자가 호스팅 실행기",
+            "Host your own runners and customize the environment used to run jobs in your GitHub Actions workflows.": "자신의 실행기를 직접 호스팅하고, GitHub 액션 워크플로우에서 작업을 실행하는 환경을 맞춤 설정해 보세요.",
+            "Learn more about self-hosted runners": "자가 호스팅 실행기에 대해 자세히 알아봐요.",
+            "There are no runners configured": "설정된 실행기가 없어요.",
+            "Learn more about using runners": "실행기 사용에 대해 자세히 알아봐요.",
+            "to run actions on your own servers.": "자신의 서버에서 액션을 실행하는 방법이에요.",
 
-        // 创建运行器页面 /<user-name>/<repo-name>/settings/actions/runners/new
-            // [/\/ Add new self-hosted runner ·/, "/ 创建自托管运行器 ·"],
-            "Adding a self-hosted runner requires that you download, configure, and execute the GitHub Actions Runner. By downloading and configuring the GitHub Actions Runner, you agree to the": "添加一个自托管运行器需要您下载、配置并执行 GitHub Actions 运行器。下载并配置 GitHub Actions 运行器 后，您同意",
-                "GitHub Terms of Service": "GitHub 服务条款",
-                "GitHub Corporate Terms of Service": "GitHub 企业服务条款",
-                ", as applicable.": "，如适用。",
-            "Runner image": "运行器镜像",
-            "Architecture": "架构",
-            "Download": "下载",
-            "We recommend configuring the runner under \"\\actions-runner\". This will help avoid issues related to service identity folder permissions and long path restrictions on Windows.": "我们建议在 “\\actions-runner” 下配置运行器。这将有助于避免与 Windows 上的服务标识文件夹权限和长路径限制相关的이슈。",
-            "Configure": "设置",
-            "Using your self-hosted runner": "使用您的自托管运行器",
-            "For additional details about configuring, running, or shutting down the runner, please check out our": "关于配置、运行或关闭运行器的其他细节，请查看我们的",
-            "product docs": "产品文档",
-
+        // 실행기 생성 페이지 /<user-name>/<repo-name>/settings/actions/runners/new
+            // [/\/ Add new self-hosted runner ·/, "/ 새 자가 호스팅 실행기 추가하기 ·"],
+            "Adding a self-hosted runner requires that you download, configure, and execute the GitHub Actions Runner. By downloading and configuring the GitHub Actions Runner, you agree to the": "자가 호스팅 실행기를 추가하려면 GitHub 액션 실행기를 다운로드, 구성 및 실행해야 해요. GitHub 액션 실행기를 다운로드하고 구성하면, 사용자님께서는",
+                "GitHub Terms of Service": "GitHub 서비스 약관",
+                "GitHub Corporate Terms of Service": "GitHub 기업 서비스 약관",
+                ", as applicable.": "에 동의하는 것으로 간주돼요.",
+            "Runner image": "실행기 이미지",
+            "Architecture": "아키텍처",
+            "Download": "다운로드하기",
+            "We recommend configuring the runner under \"\\actions-runner\". This will help avoid issues related to service identity folder permissions and long path restrictions on Windows.": "‘\\actions-runner’ 아래에 실행기를 구성하는 것을 권장해 드려요. 이렇게 하면 Windows에서 서비스 식별 폴더 권한과 긴 경로 제한 관련 문제를 피할 수 있어요.",
+            "Configure": "설정하기",
+            "Using your self-hosted runner": "자가 호스팅 실행기 사용하기",
+            "For additional details about configuring, running, or shutting down the runner, please check out our": "실행기 구성, 실행 또는 종료에 대한 추가 정보는",
+            "product docs": "제품 문서를 참고해 주세요.",
     },
-    "regexp": [ // 正则翻译
-        [/\/ Add new self-hosted runner ·/, "/ 创建自托管运行器 ·"],
-        [/Allow ([^ ]+) actions and reusable workflows/, "允许 $1 的操作和可复用的工作流程"],
-        [/Any action or reusable workflow defined in a repository within ([^ ]+) can be used./, "可以使用在 $1 的仓库中定义的任何操作或可复用的工作流程。"], // 操作页面
-        [/Allow ([^ ]+), and select non-([^ ]+), actions and reusable workflows/, "允许 $1，并选择非 $2、操作和可复用的工作流程"],
-        [/Any action or reusable workflow that matches the specified criteria, plus those defined in a repository within ([^ ]+), can be used./, "可以使用符合指定条件的操作或工作流程，以及在 $1 的仓库中定义的操作或可复用的工作流程。"], // 操作页面
+    "regexp": [ // 정규식 번역
+        [/\/ Add new self-hosted runner ·/, "/ 새 자가 호스팅 실행기 추가하기 ·"],
+        [/Allow ([^ ]+) actions and reusable workflows/, "허용 $1 의 액션과 재사용 가능한 워크플로우"],
+        [/Any action or reusable workflow defined in a repository within ([^ ]+) can be used./, "$1 저장소 내에서 정의된 모든 액션이나 재사용 가능한 워크플로우를 사용할 수 있어요."], // 액션 페이지
+        [/Allow ([^ ]+), and select non-([^ ]+), actions and reusable workflows/, "허용 $1, 그리고 $2 이외의 액션과 재사용 가능한 워크플로우 선택하기"],
+        [/Any action or reusable workflow that matches the specified criteria, plus those defined in a repository within ([^ ]+), can be used./, "지정된 기준과 일치하는 액션이나 워크플로우, 그리고 $1 저장소 내에서 정의된 액션이나 재사용 가능한 워크플로우를 사용할 수 있어요."], // 액션 페이지
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["repository/settings/hooks"] = { // 仓库设置 - Web 钩子 /<user-name>/<repo-name>/settings/hooks
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/hooks"] = { // 저장소 설정 - 웹훅 /<user-name>/<repo-name>/settings/hooks
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // Web 钩子 页面 /<user-name>/<repo-name>/settings/hooks====================================
-            "Add webhook": "添加 Web 钩子",
-            "Webhooks allow external services to be notified when certain events happen. When the specified events happen, we'll send a POST request to each of the URLs you provide. Learn more in our": "Web 钩子允许在发生某些事件时通知外部服务。当指定的事件发生时，我们将向您提供的每个 URL 发送 POST 请求。了解更多信息，在我们的",
-            "Webhooks Guide": "Web 钩子指南",
+        // 웹훅 페이지 /<user-name>/<repo-name>/settings/hooks====================================
+            "Add webhook": "웹훅 추가하기",
+            "Webhooks allow external services to be notified when certain events happen. When the specified events happen, we'll send a POST request to each of the URLs you provide. Learn more in our": "웹훅은 특정 이벤트가 발생하면 외부 서비스에 알림을 보낼 수 있도록 해줘요. 지정된 이벤트가 발생하면, 제공하신 각 URL로 POST 요청을 보내드려요. 자세한 내용은 저희의",
+            "Webhooks Guide": "웹훅 가이드를 참고해주세요.",
 
-            "We will also send events from this repository to your": "我们还将把这个仓库的事件发送到您的", // 组织仓库
-            "organization webhooks": "组织 Web 钩子", // 组织仓库
+            "We will also send events from this repository to your": "저장소의 이벤트를 사용자님의",
+            "organization webhooks": "조직 웹훅",
 
-            "This hook has never been triggered.": "此钩子从未被触发过。",
-            "Last delivery was successful.": "上次触发成功。",
+            "This hook has never been triggered.": "이 웹훅은 한 번도 트리거된 적이 없어요.",
+            "Last delivery was successful.": "마지막 전달이 성공적으로 이루어졌어요.",
 
-            // 删除对话框
-                "Delete webhook?": "删除 Web 钩子？",
-                "This action cannot be undone. Future events will no longer be delivered to this webhook": "此操作无法撤消。未来的事件将不再传递到此 Web 钩子",
-                "Yes, delete webhook": "是的，删除 Web 钩子",
+            // 삭제 대화상자
+                "Delete webhook?": "웹훅 삭제할까요?",
+                "This action cannot be undone. Future events will no longer be delivered to this webhook": "이 작업은 되돌릴 수 없어요. 앞으로의 이벤트는 더 이상 이 웹훅으로 전달되지 않아요.",
+                "Yes, delete webhook": "네, 웹훅 삭제하기",
 
-        // 添加钩子 页面 /<user-name>/<repo-name>/settings/hooks/new ====================================
-            "Webhooks /": "Web 钩子 /",
-            "Add webhook": "添加 Web 钩子",
-            "We'll send a": "我们将",
-            "request to the URL below with details of any subscribed events. You can also specify which data format you'd like to receive (JSON,": "请求到以下 URL，其中包含任何订阅事件的详细信息。您还可以指定要接收的数据格式（JSON、",
-            "etc": "等",
-            "). More information can be found in": "）。更多信息可以在",
-            "our developer documentation": "开发人员文档",
+        // 웹훅 추가 페이지 /<user-name>/<repo-name>/settings/hooks/new ====================================
+            "Webhooks /": "웹훅 /",
+            "Add webhook": "웹훅 추가하기",
+            "We'll send a": "저희가 보내드릴게요",
+            "request to the URL below with details of any subscribed events. You can also specify which data format you'd like to receive (JSON,": "아래 URL로 요청을 보내드리며, 구독한 이벤트의 상세 정보를 포함할 거예요. 또한 받고 싶은 데이터 형식을 지정할 수 있어요 (JSON,",
+            "etc": "등",
+            "). More information can be found in": "）。자세한 정보는",
+            "our developer documentation": "개발자 문서",
 
-            "Payload URL": "有效负载 URL",
-            "Content type": "内容类型",
-            "Secret": "机密",
-                "Leave blank to remove secret": "留空以删除机密",
-            "There is currently a secret configured for this webhook. If you've lost or forgotten this secret, you can change it, but be aware that any integrations using this secret will need to be updated.": "目前 Web 钩子已配置了一个机密。如果您丢失或忘记了这个机密，可以更改它，但请注意，任何使用此机密的集成将需要更新",
-            "Change secret": "修改机密",
+            "Payload URL": "페이로드 URL",
+            "Content type": "내용 유형",
+            "Secret": "기밀",
+                "Leave blank to remove secret": "기밀을 삭제하려면 비워 두세요.",
+            "There is currently a secret configured for this webhook. If you've lost or forgotten this secret, you can change it, but be aware that any integrations using this secret will need to be updated.": "현재 이 웹훅에 기밀이 설정되어 있어요. 만약 기밀을 잃어버리거나 잊으셨다면 변경할 수 있어요. 단, 이 기밀을 사용하는 모든 통합은 업데이트가 필요할 수 있으니 참고해 주세요.",
+            "Change secret": "기밀 변경하기",
 
-            "SSL verification": "SSL 验证",
-            "By default, we verify SSL certificates when delivering payloads.": "默认情况下，我们在交付有效负载时验证 SSL 证书。",
-            "Enable SSL verification": "启用 SSL 验证",
-            "Disable": "禁用",
-            "(not recommended)": "（不推荐）",
-                "Are you sure?": "您确定吗？",
-                "Warning": "警告",
-                ": Disabling SSL verification has serious implications.": "：禁用 SSL 验证具有严重的影响。",
-                "SSL verification helps ensure that hook payloads are delivered to your URL endpoint securely, keeping your data away from prying eyes. Disabling this option is": "SSL 验证有助于确保钩子有效负载安全地传送到您的 URL 端点，使您的数据远离窥探。禁用此选项是",
-                "not recommended": "不推荐的",
-                "Disable, I understand my webhooks may not be secure": "禁用，我明白我的 web 钩子可能不安全",
+            "SSL verification": "SSL 검증",
+            "By default, we verify SSL certificates when delivering payloads.": "기본적으로, 페이로드를 전달할 때 SSL 인증서를 검증해요.",
+            "Enable SSL verification": "SSL 검증 사용하기",
+            "Disable": "사용 안 함",
+            "(not recommended)": "（권장하지 않음）",
+                "Are you sure?": "정말로 하시겠어요?",
+                "Warning": "경고",
+                ": Disabling SSL verification has serious implications.": ": SSL 검증을 비활성화하면 심각한 문제가 발생할 수 있어요.",
+                "SSL verification helps ensure that hook payloads are delivered to your URL endpoint securely, keeping your data away from prying eyes. Disabling this option is": "SSL 검증은 웹훅 페이로드가 사용자님의 URL 엔드포인트로 안전하게 전달되어 데이터가 외부에 노출되지 않도록 도와줘요. 이 옵션을 비활성화하는 것은",
+                "not recommended": "권장하지 않아요.",
+                "Disable, I understand my webhooks may not be secure": "비활성화할게요, 제 웹훅이 안전하지 않을 수 있다는 점을 이해해요.",
 
-            "Which events would you like to trigger this webhook?": "您希望哪些事件触发此 Web 钩子？",
-                "Just the": "仅",
-                "push": "推送",
-                "event.": "事件。",
-                "Send me": "发送给我",
-                "everything": "所有",
-                "Let me select individual events.": "让我选择单个事件。",
-                    "Branch or tag creation": "分支或标签创建",
-                        "Branch or tag created.": "分支或标签的创建。",
-                    "Branch or tag deletion": "分支或标签删除",
-                        "Branch or tag deleted.": "分支或标签的删除。",
-                    "Branch protection configurations": "分支保护配置",
-                        "All branch protections disabled or enabled for a repository.": "禁用或启用仓库的所有分支保护。",
-                    "Branch protection rules": "分支保护规则",
-                        "Branch protection rule created, deleted or edited.": "分支保护规则的创建、删除或编辑。",
-                    "Bypass requests for push rulesets": "绕过推送规则集的请求",
-                        "Push ruleset bypass request was created, cancelled, completed, received a response, or a response was dismissed. Note: Delegated bypass for push rules is currently in beta and subject to change.": "推送规则集旁路请求已创建、取消、完成、收到回复或回复被驳回。注：推送规则的委托旁路目前处于测试阶段，可能会有更改。",
-                    "Bypass requests for secret scanning push protections": "绕过机密扫描推送保护请求",
-                        "Secret scanning push protection bypass request was created, cancelled, completed, received a response, or a response was dismissed. Note: Delegated bypass for push protection is currently in beta and subject to change.": "机密扫描推送保护旁路请求的创建、取消、完成、收到回复或回复被驳回。注意：推送保护的委托旁路目前处于测试阶段，可能会有更改。",
-                    "Check runs": "检查运行",
-                        "Check run is created, requested, rerequested, or completed.": "检查运行的创建、请求、重新请求或完成。",
-                    "Check suites": "检查套件",
-                        "Check suite is requested, rerequested, or completed.": "检查套件的请求、重新请求或完成。",
-                    "Code scanning alerts": "代码扫描警报",
-                        "Code Scanning alert created, fixed in branch, or closed": "代码扫描警报的创建、在分支中的修复或关闭。",
-                    "Collaborator add, remove, or changed": "协作者的添加、删除或更改",
-                        "Collaborator added to, removed from, or has changed permissions for a repository.": "协作者添加到仓库、从仓库中删除或更改了仓库的权限。",
-                    "Commit comments": "提交评论",
-                        "Commit or diff commented on.": "提交或差异评论。",
-                    "Custom property": "自定义属性",
-                        "Custom property is created, updated, or deleted.": "自定义属性的创建、更新或删除。",
-                    "Custom property values": "自定义属性值",
-                        "Custom property values are changed for a repository": "仓库自定义属性值的更改。",
-                    "Dependabot alerts": "Dependabot 警报",
-                        "Dependabot alert auto_dismissed, auto_reopened, created, dismissed, reopened, fixed, or reintroduced.": "Dependabot 警报自动解除、自动重新打开、创建、解除、重新打开、修复或重新引入。",
-                    "Deploy keys": "部署密钥",
-                        "A deploy key is created or deleted from a repository.": "在仓库中部署密钥的创建或删除。",
-                    "Deployment statuses": "部署状态",
-                        "Deployment status updated from the API.": "通过 API 更新部署状态。",
-                    "Deployments": "部署",
-                        "Repository was deployed or a deployment was deleted.": "仓库的部署或删除部署。",
-                    "Discussion comments": "讨论评论",
-                        "Discussion comment created, edited, or deleted.": "讨论评论的创建、编辑或删除。",
-                    // "Discussion": "讨论",
-                        "Discussion created, edited, closed, reopened, pinned, unpinned, locked, unlocked, transferred, answered, unanswered, labeled, unlabeled, had its category changed, or was deleted.": "讨论的创建、编辑、关闭、重新打开、置顶、取消置顶、锁定、解锁、转移、答复、取消答复、标记、取消标记、更改其类别或删除。",
-                    "Forks": "复刻",
-                        "Repository forked.": "仓库复刻。",
-                    "Issue comments": "이슈评论",
-                        "Issue comment created, edited, or deleted.": "이슈评论的创建、编辑或删除。",
-                    // "Issue": "이슈",
-                        "Issue opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned, locked, or unlocked.": "이슈的打开、编辑、删除、转移、置顶、取消置顶、关闭、重新打开、分配、取消分配、标记、取消标记、设置里程碑、取消里程碑、锁定或解锁。",
-                    "Labels": "标签",
-                        "Label created, edited or deleted.": "标签的创建、编辑或删除。",
-                    "Memberships": "团队成员", // 组织设置
-                        "Team membership added or removed.": "团队成员的添加或删除。",
-                    "Merge groups": "合并组",
-                        "Merge Group requested checks, or was destroyed.": "合并组的请求检查或销毁。",
-                    "Meta": "元数据",
-                        "This particular hook is deleted.": "这个特定的钩子被删除。",
-                    "Milestones": "里程碑",
-                        "Milestone created, closed, opened, edited, or deleted.": "里程碑的创建、关闭、打开、编辑或删除。",
-                    "Org blocks": "组织黑名单", // 组织设置
-                        "A user has been blocked or unblocked.": "用户拉黑或解除拉黑。",
-                    "Organizations": "组织", // 组织设置
-                        "Organization deleted, renamed, member invited, member added, or member removed.": "组织的删除、重命名以及成员的邀请、添加或删除。",
-                    // "Packages": "패키지",
-                        "GitHub Packages published or updated in a repository.": "仓库中 GitHub 软件包的发布或更新 。",
-                    "Page builds": "构建 GitHub Pages",
-                        "Pages site built.": "GitHub Pages 站点的建立。",
-                    "Project cards": "项目面板卡",
-                        "Project card created, updated, or deleted.": "项目面板卡的创建、更新或删除。",
-                    "Project columns": "项目栏目",
-                        "Project column created, updated, moved or deleted.": "项目列目的创建、更新、移动或删除。",
-                    "Project v2 items": "项目项 v2", // 组织设置
-                        "Project item created, edited, deleted, archived, restored, converted, or reordered. Feedback is welcome in": "项目条目的创建、编辑、删除、归档、恢复、转换或重新排序。欢迎提供反馈意见在",
-                        "this discussion": "这个讨论",
-                    // "": "项目",
-                        "Project created, updated, or deleted.": "项目的创建、更新或删除。",
-                    "Projects v2": "项目 v2", // 组织设置
-                        "Project created, updated, deleted, closed, or reopened. Feedback is welcome in": "项目的创建、更新、删除、关闭或重新打开。欢迎提供反馈意见在",
-                    "Pull request review comments": "拉取请求审查意见",
-                        "Pull request diff comment created, edited, or deleted.": "拉取请求差异评论的创建、编辑或删除。",
-                    "Pull request review threads": "拉取请求的审查线程",
-                        "A pull request review thread was resolved or unresolved.": "拉取请求的审查线程的解决或未解决。",
-                    "Pull request reviews": "拉取请求审查",
-                        "Pull request review submitted, edited, or dismissed.": "拉取请求审查的提交、编辑或驳回。",
-                    // "": "拉取请求",
-                        "Pull request assigned, auto merge disabled, auto merge enabled, closed, converted to draft, demilestoned, dequeued, edited, enqueued, labeled, locked, milestoned, opened, ready for review, reopened, review request removed, review requested, synchronized, unassigned, unlabeled, or unlocked.": "拉取请求的分配、禁用自动合并、启用自动合并、关闭、转换为草案、取消里程碑、取消队列、编辑、队列、标记、锁定、设置里程碑、打开、准备审查、重新打开、取消审查请求、请求审查、同步、取消分配、取消标记或解锁。",
-                    "Pushes": "推送",
-                        "Git push to a repository.": "Git 推送到仓库。",
-                    "Registry packages": "注册软件包",
-                        "Registry package published or updated in a repository.": "仓库中注册软件包的发布或更新。",
+            "Which events would you like to trigger this webhook?": "어떤 이벤트가 이 웹훅을 트리거하길 원하시나요?",
+                "Just the": "단지",
+                "push": "푸시",
+                "event.": "이벤트만요.",
+                "Send me": "저에게 보내주세요.",
+                "everything": "모두",
+                "Let me select individual events.": "개별 이벤트를 선택할게요.",
+                    "Branch or tag creation": "분기 또는 꼬리표 생성",
+                        "Branch or tag created.": "분기 또는 꼬리표가 생성되었어요.",
+                    "Branch or tag deletion": "분기 또는 꼬리표 삭제",
+                        "Branch or tag deleted.": "분기 또는 꼬리표가 삭제되었어요.",
+                    "Branch protection configurations": "분기 보호 구성",
+                        "All branch protections disabled or enabled for a repository.": "저장소의 모든 분기 보호가 사용 중지되거나 활성화되었어요.",
+                    "Branch protection rules": "분기 보호 규칙",
+                        "Branch protection rule created, deleted or edited.": "분기 보호 규칙이 생성, 삭제 또는 수정되었어요.",
+                    "Bypass requests for push rulesets": "푸시 규칙 집합 우회 요청",
+                        "Push ruleset bypass request was created, cancelled, completed, received a response, or a response was dismissed. Note: Delegated bypass for push rules is currently in beta and subject to change.": "푸시 규칙 집합 우회 요청이 생성, 취소, 완료되었거나 응답을 받았거나 응답이 거부되었어요. 참고: 푸시 규칙 위임 우회는 현재 베타 단계에 있으며 변경될 수 있어요.",
+                    "Bypass requests for secret scanning push protections": "기밀 스캔 푸시 보호 우회 요청",
+                        "Secret scanning push protection bypass request was created, cancelled, completed, received a response, or a response was dismissed. Note: Delegated bypass for push protection is currently in beta and subject to change.": "기밀 스캔 푸시 보호 우회 요청이 생성, 취소, 완료되었거나 응답을 받았거나 응답이 거부되었어요. 참고: 푸시 보호 위임 우회는 현재 베타 단계에 있으며 변경될 수 있어요.",
+                    "Check runs": "체크 실행",
+                        "Check run is created, requested, rerequested, or completed.": "체크 실행이 생성, 요청, 재요청 또는 완료되었어요.",
+                    "Check suites": "체크 스위트",
+                        "Check suite is requested, rerequested, or completed.": "체크 스위트가 요청, 재요청 또는 완료되었어요.",
+                    "Code scanning alerts": "코드 스캔 경고",
+                        "Code Scanning alert created, fixed in branch, or closed": "코드 스캔 경고가 생성되었거나, 분기에서 수정되었거나, 닫혔어요.",
+                    "Collaborator add, remove, or changed": "협업자 추가, 제거 또는 변경",
+                        "Collaborator added to, removed from, or has changed permissions for a repository.": "저장소에 협업자가 추가되었거나 제거되었거나 권한이 변경되었어요.",
+                    "Commit comments": "커밋 댓글",
+                        "Commit or diff commented on.": "커밋 또는 차이에 댓글이 달렸어요.",
+                    "Custom property": "사용자 정의 속성",
+                        "Custom property is created, updated, or deleted.": "사용자 정의 속성이 생성, 업데이트 또는 삭제되었어요.",
+                    "Custom property values": "사용자 정의 속성 값",
+                        "Custom property values are changed for a repository": "저장소의 사용자 정의 속성 값이 변경되었어요.",
+                    "Dependabot alerts": "Dependabot 경고",
+                        "Dependabot alert auto_dismissed, auto_reopened, created, dismissed, reopened, fixed, or reintroduced.": "Dependabot 경고가 자동 해제, 자동 재개, 생성, 해제, 재개, 수정 또는 재도입되었어요.",
+                    "Deploy keys": "배포 키",
+                        "A deploy key is created or deleted from a repository.": "저장소에서 배포 키가 생성되었거나 삭제되었어요.",
+                    "Deployment statuses": "배포 상태",
+                        "Deployment status updated from the API.": "API를 통해 배포 상태가 업데이트되었어요.",
+                    "Deployments": "배포",
+                        "Repository was deployed or a deployment was deleted.": "저장소가 배포되었거나 배포가 삭제되었어요.",
+                    "Discussion comments": "토론 댓글",
+                        "Discussion comment created, edited, or deleted.": "토론 댓글이 생성, 수정 또는 삭제되었어요.",
+                        "Discussion created, edited, closed, reopened, pinned, unpinned, locked, unlocked, transferred, answered, unanswered, labeled, unlabeled, had its category changed, or was deleted.": "토론이 생성, 수정, 종료, 재개, 고정, 고정 해제, 잠금, 잠금 해제, 이전, 답변, 미답변, 라벨 추가, 라벨 제거, 카테고리 변경 또는 삭제되었어요.",
+                    "Forks": "포크",
+                        "Repository forked.": "저장소가 포크되었어요.",
+                    "Issue comments": "이슈 댓글",
+                        "Issue comment created, edited, or deleted.": "이슈 댓글이 생성, 수정 또는 삭제되었어요.",
+                        "Issue opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned, locked, or unlocked.": "이슈가 열리거나, 수정되거나, 삭제되거나, 이전되거나, 고정되거나, 고정 해제되거나, 닫히거나, 재개되거나, 할당되거나, 할당 해제되거나, 라벨이 추가되거나 제거되거나, 마일스톤이 설정되거나 해제되었어요.",
+                    "Labels": "라벨",
+                        "Label created, edited or deleted.": "라벨이 생성, 수정 또는 삭제되었어요.",
+                    "Memberships": "조직 구성원", // 조직 설정
+                        "Team membership added or removed.": "팀 구성원이 추가되었거나 제거되었어요.",
+                    "Merge groups": "병합 그룹",
+                        "Merge Group requested checks, or was destroyed.": "병합 그룹에서 요청된 체크가 있거나, 삭제되었어요.",
+                    "Meta": "메타",
+                        "This particular hook is deleted.": "이 특정 웹훅이 삭제되었어요.",
+                    "Milestones": "마일스톤",
+                        "Milestone created, closed, opened, edited, or deleted.": "마일스톤이 생성, 종료, 열리거나, 수정 또는 삭제되었어요.",
+                    "Org blocks": "조직 차단", // 조직 설정
+                        "A user has been blocked or unblocked.": "사용자가 차단되었거나 차단 해제되었어요.",
+                    "Organizations": "조직", // 조직 설정
+                        "Organization deleted, renamed, member invited, member added, or member removed.": "조직이 삭제되었거나, 이름이 변경되었거나, 구성원이 초대, 추가 또는 제거되었어요.",
+                        "GitHub Packages published or updated in a repository.": "저장소에서 GitHub 패키지가 게시되었거나 업데이트되었어요.",
+                    "Page builds": "GitHub Pages 빌드",
+                        "Pages site built.": "GitHub Pages 사이트가 빌드되었어요.",
+                    "Project cards": "프로젝트 카드",
+                        "Project card created, updated, or deleted.": "프로젝트 카드가 생성, 업데이트 또는 삭제되었어요.",
+                    "Project columns": "프로젝트 열",
+                        "Project column created, updated, moved or deleted.": "프로젝트 열이 생성, 업데이트, 이동 또는 삭제되었어요.",
+                    "Project v2 items": "프로젝트 항목 v2", // 조직 설정
+                        "Project item created, edited, deleted, archived, restored, converted, or reordered. Feedback is welcome in": "프로젝트 항목이 생성, 수정, 삭제, 보관, 복원, 변환 또는 재정렬되었어요. 의견은",
+                        "this discussion": "이 토론에서",
+                        "Project created, updated, or deleted.": "프로젝트가 생성, 업데이트 또는 삭제되었어요.",
+                    "Projects v2": "프로젝트 v2", // 조직 설정
+                        "Project created, updated, deleted, closed, or reopened. Feedback is welcome in": "프로젝트가 생성, 업데이트, 삭제, 종료 또는 재개되었어요. 의견은",
+                    "Pull request review comments": "끌어오기 요청 리뷰 댓글",
+                        "Pull request diff comment created, edited, or deleted.": "끌어오기 요청 차이 댓글이 생성, 수정 또는 삭제되었어요.",
+                    "Pull request review threads": "끌어오기 요청 리뷰 스레드",
+                        "A pull request review thread was resolved or unresolved.": "끌어오기 요청 리뷰 스레드가 해결되었거나 해결되지 않았어요.",
+                    "Pull request reviews": "끌어오기 요청 리뷰",
+                        "Pull request review submitted, edited, or dismissed.": "끌어오기 요청 리뷰가 제출, 수정 또는 기각되었어요.",
+                        "Pull request assigned, auto merge disabled, auto merge enabled, closed, converted to draft, demilestoned, dequeued, edited, enqueued, labeled, locked, milestoned, opened, ready for review, reopened, review request removed, review requested, synchronized, unassigned, unlabeled, or unlocked.": "끌어오기 요청이 할당되었거나, 자동 병합이 비활성화 또는 활성화되었거나, 닫혔거나, 초안으로 전환되었거나, 마일스톤이 취소되었거나, 대기열에서 제거되었거나, 수정되었거나, 대기열에 추가되었거나, 라벨이 추가되었거나, 잠금되었거나, 마일스톤이 설정되었거나, 열리거나, 검토 준비가 되었거나, 재개되었거나, 리뷰 요청이 제거되었거나, 리뷰 요청되었거나, 동기화되었거나, 할당이 취소되었거나, 라벨이 제거되었거나, 잠금이 해제되었어요.",
+                    "Pushes": "푸시",
+                        "Git push to a repository.": "저장소에 Git 푸시가 이루어졌어요.",
+                    "Registry packages": "레지스트리 패키지",
+                        "Registry package published or updated in a repository.": "저장소에서 레지스트리 패키지가 게시되었거나 업데이트되었어요.",
                     "Releases": "릴리즈",
-                        "Release created, edited, published, unpublished, or deleted.": "发行版的创建、编辑、发布、取消发布或删除。",
-                    // "": "저장소",
-                        "Repository created, deleted, archived, unarchived, publicized, privatized, edited, renamed, or transferred.": "仓库的创建、删除、归档、取消归档、公开、私有化、编辑、重命名或转让。",
-                    "Repository advisories": "仓库公告",
-                        "Repository advisory published or reported.": "仓库公告发布或报告。",
-                    "Repository imports": "仓库导入",
-                        "Repository import succeeded, failed, or cancelled.": "仓库导入的成功、失败或取消。",
-                    "Repository rulesets": "仓库规则集",
-                        "Repository ruleset created, deleted or edited.": "仓库规则集的创建、删除或编辑。",
-                    "Repository vulnerability alerts": "仓库漏洞警报",
-                        "Dependabot alert (aka dependency vulnerability alert) created, resolved, or dismissed on a repository.": "Dependabot 警报（又名依赖漏洞警报）在仓库上的创建、解决或解除。",
-                    "Secret scanning alert locations": "机密扫描警报位置",
-                        "Secrets scanning alert location created.": "机密扫描警报位置的创建。",
-                    "Secret scanning alerts": "机密扫描警报",
-                        "Secrets scanning alert created, resolved, reopened, validated, or publicly leaked.": "机密扫描警报的创建、解决、重新打开、验证或公开泄露。",
-                    "Security and analyses": "安全和分析",
-                        "Code security features enabled or disabled for a repository.": "启用或禁用仓库的代码安全功能。",
-                    "Secret scanning scans": "机密扫描",
-                        "Secrets scanning scan completed.": "机密扫描已完成",
-                    // "": "星标",
-                        "A star is created or deleted from a repository.": "星标或取消仓库星标。",
-                    "Statuses": "状态",
-                        "Commit status updated from the API.": "通过 API 更新提交状态。",
-                    "Team adds": "团队添加",
-                        "Team added or modified on a repository.": "在仓库上添加或修改的团队。",
-                    "Teams": "团队",  // 组织设置
-                        "Team is created, deleted, edited, or added to/removed from a repository.": "团队的创建、删除、编辑以及向仓库添加团队、从仓库中移除团队。",
-                    "Visibility changes": "可见性变化",
-                        "Repository changes from private to public.": "仓库从私有更改为公共。",
-                    "Watches": "关注",
-                        "User stars a repository.": "用户星标仓库。",
+                        "Release created, edited, published, unpublished, or deleted.": "릴리즈가 생성, 수정, 게시, 비게시 또는 삭제되었어요.",
+                        "Repository created, deleted, archived, unarchived, publicized, privatized, edited, renamed, or transferred.": "저장소가 생성, 삭제, 보관, 보관 해제, 공개, 비공개 전환, 수정, 이름 변경 또는 이전되었어요.",
+                    "Repository advisories": "저장소 공지",
+                        "Repository advisory published or reported.": "저장소 공지가 게시되었거나 보고되었어요.",
+                    "Repository imports": "저장소 가져오기",
+                        "Repository import succeeded, failed, or cancelled.": "저장소 가져오기가 성공, 실패 또는 취소되었어요.",
+                    "Repository rulesets": "저장소 규칙 집합",
+                        "Repository ruleset created, deleted or edited.": "저장소 규칙 집합이 생성, 삭제 또는 수정되었어요.",
+                    "Repository vulnerability alerts": "저장소 취약점 경고",
+                        "Dependabot alert (aka dependency vulnerability alert) created, resolved, or dismissed on a repository.": "저장소에서 Dependabot 경고(의존성 취약점 경고)가 생성, 해결 또는 해제되었어요.",
+                    "Secret scanning alert locations": "기밀 스캔 경고 위치",
+                        "Secrets scanning alert location created.": "기밀 스캔 경고 위치가 생성되었어요.",
+                    "Secret scanning alerts": "기밀 스캔 경고",
+                        "Secrets scanning alert created, resolved, reopened, validated, or publicly leaked.": "기밀 스캔 경고가 생성, 해결, 재개, 검증 또는 공개적으로 유출되었어요.",
+                    "Security and analyses": "보안 및 분석",
+                        "Code security features enabled or disabled for a repository.": "저장소의 코드 보안 기능이 활성화되었거나 비활성화되었어요.",
+                    "Secret scanning scans": "기밀 스캔",
+                        "Secrets scanning scan completed.": "기밀 스캔이 완료되었어요.",
+                        "A star is created or deleted from a repository.": "저장소에 별표가 추가되었거나 제거되었어요.",
+                    "Statuses": "상태",
+                        "Commit status updated from the API.": "API를 통해 커밋 상태가 업데이트되었어요.",
+                    "Team adds": "팀 추가",
+                        "Team added or modified on a repository.": "저장소에 팀이 추가되었거나 수정되었어요.",
+                    "Teams": "팀",  // 조직 설정
+                        "Team is created, deleted, edited, or added to/removed from a repository.": "팀이 생성, 삭제, 수정되었거나 저장소에 추가되었거나 제거되었어요.",
+                    "Visibility changes": "가시성 변경",
+                        "Repository changes from private to public.": "저장소가 비공개에서 공개로 변경되었어요.",
+                    "Watches": "주시",
+                        "User stars a repository.": "사용자가 저장소에 별표를 추가해요.",
                     "Wiki": "",
-                        "Wiki page updated.": "Wiki 页面的更新。",
-                    "Workflow jobs": "工作流程作业",
-                        "Workflow job queued, waiting, in progress, or completed on a repository.": "仓库中工作流作业的队列、等待、正在进行或完成。",
-                    "Workflow runs": "工作流程运行",
-                        "Workflow run requested or completed on a repository.": "仓库中工作流程运行的请求或完成。",
-                "Active": "激活",
-                "We will deliver event details when this hook is triggered.": "当钩子被触发时，我们将提供事件详细信息。",
+                        "Wiki page updated.": "Wiki 페이지가 업데이트되었어요.",
+                    "Workflow jobs": "워크플로 작업",
+                        "Workflow job queued, waiting, in progress, or completed on a repository.": "저장소에서 워크플로 작업이 대기, 진행 중 또는 완료되었어요.",
+                    "Workflow runs": "워크플로 실행",
+                        "Workflow run requested or completed on a repository.": "저장소에서 워크플로 실행이 요청되었거나 완료되었어요.",
+                "Active": "활성",
+                "We will deliver event details when this hook is triggered.": "이 웹훅이 트리거되면 이벤트 상세 정보를 전달해드릴게요.",
 
-            // 顶部提醒
-            "Okay, that hook was successfully created. We sent a ping payload to test it out! Read more about it at https://docs.github.com/webhooks/#ping-event.": "好的，这个钩子已经成功创建。我们发送了一个 ping 负载来测试它! 阅读更多关于它的信息，请访问 https://docs.github.com/webhooks/#ping-event。",
+            // 상단 알림
+            "Okay, that hook was successfully created. We sent a ping payload to test it out! Read more about it at https://docs.github.com/webhooks/#ping-event.": "좋아요, 해당 웹훅이 성공적으로 생성되었어요. 테스트를 위해 핑 페이로드를 전송했어요! 자세한 내용은 https://docs.github.com/webhooks/#ping-event 에서 읽어보세요.",
 
-        // 管理 钩子 /<user-name>/<repo-name>/settings/hooks/<id>
-            "Manage webhook": "管理 Web 钩子",
-            "If you've lost or forgotten this secret, you can change it, but be aware that any integrations using this secret will need to be updated. —": "如果您丢失或忘记了此机密，则可以更改它，但请注意，使用此机密的任何集成都需要更新。 —",
-            "Change Secret": "更改机密",
-            "Update webhook": "更新 Web 钩子",
-            // 顶部提醒
-                "Okay, the hook was successfully updated.": "好的，Web 钩子已经成功更新。",
-            "Delete webhook": "删除 Web 钩子",
+        // 웹훅 관리 /<user-name>/<repo-name>/settings/hooks/<id>
+            "Manage webhook": "웹훅 관리하기",
+            "If you've lost or forgotten this secret, you can change it, but be aware that any integrations using this secret will need to be updated. —": "만약 이 기밀을 잃어버리거나 잊으셨다면 변경할 수 있어요. 단, 이 기밀을 사용하는 모든 통합은 업데이트가 필요하다는 점을 유의해 주세요. —",
+            "Change Secret": "기밀 변경하기",
+            "Update webhook": "웹훅 업데이트하기",
+            // 상단 알림
+                "Okay, the hook was successfully updated.": "좋아요, 웹훅이 성공적으로 업데이트되었어요.",
+            "Delete webhook": "웹훅 삭제하기",
 
-        // 最近交付标签 /<user-name>/<repo-name>/settings/hooks/<id>?tab=deliveries
-            "Recent Deliveries": "最近交付",
-                "redelivery": "再交付",
-            "Loading deliveries…": "载入交付…",
-            "Detailed delivery information will be shown here once the hook has been triggered.": "一旦触发钩子，详细的交付信息将在此处显示。",
+        // 최근 전달 탭 /<user-name>/<repo-name>/settings/hooks/<id>?tab=deliveries
+            "Recent Deliveries": "최근 전달 내역",
+                "redelivery": "재전달",
+            "Loading deliveries…": "전달 내역을 불러오는 중…",
+            "Detailed delivery information will be shown here once the hook has been triggered.": "웹훅이 트리거되면, 상세 전달 정보가 이곳에 표시될 거예요.",
 
-            "Request": "请求",
-            "Response": "应答",
-            "Redeliver": "重新交付",
-                "Redeliver payload?": "重新交付有效负载？",
-                "The payload will be delivered to": "该有效负载将被发送到",
-                "using the current webhook configuration.": "使用当前的 Web 钩子 配置。",
-                "Yes, redeliver this payload": "是的，重新发送此有效负载",
-                    "Delivering payload…": "交付有效载荷...",
+            "Request": "요청",
+            "Response": "응답",
+            "Redeliver": "재전달하기",
+                "Redeliver payload?": "페이로드를 재전달할까요?",
+                "The payload will be delivered to": "해당 페이로드가 다음으로 전송될 거예요:",
+                "using the current webhook configuration.": "현재 웹훅 구성으로 전송될 거예요.",
+                "Yes, redeliver this payload": "네, 이 페이로드를 재전달할게요.",
+                    "Delivering payload…": "페이로드 전송 중…",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
         [/Completed in (\d+(\.\d+)) seconds?./, "在 $1 秒内完成。"],
     ],
 };
+
 I18N["ko-KR"]["orgs/settings/hooks"] = I18N["ko-KR"]["repository/settings/hooks"];
 
-I18N["ko-KR"]["repository/settings/environments"] = { // 仓库设置 - 环境 /<user-name>/<repo-name>/settings/environment
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/environments"] = { // 저장소 설정 - 환경 /<user-name>/<repo-name>/settings/environment
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 仓库 环境 /<user-name>/<repo-name>/settings/environments
-            "New environment": "新建环境",
-            "You can configure environments with protection rules, variables, and secrets.": "您可以使用保护规则，变量和机密配置环境。",
-            "Learn more about configuring environments.": "了解更多关于配置环境的信息。",
+        // 저장소 환경 /<user-name>/<repo-name>/settings/environments
+            "New environment": "새 환경 만들기",
+            "You can configure environments with protection rules, variables, and secrets.": "보호 규칙, 변수, 그리고 기밀을 사용하여 환경을 설정할 수 있어요.",
+            "Learn more about configuring environments.": "환경 설정에 대해 자세히 알아보세요.",
 
-            "There are no environments for this repository": "此仓库尚无环境",
-            "Environments are used by your workflows for deployments.": "您的工作流程使用环境进行部署。",
-            "You can configure environments with protection rules and secrets.": "您可以使用保护规则和机密配置环境。",
+            "There are no environments for this repository": "이 저장소에는 환경이 없어요",
+            "Environments are used by your workflows for deployments.": "환경은 배포를 위해 작업 흐름에서 사용해요.",
+            "You can configure environments with protection rules and secrets.": "보호 규칙과 기밀을 사용하여 환경을 설정할 수 있어요.",
 
-            "Delete environment": "删除环境",
-            // 删除环境对话框
-            "Are you sure you want to delete this environment?": "您确定要删除此环境吗？",
-                "Deleting an environment will delete all associated secrets, variables, and protection rules.": "删除环境将删除所有关联的机密、变量和保护规则。",
-                "I understand, delete this environment": "我明白了，依然删除这个环境",
-            // 顶部提醒
-                "Environment deleted.": "环境已删除。",
-                "There was an error saving your new environment.": "保存新环境时出错。",
+            "Delete environment": "환경 삭제하기",
+            // 환경 삭제 대화 상자
+            "Are you sure you want to delete this environment?": "이 환경을 삭제하시겠어요?",
+                "Deleting an environment will delete all associated secrets, variables, and protection rules.": "환경을 삭제하면 연결된 모든 기밀, 변수, 보호 규칙도 함께 삭제돼요.",
+                "I understand, delete this environment": "알겠어요, 이 환경을 삭제할게요",
+            // 상단 알림
+                "Environment deleted.": "환경이 삭제되었어요.",
+                "There was an error saving your new environment.": "새 환경을 저장하는 중 오류가 발생했어요.",
 
-        // 仓库 新建环境 /<user-name>/<repo-name>/settings/environments/new
-            "/ Add": "/ 添加",
-            "Name": "名称",
-            "Configure environment": "设置环境",
-            "Name can't be blank": "名称不能为空",
+        // 저장소 새 환경 만들기 /<user-name>/<repo-name>/settings/environments/new
+            "/ Add": "/ 추가하기",
+            "Name": "이름",
+            "Configure environment": "환경 설정하기",
+            "Name can't be blank": "이름은 비워둘 수 없어요",
 
-        // 编辑环境 /<user-name>/<repo-name>/settings/environments/<id>/edit
-            // 顶部提醒
-                // [/Environment \"([^ ]+)\" created./, "环境 “$1” 已创建。"],
-                // [/Environment \"([^ ]+)\" updated./, "环境 “$1” 已更新。"],
+        // 환경 편집 /<user-name>/<repo-name>/settings/environments/<id>/edit
+            // 상단 알림
+                // [/Environment \"([^ ]+)\" created./, "환경 “$1”이(가) 생성되었어요."],
+                // [/Environment \"([^ ]+)\" updated./, "환경 “$1”이(가) 업데이트되었어요."],
 
-            "/ Configure": "/ 设置",
+            "/ Configure": "/ 설정하기",
 
-            "Deployment protection rules": "部署保护规则",
-                "Configure reviewers, timers, and custom rules that must pass before deployments to this environment can proceed.": "配置审查者、计时器和自定义规则，在继续部署到此环境之前必须通过这些规则。",
+            "Deployment protection rules": "배포 보호 규칙",
+                "Configure reviewers, timers, and custom rules that must pass before deployments to this environment can proceed.": "이 환경으로 배포하기 전에 반드시 통과해야 하는 검토자, 타이머, 그리고 사용자 정의 규칙을 설정해 보세요.",
 
-                "Required reviewers": "所需的审查者",
-                    "Specify people or teams that may approve workflow runs when they access this environment.": "指定访问此环境时可以批准工作流运行的人员或团队。",
-                        "Add up to": "最多添加",
-                        "more": " ",
-                        "reviewers": "位审查者",
-                        "Search for people or teams...": "搜索人员或团队...",
+                "Required reviewers": "필수 검토자",
+                    "Specify people or teams that may approve workflow runs when they access this environment.": "이 환경에 접근할 때 작업 흐름 실행을 승인할 수 있는 사람이나 팀을 지정해 보세요.",
+                        "Add up to": "최대",
+                        "more": "명의",
+                        "reviewers": " 검토자 추가하기",
+                        "Search for people or teams...": "사람이나 팀 검색하기...",
+                    
+                    "Prevent self-review": "자기 검토 방지하기",
+                        "Require a different approver than the user who triggered the workflow run.": "작업 흐름 실행을 트리거한 사용자와 다른 승인자를 요구해 보세요.",
+                "Wait timer": "대기 타이머",
+                    "Set an amount of time to wait before allowing deployments to proceed.": "배포가 진행되기 전에 기다릴 시간을 설정해 보세요.",
+                    "minutes": "분",
+                "Enable custom rules with GitHub Apps": "GitHub 앱을 사용해 사용자 정의 규칙 활성화하기",
+                    "Learn about existing apps": "기존 앱에 대해 알아보세요",
+                    "create your own protection rules": "나만의 보호 규칙을 만들기",
+                    "so you can deploy with confidence.": "그래서 안심하고 배포할 수 있어요.",
+                "Allow administrators to bypass configured protection rules": "관리자가 설정된 보호 규칙을 우회할 수 있도록 허용하기",
+                "Save protection rules": "보호 규칙 저장하기",
 
-                    "Prevent self-review": "防止自我审查",
-                        "Require a different approver than the user who triggered the workflow run.": "要求与触发工作流程运行的用户不同的批准审查者。",
-                "Wait timer": "等待计时器",
-                    "Set an amount of time to wait before allowing deployments to proceed.": "设置允许部署继续之前等待的时间。",
-                    "minutes": "分钟",
-                "Enable custom rules with GitHub Apps": "使用 GitHub Apps 启用自定义规则",
-                    "Learn about existing apps": "了解现有应用",
-                    "create your own protection rules": "创建您自己的保护规则",
-                    "so you can deploy with confidence.": "以便您可以放心地进行部署。",
-                "Allow administrators to bypass configured protection rules": "允许管理员绕过配置的保护规则",
-                "Save protection rules": "保存保护规则",
+            "Deployment branches and tags": "배포 분기와 꼬리표",
+                "Limit which branches and tags can deploy to this environment based on rules or naming patterns.": "규칙이나 명명 패턴에 따라 이 환경에 배포할 수 있는 분기와 꼬리표를 제한해 보세요.",
+                "No restriction": "제한 없음",
+                    "No restriction to which branch or tag from this repository can deploy.": "이 저장소의 어떤 분기나 꼬리표든 배포에 제한이 없어요.",
+                "Protected branches only": "보호된 분기만",
+                    "Deployment limited to branches with protection rules.": "배포는 보호 규칙이 적용된 분기에만 제한돼요.",
+                "Selected branches and tags": "선택한 분기와 꼬리표",
+                    "Specify a list of branches and tags using naming patterns.": "명명 패턴을 사용하여 분기와 꼬리표 목록을 지정해 보세요.",
 
-            "Deployment branches and tags": "部署分支和标签",
-                "Limit which branches and tags can deploy to this environment based on rules or naming patterns.": "根据规则或命名模式限制哪些分支和标签可以部署到此环境。",
-                "No restriction": "没有限制",
-                    "No restriction to which branch or tag from this repository can deploy.": "不限制仓库中的分支或标签进行部署。",
-                "Protected branches only": "仅受保护的分支",
-                    "Deployment limited to branches with protection rules.": "部署仅限于具有保护规则的分支。",
-                "Selected branches and tags": "选中的分支和标签",
-                    "Specify a list of branches and tags using naming patterns.": "使用命名模式指定分支和标签的列表。",
+                "Applies to": "적용 대상:",
+                // [/(\d+) branch(?:es|)/, "$1 개의 분기"],
+                ". Based on the existing": "기존의",
+                "repository branch protection rules": "저장소 분기 보호 규칙을 기반으로 해요.",
+                // [/Currently applies to (\d+) branch(?:es|)/, "현재 $1 개의 분기에 적용됨"],
 
-                "Applies to": "适用于",
-                // [/(\d+) branch(?:es|)/, "$1 个分支"],
-                ". Based on the existing": "。基于已有的",
-                "repository branch protection rules": "仓库分支保护规则",
-                // [/Currently applies to (\d+) branch(?:es|)/, "目前适用于 $1 个分支"],
+                "No branch or tag rules applied yet:": "아직 분기나 꼬리표 규칙이 적용되지 않았어요:",
+                "all branches and tags are still allowed to deploy.": "모든 분기와 꼬리표는 여전히 배포가 가능해요.",
 
-                "No branch or tag rules applied yet:": "尚未应用分支或标签规则：",
-                "all branches and tags are still allowed to deploy.": "仍允许所有分支和标签进行部署。",
-
-                // [/(\d+) branch(?:es|) allowed/, "允许 $1 个分支"],
-                // [/(\d+) branch(?:es|) and (\d+)  tags? allowed/, "允许 $1 个分支和 $2 个标签"],
-                "Add deployment branch or tag rule": "添加部署分支或标签规则",
-                    // 添加部署分支规则 对话框
-                    "Ref type:": "引用类型：",
+                // [/(\d+) branch(?:es|) allowed/, "허용된 분기 $1 개"],
+                // [/(\d+) branch(?:es|) and (\d+) tags? allowed/, "허용된 분기 $1 개 및 꼬리표 $2 개"],
+                "Add deployment branch or tag rule": "배포 분기 또는 꼬리표 규칙 추가하기",
+                    // 배포 분기 규칙 추가 대화 상자
+                    "Ref type:": "참조 유형:",
                         "Tag": "꼬리표",
-                    "Name pattern:": "名称的模式：",
-                    "Add rule": "添加规则",
-                "Update deployment branch rule": "更新部署分支规则",
-                    "Update rule": "更新规则",
-                "Remove": "删除",
+                    "Name pattern:": "이름 패턴:",
+                    "Add rule": "규칙 추가하기",
+                "Update deployment branch rule": "배포 분기 규칙 업데이트하기",
+                    "Update rule": "규칙 업데이트하기",
+                "Remove": "제거하기",
 
-                // 顶部提醒
-                    "Environment changes successfully saved: all branches can deploy.": "环境更改已成功保存：所有分支都可以部署。",
-                    "Environment changes successfully saved: only protected branches can deploy.": "环境更改已成功保存：只有受保护的分支才能部署。",
-                    "Environment changes successfully saved: only selected branches and tags can deploy.": "环境更改已成功保存：只有选定的分支和标签才能部署。",
-                    // [/Deployment branch rule \"([^ ]+)\" saved successfully./ ,"部署分支规则 “$1” 已成功保存。"],
-                    // [/Deployment branch rule \"([^ ]+)\" removed./, "部署分支规则 “$1” 已删除。",]
+                // 상단 알림
+                    "Environment changes successfully saved: all branches can deploy.": "환경 변경 사항이 성공적으로 저장되었어요: 모든 분기가 배포 가능해요.",
+                    "Environment changes successfully saved: only protected branches can deploy.": "환경 변경 사항이 성공적으로 저장되었어요: 보호된 분기만 배포 가능해요.",
+                    "Environment changes successfully saved: only selected branches and tags can deploy.": "환경 변경 사항이 성공적으로 저장되었어요: 선택한 분기와 꼬리표만 배포 가능해요.",
+                    // [/Deployment branch rule \"([^ ]+)\" saved successfully./ ,"배포 분기 규칙 “$1”이(가) 성공적으로 저장되었어요."],
+                    // [/Deployment branch rule \"([^ ]+)\" removed./, "배포 분기 규칙 “$1”이(가) 삭제되었어요."],
 
-            "Environment secrets": "环境机密",
-                "Secrets are encrypted environment variables. They are accessible only by GitHub Actions in the context of this environment by using the": "机密是加密的环境变量。它们只能由 GitHub Actions 在这个环境中访问",
-                    "secret context": "机密上下文",
+            "Environment secrets": "환경 기밀",
+                "Secrets are encrypted environment variables. They are accessible only by GitHub Actions in the context of this environment by using the": "기밀은 암호화된 환경 변수에요. 이들은 이 환경에서 GitHub 액션을 통해서만 접근할 수 있어요",
+                    "secret context": "기밀 컨텍스트",
 
-                "Name": "名称",
-                "Value": "值",
-                "Last updated": "最后更新",
+                "Name": "이름",
+                "Value": "값",
+                "Last updated": "마지막 업데이트",
 
-                "This environment has no secrets.": "该环境尚无机密。",
-                "Add environment secret": "添加环境机密",
-                    // 添加机密对话框
-                    "Add secret": "添加机密",
-                    "Secret value": "机密值",
-                    // 提醒
-                        "Failed to add secret: Secret names can only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_). Spaces are not allowed. Must start with a letter ([a-z], [A-Z]) or underscores (_).": "添加机密失败：机密名称只能包含字母、数字字符 ([a-z], [A-Z], [0-9]) 或下划线 (_)。不允许使用空格。必须以字母 ([a-z], [A-Z]) 或下划线 (_) 开头。",
-                        "Name and value are required": "名称和值是必填项。",
+                "This environment has no secrets.": "이 환경에는 기밀이 없어요.",
+                "Add environment secret": "환경 기밀 추가하기",
+                    // 기밀 추가 대화 상자
+                    "Add secret": "기밀 추가하기",
+                    "Secret value": "기밀 값",
+                    // 알림
+                        "Failed to add secret: Secret names can only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_). Spaces are not allowed. Must start with a letter ([a-z], [A-Z]) or underscores (_).": "기밀 추가에 실패했어요: 기밀 이름은 알파벳, 숫자([a-z], [A-Z], [0-9]) 또는 밑줄(_)만 포함할 수 있어요. 공백은 허용되지 않으며, 알파벳([a-z], [A-Z]) 또는 밑줄(_)로 시작해야 해요.",
+                        "Name and value are required": "이름과 값은 필수에요.",
 
-                "Update secret": "更新机密",
-                // 删除机密 对话框
-                    "Delete secret": "删除机密",
-                        "Are you sure you want to delete": "您确定要删除",
-                        "Yes, delete this": "是的，删除该",
-                        "secret": "机密",
+                "Update secret": "기밀 업데이트하기",
+                // 기밀 삭제 대화 상자
+                    "Delete secret": "기밀 삭제하기",
+                        "Are you sure you want to delete": "삭제하시겠어요",
+                        "Yes, delete this": "네, 이 기밀 삭제할게요",
+                        "secret": "기밀",
 
-            "Environment variables": "环境变量",
-                "Variables are used for non-sensitive configuration data. They are accessible only by GitHub Actions in the context of this environment by using the": "变量用于非敏感配置数据。它们只能由 GitHub Actions 在此环境中访问",
-                    "variable context": "变量上下文",
+            "Environment variables": "환경 변수",
+                "Variables are used for non-sensitive configuration data. They are accessible only by GitHub Actions in the context of this environment by using the": "변수는 민감하지 않은 구성 데이터를 위해 사용돼요. 이들은 이 환경에서 GitHub 액션을 통해서만 접근할 수 있어요",
+                    "variable context": "변수 컨텍스트",
 
-                "This environment has no variables.": "该环境尚无变量。",
-                "Add environment variable": "添加环境变量",
-                    // 添加变量对话框
-                    "Add variable": "添加变量",
-                    "Variable value": "变量值",
-                    // 提醒
-                        "Failed to add variable: Variable names can only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_). Spaces are not allowed. Must start with a letter ([a-z], [A-Z]) or underscores (_).": "添加变量失败： 变量名只能包含字母、数字字符（[a-z]、[A-Z]、[0-9]）或下划线 (_)。不允许使用空格。必须以字母 ([a-z], [A-Z]) 或下划线 (_) 开头。",
+                "This environment has no variables.": "이 환경에는 변수가 없어요.",
+                "Add environment variable": "환경 변수 추가하기",
+                    // 변수 추가 대화 상자
+                    "Add variable": "변수 추가하기",
+                    "Variable value": "변수 값",
+                    // 알림
+                        "Failed to add variable: Variable names can only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_). Spaces are not allowed. Must start with a letter ([a-z], [A-Z]) or underscores (_).": "변수 추가에 실패했어요: 변수 이름은 알파벳, 숫자([a-z], [A-Z], [0-9]) 또는 밑줄(_)만 포함할 수 있어요. 공백은 허용되지 않으며, 알파벳([a-z], [A-Z]) 또는 밑줄(_)로 시작해야 해요.",
 
-                "Update variable": "更新变量",
-                // 删除变量 对话框
-                    "Delete variable": "删除变量",
-                    "variable": "变量",
+                "Update variable": "변수 업데이트하기",
+                // 변수 삭제 대화 상자
+                    "Delete variable": "변수 삭제하기",
+                    "variable": "변수",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/(\d+) protection rules?/, "$1 个保护规则"], // /environments
-        [/(\d+) secrets?/, "$1 个机密"], // /environments
-        [/(\d+) variables?/, "$1 个变量"], // /environments
-        [/Environment \"([^ ]+)\" created./, "环境 “$1” 已创建。"],
-        [/Environment \"([^ ]+)\" updated./, "环境 “$1” 已更新。"],
-        [/Currently applies to (\d+) branch(?:es|)/, "目前适用于 $1 个分支"],
-        [/(\d+) branch(?:es|) and (\d+) tags? allowed/, "允许 $1 个分支和 $2 个标签"],
-        [/(\d+) branch(?:es|) allowed/, "允许 $1 个分支"],
-        [/(\d+) branch(?:es|)/, "$1 个分支"],
-        [/Deployment branch rule \"([^ ]+)\" saved successfully./ ,"部署分支规则 “$1” 已成功保存。"],
-        [/Deployment branch rule \"([^ ]+)\" removed./, "部署分支规则 “$1” 已删除。",]
+        [/(\d+) protection rules?/, "$1 개의 보호 규칙"], // /environments
+        [/(\d+) secrets?/, "$1 개의 기밀"],
+        [/(\d+) variables?/, "$1 개의 변수"],
+        [/Environment \"([^ ]+)\" created./, "환경 “$1”이(가) 생성되었어요."],
+        [/Environment \"([^ ]+)\" updated./, "환경 “$1”이(가) 업데이트되었어요."],
+        [/Currently applies to (\d+) branch(?:es|)/, "현재 $1 개의 분기에 적용됨"],
+        [/(\d+) branch(?:es|) and (\d+) tags? allowed/, "허용된 분기 $1 개와 꼬리표 $2 개"],
+        [/(\d+) branch(?:es|) allowed/, "허용된 분기 $1 개"],
+        [/(\d+) branch(?:es|)/, "$1 개의 분기"],
+        [/Deployment branch rule \"([^ ]+)\" saved successfully./ ,"배포 분기 규칙 “$1”이(가) 성공적으로 저장되었어요."],
+        [/Deployment branch rule \"([^ ]+)\" removed./, "배포 분기 규칙 “$1”이(가) 삭제되었어요."],
     ],
 };
 
-I18N["ko-KR"]["repository/settings/codespaces"] = { // 仓库设置 - 代码空间 /<user-name>/<repo-name>/settings/codespaces
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/codespaces"] = { // 저장소 설정 - 코드스페이스 /<user-name>/<repo-name>/settings/codespaces
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 代码空间 /<user-name>/<repo-name>/settings/codespaces
-            // 顶部提醒
-                "Prebuild configuration created": "预构建设置已创建",
-                "Prebuild configuration deleted": "预构建设置已删除",
-            "Prebuild configuration": "预构建设置",
+        // 코드스페이스 /<user-name>/<repo-name>/settings/codespaces
+            // 상단 알림
+                "Prebuild configuration created": "사전 구축 설정이 생성되었어요",
+                "Prebuild configuration deleted": "사전 구축 설정이 삭제되었어요",
+            "Prebuild configuration": "사전 구축 설정",
 
-            "Set up prebuild": "设置预构建",
-            "There are no prebuilds configured for this repository": "尚无预构建设置",
-            "Prebuild configurations speed up Codespace creations significantly by pre-executing all the tasks required to build your development environment.": "预构建设置通过预先执行构建开发环境所需的所有任务，大大加快了代码空间的创建。",
-            "Learn more about setting up prebuilds": "了解更多关于预构建设置的信息",
+            "Set up prebuild": "사전 구축 설정하기",
+            "There are no prebuilds configured for this repository": "이 저장소에는 사전 구축 설정이 없어요",
+            "Prebuild configurations speed up Codespace creations significantly by pre-executing all the tasks required to build your development environment.": "사전 구축 설정은 개발 환경 구축에 필요한 모든 작업을 미리 실행하여 코드스페이스 생성 속도를 크게 향상시켜요.",
+            "Learn more about setting up prebuilds": "사전 구축 설정에 대해 자세히 알아보세요",
 
-            // 状态
-                "Currently Running": "正在运行中",
-                "Disabled": "禁用",
-            "See output": "查看输出结果",
+            // 상태
+                "Currently Running": "현재 실행 중이에요",
+                "Disabled": "비활성화됨",
+            "See output": "출력 보기",
 
-            "Configuration menu": "设置菜单",
-                "Manually trigger": "手动触发",
-                "View runs": "查看运行日志",
-                "Disable runs":"暂停运行",
-                "Enable runs":"恢复运行",
+            "Configuration menu": "설정 메뉴",
+                "Manually trigger": "수동으로 실행하기",
+                "View runs": "실행 로그 보기",
+                "Disable runs":"실행 중지하기",
+                "Enable runs":"실행 재개하기",
 
-            // 删除对话框
-                "Are you sure?": "您确定吗？",
-                "Are you sure you want to delete this prebuild configuration? Running workflow may fail and templates associated with this configuration will be deleted.": "您确定要删除这个预构建设置吗？运行中的工作流可能会失败，与此设置相关的模板将被删除。",
+            // 삭제 대화 상자
+                "Are you sure?": "정말로 하시겠어요?",
+                "Are you sure you want to delete this prebuild configuration? Running workflow may fail and templates associated with this configuration will be deleted.": "이 사전 구축 설정을 삭제하시겠어요? 실행 중인 워크플로우가 실패할 수 있으며, 이 설정과 연결된 템플릿이 삭제될 거예요.",
 
-        // 代码空间-新建预构建设置 /<user-name>/<repo-name>/settings/codespaces/prebuild_configurations/new
-            "/ New prebuild configuration": "/ 新建预构建设置",
-            // 黄色警告
-                "Prebuilds consume storage space that will incur a billable charge. Learn more about": "预构建会占用存储空间，可能会产生费用。了解更多关于",
-                "prebuild configurations": "预构建设置",
+        // 코드스페이스 - 새 사전 구축 설정 /<user-name>/<repo-name>/settings/codespaces/prebuild_configurations/new
+            "/ New prebuild configuration": "/ 새 사전 구축 설정",
+            // 노란 경고
+                "Prebuilds consume storage space that will incur a billable charge. Learn more about": "사전 구축 설정은 저장 공간을 사용하여 비용이 발생할 수 있어요. 자세히 알아보세요",
+                "prebuild configurations": "사전 구축 설정에 대해",
 
-            "Configuration": "设置",
-            "Your prebuild will be built from the branch and configuration file selected below. Learn more about": "您的预构建将从下面选择的分支和配置文件中构建。了解更多关于",
-            "prebuild configuration.": "预构建的设置。",
-            "Select branch": "选择分支",
-            "Find a branch": "查找分支",
-            "Configuration File:": "设置文件：",
-            "Default Codespaces Configuration": "默认代码空间设置",
+            "Configuration": "설정",
+            "Your prebuild will be built from the branch and configuration file selected below. Learn more about": "아래에서 선택한 분기와 설정 파일을 기반으로 사전 구축이 생성될 거예요. 자세히 알아보세요",
+            "prebuild configuration.": "사전 구축 설정에 대해.",
+            "Select branch": "분기 선택하기",
+            "Find a branch": "분기 찾기",
+            "Configuration File:": "설정 파일:",
+            "Default Codespaces Configuration": "기본 코드스페이스 설정",
 
-            "Access and cost control": "访问和成本控制",
-            "Prebuild triggers": "预构建触发器",
-            "You can specify how often to prebuild your codespace based on changes to your repository or a schedule to manage Actions usage.": "您可以根据对仓库的更改或管理操作使用的计划来指定预构建代码空间的频率。",
-            "Learn about prebuild triggers": "了解预构建触发器",
-            "Every push": "每次推送",
-                "Default": "默认",
-                "Your codespace will prebuild on every push to this branch": "您的代码空间将在每次推送到该分支时预构建",
-            "Configuration change": "配置改变时",
-                "Your codespace will prebuild when a change is detected on the devcontainer.json and associated configuration files": "当检测到 devcontainer.json 和相关的配置文件有变化时，您的代码空间将预构建。",
-            "Scheduled": "计划",
-                "Your codespace will prebuild on a schedule": "您的代码空间将按计划进行预构建",
-            "Days": "天",
-                "Weekdays": "工作日",
-                "Every day": "每日",
-                "Sunday"    : "周日",
-                "Monday"    : "周一",
-                "Tuesday"   : "周二",
-                "Wednesday" : "周三",
-                "Thursday"  : "周四",
-                "Friday"    : "周五",
-                "Saturday"  : "周六",
-            "Times": "时间",
-                "Filter": "筛选",
+            "Access and cost control": "접근 및 비용 관리",
+            "Prebuild triggers": "사전 구축 트리거",
+            "You can specify how often to prebuild your codespace based on changes to your repository or a schedule to manage Actions usage.": "저장소의 변경사항이나 액션 사용 관리를 위한 스케줄에 따라 코드스페이스를 사전 구축하는 빈도를 지정할 수 있어요.",
+            "Learn about prebuild triggers": "사전 구축 트리거에 대해 알아보세요",
+            "Every push": "푸시할 때마다",
+                "Default": "기본값",
+                "Your codespace will prebuild on every push to this branch": "이 분기로 푸시할 때마다 코드스페이스가 사전 구축될 거예요",
+            "Configuration change": "설정 변경 시",
+                "Your codespace will prebuild when a change is detected on the devcontainer.json and associated configuration files": "devcontainer.json 및 관련 설정 파일에서 변경이 감지되면 코드스페이스가 사전 구축될 거예요",
+            "Scheduled": "예약됨",
+                "Your codespace will prebuild on a schedule": "코드스페이스가 예약된 시간에 사전 구축될 거예요",
+            "Days": "일",
+                "Weekdays": "평일",
+                "Every day": "매일",
+                "Sunday"    : "일요일",
+                "Monday"    : "월요일",
+                "Tuesday"   : "화요일",
+                "Wednesday" : "수요일",
+                "Thursday"  : "목요일",
+                "Friday"    : "금요일",
+                "Saturday"  : "토요일",
+            "Times": "시간",
+                "Filter": "필터",
 
-            "Region availability": "区域可用性",
-            "Reduce prebuild availability to only specific regions": "仅在特定区域提供预构建",
-                "By default, your prebuilt image will be available to all regions where codespaces are available and storage costs will apply for each region. You can adjust this to manage your storage usage.": "默认情况下，您的预构建镜像将在所有提供代码空间的区域可用，并且每个区域都会产生存储费用。您可以对此进行调整，以管理存储空间的使用。",
-                "Learn about region availability": "了解区域可用性",
-                    "US East": "美国东部",
-                    "US West": "美国西部",
-                    "Europe West": "欧洲西部",
-                    "Southeast Asia": "东南亚",
-                    "Australia": "澳大利亚",
-            "Template history": "模板历史",
-                "You can specify the number of prebuild template versions retained to speed up codespaces from an older commit to manage storage costs. The maximum value is 5 versions.": "您可以指定保留的预构建模板版本的数量，以加快旧提交的代码空间，以管理存储成本。最大值为 5 个版本。",
-                "Learn about template history": "了解模板历史",
-            "versions": "个版本",
+            "Region availability": "지역 사용 가능성",
+            "Reduce prebuild availability to only specific regions": "사전 구축 가능 지역을 특정 지역으로 제한하기",
+                "By default, your prebuilt image will be available to all regions where codespaces are available and storage costs will apply for each region. You can adjust this to manage your storage usage.": "기본적으로, 사전 구축된 이미지는 코드스페이스가 사용 가능한 모든 지역에서 사용할 수 있으며, 각 지역마다 저장 비용이 적용돼요. 저장 공간 사용량을 관리하기 위해 이를 조정할 수 있어요.",
+                "Learn about region availability": "지역 사용 가능성에 대해 알아보세요",
+                    "US East": "미국 동부",
+                    "US West": "미국 서부",
+                    "Europe West": "유럽 서부",
+                    "Southeast Asia": "동남아시아",
+                    "Australia": "호주",
+            "Template history": "템플릿 이력",
+                "You can specify the number of prebuild template versions retained to speed up codespaces from an older commit to manage storage costs. The maximum value is 5 versions.": "저장 비용 관리를 위해 오래된 커밋에서 코드스페이스를 빠르게 불러오기 위해 보관할 사전 구축 템플릿 버전 수를 지정할 수 있어요. 최대 5 버전까지 가능해요.",
+                "Learn about template history": "템플릿 이력에 대해 알아보세요",
+            "versions": "개의 버전",
 
-            "Failure notifications": "失败通知",
-            "You can specify users or teams to be notified via e-mail when prebuilds for this particular configuration fail.": "您可以指定用户或团队，当这个特定配置的预构建失败时，通过电子邮件通知他们。",
-            "Add by username, full name, or team name": "按用户名、全名或团队名称添加",
-            "You haven't added anyone yet": "尚未添加任何人",
-            "Add members to receive email notifications when prebuilds fail for this configuration": "添加成员，以便在此配置的预构建失败时接收电子邮件通知",
-            "Show advanced options": "显示高级选项",
+            "Failure notifications": "실패 알림",
+            "You can specify users or teams to be notified via e-mail when prebuilds for this particular configuration fail.": "이 특정 설정의 사전 구축이 실패할 경우 이메일로 알림을 받을 사용자나 팀을 지정할 수 있어요.",
+            "Add by username, full name, or team name": "사용자명, 전체 이름, 또는 팀 이름으로 추가하기",
+            "You haven't added anyone yet": "아직 아무도 추가하지 않으셨어요",
+            "Add members to receive email notifications when prebuilds fail for this configuration": "이 설정의 사전 구축 실패 시 이메일 알림을 받을 구성원을 추가해 보세요",
+            "Show advanced options": "고급 옵션 보기",
 
-            "Advanced options": "高级选项",
-            "You can disable prebuild optimization if you're having issues where codespaces are several commits behind on a specific branch.": "如果您遇到代码空间在特定分支上落后多个提交的问题，您可以禁用预构建优化。",
-            "Learn about prebuild optimization": "了解预构建优化",
-            "Disable prebuild optimization": "禁用预构建优化",
-                "This prevents codespaces from attempting to use an older image to speed up boot time. This could adversely affect performance.": "这可以防止代码空间尝试使用旧的映像来加快启动时间。这可能会对性能产生不利影响。",
-            "Hide advanced options": "隐藏高级选项",
-            "Create": "创建",
+            "Advanced options": "고급 옵션",
+            "You can disable prebuild optimization if you're having issues where codespaces are several commits behind on a specific branch.": "특정 분기에서 코드스페이스가 여러 커밋 뒤처지는 문제가 발생한다면 사전 구축 최적화를 비활성화할 수 있어요.",
+            "Learn about prebuild optimization": "사전 구축 최적화에 대해 알아보세요",
+            "Disable prebuild optimization": "사전 구축 최적화 비활성화하기",
+                "This prevents codespaces from attempting to use an older image to speed up boot time. This could adversely affect performance.": "이렇게 하면 코드스페이스가 부팅 시간을 단축하기 위해 이전 이미지를 사용하려는 시도를 막을 수 있어요. 다만, 성능에 부정적인 영향을 줄 수 있어요.",
+            "Hide advanced options": "고급 옵션 숨기기",
+            "Create": "생성하기",
 
-        // 代码空间-编辑预构建设置 /<user-name>/<repo-name>/settings/settings/codespaces/prebuild_configurations/<id>/edit
-            "/ Edit configuration": "编辑预构建设置",
+        // 코드스페이스 - 편집 사전 구축 설정 /<user-name>/<repo-name>/settings/settings/codespaces/prebuild_configurations/<id>/edit
+            "/ Edit configuration": "/ 설정 편집하기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["repository/settings/pages"] = { // 仓库设置页面(含组织仓库) /<user-name>/<repo-name>/settings
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/pages"] = { // 저장소 설정 페이지(조직 저장소 포함) /<user-name>/<repo-name>/settings
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // GitHub Pages 页面 /<user-name>/<repo-name>/settings/pages====================================
-            "is designed to host your personal, organization, or project pages from a GitHub repository.": "旨在从 GitHub 仓库托管您的个人、组织或项目页面。",
-            // 私有库 提醒
-            "Upgrade or make this repository public to enable Pages": "升级或公开该仓库，以启用 GitHub Pages",
-            "GitHub Pages is designed to host your personal, organization, or project pages from a GitHub repository.": "GitHub Pages 旨在从 GitHub 仓库中托管您的个人、组织或项目页面。",
-            "Learn more about GitHub Pages": "了解更多关于 GitHub Pages 的信息",
-            // 存档时 提醒
-            "This repository has been archived. The associated GitHub Pages site remains published but settings are read-only.": "该仓库已存档。相关的 GitHub Pages 网站仍然发布，但设置是只读的。",
+        // GitHub 페이지 페이지 /<user-name>/<repo-name>/settings/pages====================================
+            "is designed to host your personal, organization, or project pages from a GitHub repository.": "GitHub 저장소에서 개인, 조직 또는 프로젝트 페이지를 호스팅하도록 설계되었어요.",
+            // 개인 저장소 알림
+            "Upgrade or make this repository public to enable Pages": "GitHub 페이지를 사용하려면 저장소를 업그레이드하거나 공개로 전환해 주세요",
+            "GitHub Pages is designed to host your personal, organization, or project pages from a GitHub repository.": "GitHub 페이지는 GitHub 저장소에서 개인, 조직 또는 프로젝트 페이지를 호스팅하도록 설계되었어요.",
+            "Learn more about GitHub Pages": "GitHub 페이지에 대해 자세히 알아보세요",
+            // 저장소 보관 시 알림
+            "This repository has been archived. The associated GitHub Pages site remains published but settings are read-only.": "이 저장소는 보관되었어요. 관련 GitHub 페이지 사이트는 계속 게시되어 있으나 설정은 읽기 전용이에요.",
 
-            // 已发布时
-            "Your site is live at": "您的站点在",
-                "Last": "最近",
-                "deployed": "部署",
-            "Visit site": "访问网站",
-            "Additional site options": "站点附加选项",
-            "Unpublish site": "取消站点发布",
-                // 顶部提醒
-                    "GitHub Pages unpublished.": "GitHub  Pages 未发布。",
+            // 게시 상태일 때
+            "Your site is live at": "사용자님의 사이트가 다음에 게시되어 있어요:",
+                "Last": "최근",
+                "deployed": "배포되었어요",
+            "Visit site": "사이트 방문하기",
+            "Additional site options": "추가 사이트 옵션",
+            "Unpublish site": "사이트 게시 취소하기",
+                // 상단 알림
+                    "GitHub Pages unpublished.": "GitHub 페이지 게시가 취소되었어요.",
 
-            "Build and deployment": "构建和部署",
-                // 顶部提醒
-                    "GitHub Pages source saved.": "GitHub Pages 源已保存。",
-            "Source": "来源",
+            "Build and deployment": "빌드 및 배포",
+                // 상단 알림
+                    "GitHub Pages source saved.": "GitHub 페이지 소스가 저장되었어요.",
+            "Source": "소스",
                 // "GitHub Actions": "",
-                    "Best for using frameworks and customizing your build process": "最适合使用框架和自定义构建过程",
-                "Deploy from a branch": "从分支部署",
-                    "Classic Pages experience": "经典页面体验",
+                    "Best for using frameworks and customizing your build process": "프레임워크 사용 및 빌드 프로세스 맞춤에 가장 적합해요",
+                "Deploy from a branch": "분기에서 배포하기",
+                    "Classic Pages experience": "클래식 페이지 경험",
 
-            // GitHub Actions 部署模式
-                "Send feedback": "发送反馈",
-                "Use a suggested workflow,": "使用建议的工作流程，",
-                "browse all workflows": "浏览所有工作流程",
-                ", or": "，或",
-                "create your own": "自建",
+            // GitHub 액션 배포 모드
+                "Send feedback": "피드백 보내기",
+                "Use a suggested workflow,": "추천된 워크플로우 사용해 보세요,",
+                "browse all workflows": "모든 워크플로우 둘러보기",
+                ", or": " 또는",
+                "create your own": "직접 생성해 보세요",
 
-                "Configure": "设置",
+                "Configure": "설정하기",
 
-                "Workflow details will appear here once your site has been deployed.": "部署站点后，工作流程详细信息将显示在此处。",
-                "View workflow runs.": "查看工作流程运行情况。",
+                "Workflow details will appear here once your site has been deployed.": "사이트가 배포되면 워크플로우 세부 사항이 여기에 표시될 거예요.",
+                "View workflow runs.": "워크플로우 실행 보기.",
 
-                "Your site was last deployed to the": "您的站点上次部署到",
-                "environment by the": "环境，由",
-                "pages build and deployment": "页面构建和部署",
-                "workflow.": "工作流程。",
-                "Learn more about deploying to GitHub Pages using custom workflows": "了解更多关于使用自定义工作流程部署到 GitHub Pages 的信息",
+                "Your site was last deployed to the": "사용자님의 사이트가 마지막으로 다음 환경에 배포되었어요:",
+                "environment by the": "환경, 다음에 의해",
+                "pages build and deployment": "페이지 빌드 및 배포",
+                "workflow.": "워크플로우.",
+                "Learn more about deploying to GitHub Pages using custom workflows": "맞춤 워크플로우를 사용하여 GitHub 페이지에 배포하는 방법에 대해 자세히 알아보세요",
 
-            // 从分支部署模式
+            // 분기에서 배포 모드
             "branch": "분기",
-                // 禁用时
-                "GitHub Pages is currently disabled. Select a source below to enable GitHub Pages for this repository.": "GitHub Pages 目前已被禁用。在下面选择一个源，为该仓库启用 GitHub Pages。",
-                "GitHub Pages is currently disabled. You must first add content to your repository before you can publish a GitHub Pages site.": "GitHub Pages 目前已被禁用。您必须先将内容添加到您的仓库，然后才能发布 GitHub Pages 站点。",
-                // 启用时
-                "Your GitHub Pages site is currently being built from the": "您的 GitHub Pages 站点，目前正建立于",
-                "folder in the": "目录在",
-                "branch.": "分支。",
-                "Learn more about configuring the publishing source for your site": "了解更多关于配置网站发布源的信息",
+                // 비활성화 시
+                "GitHub Pages is currently disabled. Select a source below to enable GitHub Pages for this repository.": "현재 GitHub 페이지가 비활성화되어 있어요. 아래에서 소스를 선택하여 이 저장소에 GitHub 페이지를 활성화해 주세요.",
+                "GitHub Pages is currently disabled. You must first add content to your repository before you can publish a GitHub Pages site.": "현재 GitHub 페이지가 비활성화되어 있어요. GitHub 페이지 사이트를 게시하기 전에 저장소에 콘텐츠를 먼저 추가해 주세요.",
+                // 활성화 시
+                "Your GitHub Pages site is currently being built from the": "현재 사용자님의 GitHub 페이지 사이트가 다음의",
+                "folder in the": "폴더에서",
+                "branch.": "분기에서 빌드되고 있어요.",
+                "Learn more about configuring the publishing source for your site": "사이트 게시 소스 구성에 대해 자세히 알아보세요",
 
-                "Select branch": "选择分支",
-                    "None": "无",
-                "Select folder": "选择文件夹",
-                    "/ (root)": "/ (根目录)",
+                "Select branch": "분기 선택하기",
+                    "None": "없음",
+                "Select folder": "폴더 선택하기",
+                    "/ (root)": "/ (루트)",
 
-                "No results found": "无结果",
+                "No results found": "검색 결과가 없어요",
 
-                "Learn how to": "了解如何",
-                "add a Jekyll theme": "添加 Jekyll 主题",
-                "to your site.": "到您的站点。",
+                "Learn how to": "다음 방법을 알아보세요",
+                "add a Jekyll theme": "Jekyll 테마 추가하기",
+                "to your site.": "사용자님의 사이트에.",
 
-            "Custom domain": "自定义域",
-                "Custom domains allow you to serve your site from a domain other than": "自定义域允许您从其他域为您的站点提供服务，而不是",
-                "Learn more about configuring custom domains": "了解更多关于配置自定义域的信息",
-                    "Remove": "移除",
-                    "Check again": "再检查一次",
-                    "DNS Check in Progress": "DNS 检查中",
-                    "DNS check successful": "DNS 检查成功",
-                    "DNS check unsuccessful": "DNS 检查失败",
-                    "Please wait for the DNS check to complete.": "请等待 DNS 检查结束。",
+            "Custom domain": "사용자 지정 도메인",
+                "Custom domains allow you to serve your site from a domain other than": "사용자 지정 도메인을 사용하면 다음 외의 도메인에서 사이트를 제공할 수 있어요:",
+                "Learn more about configuring custom domains": "사용자 지정 도메인 구성에 대해 자세히 알아보세요",
+                    "Remove": "제거하기",
+                    "Check again": "다시 확인하기",
+                    "DNS Check in Progress": "DNS 검사 진행 중",
+                    "DNS check successful": "DNS 검사 성공",
+                    "DNS check unsuccessful": "DNS 검사 실패",
+                    "Please wait for the DNS check to complete.": "DNS 검사가 완료될 때까지 기다려 주세요.",
                     // [/([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?) is improperly configured/, "$1 配置不正确"],
                     // [/Your site's DNS settings are using a custom subdomain, ([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?), that's not set up with a correct CNAME record. We recommend you set this CNAME record to point at [YOUR USERNAME].github.io. For more information, see/, "您网站的 DNS 设置使用的是自定义子域 $1，该子域未设置正确的 CNAME 记录。我们建议您将此 CNAME 记录设置为指向 [YOUR USERNAME].github.io。有关详细信息，请参阅"],
 
-                    "DNS records should point to the": "DNS记录应该指向",
-                    "internationalized domain name": "国际化域名",
+                    "DNS records should point to the": "DNS 레코드는 다음을 가리켜야 해요:",
+                    "internationalized domain name": "국제화 도메인 이름",
 
-                    "Domain does not resolve to the GitHub Pages server. For more information, see": "域名未解析至 GitHub Pages 服务器。更多信息，请参阅",
-                    "documentation": "文档",
-                    "(NotServedByPagesError).": "（Pages 服务错误）。",
+                    "Domain does not resolve to the GitHub Pages server. For more information, see": "도메인이 GitHub 페이지 서버로 해석되지 않아요. 자세한 내용은 다음을 참조해 주세요:",
+                    "documentation": "문서",
+                    "(NotServedByPagesError).": "(페이지 서비스 오류).",
 
-                    // 顶部提醒
-                    "No changes to custom domain.": "没有对自定义域进行修改。",
-                    "Custom domain removed. Please remember to remove any GitHub Pages DNS records for this domain if you do not plan to continue using it with GitHub Pages.": "自定义域已删除。如果您不打算继续使用 GitHub Pages，请记得删除此域的任何 GitHub Pages 的 DNS 记录。",
+                    // 상단 알림
+                    "No changes to custom domain.": "사용자 지정 도메인에 변경 사항이 없어요.",
+                    "Custom domain removed. Please remember to remove any GitHub Pages DNS records for this domain if you do not plan to continue using it with GitHub Pages.": "사용자 지정 도메인이 제거되었어요. 계속해서 GitHub 페이지에서 사용하지 않을 계획이라면 이 도메인에 대한 모든 GitHub 페이지 DNS 레코드도 제거해 주세요.",
 
-                "Enforce HTTPS": "强制 HTTPS",
-                    "— Unavailable for your site because your domain is not properly configured to support HTTPS (": "— 您的网站不可用，因为您的域未正确配置为支持 HTTPS (",
-                    "Troubleshooting custom domains": "自定义域故障排除",
-                    "— Required for your site because you are using the default domain (": "— 必须先设置自定义域，目前您正在使用默认域 (",
+                "Enforce HTTPS": "HTTPS 강제하기",
+                    "— Unavailable for your site because your domain is not properly configured to support HTTPS (": "— 사용자님의 도메인이 HTTPS 지원에 올바르게 구성되어 있지 않아 사이트에서 사용할 수 없어요 (",
+                    "Troubleshooting custom domains": "사용자 지정 도메인 문제 해결",
+                    "— Required for your site because you are using the default domain (": "— 기본 도메인을 사용 중이므로 사이트에 필요해요 (",
 
-                    "HTTPS provides a layer of encryption that prevents others from snooping on or tampering with traffic to your site.": "HTTPS 提供了一层加密，防止他人窥探或篡改您站点的流量。",
-                    "When HTTPS is enforced, your site will only be served over HTTPS.": "当开启强制 HTTPS 时，您的站点将只通过 HTTPS 提供服务。",
-                    "Learn more about securing your GitHub Pages site with HTTPS": "了解更多关于使用 HTTPS 保护 GitHub Pages 站点安全的信息",
+                    "HTTPS provides a layer of encryption that prevents others from snooping on or tampering with traffic to your site.": "HTTPS는 사이트로의 트래픽을 엿보거나 변조하는 것을 방지하는 암호화 계층을 제공해요.",
+                    "When HTTPS is enforced, your site will only be served over HTTPS.": "HTTPS가 강제되면 사이트는 오직 HTTPS로만 제공될 거예요.",
+                    "Learn more about securing your GitHub Pages site with HTTPS": "HTTPS로 GitHub 페이지 사이트를 안전하게 보호하는 방법에 대해 자세히 알아보세요",
 
-            "Visibility": "可见性",
-                "GitHub Enterprise": "GitHub 企业版",
-                "With a GitHub Enterprise account, you can restrict access to your GitHub Pages site by publishing it privately. You can use privately published sites to share your internal documentation or knowledge base with members of your enterprise. You can try GitHub Enterprise risk-free for 30 days.": "使用 GitHub 企业版账户，您可以通过私下发布来限制对 GitHub Pages 站点的访问。您可以使用私下发布的站点与企业成员共享您的内部文档或知识库。 您可以免费试用 GitHub 企业版 30 天。",
-                //"With a GitHub Enterprise account, you can restrict access to your GitHub Pages site by publishing it privately. You can use privately published sites to share your internal documentation or knowledge base with members of your enterprise.": "使用 GitHub 企业版账户，您可以通过私下发布来限制对 GitHub Pages 站点的访问。您可以使用私下发布的站点与企业成员共享您的内部文档或知识库。",
-                "Try GitHub Enterprise": "试用 GitHub 企业版",
-                "Try GitHub Enterprise risk-free for 30 days": "免费无风险试用 GitHub 企业版 30 天",
-                "Learn more about the visibility of your GitHub Pages site.": "了解更多关于 GitHub Pages 站点可见性的信息。",
+            "Visibility": "가시성",
+                "GitHub Enterprise": "GitHub 기업版",
+                "With a GitHub Enterprise account, you can restrict access to your GitHub Pages site by publishing it privately. You can use privately published sites to share your internal documentation or knowledge base with members of your enterprise. You can try GitHub Enterprise risk-free for 30 days.": "GitHub 기업版 계정을 사용하면 저장소를 비공개로 게시하여 GitHub 페이지 사이트에 대한 접근을 제한할 수 있어요. 비공개로 게시된 사이트를 사용하여 내부 문서나 지식 베이스를 기업 구성원과 공유할 수 있어요. 30일간 무료로 GitHub 기업版을 체험해 보세요.",
+                //"With a GitHub Enterprise account, you can restrict access to your GitHub Pages site by publishing it privately. You can use privately published sites to share your internal documentation or knowledge base with members of your enterprise.": "GitHub 기업版 계정을 사용하면 저장소를 비공개로 게시하여 GitHub 페이지 사이트에 대한 접근을 제한할 수 있어요. 비공개로 게시된 사이트를 사용하여 내부 문서나 지식 베이스를 기업 구성원과 공유할 수 있어요.",
+                "Try GitHub Enterprise": "GitHub 기업版 체험하기",
+                "Try GitHub Enterprise risk-free for 30 days": "30일간 무료로 GitHub 기업版을 체험해 보세요",
+                "Learn more about the visibility of your GitHub Pages site.": "GitHub 페이지 사이트의 가시성에 대해 자세히 알아보세요",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/Custom domain \"([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?)\" saved./, "自定义域“$1”已保存。"],
-        [/Both ([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?) and its alternate name are improperly configured/, "$1 及其备用名称均配置不正确"],
-        [/([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?) DNS check is in progress./, "$1 的 DNS 检查正在进行。"],
-        [/([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?) is improperly configured/, "$1 配置不正确"],
-        [/Your site's DNS settings are using a custom subdomain, ([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?), that's not set up with a correct CNAME record. We recommend you set this CNAME record to point at [YOUR USERNAME].github.io. For more information, see/, "您网站的 DNS 设置使用的是自定义子域 $1，该子域未设置正确的 CNAME 记录。我们建议您将此 CNAME 记录设置为指向 [YOUR USERNAME].github.io。有关详细信息，请参阅"],
+        [/Custom domain \"([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?)\" saved./, "사용자 지정 도메인 “$1”이 저장되었어요."],
+        [/Both ([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?) and its alternate name are improperly configured/, "$1 및 그 대체 이름이 올바르게 구성되지 않았어요"],
+        [/([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?) DNS check is in progress./, "$1 의 DNS 검사가 진행 중이에요."],
+        [/([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?) is improperly configured/, "$1 이 올바르게 구성되지 않았어요"],
+        [/Your site's DNS settings are using a custom subdomain, ([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?), that's not set up with a correct CNAME record. We recommend you set this CNAME record to point at [YOUR USERNAME].github.io. For more information, see/, "사용자님의 사이트 DNS 설정이 올바른 CNAME 레코드로 설정되지 않은 사용자 지정 하위 도메인 $1 을 사용하고 있어요. 이 CNAME 레코드를 [YOUR USERNAME].github.io 를 가리키도록 설정하는 것을 권장해요. 자세한 내용은 다음을 참조해 주세요"],
     ],
 };
 
-I18N["ko-KR"]["repository/settings/security_analysis"] = { // 仓库设置 - 代码安全性与分析 /<user-name>/<repo-name>/settings/security_analysis
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/security_analysis"] = { // 저장소 설정 - 코드 보안 및 분석 /<user-name>/<repo-name>/settings/security_analysis
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 代码安全性与分析 /<user-name>/<repo-name>/settings/security_analysis
-            "Security and analysis features help keep your repository secure and updated. By enabling these features, you're granting us permission to perform read-only analysis on your repository. Unarchive your repository to access additional features.": "安全和分析功能有助于确保您的仓库安全和更新。通过启用这些功能，您授予我们对您的仓库执行只读分析的权限。解除您仓库的存档以访问其他功能。", //存档仓库
-            "Security and analysis features help keep your repository secure and updated. By enabling these features, you're granting us permission to perform read-only analysis on your repository.": "安全和分析功能有助于确保您的仓库安全和更新。通过启用这些功能，您授予我们对您的仓库执行只读分析的权限。",
+        // 코드 보안 및 분석 /<user-name>/<repo-name>/settings/security_analysis
+            "Security and analysis features help keep your repository secure and updated. By enabling these features, you're granting us permission to perform read-only analysis on your repository. Unarchive your repository to access additional features.": "보안 및 분석 기능은 저장소를 안전하고 최신 상태로 유지하는 데 도움을 줘요. 이 기능을 활성화하면 저장소에 대해 읽기 전용 분석을 수행할 수 있도록 권한을 부여하는 것으로, 저장소 보관 해제를 통해 추가 기능에 접근할 수 있어요.",
+            "Security and analysis features help keep your repository secure and updated. By enabling these features, you're granting us permission to perform read-only analysis on your repository.": "보안 및 분석 기능은 저장소를 안전하고 최신 상태로 유지하는 데 도움을 줘요. 이 기능을 활성화하면 저장소에 대해 읽기 전용 분석을 수행할 수 있도록 권한을 부여하는 것으로, 저장소 보관 해제를 통해 추가 기능에 접근할 수 있어요.",
 
-            "Private vulnerability reporting": "私下漏洞报告",
-                "Allow your community to privately report potential security vulnerabilities to maintainers and repository owners.": "允许您的社区向维护者和仓库所有者私下报告潜在的安全漏洞。",
-                "Learn more about private vulnerability reporting": "了解更多关于私下漏洞报告的信息",
+            "Private vulnerability reporting": "비공개 취약점 보고",
+                "Allow your community to privately report potential security vulnerabilities to maintainers and repository owners.": "커뮤니티가 유지 관리자와 저장소 소유자에게 잠재적인 보안 취약점을 비공개로 보고할 수 있도록 허용해 보세요.",
+                "Learn more about private vulnerability reporting": "비공개 취약점 보고에 대해 자세히 알아보세요",
 
-            "Dependency graph": "依赖关系图",
-                "Understand your dependencies.": "了解您的依赖项。",
-                "Dependency graph is always enabled for public repos.": "公共仓库始终启用依赖关系图。",
+            "Dependency graph": "종속성 그래프",
+                "Understand your dependencies.": "사용자님의 종속성을 파악해 보세요.",
+                "Dependency graph is always enabled for public repos.": "공개 저장소에서는 종속성 그래프가 항상 활성화되어 있어요.",
 
-                // 禁用对话框
-                    "Disable dependency graph": "禁用依赖关系图",
-                        "Disabling the dependency graph will also disable Dependabot alerts and Dependabot security updates.": "禁用依赖关系图也将同时禁用 Dependabot 警报和 Dependabot 安全更新。", // Dependabot 警报和 Dependabot 安全更新启用时
-                        "Disabling the dependency graph will also disable Dependabot alerts.": "禁用依赖关系图也将同时禁用 Dependabot 警报。", // Dependabot 警报启用, Dependabot 安全更新未启用时
+                // 비활성화 다이얼로그
+                    "Disable dependency graph": "종속성 그래프 비활성화하기",
+                        "Disabling the dependency graph will also disable Dependabot alerts and Dependabot security updates.": "종속성 그래프를 비활성화하면 Dependabot 경고와 Dependabot 보안 업데이트도 함께 비활성화돼요.",
+                        "Disabling the dependency graph will also disable Dependabot alerts.": "종속성 그래프를 비활성화하면 Dependabot 경고도 함께 비활성화돼요.",
 
-            "Automatic dependency submission": "自动提交依赖关系",
-                "Automatically detect and report build-time dependencies for select ecosystems.": "自动检测和报告所选生态系统的构建时间依赖性。",
-                "Use standard GitHub runners": "使用标准 GitHub 运行器",
-                "Enabled for labeled runners": "为有标签的运行器启用",
-                    "Use runners labeled with 'dependency-submission'": "使用带 “dependency-submission” 标签的运行器",
-                    "No runners with this label assigned to repository": "没有为仓库分配带有此标签的运行器",
+            "Automatic dependency submission": "자동 종속성 제출",
+                "Automatically detect and report build-time dependencies for select ecosystems.": "선택된 생태계의 빌드 시 종속성을 자동으로 감지하고 보고해 보세요.",
+                "Use standard GitHub runners": "표준 GitHub 실행기 사용하기",
+                "Enabled for labeled runners": "레이블이 지정된 실행기에서 활성화됨",
+                    "Use runners labeled with 'dependency-submission'": "'dependency-submission' 레이블이 붙은 실행기 사용하기",
+                    "No runners with this label assigned to repository": "이 레이블이 지정된 실행기가 저장소에 할당되어 있지 않아요",
 
             // Dependabot
-                "Keep your dependencies secure and up-to-date.": "保持您的依赖关系的安全和最新",
-                "Learn more about Dependabot": "了解更多关于 Dependabot 的信息",
+                "Keep your dependencies secure and up-to-date.": "종속성을 안전하고 최신 상태로 유지해 보세요.",
+                "Learn more about Dependabot": "Dependabot에 대해 자세히 알아보세요",
 
-                "Dependabot alerts": "Dependabot 警报",
-                    "Receive alerts for vulnerabilities that affect your dependencies and manually generate Dependabot pull requests to resolve these vulnerabilities.": "接收影响您的依赖关系的漏洞警报，并手动生成 Dependabot 拉取请求以解决这些漏洞。",
-                    "Configure alert notifications": "配置警报通知",
+                "Dependabot alerts": "Dependabot 경고",
+                    "Receive alerts for vulnerabilities that affect your dependencies and manually generate Dependabot pull requests to resolve these vulnerabilities.": "종속성에 영향을 주는 취약점에 대해 경고를 받고, 해당 취약점을 해결하기 위해 직접 끌어오기 요청을 생성해 보세요.",
+                    "Configure alert notifications": "경고 알림 구성하기",
 
-                    // 启用对话框
-                        "Enable Dependabot alerts": "启用 Dependabot 警报",
-                            "Dependabot alerts needs the dependency graph to be enabled, so we'll turn that on too.": "Dependabot 警报需要启用依赖关系图，因此我们也将启用它。", // 依赖关系图未启用时
+                    // 활성화 다이얼로그
+                        "Enable Dependabot alerts": "Dependabot 경고 활성화하기",
+                            "Dependabot alerts needs the dependency graph to be enabled, so we'll turn that on too.": "Dependabot 경고를 사용하려면 종속성 그래프가 활성화되어야 하므로 함께 활성화할게요.",
+                    // 비활성화 다이얼로그
+                        "Disable Dependabot alerts": "Dependabot 경고 비활성화하기",
+                            "Disabling Dependabot alerts will also disable Dependabot security updates.": "Dependabot 경고를 비활성화하면 Dependabot 보안 업데이트도 함께 비활성화돼요.",
 
-                    // 禁用对话框
-                        "Disable Dependabot alerts": "禁用 Dependabot 警报",
-                            "Disabling Dependabot alerts will also disable Dependabot security updates.": "禁用 Dependabot 警报也将同时禁用 Dependabot 安全更新。", // Dependabot 安全更新启用时
-
-                    "Dependabot rules": "Dependabot 规则",
-                        "Create your own custom rules and manage alert presets.": "创建您自己的自定义规则并管理警报预设。",
-                        "Review and manage alert presets.": "查看和管理警报预设。", //私有库
+                    "Dependabot rules": "Dependabot 규칙",
+                        "Create your own custom rules and manage alert presets.": "자신만의 맞춤 규칙을 생성하고 경고 프리셋을 관리해 보세요.",
+                        "Review and manage alert presets.": "경고 프리셋을 검토하고 관리해 보세요.",
                         // [/(\d+) rules? enabled/, "已启用 $1 条规则"],
 
-                "Dependabot security updates": "Dependabot 安全更新",
-                    "Enabling this option will result in Dependabot automatically attempting to open pull requests to resolve every open Dependabot alert with an available patch.": "启用后，Dependabot 会自动尝试打开拉取请求，以使用可用补丁解决每个打开的 Dependabot 警报。",
-                    "Enabling this option will result in Dependabot automatically attempting to open pull requests to resolve every open Dependabot alert with an available patch. If you would like more specific configuration options, leave this disabled and use": "启用后，Dependabot 会自动尝试打开拉取请求，以使用可用补丁解决每个打开的 Dependabot 警报。如果您想要更具体的配置选项，请将其禁用并使用",
-                        // "Dependabot rules": "Dependabot 规则",
+                "Dependabot security updates": "Dependabot 보안 업데이트",
+                    "Enabling this option will result in Dependabot automatically attempting to open pull requests to resolve every open Dependabot alert with an available patch.": "이 옵션을 활성화하면 Dependabot이 사용 가능한 패치로 모든 열린 Dependabot 경고를 해결하기 위해 자동으로 끌어오기 요청을 열도록 시도할 거예요.",
+                    "Enabling this option will result in Dependabot automatically attempting to open pull requests to resolve every open Dependabot alert with an available patch. If you would like more specific configuration options, leave this disabled and use": "이 옵션을 활성화하면 Dependabot이 사용 가능한 패치로 모든 열린 Dependabot 경고를 해결하기 위해 자동으로 끌어오기 요청을 열도록 시도할 거예요. 더 구체적인 구성 옵션을 원하시면 이 옵션을 비활성화하고 사용해 보세요:",
+                        // "Dependabot rules": "Dependabot 규칙",
 
-                    // 启用对话框
-                        "Enable Dependabot security updates": "启用 Dependabot 安全更新",
-                            "Dependabot security updates needs the dependency graph and Dependabot alerts to be enabled, so we'll turn them on too.": "Dependabot 安全更新需要启用依赖关系图和 Dependabot 警报，因此我们也将启用他们。",
-                            "Dependabot security updates needs Dependabot alerts to be enabled, so we'll turn that on too.": "Dependabot 安全更新需要启用 Dependabot 警报，因此我们也将启用它。",
+                    // 활성화 다이얼로그
+                        "Enable Dependabot security updates": "Dependabot 보안 업데이트 활성화하기",
+                            "Dependabot security updates needs the dependency graph and Dependabot alerts to be enabled, so we'll turn them on too.": "Dependabot 보안 업데이트를 사용하려면 종속성 그래프와 Dependabot 경고가 활성화되어야 하므로 함께 활성화할게요.",
+                            "Dependabot security updates needs Dependabot alerts to be enabled, so we'll turn that on too.": "Dependabot 보안 업데이트를 사용하려면 Dependabot 경고가 활성화되어야 하므로 함께 활성화할게요.",
 
-                "Grouped security updates": "分组安全更新",
-                    "Groups all available updates that resolve a Dependabot alert into one pull request (per package manager and directory of requirement manifests). This option may be overridden by group rules specified in dependabot.yml -": "将解决可靠警报的所有可用更新分组为一个拉取请求（每个包管理器和需求清单目录）。该选项可被 dependabot.yml 中指定的组规则覆盖 -",
-                    "learn more here": "在此了解更多",
+                "Grouped security updates": "그룹화된 보안 업데이트",
+                    "Groups all available updates that resolve a Dependabot alert into one pull request (per package manager and directory of requirement manifests). This option may be overridden by group rules specified in dependabot.yml -": "각 패키지 관리자 및 요구 사항 매니페스트 디렉토리별로 Dependabot 경고를 해결하는 모든 사용 가능한 업데이트를 하나의 끌어오기 요청으로 그룹화해 줘요. 이 옵션은 dependabot.yml에 지정된 그룹 규칙으로 재정의할 수 있어요 -",
+                    "learn more here": "여기서 자세히 알아보세요",
 
-                    // 对话框
-                        "Grouped security updates needs the dependency graph, Dependabot alerts and Dependabot security updates to be enabled, so we'll turn them on too": "分组安全更新需要启用依赖关系图、Dependabot 警报和 Dependabot 安全更新，因此我们也将启用他们。",
-                        "Grouped security updates needs Dependabot alerts and Dependabot security updates to be enabled, so we'll turn them on too.": "分组安全更新需要启用 Dependabot 警报和 Dependabot 安全更新，因此我们也将启用他们。",
-                        "Grouped security updates needs Dependabot security updates to be enabled, so we'll turn that on too.": "分组安全更新需要启用 Dependabot 安全更新，因此我们也将启用它。",
+                    // 다이얼로그
+                        "Grouped security updates needs the dependency graph, Dependabot alerts and Dependabot security updates to be enabled, so we'll turn them on too": "그룹화된 보안 업데이트를 사용하려면 종속성 그래프, Dependabot 경고 및 Dependabot 보안 업데이트가 활성화되어야 하므로 함께 활성화할게요.",
+                        "Grouped security updates needs Dependabot alerts and Dependabot security updates to be enabled, so we'll turn them on too.": "그룹화된 보안 업데이트를 사용하려면 Dependabot 경고와 Dependabot 보안 업데이트가 활성화되어야 하므로 함께 활성화할게요.",
+                        "Grouped security updates needs Dependabot security updates to be enabled, so we'll turn that on too.": "그룹화된 보안 업데이트를 사용하려면 Dependabot 보안 업데이트가 활성화되어야 하므로 함께 활성화할게요.",
 
-                "Dependabot version updates": "Dependabot 版本更新",
-                    "Enable Dependabot version updates": "启用 Dependabot 版本更新",
-                    "Disable Dependabot version updates": "禁用 Dependabot 版本更新",
-                    "Allow Dependabot to open pull requests automatically to keep your dependencies up-to-date when new versions are available.": "允许 Dependabot 自动打开拉取请求，以便在有新版本时保持您的依赖关系是最新的。",
-                    "Learn more about configuring a dependabot.yml file": "了解更多关于配置 dependabot.yml 文件的信息",
-                    "Configure": "配置",
-                    "― Create a config file": "― 创建配置文件",
-                    "― Disabled": "― 禁用",
+                "Dependabot version updates": "Dependabot 버전 업데이트",
+                    "Enable Dependabot version updates": "Dependabot 버전 업데이트 활성화하기",
+                    "Disable Dependabot version updates": "Dependabot 버전 업데이트 비활성화하기",
+                    "Allow Dependabot to open pull requests automatically to keep your dependencies up-to-date when new versions are available.": "새 버전이 있을 때 Dependabot이 자동으로 끌어오기 요청을 열어 종속성을 최신 상태로 유지하도록 허용해 보세요.",
+                    "Learn more about configuring a dependabot.yml file": "dependabot.yml 파일 구성에 대해 자세히 알아보세요",
+                    "Configure": "구성하기",
+                    "― Create a config file": "― 구성 파일 생성하기",
+                    "― Disabled": "― 비활성화됨",
 
-                "Dependabot on Actions runners": "Dependabot 应用于操作运行器",
-                    "Run Dependabot security and version updates on Actions runners.": "在操作运行器上运行 Dependabot 安全和版本更新。",
+                "Dependabot on Actions runners": "액션 실행기에 대한 Dependabot",
+                    "Run Dependabot security and version updates on Actions runners.": "액션 실행기에서 Dependabot 보안 및 버전 업데이트를 실행해 보세요.",
 
-                "Dependabot on self-hosted runners": "Dependabot 应用于自托管运行器",
-                    "Run Dependabot security and version updates on self-hosted Actions runners.": "在自托管运行程序上运行 Dependabot 安全和版本更新。",
+                "Dependabot on self-hosted runners": "자체 호스팅 실행기에 대한 Dependabot",
+                    "Run Dependabot security and version updates on self-hosted Actions runners.": "자체 호스팅 액션 실행기에서 Dependabot 보안 및 버전 업데이트를 실행해 보세요.",
 
-            "Code scanning": "代码扫描",
-                "Automatically detect common vulnerabilities and coding errors.": "自动检测常见漏洞和编码错误。",
+            "Code scanning": "코드 스캔",
+                "Automatically detect common vulnerabilities and coding errors.": "일반적인 취약점과 코드 오류를 자동으로 감지해 보세요.",
 
-                // 组织仓库
-                    "Code scanning with GitHub Actions is not available for this repository.": "使用 GitHub Actions 进行代码扫描不适用于该仓库。",
+                // 조직 저장소
+                    "Code scanning with GitHub Actions is not available for this repository.": "이 저장소에서는 GitHub 액션을 사용한 코드 스캔을 사용할 수 없어요.",
 
-                    "GitHub Actions is disabled on this repository because it is a fork. To use code scanning please": "GitHub 操作已在此仓库禁用，因为它是一个复刻。要使用代码扫描，请",
-                    "enable it": "启用它",
-                    "GitHub Actions is disabled on this repostiory by an enterprise or organization policy. To use code scanning, please ask your organization administrator to enable Actions, or": "企业或组织策略在此仓库上禁用了 GitHub Actions。要使用代码扫描，请要求您的组织管理员启用 GitHub Actions，或者",
-                    "submit code scanning results externally using the API": "使用 API 在代码扫描外部结果",
+                    "GitHub Actions is disabled on this repository because it is a fork. To use code scanning please": "이 저장소는 포크이기 때문에 GitHub 액션이 비활성화되어 있어요. 코드 스캔을 사용하려면",
+                    "enable it": "활성화해 주세요",
+                    "GitHub Actions is disabled on this repostiory by an enterprise or organization policy. To use code scanning, please ask your organization administrator to enable Actions, or": "기업 또는 조직 정책으로 인해 이 저장소에서 GitHub 액션이 비활성화되어 있어요. 코드 스캔을 사용하려면 조직 관리자에게 액션을 활성화해 달라고 요청하거나",
+                    "submit code scanning results externally using the API": "API를 사용해 외부로 코드 스캔 결과를 제출해 보세요",
 
-                "Tools": "工具",
-                    "CodeQL analysis": "CodeQL 分析",
-                        "Identify vulnerabilities and errors with": "识别代码中的漏洞和错误，通过",
-                        "for": "为",
-                        "eligible": "符合条件的",
-                        "repositories.": "仓库。",
-                        "Last scan": "最后一次扫描",
+                "Tools": "도구",
+                    "CodeQL analysis": "CodeQL 분석",
+                        "Identify vulnerabilities and errors with": "다음으로 취약점과 오류를 식별해 보세요",
+                        "for": "대상",
+                        "eligible": "사용 가능한",
+                        "repositories.": "저장소.",
+                        "Last scan": "마지막 스캔",
 
-                        "Set up": "设置",
-                            "Default": "默认",
-                                "CodeQL will automatically find the best configuration for your repository.": "CodeQL 将自动给您的仓库找到最佳配置。",
-                                // "Languages detected in this repository are not compatible with this setup type at this time. Use the advanced setup instead.": "目前，该仓库中检测到的语言与该设置类型不兼容。请使用高级设置。",
-                            "Advanced": "高级",
-                                "Customize your CodeQL configuration via a YAML file checked into the repository.": "通过仓库中的 YAML 文件定制您的 CodeQL 配置。",
-                            // "Not supported": "不支持",
-                            // "Languages on this repository are not compatible with this feature. Learn more about": "该仓库上的语言与此功能不兼容。了解更多关于",
-                            // "supported languages and frameworks": "所支持的语言和框架",
-
-                            // CodeQL 默认设置
-                                "CodeQL default configuration": "CodeQL 默认设置",
-                                "These languages were detected on the default branch of this repository.": "这些语言是在该仓库的默认分支上检测到的。",
-                                "Query suites": "查询套件",
-                                    "Group of queries": "查询套件",
-                                    "to run against your code.": "针对您的代码运行。",
-
-                                    "Default": "默认",
-                                        "Recommended": "推荐",
-                                        "CodeQL high-precision queries.": "CodeQL 高精度查询。",
-                                "Scan events": "扫描事件",
-                                    "These events will trigger a new scan.": "这些事件将触发新的扫描。",
-                                    "On push and pull requests to": "推送和拉取请求到",
-                                        "protected branches": "受保护的分支",
-                                    "On a weekly schedule": "每周计划",
-                                        "Next scan of": "下次扫描",
-                                "Enable CodeQL": "启用 CodeQL",
+                        "Set up": "설정하기",
+                            "Default": "기본",
+                                "CodeQL will automatically find the best configuration for your repository.": "CodeQL이 저장소에 최적의 구성을 자동으로 찾아줄 거예요.",
+                                // "Languages detected in this repository are not compatible with this setup type at this time. Use the advanced setup instead.": "현재 이 저장소에서 감지된 언어는 이 설정 유형과 호환되지 않아요. 대신 고급 설정을 사용해 보세요.",
+                            "Advanced": "고급",
+                                "Customize your CodeQL configuration via a YAML file checked into the repository.": "저장소에 체크인된 YAML 파일을 통해 CodeQL 구성을 맞춤 설정해 보세요.",
+                            // "Not supported": "불지원",
+                            // "Languages on this repository are not compatible with this feature. Learn more about": "이 저장소의 언어는 이 기능과 호환되지 않아요. 자세한 내용은",
+                            // "supported languages and frameworks": "지원되는 언어 및 프레임워크를",
+                            
+                            // CodeQL 기본 설정
+                                "CodeQL default configuration": "CodeQL 기본 구성",
+                                "These languages were detected on the default branch of this repository.": "이 저장소의 기본 분기에서 다음 언어들이 감지되었어요.",
+                                "Query suites": "쿼리 모음",
+                                    "Group of queries": "쿼리 그룹",
+                                    "to run against your code.": "사용자님의 코드에 대해 실행할 거예요.",
+                                    
+                                    "Default": "기본",
+                                        "Recommended": "추천",
+                                        "CodeQL high-precision queries.": "CodeQL 고정밀 쿼리.",
+                                "Scan events": "스캔 이벤트",
+                                    "These events will trigger a new scan.": "이 이벤트들은 새로운 스캔을 트리거할 거예요.",
+                                    "On push and pull requests to": "푸시 및 끌어오기 요청 시",
+                                        "protected branches": "보호된 분기에 대해",
+                                    "On a weekly schedule": "주간 스케줄로",
+                                        "Next scan of": "다음 스캔:",
+                                "Enable CodeQL": "CodeQL 활성화하기",
                                 "Close": "닫기",
 
-                                "Setting up": "设置中",
-                                "View setup log": "查看设置日志",
+                                "Setting up": "설정 중",
+                                "View setup log": "설정 로그 보기",
 
-                                // 顶部提醒
-                                    "Repository settings saved. This initial setup might take a while because CodeQL will perform a full scan of the repository.": "仓库设置已保存。此初始设置可能需要一段时间，因为 CodeQL 将对仓库执行完整扫描。",
-                            // 开启后三个点菜单
-                                "View last scan log": "查看最近一次扫描日志",
-                                "View Code Scanning alerts": "查看代码扫描警报",
-                                "View CodeQL configuration": "查看 CodeQL 设置",
-                                "Switch to advanced": "切换到高级",
-                                // 切换到 CodeQL 工作流程对话框
-                                    "Switch to a CodeQL workflow?": "切换到 CodeQL 工作流程？",
-                                        "To switch to a workflow-based configuration, we must disable CodeQL first. CodeQL will stop analyzing code and resume once a valid workflow file is committed to the repository.": "要切换到基于工作流的配置，我们必须先禁用 CodeQL。CodeQL 将停止分析代码，并在有效的工作流文件提交到仓库后恢复分析。",
-                                "Disable CodeQL": "禁用 CodeQL",
-                                // 禁用对话框
-                                    "Disable CodeQL?": "禁用 CodeQL？",
-                                    "CodeQL will stop analyzing code from this repository. Existing alerts will remain open; you can dismiss them but not close them as fixed, as CodeQL needs to be enabled for that to happen. Existing CodeQL Actions workflows on this repository must be": "CodeQL 将停止分析该仓库中的代码。现有的警报将保持打开；您可以忽略它们，但不能关闭它们，因为 CodeQL 需要启用才能关闭。要",
-                                    "manually re-enabled to resume previous analyses": "恢复先前的分析，必须手动重新启用",
+                                // 상단 알림
+                                    "Repository settings saved. This initial setup might take a while because CodeQL will perform a full scan of the repository.": "저장소 설정이 저장되었어요. 이 초기 설정은 저장소 전체 스캔을 수행하기 때문에 다소 시간이 걸릴 수 있어요.",
+                            // 활성화 후 점 세 개 메뉴
+                                "View last scan log": "최근 스캔 로그 보기",
+                                "View Code Scanning alerts": "코드 스캔 경고 보기",
+                                "View CodeQL configuration": "CodeQL 구성 보기",
+                                "Switch to advanced": "고급으로 전환하기",
+                                // CodeQL 워크플로우 전환 다이얼로그
+                                    "Switch to a CodeQL workflow?": "CodeQL 워크플로우로 전환할까요?",
+                                        "To switch to a workflow-based configuration, we must disable CodeQL first. CodeQL will stop analyzing code and resume once a valid workflow file is committed to the repository.": "워크플로우 기반 구성으로 전환하려면 먼저 CodeQL을 비활성화해야 해요. 유효한 워크플로우 파일이 저장소에 커밋되면 CodeQL은 코드 분석을 중단하고 다시 시작할 거예요.",
+                                "Disable CodeQL": "CodeQL 비활성화하기",
+                                // 비활성화 다이얼로그
+                                    "Disable CodeQL?": "CodeQL을 비활성화할까요?",
+                                    "CodeQL will stop analyzing code from this repository. Existing alerts will remain open; you can dismiss them but not close them as fixed, as CodeQL needs to be enabled for that to happen. Existing CodeQL Actions workflows on this repository must be": "CodeQL은 이 저장소의 코드 분석을 중단할 거예요. 기존 경고는 계속 열려 있을 거예요; 해결된 것으로 닫지는 못하고 무시할 수 있어요. 이전의 CodeQL 액션 워크플로우는",
+                                    "manually re-enabled to resume previous analyses": "이전 분석을 재개하기 위해 수동으로 다시 활성화되어야 해요",
                                     "": "",
-                    "Other tools": "其他工具",
-                        "Add any third-party code scanning tool.": "添加任意第三方代码扫描工具。",
-                        "Explore workflows": "探索工作流程",
+                    "Other tools": "기타 도구",
+                        "Add any third-party code scanning tool.": "타사 코드 스캔 도구를 추가해 보세요.",
+                        "Explore workflows": "워크플로우 둘러보기",
 
-                    "Copilot Autofix": "Copilot 自动修复",
-                        "Suggest fixes for CodeQL alerts using AI. CodeQL default or advanced setup must be enabled for this feature to work. Learn more about the": "使用 AI 为 CodeQL 警报提出修复建议。必须启用 CodeQL 默认设置或高级设置才能使用此功能。了解更多关于",
-                        "limitations of autofix code suggestions": "自动修复代码建议的限制",
-                        "On": "开",
-                        "Off": "关",
+                    "Copilot Autofix": "Copilot 자동 수정",
+                        "Suggest fixes for CodeQL alerts using AI. CodeQL default or advanced setup must be enabled for this feature to work. Learn more about the": "AI를 사용해 CodeQL 경고에 대한 수정 사항을 제안해 줘요. 이 기능을 사용하려면 CodeQL 기본 또는 고급 설정이 활성화되어야 해요. 자세한 내용은",
+                        "limitations of autofix code suggestions": "자동 수정 코드 제안의 한계에 대해",
+                        "On": "켜기",
+                        "Off": "끄기",
 
-                    "Copilot Autofix for third-party tools": "适用于第三方工具的 Copilot 自动修复",
-                        "Suggest fixes for third-party alerts using AI. Ensure that these tools are properly configured or that an analysis is uploaded for this feature to work. Learn more about the": "使用人工智能对第三方警报提出修复建议。确保这些工具已正确配置或已上传分析，以便此功能正常工作。了解更多关于",
-                        "limitations of autofix code suggestions for third party tools": "第三方工具自动修复代码建议的限制",
+                    "Copilot Autofix for third-party tools": "타사 도구용 Copilot 자동 수정",
+                        "Suggest fixes for third-party alerts using AI. Ensure that these tools are properly configured or that an analysis is uploaded for this feature to work. Learn more about the": "AI를 사용해 타사 경고에 대한 수정 사항을 제안해 줘요. 이 기능이 제대로 작동하려면 해당 도구들이 올바르게 구성되어 있거나 분석이 업로드되어야 해요. 자세한 내용은",
+                        "limitations of autofix code suggestions for third party tools": "타사 도구에 대한 자동 수정 코드 제안의 한계에 대해",
 
-                "Protection rules": "保护规则",
-                    "Pull request check failure": "拉取请求检查失败",
-                        "Define which code scanning alert severity should cause a pull request check to fail. This also applies to analysis results uploaded via the API.": "定义哪种代码扫描警报严重程度会导致拉取请求检查失败。这也适用于通过 API 上传的分析结果。",
+                "Protection rules": "보호 규칙",
+                    "Pull request check failure": "끌어오기 요청 검사 실패",
+                        "Define which code scanning alert severity should cause a pull request check to fail. This also applies to analysis results uploaded via the API.": "어떤 코드 스캔 경고 심각도가 끌어오기 요청 검사를 실패하게 할지 정의해 보세요. 이는 API를 통해 업로드된 분석 결과에도 적용돼요.",
 
-                        "None": "无",
-                        "Only critical": "仅关键风险",
-                        "High or higher": "高风险及以上",
-                        "Medium or higher": "中风险及以上",
-                        "Any": "任何",
-                        "Other": "其他",
-                            "Only errors": "仅错误",
-                            "Errors and warnings": "错误和警告",
+                        "None": "없음",
+                        "Only critical": "오직 치명적일 때만",
+                        "High or higher": "높거나 그 이상일 때",
+                        "Medium or higher": "중간 이상일 때",
+                        "Any": "모든 경우",
+                        "Other": "기타",
+                            "Only errors": "오직 오류만",
+                            "Errors and warnings": "오류와 경고",
 
-                    "Check runs failure threshold": "检查运行失败阀值",
-                        "Select the alert severity level for code scanning check runs to fail.": "选择代码扫描检查运行失败的警报严重性级别。",
-                        "Create a branch ruleset": "创建分支规则集",
-                        "to prevent a branch from merging when these checks fail.": "以防止分支在这些检查失败时被合并。",
+                    "Check runs failure threshold": "검사 실행 실패 임계값",
+                        "Select the alert severity level for code scanning check runs to fail.": "코드 스캔 검사 실행이 실패할 경고 심각도 수준을 선택해 주세요.",
+                        "Create a branch ruleset": "분기 규칙 집합 생성하기",
+                        "to prevent a branch from merging when these checks fail.": "이 검사들이 실패할 경우 분기의 병합을 방지하기 위해.",
 
-                        "Security alert severity level:": "安全警报级别：",
-                        "Standard alert severity level:": "标准警报级别：",
+                        "Security alert severity level:": "보안 경고 심각도 수준:",
+                        "Standard alert severity level:": "표준 경고 심각도 수준:",
 
-                        "Security:": "风险：",
-                        "Other:": "其他：",
+                        "Security:": "보안:",
+                        "Other:": "기타:",
 
-                // 顶部提醒
-                "Code Scanning alert severity settings saved.": "代码扫描警报严重性设置已保存。",
+                // 상단 알림
+                "Code Scanning alert severity settings saved.": "코드 스캔 경고 심각도 설정이 저장되었어요.",
 
-            "Secret scanning": "机密扫描",
-                "Receive alerts on GitHub for detected secrets, keys, or other tokens.": "在 GitHub 上接收有关检测到的机密、密钥或其他令牌的警报。",
-                "GitHub will always send alerts to partners for detected secrets in public repositories.": "GitHub 会始终向合作伙伴发送检测到公共仓库中机密的警报。",
-                "Learn more about partner patterns": "了解更多关于合作伙伴模式的信息",
-                    "Push protection": "推送保护",
-                    "Block commits that contain": "阻止推送包含",
-                    "supported secrets": "支持的机密",
+            "Secret scanning": "비밀 스캔",
+                "Receive alerts on GitHub for detected secrets, keys, or other tokens.": "감지된 비밀, 키 또는 기타 토큰에 대해 GitHub에서 경고를 받아 보세요.",
+                "GitHub will always send alerts to partners for detected secrets in public repositories.": "GitHub은 공개 저장소에서 감지된 비밀에 대해 항상 파트너에게 경고를 보낼 거예요.",
+                "Learn more about partner patterns": "파트너 패턴에 대해 자세히 알아보세요",
+                    "Push protection": "푸시 보호",
+                    "Block commits that contain": "포함된 커밋을 차단해 보세요",
+                    "supported secrets": "지원되는 비밀",
 
-            // 组织仓库
-            "Access to alerts": "访问警报",
-            "Admins, users, and teams in the list below have permission to view and manage code scanning, Dependabot, or secret scanning alerts. These users may be notified when a new vulnerability is found in one of this repository's dependencies and when a secret or key is checked in. They will also see additional details when viewing Dependabot security updates. Individuals can manage how they receive these alerts in their": "以下列表中的管理员、用户和团队有权限查看和管理代码扫描、Dependabot 或机密扫描警报。当在此仓库的依赖项之一中发现新的漏洞，以及当机密或令牌被嵌入时，可能会通知这些用户。在查看 Dependabot 安全更新时，他们还会看到其他详细信息。用户可以管理他们如何接收这些警报，在他们的",
-            "notification settings": "通知设置",
-
-            "Choose the people or teams you would like to grant access": "选择您要授予访问权限的人员或团队",
-            "Search for people or teams": "搜索人员或团队",
-            "People and teams with access": "具有访问权限的人员和团队",
-            "Organization administrators, repository administrators, and teams with the security manager role": "具有安全管理员角色的组织管理员、仓库管理员和团队",
-            "These members always see code scanning, Dependabot, and secret scanning alerts.": "这些成员总是能看到代码扫描、Dependabot 和机密扫描警报。",
-            "Save changes": "保存更改",
+            // 조직 저장소
+            "Access to alerts": "경고 접근",
+            "Admins, users, and teams in the list below have permission to view and manage code scanning, Dependabot, or secret scanning alerts. These users may be notified when a new vulnerability is found in one of this repository's dependencies and when a secret or key is checked in. They will also see additional details when viewing Dependabot security updates. Individuals can manage how they receive these alerts in their": "아래 목록의 관리자, 사용자, 팀은 코드 스캔, Dependabot 또는 비밀 스캔 경고를 조회 및 관리할 권한이 있어요. 이들은 저장소 종속성 중 하나에서 새로운 취약점이 발견되거나 비밀 또는 키가 체크인될 때 경고를 받을 수 있어요. Dependabot 보안 업데이트를 볼 때도 추가 세부 정보를 확인할 수 있어요. 개별 사용자는",
+            "notification settings": "알림 설정",
+            
+            "Choose the people or teams you would like to grant access": "접근 권한을 부여할 사람 또는 팀을 선택해 보세요",
+            "Search for people or teams": "사람 또는 팀 검색하기",
+            "People and teams with access": "접근 권한이 있는 사람 및 팀",
+            "Organization administrators, repository administrators, and teams with the security manager role": "조직 관리자, 저장소 관리자 및 보안 관리자 역할을 가진 팀",
+            "These members always see code scanning, Dependabot, and secret scanning alerts.": "이 구성원들은 항상 코드 스캔, Dependabot, 비밀 스캔 경고를 볼 수 있어요.",
+            "Save changes": "변경 사항 저장하기",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/(\d+) rules? enabled/, "已启用 $1 条规则"],
+        [/(\d+) rules? enabled/, "이미 활성화된 $1개의 규칙"],
     ],
 };
+
 
 I18N["ko-KR"]["repository/settings/keys"] = { // 仓库设置 - 部署密钥 /<user-name>/<repo-name>/settings/keys
     "static": { // 静态翻译
@@ -18342,7 +18290,7 @@ I18N["ko-KR"]["login/oauth"] = { // 应用授权
             "read and write all public and private repository data": "读写所有公共和私有仓库数据",
             ". This includes the following:": "。这包括以下内容：",
             "Wikis": "Wiki",
-            "Webhooks and services": "Web 钩子和服务",
+            "Webhooks and services": "웹훅和服务",
             "Deploy keys": "部署密钥",
             "Collaboration invites": "合作的邀请",
 
@@ -21584,7 +21532,7 @@ I18N["ko-KR"]["orgs/settings/oauth_application_policy"] = { // 组织设置 - �
             "Only trusted applications can:": "只有受信任的应用才能：",
                 "Access private organization data via the API or SSH.": "通过 API 或 SSH 访问私有组织数据。",
                 "Change public organization data.": "更改公共组织数据。",
-                "Receive webhooks for private events.": "接收私人事件的 Web 钩子。",
+                "Receive webhooks for private events.": "接收私人事件的 웹훅。",
 
             "Restrict third-party application access": "限制第三方应用访问",
             "Restricting access will immediately block all unapproved applications and will disable SSH keys created before February 2014.": "限制访问将立即阻止所有未经批准的应用，并禁用 2014 年 2 月前创建的 SSH 密钥。",
@@ -22859,14 +22807,14 @@ I18N["ko-KR"]["status"] = { // GitHub Status
                         ". In addition, you agree to the Atlassian": "。此外，您同意 Atlassian",
                         "Cloud Terms of Service": "云服务条款",
                         "and acknowledge Atlassian's": "并承认 Atlassian 的",
-                    // Web 钩子
-                        "Get webhook notifications whenever GitHub": "您会收到 Web 钩子每当 GitHub",
+                    // 웹훅
+                        "Get webhook notifications whenever GitHub": "您会收到 웹훅每当 GitHub",
                             "an incident,": "一个事件，",
                             "an incident or": "一个事件或",
                             "changes": "更改",
                             "a component status.": "组件状态时。",
-                        "Webhook URL:": "Web 钩子 URL",
-                            "The URL we should send the webhooks to": "我们应将 Web 钩子发送到的 URL",
+                        "Webhook URL:": "웹훅 URL",
+                            "The URL we should send the webhooks to": "我们应将 웹훅发送到的 URL",
                         "We'll send you email if your endpoint fails": "如果您的终端出现故障，我们将向您发送电子邮件",
                         "Subscribe": "订阅",
                     // X
@@ -22891,7 +22839,7 @@ I18N["ko-KR"]["status"] = { // GitHub Status
                 "Performance of git clones, pulls, pushes, and associated operations": "git 克隆、拉取、推送和相关操作的性能",
             "API Requests": "API 请求",
                 "Requests for GitHub APIs": "GitHub API 请求",
-            "Webhooks": "Web 钩子",
+            "Webhooks": "웹훅",
                 "Real time HTTP callbacks of user-generated and system events": "实时 HTTP 回调用户生成的事件和系统事件",
             // 이슈
                 "Requests for Issues on GitHub.com": "GitHub.com 上的이슈请求",
@@ -22900,7 +22848,7 @@ I18N["ko-KR"]["status"] = { // GitHub Status
             // 操作
                 "Workflows, Compute and Orchestration for GitHub Actions": "GitHub 操作的工作流、计算和协调",
             // 软件包
-                "API requests and webhook delivery for GitHub Packages": "GitHub 软件包的 API 请求和 Web 钩子发送",
+                "API requests and webhook delivery for GitHub Packages": "GitHub 软件包的 API 请求和 웹훅发送",
             // Github Pages
                 "Frontend application and API servers for Pages builds": "用于页面构建的前端应用程序和应用程序接口服务器",
             // 代码空间
@@ -22919,7 +22867,7 @@ I18N["ko-KR"]["status"] = { // GitHub Status
             "Incident with API Requests": "API 请求事故",
             "Incident with Actions": "操作事故",
             "Incident with Pages": "Pages 事故",
-            "Incident with Webhooks": "Web 钩子事故",
+            "Incident with Webhooks": "웹훅事故",
             "We are investigating reports of degraded performance.": "我们正在调查性能下降的报告。",
             "This incident has been resolved.": "此事故已解决。",
             "Disruption with some GitHub services": "某些 GitHub 服务中断",
