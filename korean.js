@@ -15551,7 +15551,7 @@ I18N["ko-KR"]["repository/settings/environments"] = { // 저장소 설정 - 환�
                 "Update secret": "기밀 업데이트하기",
                 // 기밀 삭제 대화 상자
                     "Delete secret": "기밀 삭제하기",
-                        "Are you sure you want to delete": "삭제하시겠어요",
+                        "Are you sure you want to delete": "정말 삭제하시겠어요?",
                         "Yes, delete this": "네, 이 기밀 삭제할게요",
                         "secret": "기밀",
 
@@ -16453,7 +16453,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
     "static": { // 静态翻译
         //"Let’s build from here": "让我们从这里开始",
         //"The world’s leading AI-powered developer platform.": "全球领先的人工智能开发者平台。",
-        "Build and ship software on a single, collaborative platform": "협력하고, 만들고, 공유해봅시다.",
+        "Build and ship software on a single, collaborative platform": "협력하고, 만들고, 공유해요.",
         "Join the world’s most widely adopted AI-powered developer platform.": "세계에서 가장 널리 채택된 AI 기반 개발자 플랫폼에 참여하세요.",
         //"Join the world’s most widely adopted AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.": "加入全球最广泛采用的人工智能开发者平台，在这里，数百万的开发人员、企业和最大的开源社区构建推动人类进步的软件。",
 
@@ -16478,14 +16478,14 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
             "Leverage tooling to detect, review, and fix vulnerabilities before they reach production.": "취약점이 제품에 도달하기 전에 취약점을 감지, 검토 및 수정하세요.",
 
         "Accelerate performance": "성능 가속화",
-            "With GitHub Copilot embedded throughout the platform, you can simplify your toolchain, automate tasks, and improve the developer experience.": "플랫폼 전체에 내장된 GitHub Copilot을 사용하면 도구 체인을 간소화하고 작업을 자동화하며 개발자 환경을 개선할 수 있습니다.",
+            "With GitHub Copilot embedded throughout the platform, you can simplify your toolchain, automate tasks, and improve the developer experience.": "플랫폼 전체에 내장된 GitHub Copilot을 사용하면 도구 체인을 간소화하고 작업을 자동화하며 개발자 환경을 개선할 수 있어요.",
 
             "Work 55% faster.": "55% 더 빠르게 작업합니다.",
                 "Increase productivity with AI-powered coding assistance, including code completion, chat, and more.": "코드 완성, 채팅 등을 포함한 AI 기반 코딩 지원으로 생산성을 높이세요",
                 "Survey: The AI wave continues to grow on software development teams, 2024.": "2024년 설문조사: 소프트웨어 개발 팀에서 AI 열풍이 계속 커지고 있습니다.",
                 "Explore GitHub Copilot": "GitHub Copilot 둘러보기",
 
-            "Duolingo boosts developer speed by 25% with GitHub Copilot": "듀오링고는 GitHub Copilot으로 개발 속도를 25% 향상시켰습니다.",
+            "Duolingo boosts developer speed by 25% with GitHub Copilot": "듀오링고는 GitHub Copilot으로 개발 속도를 25% 향상시켰어요.",
               "Read customer story": "사용 사례 읽어보기",
 
             "2024 Gartner® Magic Quadrant™ for AI Code Assistants": "2024년 Gartner®의 AI 코드 어시스턴트 Magic Quadrant™",
@@ -16502,7 +16502,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
 
         "Built-in application security": "내장 애플리케이션 보안",
         "where found means fixed": "발견 즉시 수정",
-            "Use AI to find and fix vulnerabilities—freeing your teams to ship more secure software faster.": "AI를 사용해 취약점을 찾아 수정하세요—팀이 더 빠르고 안전한 소프트웨어를 배포할 수 있도록 도와줍니다.",
+            "Use AI to find and fix vulnerabilities—freeing your teams to ship more secure software faster.": "AI를 사용해 취약점을 찾아 수정하세요—팀이 더 빠르고 안전한 소프트웨어를 배포할 수 있도록 도와줘요.",
 
             "Apply fixes in seconds.": "몇 초 만에 수정 적용",
                 "Spend less time fixing vulnerabilities and more time building features with Copilot Autofix.": "Copilot Autofix로 취약점 수정 시간을 줄이고, 더 많은 시간을 기능 개발에 투자하세요.",
@@ -16523,12 +16523,12 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
                     "of alert types in all supported languages with Copilot Autofix": "Copilot Autofix로 지원되는 모든 언어의 알림 유형을 처리",
 
         "Work together, achieve more": "함께 협업하여 더 큰 성과를 이루세요",
-            "Collaborate with your teams, use management tools that sync with your projects, and code from anywhere—all on a single, integrated platform.": "팀과 협업하고, 프로젝트와 동기화되는 관리 도구를 사용하며, 어디서든 코딩하세요—모든 것을 하나의 통합된 플랫폼에서 할 수 있습니다.",
+            "Collaborate with your teams, use management tools that sync with your projects, and code from anywhere—all on a single, integrated platform.": "팀과 협업하고, 프로젝트와 동기화되는 관리 도구를 사용하며, 어디서든 코딩하세요—모든 것을 하나의 통합된 플랫폼에서 할 수 있어요.",
 
             "Your workflows, your way.": "당신의 작업 흐름, 당신의 방식",
                 "Plan effectively with an adaptable spreadsheet that syncs with your work.": "작업과 동기화되는 스프레드시트를 사용하여 효율적으로 계획을 세우세요.",
                 "Jump into GitHub Projects": "GitHub 프로젝트로 이동하기",
-            "It helps us onboard new software engineers and get them productive right away. We have all our source code, issues, and pull requests in one place... GitHub is a complete platform that frees us from menial tasks and enables us to do our best work.": "GitHub은 새로운 소프트웨어 엔지니어를 빠르게 온보딩하고, 그들이 즉시 생산성을 낼 수 있도록 도와주며 모든 소스 코드, 이슈, 풀 리퀘스트를 한 곳에서 관리합니다... GitHub은 완벽한 플랫폼으로, 번거로운 작업에서 벗어나 최고의 작업을 할 수 있게 해줍니다.",
+            "It helps us onboard new software engineers and get them productive right away. We have all our source code, issues, and pull requests in one place... GitHub is a complete platform that frees us from menial tasks and enables us to do our best work.": "GitHub은 새로운 소프트웨어 엔지니어를 빠르게 온보딩하고, 그들이 즉시 생산성을 낼 수 있도록 도와주며 모든 소스 코드, 이슈, 풀 리퀘스트를 한 곳에서 관리해요... GitHub은 완벽한 플랫폼으로, 번거로운 작업에서 벗어나 최고의 작업을 할 수 있게 해줘요.",
                 "Application manager at Mercedes-Benz": "Mercedes-Benz 애플리케이션 관리자",
             "Keep track of your tasks": "작업 추적하기",
                 "Create issues and manage projects with tools that adapt to your code.": "코드에 맞춰 조정되는 도구로 이슈를 생성하고 프로젝트를 관리하세요.",
@@ -16545,13 +16545,13 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
 
         // 从初创公司到大型企业，GitHub 可以适应任何行业、任何规模的团队。
         "From startups to enterprises,": "스타트업부터 대기업까지,",
-            "GitHub scales": "GitHub은 확장 가능합니다",
+            "GitHub scales": "GitHub는",
             "with teams of any size in any industry.": "모든 산업과 팀 규모에 맞게 확장 가능합니다.",
 
             "Explore customer stories": "사용 사례 둘러보기",
 
-        "Millions of developers and businesses call GitHub home": "수백만 명의 개발자와 기업이 GitHub을 고향으로 부릅니다",
-            "Whether you’re scaling your development process or just learning how to code, GitHub is where you belong. Join the world’s most widely adopted AI-powered developer platform to build the technologies that redefine what’s possible.": "개발 프로세스를 확장하든, 코딩을 배우고 있든, GitHub은 여러분의 자리입니다. 전 세계에서 가장 널리 사용되는 AI 기반 개발자 플랫폼에 참여해 가능성을 재정의하는 기술을 구축하세요.",
+        "Millions of developers and businesses call GitHub home": "수백만의 개발자와 기업들이 GitHub에서 살고 있어요",
+            "Whether you’re scaling your development process or just learning how to code, GitHub is where you belong. Join the world’s most widely adopted AI-powered developer platform to build the technologies that redefine what’s possible.": "개발 프로세스를 확장하든, 코딩을 배우고 있든, 언제나 GitHub는 당신과 함께해요. 전 세계에서 가장 널리 사용되는 AI 기반 개발자 플랫폼에 참여해 가능성을 재정의하는 기술을 구축하세요.",
 
         //"Trusted by the world’s leading organizations ↘︎": "全球领先机构所信赖的合作伙伴 ↘︎",
 
@@ -16636,7 +16636,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
 
         // 底部栏
         "Subscribe to our developer newsletter": "개발자 뉴스레터 구독하기",
-        "Get tips, technical guides, and best practices. Twice a month. Right in your inbox.": "팁, 기술 가이드 및 모범 사례를 받아보세요. 매월 두 번, 바로 당신의 이메일로.",
+        "Get tips, technical guides, and best practices. Twice a month. Right in your inbox.": "팁, 기술 가이드 및 모범 사례를 받아보세요. 매월 두 번, 당신의 이메일로요.",
         "Subscribe": "구독하기",
 
         "Features": "기능",
