@@ -16453,18 +16453,18 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
     "static": { // 静态翻译
         //"Let’s build from here": "让我们从这里开始",
         //"The world’s leading AI-powered developer platform.": "全球领先的人工智能开发者平台。",
-        "Build and ship software on a single, collaborative platform": "在单一协作平台上构建和发布软件",
-        "Join the world’s most widely adopted AI-powered developer platform.": "加入全球最广泛采用的人工智能开发者平台",
+        "Build and ship software on a single, collaborative platform": "협력하고, 만들고, 공유해봅시다.",
+        "Join the world’s most widely adopted AI-powered developer platform.": "세계에서 가장 널리 채택된 AI 기반 개발자 플랫폼에 참여하세요.",
         //"Join the world’s most widely adopted AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.": "加入全球最广泛采用的人工智能开发者平台，在这里，数百万的开发人员、企业和最大的开源社区构建推动人类进步的软件。",
 
         //"Email address": "电子邮箱地址",
-        "Enter your email": "键入邮箱地址",
-        "Sign up for GitHub": "注册 GitHub",
+        "Enter your email": "이메일을 입력하세요",
+        "Sign up for GitHub": "GitHub 가입하기",
         //"Start a free enterprise trial": "开始免费试用企业版",
 
-        "Try GitHub Copilot": "试用 GitHub Copilot",
-            "30 days free": "30天免费",
-        "Explore upcoming releases": "探索即将发布的产品", // 已登录
+        "Try GitHub Copilot": "GitHub Copilot 시도해보기",
+            "30 days free": "30일 체험",
+        "Explore upcoming releases": "다가올 릴리즈 둘러보기", // 已登录
 
         // 代码
             "Build code quickly and more securely with GitHub Copilot embedded throughout your workflows.": "使用嵌入在整个工作流程中的 GitHub Copilot 快速、更安全地构建代码。",
