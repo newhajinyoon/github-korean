@@ -7326,7 +7326,7 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                     "Open with Visual Studio": "Visual Studio로 열기",
                     "Download ZIP": "ZIP 다운로드하기",
 
-                    "Code 55% faster with AI pair programming.": "AI를 사용한한 프로그래밍으로 55% 빠르게 코딩해보세요.",
+                    "Code 55% faster with AI pair programming.": "AI를 사용한 프로그래밍으로 55% 빠르게 코딩해보세요.",
                         "Start my free trial": "무료 체험판 시작하기",
                         "Don't show again": "다시 보지 않기",
 
@@ -16480,8 +16480,8 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
         "Accelerate performance": "성능 가속화",
             "With GitHub Copilot embedded throughout the platform, you can simplify your toolchain, automate tasks, and improve the developer experience.": "플랫폼 전체에 내장된 GitHub Copilot을 사용하면 도구 체인을 간소화하고 작업을 자동화하며 개발자 환경을 개선할 수 있어요.",
 
-            "Work 55% faster.": "55% 더 빠르게 작업합니다.",
-                "Increase productivity with AI-powered coding assistance, including code completion, chat, and more.": "코드 완성, 채팅 등을 포함한 AI 기반 코딩 지원으로 생산성을 높이세요",
+            "Work 55% faster.": "55% 더 빠르게 작업할 수 있어요.",
+                "Increase productivity with AI-powered coding assistance, including code completion, chat, and more.": "코드 완성, 채팅 등을 포함한 AI 기반 코딩 지원으로 생산성을 높이세요.",
                 "Survey: The AI wave continues to grow on software development teams, 2024.": "2024년 설문조사: 소프트웨어 개발 팀에서 AI 열풍이 계속 커지고 있습니다.",
                 "Explore GitHub Copilot": "GitHub Copilot 둘러보기",
 
@@ -16629,7 +16629,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
         //"Pause": "停止",
         //"Play": "播放",
 
-        "This 7X times factor is based on data from the industry’s longest running analysis of fix rates Veracode State of Software Security 2023, which cites the average time to fix 50% of flaws as 198 days vs. GitHub’s fix rates of 72% of flaws with in 28 days which is at a minimum of 7X faster when compared.": "이 7배 속도 차이는 업계에서 가장 오래된 취약점 수정 비율 분석인 Veracode State of Software Security 2023의 데이터를 바탕으로 합니다. 이 보고서에 따르면, 결함의 50%를 수정하는 데 평균 198일이 소요되는 반면, GitHub는 결함의 72%를 28일 이내에 수정하여 최소 7배 더 빠른 속도를 기록합니다.",
+        "This 7X times factor is based on data from the industry’s longest running analysis of fix rates Veracode State of Software Security 2023, which cites the average time to fix 50% of flaws as 198 days vs. GitHub’s fix rates of 72% of flaws with in 28 days which is at a minimum of 7X faster when compared.": "이 7배 속도 차이는 업계에서 가장 오래된 취약점 수정 비율 분석인 Veracode State of Software Security 2023의 데이터를 바탕으로 해요. 이 보고서에 따르면, 결함의 50%를 수정하는 데 평균 198일이 소요되는 반면, GitHub는 결함의 72%를 28일 이내에 수정하여 최소 7배 더 빠른 속도를 기록했어요.",
         //"The Total Economic Impact™ Of GitHub Enterprise Cloud and Advanced Security, a commissioned study conducted by Forrester Consulting, 2022. Results are for a composite organization based on interviewed customers.": "由 Forrester Consulting 开展的委托研究《GitHub Enterprise Cloud 和高级安全的总体经济影响》(The Total Economic Impact™ Of GitHub Enterprise Cloud and Advanced Security)，其结果显示了基于受访客户的综合组织的结果。",
         //"There are now 100 million developers around the world using GitHub.": "现在全球有 1 亿开发者使用 GitHub。",
         //"Read the blog post": "阅读博客文章",
