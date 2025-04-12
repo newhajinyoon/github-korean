@@ -16501,34 +16501,34 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
                 "Visit GitHub Marketplace": "GitHub 마켓플레이스 방문하기",
 
         "Built-in application security": "내장 애플리케이션 보안",
-        "where found means fixed": "발견 즉시 수정",
-            "Use AI to find and fix vulnerabilities—freeing your teams to ship more secure software faster.": "AI를 사용해 취약점을 찾아 수정하세요—팀이 더 빠르고 안전한 소프트웨어를 배포할 수 있도록 도와줘요.",
+        "where found means fixed": "취약점 발견 즉시 수정",
+            "Use AI to find and fix vulnerabilities—freeing your teams to ship more secure software faster.": "AI를 사용해 취약점을 찾아 수정하세요. 팀이 더 빠르고 안전한 소프트웨어를 배포할 수 있도록 도와줘요.",
 
-            "Apply fixes in seconds.": "몇 초 만에 수정 적용",
+            "Apply fixes in seconds.": "몇 초 만에 수정 적용.",
                 "Spend less time fixing vulnerabilities and more time building features with Copilot Autofix.": "Copilot Autofix로 취약점 수정 시간을 줄이고, 더 많은 시간을 기능 개발에 투자하세요.",
                 "Explore GitHub Advanced Security": "GitHub 고급 보안 둘러보기",
 
-                "Solve security debt.": "보안 부채 해결.",
-                    "Leverage AI-assisted security campaigns to reduce application vulnerabilities and zero-day attacks.": "AI 기반 보안 캠페인을 활용하여 애플리케이션 취약점과 제로데이 공격을 줄이세요.",
+                "Solve security debt.": "보안 부담 해결.",
+                    "Leverage AI-assisted security campaigns to reduce application vulnerabilities and zero-day attacks.": "AI 기반 보안 캠페인을 활용하여 애플리케이션 취약점과 zero-day 공격을 줄이세요.",
                     "Discover security campaigns": "보안 캠페인 둘러보기",
 
-                "Dependencies you can depend on.": "신뢰할 수 있는 의존성",
+                "Dependencies you can depend on.": "신뢰할 수 있는 의존성.",
                     "Update vulnerable dependencies with supported fixes for breaking changes.": "중단된 변경사항에 대한 지원 수정으로 취약한 의존성을 업데이트하세요.",
                     "Learn about Dependabot": "Dependabot에 대해 알아보기",
 
-                "Your secrets, your business: protected.": "당신의 비밀, 당신의 사업: 보호됨",
+                "Your secrets, your business: protected.": "당신의 비밀과 사업 보호.",
                     "Detect, prevent, and remediate leaked secrets across your organization.": "조직 내에서 유출된 비밀을 탐지, 방지 및 수정하세요.",
 
                 "90% coverage": "90% 적용",
                     "of alert types in all supported languages with Copilot Autofix": "Copilot Autofix로 지원되는 모든 언어의 알림 유형을 처리",
 
         "Work together, achieve more": "함께 협업하여 더 큰 성과를 이루세요",
-            "Collaborate with your teams, use management tools that sync with your projects, and code from anywhere—all on a single, integrated platform.": "팀과 협업하고, 프로젝트와 동기화되는 관리 도구를 사용하며, 어디서든 코딩하세요—모든 것을 하나의 통합된 플랫폼에서 할 수 있어요.",
+            "Collaborate with your teams, use management tools that sync with your projects, and code from anywhere—all on a single, integrated platform.": "팀과 협업하고, 프로젝트와 동기화되는 관리 도구를 사용하며, 어디서든 코딩하세요. 모든 것을 하나의 통합된 플랫폼에서 할 수 있어요.",
 
             "Your workflows, your way.": "당신의 작업 흐름, 당신의 방식",
                 "Plan effectively with an adaptable spreadsheet that syncs with your work.": "작업과 동기화되는 스프레드시트를 사용하여 효율적으로 계획을 세우세요.",
                 "Jump into GitHub Projects": "GitHub 프로젝트로 이동하기",
-            "It helps us onboard new software engineers and get them productive right away. We have all our source code, issues, and pull requests in one place... GitHub is a complete platform that frees us from menial tasks and enables us to do our best work.": "GitHub은 새로운 소프트웨어 엔지니어를 빠르게 온보딩하고, 그들이 즉시 생산성을 낼 수 있도록 도와주며 모든 소스 코드, 이슈, 풀 리퀘스트를 한 곳에서 관리해요... GitHub은 완벽한 플랫폼으로, 번거로운 작업에서 벗어나 최고의 작업을 할 수 있게 해줘요.",
+            "It helps us onboard new software engineers and get them productive right away. We have all our source code, issues, and pull requests in one place... GitHub is a complete platform that frees us from menial tasks and enables us to do our best work.": "GitHub은 새로운 소프트웨어 엔지니어를 빠르게 온보딩하고, 그들이 즉시 생산성을 낼 수 있도록 도와주며 모든 소스 코드, 이슈, 풀 리퀘스트를 한 곳에서 관리해요. GitHub은 완벽한 플랫폼으로, 번거로운 작업에서 벗어나 최고의 작업을 할 수 있게 해줘요.",
                 "Application manager at Mercedes-Benz": "Mercedes-Benz 애플리케이션 관리자",
             "Keep track of your tasks": "작업 추적하기",
                 "Create issues and manage projects with tools that adapt to your code.": "코드에 맞춰 조정되는 도구로 이슈를 생성하고 프로젝트를 관리하세요.",
@@ -16546,7 +16546,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
         // 从初创公司到大型企业，GitHub 可以适应任何行业、任何规模的团队。
         "From startups to enterprises,": "스타트업부터 대기업까지,",
             "GitHub scales": "GitHub는",
-            "with teams of any size in any industry.": "모든 산업과 팀 규모에 맞게 확장 가능합니다.",
+            "with teams of any size in any industry.": "모든 산업과 팀 규모에 맞게 확장 가능해요.",
 
             "Explore customer stories": "사용 사례 둘러보기",
 
