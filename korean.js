@@ -16679,48 +16679,48 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
     "static": { // 静态翻译
 
         // 登录页 https://github.com/login
-            "Sign in to GitHub": "登录 GitHub",
+            "Sign in to GitHub": "GitHub에 로그인",
             "Sign in to": "登录",
             "Signed in as": "登录身份为",
             "to continue to": "继续登录",
-            "Username or email address": "用户名或电子邮箱",
+            "Username or email address": "사용자 이름 또는 이메일 주소",
             "Password": "비밀번호",
-            "Forgot password?": "忘记密码？",
-            "Sign in": "登录",
-            "Sign in with a passkey": "使用通行密钥登录",
-            "Signing in…": "登录中…",
+            "Forgot password?": "비밀번호를 잊으셨나요?",
+            "Sign in": "로그인",
+            "Sign in with a passkey": "패스키로 로그인하기",
+            "Signing in…": "로그인…",
 
-            "Add an account": "添加账号", // 添加新账号
-            "Want to create an account?": "想要新建一个账户吗？", // 添加新账号
+            "Add an account": "계정 추가하기", // 添加新账号
+            "Want to create an account?": "계정 만들기를 원한다고요?", // 添加新账号
 
             "Or": "或",
             // "This browser or device does not fully support passkeys.": "此浏览器或设备不完全支持通行密钥。",
             "This browser or device is reporting partial passkey support.": "此浏览器或设备报告部分支持通行密钥。",
-            "Sign-in with a passkey": "使用通行密钥登录",
+            "Sign-in with a passkey": "패스키로 로그인하기",
 
-            "New to GitHub?": "初次接触 GitHub？",
-            "Create an account": "那就注册个账户吧",
+            "New to GitHub?": "GitHub가 처음이신가요?",
+            "Create an account": "새 계정 만들기",
 
-            "Contact GitHub Support": "联系 GitHub 支持",
+            "Contact GitHub Support": "GitHub에 문의하기",
 
             // 验证状态提醒
-            "Incorrect username or password.": "用户名或密码不正确。",
-            "Recovery code authentication failed.": "恢复码身份验证失败。",
+            "Incorrect username or password.": "사용자 이름 또는 비밀번호가 잘못됐어요.",
+            "Recovery code authentication failed.": "복구 코드 인증을 실패했어요.",
 
         // 设备授权激活 https://github.com/login/device
             "Device Activation": "设备激活",
             "Enter the code displayed on your device": "输入您的设备上显示的代码",
-            "Continue": "继续",
-            "GitHub staff will never ask you to enter your code on this page.": "GitHub 工作人员绝不会要求您在此页面上输入您的代码。",
+            "Continue": "계속하기",
+            "GitHub staff will never ask you to enter your code on this page.": "GitHub 팀은 절대 코드를 이곳에 입력하라고 요구하지 않아요.",
 
         // 设备授权第2页面 https://github.com/login/device/confirmation
             // [/Authorize/, "授权"],
             "This authorization was requested from": "此授权请求来自",
             "Make sure you trust this device as it will get access to your account.": "请确保您信任该设备，因为它可以访问您的账户。",
             "wants to access your": "希望访问您的",
-            "account": "账户",
+            "account": "계정",
             "Organization access": "组织访问",
-            "Requested from": "请求自",
+            "Requested from": "요청됨: ",
 
             "Owned & operated by GitHub": "由 GitHub 拥有和运营",
             "Created": "创建于",
