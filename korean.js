@@ -16548,7 +16548,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
             "GitHub scales": "GitHub은 확장 가능합니다",
             "with teams of any size in any industry.": "모든 산업과 팀 규모에 맞게 확장 가능합니다.",
 
-            "Explore customer stories": "사용 사례 둘러보기"
+            "Explore customer stories": "사용 사례 둘러보기",
 
         "Millions of developers and businesses call GitHub home": "수백만 명의 개발자와 기업이 GitHub을 고향으로 부릅니다",
             "Whether you’re scaling your development process or just learning how to code, GitHub is where you belong. Join the world’s most widely adopted AI-powered developer platform to build the technologies that redefine what’s possible.": "개발 프로세스를 확장하든, 코딩을 배우고 있든, GitHub은 여러분의 자리입니다. 전 세계에서 가장 널리 사용되는 AI 기반 개발자 플랫폼에 참여해 가능성을 재정의하는 기술을 구축하세요.",
