@@ -15802,11 +15802,11 @@ I18N["ko-KR"]["repository/settings/pages"] = { // 저장소 설정 페이지(조
                     "Learn more about securing your GitHub Pages site with HTTPS": "HTTPS로 GitHub 페이지 사이트를 안전하게 보호하는 방법에 대해 자세히 알아보세요",
 
             "Visibility": "가시성",
-                "GitHub Enterprise": "GitHub 기업版",
-                "With a GitHub Enterprise account, you can restrict access to your GitHub Pages site by publishing it privately. You can use privately published sites to share your internal documentation or knowledge base with members of your enterprise. You can try GitHub Enterprise risk-free for 30 days.": "GitHub 기업版 계정을 사용하면 저장소를 비공개로 게시하여 GitHub 페이지 사이트에 대한 접근을 제한할 수 있어요. 비공개로 게시된 사이트를 사용하여 내부 문서나 지식 베이스를 기업 구성원과 공유할 수 있어요. 30일간 무료로 GitHub 기업版을 체험해 보세요.",
-                //"With a GitHub Enterprise account, you can restrict access to your GitHub Pages site by publishing it privately. You can use privately published sites to share your internal documentation or knowledge base with members of your enterprise.": "GitHub 기업版 계정을 사용하면 저장소를 비공개로 게시하여 GitHub 페이지 사이트에 대한 접근을 제한할 수 있어요. 비공개로 게시된 사이트를 사용하여 내부 문서나 지식 베이스를 기업 구성원과 공유할 수 있어요.",
-                "Try GitHub Enterprise": "GitHub 기업版 체험하기",
-                "Try GitHub Enterprise risk-free for 30 days": "30일간 무료로 GitHub 기업版을 체험해 보세요",
+                "GitHub Enterprise": "GitHub 기업용",
+                "With a GitHub Enterprise account, you can restrict access to your GitHub Pages site by publishing it privately. You can use privately published sites to share your internal documentation or knowledge base with members of your enterprise. You can try GitHub Enterprise risk-free for 30 days.": "GitHub 기업용 계정을 사용하면 저장소를 비공개로 게시하여 GitHub 페이지 사이트에 대한 접근을 제한할 수 있어요. 비공개로 게시된 사이트를 사용하여 내부 문서나 지식 베이스를 기업 구성원과 공유할 수 있어요. 30일간 무료로 GitHub 기업용을 체험해 보세요.",
+                //"With a GitHub Enterprise account, you can restrict access to your GitHub Pages site by publishing it privately. You can use privately published sites to share your internal documentation or knowledge base with members of your enterprise.": "GitHub 기업용 계정을 사용하면 저장소를 비공개로 게시하여 GitHub 페이지 사이트에 대한 접근을 제한할 수 있어요. 비공개로 게시된 사이트를 사용하여 내부 문서나 지식 베이스를 기업 구성원과 공유할 수 있어요.",
+                "Try GitHub Enterprise": "GitHub 기업용 체험하기",
+                "Try GitHub Enterprise risk-free for 30 days": "30일간 무료로 GitHub 기업용을 체험해 보세요",
                 "Learn more about the visibility of your GitHub Pages site.": "GitHub 페이지 사이트의 가시성에 대해 자세히 알아보세요",
 
     },
@@ -16038,186 +16038,179 @@ I18N["ko-KR"]["repository/settings/security_analysis"] = { // 저장소 설정 -
 };
 
 
-I18N["ko-KR"]["repository/settings/keys"] = { // 仓库设置 - 部署密钥 /<user-name>/<repo-name>/settings/keys
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/keys"] = { // 저장소 설정 - 배포 키 /<user-name>/<repo-name>/settings/keys
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 部署密钥 页面 /<user-name>/<repo-name>/settings/keys====================================
-            "Add deploy key": "添加部署密钥",
-            "There are no deploy keys for this repository": "此仓库暂无部署密钥",
-            "Check out our": "查看我们的",
-            "guide on deploy keys": "部署密钥指南",
-            "to learn more.": "了解更多。",
-            "Last used within the last week": "最后一次使用是最近 1 周之内",
-            "— Read/write": "— 读取和写入权限",
-            "— Read": "— 读取权限",
+        // 배포 키 페이지 /<user-name>/<repo-name>/settings/keys====================================
+            "Add deploy key": "배포 키 추가하기",
+            "There are no deploy keys for this repository": "이 저장소에 배포 키가 없어요.",
+            "Check out our": "저희의",
+            "guide on deploy keys": "배포 키 안내서",
+            "to learn more.": "를 확인해 보세요.",
+            "Last used within the last week": "최근 1주일 내에 마지막으로 사용됨",
+            "— Read/write": "— 읽기/쓰기 권한",
+            "— Read": "— 읽기 권한",
 
-            // 密钥删除对话框
-            "Are you sure you want to delete this SSH key?": "您确定要删除此 SSH 密钥吗？",
-            "This action": "该操作",
-            "cannot": "不能",
-            "be undone. This will permanently delete the SSH key, and if you’d like to use it in the future, you will need to upload it again.": "被撤销。这将永久地删除 SSH 密钥，如果您想在未来使用它，您将需要再次上传它。",
-            "I understand, delete this SSH key": "我明白了，依然删除该 SSH 密钥",
+            // 키 삭제 대화상자
+            "Are you sure you want to delete this SSH key?": "이 SSH 키를 삭제하시겠어요?",
+            "This action": "이 작업은",
+            "cannot": "취소할 수 없어요.",
+            "be undone. This will permanently delete the SSH key, and if you’d like to use it in the future, you will need to upload it again.": "되돌릴 수 없으며, 이로 인해 SSH 키가 영구적으로 삭제돼요. 만약 앞으로 사용하고 싶으시면 다시 업로드하셔야 해요.",
+            "I understand, delete this SSH key": "알겠어요, 이 SSH 키 삭제하기",
 
-            // 顶部提醒
-            "Okay, you have successfully deleted that key.": "好的，您已成功删除该密钥。",
-            "Key is invalid. You must supply a key in OpenSSH public key format": "密钥无效。您必须提供 OpenSSH 公钥格式的密钥",
+            // 상단 알림
+            "Okay, you have successfully deleted that key.": "네, 해당 키가 성공적으로 삭제되었어요.",
+            "Key is invalid. You must supply a key in OpenSSH public key format": "키가 유효하지 않아요. OpenSSH 공개 키 형식의 키를 제공해야 해요.",
 
-        // 部署密钥新建 页面 /<user-name>/<repo-name>/settings/keys/new====================================
-            "/ Add new": "/ 新添",
-            "Title": "标题",
-            "Key": "密钥",
-            "Allow write access": "允许写访问",
-            "Can this key be used to": "该密钥允许",
-            "push": "推送",
-            "to this repository? Deploy keys always have pull access.": "到这个仓库？部署密钥始终具有拉取访问权限。",
-            "Add key": "添加密钥",
-            // 顶部提醒
-            "Key is invalid. You must supply a key in OpenSSH public key format": "密钥无效。您必须提供 OpenSSH 公钥格式的密钥",
-
+        // 배포 키 새로 만들기 페이지 /<user-name>/<repo-name>/settings/keys/new====================================
+            "/ Add new": "/ 새로 추가하기",
+            "Title": "제목",
+            "Key": "키",
+            "Allow write access": "쓰기 권한 허용하기",
+            "Can this key be used to": "이 키를 사용하여",
+            "push": "푸시하기",
+            "to this repository? Deploy keys always have pull access.": "이 저장소에 푸시할 수 있어요? 배포 키는 항상 풀 권한을 갖고 있어요.",
+            "Add key": "키 추가하기",
+            // 상단 알림
+            "Key is invalid. You must supply a key in OpenSSH public key format": "키가 유효하지 않아요. OpenSSH 공개 키 형식의 키를 제공해야 해요.",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/Last used within the last (\d+) weeks?/, "最后一次使用是最近 $1 周之内"], // /keys
-        [/Last used within the last (\d+) months?/, "最后一次使用是最近 $1 个月之内"], // /keys
+        [/Last used within the last (\d+) weeks?/, "최근 $1주일 내에 마지막으로 사용됨"], // /keys
+        [/Last used within the last (\d+) months?/, "최근 $1개월 내에 마지막으로 사용됨"], // /keys
     ],
 };
 
-I18N["ko-KR"]["repository/settings/secrets"] = { // 仓库设置 - 机密 /<user-name>/<repo-name>/settings/secrets
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/secrets"] = { // 저장소 설정 - 기밀 /<user-name>/<repo-name>/settings/secrets
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 操作机密 /<user-name>/<repo-name>/settings/secrets/actions
-            "Actions secrets and variables": "操作机密和变量",
-            "New repository secret": "新建仓库机密",
-            "Secrets and variables allow you to manage reusable configuration data. Secrets are": "机密和变量允许您管理可重复使用的配置数据。机密是",
-            "encrypted": "被加密",
-            "and are used for sensitive data.": "并用于敏感数据。",
-            "Learn more about encrypted secrets": "了解更多关于加密机密的信息",
-            ". Variables are shown as plain text and are used for": "。变量显示为纯文本，用于",
-            "non-sensitive": "不敏感",
-            "data.": "数据。",
-            "Learn more about variables": "了解更多关于变量的信息",
+        // 액션 기밀 및 변수 /<user-name>/<repo-name>/settings/secrets/actions
+            "Actions secrets and variables": "액션 기밀 및 변수",
+            "New repository secret": "새 저장소 기밀 만들기",
+            "Secrets and variables allow you to manage reusable configuration data. Secrets are": "기밀과 변수는 재사용 가능한 구성 데이터를 관리할 수 있도록 해줘요. 기밀은",
+            "encrypted": "암호화되어 있어요",
+            "and are used for sensitive data.": "그리고 민감한 데이터에 사용돼요.",
+            "Learn more about encrypted secrets": "암호화 기밀에 대해 자세히 알아보세요.",
+            ". Variables are shown as plain text and are used for": " 변수는 평문으로 표시되며,",
+            "non-sensitive": "민감하지 않은",
+            "data.": "데이터를 위한 용도로 사용돼요.",
+            "Learn more about variables": "변수에 대해 자세히 알아보세요.",
 
-            "Anyone with collaborator access to this repository can use these secrets and variables for actions. They are not passed to workflows that are triggered by a pull request from a fork.": "任何有协作者权限的人都可以使用这些机密和变量进行操作。它们不会被传递到由复刻的拉取请求触发的工作流中。",
+            "Anyone with collaborator access to this repository can use these secrets and variables for actions. They are not passed to workflows that are triggered by a pull request from a fork.": "이 저장소에 협업자 권한이 있는 사용자라면 누구든지 이 기밀과 변수를 액션에 사용할 수 있어요. 다만, 포크의 끌어오기 요청에 의해 트리거된 워크플로우에는 전달되지 않아요.",
 
-            "Secrets": "机密",
-            "Variables": "变量",
+            "Secrets": "기밀",
+            "Variables": "변수",
 
-            "Updated": "更新于",
-            "Remove": "移除",
+            "Updated": "업데이트됨",
+            "Remove": "제거하기",
 
-            // 顶部提醒
-            "Failed to add secret. Secret names can only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_). Spaces are not allowed. Must start with a letter ([a-z], [A-Z]) or underscores (_).": "添加机密失败。机密名称只能包含字母数字字符（[a-z]、[A-Z]、[0-9]）或下划线 (_)。不允许有空格。必须以字母 ([a-z], [A-Z]) 或下划线 (_) 开头。",
-            "Secret names must not start with GITHUB_.": "机密名称不能以“GITHUB_”开头。",
+            // 상단 알림
+            "Failed to add secret. Secret names can only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_). Spaces are not allowed. Must start with a letter ([a-z], [A-Z]) or underscores (_).": "기밀 추가에 실패했어요. 기밀 이름은 알파벳, 숫자([a-z], [A-Z], [0-9]) 또는 밑줄(_)만 포함할 수 있으며, 공백은 허용되지 않아요. 또한 알파벳([a-z], [A-Z]) 또는 밑줄(_)로 시작해야 해요.",
+            "Secret names must not start with GITHUB_.": "기밀 이름은 'GITHUB_'로 시작하면 안돼요.",
 
-            "Environment secrets": "环境机密",
-                "This environment has no secrets.": "此环境尚无机密。",
-                "Manage environment secrets": "管理环境机密",
+            "Environment secrets": "환경 기밀",
+                "This environment has no secrets.": "이 환경에는 기밀이 없어요.",
+                "Manage environment secrets": "환경 기밀 관리하기",
 
-            "Repository secrets": "仓库机密",
-                "This repository has no secrets.": "此仓库尚无机密。",
-                "Last updated": "最近更新时间",
+            "Repository secrets": "저장소 기밀",
+                "This repository has no secrets.": "이 저장소에는 기밀이 없어요.",
+                "Last updated": "마지막 업데이트",
 
-            //组织仓库
-            "Secrets can also be created at the organization level and authorized for use in this repository.": "机密也可以在组织层面上创建，并授权在这个仓库中使用。",
-            "Organization secrets": "组织机密",
-            "Manage organization secrets": "管理组织机密",
-            "Organization secrets can only be used by public repositories on your plan.": "组织机密只能由您计划中的公共仓库使用。",
-            "If you would like to use organization secrets in a private repository, you will need to upgrade your plan.": "如果您想在私有仓库中使用组织机密，则需要升级您的计划。",
+            // 조직 저장소
+            "Secrets can also be created at the organization level and authorized for use in this repository.": "기밀은 조직 수준에서 생성한 후, 이 저장소에서 사용하도록 권한을 부여할 수도 있어요.",
+            "Organization secrets": "조직 기밀",
+            "Manage organization secrets": "조직 기밀 관리하기",
+            "Organization secrets can only be used by public repositories on your plan.": "조직 기밀은 사용 중인 플랜의 공개 저장소에서만 사용 가능해요.",
+            "If you would like to use organization secrets in a private repository, you will need to upgrade your plan.": "만약 비공개 저장소에서 조직 기밀을 사용하고 싶으시면, 플랜 업그레이드가 필요해요.",
 
-            // 删除机密对话框
-            "Delete secret": "删除机密",
-                "Are you sure you want to delete": "您确定要删除",
-                "Yes, delete this secret": "是的，删除该机密",
-                "Yes, delete this": "是的，删除该",
-                "secret": "机密",
+            // 기밀 삭제 대화상자
+            "Delete secret": "기밀 삭제하기",
+                "Are you sure you want to delete": "정말 삭제하시겠어요?",
+                "Yes, delete this secret": "네, 이 기밀을 삭제할게요.",
+                "Yes, delete this": "네, 이걸 삭제할게요.",
+                "secret": "기밀",
 
-            // 顶部提醒
-                "Repository secret added.": "添加了仓库机密。",
-                "Secret names can only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_). Spaces are not allowed. Must start with a letter ([a-z], [A-Z]) or underscores (_).": "机密名称只能包含字母数字字符([a-z]、[A-Z]、[0-9])或下划线 (_)。不允许使用空格。必须以字母（[a-z]、[A-Z]）或下划线 (_) 开头。",
+            // 상단 알림
+                "Repository secret added.": "저장소 기밀이 추가되었어요.",
+                "Secret names can only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_). Spaces are not allowed. Must start with a letter ([a-z], [A-Z]) or underscores (_).": "기밀 이름은 알파벳, 숫자([a-z], [A-Z], [0-9]) 또는 밑줄(_)만 포함할 수 있으며, 공백은 허용되지 않아요. 또한 알파벳([a-z], [A-Z]) 또는 밑줄(_)로 시작해야 해요.",
 
-        // 操作变量 /<user-name>/<repo-name>/settings/variables/actions
-            "Environment variables": "环境变量",
-                "This environment has no variables.": "此环境尚无变量。",
-                "Manage environment variables": "管理环境变量",
+        // 액션 변수 /<user-name>/<repo-name>/settings/variables/actions
+            "Environment variables": "환경 변수",
+                "This environment has no variables.": "이 환경에는 변수가 없어요.",
+                "Manage environment variables": "환경 변수 관리하기",
 
-                "Environment": "环境",
+                "Environment": "환경",
 
-            "Repository variables": "仓库变量",
-                "New repository variable": "新建仓库变量",
-                "This repository has no variables.": "此仓库尚无变量。",
+            "Repository variables": "저장소 변수",
+                "New repository variable": "새 저장소 변수 만들기",
+                "This repository has no variables.": "이 저장소에는 변수가 없어요.",
 
-            // 删除变量对话框
-            "Delete variable": "删除变量",
-                "Yes, delete this variable": "是的，删除该变量",
-                "variable": "变量",
+            // 변수 삭제 대화상자
+            "Delete variable": "변수 삭제하기",
+                "Yes, delete this variable": "네, 이 변수를 삭제할게요.",
+                "variable": "변수",
 
-        // 新建仓库机密 /<user-name>/<repo-name>/settings/secrets/actions/new
-            "Actions secrets": "操作机密",
-            "/ New secret": "/ 新建机密",
+        // 새 저장소 기밀 만들기 /<user-name>/<repo-name>/settings/secrets/actions/new
+            "Actions secrets": "액션 기밀",
+            "/ New secret": "/ 새 기밀 만들기",
 
-            "Name": "名称",
-            "Secret": "机密",
+            "Name": "이름",
+            "Secret": "기밀",
 
-            "Add secret": "添加机密",
-                "Adding…": "添加中…",
+            "Add secret": "기밀 추가하기",
+                "Adding…": "추가하는 중…",
 
-        // 新建仓库变量 /<user-name>/<repo-name>/settings/variables/actions/new
-            "Actions variables": "操作变量",
-            "/ New variable": "/ 新建变量",
-            "Note: Variable values are exposed as plain text. If you need to encrypt and mask sensitive information,": "注意：变量值是以纯文本形式暴露的。如果您需要对敏感信息进行加密和屏蔽，请使用",
-            "create a secret": "创建机密",
-            "instead.": "代替。",
+        // 새 저장소 변수 만들기 /<user-name>/<repo-name>/settings/variables/actions/new
+            "Actions variables": "액션 변수",
+            "/ New variable": "/ 새 변수 만들기",
+            "Note: Variable values are exposed as plain text. If you need to encrypt and mask sensitive information,": "주의: 변수 값은 평문으로 노출돼요. 민감한 정보를 암호화하고 숨기고자 하시면,",
+            "create a secret": "기밀을 생성하기",
+            "instead.": "사용해 보세요.",
+            "Alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_) only.": "알파벳, 숫자([a-z], [A-Z], [0-9]) 또는 밑줄(_)만 가능해요.",
+            "Spaces are not allowed.": "공백은 허용되지 않아요.",
+            "Cannot start with a number.": "숫자로 시작할 수 없어요.",
+            "Cannot start with": "다음으로 시작할 수 없어요:",
+            "prefix.": "접두사",
+            "Add variable": "변수 추가하기",
+                "Adding…": "추가하는 중…",
 
-            "Alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_) only.": "字母数字字符（[A-Z]，[A-Z]，[0-9]）或仅下划线（_）。",
-            "Spaces are not allowed.": "不允许出现空格。",
-            "Cannot start with a number.": "不能以数字开头。",
-            "Cannot start with": "不能以",
-            "prefix.": "前缀开头。",
+        // 기밀 업데이트 /<user-name>/<repo-name>/settings/secrets/actions/<name>
+            "/ Update secret": "/ 기밀 업데이트하기",
+            "Value": "값",
+            "Update secret": "기밀 업데이트하기",
+                "Updating…": "업데이트하는 중…",
 
-            "Add variable": "添加变量",
-                "Adding…": "添加中…",
+        // 코드스페이스 기밀 /<user-name>/<repo-name>/settings/secrets/codespaces
+            "Codespaces secrets": "코드스페이스 기밀",
+            "Development environment secrets are environment variables that are": "개발 환경 기밀은 환경 변수이며,",
+            ". Secrets are not passed to forks.": "기밀은 포크에 전달되지 않아요.",
+            "Repository development environment secrets": "저장소 개발 환경 기밀", // 조직 저장소
+            "Organization development environment secrets": "조직 개발 환경 기밀", // 조직 저장소
 
-        // 更新操作机密 /<user-name>/<repo-name>/settings/secrets/actions/<name>
-            "/ Update secret": "/ 更新机密",
+        // Dependabot 기밀 /<user-name>/<repo-name>/settings/secrets/dependabot
+            "Dependabot secrets": "Dependabot 기밀",
+            "Secrets are credentials that are": "기밀은 자격 증명이에요.",
+            ". Anyone with": "해당 저장소에",
+            "collaborator": "협업자 권한이 있는",
+            "access to this repository can use these secrets for Dependabot.": "사용자라면 이 기밀을 Dependabot에 사용할 수 있어요.",
+            "Secrets are not passed to forks.": "기밀은 포크에 전달되지 않아요.",
+            "Encrypted secrets allow you to store private access tokens so that Dependabot can update dependencies from private registries.": "암호화된 기밀은 비공개 접근 토큰을 저장할 수 있게 해줘서 Dependabot이 비공개 레지스트리에서 의존성을 업데이트할 수 있도록 도와줘요.",
 
-            "Value": "值",
-
-            "Update secret": "更新机密",
-                "Updating…": "更新中…",
-
-        // 代码空间机密 /<user-name>/<repo-name>/settings/secrets/codespaces
-            "Codespaces secrets": "代码空间机密",
-            "Development environment secrets are environment variables that are": "开发环境机密是环境变量",
-            ". Secrets are not passed to forks.": "。机密不会传递给复刻。",
-
-            "Repository development environment secrets": "仓库开发环境机密", // 组织仓库
-            "Organization development environment secrets": "组织开发环境机密", // 组织仓库
-
-        // Dependabot 机密 /<user-name>/<repo-name>/settings/secrets/dependabot
-            "Dependabot secrets": "Dependabot 机密",
-            "Secrets are credentials that are": "机密是凭证",
-            ". Anyone with": "。任何对此仓库具有",
-            "collaborator": "协作者",
-            "access to this repository can use these secrets for Dependabot.": "访问权限的人可以将这些机密用于 Dependabot。",
-            "Secrets are not passed to forks.": "机密不会传递给复刻。",
-            "Encrypted secrets allow you to store private access tokens so that Dependabot can update dependencies from private registries.": "加密的机密允许您存储私有访问令牌，以便 Dependabot 可以从私有注册表更新依赖项。",
-
-            // 组织仓库
-            "No organization secrets have been authorized for this repository.": "该仓库暂无授权任何组织机密。",
+            // 조직 저장소
+            "No organization secrets have been authorized for this repository.": "이 저장소에는 아직 어떤 조직 기밀도 승인되지 않았어요.",
             // [/Organization secrets for ([^ ]+) can be managed within/, "$1  的组织机密可以管理，在"],
-            "organization settings": "组织设置",
+            "organization settings": "조직 설정",
 
-            // 顶部提醒
-            "Secret updated.": "机密已更新",
-
+            // 상단 알림
+            "Secret updated.": "기밀이 업데이트되었어요",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/Organization secrets for ([^ ]+) can be managed within/, "$1  的组织机密可以管理，在"], // /secrets/dependabot
+        [/Organization secrets for ([^ ]+) can be managed within/, "$1 의 조직 기밀은 조직 설정에서 관리할 수 있어요."], // /secrets/dependabot
     ],
 };
 I18N["ko-KR"]["repository/settings/variables"] = I18N["ko-KR"]["repository/settings/secrets"];
