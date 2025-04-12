@@ -552,7 +552,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
         "Open Source": "오픈 소스",
             "GitHub Sponsors": "GitHub 후원자",
             "Fund open source developers": "오픈 소스 개발자를 후원해보세요.",
-            "The ReadME Project": "리드미 프로젝트",
+            "The ReadME Project": "ReadME 프로젝트",
             "GitHub community articles": "GitHub 커뮤니티 글",
             // 저장소
             "Topics": "주제",
@@ -3951,9 +3951,9 @@ I18N["ko-KR"]["settings/billing"] = { // 设置 - 账单和计划
                     "Enterprises can connect to advanced systems like LDAP and SAML single sign-on (SSO).": "기업은 LDAP와 SAML 싱글 사인온(SSO) 같은 고급 시스템에 연결할 수 있어요.",
                         "Learn more about GitHub Enterprise": "GitHub 엔터프라이즈에 대해 더 알아보기.",
 
-                "Marketplace and integrations": "마켓 및 통합",
+                "Marketplace and integrations": "장터 및 통합",
                     // GitHub 앱
-                        "Install apps that integrate directly with GitHub's API to improve development workflows – or build your own for private use or publication in the GitHub Marketplace.": "GitHub API와 직접 통합되어 개발 워크플로우를 개선하는 앱을 설치하거나, 개인 사용 또는 GitHub 마켓에 공개할 목적으로 직접 앱을 만들어보세요.",
+                        "Install apps that integrate directly with GitHub's API to improve development workflows – or build your own for private use or publication in the GitHub Marketplace.": "GitHub API와 직접 통합되어 개발 워크플로우를 개선하는 앱을 설치하거나, 개인 사용 또는 GitHub 장터에 공개할 목적으로 직접 앱을 만들어보세요.",
                     "Status checks": "상태 검사",
                         "Define tests that GitHub automatically runs against code being committed to your repository, and get details about failures and what is causing them.": "저장소에 커밋되는 코드에 대해 GitHub이 자동으로 실행하는 테스트를 정의하고, 실패 원인에 대한 자세한 정보를 확인해보세요.",
                     "Enterprise Server customers create pre-receive hooks to automatically accept or reject a push.": "엔터프라이즈 서버 고객은 프리리시브 훅을 만들어 푸시를 자동으로 승인하거나 거부할 수 있어요.",
@@ -6020,14 +6020,14 @@ I18N["ko-KR"]["settings/apps"] = { // 설정 - 개발자 설정/GitHub 앱
                     "Your avatar has been updated. It may take a few minutes to update across the site.": "아바타가 업데이트되었어요. 사이트 전체에 반영되기까지 몇 분 정도 걸릴 수 있어요.",
                     "This avatar has been deleted.": "이 아바타가 삭제되었어요.",
  
-            // 마켓플레이스
+            // 장터
                 "List your GitHub App in the": "GitHub 앱을",
-                "GitHub Marketplace": "GitHub 마켓플레이스",
+                "GitHub Marketplace": "GitHub 장터",
                 "so that other users can discover it.": "에 등록해서 다른 사용자들이 발견할 수 있도록 해요.",
-                "List in Marketplace": "마켓플레이스에 등록하기",
+                "List in Marketplace": "장터에 등록하기",
  
-                "Edit how your GitHub App is presented in the Marketplace directory, including screenshots and links.": "마켓플레이스 디렉토리에서 GitHub 앱이 어떻게 표시되는지, 스크린샷과 링크를 포함해 편집할 수 있어요.",
-                "Edit Marketplace listing": "마켓플레이스 등록 정보 수정하기",
+                "Edit how your GitHub App is presented in the Marketplace directory, including screenshots and links.": "장터 디렉토리에서 GitHub 앱이 어떻게 표시되는지, 스크린샷과 링크를 포함해 편집할 수 있어요.",
+                "Edit Marketplace listing": "장터 등록 정보 수정하기",
  
             "Private keys": "개인 키",
                 "Generate a private key": "개인 키 생성하기",
@@ -6064,7 +6064,7 @@ I18N["ko-KR"]["settings/apps"] = { // 설정 - 개발자 설정/GitHub 앱
             "A Copilot configuration allows your GitHub App to integrate with Copilot. Learn more about building GitHub Copilot Extensions in the": "Copilot 설정을 통해 GitHub 앱이 Copilot과 통합될 수 있어요. GitHub Copilot 확장 만들기에 대해 더 알고 싶으시면",
             "documentation": "문서를",
  
-            "Accept the Marketplace Developer agreement to create your Copilot Extension": "Copilot 확장을 만들려면 마켓플레이스 개발자 계약을 수락해 주세요.",
+            "Accept the Marketplace Developer agreement to create your Copilot Extension": "Copilot 확장을 만들려면 장터 개발자 계약을 수락해 주세요.",
                 "By clicking \"Accept Terms\" below, you agree to the": "아래의 \"수락하기\" 버튼을 클릭하시면, 다음의",
                 "GitHub Copilot Extension Developer Policy": "GitHub Copilot 확장 개발자 정책",
                 "Pre-release License terms": "프리릴리즈 라이선스 조건",
@@ -6072,7 +6072,7 @@ I18N["ko-KR"]["settings/apps"] = { // 설정 - 개발자 설정/GitHub 앱
                 ". Please check to make sure that you are agreeing to these terms on behalf of the correct account.": "계정이 올바른지 확인하시고 해당 조건에 동의해 주세요.",
                 "Accept Terms": "수락하기",
  
-            "To enable Copilot functionality, you must first accept the Marketplace Developer agreement": "Copilot 기능을 활성화하려면 먼저 마켓플레이스 개발자 계약을 수락해야 해요.",
+            "To enable Copilot functionality, you must first accept the Marketplace Developer agreement": "Copilot 기능을 활성화하려면 먼저 장터 개발자 계약을 수락해야 해요.",
             "To enable Copilot functionality, you must first grant your app permission to read Copilot Messages. To do so, navigate to Permissions & Events > Account Permissions > Read-only for Copilot Chat": "Copilot 기능을 활성화하려면 먼저 앱에 Copilot 메시지 읽기 권한을 부여해야 해요. 이를 위해 '권한 및 이벤트 > 계정 권한 > Copilot 채팅 - 읽기 전용'으로 이동해 주세요.",
  
         // 특정 GitHub 앱 - 설치 https://github.com/settings/apps/<app-name>/installations
@@ -7011,7 +7011,7 @@ I18N["ko-KR"]["page-new-repo"] = { // 저장소 - 새로 만들기/가져오기/
                 "License:": "라이선스:",
                     "License": "라이선스",
 
-            // 마켓플레이스 앱 목록
+            // 장터 앱 목록
             "Grant your Marketplace apps access to this repository": "장터 앱에 이 저장소에 대한 접근 권한을 부여해보세요.",
             "You are": "사용자님은",
             "subscribed to": "구독하셨어요",
@@ -16446,6 +16446,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
     "static": { // 静态翻译
         //"Let’s build from here": "让我们从这里开始",
         //"The world’s leading AI-powered developer platform.": "全球领先的人工智能开发者平台。",
+        "GitHub Copilot is now available for free.": "GitHub Copilot을 이제 무료로 사용할수 있어요.",
         "Build and ship software on a single, collaborative platform": "협력하고, 만들고, 공유해요.",
         "Join the world’s most widely adopted AI-powered developer platform.": "세계에서 가장 널리 채택된 AI 기반 개발자 플랫폼에 참여하세요.",
         //"Join the world’s most widely adopted AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.": "加入全球最广泛采用的人工智能开发者平台，在这里，数百万的开发人员、企业和最大的开源社区构建推动人类进步的软件。",
@@ -16491,7 +16492,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
                 "Manage projects and chat with GitHub Copilot from anywhere.": "어디서나 프로젝트를 관리하고 GitHub Copilot과 채팅하세요.",
             "Integrate the tools you love": "좋아하는 도구를 통합하세요",
                 "Sync with 17,000+ integrations and a growing library of Copilot Extensions.": "17,000개 이상의 통합 서비스와 성장하는 Copilot 확장 라이브러리를 동기화하세요.",
-                "Visit GitHub Marketplace": "GitHub 마켓플레이스 방문하기",
+                "Visit GitHub Marketplace": "GitHub 장터 방문하기",
 
         "Built-in application security": "내장 애플리케이션 보안",
         "where found means fixed": "취약점 발견 즉시 수정",
@@ -17107,7 +17108,7 @@ I18N["ko-KR"].session = I18N["ko-KR"]["session-authentication"];
 I18N["ko-KR"].sessions = I18N["ko-KR"]["session-authentication"];
 I18N["ko-KR"].password_reset = I18N["ko-KR"]["session-authentication"];
 
-I18N["ko-KR"]["signup"] = { // 注册页
+I18N["zh-CN"]["signup"] = { // 注册页
     "static": { // 静态翻译
         "Already have an account?": "已经有账户吗？",
         "Sign in →": "登录 →",
