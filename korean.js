@@ -16488,7 +16488,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
             "Duolingo boosts developer speed by 25% with GitHub Copilot": "듀오링고는 GitHub Copilot으로 개발 속도를 25% 향상시켰습니다.",
               "Read customer story": "사용 사례 읽어보기",
 
-            "2024 Gartner® Magic Quadrant™ for AI Code Assistants": "2024년 Gartner®의 AI 코드 어시스턴트 Magic Quadrant™"
+            "2024 Gartner® Magic Quadrant™ for AI Code Assistants": "2024년 Gartner®의 AI 코드 어시스턴트 Magic Quadrant™",
               "Read report": "보고서 읽어보기",
 
         "Optimize your process with simple and secured CI/CD.": "간단하고 안전한 CI/CD로 프로세스를 최적화하세요.",
