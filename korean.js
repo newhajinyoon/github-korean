@@ -16482,23 +16482,23 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
 
             "Work 55% faster.": "55% 더 빠르게 작업합니다.",
                 "Increase productivity with AI-powered coding assistance, including code completion, chat, and more.": "코드 완성, 채팅 등을 포함한 AI 기반 코딩 지원으로 생산성을 높이세요",
-                "Survey: The AI wave continues to grow on software development teams, 2024.": "설문조사: 2024년, 소프트웨어 개발 팀에서 AI의 비중은 계속 커질 것입니다.",
+                "Survey: The AI wave continues to grow on software development teams, 2024.": "2024년 설문조사: 소프트웨어 개발 팀에서 AI 열풍이 계속 커지고 있습니다.",
                 "Explore GitHub Copilot": "GitHub Copilot 둘러보기",
 
-            "Duolingo boosts developer speed by 25% with GitHub Copilot": "多邻国利用 GitHub Copilot 将开发速度提高了 25%",
-              "Read customer story": "阅读客户故事",
+            "Duolingo boosts developer speed by 25% with GitHub Copilot": "듀오링고는 GitHub Copilot으로 개발 속도를 25% 향상시켰습니다.",
+              "Read customer story": "사용 사례 읽어보기",
 
-            "2024 Gartner® Magic Quadrant™ for AI Code Assistants": "2024 年 Gartner® 人工智能代码助手魔力象限™",
-              "Read report": "阅读报告",
+            "2024 Gartner® Magic Quadrant™ for AI Code Assistants": "2024년 Gartner®의 AI 코드 어시스턴트 Magic Quadrant™"
+              "Read report": "보고서 읽어보기",
 
-        "Optimize your process with simple and secured CI/CD.": "使用简单、安全的 CI/CD 优化您的流程。",
-            "Get up and running in seconds": "数秒内即可启动并运行",
-                "Start building instantly with a comprehensive dev environment in the cloud.": "利用云中全面的开发环境立即开始构建。",
-            "Build on the go": "随时随地构建",
-                "Manage projects and chat with GitHub Copilot from anywhere.": "随时随地管理项目并与 GitHub Copilot 聊天。",
-            "Integrate the tools you love": "整合您喜爱的工具",
-                "Sync with 17,000+ integrations and a growing library of Copilot Extensions.": "与 17,000 多个集成和不断增长的 Copilot 扩展库同步。",
-                "Visit GitHub Marketplace": "访问 GitHub 市场",
+        "Optimize your process with simple and secured CI/CD.": "간단하고 안전한 CI/CD로 프로세스를 최적화하세요.",
+            "Get up and running in seconds": "몇 초 만에 시작 및 실행",
+                "Start building instantly with a comprehensive dev environment in the cloud.": "클라우드의 포괄적인 개발 환경으로 즉시 빌드를 시작하세요.",
+            "Build on the go": "이동 중에도 빌드",
+                "Manage projects and chat with GitHub Copilot from anywhere.": "어디서나 프로젝트를 관리하고 GitHub Copilot과 채팅하세요.",
+            "Integrate the tools you love": "좋아하는 도구를 통합하세요",
+                "Sync with 17,000+ integrations and a growing library of Copilot Extensions.": "17,000개 이상의 통합 서비스와 성장하는 Copilot 확장 라이브러리를 동기화하세요.",
+                "Visit GitHub Marketplace": "GitHub 마켓플레이스 방문하기",
 
         "Built-in application security": "内置应用程序安全性",
         "where found means fixed": "发现即修复",
