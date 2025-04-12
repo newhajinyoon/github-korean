@@ -16477,13 +16477,13 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
         "Secure": "보안",
             "Leverage tooling to detect, review, and fix vulnerabilities before they reach production.": "취약점이 제품에 도달하기 전에 취약점을 감지, 검토 및 수정하세요.",
 
-        "Accelerate performance": "提高性能",
-            "With GitHub Copilot embedded throughout the platform, you can simplify your toolchain, automate tasks, and improve the developer experience.": "通过嵌入整个平台的 GitHub Copilot，您可以简化工具链、自动执行任务并改善开发人员体验。",
+        "Accelerate performance": "성능 가속화",
+            "With GitHub Copilot embedded throughout the platform, you can simplify your toolchain, automate tasks, and improve the developer experience.": "플랫폼 전체에 내장된 GitHub Copilot을 사용하면 도구 체인을 간소화하고 작업을 자동화하며 개발자 환경을 개선할 수 있습니다.",
 
-            "Work 55% faster.": "55%",
-                "Increase productivity with AI-powered coding assistance, including code completion, chat, and more.": "通过人工智能编码辅助（包括代码完成、聊天等）提高生产力。",
-                "Survey: The AI wave continues to grow on software development teams, 2024.": "调查：2024 年，人工智能浪潮将在软件开发团队中持续高涨。",
-                "Explore GitHub Copilot": "探索 GitHub Copilot",
+            "Work 55% faster.": "55% 더 빠르게 작업합니다.",
+                "Increase productivity with AI-powered coding assistance, including code completion, chat, and more.": "코드 완성, 채팅 등을 포함한 AI 기반 코딩 지원으로 생산성을 높이세요",
+                "Survey: The AI wave continues to grow on software development teams, 2024.": "설문조사: 2024년, 소프트웨어 개발 팀에서 AI의 비중은 계속 커질 것입니다.",
+                "Explore GitHub Copilot": "GitHub Copilot 둘러보기",
 
             "Duolingo boosts developer speed by 25% with GitHub Copilot": "多邻国利用 GitHub Copilot 将开发速度提高了 25%",
               "Read customer story": "阅读客户故事",
