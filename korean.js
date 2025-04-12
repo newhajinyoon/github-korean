@@ -560,8 +560,8 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Collections": "모음",
         "Pricing": "가격",
         "Search": "검색",
-        "Sign in": "로그인하기",
-        "Sign up": "회원가입하기",
+        "Sign in": "로그인",
+        "Sign up": "회원가입",
 
         "Team": "팀",
         "Enterprise": "기업",
