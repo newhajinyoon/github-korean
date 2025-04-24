@@ -7632,10 +7632,10 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
             "Quick setup": "빠른 설정",
             "— if you’ve done this kind of thing before": "- 이전에 이런 작업을 해보셨다면",
             "Set up in Desktop": "GitHub Desktop에서 설정해 보세요",
-            "Get started by": "다음으로 시작해 보세요:",
+            "Get started by": " ",
             "creating a new file": "새 파일을 생성해 보세요",
-            "uploading an existing file": "기존 파일을 업로드해 보세요",
-            ". We recommend every repository include a": ". 저장소마다 다음을 포함하는 것을 권장해요:",
+            "uploading an existing file": "기존 파일을 업로드하는 것으로",
+            ". We recommend every repository include a": " 시작해 보세요. 저장소마다 다음과 같은 것들을 포함하는 것을 권장해요:",
             ", and": ", 그리고",
             "…or create a new repository on the command line": "…또는 명령줄에서 새로운 저장소를 생성해 보세요",
             "…or push an existing repository from the command line": "…또는 명령줄에서 기존 저장소를 푸시해 보세요",
@@ -10732,7 +10732,7 @@ I18N["ko-KR"]["repository/discussions"] = { // 토론 페이지
     ],
 };
 I18N["ko-KR"]["repository/orgs/discussions"] = I18N["ko-KR"]["repository/discussions"];
-I18N["ko-KR"]["repository/actions"] = { // 저장소 - 작업 페이지
+I18N["ko-KR"]["repository/actions"] = { // 저장소 - 작업 페이지 //검토 필요
     "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
 
@@ -11138,7 +11138,7 @@ I18N["ko-KR"]["repository/actions"] = { // 저장소 - 작업 페이지
             "Scheduled": "예약됨",
             "Commit": "커밋",
                 "pushed by": "푸시한 사람",
-            "Manually run by": "수동 실행한 사람",
+            "Manually run by": "수동 실행한 사람 :",
             "The run was canceled by": "실행이 취소됨 – 취소한 사람:",
             "Pull request": "끌어오기 요청",
                 "synchronize by": "동기화한 사람",
@@ -11195,438 +11195,430 @@ I18N["ko-KR"]["repository/actions"] = { // 저장소 - 작업 페이지
     ],
 };
 I18N["ko-KR"]["repository/runs"] = I18N["ko-KR"]["repository/actions"];
-
-I18N["ko-KR"]["repository/deployments"] = { // 仓库 - 部署页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/deployments"] = { // 저장소 - 배포 페이지
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
 
         // /<user-name>/<repo-name>/deployments
-            // 左侧栏
-                "Deployed": "部署",
-                    "All deployments": "所有部署",
-                    "Environments": "环境",
-                    "Manage environments": "管理环境",
+            // 왼쪽 사이드바
+                "Deployed": "배포",
+                    "All deployments": "모든 배포",
+                    "Environments": "환경",
+                    "Manage environments": "환경 관리하기",
 
-            // 面板
-                // 所有部署
-                    "Latest deployments from pinned environments": "来自固定环境的最新部署",
-                //具体某一项
-                    "Latest deployments": "最新部署",
-                    "Last": "最后",
-                    "deployed": "部署于",
-                // 中间面板
-                    "Your search did not match any deployments": "您的搜索未匹配任何部署",
-                    "Try a different search query": "尝试不同的搜索查询",
+            // 패널
+                // 모든 배포
+                    "Latest deployments from pinned environments": "고정된 환경의 최신 배포",
+                // 특정 항목
+                    "Latest deployments": "최신 배포",
+                    "Last": "마지막",
+                    "deployed": "배포됨",
+                // 중간 패널
+                    "Your search did not match any deployments": "검색 결과와 일치하는 배포가 없어요.",
+                    "Try a different search query": "다른 검색어로 시도해 주세요.",
 
-                // 筛选条
-                    "Filter": "筛选",
-                        "Filter deployments": "筛选部署",
-                        // 搜索框菜单
-                            "State": "状态",
-                                "success": "成功",
-                                "failure": "失败",
-                                "error": "错误",
-                                "inactive": "不活跃",
-                                "pending": "待定",
-                                "queued": "排队",
-                                "in progress": "进行中",
-                                "waiting": "等待中",
-                            "Creator": "创建者",
-                            "Environment": "环境",
-                            "Ref": "引用",
-                            "Text": "文本",
+                // 필터 바
+                    "Filter": "필터",
+                        "Filter deployments": "배포 필터하기",
+                        // 검색창 메뉴
+                            "State": "상태",
+                                "success": "성공",
+                                "failure": "실패",
+                                "error": "오류",
+                                "inactive": "비활성",
+                                "pending": "대기",
+                                "queued": "대기열",
+                                "in progress": "진행 중",
+                                "waiting": "대기 중",
+                            "Creator": "생성자",
+                            "Environment": "환경",
+                            "Ref": "참조",
+                            "Text": "텍스트",
 
-                    // 筛选器窗口
-                        "Advanced filters": "高级筛选",
-                        "Build complex filter queries": "建立复杂的筛选器查询",
-                        "To start building your query add your first filter using the button below.": "要开始建立查询，请使用下面的按钮添加第一个筛选器。",
+                    // 고급 필터 창
+                        "Advanced filters": "고급 필터",
+                        "Build complex filter queries": "복합 필터 쿼리 만들기",
+                        "To start building your query add your first filter using the button below.": "쿼리 작성을 시작하려면 아래 버튼을 사용하여 첫 번째 필터를 추가해 주세요.",
 
-                        "Qualifier": "限定",
-                        "Operator": "操作",
-                            "is one of": "之中的",
-                            "is": "是",
-                        "Value": "值",
-                            "Make a selection": "请选择",
-                            "Select items": "请选择项目",
-                            "Filter values": "筛选值",
-                            "Enter search text": "键入任意文本",
-                                "Me": "我",
-                                "Signed-in user": "已登录用户",
-                        "Add a filter": "添加筛选器",
+                        "Qualifier": "한정자",
+                        "Operator": "연산자",
+                            "is one of": "중 하나임",
+                            "is": "임",
+                        "Value": "값",
+                            "Make a selection": "선택해 주세요",
+                            "Select items": "항목 선택하기",
+                            "Filter values": "필터 값",
+                            "Enter search text": "검색할 텍스트 입력해 주세요",
+                                "Me": "나",
+                                "Signed-in user": "로그인한 사용자",
+                        "Add a filter": "필터 추가하기",
                         "Apply": "반영하기",
 
-                    // 关闭弹窗
-                        "Discard changes?": "是否放弃更改？",
-                            "You have unsaved changes. Are you sure you want to discard them?": "您有未保存的更改。您确定要放弃它们吗？",
-                            "Keep editing": "继续编辑",
-                            "Close and discard": "关闭并放弃",
+                    // 팝업 닫기
+                        "Discard changes?": "변경 사항을 버리시겠어요?",
+                            "You have unsaved changes. Are you sure you want to discard them?": "저장하지 않은 변경 사항이 있어요. 정말 버리시겠어요?",
+                            "Keep editing": "계속 편집하기",
+                            "Close and discard": "닫고 버리기",
 
-                    //筛选器报错窗口
-                        "Empty value for": "空值：",
-                        "Text will be ignored since log searching is not yet available:": "由于尚未提供日志搜索功能，文本将被忽略：",
+                    // 필터 오류 창
+                        "Empty value for": "빈 값:",
+                        "Text will be ignored since log searching is not yet available:": "로그 검색 기능이 아직 제공되지 않아 텍스트는 무시될 거예요:",
 
-                // 列表
-                    "Active": "活跃",
-                    "Inactive": "不活跃",
-                    "Abandoned": "废弃",
-                    "Deployed to": "部署到",
-                    "Failed to deploy to": "无法部署到",
+                // 목록
+                    "Active": "활성",
+                    "Inactive": "비활성",
+                    "Abandoned": "포기됨",
+                    "Deployed to": "배포 대상",
+                    "Failed to deploy to": "배포 실패 대상",
 
-                    "View logs": "查看日志",
-                    "View workflow run": "查看工作流程运行",
+                    "View logs": "로그 보기",
+                    "View workflow run": "워크플로 실행 보기",
 
         // /<user-name>/<repo-name>/deployments/activity_log?environment=github-pages
-            "Deployments": "部署",
-            "/ History": "/ 历史",
+            "Deployments": "배포",
+            "/ History": "/ 기록",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/deployments?/, "部署"],
-        [/Filter contains (\d+) issues?:/, "过滤器包含 $1 个问题："], // 过滤器报错窗口
-        [/via/, "通过"],
+        [/deployments?/, "배포"],
+        [/Filter contains (\d+) issues?:/, "필터에 $1 개의 문제가 포함됨:"], // 필터 오류 창
+        [/via/, "통해"],
     ],
 };
 
-I18N["ko-KR"]["repository/attestations"] = { // 仓库 - 证书页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/attestations"] = { // 저장소 - 인증 페이지
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
 
-        // <user-name>/repo-name>/attestations 证书
-            "Attestations": "证书",
-
-            "No attestations": "尚无证书",
-                "Create attestations using the": "创建证书，请使用",
-                "action": "操作工作流",
+        // /<user-name>/<repo-name>/attestations 인증
+            "Attestations": "인증",
+            "No attestations": "인증이 없어요.",
+                "Create attestations using the": "인증을 생성하려면",
+                "action": "액션 워크플로",
     },
 };
 
-I18N["ko-KR"]["repository/watchers"] = { // 仓库 - 关注者页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/watchers"] = { // 저장소 - 주시자 페이지
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
 
-        // 关注者页面  /<user-name>/<repo-name>/watchers
-            "Watchers": "关注者",
-            "No one’s watching this repository yet. You could be the first.": "暂无关注者。您可以成为第一个",
-            "Learn more about how watching repositories works on GitHub": "了解更多关于如何在 GitHub 上关注仓库的工作方式",
+        // 주시자 페이지  /<user-name>/<repo-name>/watchers
+            "Watchers": "주시자",
+            "No one’s watching this repository yet. You could be the first.": "아직 이 저장소를 주시하는 사람이 없어요. 최초 주시자가 되어 보세요.",
+            "Learn more about how watching repositories works on GitHub": "깃허브에서 저장소 주시가 어떻게 작동하는지 자세히 알아보세요.",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        // [/Joined/,"加入于"], // 追星者，关注者页面
+        // [/Joined/,"가입함"], // 주시자 페이지
     ],
 };
 
-I18N["ko-KR"]["repository/stargazers"] = { // 仓库 - 追星者页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/stargazers"] = { // 저장소 - 별표 표시한 사람 페이지
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
 
-        // 追星者页面  /<user-name>/<repo-name>/stargazers
-            "Stargazers": "追星者",
-            "All": "全部",
-            "You know": "您关注的",
-            "Be the first to star this repository": "成为第一个为这个仓库加星标的人",
-            "about how starring works on GitHub.": "关于如何在 GitHub 上加注星标。",
-            "Be the first of your friends to star this repository.": "成为第一个为这个仓库加星标的朋友。",
+        // 별표 표시한 사람 페이지  /<user-name>/<repo-name>/stargazers
+            "Stargazers": "별표 표시한 사람",
+            "All": "전체",
+            "You know": "사용자님이 팔로우하는 사람 중",
+            "Be the first to star this repository": "이 저장소에 첫 번째 별표를 남겨 보세요",
+            "about how starring works on GitHub.": "깃허브에서 별표 기능이 어떻게 작동하는지.",
+            "Be the first of your friends to star this repository.": "사용자님의 친구 중 첫 번째로 이 저장소에 별표를 남겨 보세요.",
 
         // /<user-name>/<repo-name>/stargazers/you_know
-            "No one you follow has starred this repository yet.": "您关注的任何人都未星标此仓库。",
-            "Learn more about how starring works on GitHub.": "了解更多关于在 GitHub 上星标的工作原理。",
+            "No one you follow has starred this repository yet.": "사용자님이 팔로우하는 사람 중에는 아직 이 저장소에 별표를 남긴 사람이 없어요.",
+            "Learn more about how starring works on GitHub.": "깃허브에서 별표 기능이 어떻게 작동하는지 자세히 알아보세요.",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        // [/Joined/,"加入于"], // 追星者，关注者页面
+        // [/Joined/,"가입함"], // 별표 표시한 사람 페이지
     ],
 };
 
-I18N["ko-KR"]["repository/new"] = { // 仓库 - 新建/编辑/上传/删除文件页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/new"] = { // 저장소 - 새로 만들기/편집/업로드/파일 삭제 페이지
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
 
-        // 新建文件页面 /<user-name>/<repo-name>/new/<branch>
-            // 文件树侧边栏
-                "Expand file tree": "展开文件树",
-                "Collapse file tree": "折叠文件树",
-                "Add file": "添加文件",
-                // 搜索框
-                    "Go to file": "转到文件",
-                        "No matches found": "未找到匹配项",
-                        "Go to folder": "转到文件夹",
-                        "See all results": "查看所有结果",
+        // 새 파일 만들기 페이지 /<user-name>/<repo-name>/new/<branch>
+            // 파일 트리 사이드바
+                "Expand file tree": "파일 트리 확장하기",
+                "Collapse file tree": "파일 트리 축소하기",
+                "Add file": "파일 추가하기",
+                // 검색창
+                    "Go to file": "파일로 이동하기",
+                        "No matches found": "일치하는 항목이 없어요.",
+                        "Go to folder": "폴더로 이동하기",
+                        "See all results": "모든 결과 보기",
 
-            "Name your file...": "文件名...",
-            "in": "在",
+            "Name your file...": "파일 이름 입력...",
+            "in": "에서",
 
-            "Cancel changes": "取消更改",
-                "You have unsaved changes. Do you want to discard them?": "您有未保存的更改。您想丢弃它们吗？",
-            "Commit changes...": "提交更改...",
+            "Cancel changes": "변경 사항 취소하기",
+                "You have unsaved changes. Do you want to discard them?": "저장하지 않은 변경 사항이 있어요. 버리시겠어요?",
+            "Commit changes...": "변경 사항 제출하기...",
 
-            "Preview": "预览",
-                "Loading preview…": "载入预览…",
-                    "There is no content to preview.": "没有可预览的内容。",
-                    "There has been an error generating the preview.": "生成预览时发生错误。",
-                    "Unable to load this preview, sorry.": "抱歉，无法加载此预览。",
-                    "There are no changes to show.": "没有要显示的更改。",
-                    "But you can preview the whole file.": "但您可以预览整个文件。", // new code view
+            "Preview": "미리 보기",
+                "Loading preview…": "미리 보기 로딩 중…",
+                    "There is no content to preview.": "미리 볼 내용이 없어요.",
+                    "There has been an error generating the preview.": "미리 보기를 생성하는 중 오류가 발생했어요.",
+                    "Unable to load this preview, sorry.": "미리 보기를 로드할 수 없어요, 죄송해요.",
+                    "There are no changes to show.": "보여줄 변경 사항이 없어요.",
+                    "But you can preview the whole file.": "하지만 전체 파일을 미리 볼 수 있어요.", // 신규 코드 보기
 
-            // 代码编辑框
-                // Copilot 广告
-                    "Code 55% faster with GitHub Copilot": "使用 GitHub Copilot 编码速度提高 55%",
-                        "Spend less time creating boilerplate and repetitive code patterns, and more time building great software. Try it in Codespaces or your favorite file editor.": "花更少的时间创建模板和重复的代码模式，花更多的时间构建优秀的软件。在 GitHub 代码空间或您最喜欢的文件编辑器中尝试一下哈。",
-                        "Get GitHub Copilot": "获取 GitHub Copilot",
-                        "Don't show again": "不再显示",
+            // 코드 편집기
+                // 코파일럿 광고
+                    "Code 55% faster with GitHub Copilot": "깃허브 코파일럿으로 55% 빠르게 코드 작성하기",
+                        "Spend less time creating boilerplate and repetitive code patterns, and more time building great software. Try it in Codespaces or your favorite file editor.": "보일러플레이트와 반복적인 코드 패턴 작성에 덜 시간을 쓰고, 멋진 소프트웨어를 개발하는 데 더 많은 시간을 투자해 보세요. Codespaces나 좋아하는 파일 편집기에서 사용해 보세요.",
+                        "Get GitHub Copilot": "깃허브 코파일럿 받기",
+                        "Don't show again": "다시 보지 않기",
 
-                "Indent mode": "缩进模式",
-                    "Spaces": "空格",
-                    "Tabs": "Tab",
-                "Indent size": "缩进大小",
-                "Line wrap mode": "换行模式",
-                    "No wrap": "不换行",
-                    "Soft wrap": "软换行",
+                "Indent mode": "들여쓰기 모드",
+                    "Spaces": "공백",
+                    "Tabs": "탭",
+                "Indent size": "들여쓰기 크기",
+                "Line wrap mode": "줄 바꿈 모드",
+                    "No wrap": "줄 바꿈 안 함",
+                    "Soft wrap": "부드러운 줄 바꿈",
 
-            "Show Diff": "显示差异",
+            "Show Diff": "차이점 보기",
 
-            // 提交对话框
-                "Commit changes": "提交更改",
-                    "There was an error committing your changes:": "在提交您的更改时出现错误：",
-                    "A file with the same name already exists. Please choose a different name and try again.": "已存在同名文件。请选择其他名称并重试。",
-                    "File could not be edited": "文件不能编辑",
-                "Sign off and commit changes": "提交更改并签署",
-                "Propose changes": "提出更改建议", // 向他人仓库提交
-                "Sign off and propose changes": "提出更改建议并签署", // 向他人仓库提交
-                    "Commit message": "提交信息",
-                    "Extended description": "扩展描述",
-                        "Add an optional extended description..": "添加描述.. (可选)",
+            // 커밋 대화 상자
+                "Commit changes": "변경 사항 제출하기",
+                    "There was an error committing your changes:": "변경 사항 제출 중 오류가 발생했어요:",
+                    "A file with the same name already exists. Please choose a different name and try again.": "같은 이름의 파일이 이미 있어요. 다른 이름을 선택한 후 다시 시도해 주세요.",
+                    "File could not be edited": "파일을 편집할 수 없어요",
+                "Sign off and commit changes": "서명하고 변경 사항 제출하기",
+                "Propose changes": "변경 제안하기", // 타인 저장소에 제출
+                "Sign off and propose changes": "서명하고 변경 제안하기", // 타인 저장소에 제출
+                    "Commit message": "커밋 메시지",
+                    "Extended description": "상세 설명",
+                        "Add an optional extended description..": "선택적인 상세 설명 추가하기..",
 
-                    "You are": "您将",
-                    "signing off": "签署",
-                    // [/on this commit as/,"该提交以"],
-
-                    "You can’t commit to": "您不能提交到",
-                    "because its is a": "，因为它是一个",
-                    "protected branch": "受保护分支",
-
-                    "Commit directly to the": "提交到",
+                    "You are": "사용자님은",
+                    "signing off": "서명 중이에요",
+                    // [/on this commit as/,"이 커밋에 대해"],
+                    "You can’t commit to": "제출할 수 없어요",
+                    "because its is a": "왜냐하면 이곳은",
+                    "protected branch": "보호된 분기이기 때문이에요",
+                    "Commit directly to the": "직접 제출하기 :",
                     "branch": "분기",
+                    "Some rules will be bypassed by committing directly": "직접 제출 시 일부 규칙이 우회될 수 있어요",
+                    "Bypass rules and commit changes": "규칙 우회하고 변경 사항 제출하기",
+                    "Create a": "새로 만들기 :",
+                    "new branch": "새 분기",
+                    "for this commit and start a pull request": "해당 커밋을 위한 분기를 만들고 끌어오기 요청 시작하기",
+                    "Learn more about pull requests": "끌어오기 요청에 대해 더 알아보기",
 
-                    "Some rules will be bypassed by committing directly": "直接提交可以绕过一些规则",
-                    "Bypass rules and commit changes": "绕过规则并提交更改",
+                "Something went wrong. Please fork the project, then try from your fork.": "문제가 발생했어요. 프로젝트를 복제한 후, 복제본에서 다시 시도해 주세요.",
 
-                    "Create a": "创建",
-                    "new branch": "新分支",
-                    "for this commit and start a pull request": "为这个提交，并且发起一个拉取请求",
-                    "Learn more about pull requests": "了解更多关于拉取请求的信息",
+            // 하단 바
+                "Use": "사용하기",
+                "to toggle the": "전환하기 위해",
+                "key moving focus. Alternatively, use": "포커스를 이동하는 키를 사용해 보세요. 또는",
+                "then": "그 후",
+                "to move to the next interactive element on the page.": "페이지의 다음 인터랙티브 요소로 이동하기 위해 사용해 보세요.",
 
-                "Something went wrong. Please fork the project, then try from your fork.": "出错了。请复刻该项目，然后从您的复刻处尝试。",
+            // 상단 알림
+            // [/Your license is ready. Please review it below and either commit it to the ([^ ]+) branch or to a new branch./, "사용자님의 라이선스가 준비되었어요. 아래에서 확인 후 $1 분기 또는 새 분기에 제출해 주세요."],
 
-            // 底部栏
-                "Use": "使用",
-                "to toggle the": "切换",
-                "key moving focus. Alternatively, use": "键移动对焦。或者使用",
-                "then": "键，然后",
-                "to move to the next interactive element on the page.": "键移动到页面上的下一个交互元素。",
+        // 파일 편집 페이지 /<user-name>/<repo-name>/edit/<branch>/<file>
+            // 본인 저장소가 아닐 경우
+                "You need to fork this repository to propose changes.": "변경 제안을 위해 이 저장소를 복제해 주세요.",
+                    "Sorry, you’re not able to edit this repository directly—you need to fork it and propose your changes from there instead.": "죄송해요, 이 저장소는 직접 편집할 수 없어요 — 복제한 후 그곳에서 변경을 제안해 주세요.",
+                "Fork this repository": "이 저장소 복제하기",
+                    "Learn more about forks": "복제에 대해 자세히 알아보기",
+                "You have unsaved changes on this file that can be restored.": "이 파일에 저장되지 않은 변경 사항이 있어요. 복원할 수 있어요.",
+                    "Discard": "버리기",
+                    "Restore": "복원하기",
+                "You’re making changes in a project you don’t have write access to. Submitting a change will write it to a new branch in your fork": "쓰기가 허용되지 않은 프로젝트에서 변경 중이에요. 변경 사항을 제출하면 사용자님의 복제본의 새 분기에 기록돼요",
+                ", so you can send a pull request.": "여기서 끌어오기 요청을 보낼 수 있어요.",
 
-            // 顶部提醒
-            // [/Your license is ready. Please review it below and either commit it to the ([^ ]+) branch or to a new branch./, "您的许可证已准备就绪。请在下面审查它并将其提交到 $1 分支或新分支。"],
+            // 복제 저장소가 오래된 경우
+                "Sorry, it looks like your fork is outdated!": "죄송해요, 사용자님의 복제본이 오래된 것 같아요!",
+                "You’ll have to bring it up to date before you can propose changes.": "변경 제안을 하시려면 업데이트해 주세요.",
+                "Update your fork": "복제본 업데이트하기",
 
-        // 编辑文件页面 /<user-name>/<repo-name>/edit/<branch>/<file>
-            // 非本人仓库
-                "You need to fork this repository to propose changes.": "您需要复刻此仓库以提出更改。",
-                    "Sorry, you’re not able to edit this repository directly—you need to fork it and propose your changes from there instead.": "抱歉，您无法直接编辑此仓库——您需要将其复刻并从那里提出您的更改。",
-                "Fork this repository": "复刻此仓库",
-                    "Learn more about forks": "了解更多关于复刻的信息",
+            // 조직 저장소 파일 편집 페이지
+                "You’re making changes in a project you don’t have write access to. We’ve": "쓰기 권한이 없는 조직 프로젝트에서 변경 중이에요. 저희가",
+                "created a fork of this project": "해당 프로젝트를 복제해 드렸어요",
+                "for you to commit your proposed changes to. Submitting a change will write it to a new branch in your fork, so you can send a pull request.": "사용자님의 제안 변경 사항을 제출할 수 있도록 복제본에 기록돼요. 변경 사항을 제출하면 새 분기에 기록되어 끌어오기 요청을 보낼 수 있어요.",
 
-                "You have unsaved changes on this file that can be restored.": "您可以恢复该文件上未保存的更改。",
-                    "Discard": "丢弃",
-                    "Restore": "恢复",
+            // 혼합 줄 바꿈 문자
+                "We’ve detected the file has mixed line endings. When you commit changes we will normalize them to": "해당 파일에 줄 바꿈 형식이 혼합되어 있음이 감지되었어요. 변경 사항을 제출하면 이를 다음 형식으로 표준화할게요:",
+                "Windows-style": "Windows 스타일",
 
-                "You’re making changes in a project you don’t have write access to. Submitting a change will write it to a new branch in your fork": "您正在对没有写入权限的项目进行更改。提交更改会将其写入您的复刻",
-                ", so you can send a pull request.": " 中的新分支，这样您就可以发送拉取请求。",
+            // 사용자명과 동일한 이름의 저장소에서 README.md 파일 편집할 경우
+                "is a special repository: its": "특별한 저장소예요: 저장소의",
+                "will appear on your profile!": "이 사용자님의 프로필에 나타날 거예요!",
+                "New": "새로운",
+                "is now a special repository: its": "이제 특별한 저장소예요: 저장소의",
 
-            // 复刻仓库过旧
-                "Sorry, it looks like your fork is outdated!": "抱歉，您的复刻好像过时了！",
-                "You’ll have to bring it up to date before you can propose changes.": "在提出修改意见之前，您必须对其进行更新。",
-                "Update your fork": "更新您的复刻",
+            // 조직 내 .github 저장소의 /profile/README.md 파일 편집할 경우
+                "is a special repository: this": "특별한 저장소예요: 이",
+                "will appear on your organization's profile!": "이 조직의 프로필에 나타날 거예요!",
 
-            // 组织仓库 编辑文件页面
-                "You’re making changes in a project you don’t have write access to. We’ve": "您正在对没有写入权限的项目进行更改。我们已经",
-                "created a fork of this project": "为该项目创建复刻",
-                "for you to commit your proposed changes to. Submitting a change will write it to a new branch in your fork, so you can send a pull request.": "供您提交建议的更改。提交更改会将其写入复刻中的新分支，这样您就可以发送拉取请求。",
+            // .gitignore 파일 편집 시
+                "Choose .gitignore template": ".gitignore 템플릿 선택하기",
+                    ".gitignore template": ".gitignore 템플릿",
+                    "Filter…": "필터…",
+                    "None": "없음",
 
-            // 混合换行符
-                "We’ve detected the file has mixed line endings. When you commit changes we will normalize them to": "我们检测到该文件具有混合行结尾。当您提交更改时，我们会将它们标准化为",
-                "Windows-style": "Windows 样式",
+            // 워크플로 파일 (.github/workflows/xxxx.yml) 편집 시
+                "Collapse help panel": "도움말 패널 접기",
 
-            // 与用户名同名仓库 编辑 README.md 文件
-                "is a special repository: its": "是一个特殊的仓库：它的",
-                "will appear on your profile!": "将出现在您的个人资料中！",
+                // 도움말 패널 사이드바
+                    "Search Marketplace for Actions": "Actions 장터 검색하기",
+                    "Featured Actions": "추천 Actions",
+                    "Featured categories": "추천 분류",
+                        "Code quality": "코드 품질",
+                        "Monitoring": "모니터링",
+                        "Continuous integration": "지속적 통합",
+                        "Project management": "프로젝트 관리",
+                        "Deployment": "배포",
+                        "Project management": "프로젝트 관리",
+                        "Testing": "테스트",
+                    "\/ Search results": "\/검색 결과",
+                    "Browse all actions on the GitHub Marketplace": "깃허브 장터의 모든 Actions 둘러보기",
 
-                "New": "新",
-                "is now a special repository: its": "现在是一个特殊的仓库：它的",
+                    // 특정 Action 항목
+                        "View full Marketplace listing": "전체 장터 목록 보기", // 장터 해당 페이지로 이동
+                        "Installation": "설치",
+                        "Copy and paste the following snippet into your": "다음 코드 조각을 복사해 사용자님의",
+                            "file.": "파일에 붙여넣기 해 보세요.",
+                        "Version:": "버전:",
 
-            // 组织下.github 仓库 编辑 /profile/README.md 文件
-                "is a special repository: this": "是一个特殊的仓库：这个",
-                "will appear on your organization's profile!": "将出现在您的组织资料中!",
+                // 하단 바 보충
+                    "Space": "스페이스",
+                    "to trigger autocomplete in most situations.": "대부분의 상황에서 자동 완성을 호출하기 위해 사용해 보세요.",
+                    "Documentation": "문서",
 
-            // 编辑 .gitignore 文件
-                "Choose .gitignore template": "选择 .gitignore 模板",
-                    ".gitignore template": ".gitignore 模板",
-                    "Filter…": "筛选…",
-                    "None": "无",
+            // LICENSE (라이선스) 파일 편집 시
+                "Choose a license template": "라이선스 템플릿 선택하기",
 
-            // 编辑 工作流程文件 .github/workflows/xxxx.yml
-                "Collapse help panel": "折叠帮助面板",
-
-                // 帮助面板侧边栏
-                    "Search Marketplace for Actions": "搜索 Actions 市场",
-                    "Featured Actions": "特色 Actions",
-                    "Featured categories": "特色分类",
-                        "Code quality": "代码质量",
-                        "Monitoring": "监控",
-                        "Continuous integration": "持续集成",
-                        "Project management": "项目管理",
-                        "Deployment": "部署",
-                        "Project management": "项目管理",
-                        "Testing": "测试",
-                    "\/ Search results": "\/搜索结果",
-                    "Browse all actions on the GitHub Marketplace": "浏览 GitHub 市场 上的所有 Actions",
-
-                    // 具体某个操作
-                        "View full Marketplace listing": "去市场查看详细信息", // 跳转去市场对应页面
-                        "Installation": "安装",
-                        "Copy and paste the following snippet into your": "将以下代码段复制并粘贴到您的",
-                            "file.": "文件。",
-                        "Version:": "版本：",
-
-                // 底部栏补充
-                    "Space": "空格",
-                    "to trigger autocomplete in most situations.": "在大多数情况下将触发自动完成。",
-                    "Documentation": "文档",
-
-            // 编辑 LICENSE 许可证文件
-                "Choose a license template": "选择许可证模板",
-
-            // 编辑 이슈表单模板文件 .github/ISSUE_TEMPLATE/xxxx.yml
-                // 顶部提示
-                "Looks like this file is an issue template. Need help?": "此文件是一个이슈模板。需要帮助？",
-                "Learn more about issue templates.": "了解更多关于이슈模板的信息。",
-                "Give feedback.": "提交反馈。",
-                // 右侧帮助说明
-                "Top-level configuration options": "顶层配置选项",
-                    "Required Fields": "必填项",
-                        "(String): The template's name. Must be unique across all templates, including Markdown templates.": "（字符串）模板名。不能与其他模板名重复，包括 Markdown 模板",
-                        "(String): A description of this template's intended use. This will be shown in the issue template chooser interface.": "(字符串）：该模板预期用途的说明。这将显示在이슈模板选择界面中。",
-                    "Optional Fields": "可选项",
-                        "(Array or String): This issue will be automatically assigned to these users. Can be array of usernames or comma-delimited string, e.g. \"monalisa,nat\"": "(数组或字符串）：此이슈将自动分配给这些用户。可以是用户名数组或以逗号分隔的字符串，例如 “monalisa,nat”。",
-                        "(Array or String): This issue will automatically receive these labels upon creation. Can be array of labels or comma-delimited string, e.g. \"bug,needs-triage\"": "(数组或字符串）：该이슈在创建时将自动接收这些标签。可以是标签数组或以逗号分隔的字符串，例如 “bug,needs-triage”（错误，需要分流）。",
-                        "(Array or String): This issue will be automatically added to these projects. Can be array of projects or comma-delimited string, e.g. \"github\/1,github\/2\"": "(数组或字符串）：该이슈将自动添加到这些项目中。可以是项目数组或以逗号分隔的字符串，如 “github\/1,github\/2”。",
-                        "(String): Default title that will be pre-populated in the issue submission form.": "(字符串）：将在이슈表单中预填的默认标题。",
-                        "(Array): Definition of user inputs.": "(数组）：用户输入的定义。",
-                "Input type configuration options": "输入类型配置项",
-                    // Markdown
-                        "Markdown blocks contain arbitrary text that a maintainer can add to a template, to provide extra context or guidance to a contributor. Supports Markdown formatting. This text will": "Markdown 块包含任意文本，维护者可将其添加到模板中，为贡献者提供额外的上下文或指导。支持 Markdown 格式。这些文本",
-                        "not be rendered in the submitted issue body": "不会在提交的이슈正文中呈现。",
-                        // 必填项
-                            "(String): The text that will be rendered. Markdown formatting is supported.": "(字符串）：将渲染的文本。支持 Markdown 格式。",
-                        "Tip #1: YAML processing will cause the hash symbol to be treated as a comment. To insert Markdown headers, wrap your text in quotes.": "提示 1：YAML 处理会将哈希符号视为注释。要插入 Markdown 标题，请用引号将文本包起来。",
-                        "Tip #2: For multi-line text, you can use the pipe operator.": "提示 2：对于多行文本，可以使用管道运算符。",
-                        "Example": "示例",
-                    "Input": "输入",
-                        "Inputs are single-line form input fields. Contributors may use markdown formatting in their responses.": "输入为单行表单输入字段。贡献者可在回复中使用标记符格式。",
-                        "Required Attributes": "必要属性",
-                            "(String): A brief description of the expected user input.": "(字符串）： 预期用户输入的简要说明。",
-                        "Optional Attributes": "可选属性",
-                            "(String): Extra context or guidance about filling out this form input. Supports Markdown.": "(字符串）：有关填写此表单输入的额外上下文或指导。支持 Markdown。",
-                            "(String): Renders as semi-transparent \"placeholder\" element in the input field when it's empty.": "(字符串）：当输入框为空时，渲染为半透明的 “placeholder”元素。",
-                            "(String): Default text that is pre-populated in the input field.": "(字符串）：输入字段中预填的默认文本。",
+            // 이슈 템플릿 파일 (.github/ISSUE_TEMPLATE/xxxx.yml) 편집 시
+                // 상단 알림
+                "Looks like this file is an issue template. Need help?": "이 파일이 이슈 템플릿인 것 같아요. 도움이 필요하신가요?",
+                "Learn more about issue templates.": "이슈 템플릿에 대해 더 알아보기",
+                "Give feedback.": "피드백 제출하기",
+                // 오른쪽 도움말 설명
+                "Top-level configuration options": "최상위 구성 옵션",
+                    "Required Fields": "필수 항목",
+                        "(String): The template's name. Must be unique across all templates, including Markdown templates.": "(문자열): 템플릿 이름. 마크다운 템플릿을 포함하여 모든 템플릿 내에서 고유해야 해요.",
+                        "(String): A description of this template's intended use. This will be shown in the issue template chooser interface.": "(문자열): 이 템플릿의 사용 목적에 대한 설명. 이 설명은 이슈 템플릿 선택 인터페이스에 표시돼요.",
+                    "Optional Fields": "선택 항목",
+                        "(Array or String): This issue will be automatically assigned to these users. Can be array of usernames or comma-delimited string, e.g. \"monalisa,nat\"": "(배열 또는 문자열): 이 이슈는 자동으로 해당 사용자들에게 할당돼요. 사용자명 배열 또는 쉼표로 구분된 문자열 (예: \"monalisa,nat\") 형식이에요.",
+                        "(Array or String): This issue will automatically receive these labels upon creation. Can be array of labels or comma-delimited string, e.g. \"bug,needs-triage\"": "(배열 또는 문자열): 이 이슈는 생성 시 자동으로 해당 레이블을 받게 돼요. 레이블 배열 또는 쉼표로 구분된 문자열 (예: \"bug,needs-triage\") 형식이에요.",
+                        "(Array or String): This issue will be automatically added to these projects. Can be array of projects or comma-delimited string, e.g. \"github\/1,github\/2\"": "(배열 또는 문자열): 이 이슈는 생성 시 자동으로 해당 프로젝트들에 추가돼요. 프로젝트 배열 또는 쉼표로 구분된 문자열 (예: \"github\/1,github\/2\") 형식이에요.",
+                        "(String): Default title that will be pre-populated in the issue submission form.": "(문자열): 이슈 제출 폼에 미리 채워질 기본 제목이에요.",
+                        "(Array): Definition of user inputs.": "(배열): 사용자 입력 정의.",
+                "Input type configuration options": "입력 타입 구성 옵션",
+                    // 마크다운
+                        "Markdown blocks contain arbitrary text that a maintainer can add to a template, to provide extra context or guidance to a contributor. Supports Markdown formatting. This text will": "마크다운 블록은 기여자에게 추가적인 문맥이나 안내를 제공하기 위해 유지 관리자가 템플릿에 추가할 수 있는 임의의 텍스트를 포함해요. 마크다운 형식을 지원해요. 이 텍스트는",
+                        "not be rendered in the submitted issue body": "제출된 이슈 본문에 렌더링되지 않아요.",
+                        // 필수 항목
+                            "(String): The text that will be rendered. Markdown formatting is supported.": "(문자열): 렌더링될 텍스트. 마크다운 형식을 지원해요.",
+                        "Tip #1: YAML processing will cause the hash symbol to be treated as a comment. To insert Markdown headers, wrap your text in quotes.": "팁 #1: YAML 처리 시 해시(#) 기호가 주석으로 처리돼요. 마크다운 헤더를 삽입하려면 텍스트를 따옴표로 감싸 주세요.",
+                        "Tip #2: For multi-line text, you can use the pipe operator.": "팁 #2: 여러 줄의 텍스트에는 파이프(|) 연산자를 사용해 보세요.",
+                        "Example": "예시",
+                    "Input": "입력",
+                        "Inputs are single-line form input fields. Contributors may use markdown formatting in their responses.": "입력은 한 줄짜리 폼 입력 필드에요. 기여자들이 답변에 마크다운 형식을 사용할 수 있어요.",
+                        "Required Attributes": "필수 속성",
+                            "(String): A brief description of the expected user input.": "(문자열): 예상되는 사용자 입력에 대한 간단한 설명이에요.",
+                        "Optional Attributes": "선택 속성",
+                            "(String): Extra context or guidance about filling out this form input. Supports Markdown.": "(문자열): 이 폼 입력을 작성할 때의 추가 문맥 또는 안내. 마크다운을 지원해요.",
+                            "(String): Renders as semi-transparent \"placeholder\" element in the input field when it's empty.": "(문자열): 입력 필드가 비어 있을 때 반투명한 'placeholder' 요소로 렌더링돼요.",
+                            "(String): Default text that is pre-populated in the input field.": "(문자열): 입력 필드에 미리 채워지는 기본 텍스트에요.",
                         // ID
-                            "(String): Optional unique identifier. Can only contain alphanumeric characters,": "(字符串）：可选的唯一标识符。只能包含字母数字字符、",
-                        "Validations": "验证",
-                            "(Boolean): If": "(布尔值）：若",
-                            ", the form will not be submittable until this is filled out. Only for public repositories.": "，则填写此信息后才能提交表格。仅适用于公共仓库。",
-                    "Textarea": "文本区域",
-                        "Very similar to inputs, textareas are multiple-line form input fields. Typically used if you'd like a contributor to provide an answer longer than a few words. Contributors may use markdown formatting in their responses.": "文本区域与输入非常相似，都是多行表单输入字段。如果希望贡献者提供长于几个单词的答案，일반会使用文本区域。贡献者可以在回复中使用标记符格式。",
-                        // 可选属性
-                            "(String): If a value is provided, user-submitted text will be formatted into a codeblock automatically.": "(字符串）：如果提供该值，用户提交的文本将自动格式化为代码块。",
-                    "Dropdown": "下拉菜单",
-                        "Users can select their answer from options defined by the maintainer.": "用户可以从维护者定义的选项中选择答案。",
-                            "(String Array): Set of values that user can select from to answer. Cannot be empty, and all choices must be distinct.": "(字符串数组）：用户可从中选择回答的一组值。不能为空，且所有选择必须是不同的。",
-                        // 可选属性
-                            ", users can submit multiple selections.": "则用户可提交多选项。",
-                        // 验证
-                            ", the form will not be submittable until at least one choice is selected. Only for public repositories.": "则至少选择一个选项后才能提交表单。仅适用于公共仓库。",
-                    "Checkboxes": "勾选框",
-                    "A group of one or more checkboxes. This will be saved as a Markdown checkbox, and will continue to support interactive updating.": "由一个或多个复选框组成的组。这将被保存为 Markdown 复选框，并将继续支持交互式更新。",
-                        "(Array): Set of values that user can select from to answer. Cannot be empty. Each item must have a": "(数组）：用户可从中选择回答的数值集合。不能为空。每个项目必须有一个",
-                        ", described below.": "，如下所述。",
-                    "Within each item in": "对于任何带",
-                        ", the following fields are supported:": "元素则支持以下字段：",
-                        "(String): The text that will appear beside the checkbox. Markdown is supported for bold or italic text formatting, and hyperlinks.": "(字符串）：复选框旁边显示的文本。Markdown 支持粗体或斜体文本格式以及超链接。",
-                    "Optional": "可选",
-                        "(Boolean): If required, the form will not be submittable unless checked. Only for public repositories.": "(布尔值）：如果需要，除非选中，否则表单将无法提交。仅适用于公共仓库。",
+                            "(String): Optional unique identifier. Can only contain alphanumeric characters,": "(문자열): 선택적 고유 식별자에요. 영문자 및 숫자만 포함할 수 있어요.",
+                        "Validations": "검증",
+                            "(Boolean): If": "(불린): 만약",
+                            ", the form will not be submittable until this is filled out. Only for public repositories.": "이라면, 이 값이 입력될 때까지 폼을 제출할 수 없어요. 공용 저장소에 한해 적용돼요.",
+                    "Textarea": "텍스트 영역",
+                        "Very similar to inputs, textareas are multiple-line form input fields. Typically used if you'd like a contributor to provide an answer longer than a few words. Contributors may use markdown formatting in their responses.": "입력과 매우 유사하게, 텍스트 영역은 여러 줄의 폼 입력 필드에요. 기여자가 몇 단어 이상으로 답변을 제공하기를 원할 때 사용해 보세요. 기여자들은 마크다운 형식을 사용할 수 있어요.",
+                        // 선택 속성
+                            "(String): If a value is provided, user-submitted text will be formatted into a codeblock automatically.": "(문자열): 값이 제공되면, 사용자가 제출한 텍스트가 자동으로 코드 블록으로 형식화돼요.",
+                    "Dropdown": "드롭다운 메뉴",
+                        "Users can select their answer from options defined by the maintainer.": "사용자들이 유지 관리자가 정의한 옵션 중에서 답변을 선택할 수 있어요.",
+                            "(String Array): Set of values that user can select from to answer. Cannot be empty, and all choices must be distinct.": "(문자열 배열): 사용자가 선택할 수 있는 값들의 집합이에요. 비어 있을 수 없으며, 모든 선택지는 서로 달라야 해요.",
+                        // 선택 속성
+                            ", users can submit multiple selections.": "이라면 사용자가 다중 선택을 할 수 있어요.",
+                        // 검증
+                            ", the form will not be submittable until at least one choice is selected. Only for public repositories.": "이라면 최소 하나의 선택지가 선택될 때까지 폼을 제출할 수 없어요. 공용 저장소에 한해 적용돼요.",
+                    "Checkboxes": "체크박스",
+                    "A group of one or more checkboxes. This will be saved as a Markdown checkbox, and will continue to support interactive updating.": "하나 이상의 체크박스 그룹이에요. 마크다운 체크박스로 저장되며, 상호작용식 업데이트를 계속 지원해요.",
+                        "(Array): Set of values that user can select from to answer. Cannot be empty. Each item must have a": "(배열): 사용자가 선택할 수 있는 값들의 집합이에요. 비어 있을 수 없으며, 각 항목은",
+                        ", described below.": "가 아래와 같이 설명돼야 해요.",
+                    "Within each item in": "각 항목 내에서",
+                        ", the following fields are supported:": "다음 필드들이 지원돼요:",
+                        "(String): The text that will appear beside the checkbox. Markdown is supported for bold or italic text formatting, and hyperlinks.": "(문자열): 체크박스 옆에 표시될 텍스트에요. 굵게 또는 기울임체, 하이퍼링크 등의 마크다운 형식이 지원돼요.",
+                    "Optional": "선택",
+                        "(Boolean): If required, the form will not be submittable unless checked. Only for public repositories.": "(불린): 필수일 경우, 체크되어야 폼을 제출할 수 있어요. 공용 저장소에 한해 적용돼요.",
 
-            // 查找工具栏
-                "Find": "查找",
-                "next": "下一处",
-                "previous": "上一处",
-                "all": "全部",
-                "match case": "区分大小写",
-                "regexp": "正则",
-                "by word": "全字匹配",
-                "Replace": "替换",
-                "replace": "替换",
-                "replace all": "全部替换",
+            // 찾기 툴바
+                "Find": "찾기",
+                "next": "다음 찾기",
+                "previous": "이전 찾기",
+                "all": "전체",
+                "match case": "대소문자 구분",
+                "regexp": "정규식",
+                "by word": "단어 단위로",
+                "Replace": "바꾸기",
+                "replace": "바꾸기",
+                "replace all": "전체 바꾸기",
 
-        // 删除文件页面 /<user-name>/<repo-name>/delete/<branch>/<file>
-            // 顶部提醒
-            "File successfully deleted.": "文件已成功删除。",
+        // 파일 삭제 페이지 /<user-name>/<repo-name>/delete/<branch>/<file>
+            // 상단 알림
+            "File successfully deleted.": "파일이 성공적으로 삭제되었어요.",
 
-        // 上传文件页面 /<user-name>/<repo-name>/upload/<branch>
-            // 自有仓库
-                "Drag files here to add them to your repository": "拖拽文件添加到当前仓库",
-                "Drag additional files here to add them to your repository": "拖拽其他文件添加到当前仓库",
-                "Or": "或",
-                "choose your files": "选择文件",
-                "Drop to upload your files": "拖拽上传您的文件",
-                // 处理反馈
-                "Yowza, that’s a big file. Try again with a file smaller than 25MB.": "我勒个擦，这么大的文件，单文件不得超过25MB",
-                "Yowza, that’s a lot of files. Try again with fewer than 100 files.": "我勒个擦，这么多文件，一次不能超过100个",
-                "This file is": "这个文件是",
-                "empty": "空的",
-                "Something went really wrong, and we can’t process that file.": "遇到错误，我们无法处理这个文件。",
+        // 파일 업로드 페이지 /<user-name>/<repo-name>/upload/<branch>
+            // 본인 저장소
+                "Drag files here to add them to your repository": "파일을 이곳으로 끌어다 놓아 저장소에 추가해 주세요.",
+                "Drag additional files here to add them to your repository": "추가 파일을 이곳으로 끌어다 놓아 저장소에 추가해 주세요.",
+                "Or": "또는",
+                "choose your files": "파일 선택하기",
+                "Drop to upload your files": "여기로 드롭하여 파일 업로드하기",
+                // 처리 피드백
+                "Yowza, that’s a big file. Try again with a file smaller than 25MB.": "이런, 파일이 너무 커요. 25MB 이하의 파일로 다시 시도해 주세요.",
+                "Yowza, that’s a lot of files. Try again with fewer than 100 files.": "이런, 파일이 너무 많아요. 100개 미만의 파일로 다시 시도해 주세요.",
+                "This file is": "이 파일은",
+                "empty": "비어 있어요",
+                "Something went really wrong, and we can’t process that file.": "문제가 발생하여 이 파일을 처리할 수 없어요.",
 
-                // 文件上传进度条
-                "Uploading": "文件上传中",
+                // 파일 업로드 진행 표시줄
+                "Uploading": "파일 업로드 중",
                 "of": "/",
 
-                // 提交框 补充
-                    "Add files via upload": "通过上传添加文件",
-                    "Add an optional extended description…": "添加可选的扩展描述...",
+                // 업로드 후 추가 내용
+                    "Add files via upload": "업로드로 파일 추가하기",
+                    "Add an optional extended description…": "선택적인 상세 설명 추가하기…",
 
-                    "branch.": "分支。", // 上传页面
-                    "for this commit and start a pull request.": "为这个提交，并且发起一个拉取请求。", // 上传页面
-                    "Learn more about pull requests.": "了解更多关于拉取请求的信息。", // 上传页面
+                    "branch.": "분기.", // 업로드 페이지
+                    "for this commit and start a pull request.": "해당 커밋을 위해, 그리고 끌어오기 요청을 시작하기 위해",
+                    "Learn more about pull requests.": "끌어오기 요청에 대해 더 알아보기", // 업로드 페이지
 
-                // 提交后处理页面
-                    "Processing your files…": "正在处理您的文件...",
+                // 업로드 후 처리 페이지
+                    "Processing your files…": "파일을 처리 중이에요…",
 
-            // 他人仓库
-                "Uploads are disabled.": "上传功能已禁用。",
-                "File uploads require push access to this repository.": "文件上传需要推送访问此仓库。",
+            // 타인 저장소
+                "Uploads are disabled.": "업로드 기능이 비활성화되어 있어요.",
+                "File uploads require push access to this repository.": "파일 업로드는 이 저장소에 대한 푸시 권한이 필요해요.",
 
-        // new code view
-            "Top": "顶部",
-            "Jump to file": "跳转到文件",
+        // 신규 코드 보기
+            "Top": "상단",
+            "Jump to file": "파일로 점프하기",
 
     },
-    "regexp": [ // 正则翻译
-        [/on this commit as/,"该提交以"],
-        [/Commit changes?/, "提交更改"], // 提交对话框
-        [/Your license is ready. Please review it below and either commit it to the ([^ ]+) branch or to a new branch./, "您的许可证已准备就绪。请在下面审查它并将其提交到 $1 分支或新分支。"],
-        [/Your search has returned (\d+) results?./, "您的搜索返回了 $1 条结果。"],
-        [/First (\d+) files? shown./, "显示前 $1 个文件。"],
+    "regexp": [ // 정규식 번역
+        [/on this commit as/,"이 커밋에 대해"],
+        [/Commit changes?/, "변경 사항 제출하기"], // 커밋 대화 상자
+        [/Your license is ready. Please review it below and either commit it to the ([^ ]+) branch or to a new branch./, "사용자님의 라이선스가 준비되었어요. 아래에서 확인 후 $1 분기 또는 새 분기에 제출해 주세요."],
+        [/Your search has returned (\d+) results?./, "검색 결과가 $1건 반환되었어요."],
+        [/First (\d+) files? shown./, "처음 $1개의 파일이 표시되었어요."],
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
+
 I18N["ko-KR"]["repository/edit"] = I18N["ko-KR"]["repository/new"];
 I18N["ko-KR"]["repository/delete"] = I18N["ko-KR"]["repository/new"];
 I18N["ko-KR"]["repository/upload"] = I18N["ko-KR"]["repository/new"];
