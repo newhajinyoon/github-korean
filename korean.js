@@ -3300,46 +3300,70 @@ I18N["ko-KR"]["settings/admin"] = { // 设置 - 账户
             // "and": "그리고",
 
     },
-    "regexp": [ // 正则翻译
-        [/is available\./, "可用。"],
-        [/Username ([^ ]+) is not available\. Please choose another\. To submit a trademark claim, please see our/, "用户名 $1 不可用。请重新选择。要提交商标索赔，请看我们的"],
-        [/immediately delete all of your repositor(y|ies) \((\d+)\)/, "立即删除您所有的仓库（$1个）"],
+    "regexp": [
+        // 사용자 이름 사용 가능 여부
+        [/is available\./, "사용할 수 있어요."],
 
-        // 设置继任者
-        [/By clicking \"Add Successor\" below, I acknowledge that I am the owner of the([^@]+@[^\n]+) account, and am authorizing GitHub to transfer content within that account to my GitHub Successor,/, "아래의 “후임자 추가하기”를 클릭함으로써, 나는 $1 계정의 소유자임을 확인하며, 만약 내가 사망할 경우 GitHub가 그 계정 내의 콘텐츠를 내 GitHub 후임자에게 이전하도록 허용하는 것에 동의해요. 이 후임자 지정은 법적으로 구속력 있는 상속 규칙이나 관련 관할 구역의 유산 법률을 무시하지 않으며, 구속력 있는 유언을 생성하지 않음을 이해해요."],
-        [/This link will only work for ([^ ]+)./, "此链接仅对 $1 有效。"],
+        [/Username ([^ ]+) is not available\. Please choose another\. To submit a trademark claim, please see our/,
+        "사용자 이름 $1은(는) 사용할 수 없어요. 다른 이름을 선택해 주세요. 상표 관련 문제는 저희의 안내를 참고해 주세요."],
 
-        // 顶部提醒
-        [/You have successfully sent the successor invitation to ([^ ]+)./, "您已经成功向 $1 发送了继任者邀请。"],
-        [/You have revoked the successor invitation to ([^ ]+)./, "您已经撤销了对 $1 的继任者邀请。"],
-        [/You have canceled the invitation to ([^ ]+) to be your designated successor./, "您已经取消了让 $1 成为您的指定继任者的邀请。"],
+        // 저장소 삭제 경고
+        [/immediately delete all of your repositor(y|ies) \((\d+)\)/,
+        "저장소 전체를 즉시 삭제해요 ($2개)"],
+
+        // 후임자 설정
+        [/By clicking \"Add Successor\" below, I acknowledge that I am the owner of the([^@]+@[^\n]+) account, and am authorizing GitHub to transfer content within that account to my GitHub Successor,/,
+        "아래의 “후임자 추가하기”를 클릭함으로써 저는 $1 계정의 소유자이며, 그 계정의 콘텐츠를 GitHub 후임자에게 이전하는 것에 동의해요."],
+
+        // 초대 링크 유효성
+        [/This link will only work for ([^ ]+)./, "이 링크는 $1 님에게만 유효해요."],
+
+        // 후임자 초대 관련 안내
+        [/You have successfully sent the successor invitation to ([^ ]+)./,
+        "$1 님에게 후임자 초대를 성공적으로 보냈어요."],
+
+        [/You have revoked the successor invitation to ([^ ]+)./,
+        "$1 님에게 보낸 후임자 초대를 취소했어요."],
+
+        [/You have canceled the invitation to ([^ ]+) to be your designated successor./,
+        "$1 님을 지정 후임자로 초대한 요청을 취소했어요."],
     ],
 };
 
-I18N["ko-KR"]["succession/invitation"] = { // 账户继任者邀请  users/<邀请者的 user-name>/succession/invitation
-    "static": { // 静态翻译
-        // 受邀者
-        "invited you to be their account successor": "邀请您成为其账户继任者",
-        "Learn more about account successors": "了解更多关于账户继任者的信息",
-        //[/By clicking \"Accept invitation\" below, I acknowledge that I agree to serve as the successor for ([^ ]+), in such ways authorized by their successor request. I agree to abide by GitHub's/, "通过点击下面的 “接受邀请”，我确认我同意按照其继任者要求所授权的方式担任 $1 的继任者。我同意在使用和维护其帐户内容时遵守 GitHub 的"],
-        "Terms of Service": "服务条款",
-        "and the user's written requests, if any, in my use and maintaining of their account's content.": "和用户的书面请求（如果有）。",
-        "I understand that accepting this appointment as successor does not override legally binding next-of-kin rules or estate laws of any relevant jurisdiction, and does not create a binding will, and I agree to comply or assist with a valid request by an individual with legal authority over the user's property (such as next-of-kin, an estate's executor, and/or a beneficiary of their will).": "我明白，接受此继任者任命的做法并不凌驾于具有法律约束力的近亲规则或任何相关司法管辖区的遗产法，也不产生具有约束力的遗嘱，并且我同意遵守或协助对用户财产拥有合法权力的个人（例如近亲、遗产执行人和/或其遗嘱受益人）的有效请求。",
-        "Accept invitation": "接受邀请",
-        "Decline": "谢绝",
-        // 已接受
-        "This invitation has already been accepted.": "此邀请已被接受。",
-        // 已谢绝
-        "This invitation has already been declined.": "此邀请已被谢绝。",
-        // 不存在
-        "Invitation not found": "此邀请已被谢绝。",
-        "Your invitation could not be found, or is not valid.": "找不到您的邀请，或是其已不再有效。",
+I18N["ko-KR"]["succession/invitation"] = {
+    "static": {
+      // 초대받은 사용자
+      "invited you to be their account successor": "계정 승계자로 초대받았어요",
+      "Learn more about account successors": "계정 승계자에 대해 자세히 알아보기",
+      
+      "Terms of Service": "서비스 약관",
+      "and the user's written requests, if any, in my use and maintaining of their account's content.": 
+        "및 해당 계정의 요청 사항을 따를 것을 동의해요.",
+  
+      "I understand that accepting this appointment as successor does not override legally binding next-of-kin rules or estate laws of any relevant jurisdiction, and does not create a binding will, and I agree to comply or assist with a valid request by an individual with legal authority over the user's property (such as next-of-kin, an estate's executor, and/or a beneficiary of their will).":
+        "이 승계를 수락하더라도 법적으로 유효한 상속 법이나 관할 지역의 관련 법률을 대체하지 않으며, 유언과 같은 법적 구속력을 발생시키지 않는다는 것을 이해하며, 사용자의 재산에 대해 법적 권한을 가진 사람(예: 법적 상속인, 유언 집행자, 또는 수혜자)의 요청이 있을 경우 이에 따르거나 협조할 것을 동의해요.",
+  
+      "Accept invitation": "초대 수락하기",
+      "Decline": "거절하기",
+  
+      // 이미 수락함
+      "This invitation has already been accepted.": "이 초대는 이미 수락되었어요.",
+      // 이미 거절함
+      "This invitation has already been declined.": "이 초대는 이미 거절되었어요.",
+      // 초대 없음
+      "Invitation not found": "초대를 찾을 수 없어요.",
+      "Your invitation could not be found, or is not valid.": "초대를 찾을 수 없거나, 더 이상 유효하지 않아요."
     },
-    "regexp": [ // 正则翻译
-        [/As an account successor, you would be able to manage ([^ ]+)'s repositories if they're not able to./, "作为账户继任者，在 $1 再也无法管理其仓库时，您将能够管理其仓库。"],
-        [/By clicking \"Accept invitation\" below, I acknowledge that I agree to serve as the successor for ([^ ]+), in such ways authorized by their successor request. I agree to abide by GitHub's/, "通过点击下面的 “接受邀请”，我确认我同意按照其继任者要求所授权的方式担任 $1 的继任者。我同意在使用和维护其帐户内容时遵守 GitHub 的"],
+  
+    "regexp": [
+      [/As an account successor, you would be able to manage ([^ ]+)'s repositories if they're not able to./,
+       "계정 승계자로서, $1 님이 자신의 저장소를 관리할 수 없게 되면 사용자님이 대신 관리할 수 있어요."],
+  
+      [/By clicking \"Accept invitation\" below, I acknowledge that I agree to serve as the successor for ([^ ]+), in such ways authorized by their successor request. I agree to abide by GitHub's/,
+       "아래의 \"초대 수락하기\"를 클릭함으로써, $1 님의 요청에 따라 승계자로서 역할을 수행하는 것을 이해했으며, GitHub의"] 
     ]
 };
+  
 
 I18N["ko-KR"]["settings/appearance"] = { // 设置 - 外观
     "static": { // 静态翻译
@@ -4298,7 +4322,7 @@ I18N["ko-KR"]["settings/security"] = { // 설정 - 비밀번호와 인증
 
                     "Register new security key": "새 보안 키 등록하기",
                     "Enter a nickname for this security key": "이 보안 키의 별칭을 입력해 주세요.",
-                    "Waiting for input from browser interaction...": "브라우저 상호작용으로 입력을 기다리고 있어요...",
+                    "Waiting for input from browser interaction...": "브라우저에서 입력을 기다리고 있어요...",
                     "Security key registration failed.": "보안 키 등록에 실패했어요.",
                     "Try again": "다시 시도해 주세요.",
 
@@ -16016,13 +16040,13 @@ I18N["ko-KR"]["repository/settings/installations"] = { // 仓库设置 - GitHub 
 
         // 集成应用 页面 /<user-name>/<repo-name>/settings/installations====================================
         // 全局设置在 Applications 应用 /settings/installations
-            "Installed GitHub Apps": "安装的 GitHub 应用",
-            "GitHub Apps augment and extend your workflows on GitHub with commercial, open source, and homegrown tools.": "GitHub 应用通过商业、开源和自主开发的工具来增强和扩展您在 GitHub 上的工作流程。",
-            "Configure": "配置",
-
-            "There aren't any GitHub Apps installed on this repository.": "此仓库上未安装任何 GitHub 应用。",
-            "Suspended": "已暂停",
-            "Developed by": "开发者:",
+            "Installed GitHub Apps": "설치된 GitHub 앱",
+            "GitHub Apps augment and extend your workflows on GitHub with commercial, open source, and homegrown tools.": "GitHub 앱은 상용, 오픈 소스, 그리고 자사 개발 도구를 사용하여 GitHub에서의 워크플로우를 확장하고 향상시켜요.",
+            "Configure": "설정",
+        
+            "There aren't any GitHub Apps installed on this repository.": "이 저장소에는 설치된 GitHub 앱이 없어요.",
+            "Suspended": "일시 정지됨",
+            "Developed by": "개발자:",
 
     },
     "regexp": [ // 正则翻译
@@ -16036,17 +16060,17 @@ I18N["ko-KR"]["repository/settings/notifications"] = { // 仓库设置 - 邮件�
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
         // 邮件通知管理 页面 /<user-name>/<repo-name>/settings/notifications/edit ====================================
-            "Setup email addresses to receive notifications when push events are triggered.": "设置电子邮箱地址，以便在推送事件被触发时收到通知。",
-            "Asterisk (*) denotes a required field": "星号 (*) 表示必填字段",
-            "Address": "电子邮箱地址",
-            "Whitespace separated email addresses (at most two).": "用空格分隔的电子邮箱地址（最多两个）。",
-            "Approved header": "批准的标题",
-            "Sets the": "设置",
-            "Active": "激活",
-            "header to automatically approve the message in a read-only or moderated mailing list.": "标头以自动批准只读或审核邮件列表中的邮件。",
-            "We will send notification emails to the listed addresses when a": "我们将向所列地址发送通知邮件，当",
-            "event is triggered.": "事件被触发。",
-            "Setup notifications": "设置通知",
+            "Setup email addresses to receive notifications when push events are triggered.": "푸시 이벤트가 트리거될 때 알림을 받을 이메일 주소를 설정하세요.",
+            "Asterisk (*) denotes a required field": "별표 (*)는 필수 항목을 나타내요.",
+            "Address": "이메일 주소",
+            "Whitespace separated email addresses (at most two).": "공백으로 구분된 이메일 주소(최대 두 개).",
+            "Approved header": "승인된 헤더",
+            "Sets the": "설정:",
+            "Active": "활성화",
+            "header to automatically approve the message in a read-only or moderated mailing list.": "읽기 전용 또는 검토된 메일링 리스트에서 메시지를 자동으로 승인하도록 헤더를 설정해요.",
+            "We will send notification emails to the listed addresses when a": "이벤트가 트리거될 때 나열된 이메일 주소로 알림 이메일을 보낼게요.",
+            "event is triggered.": "이벤트가 트리거될 때.",
+            "Setup notifications": "알림 설정",
 
     },
     "regexp": [ // 正则翻译
@@ -16468,22 +16492,22 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
 
         // 登录页 https://github.com/login
             "Sign in to GitHub": "GitHub에 로그인",
-            "Sign in to": "登录",
-            "Signed in as": "登录身份为",
-            "to continue to": "继续登录",
+            "Sign in to": "로그인 대상:",
+            "Signed in as": "현재 로그인 계정:",
+            "to continue to": "계속하려면 로그인:",
             "Username or email address": "사용자 이름 또는 이메일 주소",
             "Password": "비밀번호",
             "Forgot password?": "비밀번호를 잊으셨나요?",
             "Sign in": "로그인",
             "Sign in with a passkey": "패스키로 로그인하기",
-            "Signing in…": "로그인…",
+            "Signing in…": "로그인 중…",
 
             "Add an account": "계정 추가하기", // 添加新账号
             "Want to create an account?": "계정 만들기를 원한다고요?", // 添加新账号
 
-            "Or": "或",
+            "Or": "및",
             // "This browser or device does not fully support passkeys.": "此浏览器或设备不完全支持通行密钥。",
-            "This browser or device is reporting partial passkey support.": "此浏览器或设备报告部分支持通行密钥。",
+            "This browser or device is reporting partial passkey support.": "현재 브라우저 또는 기기에서 패스키가 일부만 지원돼요.",
             "Sign-in with a passkey": "패스키로 로그인하기",
 
             "New to GitHub?": "GitHub가 처음이신가요?",
@@ -16496,404 +16520,345 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
             "Recovery code authentication failed.": "복구 코드 인증을 실패했어요.",
 
         // 设备授权激活 https://github.com/login/device
-            "Device Activation": "设备激活",
-            "Enter the code displayed on your device": "输入您的设备上显示的代码",
+            "Device Activation": "디바이스 활성화",
+            "Enter the code displayed on your device": "기기에 표시된 코드를 입력하세요",
             "Continue": "계속하기",
             "GitHub staff will never ask you to enter your code on this page.": "GitHub 팀은 절대 코드를 이곳에 입력하라고 요구하지 않아요.",
 
         // 设备授权第2页面 https://github.com/login/device/confirmation
             // [/Authorize/, "授权"],
-            "This authorization was requested from": "此授权请求来自",
-            "Make sure you trust this device as it will get access to your account.": "请确保您信任该设备，因为它可以访问您的账户。",
-            "wants to access your": "希望访问您的",
+            "This authorization was requested from": "다음에서 인증 요청이 발생했어요:",
+            "Make sure you trust this device as it will get access to your account.": "이 디바이스가 계정에 접근할 수 있으므로 신뢰할 수 있는지 확인하세요.",
+            "wants to access your": "다음 항목에 접근하려고 합니다:",
             "account": "계정",
-            "Organization access": "组织访问",
-            "Requested from": "요청됨: ",
+            "Organization access": "조직 접근 권한",
+            "Requested from": "요청 위치:",
+            "Owned & operated by GitHub": "GitHub에서 소유 및 운영",
+            "Created": "생성일:",
+            "More than 1K": "1천명 이상",
+            "GitHub users": "GitHub 사용자",
+            "Learn more about OAuth": "OAuth에 대해 자세히 알아보기",
 
-            "Owned & operated by GitHub": "由 GitHub 拥有和运营",
-            "Created": "创建于",
-            "More than 1K": "超过1K",
-            "GitHub users": "GitHub 用户",
-            "Learn more about OAuth": "了解更多关于 OAuth 的信息",
+        // 디바이스 인증 성공 https://github.com/login/device/success
+        "Congratulations, you're all set!": "축하해요, 준비가 완료되었어요!",
+        "Your device is now connected.": "디바이스가 연결되었어요.",
 
-        // 设备授权成功 https://github.com/login/device/success
-            "Congratulations, you're all set!": "恭喜，一切就绪！",
-            "Your device is now connected.": "您的设备现已连接。",
+        // 디바이스 인증 실패 https://github.com/login/device/failure?reason=not_found
+        "Uh oh, we couldn't find anything": "앗, 아무것도 찾을 수 없었어요",
+        "Please make sure you entered the user code correctly.": "사용자 코드를 정확히 입력했는지 확인해주세요.",
 
-        // 设备授权失败 https://github.com/login/device/failure?reason=not_found
-            "Uh oh, we couldn't find anything": "呃，我们找不到任何东西",
-            "Please make sure you entered the user code correctly.": "请确保您输入正确的用户代码。",
+        // 디바이스 인증 https://github.com/sessions/verified-device
+        "Device verification": "디바이스 인증",
+        "Email": "이메일",
+        "Device Verification Code": "디바이스 인증 코드",
+        "Having trouble verifying via email?": "이메일 인증에 문제가 있나요?",
+        "Re-send the authentication code": "인증 코드 다시 보내기",
+        "Try GitHub Mobile for simplified device verification": "간편한 디바이스 인증은 GitHub Mobile을 이용해보세요",
+        "If you'd like to require verification on every sign in, consider enabling": "매번 로그인 시 인증을 원하신다면",
+        "two-factor authentication": "2단계 인증",
+        "on your account.": "을 계정에 활성화해보세요.",
 
-        // 设备验证 https://github.com/sessions/verified-device
-            "Device verification": "设备验证",
-            "Email": "电子邮件",
-            "Device Verification Code": "设备验证码",
-            "Having trouble verifying via email?": "通过电子邮件验证时遇到问题？",
-                "Re-send the authentication code": "重新发送验证码",
-                "Try GitHub Mobile for simplified device verification": "尝试 GitHub Mobile 的简化设备验证",
-            "If you'd like to require verification on every sign in, consider enabling": "如果您想在每次登录时都要求进行验证，请考虑在您的账户上启用",
-                "two-factor authentication": "双因素身份验证",
-                "on your account.": "。",
-            // 黄色横幅
-            "Incorrect verification code provided.": "提供的验证码错误。",
+        // 노란 배너
+        "Incorrect verification code provided.": "잘못된 인증 코드입니다.",
 
-        // 双因素身份验证登录 https://github.com/sessions/two-factor/app
-            // "Learn more": "了解更多",
-            // "Learn more.": "了解更多。",
-            "Confirm password to continue": "确认密码以继续",
-            "Confirm password": "确认密码",
-            "Tip:": "提示：",
+        // 2단계 인증 로그인 https://github.com/sessions/two-factor/app
+        "Confirm password to continue": "계속하려면 비밀번호를 확인해 주세요",
+        "Confirm password": "비밀번호 확인",
+        "Tip:": "안내:",
 
-            "Two-factor authentication": "双因素身份验证",
-            "Authentication code": "验证码",
-                "More information about Authentication Codes": "更多关于验证码的信息",
-            //"Signing in…": "登录中…",
-            "6-digit code": "6位验证码",
-            "Verify": "验证",
-                "Verifying": "验证中",
-                "Verifying…": "验证中…",
-            "Open the two-factor authenticator (TOTP) app on your mobile device to view your authentication code.": "打开您的移动设备上的 “双因素身份验证器” 应用（TOTP），以查看您的身份验证码。",
+        "Two-factor authentication": "2단계 인증",
+        "Authentication code": "인증 코드",
+        "More information about Authentication Codes": "인증 코드에 대한 자세한 정보",
 
-            "Use this method for future logins": "今后的登录中使用此方法",
-                "Future logins on this device will prompt you to use": "今后在该设备上的登录将提示您使用",
-                "an authentication code": "一个验证码",
-                "by default.": "作为默认方式。",
+        "6-digit code": "6자리 코드",
+        "Verify": "확인하기",
+        "Verifying": "확인 중",
+        "Verifying…": "확인 중…",
 
-            "Having problems?": "有问题吗？",
-                "Use your passkey": "使用您的通行密钥",
-                "Authenticate with GitHub Mobile": "使用 GitHub Mobile 进行身份验证",
-                "Use a recovery code or begin 2FA account recovery": "使用恢复码或开始 2FA 账户恢复",
+        "Open the two-factor authenticator (TOTP) app on your mobile device to view your authentication code.": "모바일 기기에서 2단계 인증 앱(TOTP)을 열고 인증 코드를 확인해 주세요",
+
+        "Use this method for future logins": "앞으로 로그인할 때 이 방법 사용하기",
+        "Future logins on this device will prompt you to use": "이 디바이스에서 앞으로 로그인할 때는 기본으로",
+        "an authentication code": "인증 코드",
+        "by default.": "를 요청할 거예요",
+
+        "Having problems?": "문제가 있나요?",
+        "Use your passkey": "패스키 사용하기",
+        "Authenticate with GitHub Mobile": "GitHub Mobile로 인증하기",
+        "Use a recovery code or begin 2FA account recovery": "복구 코드를 사용하거나 2단계 인증 계정 복구를 시작해 주세요",
+
 
         // https://github.com/sessions/two-factor/mobile
-            "We sent you a sign-in request on your GitHub Mobile app. Approve the request to verify your identity.": "我们向您的 GitHub Mobile 应用发送了一个登录请求。批准验证您的身份的请求。",
-            "We sent you a sign-in request on your GitHub Mobile app. Enter the digits shown below to verify your identity.": "我们向您的 GitHub Mobile 应用发送了一个登录请求。输入下面显示的数字以验证您的身份。",
-            "We could not verify your identity": "我们无法核实您的身份",
-            "Retry": "请重试",
-
-            "Unable to verify with GitHub Mobile?": "无法使用 GitHub Mobile 进行验证？",
-                "Enter two-factor authentication code": "输入双因素身份验证码",
-
-            // 验证状态提醒
-            "Sign-in request timed out.": "登录请求超时。",
-
-        // https://github.com/sessions/two-factor/webauthn
-            "Passkey": "通行密钥",
-            "When you are ready, authenticate using the button below.": "准备好后，请使用下面的按钮进行身份验证。",
-            "Use passkey": "使用通行密钥",
-
-            "Authentication failed.": "认证失败。",
-            "Retry passkey": "重试通行密钥",
-
-            "Unable to verify with your passkey?": "无法验证您的通行密钥？",
-
-        // 双因素身份验证恢复 https://github.com/sessions/two-factor/recovery
-            "Two-factor recovery": "双因素身份验证恢复",
-            "Recovery code": "恢复码",
-
-            "If you are unable to access your mobile device, enter one of your recovery codes to verify your identity.": "如果您无法访问您的移动设备，请输入您的一个恢复码以验证您的身份。",
-
-            "Don't have a recovery code?": "没有恢复码？",
-            "Where to find recovery codes": "哪里可以找到恢复码",
-
-            "Locked out?": "被锁在外面了吗？",
-            "Try recovering your account, or unlink your account email address(es)": "请尝试恢复您的账户，或取消关联您的账户电子邮件地址。",
-
-            // 恢复账户对话框
-            "Recovering your account": "恢复您的账户",
-            "If you can’t access a verified device or recovery codes you can request a reset of your authentication settings. For security reasons": "如果您无法访问已验证的设备或恢复码，您可以请求重置您的验证设置。出于安全考虑",
-            "this can take 1-3 days": "这可能需要 1-3 天",
-            "Step 1": "第一步",
-            "Verify an email associated with this account.": "验证与该账户相关的电子邮箱。",
-            "Step 2": "第二步",
-            "Verify a device, SSH key or personal access token.": "验证一个设备、SSH 密钥或个人访问令牌。",
-            "Step 3": "第三步",
-            "GitHub support will review your request": "GitHub 支持将审查您的请求",
-            "within 1-3 days": "在 1-3 天内",
-            "I understand, get started": "我知道了，开始吧",
-
-            "Two-factor authentication failed.": "双因素身份验证失败。",
+        "We sent you a sign-in request on your GitHub Mobile app. Approve the request to verify your identity.": "GitHub 모바일 앱에서 로그인 요청을 보냈어요. 요청을 승인하여 인증하세요.",
+        "We sent you a sign-in request on your GitHub Mobile app. Enter the digits shown below to verify your identity.": "GitHub 모바일 앱에서 로그인 요청을 보냈어요. 아래에 표시된 숫자를 입력하여 인증하세요.",
+        "We could not verify your identity": "인증할 수 없어요.",
+        "Retry": "다시 시도하세요.",
+        "Unable to verify with GitHub Mobile?": "GitHub 모바일로 인증할 수 없나요?",
+        "Enter two-factor authentication code": "2단계 인증 코드를 입력하세요.",
+        "Sign-in request timed out.": "로그인 요청 시간이 초과되었어요.",
+        "Passkey": "패스키",
+        "When you are ready, authenticate using the button below.": "준비되었으면 아래 버튼을 사용하여 인증하세요.",
+        "Use passkey": "패스키 사용",
+        "Authentication failed.": "인증 실패.",
+        "Retry passkey": "패스키 다시 시도",
+        "Unable to verify with your passkey?": "패스키로 인증할 수 없나요?",
+        "Two-factor recovery": "2단계 인증 복구",
+        "Recovery code": "복구 코드",
+        "If you are unable to access your mobile device, enter one of your recovery codes to verify your identity.": "모바일 장치에 접근할 수 없는 경우, 복구 코드 중 하나를 입력하여 인증하세요.",
+        "Don't have a recovery code?": "복구 코드가 없나요?",
+        "Where to find recovery codes": "복구 코드를 어디서 찾을 수 있나요?",
+        "Locked out?": "잠금 해제되지 않았나요?",
+        "Try recovering your account, or unlink your account email address(es)": "계정을 복구하거나 계정 이메일 주소를 연결 해제하세요.",
+        "Recovering your account": "계정 복구 중",
+        "If you can’t access a verified device or recovery codes you can request a reset of your authentication settings. For security reasons": "인증된 장치나 복구 코드에 접근할 수 없는 경우, 인증 설정을 재설정하도록 요청할 수 있어요. 보안상의 이유로",
+        "this can take 1-3 days": "이 과정은 1-3일이 걸릴 수 있습니다.",
+        "Step 1": "1단계",
+        "Verify an email associated with this account.": "이 계정에 연결된 이메일을 확인하세요.",
+        "Step 2": "2단계",
+        "Verify a device, SSH key or personal access token.": "장치, SSH 키 또는 개인 액세스 토큰을 확인하세요.",
+        "Step 3": "3단계",
+        "GitHub support will review your request": "GitHub 지원팀이 요청을 검토할게요.",
+        "within 1-3 days": "1-3일 내에",
+        "I understand, get started": "알겠어요, 시작하죠.",
+        "Two-factor authentication failed.": "2단계 인증 실패.",
 
         // 账户恢复 https://github.com/sessions/recovery
-            "Account recovery": "账户恢复",
-            "The account recovery process can take 1-3 business days. We recommend one of the following if possible.": "账户恢复过程可能需要 1-3 个工作日。如果可能，我们推荐以下其中一项。",
-            "Enter a recovery code": "输入恢复码",
-                "The file containing your recovery codes may exist on your computer - check for a file named": "包含恢复码的文件可能存在于您的计算机上——请检查一个名为",
-            //使用 GitHub Mobile 应用进行身份验证
-            "It looks like you have a GitHub Mobile session that could be used for two-factor authentication. If you have access to your mobile device, you may be able to use it to login.": "看起来您有一个 GitHub Mobile 会话，可以用来进行双因素身份验证。如果您能访问您的移动设备，您也许能用它来登录。",
+        "Account recovery": "계정 복구",
+        "The account recovery process can take 1-3 business days. We recommend one of the following if possible.": "계정 복구 과정은 1-3일이 걸릴 수 있어요. 가능하다면 아래 방법 중 하나를 권장해요.",
+        "Enter a recovery code": "복구 코드 입력",
+        "The file containing your recovery codes may exist on your computer - check for a file named": "복구 코드가 포함된 파일이 컴퓨터에 있을 수 있어요. 아래 파일명을 확인해보세요.",
+        "It looks like you have a GitHub Mobile session that could be used for two-factor authentication. If you have access to your mobile device, you may be able to use it to login.": "GitHub 모바일 세션이 2단계 인증에 사용할 수 있는 것으로 보여요. 모바일 장치에 접근할 수 있다면 이를 사용하여 로그인할 수 있어요.",
+        "First we need to verify an email address": "먼저, 이메일 주소를 확인해야 해요.",
+        "by sending a one-time password to all addresses associated with this account.": "이 계정에 연결된 모든 주소로 일회용 비밀번호를 전송하여 확인할게요.",
+        "Send one-time password": "일회용 비밀번호 전송",
+        "Recovery email sent": "복구 이메일이 전송되었어요.",
+        "One-time password": "일회용 비밀번호",
+        "Verify email address": "이메일 주소 확인",
+        "We sent an email to all addresses associated with this account containing a one-time password.": "이 계정에 연결된 모든 이메일 주소로 일회용 비밀번호가 포함된 이메일을 전송했어요.",
+        "Resend email": "이메일 다시 전송",
+        "Next we need to verify an alternative factor.": "다음으로 다른 인증 요소를 확인해야 해요.",
+        "This can be a verified device, an SSH key or a personal access token associated with this account.": "이는 확인된 장치, SSH 키 또는 이 계정과 연결된 개인 액세스 토큰일 수 있어요.",
+        "Cannot verify this device": "이 장치를 확인할 수 없어요.",
+        "or verify a": "또는 확인하기",
+        "SSH key": "SSH 키",
+        "Personal access token": "개인 액세스 토큰",
+        "Unable to verify an alternative factor?": "다른 인증 요소를 확인할 수 없나요?",
+        "Contact support": "지원팀에 문의",
+        "Confirm your account recovery settings": "계정 복구 설정 확인",
+        "Are your account recovery settings up to date? If not, you risk getting locked out of your account.": "계정 복구 설정이 최신인가요? 그렇지 않으면 계정 잠금의 위험이 있어요.",
+        "Emails": "이메일",
+        "View and update your email addresses": "이메일 주소 확인 및 업데이트",
+        "Verified emails": "검증된 이메일",
+        "Verified emails give you access to more features on GitHub.": "검증된 이메일은 GitHub의 더 많은 기능에 접근할 수 있게 해줘요.",
+        "Unverified emails": "검증되지 않은 이메일",
+        "Unverified emails cannot receive notifications or be used to reset your password.": "검증되지 않은 이메일은 알림을 받을 수 없으며 비밀번호 재설정에 사용할 수 없어요.",
+        "Password Alternatives": "비밀번호 대체 방법",
+        "Passkeys": "패스키",
+        "Passkeys are webauthn credentials that validate your identity using touch, facial recognition, a device password, or a PIN. They can be used as a password replacement or as a 2FA method.": "패스키는 터치, 얼굴 인식, 장치 비밀번호 또는 PIN을 사용하여 신원을 확인하는 WebAuthn 자격 증명이에요. 이들은 비밀번호 대체 또는 2단계 인증 방법으로 사용될 수 있어요.",
+        "This browser or device is reporting partial passkey support, but you may be able to use a passkey from a nearby device.": "이 브라우저 또는 장치는 일부 패스키 지원을 보고하고 있지만, 근처 장치에서 패스키를 사용할 수 있을 수도 있어요.",
+        "Two-factor methods": "2단계 인증 방법",
+        "Your preferred 2FA method is": "선호하는 2FA 방법은",
+        "Configured": "구성됨",
+        "Not configured": "구성되지 않음",
+        "Authenticator app": "인증기 앱",
+        "Use an authentication app or browser extension to get two-factor authentication codes when prompted.": "인증 앱 또는 브라우저 확장을 사용하여 2단계 인증 코드를 받을게요.",
+        "SMS/Text message": "SMS/문자 메시지",
+        "Security keys": "보안 키",
+        "Security keys are hardware devices that can be used as your second factor of authentication.": "보안 키는 2단계 인증에 사용할 수 있는 하드웨어 장치예요.",
+        "GitHub Mobile": "GitHub 모바일",
+        "GitHub Mobile can be used for two-factor authentication by installing the GitHub Mobile app and signing in to your account.": "GitHub 모바일 앱을 설치하고 계정에 로그인하여 GitHub 모바일을 2단계 인증에 사용할 수 있어요.",
+        "No devices": "장치 없음",
+        "SMS number": "SMS 번호",
+        "Recovery options": "복구 옵션",
+        "Recovery codes": "복구 코드",
+        "Recovery codes can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes.": "복구 코드는 장치에 접근할 수 없고 2단계 인증 코드를 받을 수 없는 경우 계정에 접근하는 데 사용될 수 있어요.",
+        "Viewed": "보기 완료",
+        "Make changes": "변경하기",
+        "Confirm": "확인",
+        "Remind me later": "나중에 알림",
+        "Verify a personal access token": "개인 액세스 토큰 확인",
+        "you've used in the past to verify your account. The token must have": "과거에 계정 확인을 위해 사용한 토큰이에요. 토큰은",
+        "scope.": "범위가 필요해요.",
+        "Verify and submit for review": "검증 후 제출",
+        "Unable to verify personal access token": "개인 액세스 토큰을 확인할 수 없어요.",
+        "Configure passwordless authentication": "무비밀번호 인증 구성",
+        "Add a passkey": "패스키 추가",
+        "Your device supports passkeys, a password replacement that validates your identity using touch, facial recognition, a device password, or a PIN.": "사용자님의 장치는 터치, 얼굴 인식, 장치 비밀번호 또는 PIN을 사용하여 신원을 확인하는 패스키를 지원해요.",
+        "Passkeys can be used for sign-in as a simple and secure alternative to your password and two-factor credentials.": "패스키는 로그인 시 비밀번호와 2단계 인증 자격 증명의 간단하고 안전한 대체 수단으로 사용될 수 있어요.",
+        "Add passkey": "패스키 추가",
+        "Passkey registration failed.": "패스키 등록 실패.",
+        "Ask me later": "나중에 물어보기",
+        "Not interested?": "관심 없나요?",
+        "Don't ask again for this browser": "이 브라우저에서 다시 묻지 않음",
+        "Successfully added a passkey": "패스키 추가 성공",
+        "From now on, you can use this passkey to sign-in to GitHub.": "이제부터 이 패스키를 사용하여 GitHub에 로그인할 수 있어요.",
+        "Passkey nickname": "패스키 닉네임",
+        "Continue...": "계속...",
 
-            "First we need to verify an email address": "首先，我们需要验证一个电子邮箱地址",
-            "by sending a one-time password to all addresses associated with this account.": "用于通过向该账户关联的所有地址发送一次性密码。",
-            "Send one-time password": "发送一次性密码",
+        "Reset your password": "비밀번호 재설정",
+        "Enter your user account's verified email address and we will send you a password reset link.": "사용자님의 계정의 검증된 이메일 주소를 입력하면 비밀번호 재설정 링크를 보내드릴게요.",
+        "Enter your email address": "이메일 주소 입력",
+        "Verify your account": "계정 확인",
+        "Send password reset email": "비밀번호 재설정 이메일 전송",
+        "Check your email for a link to reset your password. If it doesn’t appear within a few minutes, check your spam folder.": "비밀번호 재설정 링크가 포함된 이메일을 확인해보세요. 몇 분 내에 이메일이 오지 않으면 스팸 폴더도 확인해보세요.",
+        "Return to Sign in": "로그인으로 돌아가기",
+        
+        "Confirm access": "접근 확인",
+        "Signed in as": "로그인 상태",
+        "Authentication code": "인증 코드",
+        "More information about sudo mode authentication": "sudo 모드 인증에 대한 추가 정보",
+        "Open your two-factor authenticator (TOTP) app or browser extension to view your authentication code.": "인증 코드를 확인하려면 두 단계 인증(TOTP) 앱이나 브라우저 확장 프로그램을 열어주세요.",
+        "Verify": "확인",
+        "Verifying…": "확인 중…",
+        "Your authentication code has been sent.": "인증 코드가 전송됐어요.",
+        
+        "Having problems?": "문제가 있나요?",
+        "Use GitHub Mobile": "GitHub 모바일 사용",
+        "Use your authenticator app": "인증기 앱 사용",
+        "Send a code via SMS": "SMS로 코드 전송",
+        "Resend SMS": "SMS 재전송",
+        "Use your password": "비밀번호 사용",
+        
+        "GitHub Mobile": "GitHub 모바일",
+        "Creating a verification request for your GitHub Mobile app.": "GitHub 모바일 앱에 대한 인증 요청을 만들고 있어요.",
+        "When your phone is ready, click the button below.": "휴대폰이 준비되면 아래 버튼을 클릭하세요.",
+        "We sent you a verification request on your GitHub Mobile app. Enter the digits shown below to enter sudo mode.": "GitHub 모바일 앱으로 인증 요청을 보냈어요. 아래 숫자를 입력해서 sudo 모드로 들어가세요.",
+        "We could not verify your identity": "사용자님의 신원을 확인할 수 없어요.",
+        "Retry": "다시 시도",
+        
+        "We just sent you a message via SMS with your authentication code. Enter the code in the form above to verify your identity.": "방금 SMS로 인증 코드가 포함된 메시지를 보냈어요. 위 양식에 코드를 입력해서 인증하세요.",
+        
+        "Confirm": "확인",
+        
+        "You are entering": "접속 중이에요",
+        "sudo mode": "sudo 모드",
+        ". After you've performed a sudo-protected action, you'll only be asked to re-authenticate again after a few hours of inactivity.": ". sudo로 보호된 작업을 수행한 후에는 몇 시간 동안 비활동 상태일 때만 다시 인증을 요구해요.",
+        
+        "Enable two-factor authentication (2FA)": "2단계 인증(2FA) 활성화",
+        "Loading…": "로딩 중…",
+        
+        "Setup authenticator app": "인증기 앱 설정",
+        "Authenticator apps and browser extensions like": "인증기 앱과 브라우저 확장 프로그램, 예를 들어",
+        ", etc. generate one-time passwords that are used as a second factor to verify your identity when prompted during sign-in.": "등은 로그인 중에 요청 시 신원을 확인하는 두 번째 인증 요소로 사용되는 일회용 비밀번호를 생성해요.",
+        
+        "Scan the QR code": "QR 코드 스캔",
+        "Re-scan the QR code": "QR 코드 다시 스캔",
+        "Use an authenticator app or browser extension to scan.": "인증기 앱이나 브라우저 확장 프로그램을 사용해서 스캔하세요.",
+        "Learn more about enabling 2FA": "2FA 활성화에 대해 더 알아보기",
+        
+        "Unable to scan? You can use the": "스캔할 수 없나요? 다음을 사용할 수 있어요",
+        "setup key": "설정 키",
+        "to manually configure your authenticator app.": "인증기 앱을 수동으로 구성할 수 있어요.",
+        "Your two-factor secret": "2단계 인증 비밀 키",
+        
+        "Verify the code from the app": "앱에서 받은 코드를 확인하세요",
+        "Two-factor code verification failed. Please try again.": "2단계 인증 코드 확인에 실패했어요. 다시 시도해 주세요.",
+        
+        "Setup SMS authentication": "SMS 인증 설정",
+        "Get authentication codes by SMS on your mobile phone when signing into GitHub. Make sure that": "GitHub에 로그인할 때 모바일로 SMS를 통해 인증 코드를 받아요. 다음을 확인해보세요",
+        "your country is supported": "사용자님의 국가가 지원돼요",
+        "for SMS delivery.": "SMS 전송을 위해서.",
+        "Country code": "국가 코드",
+        "Your phone number": "전화번호",
+        "Send authentication code": "인증 코드 전송",
+        "Sent. It may take a minute for the SMS to arrive.": "전송됐어요. SMS가 도착하는 데 1분 정도 걸릴 수 있어요.",
+        "Verify the code sent to your phone": "사용자님의 전화번호로 전송된 인증 코드를 확인하세요",
+        
+        "Continue": "계속",
+        
+        "Alternative 2FA option:": "대체 2FA 옵션:",
+        "SMS authentication": "SMS 인증",
+        "Get one-time codes sent to your phone via SMS to complete authentication requests.": "SMS로 모바일로 일회용 코드를 받아 인증 요청을 완료해요.",
+        "Authenticator app": "인증기 앱",
+        "Use an authentication app or browser extension to generate one-time codes.": "인증기 앱이나 브라우저 확장 프로그램을 사용해 일회용 코드를 생성해요.",
+        "Select": "선택",
 
-            // 验证提醒
-            "Recovery email sent": "已发送恢复电子邮件",
+        // 第2步
+        "Download your recovery codes": "복구 코드를 다운로드해요",
+        "You can use recovery codes as a second factor to authenticate in case you lose access to your device. We recommend saving them with a secure password manager such as": "기기를 잃어버렸을 때 복구 코드를 두 번째 인증 요소로 사용할 수 있어요. 안전한 비밀번호 관리자인 다음과 같은 곳에 저장하는 걸 추천해요",
+        "Keep your recovery codes in a safe spot": "복구 코드를 안전한 곳에 보관하세요",
+        "If you lose your device and don't have the recovery codes, you will lose access to your account.": "기기를 잃어버리고 복구 코드가 없으면 계정에 접근할 수 없어요.",
+        "Download": "다운로드",
+        "I have saved my recovery codes": "복구 코드를 저장했어요",
 
-            "One-time password": "一次性密码",
-            "Verify email address": "验证电子邮箱地址",
-            "We sent an email to all addresses associated with this account containing a one-time password.": "我们向与该账户相关的所有邮箱地址发送了一封电子邮件，其中包含一个一次性的密码。",
-            "Resend email": "重新发送邮件",
+        // 第3步
+        "Two-factor authentication (2FA) is now enabled for your GitHub account": "이제 GitHub 계정에 2단계 인증 (2FA)이 활성화되었어요",
+        "You have enabled two-factor authentication using SMS.": "SMS를 사용해 2단계 인증을 활성화했어요",
+        "You have enabled two-factor authentication using your authenticator app.": "인증기 앱을 사용해 2단계 인증을 활성화했어요",
 
-            "Next we need to verify an alternative factor.": "接下来，我们需要验证另一个因素。",
-            "This can be a verified device, an SSH key or a personal access token associated with this account.": "这可以是一个经过验证的设备，一个SSH 密钥或一个与此账户相关的个人访问令牌。",
-            "Cannot verify this device": "无法验证该设备",
-            "or verify a": "或者验证",
-            "SSH key": "SSH 密钥",
-            "Personal access token": "个人访问令牌",
+        "Don't get locked out, configure additional authentication methods": "잠기지 않게 추가 인증 방법을 설정하세요",
+        "Configuring additional authentication methods will help you gain access to your account in case you lose your device and don't have your recovery codes.": "추가 인증 방법을 설정하면 기기를 잃어버리고 복구 코드가 없을 때 계정에 접근하는 데 도움이 돼요.",
 
-            "Unable to verify an alternative factor?": "无法验证另一个因素？",
-            "Contact support": "联系支持部门",
+        "Security key": "보안 키",
+        "Use your device with Touch ID, Windows Hello, etc. or a physical security key (e.g. YubiKey)": "Touch ID, Windows Hello 등과 같은 기능을 사용하거나 물리적 보안 키 (예를 들어 YubiKey)를 사용하세요.",
+        "Manage": "관리",
+        "Register new security key": "새 보안 키 등록",
+        "Enter a nickname for this security key": "이 보안 키의 별명을 입력하세요",
+        "Waiting for input from browser interaction...": "브라우저에서 입력을 기다리는 중이에요...",
+        "Security key registration failed.": "보안 키 등록에 실패했어요.",
+        "Try again": "다시 시도",
 
-            // "Sign in to": "登录",
-            // "To continue to": "继续登录",
-
-            // 定时确认您的账户恢复设置
-            "Confirm your account recovery settings": "确认您的账户恢复设置",
-            "Are your account recovery settings up to date? If not, you risk getting locked out of your account.": "您的账户恢复设置是否最新？如果没有，您就有被锁定账户的风险。",
-            "Emails": "电子邮箱",
-                "View and update your email addresses": "查看和更新您的电子邮箱地址",
-
-                "Verified emails": "经过验证的电子邮箱",
-                    // [/(\d+) verified emails?/, "$1 个经过验证的邮箱"],
-                "Verified emails give you access to more features on GitHub.": "经过验证的电子邮箱让您可以使用 GitHub 上的更多功能。",
-                "Unverified emails": "未经验证的电子邮箱",
-                "Unverified emails cannot receive notifications or be used to reset your password.": "未经验证的电子邮箱无法接收通知或用于重置密码。",
-            "Password Alternatives": "密码替代方案",
-                "Passkeys": "通行密钥",
-                // [/(\d+) keys?/, "$1 个通行密钥"],
-                "Passkeys are webauthn credentials that validate your identity using touch, facial recognition, a device password, or a PIN. They can be used as a password replacement or as a 2FA method.": "通行密钥是一种 WebAuthn 凭证，可以使用触摸、面部识别、设备密码或 PIN 码验证您的身份。它们可以作为密码替代品或作为双因素身份验证（2FA）方法使用。",
-                    "This browser or device is reporting partial passkey support, but you may be able to use a passkey from a nearby device.": "此浏览器或设备报告支持部分通行密钥，但您也许可以尝试使用附近设备的通行密钥。",
-            "Two-factor methods": "双因素身份验证方式",
-                "Your preferred 2FA method is": "您首选的 2FA 方式是",
-                "Configured": "已配置",
-                "Not configured": "未配置",
-
-                "Authenticator app": "身份验证器应用",
-                    "Use an authentication app or browser extension to get two-factor authentication codes when prompted.": "在出现提示时，使用身份验证应用或浏览器扩展获取双因素身份验证码。",
-                "SMS/Text message": "短信/文字信息",
-                    // [/You will receive one-time codes at this phone number:/, "您将通过以下电话号码收到一次性验证码："], // 已设置短信/文字信息
-                "Security keys": "安全密钥",
-                    "Security keys are hardware devices that can be used as your second factor of authentication.": "安全密钥是一种硬件设备，可以作为您的第二验证因素。",
-                "GitHub Mobile": "GitHub Mobile",
-                    "GitHub Mobile can be used for two-factor authentication by installing the GitHub Mobile app and signing in to your account.": "通过安装 GitHub Mobile 应用并登录账户，可以使用 GitHub Mobile 来进行双因素身份验证。",
-                    "No devices": "没有设备",
-                "SMS number": "手机号码",
-            "Recovery options": "恢复选项",
-                "Recovery codes": "恢复码",
-                    "Recovery codes can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes.": "恢复码可用于在您无法访问设备且无法接收双因素身份验证码的情况下访问您的账户。",
-                    "Viewed": "已查看",
-
-            "Make changes": "进行更改",
-            "Confirm": "确认",
-            "Remind me later": "稍后提醒我",
-
-        // 验证个人访问令牌 https://github.com/sessions/recovery/token
-            "Verify a personal access token": "验证个人访问令牌",
-            "you've used in the past to verify your account. The token must have": "您过去曾用于验证您的账户。令牌必须具有",
-            "scope.": "范围。",
-            "Verify and submit for review": "验证并提交审核",
-
-            // 验证提醒
-            "Unable to verify personal access token": "无法验证个人访问令牌",
-
-        // 配置无密码身份验证 https://github.com/sessions/trusted-device?return_to=%2Fsettings%2Fsecurity
-            "Configure passwordless authentication": "配置无密码身份验证",
-            "Add a passkey": "添加通行密钥",
-            "Your device supports passkeys, a password replacement that validates your identity using touch, facial recognition, a device password, or a PIN.": "您的设备支持密码替代方案，通过触摸、面部识别、设备密码或者 PIN 码来验证您的身份。",
-
-            "Passkeys can be used for sign-in as a simple and secure alternative to your password and two-factor credentials.": "通行密钥可以作为一种简单且安全的替代方式，用于登录而不需要密码和双因素身份验证。",
-            "Add passkey": "添加通行密钥",
-            "Passkey registration failed.": "密钥注册失败。",
-            "Ask me later": "稍后再问",
-            "Not interested?": "没兴趣？",
-            "Don't ask again for this browser": "不要再询问此浏览器",
-
-            "Successfully added a passkey": "已成功添加通行密钥",
-            "From now on, you can use this passkey to sign-in to GitHub.": "从现在起，您可以使用此通行密钥登录 GitHub。",
-            "Passkey nickname": "通行密钥昵称",
-            "Continue...": "继续中...",
-
-        // 重置密码 https://github.com/password_reset
-            "Reset your password": "重置您的密码",
-            "Enter your user account's verified email address and we will send you a password reset link.": "输入您的用户账户经过验证的电子邮箱，我们将向您发送一份带密码重置链接的邮件。",
-            "Enter your email address": "输入您的邮箱地址",
-            "Verify your account": "验证您的账户",
-            "Send password reset email": "发送密码重置邮件",
-            "Check your email for a link to reset your password. If it doesn’t appear within a few minutes, check your spam folder.": "检查您的电子邮件以获取重置密码的链接。如果它在几分钟内没有出现，请检查您的垃圾邮件文件夹。",
-            "Return to Sign in": "返回登录",
-
-        // ...I18N["ko-KR"]["confirm-access"]["static"], // [留待后期合并] 授权访问 sudo 模式身份验证
-            "Confirm access": "접근 확인",
-            "Signed in as": "登录身份为",
-            "Authentication code": "验证码",
-                "More information about sudo mode authentication": "更多关于 sudo 模式身份验证的信息",
-            "Open your two-factor authenticator (TOTP) app or browser extension to view your authentication code.": "打开您的双因素身份验证器 (TOTP) 应用或浏览器扩展以查看您的身份验证码。",
-            "Verify": "验证",
-            "Verify": "验证",
-            "Verifying…": "验证中…",
-            "Your authentication code has been sent.": "您的验证码已发送。",
-
-            "Having problems?": "有问题吗？",
-            "Use GitHub Mobile": "使用 GitHub Mobile",
-            "Use your authenticator app": "使用您的身份验证器应用",
-            "Send a code via SMS": "通过短信发送验证码",
-            "Resend SMS": "重新发送短信",
-            "Use your password": "使用您的密码",
-
-            "GitHub Mobile": "GitHub Mobile",
-            "Creating a verification request for your GitHub Mobile app.": "为您的 GitHub Mobile 应用创建验证请求。",
-            "When your phone is ready, click the button below.": "当您的手机准备就绪时，请点击下面的按钮。",
-            "We sent you a verification request on your GitHub Mobile app. Enter the digits shown below to enter sudo mode.": "我们向您的 GitHub Mobile 应用发送了一个验证请求。输入下面显示的数字以进入 sudo 模式。",
-            "We could not verify your identity": "我们无法核实您的身份",
-            "Retry": "请重试",
-
-            "We just sent you a message via SMS with your authentication code. Enter the code in the form above to verify your identity.": "我们刚刚通过短信向您发送了一条消息，其中包含您的验证码。在上面的表格中输入验证码以验证您的身份。",
-
-            // "Password": "비밀번호",
-            // "Forgot password?": "忘记密码？",
-            "Confirm": "确认",
-
-            "You are entering": "您正在进入",
-            "sudo mode": "Sudo 模式",
-            ". After you've performed a sudo-protected action, you'll only be asked to re-authenticate again after a few hours of inactivity.": "。在您执行了受 sudo 保护的操作后，在几个小时不活动后才会要求您重新进行身份验证。",
-
-        // 首次设置双因素身份验证 https://github.com/settings/two_factor_authentication/setup/intro
-
-            "Enable two-factor authentication (2FA)": "启用双因素身份验证 (2FA)",
-            "Loading…": "载入中…",
-
-            // 第1步
-                "Setup authenticator app": "设置身份验证器应用",
-                "Authenticator apps and browser extensions like": "身份验证器应用和浏览器扩展，例如",
-                ", etc. generate one-time passwords that are used as a second factor to verify your identity when prompted during sign-in.": "等生成一次性密码，在登录过程中出现提示时用作第二验证因素来验证您的身份。",
-
-                "Scan the QR code": "扫描二维码",
-                "Re-scan the QR code": "重新扫描二维码",
-                "Use an authenticator app or browser extension to scan.": "请使用身份验证器应用或浏览器扩展进行扫描。",
-                "Learn more about enabling 2FA": "了解更多关于启用 2FA 的信息",
-
-                "Unable to scan? You can use the": "无法扫描？您可以使用",
-                "setup key": "设置密钥",
-                "to manually configure your authenticator app.": "手动配置您的身份验证器应用。",
-                    "Your two-factor secret": "您的双因素密钥",
-
-                "Verify the code from the app": "验证来自身份验证器应用的验证码",
-                "Two-factor code verification failed. Please try again.": "双因素身份验证码验证失败。请重试。",
-
-                "Setup SMS authentication": "设置短信验证",
-                    "Get authentication codes by SMS on your mobile phone when signing into GitHub. Make sure that": "登录 GitHub 时通过手机短信获取验证码。确保",
-                    "your country is supported": "支持您的国家/地区",
-                    "for SMS delivery.": "用于短信发送。",
-                    "Country code": "国家代码",
-                    "Your phone number": "您的手机号码",
-                    "Send authentication code": "发送验证码",
-                    "Sent. It may take a minute for the SMS to arrive.": "已发送。短信可能需要一分钟时间才能送达。",
-                    "Verify the code sent to your phone": "验证发送到您手机的验证码",
-
-                "Continue": "继续",
-
-                "Alternative 2FA option:": "备选 2FA 选项:",
-                "SMS authentication": "短信验证",
-                    "Get one-time codes sent to your phone via SMS to complete authentication requests.": "通过短信向您的手机发送一次性代码，以完成认证请求。",
-                "Authenticator app": "身份验证器应用",
-                    "Use an authentication app or browser extension to generate one-time codes.": "使用身份验证应用或浏览器扩展生成一次性代码。",
-                "Select": "选择",
-
-            // 第2步
-                "Download your recovery codes": "下载您的恢复码",
-                "You can use recovery codes as a second factor to authenticate in case you lose access to your device. We recommend saving them with a secure password manager such as": "您可以使用恢复码作为第二验证因素来进行身份验证，以防您无法访问您的设备。我们建议使用安全的密码管理器保存它们，例如",
-                "Keep your recovery codes in a safe spot": "将您的恢复码保存在安全的地方",
-                "If you lose your device and don't have the recovery codes, you will lose access to your account.": "如果您丢失了您的设备，并且没有恢复码，您将无法访问您的账户。",
-
-                "Download": "下载",
-                "I have saved my recovery codes": "我已经保存了我的恢复码",
-
-            // 第3步
-                "Two-factor authentication (2FA) is now enabled for your GitHub account": "现已为您的 GitHub 账户启用双因素身份验证 (2FA)",
-                "You have enabled two-factor authentication using SMS.": "您已使用 SMS 启用双因素身份验证",
-                "You have enabled two-factor authentication using your authenticator app.": "您已使用身份验证应用启用双因素身份验证",
-
-                "Don't get locked out, configure additional authentication methods": "别被锁在外面，配置额外的身份验证方法",
-                "Configuring additional authentication methods will help you gain access to your account in case you lose your device and don't have your recovery codes.": "配置额外的认证方法将帮助您在丢失设备和没有恢复码的情况下获得对账户的访问。",
-
-                "Security key": "安全密钥",
-                    "Use your device with Touch ID, Windows Hello, etc. or a physical security key (e.g. YubiKey)": "使用您的设备配合 Touch ID、Windows Hello 等功能或物理安全密钥（例如YubiKey）。",
-                    "Manage": "管理",
-                    "Register new security key": "注册新安全密钥",
-                    "Enter a nickname for this security key": "输入安全密钥的昵称",
-                    "Waiting for input from browser interaction...": "等待来自浏览器交互的输入...",
-                    "Security key registration failed.": "安全密钥注册失败。",
-                    "Try again": "请重试",
-
-                "GitHub Mobile": "GitHub Mobile",
-                    "Install": "安装",
-                    "The GitHub Mobile app on your phone can be used as a 2FA method. Enable it by installing the GitHub Mobile app for": "您手机上的 GitHub Mobile 应用可用作双因素身份验证方法。通过安装 GitHub Mobile 应用（",
-                    "and signing in to your account.": "）并登录您的账户来启用它。",
-                "Done": "完成",
+        "GitHub Mobile": "GitHub 모바일",
+        "Install": "설치",
+        "The GitHub Mobile app on your phone can be used as a 2FA method. Enable it by installing the GitHub Mobile app for": "휴대폰에 GitHub Mobile 앱을 설치하면 2단계 인증 방법으로 사용할 수 있어요. 아래 링크에서 GitHub Mobile 앱을 설치하고",
+        "and signing in to your account.": "앱을 설치하고 계정에 로그인해서 활성화하세요.",
+        "Done": "완료",
 
         // 定期验证双因素身份验证（2FA）设置
-            "Verify your two-factor authentication (2FA) settings": "验证您的双因素身份验证（2FA）设置",
-            "This is a one-time verification of your recent configured 2FA credentials.": "这是对您最近配置的双因素身份验证凭据进行一次性验证。",
-            "Make sure that 2FA is correctly configured, and avoid a potential account lockout disaster. If you're having trouble verifying, you'll be able to reconfigure 2FA for your account.": "确保正确配置双因素身份验证，避免可能的账户锁定灾难。如果您在验证时遇到问题，可以重新为您的账户配置双因素身份验证。",
-            "Verify 2FA now": "现在验证双因素身份验证",
-            "You can choose to": "您可以选择",
-            "skip 2FA verification": "跳过双因素身份验证",
-            "at this moment, we'll remind you again tomorrow.": "此刻，我们会在明天再次提醒您。",
+        "Verify your two-factor authentication (2FA) settings": "2단계 인증(2FA) 설정을 확인해요",
+        "This is a one-time verification of your recent configured 2FA credentials.": "최근 설정한 2단계 인증 정보를 한 번만 확인해요.",
+        "Make sure that 2FA is correctly configured, and avoid a potential account lockout disaster. If you're having trouble verifying, you'll be able to reconfigure 2FA for your account.": "2단계 인증이 제대로 설정되었는지 확인하고 계정 잠금 사태를 예방하세요. 만약 문제가 발생하면, 계정의 2단계 인증을 다시 설정할 수 있어요.",
+        "Verify 2FA now": "지금 2단계 인증 확인하기",
+        "You can choose to": "다음 옵션 중 선택할 수 있어요",
+        "skip 2FA verification": "2단계 인증 확인을 건너뛰기",
+        "at this moment, we'll remind you again tomorrow.": "지금은 건너뛰고, 내일 다시 알림을 드릴게요.",
 
         // https://github.com/settings/two_factor_checkup?
-            "Open your two-factor authenticator (TOTP) app or browser extension to view your authentication code.": "打开您的双因素身份验证器（TOTP）应用或浏览器扩展，以查看您的身份验证码。",
-            "Verify your 2FA setup tomorrow": "明天验证您的双因素身份验证设置",
-            "Reconfigure 2FA on this account": "重新配置双因素身份验证",
+        "Open your two-factor authenticator (TOTP) app or browser extension to view your authentication code.": "2단계 인증기 (TOTP) 앱이나 브라우저 확장 프로그램을 열어 인증 코드를 확인하세요.",
+        "Verify your 2FA setup tomorrow": "내일 2단계 인증 설정 확인하기",
+        "Reconfigure 2FA on this account": "이 계정의 2단계 인증을 다시 설정하기",
 
         // https://github.com/settings/two_factor_checkup
-            "2FA verification successful!": "双因素身份验证成功！",
-            "Keep your recovery codes safe and easy to access": "请将您的恢复码保管好以便于访问。",
-            "As a reminder, recovery codes can be used as a second factor to authenticate in case you lose your device. If you don't have your recovery codes, you may lose access to your account.": "作为提醒，恢复码可用作第二验证因素，以防您丢失设备。如果您没有恢复码，则可能无法访问您的账户。",
-            "Not sure where you saved them?": "您不确定把它们保存在哪里了吗？",
+        "2FA verification successful!": "2단계 인증 성공이에요!",
+        "Keep your recovery codes safe and easy to access": "복구 코드를 안전하게 보관하고 쉽게 접근할 수 있도록 해요.",
+        "As a reminder, recovery codes can be used as a second factor to authenticate in case you lose your device. If you don't have your recovery codes, you may lose access to your account.": "다시 한 번 말씀드리면, 복구 코드는 기기를 잃어버렸을 때 두 번째 인증 요소로 사용할 수 있어요. 복구 코드가 없다면 계정에 접근할 수 없을 수 있어요.",
+        "Not sure where you saved them?": "복구 코드를 어디에 저장했는지 잘 모르겠나요?",
 
         // https://github.com/settings/security
-            "Two-factor authentication (2FA)": "双因素身份验证 (2FA)",
-            "is required for your GitHub account": "您的 GitHub 账户需要",
+        "Two-factor authentication (2FA)": "2단계 인증 (2FA)",
+        "is required for your GitHub account": "GitHub 계정에는 필요해요",
 
-            "This will only take a minute.": "只需一分钟时间。",
-            "Enable 2FA now. You'll be able to continue on with your work right after.": "立即启用双因素身份验证。之后您将能够继续您的工作。",
+        "This will only take a minute.": "단 1분만 투자하면 돼요.",
+        "Enable 2FA now. You'll be able to continue on with your work right after.": "지금 2단계 인증을 활성화하세요. 곧바로 작업을 계속할 수 있어요.",
 
-            "Two-factor authentication adds an": "双因素身份验证增加了一个",
-            "additional layer of account security": "额外的账户安全保护",
-            ". It is a proven method of keeping you safe from hackers and account takeover, even if your password is stolen or compromised.": "。这是一种行之有效的方法，即使您的密码被盗或泄露，也能保证您不被黑客和账户接管。",
-            "Enable 2FA now": "立即启用双因素身份验证",
+        "Two-factor authentication adds an": "2단계 인증은",
+        "additional layer of account security": "계정을 지키는 경호원을 만들어준답니다",
+        ". It is a proven method of keeping you safe from hackers and account takeover, even if your password is stolen or compromised.": ". 이건 해커나 계정 탈취로부터 보호하는 검증된 방법이에요, 비밀번호가 도난당하거나 유출되어도 안전하게 보호할 수 있어요.",
+        "Enable 2FA now": "지금 2단계 인증 활성화",
 
-            "You have": "您还有",
-            "left to enable 2FA. Take action now to avoid additional interruptions.": "时间启用双因素身份验证。请立即采取行动以避免额外的干扰。",
-            "Remind me tomorrow": "明天提醒我",
+        "You have": "남은 시간은",
+        "left to enable 2FA. Take action now to avoid additional interruptions.": "2단계 인증을 활성화할 시간이 남았어요. 추가적인 방해 없이 바로 시작하세요.",
+        "Remind me tomorrow": "내일 알림을 주세요",
 
         // 登出页面 https://github.com/logout
-            "Are you sure you want to sign out?": "您确定要登出？",
-            "Sign out": "登出",
+        "Are you sure you want to sign out?": "정말 로그아웃 하시겠어요?",
+        "Sign out": "로그아웃",
 
-            "Select account to sign out": "选择要登出的账户",
-            "Sign out from all accounts": "登出所有账户",
-
-        // 接受邀请 /<user-name>/<repo-name>/invitations
-        // 跳转至 协作者 / 协作者和团队 - 访问管理页面 /<user-name>/<repo-name>/settings/access 验证
-            // 顶部提醒
-                "Repository invitation URLs work for invited users only. You may only share this URL with an invited user.": "仓库邀请 URL 仅适用于受邀请的用户。您只能与受邀请的用户共享此 URL。",
-
-        // 切换账户 https://github.com/switch_account
-            "Signed out": "已注销",
-            "Add a different account": "添加其他账户",
+        "Select account to sign out": "로그아웃할 계정을 선택하세요",
+        "Sign out from all accounts": "모든 계정에서 로그아웃",
 
     },
     "regexp": [ // 正则翻译
-        [/(\d+) verified emails?/, "$1 个经过验证的邮箱"],
-        [/(\d+) unverified emails?/, "$1 个未经验证的邮箱"],
-        [/(\d+) keys?/, "$1 个通行密钥"],
-        [/(\d+) devices?/, "$1 设备"],
-        [/You will receive one-time codes at this phone number:/, "您将通过以下电话号码收到一次性验证码："], // 已设置短信/文字信息
-        [/Continue as (.*)/, "以 $1 身份继续使用"],
-        [/Authorize/, "授权"],
+        [/(\d+) verified emails?/, "$1은 인증된 이메일 주소예요"],
+        [/(\d+) unverified emails?/, "$1은 인증되지 않은 이메일 주소예요"],
+        [/(\d+) keys?/, "$1의 액세스 키"],
+        [/(\d+) devices?/, "$1의 기기"],
+        [/You will receive one-time codes at this phone number:/, "다음 전화번호로 일회용 인증 코드를 받게 돼요:"], // 已设置短信/文字信息
+        [/Continue as (.*)/, "$1로 계속"],
+        [/Authorize/, "인증하기"],
 
         // 设备验证 https://github.com/sessions/verified-device
-        [/We just sent your authentication code via email to (.*)\. The code will expire at (.*)\./, "我们刚刚通过电子邮件将您的验证码发送给 $1。验证码将于 $2 过期。"],
+        [/We just sent your authentication code via email to (.*)\. The code will expire at (.*)\./, "방금 인증 코드를 $1으로 보냈어요. 이 코드는 $2에 만료돼요."],
     ],
 };
 I18N["ko-KR"].login = I18N["ko-KR"]["session-authentication"];
@@ -23496,10 +23461,10 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
                         "Two selections are required to continue.": "必须选两项。",
                 "Question 2 of 2": "问题 2/2",
                     "Which topics are of interest to you? Select all that apply.": "您对哪些主题感兴趣？请选择所有适用选项。",
-                        "GitHub features and products": "GitHub 功能和产品",
+                        "GitHub features 와 products": "GitHub 功能和产品",
                         "Building a professional identity on GitHub": "在 GitHub 上打造专业身份",
                         "Understanding emerging technologies in a particular field of interest (web development, gaming, design, data, engineering, robotics, etc.)": "了解特定兴趣领域（网络开发、游戏、设计、数据、工程、机器人技术等）的新兴技术",
-                        "Finding people, projects, and communities to connect with": "寻找可以联系的人、项目和社区",
+                        "Finding people, projects, 와 communities to connect with": "寻找可以联系的人、项目和社区",
                         "Speaking at a conference": "在会议上发言",
                         "Gaining skills to start a great career": "掌握技能，开始美好的职业生涯",
                 "Skip this question": "跳过",
@@ -23510,10 +23475,10 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
                     "to help you get started.": "帮助您开始学习。",
 
                     "Get Started with GitHub": "GitHub 入门",
-                        "With this learning path, you will learn how to make your first profile README and find other student repositories.": "通过本学习路径，您将学会如何制作第一个配置文件 README 和查找其他学生资源库。",
+                        "With this learning path, you will learn how to make your first profile README 와 find other student repositories.": "通过本学习路径，您将学会如何制作第一个配置文件 README 和查找其他学生资源库。",
                     "Recommended": "推荐",
                     "GitHub Deep Dive": "深入了解 GitHub",
-                        "Go deeper on how to use codespaces and the GitHub flow to create a web application.": "深入了解如何使用代码空间和 GitHub 流程创建网络应用程序。",
+                        "Go deeper on how to use codespaces 와 the GitHub flow to create a web application.": "深入了解如何使用代码空间和 GitHub 流程创建网络应用程序。",
                     "Continue to Dashboard": "在仪表板继续",
 
             // https://education.github.com/learner/learn
@@ -23537,14 +23502,14 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
                     "Find opportunities": "寻找机遇",
                         "Power up your skillset with real-world projects.": "通过实际项目增强您的技能。",
                     "Get connected": "获得联系",
-                        "Discover other learners and build your network.": "发现其他学习者，建立自己的网络。",
+                        "Discover other learners 와 build your network.": "发现其他学习者，建立自己的网络。",
                 // 中间
                     "Learning path": "学习途径",
                         "Intro to GitHub": "GitHub 介绍",
-                            "GitHub flow is a lightweight, branch-based workflow. In this Experience you'll learn the basics of the GitHub Flow including creating and making changes to branches within a repository, as well as creating and merging pull requests. The GitHub flow is useful for everyone, not just developers.": "GitHub 工作流是一种基于分支的轻量级工作流。在本体验中，您将学习 GitHub 工作流的基础知识，包括创建和修改版本库中的分支，以及创建和合并拉取请求。GitHub 工作流不仅对开发人员有用，对每个人都有用。",
+                            "GitHub flow is a lightweight, branch-based workflow. In this Experience you'll learn the basics of the GitHub Flow including creating 와 making changes to branches within a repository, as well as creating 와 merging pull requests. The GitHub flow is useful for everyone, not just developers.": "GitHub 工作流是一种基于分支的轻量级工作流。在本体验中，您将学习 GitHub 工作流的基础知识，包括创建和修改版本库中的分支，以及创建和合并拉取请求。GitHub 工作流不仅对开发人员有用，对每个人都有用。",
                             "Go to Intro to GitHub": "前往 GitHub 介绍",
                         "Primer: Codespaces": "入门：代码空间",
-                            "Wondering how to get started with Codespaces? This Primer makes it easy by giving you the templates, videos and step-by-step resources you need to get you started running, testing, debugging and pushing code using this instant cloud developer environment.": "想知道如何开始使用代码空间吗？本入门指南为您提供模板、视频和分步资源，让您轻松开始运行、测试、调试和推送代码。",
+                            "Wondering how to get started with Codespaces? This Primer makes it easy by giving you the templates, videos 와 step-by-step resources you need to get you started running, testing, debugging 와 pushing code using this instant cloud developer environment.": "想知道如何开始使用代码空间吗？本入门指南为您提供模板、视频和分步资源，让您轻松开始运行、测试、调试和推送代码。",
                             "Go to Primer: Codespaces": "前往入门：代码空间",
                     "Not what you were looking for? Check out our": "还没有找到您想要的？请查看我们的",
                         "other learning paths.": "其他学习路径。",
@@ -23575,7 +23540,7 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
 
             // https://education.github.com/learner/opportunities
                 "Community Exchange": "社区交流",
-                    "Community Exchange is a collection of student repositories for teaching, learning and collaborating.": "社区交流是一个用于教学、学习和合作的学生资源库。",
+                    "Community Exchange is a collection of student repositories for teaching, learning 와 collaborating.": "社区交流是一个用于教学、学习和合作的学生资源库。",
                     "Go to Community Exchange": "前往社区交流",
                 "Updates in Find Opportunities": "寻找机遇的更新内容",
 
@@ -23589,7 +23554,7 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
                 // 右侧
                     "Updates in Get Connected": "获得联系更新内容",
                     "Campus Expert": "校园专家",
-                        "Campus Experts are student leaders that strive to build diverse and inclusive technical communities.": "校园专家是学生领袖，他们努力建设多元化和包容性的技术社区。",
+                        "Campus Experts are student leaders that strive to build diverse 와 inclusive technical communities.": "校园专家是学生领袖，他们努力建设多元化和包容性的技术社区。",
 
                         "Follow your Expert": "关注专家",
                         "Follow student leaders trained by GitHub to get help with hackathons & events": "关注由 GitHub 培训的学生领袖，在黑客马拉松和活动中获得帮助",
@@ -23600,13 +23565,13 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
     },
     "regexp":[
         [/(\d+) requests?/, "$1 次"],
-        [/Hi, ([^ ]+)! You were last verified as a on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification and access to academic benefits./, (match, user, p1) => {
+        [/Hi, ([^ ]+)! You were last verified as a on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification 와 access to academic benefits./, (match, user, p1) => {
                 const dateRegExp = I18N["ko-KR"]["public"]["time-regexp"];
                 const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
                 return `您好，`+ user + `！您最近于${translatedDate}验证。您现在无需重新验证。从验证到享受学业福利之间可能会有一段等待时间。`;
             // return '您好，' + user + '！您最近于' + year + '年' + monthKey[month] + day + '日验证。您现在无需重新验证。从验证到享受学业福利之间可能会有一段等待时间。';
         }],
-        [/Hi, ([^ ]+)! You were last verified as a student on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification and access to academic benefits./, (match, user, p1)=> {
+        [/Hi, ([^ ]+)! You were last verified as a student on (.+). It is not necessary for you to reverify at this time. There may be a wait period between verification 와 access to academic benefits./, (match, user, p1)=> {
             const dateRegExp = I18N["ko-KR"]["public"]["time-regexp"];
             const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
             return `您好，`+ user + `！您最近于${translatedDate}学生验证。您现在无需重新验证。从验证到享受学业福利之间可能会有一段等待时间。`;
