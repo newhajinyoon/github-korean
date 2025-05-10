@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>확장프로그램</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        #source {
+            background-color: #979797;
+            color: #fff;
+            border: 3px solid #797979;
+        }
+
+        #source:hover {
+            background-color: #8a8a8a;
+            border-color: #5f5f5f;
+        }
+
+        #contact {
+            background-color: #6c7cf4;
+            color: #fff;
+            border: 3px solid #5865f2;
+        }
+
+        #contact:hover {
+            background-color: #5e6de0;
+            border-color: #4550e0;
+    }
+    </style>
+</head>
+<body>
+    <button id="source">소스코드 보기</button>
+    <button id="contact">문의하기</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
