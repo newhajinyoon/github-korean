@@ -7,6 +7,9 @@
       "storage",
       "notifications"
     ],
+    "action": {
+      "default_popup": "popup.html"
+    },
     "host_permissions": [
       "https://github.com/*",
       "https://skills.github.com/*",
