@@ -55,8 +55,8 @@
 
 번역 오류를 발견했거나, 더 좋은 번역을 제안하고 싶으신가요? 여러분의 참여를 기다립니다!
 
-* **🐛 이슈 등록:** 잘못된 번역이나 개선이 필요한 부분을 [이슈](https://github.com/your-username/your-repo/issues)로 알려주세요.
-* **🌿 끌어오기 요청:** 직접 번역을 수정하거나 코드를 개선하여 [끌어오기 요청](https://github.com/your-username/your-repo/pulls)을 보내주세요.
+* **🐛 이슈 등록:** 잘못된 번역이나 개선이 필요한 부분을 [이슈](https://github.com/newhajinyoon/github-korean/issues)로 알려주세요.
+* **🌿 끌어오기 요청:** 직접 번역을 수정하거나 코드를 개선하여 [끌어오기 요청](https://github.com/newhajinyoon/github-korean/pulls)을 보내주세요.
 
 <br>
 

@@ -471,7 +471,8 @@ I18N["ko-KR"]["public"] = { // 공용 영역 번역
         "Contact Support": "GitHub 지원팀에 연락하기",
         "GitHub Status": "GitHub 상태",
         // 상단 안내
-        "Please configure another 2FA method to reduce your risk of permanent account lockout. If you use SMS for 2FA, we strongly recommend against SMS as it is prone to fraud and delivery may be unreliable depending on your region.": "계정이 영구적으로 잠기는 위험을 줄이기 위해 다른 2단계 인증 방법을 설정해 주세요. 2단계 인증에 SMS를 사용하는 경우, SMS는 사기에 취약하고 지역에 따라 전달이 신뢰할 수 없으므로 SMS 사용을 강력히 권장하지 않아요.",
+        "Please configure another 2FA method to reduce your risk of permanent account lockout. If you use SMS for 2FA, we strongly recommend against SMS as it is prone to fraud and delivery may be unreliable depending on your region.": "계정이 영구적으로 잠기는 위험을 줄이기 위해 다른 2단계 인증 방법을 설정해 주세요. 2단계 인증에 SMS를 사용하는 경우, SMS는 사기에 취약하고 지역에 따라 전달이 신뢰할 수 없으므로 SMS 사용을 매우 권장하지 않아요.",
+        "View 2FA settings": "2단계 인증 설정 보기",
         "You only have a single verified email address. We recommend verifying at least one more email address to ensure you can recover your account if you lose access to your primary email.": "확인된 이메일 주소가 하나밖에 없어요. 주 이메일에 접근할 수 없을 경우 계정을 복구할 수 있도록, 최소한 하나 이상의 이메일 주소를 추가로 확인해 보세요.",
         "Email settings": "이메일 설정",
         "Your recovery codes have not been saved in the past year. Make sure you still have them stored somewhere safe by viewing and downloading them again.": "지난 1년 동안 복구 코드를 저장하지 않으셨어요. 안전한 곳에 보관되어 있는지 확인하시려면, 복구 코드를 다시 확인하고 다운로드해 보세요.",
@@ -522,6 +523,10 @@ I18N["ko-KR"]["public"] = { // 공용 영역 번역
             "Find more, search less": "더 많이 찾아보고, 덜 검색해보세요.",
         
         // 오른쪽
+        "Profile": "프로필",
+        "Accessibility": "접근성",
+        "Appearance": "모양",
+        "Copilot settings": "코파일럿 설정",
         "All features": "모든 기능",
         "GitHub Skills": "GitHub 스킬",
         "Solutions": "솔루션",
