@@ -25,149 +25,149 @@ var I18N = {};
 I18N.conf = {
 
     /**
-     * 匹配 pathname 页面的正则
+     * pathname 페이지를 매칭하는 정규 표현식
      *
-     * 注册页面 /signup
-     * 登录二步验证 /login/oauth
-     * 登录页面 /login
-     * 密码重置 /password_reset
-     * 组织页面 /orgs
-     * 探索页面 /explore
-     * 订阅页面 /notifications/subscriptions
-     * 通知页面 /notifications
-     * 关注页面 /watching
-     * 星标页面 /stars
-     * 이슈页面 /issues
-     * 拉取请求 /pulls
-     * 搜索页面 /search
-     * 趋势页面 /trending
-     * 展示页面 /showcases
-     * 导入仓库 /new/import
+     * 등록 페이지 /signup
+     * 로그인 2단계 인증 /login/oauth
+     * 로그인 페이지 /login
+     * 비밀번호 재설정 /password_reset
+     * 조직 페이지 /orgs
+     * 탐색 페이지 /explore
+     * 구독 페이지 /notifications/subscriptions
+     * 알림 페이지 /notifications
+     * 관심 페이지 /watching
+     * 스타 페이지 /stars
+     * 이슈 페이지 /issues
+     * 풀 리퀘스트 /pulls
+     * 검색 페이지 /search
+     * 트렌딩 페이지 /trending
+     * 쇼케이스 페이지 /showcases
+     * 저장소 가져오기(Import) /new/import
      * ...
      */
     rePagePath: /^\/($|home|dashboard|copilot|signup|login\/oauth|login|logout|sessions?|password_reset|orgs|explore|topics|notifications\/subscriptions|notifications|watching|stars|issues|pulls|search|trending|showcases|new\/(import|project)|new|import|settings\/(profile|admin|appearance|accessibility|notifications|billing|emails|security_analysis|security-log|security|auth|sessions|keys|ssh|gpg|organizations|enterprises|blocked_users|interaction_limits|code_review_limits|repositories|codespaces|codespaces\/allow_permissions|deleted_repositories|packages|copilot|pages|replies|installations|apps\/authorizations|reminders|sponsors-log|apps|(?:personal-access-|)tokens|developers|applications\/new|applications|connections\/applications)|settings|installations\/new|marketplace|apps|account\/(organizations\/new|choose|upgrade|billing\/history)|projects|redeem|discussions|events|collections|sponsors|sponsoring|github-copilot\/(signup|free_signup)|codespaces|developer\/register|features|security|sitemap|education)|^\/users\/[^\/]+\/(projects|packages|succession\/invitation)/,
 
-    // 仓库路径
+    // 리포지토리 경로
     rePagePathRepo: /^\/[^\/]+\/[^\/]+\/(issues|pulls|pull|tree|watchers|stargazers|new|edit|delete|upload|find|wiki|branches|discussions|activity|rules|releases|packages|tags|labels|milestones|compare|commit|blob|blame|actions(\/metrics\/(usage|performance))?|runs|deployments|security|pulse|community|forks|fork|import|graphs\/(contributors|community|traffic|commit-activity|code-frequency)|network$|network\/(dependencies|dependents|updates|members)|settings\/(access|code_review_limits|interaction_limits|branches|branch_protection_rules|tag_protection|rules|actions|hooks|environments|codespaces|pages|security_analysis|dependabot_rules|keys|secrets|variables|installations|notifications|key_links)|settings|transfer|projects\/new|pkgs|contribute|subscription|invitations|codespaces|attestations|custom-properties)/,
 
-    // 组织路径
+    // 조직 경로
     rePagePathOrg: /^\/[^\/]+\/[^\/]+\/(repositories\/new|repositories|sponsoring|discussions|projects|packages|teams|new-team|people|outside-collaborators|pending_collaborators|dashboard|billing_managers\/new|invitations?|settings\/(profile|billing|roles|member_privileges|teams|import-export|blocked_users|interaction_limits|code_review_limits|moderators|repository-defaults|rules|codespaces|copilot|actions|hooks|discussions|packages|pages|projects|security_analysis|security|dependabot_rules|domains|secrets|variables|oauth_application_policy|installations|personal-access-token|reminders|sponsors-log|audit-log|deleted_repositories|applications\/new|applications|apps\/new|apps|publisher)|topics|domain\/new|audit-log\/event_settings|billing\/(history|plans)|policies\/applications)|^\/[^\/]+\/(enterprise_plan|sponsoring)/,
 
-    // 特定页面，启用`字符数据`监测
+    // 특정 페이지, `문자 데이터` 모니터링 활성화
     characterDataPage: ['repository/new', 'repository/edit', 'new', 'new/import', 'orgs/repositories/new', 'repository/blob', 'marketplace', 'homepage'],
 
-    // 特定页面，忽略突变元素规则
+    // 특정 페이지, 변이 요소 규칙 무시
     ignoreMutationSelectorPage: {
-        'repository/new': [".cm-scroller"], // 代码编辑器
-        'repository/edit': [".cm-scroller", "table"], // 代码编辑器
-        'repository/pull': ["td.blob-code"], // 代码差异 分屏/同屏
-        'repository/compare': ["tbody"], // 代码差异
-        'repository/commit': ["td.blob-code"], // 代码差异 分屏/同屏
-        'repository/blob': ["#highlighted-line-menu-positioner", ".Text__StyledText-sc-17v1xeu-0"], // 代码视图 存在
-        'repository/blame': ["#highlighted-line-menu-positioner"], // 代码视图
+        'repository/new': [".cm-scroller"], // 코드 편집기
+        'repository/edit': [".cm-scroller", "table"], // 코드 편집기
+        'repository/pull': ["td.blob-code"], // 코드 차이 분할/동일 화면
+        'repository/compare': ["tbody"], // 코드 차이
+        'repository/commit': ["td.blob-code"], // 코드 차이 분할/동일 화면
+        'repository/blob': ["#highlighted-line-menu-positioner", ".Text__StyledText-sc-17v1xeu-0"], // 코드 뷰 존재
+        'repository/blame': ["#highlighted-line-menu-positioner"], // 코드 뷰
         'repository': [".AppHeader-context", "table"], //  "article.markdown-body",
-        'repository/releases': [".Box-footer"], // 附件清单
+        'repository/releases': [".Box-footer"], // 첨부 파일 목록
         '*': [
-            'div.QueryBuilder-StyledInputContainer',  // 顶部搜索栏 关键词被翻译
+            'div.QueryBuilder-StyledInputContainer',  // 상단 검색창 키워드 번역됨
         ],
     },
 
-    // 特定页面，忽略元素规则
+    // 특정 페이지, 요소 규칙 무시
     ignoreSelectorPage: {
         'page-profile': [
-            'span.p-nickname', // 用户昵称
-            'span.p-name', // 同上
+            'span.p-nickname', // 사용자 닉네임
+            'span.p-name', // 위와 동일
         ],
         'page-profile/followers': [
             'span.f4.Link--primary',
             "span.Link--secondary.pl-1",
         ],
         'page-profile/repositories': [
-            'a[itemprop="name codeRepository"]', // 仓库名称
+            'a[itemprop="name codeRepository"]', // 리포지토리 이름
         ],
         'page-profile/stars': [
-            '.mb-1.d-inline-block > h3', // 仓库名称
+            '.mb-1.d-inline-block > h3', // 리포지토리 이름
         ],
         'repository': [
-            '.AppHeader-context-full', // 顶部 <username>/<repo_name>
-            'strong[itemprop="name"]', // 仓库名称
-            // 'ul.list-style-none', // 右侧 部署列表 无效
-            'div[data-testid="latest-commit"]', // 最新的提交
-            'tr.react-directory-row', // 文件列表中文件夹和文件条目
-            'p.f4.my-3', // 仓库简介正文
+            '.AppHeader-context-full', // 상단 <username>/<repo_name>
+            'strong[itemprop="name"]', // 리포지토리 이름
+            // 'ul.list-style-none', // 오른쪽 배포 목록 비활성화
+            'div[data-testid="latest-commit"]', // 최신 커밋
+            'tr.react-directory-row', // 파일 목록의 폴더 및 파일 항목
+            'p.f4.my-3', // 리포지토리 소개 본문
             '#translate-me',
-            '.my-3.d-flex.flex-items-center', // 仓库简介中的链接
-            'article.markdown-body', // 自述文件正文
+            '.my-3.d-flex.flex-items-center', // 리포지토리 소개의 링크
+            'article.markdown-body', // 자기소개 파일 본문
             'li.mt-2',
         ],
         'repository/tree': [
-            '.AppHeader-context-full', // 顶部 <username>/<repo_name>
-            'div.react-tree-show-tree-items', // 左侧文件树项目
-            'tr.react-directory-row', // 文件列表中文件夹和文件条目
+            '.AppHeader-context-full', // 상단 <username>/<repo_name>
+            'div.react-tree-show-tree-items', // 왼쪽 파일 트리 항목
+            'tr.react-directory-row', // 파일 목록의 폴더 및 파일 항목
             '#repos-header-breadcrumb',
-            '#file-name-id', // 文件路径中文件部分
-            'article.markdown-body', // Markdown 正文
+            '#file-name-id', // 파일 경로의 파일 부분
+            'article.markdown-body', // 마크다운 본문
         ],
         'repository/blob': [
-            '.AppHeader-context-full', // 顶部 <username>/<repo_name>
-            'article.markdown-body', // Markdown 正文
-            'div.react-tree-show-tree-items', // 左侧文件树项目
-            '[id^="offset"]', // 符号-->引用
-            '#highlighted-line-menu-positioner', // 代码视图
-            '#filter-results', // 右侧 符号筛选
-            '#repos-header-breadcrumb', // 文件路径中文件夹路径
-            '#repos-header-breadcrumb--wide', // 文件路径中文件夹路径 左侧文件树展开情况
+            '.AppHeader-context-full', // 상단 <username>/<repo_name>
+            'article.markdown-body', // 마크다운 본문
+            'div.react-tree-show-tree-items', // 왼쪽 파일 트리 항목
+            '[id^="offset"]', // 기호-->참조
+            '#highlighted-line-menu-positioner', // 코드 뷰
+            '#filter-results', // 오른쪽 기호 필터링
+            '#repos-header-breadcrumb', // 파일 경로의 폴더 경로
+            '#repos-header-breadcrumb--wide', // 파일 경로의 폴더 경로 왼쪽 파일 트리 확장 상태
             '#sticky-breadcrumb',
-            '#file-name-id', // 文件路径中文件部分
+            '#file-name-id', // 파일 경로의 파일 부분
         ],
         'repository/commit': [
-            'td.blob-code', // 代码差异 分屏/同屏
-            'span.ws-pre-wrap', // 提交说明
+            'td.blob-code', // 코드 차이 분할/동일 화면
+            'span.ws-pre-wrap', // 커밋 설명
         ],
         'repository/pull': [
-            'td.blob-code', // 代码差异 分屏/同屏
+            'td.blob-code', // 코드 차이 분할/동일 화면
         ],
         'repository/compare': [
-            'td.blob-code', // 代码差异 分屏/同屏
+            'td.blob-code', // 코드 차이 분할/동일 화면
         ],
         'repository/edit': [
-            '.cm-scroller', // 代码编辑器
-            'table', // 代码差异预览
+            '.cm-scroller', // 코드 편집기
+            'table', // 코드 차이 미리보기
         ],
         'repository/new': [
-            '.cm-scroller', // 代码编辑器
-            'table', // 代码差异预览
+            '.cm-scroller', // 코드 편집기
+            'table', // 코드 차이 미리보기
         ],
         'repository/actions': [
-            'table.highlight', // 工作流程文件 源码视图
-            'span.user-select-none', // 日志 - 作业名
-            'span.CheckStep-line-content', // 日志 - 具体内容
+            'table.highlight', // 워크플로 파일 소스 뷰
+            'span.user-select-none', // 로그 - 작업 이름
+            'span.CheckStep-line-content', // 로그 - 구체적인 내용
         ],
         'repository/releases': [
-            'div.markdown-body', // 发布版正文
+            'div.markdown-body', // 릴리스 노트 본문
         ],
         'repository/wiki': [
-            '#wiki-body', // wiki 正文
+            '#wiki-body', // 위키 본문
         ],
         'orgs': [
-            'a[itemprop="name codeRepository"]', // 仓库名称
+            'a[itemprop="name codeRepository"]', // 리포지토리 이름
         ],
         'search': [
-            'span.search-match', // 搜索匹配信息
-            'div.code-list', // 代码片段预览
+            'span.search-match', // 검색 일치 정보
+            'div.code-list', // 코드 스니펫 미리보기
         ],
         'dashboard': [
-            '.js-notice-dismiss', // 右侧栏 广告
-            '.TimelineItem', // 右侧栏 最新变化
-            'section.comment-body', // 发布版正文
+            '.js-notice-dismiss', // 오른쪽 사이드바 광고
+            '.TimelineItem', // 오른쪽 사이드바 최신 변경 사항
+            'section.comment-body', // 릴리스 노트 본문
         ],
         'gist': [
-            '.gist-content[itemprop="about"]', // Gist 简介
-            'div.js-blob-code-container', // 代码框
-            'table.js-diff-table', // 代码差异
+            '.gist-content[itemprop="about"]', // Gist 소개
+            'div.js-blob-code-container', // 코드 상자
+            'table.js-diff-table', // 코드 차이
         ],
         'topics': [
-            'h3.f3.color-fg-muted.text-normal.lh-condensed', // 仓库名称
+            'h3.f3.color-fg-muted.text-normal.lh-condensed', // 리포지토리 이름
         ],
         'marketplace': [
             '.markdown-body',
@@ -175,12 +175,12 @@ I18N.conf = {
         '*': [
             '.js-comment-body', '.js-preview-body',
             '.markdown-title',
-            'span.ActionListItem-label.text-normal', // 顶部搜索栏 关键词被翻译
-            'CODE', 'SCRIPT', 'STYLE', 'LINK', 'IMG', 'MARKED-TEXT', 'PRE', 'KBD', // 特定元素标签
+            'span.ActionListItem-label.text-normal', // 상단 검색창 키워드 번역됨
+            'CODE', 'SCRIPT', 'STYLE', 'LINK', 'IMG', 'MARKED-TEXT', 'PRE', 'KBD', // 특정 요소 태그
         ],
     },
 
-    // 以下兼容 1.9.2 版本，且冻结 等待 1.9.3 明显 Bug 修复
+    // 이하 1.9.2 버전과 호환되며, 1.9.3의 명백한 버그 수정 대기 중 동결
     /**
      * 要翻译的页面正则(不含仓库页)
      *
@@ -237,15 +237,15 @@ I18N.conf = {
      * /i 规则不区分大小写
      */
     reIgnoreTag: ['CODE', 'SCRIPT', 'STYLE', 'LINK', 'IMG', 'MARKED-TEXT', 'PRE', 'KBD'],
-    // marked-text --> 文件搜索模式/<user-name>/<repo-name>/find/<branch> 文件列表条目
-    // ^script$ --> 避免勿过滤 notifications-list-subscription-form
-    // ^pre$ --> 避免勿过滤
+    // marked-text --> 파일 검색 모드/<user-name>/<repo-name>/find/<branch> 파일 목록 항목
+    // ^script$ --> notifications-list-subscription-form 오필터링 방지
+    // ^pre$ --> 오필터링 방지
 };
 
 I18N["ko-KR"] = {};
 
-I18N["ko-KR"]["title"] = { // 标题翻译
-    "static": { // 静态翻译
+I18N["ko-KR"]["title"] = { // 제목 번역
+    "static": { // 정적 번역
         "Sign in to GitHub · GitHub": "GitHub 로그인 · GitHub",
         "Join GitHub · GitHub": "GitHub 계정 만들기 · GitHub",
         "Forgot your password? · GitHub": "비밀번호를 까먹으셨나요? · GitHub",
@@ -459,9 +459,9 @@ I18N["ko-KR"]["title"] = { // 标题翻译
     ],
 };
 
-I18N["ko-KR"]["public"] = { // 公共区域翻译
-    "static": { // 静态翻译
-        // 错误页面
+I18N["ko-KR"]["public"] = { // 공용 영역 번역
+    "static": { // 정적 번역
+        // 오류 페이지
         "No server is currently available to service your request.": "현재 서버에서 요청을 처리해드릴 수 없어요.",
         "This page is taking too long to load.": "이 페이지 로딩 시간이 너무 오래 걸려요.",
         "We had issues producing the response to your request.": "요청에 대한 응답을 생성하는 데 문제가 있었어요.",
@@ -471,6 +471,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
         "Contact Support": "GitHub 지원팀에 연락하기",
         "GitHub Status": "GitHub 상태",
         // 상단 안내
+        "Please configure another 2FA method to reduce your risk of permanent account lockout. If you use SMS for 2FA, we strongly recommend against SMS as it is prone to fraud and delivery may be unreliable depending on your region.": "계정이 영구적으로 잠기는 위험을 줄이기 위해 다른 2단계 인증 방법을 설정해 주세요. 2단계 인증에 SMS를 사용하는 경우, SMS는 사기에 취약하고 지역에 따라 전달이 신뢰할 수 없으므로 SMS 사용을 강력히 권장하지 않아요.",
         "You only have a single verified email address. We recommend verifying at least one more email address to ensure you can recover your account if you lose access to your primary email.": "확인된 이메일 주소가 하나밖에 없어요. 주 이메일에 접근할 수 없을 경우 계정을 복구할 수 있도록, 최소한 하나 이상의 이메일 주소를 추가로 확인해 보세요.",
         "Email settings": "이메일 설정",
         "Your recovery codes have not been saved in the past year. Make sure you still have them stored somewhere safe by viewing and downloading them again.": "지난 1년 동안 복구 코드를 저장하지 않으셨어요. 안전한 곳에 보관되어 있는지 확인하시려면, 복구 코드를 다시 확인하고 다운로드해 보세요.",
@@ -638,7 +639,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "This organization": "이 조직", // 조직
             "New team": "팀 만들기", // 조직
 
-        // 右上角 Copilot 下拉菜单
+        // 오른쪽 상단 Copilot 드롭다운 메뉴
             "Chat with Copilot": "Copilot과 채팅하기",
             "Open Copilot…": "Copilot 열기…",
                 "New conversation in": "다음에서의 새 채팅 :",
@@ -769,28 +770,28 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Contact GitHub": "GitHub에 연락하기",
             "Training": "훈련",
 
-            // 描述、评论编辑器翻译
+            // 설명, 댓글 편집기 번역
             "Add a comment": "댓글 추가하기",
             "Add a body": "내용 추가하기",
             "Write": "작성하기",
             "Use Markdown to format your comment": "Markdown을 사용해 댓글을 꾸며보세요.",
             "Add your comment here...": "여기에 댓글을 추가해보세요...",
-            "Add your answer here...": "여기에 답변을 추가해보세요...", // 具体讨论页
+            "Add your answer here...": "여기에 답변을 추가해보세요...", // 특정 토론 페이지
             "Text field is empty": "텍스트 입력란이 비어 있어요.",
             "Preview": "미리보기",
             "Nothing to preview": "미리볼 내용이 없어요.",
             "This file is empty.": "이 파일은 비어 있어요.",
             "Try again with a file that’s not empty.": "비어 있지 않은 파일로 다시 시도해보세요.",
             "Leave a comment": "댓글 남기기",
-            "Write a reply": "답글 작성하기", // 具体讨论页
-            "Write a comment": "댓글 작성하기", // 具体讨论页
-            "Suggest an answer": "답변 제안하기", // 具体讨论页
-            "Ask a question, start a conversation, or make an announcement": "질문을 하거나, 대화를 시작하거나, 공지를 남겨보세요.", // 新建讨论
+            "Write a reply": "답글 작성하기", // 특정 토론 페이지
+            "Write a comment": "댓글 작성하기", // 특정 토론 페이지
+            "Suggest an answer": "답변 제안하기", // 특정 토론 페이지
+            "Ask a question, start a conversation, or make an announcement": "질문을 하거나, 대화를 시작하거나, 공지를 남겨보세요.", // 새 토론
             "Nothing to preview": "미리볼 내용이 없어요.",
-            "This repository has been archived.": "이 저장소는 보관되었어요.", // 已存档仓库 某个提交的评论框
-            "Add review comment": "리뷰 댓글 추가하기", // 具体拉取请求 文件审查意见
-            "Start a review": "리뷰 시작하기", // 具体拉取请求 文件审查意见
-            // 取消按钮 提醒信息
+            "This repository has been archived.": "이 저장소는 보관되었어요.", // 보관된 리포지토리의 특정 커밋 댓글 상자
+            "Add review comment": "리뷰 댓글 추가하기", // 특정 풀 리퀘스트 파일 검토 의견
+            "Start a review": "리뷰 시작하기", // 특정 풀 리퀘스트 파일 검토 의견
+            // 취소 버튼 알림 메시지
             "Are you sure you want to discard your unsaved changes?": "저장하지 않은 변경 사항을 취소해도 괜찮으신가요?",
 
             "Add a title": "제목 추가하기",
@@ -798,17 +799,17 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Add a description": "설명 추가하기",
             "Add your description here...": "여기에 설명을 추가해보세요...",
 
-            // 网络错误
+            // 네트워크 오류
             "There was a problem saving your comment. Please try again.": "댓글 저장 중 문제가 발생했어요. 다시 시도해보세요.",
 
-            // 拉取请求 代码审查 回复对话框
+            // 풀 리퀘스트 코드 검토 회신 대화 상자
             "Add a suggestion, <Ctrl+g>": "제안 추가하기, <Ctrl+g>",
             "Heading": "제목",
             "Bold": "굵게",
             "Italic": "기울임",
             "Quote": "인용",
             "Link": "링크",
-            "Menu": "메뉴", // Android UA 下出现
+            "Menu": "메뉴", // Android UA에서 나타남
             "Numbered list": "번호 목록",
             "Unordered list": "글머리 기호 목록",
             "Task list": "작업 목록",
@@ -825,7 +826,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Insert a code block formatted for a chosen syntax": "선택한 문법에 맞춰 코드 블록 삽입하기",
             "Details": "세부사항",
             "Add a details tag to hide content behind a visible heading": "보이는 제목 뒤에 내용을 숨기기 위해 details 태그 추가하기",
-            // "快速回复": "",
+            // "빠른 답장": "",
             "Insert one of your saved replies": "저장된 빠른 답장 중 하나 삽입하기",
             "Table": "표",
             "Add markdown table": "Markdown 표 추가하기",
@@ -833,13 +834,13 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Insert one of your issue templates": "이슈 템플릿 중 하나 삽입하기",
 
             "Slash": "슬래시",
-            // 代码块
+            // 코드 블록
             "No Syntax": "문법 없음",
-            // 快速回复
+            // 빠른 답장
             "No saved replies": "저장된 빠른 답장이 없어요.",
             "You can create one in your": "사용자 설정에서 생성할 수 있어요:",
             "Settings": "설정",
-            // 表格
+            // 표
             "Columns": "열",
             "1 column": "1열",
             "2 columns": "2열",
@@ -854,12 +855,12 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "4 rows": "4행",
             "5 rows": "5행",
 
-            // 模板
+            // 템플릿
             "No issue templates": "이슈 템플릿이 없어요.",
             "Learn more about": "자세히 알아보기:",
             "issue templates": "이슈 템플릿",
 
-            // 小屏 插入链接 对话框
+            // 작은 화면 링크 삽입 대화 상자
             "Insert Link": "링크 삽입하기",
             "Link Text": "링크 텍스트",
             "Add": "추가하기",
@@ -871,23 +872,23 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Styling with Markdown is supported.": "Markdown 스타일링이 지원돼요.",
             "Paste, drop, or click to add files": "붙여넣기, 드래그 앤 드롭 또는 클릭하여 파일 추가하기",
             "Uploading your files…": "파일을 업로드 중이에요…",
-            // 文件过大
+            // 파일이 너무 큽니다
             "This video is too big.": "이 비디오는 너무 커요.",
             "Try again": "다시 시도해보세요",
             "with a file size less than 10MB.": "10MB 미만의 파일로 시도해보세요.",
 
-            "Close issue": "이슈 닫기", // issue页 评论框
+            "Close issue": "이슈 닫기", // 이슈 페이지 댓글 상자
             "Close as completed": "완료됨으로 닫기",
             "Done, closed, fixed, resolved": "완료, 닫힘, 수정, 해결됨",
             "Close as not planned": "계획에 없어서 닫기",
             "Won't fix, can't repro, duplicate, stale": "수정하지 않음, 재현 불가, 중복, 오래됨",
-            "Won't fix, can't repro, stale": "수정하지 않음, 재현 불가, 오래됨", // 新版이슈页
-            // 因重复而关闭（新版이슈页）
+            "Won't fix, can't repro, stale": "수정하지 않음, 재현 불가, 오래됨", // 새 버전 이슈 페이지
+            // 중복으로 인해 닫힘(새 버전 이슈 페이지)
             "Duplicate of another issue": "다른 이슈의 중복",
-            "Close with comment": "댓글과 함께 닫기", // 이슈/拉取请求 评论框
-            "Close pull request": "끌어오기 요청 닫기", // 拉取请求页 评论框
-            "Reopen discussion": "토론 다시 열기", // discussion页 评论框
-            "Close discussion": "토론 닫기", // discussion页 评论框
+            "Close with comment": "댓글과 함께 닫기", // 이슈/풀 리퀘스트 댓글 상자
+            "Close pull request": "끌어오기 요청 닫기", // 풀 리퀘스트 페이지 댓글 상자
+            "Reopen discussion": "토론 다시 열기", // 토론 페이지 댓글 상자
+            "Close discussion": "토론 닫기", // 토론 페이지 댓글 상자
             "Close as resolved": "해결됨으로 닫기",
             "The discussion has been resolved": "토론이 해결되었어요.",
             "Close as outdated": "오래됨으로 닫기",
@@ -900,21 +901,21 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Comment on this commit": "커밋에 댓글 달기",
             "Close and comment": "닫고 댓글 남기기",
             "Reopen and comment": "다시 열고 댓글 남기기",
-            "Reopen issue": "이슈 다시 열기", // 具体이슈
-            "Reopen with comment": "댓글과 함께 다시 열기", // 具体이슈
-            "Reopen pull request": "끌어오기 요청 다시 열기", //具体拉取请求
-            "Add single comment": "단일 댓글 추가하기", // 具体提交页 进行某条代码评论
-            "Reply": "답글 달기", // 具体讨论页
-            "Answer": "답변하기", // 具体讨论页
-            "Start discussion": "토론 시작하기", // 新建讨论
-            "Update": "업데이트하기", // 新建讨论
-            "discussion": "토론", // 新建讨论
-            "Discussions": "토론", // 新建讨论
+            "Reopen issue": "이슈 다시 열기", // 특정 이슈
+            "Reopen with comment": "댓글과 함께 다시 열기", // 특정 이슈
+            "Reopen pull request": "끌어오기 요청 다시 열기", // 특정 풀 리퀘스트
+            "Add single comment": "단일 댓글 추가하기", // 특정 커밋 페이지의 특정 코드 댓글
+            "Reply": "답글 달기", // 특정 토론 페이지
+            "Answer": "답변하기", // 특정 토론 페이지
+            "Start discussion": "토론 시작하기", // 새 토론
+            "Update": "업데이트하기", // 새 토론
+            "discussion": "토론", // 새 토론
+            "Discussions": "토론", // 새 토론
 
             "Spammy": "스팸 처리됨",
             "This user is marked as spammy. Their comments will onlyshow in staff mode.": "이 사용자는 스팸 처리되었어요. 해당 사용자의 댓글은 스태프 모드에서만 보여져요.",
 
-        // 添加到清单
+        // 목록에 추가
             "Add to list": "목록에 추가",
                 "You don't have any lists yet.": "아직 어떤 목록도 없어요.",
                 "Lists": "목록",
@@ -926,13 +927,13 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
                     "Create a list to organize your starred repositories.": "별표 된 저장소를 정리할 목록을 만드세요.",
                     "⭐️ Name this list": "⭐️ 이름을 지어주세요",
                     "Write a description": "설명을 적어주세요",
-                    // 小贴士
+                    // 팁
                         "type : to add emoji to the name or description.": "이름이나 목록에 이모티콘을 넣으려면 : 를 입력하세요",
                     "Lists are currently in beta.": "목록 기능은 현재 베타에요.",
                     "Share feedback and report bugs.": "피드백을 공유하고 버그를 신고해주세요",
                     "Creating...": "생성중...",
 
-            // 全局快捷键对话框 - 快捷键 ? 打开
+            // 전역 단축키 대화 상자 - 단축키 ? 열기
                 "Keyboard shortcuts": "단축키",
                 "Site-wide shortcuts": "전체 사이트 단축키에요",
                 "Open command palette": "명령 팔레트 열기",
@@ -982,7 +983,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             
             "Top result": "최고 결과",
             "No results matched your search": "검색과 일치하는 결과가 없어요.",
-            // [/in ([\w]+/[\w]+)/, "在 $1"],
+            // [/in ([\w]+/[\w]+)/, " $1에서"],
             
             // # 모드
             "Search issues and pull requests": "이슈와 끌어오기 요청 검색하기",
@@ -1119,7 +1120,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Previous": "이전",
             "Next": "다음",
 
-            // 名词
+            // 명사
             "Public": "공개",
             "Private": "비공개",
             "Public archive": "공개 보관",
@@ -1139,13 +1140,13 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "People": "사람",
             "Teams": "팀",
 
-            // 相对时间
+            // 상대 시간
             "just now": "방금",
             "now": "지금",
             "yesterday": "어제",
             "last month": "저번달",
 
-        // 验证标记浮动信息
+        // 확인 표시 플로팅 정보
         "This commit was created on GitHub.com and signed with GitHub’s": "이 커밋은 GitHub.com에서 생성되었고, GitHub의",
         "This commit was created on GitHub.com and signed with GitHub's": "이 커밋은 GitHub.com에서 생성되었고, GitHub의",
         "This commit was created on GitHub.com and signed with GitHub’s verified signature": "이 커밋은 GitHub.com에서 생성되었고, GitHub의 검증된 서명으로 서명되었어요.",
@@ -1189,7 +1190,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
         "Reload": "다시 불러오기",
         "to refresh your session.": "로 세션을 새로 고치세요.",
 
-        // Cookie 设置
+        // 쿠키 설정
         "Manage cookie preferences": "쿠키 환경 설정 관리하기",
         "Most GitHub websites use cookies. Cookies are small text files placed on your device to store data so web servers can use it later. GitHub and our third-party partners use cookies to remember your preferences and settings, help you sign in, show you personalized ads, and analyze how well our websites are working. For more info, see the Cookies and similar technologies section of the": "대부분의 GitHub 웹사이트는 쿠키를 사용해요. 쿠키는 웹 서버가 나중에 활용할 수 있도록 기기에 저장되는 작은 텍스트 파일이에요. GitHub와 제3자 파트너들은 여러분의 환경 설정과 설정 정보를 기억하고, 로그인에 도움을 주며, 개인 맞춤형 광고를 제공하고, 웹사이트의 작동 상태를 분석하기 위해 쿠키를 사용해요. 자세한 정보는 다음의 쿠키 및 유사 기술 섹션을 참고해 주세요:",
         "Privacy Statement": "개인정보 보호정책",
@@ -1240,7 +1241,7 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
             "Sat"  : "토",
 
 
-        // 语言名称（仅适配热门语言
+        // 언어 이름 (인기 언어에만 적용)
             "Abkhazian": "압카즈어",
             "Afar": "아파르어",
             "Afrikaans": "아프리칸스어",
@@ -1632,10 +1633,10 @@ I18N["ko-KR"]["public"] = { // 公共区域翻译
     };
     
 
-I18N["ko-KR"]["orgs-public"] = { // 组织公共部分
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs-public"] = { // 조직 공용 부분
+    "static": { // 정적 번역
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         [/Invite someone to/, "邀请加入到组织"],
         [/New team in/, "新建团队在组织"],
         [/New repository in/, "新建仓库在组织"],
@@ -1644,8 +1645,8 @@ I18N["ko-KR"]["orgs-public"] = { // 组织公共部分
     ],
 };
 
-I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组织）
-    "static": { // 静态翻译
+I18N["ko-KR"]["page-dashboard"] = { // 로그인한 홈페이지 - 대시보드(조직 포함)
+    "static": { // 정적 번역
         // GPT 부분
         "Ask Copilot": "Copilot에게 무엇이든 물어보세요!",
             "Open issues in facebook/react": "facebook/react의 열린 이슈",
@@ -1727,7 +1728,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
             "Ready to start building? Create a repository for a new idea or bring over an existing repository to keep contributing to it.": "구축을 시작할 준비가 되셨나요? 새로운 아이디어를 위한 저장소를 만들어보거나 기존 저장소를 가져와서 계속 기여해보세요.",
             "Create repository": "저장소 만들기.",
 
-        // 中间栏
+        // 중간 열
         "The home for all developers — including you.": "모든 개발자들의 집이에요! — 사용자님도 당연히 포함해서요.",
         "Welcome to your personal dashboard, where you can find an introduction to how GitHub works, tools to help you build software, and help merging your first lines of code.": "개인 대시보드에 오신 것을 환영해요. 여기서 GitHub의 작동 원리, 소프트웨어 개발에 도움을 주는 도구들, 그리고 첫 코드를 병합하는 방법을 확인해보실 수 있어요.",
         "Learn with a tutorial project": "튜토리얼 프로젝트로 배우기",
@@ -1792,7 +1793,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         "We've combined the power of the Following feed with the For you feed so there’s one place to discover content on GitHub. There’s improved filtering so you can customize your feed exactly how you like it, and a shiny new visual design. ✨": "GitHub에서 팔로우 피드와 추천 피드의 기능을 합쳐서 콘텐츠를 한 곳에서 발견할 수 있게 되었어요. 원하는 대로 피드를 맞춤 설정할 수 있도록 필터링 기능이 개선되었고, 새로운 디자인으로 더욱 보기 좋아졌답니다. ✨",
         "Learn more": "자세히 알아보기",
 
-        // 提要筛选
+        // 피드 필터링
         "Filter": "필터",
             "Feed filters": "피드 필터",
             "Events": "이벤트",
@@ -1826,7 +1827,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         "There was an error in loading the activity feed.": "활동 피드를 불러오는 중 오류가 발생했어요.",
         "Reload this page": "이 페이지 다시 불러오기",
 
-        // 动态 状态词
+        // 동적 상태 단어
         "starred": "에 별표했어요",
         "created": "생성 :",
         "forked from": "포크됨 :",
@@ -1856,7 +1857,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         "made this repository public": "님이 이 저장소를 공개로 설정했어요",
         "labeled a pull request": "님이 끌어오기 요청을 라벨했어요",
         "launched their sponsorship page 💖": "이(가) 새 후원 페이지를 열었어요 💖",
-        //[/and (\d+) more/, "和另外 $1 个"],
+        // [/and (\d+) more/, "그리고 추가로 $1개"],
         "All reactions": "모든 반응",
 
         "published a release": "님이 릴리즈를 공개했어요",
@@ -1866,7 +1867,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         "followed": "님이 다른 사용자를 팔로우했어요.",
         "added a repository to": "목록에 추가했어요",
         "contributed to": "님이 기여했어요",
-            // 现在会显示拉取请求状态
+            // 이제 풀 리퀘스트 상태를 표시합니다
             "Merged": "병합됨",
 
         "your repository": "내 저장소",
@@ -1945,7 +1946,7 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
         "Go to your issues": "내 이슈로 이동하기",
         "Go to your pull requests": "내 끌어오기 요청으로 이동하기",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         [/added (\d+) repositor(y|ies) to/, "저장소 $1개를 추가하기"],
         [/, and (\d+) more/, "，그리고 다른 $1개의 조직"], // 사용자 플로팅 정보 카드
         [/(\d+) repositor(y|ies)/, "저장소 $1개"], // 조직 플로팅 정보 카드
@@ -2013,9 +2014,9 @@ I18N["ko-KR"]["page-dashboard"] = { // 已登录的首页 - 仪表板（含组�
 I18N["ko-KR"]["dashboard"] = I18N["ko-KR"]["page-dashboard"];
 I18N["ko-KR"]["orgs/dashboard"] = I18N["ko-KR"]["page-dashboard"];
 
-I18N["ko-KR"]["page-profile-public"] = { // 个人首页（含组织）
-    "static": { // 静态翻译
-        // 左侧用户信息栏
+I18N["ko-KR"]["page-profile-public"] = { // 개인 홈페이지(조직 포함)
+    "static": { // 정적 번역
+        // 왼쪽 사용자 정보 열
         "Change your avatar": "아바타 변경하기",
         "they/them": "그들",
         "she/her": "그녀",
@@ -2159,14 +2160,14 @@ I18N["ko-KR"]["page-profile-public"] = { // 个人首页（含组织）
                 "Other": "기타",
                 "Unknown": "알 수 없음",
     
-        // 标签栏
+        // 탭 표시줄
             "Sponsoring": "후원"
     },
-    "regexp": [ // 正则翻译
-        [/(\d+) discussions? answered/, "$1 个讨论已回答"], // 高光时刻
+    "regexp": [ // 정규식 번역
+        [/(\d+) discussions? answered/, "$1 个讨论已回答"], // 하이라이트
         [/Block or report ([^ ]+)/, "拉黑或举报 $1"],
         [/contributed code to several repositories in the/, "为多个仓库贡献了代码，在"],
-        [/(\d+) GitHub Archive Program/, "$1 GitHub 存档计划"], // 成就浮动款
+        [/(\d+) GitHub Archive Program/, "$1 GitHub 存档计划"], // 업적 플로팅 창
         [/opened pull requests that have been merged./, "打开的拉取请求已被合并."], // Pull Shark
         [/created a repository that has many stars./, "创建了一个拥有很多星标的仓库."], // Starstruck
         [/coauthored commits on merged pull requests./, "与他人共同提交了合并的拉取请求."], // Pair Extraordinaire
@@ -2189,11 +2190,11 @@ I18N["ko-KR"]["page-profile/achievements"] = I18N["ko-KR"]["page-profile-public"
 I18N["ko-KR"]["page-profile/followers"] = I18N["ko-KR"]["page-profile-public"]; // ?tab=followers
 I18N["ko-KR"]["page-profile/following"] = I18N["ko-KR"]["page-profile-public"]; // ?tab=following
 
-I18N["ko-KR"]["page-profile"] = { // 个人首页
-    "static": { // 静态翻译
+I18N["ko-KR"]["page-profile"] = { // 개인 홈페이지
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["page-profile-public"]["static"],
 
-            // 概述标签卡 即主页 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // 개요 탭 카드 즉 홈페이지 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             "Customize your pins": "고정 항목 맞춤 설정하기",
         
             // 고정 항목 설정 대화상자
@@ -2241,7 +2242,7 @@ I18N["ko-KR"]["page-profile"] = { // 个人首页
             "More": "많음",
             "Contribution settings": "기여 설정",
 
-            // 复刻仓库特有
+            // 포크된 리포지토리 고유
             "Forked from": "포크됨 :",
             // 기여 설정 드롭다운 메뉴
             "Private contributions": "비공개 기여",
@@ -2312,7 +2313,7 @@ I18N["ko-KR"]["page-profile"] = { // 个人首页
             //return optKey[opt] + `${translatedDate}`;
             return number === 'No' ? `${translatedDate}，기여 없어요` : `${translatedDate}，` + number + `회 기여했어요`;
         }], // 기여 달력
-        //[/A graph representing ([^ ]+)'s contributions from ( .+) to ( .+)./, "$1 从 $2 到 $3 的贡献图."],
+        // [/A graph representing ([^ ]+)'s contributions from ( .+) to ( .+)./, "$1의 $2부터 $3까지의 기여도 그래프."],
         [/and (\d+) other repositor(y|ies)/, "와 $1개의 다른 저장소"], // 활동 개요
         // 기여 정보
         [/Created ([\d,]+) commits? in (\d+) repositor(y|ies)/, "$2개의 저장소에서 $1회 커밋을 만들었어요."],
@@ -2365,22 +2366,22 @@ I18N["ko-KR"]["page-profile"] = { // 个人首页
 };
 I18N["ko-KR"]["page-profile/overview"] = I18N["ko-KR"]["page-profile"];
 
-I18N["ko-KR"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
-    "static": { // 静态翻译
+I18N["ko-KR"]["page-profile/repositories"] = { // 개인 홈페이지 - 리포지토리 탭 카드
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["page-profile-public"]["static"],
 
-        // 仓库标签卡 ?tab=repositories >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        // 리포지토리 탭 카드 ?tab=repositories >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-            // 顶部提醒
-                // [/Your repository \"([^ ]+)\" was successfully deleted./, "您的仓库 “$1” 已成功删除."],
+            // 상단 알림
+                // [/Your repository \"([^ ]+)\" was successfully deleted./, "리포지토리 “$1”이(가) 성공적으로 삭제되었습니다."],
 
-            // "Search repositories…": "搜索这些查库…",
-            // "Search starred repositories…": "搜索点赞的仓库…",
+            // "Search repositories…": "이 리포지토리 검색…",
+            // "Search starred repositories…": "별표 표시된 리포지토리 검색…",
 
-            // 搜索, 筛选 & 排序工具栏
+            // 검색, 필터링 및 정렬 도구 모음
             "Find a repository…": "저장소 찾기…",
-            // "Type": "유형", // 与全局冲突 使用 Selector 规则翻译
-                // 下拉菜单
+            // "Type": "유형", // 전역과 충돌하여 Selector 규칙 번역 사용
+                // 드롭다운 메뉴
                 "Select type": "유형 선택",
                 "All": "모두",
                 "Public": "공개",
@@ -2392,21 +2393,21 @@ I18N["ko-KR"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
                 "Mirrors": "미러",
                 "Templates": "템플릿",
             "Language": "언어",
-                // 下拉菜单
+                // 드롭다운 메뉴
                 "Select language": "언어를 선택해주세요",
                 "All languages": "모든 언어",
             "Sort": "정렬",
-                // 下拉菜单
+                // 드롭다운 메뉴
                 "Select order": "기준을 선택해주세요",
                 "Last updated": "최근 업데이트",
-                // "Name": "仓库名",
-                // "Recently starred": "最近星标",
-                // "Recently active": "最近活跃",
-                // "Most stars": "最多星标",
-                // "Unstar": "取消星标",
+                // "Name": "리포지토리 이름",
+                // "Recently starred": "최근에 별표 표시됨",
+                // "Recently active": "최근 활동",
+                // "Most stars": "가장 많은 별표",
+                // "Unstar": "별표 취소",
             "New": "새로 만들기",
 
-            // 筛选结果
+            // 필터링 결과
             "result for": "개의 검색 결과 |",
             "results for": "개의 검색 결과 |",
                 "public": "공개",
@@ -2435,19 +2436,19 @@ I18N["ko-KR"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
 
             "Clear filter": "필터 초기화",
 
-            // [/([^ ]+) doesn’t have any repositories that match./, "$1 没有任何匹配的仓库"],
+            // [/([^ ]+) doesn’t have any repositories that match./, "$1에 일치하는 리포지토리가 없습니다"],
             "This organization doesn’t have any repositories that match.": "이 조직에는 일치하는 저장소가 없어요.", // 조직 저장소
 
             "This organization has no public repositories.": "이 조직에는 공개 저장소가 없어요.", //조직 저장소
 
             "No repositories matched your search.": "검색하신 내용과 일치하는 저장소가 없어요.", // 일치하는 저장소 없음
 
-            // 项目 状态词
+            // 프로젝트 상태 단어
             "on": "",
             "Updated": "업데이트 됨",
             "Forked from": "포크 됨",
 
-            // 曲线图提示
+            // 곡선 그래프 팁
             "Past year of activity": "지난 1년간의 활동",
 
         // 새 버전 조직 - 저장소 개요 https://github.com/orgs/<orgs-name>/repositories
@@ -2538,16 +2539,16 @@ I18N["ko-KR"]["page-profile/repositories"] = { // 个人首页 - 仓库标签卡
         [/and (\d+) more/, "등 $1 명"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
-    "selector": [ // 元素筛选器规则
-        ["#type-options > summary > span:nth-child(1)", "유형"], // 个人主页 --> 仓库标签页-->类型筛选器 Type
+    "selector": [ // 요소 필터 규칙
+        ["#type-options > summary > span:nth-child(1)", "유형"], // 개인 홈페이지 --> 리포지토리 탭 페이지-->유형 필터 Type
     ],
 };
 
-I18N["ko-KR"]["page-profile/projects"] = { // 个人首页- 项目标签卡
-    "static": { // 静态翻译
+I18N["ko-KR"]["page-profile/projects"] = { // 개인 홈페이지- 프로젝트 탭 카드
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["page-profile-public"]["static"],
 
-        // 项目标签卡 ?tab=projects >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        // 프로젝트 탭 카드 ?tab=projects >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             "There aren't any projects yet": "아직 아무 프로젝트도 없네요",
             "Provide quick access to relevant projects.": "관련된 프로젝트에 대한 빠른 접근을 제공해요.",
             "Add projects to view them here.": "프로젝트를 추가해보세요.",
@@ -2562,12 +2563,12 @@ I18N["ko-KR"]["page-profile/projects"] = { // 个人首页- 项目标签卡
             "Projects are a customizable, flexible tool for planning and tracking your work.": "프로젝트는 작업을 계획하고 쌓아가기 위한 유연한 사용자 정의 도구에요.",
 
             "Sort": "정렬 방식",
-                // 排序下拉菜单
+                // 정렬 드롭다운 메뉴
                 "Newest": "최신순",
                 "Oldest": "오래된순",
                 "Recently updated": "최근 업데이트순",
                 "Least recently updated": "업데이트된 지 오래된순",
-            // 清除筛选
+            // 필터 지우기
             "Clear current search query and sorts": "검색 초기화",
 
             "Plan and track work across repositories with custom fields and multiple views": "사용자 정의 필드와 다중 보기를 사용하여 저장소 전체에서 작업을 계획하고 추적해요.",
@@ -2582,11 +2583,11 @@ I18N["ko-KR"]["page-profile/projects"] = { // 个人首页- 项目标签卡
             "Closed": "닫힘",
             "Reopen": "다시 열기",
 
-            // 顶部提醒
+            // 상단 알림
             "Project closed.": "프로젝트를 닫았어요.",
             "Project reopened.": "프로젝트를 다시 열었어요.",
 
-            // 组织
+            // 조직
             "Created by me": "사용자님이 만들었어요",
             "Create your first GitHub project template": "첫 번째 GitHub 프로젝트 템플릿 만들기",
             "Templates can be used to quickly get started with a new project.": "템플릿은 새로운 프로젝트를 재빨리 만들 수 있게 해줘요.",
@@ -2696,16 +2697,16 @@ I18N["ko-KR"]["page-profile/projects"] = { // 个人首页- 项目标签卡
             "Let everyone know what this project is about, how to use it and link to important resources.": "이 프로젝트가 무엇인지, 어떻게 사용하는지, 중요한 리소스에 대한 링크를 모두에게 알리세요.",
             "A short description about this project.": "프로젝트에 대한 짧은 설명을 추가하세요.",
     },
-    "regexp": [ // 正则翻译
-        [/View (\d+)/, "视图 $1"],
-        [/([\d,]+) Open/, "$1 打开"], // 项目标签卡
-        [/([\d,]+) Closed/, "$1 已关闭"],
+    "regexp": [ // 정규식 번역
+        [/View (\d+)/, "뷰 $1"],
+        [/([\d,]+) Open/, "$1 열림"], // 프로젝트 탭 카드
+        [/([\d,]+) Closed/, "$1 닫힘"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["page-profile/sponsoring"] = { // 个人首页- 赞助标签卡
-    "static": { // 静态翻译
+I18N["ko-KR"]["page-profile/sponsoring"] = { // 개인 홈페이지- 후원 탭 카드
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["page-profile-public"]["static"],
             "has sponsored": "님이 후원함 :",
             "organization or maintainer in the past": "과거의 조직 혹은 유지 관리자",
@@ -2717,12 +2718,12 @@ I18N["ko-KR"]["page-profile/sponsoring"] = { // 个人首页- 赞助标签卡
             "Sponsored": "후원함 :",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         [/is sponsoring/, "후원 중 :"],
         [/Sponsoring since/, "이때부터 후원중 :"],
         [/Sponsored/, "후원함 :"],
         [/(\d+) repositor(y|ies)/, "$1개의 저장소"],
-        [/(\d+) members?/, "회원 $1명"], // 组织 浮动信息卡
+        [/(\d+) members?/, "회원 $1명"], // 조직 플로팅 정보 카드
     ],
 };
 
@@ -2777,7 +2778,7 @@ I18N["ko-KR"]["page-profile/sponsors"] = { // 개인 페이지 - 후원 탭
         ...I18N["ko-KR"]["page-profile-public"]["static"],
 
         // 후원 탭 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            // [/is sponsoring/, "正在赞助"],
+            // [/is sponsoring/, "이(가) 후원 중입니다"],
             "organization or developer:": "조직 또는 개발자:",
     },
     "regexp": [ // 정규식 번역
@@ -2868,7 +2869,7 @@ I18N["ko-KR"]["page-profile/stars"] = { // 개인 페이지 - 별표 탭
             "Lists": "목록",
             "You don't have any lists yet.": "아직 목록이 없어요.",
 
-            // [/(\d+) repositor(y|ies)/, "$1 个仓库"],
+            // [/(\d+) repositor(y|ies)/, "$1개의 리포지토리"],
 
             // 타인 저장소 별표 페이지 보강
             "Search starred repositories": "별표한 저장소 검색",
@@ -2881,7 +2882,7 @@ I18N["ko-KR"]["page-profile/stars"] = { // 개인 페이지 - 별표 탭
                 "Delete list": "목록 삭제하기",
                     "Are you sure you want to delete this list?": "이 목록을 삭제하시겠어요?",
                         // 상단 알림
-                        // [/Deleted \"(.*)\"./, "已删除 “$1”.], // 별표 목록 삭제
+                        // [/Deleted \"(.*)\"./, "“$1”을(를) 삭제했습니다."], // 별표 목록 삭제
                 "Save list": "목록 저장하기",
                 "Saving...": "저장 중...",
             "Add repositories to this list": "이 목록에 저장소 추가하기",
@@ -2938,14 +2939,14 @@ I18N["ko-KR"]["confirm-access"] = { // “권한 확인” 대화상자
     },
 };
 
-I18N["ko-KR"]["settings-menu"] = { // 设置 - 公共部分
-    "static": { // 静态翻译
-        "Settings": "설정", // 新版全局导航
+I18N["ko-KR"]["settings-menu"] = { // 설정 - 공용 부분
+    "static": { // 정적 번역
+        "Settings": "설정", // 새 버전 전역 탐색
 
         "Your personal account": "내 계정이에요",
-        "Switch settings context": "주체 전환", // 存在组织时
+        "Switch settings context": "주체 전환", // 조직이 있을 때
         "Go to your personal profile": "내 프로필로 이동하기",
-        // 左侧菜单
+        // 왼쪽 메뉴
         "Public profile": "공개 프로필",
         "Account": "계정",
         "Appearance": "모양",
@@ -2990,20 +2991,20 @@ I18N["ko-KR"]["settings-menu"] = { // 设置 - 公共部分
         "Developer settings": "개발자 설정",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs-settings-menu"] = { // 组织设置 公共部分
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs-settings-menu"] = { // 조직 설정 공용 부분
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-public"]["static"],
 
-        // 公用部分
+        // 공용 부분
             "Organization": "조직",
-            "Switch settings context": "주체 변환", // 存在组织时
+            "Switch settings context": "주체 변환", // 조직이 있을 때
             "Go to your organization profile": "조직 프로필로 이동하기",
-            // 左侧菜单
+            // 왼쪽 메뉴
             "General": "일반",
             "Access": "엑세스",
             "Billing and plans": "구매",
@@ -3067,16 +3068,16 @@ I18N["ko-KR"]["orgs-settings-menu"] = { // 组织设置 公共部分
         
             "Developer Settings": "개발자 설정"
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["settings/profile"] = { // 设置 - 个人资料
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/profile"] = { // 설정 - 프로필
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Profile 个人资料 https://github.com/settings/profile
+        // 프로필 https://github.com/settings/profile
             "Public profile": "프로필",
             "Profile picture": "프로필 사진",
                 "Edit": "편집",
@@ -3085,10 +3086,10 @@ I18N["ko-KR"]["settings/profile"] = { // 设置 - 个人资料
                 "Are you sure you want to reset your current avatar?": "정말로 제거하시겠어요?",
                 "Your profile picture has been reset. It may take a few minutes to update across the site.": "프로필 사진이 재설정됐어요. 적용까지 몇 분이 걸릴 수도 있어요.",
                 "Your profile picture has been updated. It may take a few minutes to update across the site.": "프로필 사진이 업데이트됐어요. 적용까지 몇 분이 걸릴 수도 있어요.",
-                // 裁剪个人头像对话框
+                // 프로필 사진 자르기 대화 상자
                 "Crop your new profile picture": "프로필 사진 자르기",
                 "Set new profile picture": "새 프로필 사진으로 등록하기",
-            //"You can also drag and drop a picture from your computer.": "您也可以直接拖拽照片镜像上传.",
+            // "You can also drag and drop a picture from your computer.": "컴퓨터에서 사진을 드래그 앤 드롭하여 업로드할 수도 있습니다.",
             "Name": "이름",
             "Your name may appear around GitHub where you contribute or are mentioned. You can remove it at any time.": "기여하거나 언급될 때 표시될 거에요. 언제든지 제거할 수 있어요.",
             "Public email": "공개 이메일",
@@ -3098,9 +3099,9 @@ I18N["ko-KR"]["settings/profile"] = { // 设置 - 个人资料
             "email settings": "이메일 설정에서",
             "and uncheck \"Keep my email address private.\"": "공개 상태를 변경할 수 있어요.",
             "You can manage verified email addresses in your": "이메일 주소 관리는",
-            //"Don’t show my email address": "不显示我的邮箱",
-            //"You can add or remove verified email addresses in your": "您可以添加或删除邮件地址在您的",
-            //"personal email settings": "邮箱设置",
+            // "Don’t show my email address": "내 이메일 주소 표시 안 함",
+            // "You can add or remove verified email addresses in your": "인증된 이메일 주소를 추가하거나 제거할 수 있습니다.",
+            // "personal email settings": "개인 이메일 설정",
             "Bio": "설명",
             "Tell us a little bit about yourself": "사용자님에 대해 더 알고 싶어요",
             "You can": "다른 사람이나 어떤 조직의 사람들을",
@@ -3111,7 +3112,7 @@ I18N["ko-KR"]["settings/profile"] = { // 设置 - 个人资料
             "Link to social profile": "소셜 계정 링크",
             "Company": "회사",
             "your company’s GitHub organization to link it.": "회사의 Github 조직 링크",
-             //"your company's GitHub organization to link it.": "贵公司和GitHub的组织联系起来.",
+             // "your company's GitHub organization to link it.": "귀사와 GitHub 조직을 연결합니다.",
             "Pronouns": "대명사",
                 "Don't specify": "없음",
                 "they/them": "그들/그들의",
@@ -3127,7 +3128,7 @@ I18N["ko-KR"]["settings/profile"] = { // 设置 - 个人资料
             "privacy statement": "개인정보 보호정책에서",
             "to learn more about how we use this information.": "내 정보가 어디에 쓰이는지 알아보세요.",
             "Update profile": "적용하기",
-            // 顶部提醒
+            // 상단 알림
                 "Profile updated successfully": "성공적으로 적용됐어요.",
                 "Profile updated successfully —": "성공적으로 적용됐어요. —",
                 "view your profile.": "내 프로필 보기",
@@ -3190,16 +3191,16 @@ I18N["ko-KR"]["settings/profile"] = { // 设置 - 个人资料
             "Disconnect your ORCID iD": "ORCID iD 연결을 해제해 보세요",
             "Successfully disconnected ORCID from your GitHub Account.": "GitHub 계정에서 ORCID 연결을 성공적으로 해제했어요."
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 I18N["ko-KR"]["settings"] = I18N["ko-KR"]["settings/profile"];
 
-I18N["ko-KR"]["settings/admin"] = { // 设置 - 账户
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/admin"] = { // 설정 - 계정
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-            // Account settings 账户设置 https://github.com/settings/admin
+            // 계정 설정 https://github.com/settings/admin
             "Change username": "사용자 이름 변경하기",
             "Changing your username can have": "사용자 이름 변경 시",
             "unintended side effects": "예상치 못한 부작용이 있을 수 있어요",
@@ -3360,11 +3361,11 @@ I18N["ko-KR"]["succession/invitation"] = {
 };
   
 
-I18N["ko-KR"]["settings/appearance"] = { // 设置 - 外观
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/appearance"] = { // 설정 - 외관
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Appearance 外观 https://github.com/settings/appearance
+        // 외관 https://github.com/settings/appearance
             "Theme preferences": "테마 환경설정",
             "Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.": "GitHub이 어떻게 보일지 선택해보세요. 단일 테마를 선택하거나 시스템과 동기화하여 낮과 밤 테마를 자동으로 전환할 수 있어요. 선택 사항은 즉시 적용되고 자동으로 저장돼요.",
             "Theme mode": "테마 모드",
@@ -3399,15 +3400,15 @@ I18N["ko-KR"]["settings/appearance"] = { // 设置 - 外观
             "Use a fixed-width (monospace) font when editing Markdown": "Markdown 편집 시 고정 폭(등폭) 글꼴을 사용해보세요.",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/accessibility"] = { // 设置 - 无障碍
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/accessibility"] = { // 설정 - 접근성
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Accessibility 无障碍 https://github.com/settings/accessibility
+        // 접근성 https://github.com/settings/accessibility
         "GitHub keyboard shortcuts": "GitHub 키보드 단축키",
         "General": "일반",
         "Character keys": "문자 키",
@@ -3471,15 +3472,15 @@ I18N["ko-KR"]["settings/accessibility"] = { // 设置 - 无障碍
                 "Paste behavior preferences successfully saved.": "붙여넣기 동작 환경설정이 성공적으로 저장되었어요.",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/notifications"] = { // 设置 - 通知
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/notifications"] = { // 설정 - 알림
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // Notification center 通知 https://github.com/settings/notifications
+        // 알림 센터 https://github.com/settings/notifications
             "Default notifications email": "기본 알림 이메일 설정",
                 "Choose where you'd like emails to be sent. You can add more email addresses. Use custom routes to specify different email addresses to be used for individual organizations.": "알림 이메일을 받을 주소를 선택해보세요. 이메일 주소를 추가할 수 있어요. 사용자 지정 라우팅을 사용해 각 조직마다 다른 이메일 주소를 지정할 수도 있어요.",
                 "Custom routing": "사용자 지정 라우팅",
@@ -3562,14 +3563,14 @@ I18N["ko-KR"]["settings/notifications"] = { // 设置 - 通知
                         "Saved": "저장됨",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["settings/billing"] = { // 设置 - 账单和计划
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/billing"] = { // 설정 - 청구 및 요금제
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
-        ...I18N["ko-KR"]["orgs-settings-menu"]["static"], // 组织设置
+        ...I18N["ko-KR"]["orgs-settings-menu"]["static"], // 조직 설정
 
         // 상단 알림
         "Successfully updated billing information.": "결제 정보가 성공적으로 업데이트되었어요.",
@@ -4090,11 +4091,11 @@ I18N["ko-KR"]["orgs/billing_managers/new"] = I18N["ko-KR"]["settings/billing"];
 I18N["ko-KR"]["orgs/billing/history"] = I18N["ko-KR"]["settings/billing"];
 I18N["ko-KR"]["orgs/billing/plans"] = I18N["ko-KR"]["settings/billing"];
 
-I18N["ko-KR"]["settings/emails"] = { // 设置 - 电子邮箱
-    "static": { // 静态翻译
+I18N["ko-KR"]["settings/emails"] = { // 설정 - 이메일
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // 이메일 电子邮箱 https://github.com/settings/emails
+        // 이메일 https://github.com/settings/emails
             // 노란색 경고 상자
             "You have a single verified email associated with your GitHub account. Add an additional verified email address in case you lose access to your primary email.": "사용자님의 GitHub 계정에 인증된 이메일이 하나만 연결되어 있어요. 주 이메일에 접근할 수 없게 될 경우를 대비해 추가 인증 이메일 주소를 등록해보세요.",
 
@@ -4227,13 +4228,13 @@ I18N["ko-KR"]["settings/security"] = { // 설정 - 비밀번호와 인증
 
                 "Your passkeys": "내 패스키",
                 "| Last used": "| 마지막 사용",
-                // | Last used less than 1 小时之前
+                // | 마지막 사용 1시간 전
                 "Edit passkey nickname": "패스키 별칭 수정하기",
-                // [/Delete `([^ ]+)` passkey/, "删除 “$1” 通行密钥"],
+                // [/Delete `([^ ]+)` passkey/, "“$1” 패스키 삭제"],
 
                 // 삭제 키 대화상자
                     "Delete passkey?": "패스키 삭제할까요?",
-                    // [/Are you sure you want to delete your `([^ ]+)` passkey?/, "您确定要删除您的 “$1” 通行密钥吗？"],
+                    // [/Are you sure you want to delete your `([^ ]+)` passkey?/, "“$1” 패스키를 정말 삭제하시겠습니까?"],
                     "You will no longer be able to use it to sign-in to your account.": "이 패스키로 더 이상 계정에 로그인할 수 없게 돼요.",
                     "Note: You may continue to see this passkey as an option during sign-in until you also delete it from your browser, device or associated account's password management settings.": "참고: 브라우저, 기기 또는 관련 계정의 비밀번호 관리 설정에서 삭제하기 전까지 로그인 옵션에 계속 표시될 수 있어요.",
                     "Deleting…": "삭제 중…",
@@ -4308,7 +4309,7 @@ I18N["ko-KR"]["settings/security"] = { // 설정 - 비밀번호와 인증
                     "Sent. It may take a minute for the SMS to arrive.": "보냈어요. SMS 도착까지 1분 정도 걸릴 수 있어요.",
                     "Verify the code sent to your phone": "휴대폰으로 받은 코드를 확인해 주세요.",
 
-                    // [/You will receive one-time codes at this phone number:/, "您将通过以下电话号码收到一次性验证码："], // 이미 설정된 SMS/문자 메시지
+                    // [/You will receive one-time codes at this phone number:/, "다음 전화번호로 일회용 코드를 받게 됩니다:"], // 이미 설정된 SMS/문자 메시지
 
                 "Security keys": "보안 키",
                     "Security keys are webauthn credentials that can only be used as a second factor of authentication.": "보안 키는 WebAuthn 자격증명으로, 오직 2단계 인증의 두 번째 요소로만 사용할 수 있어요.",
@@ -4325,7 +4326,7 @@ I18N["ko-KR"]["settings/security"] = { // 설정 - 비밀번호와 인증
                     "GitHub Mobile can be used for two-factor authentication by installing the GitHub Mobile app and signing in to your account.": "GitHub Mobile 앱을 설치하고 로그인하면 2단계 인증에 사용할 수 있어요.",
                     "Manage GitHub Mobile": "GitHub Mobile 관리하기",
 
-                    // [/(\d+) devices?/, "$1 设备"], // 설정 -> 비밀번호와 인증 페이지
+                    // [/(\d+) devices?/, "$1개 장치"], // 설정 -> 비밀번호와 인증 페이지
                     "Show": "보이기",
 
             "Recovery options": "복구 옵션",
@@ -4550,7 +4551,7 @@ I18N["ko-KR"]["settings/enterprises"] = { // 설정 - 기업
     "static": { // 정적 번역
         ...I18N["ko-KR"]["settings-menu"]["static"],
 
-        // 企业版 https://github.com/settings/enterprises
+        // 엔터프라이즈 버전 https://github.com/settings/enterprises
         "Enterprises": "기업",
         "You don't have any enterprises": "사용자님은 아직 어떠한 기업에도 가입되어 있지 않아요.",
         "Designed for businesses or teams who collaborate on GitHub.com": "GitHub.com에서 협업하는 기업이나 팀을 위해 설계되었어요.",
@@ -4609,14 +4610,14 @@ I18N["ko-KR"]["settings/interaction_limits"] = { // 설정 - 상호작용 제한
             "Users": "사용자",
             "Contributors": "기여자",
             "Collaborators": "협업자",
-            // 交互限制时间 下拉 메뉴
+            // 상호 작용 제한 시간 드롭다운 메뉴
             "Enable interaction limits for:": "다음 기간 동안 상호작용 제한 활성화:",
             "24 hours": "24 시간",
             "3 days": "3 일",
             "1 week": "1 주",
             "1 month": "1 달",
             "6 months": "6 달",
-            // 顶部提醒
+            // 상단 알림
             "User interaction limit settings saved.": "사용자 상호작용 제한 설정이 저장되었어요."
     },
     "regexp": [ // 정규식 번역
@@ -4680,13 +4681,13 @@ I18N["ko-KR"]["settings/deleted_repositories"] = { // 설정 - 저장소 - 삭�
             "These repositories were deleted, but can't be restored by you. Contact support if you want to restore them.": "이 저장소들은 삭제되었으나, 사용자님께서 복원할 수 없어요. 복원하고 싶으시면 지원팀에 연락해 주세요.",
 
             "Deleted": "삭제됨",
-            // [/by/, "由"], // 삭제된 저장소
+            // [/by/, "작성자"], // 삭제된 저장소
             "Restore": "복원하기",
             "Queue…": "대기 중…",
             "Done!": "완료!",
 
             // 저장소 복원 대화상자
-            // [/Are you sure you want to restore ([^ ]+)?/, "您确定要恢复 $1 吗？"],
+            // [/Are you sure you want to restore ([^ ]+)?/, "$1을(를) 복원하시겠습니까?"],
             "This repository will be in a private state when it is restored. To change this state, go to settings once the repo is restored.": "이 저장소는 복원되면 비공개 상태가 돼요. 상태를 변경하려면 저장소 복원 후 설정으로 이동해 주세요.",
             "Any team or collaborator permissions that previously existed for this repository will not be restored. If you require specific team or collaborator permissions, you will need to configure them in settings.": "이 저장소의 이전 팀이나 협업자 권한은 복원되지 않아요. 특정 팀이나 협업자 권한이 필요하시면 설정에서 다시 구성해 주세요.",
             "I understand, restore this repository": "이해했어요, 이 저장소를 복원할게요.",
@@ -4725,12 +4726,12 @@ I18N["ko-KR"]["settings/codespaces"] = { // 설정 - 코드스페이스
 
             "GPG verification": "GPG 검증",
                 "Codespaces can have GPG commit signing capabilities so that GitHub can verify that commits made in the codespace come from a trusted source. When enabled, this setting will be applied to your list of trusted repositories.": "코드스페이스는 GPG 커밋 서명 기능을 가질 수 있어요, 이를 통해 GitHub가 코드스페이스에서 만들어진 커밋이 신뢰할 수 있는 출처에서 왔는지 검증할 수 있어요. 활성화되면, 이 설정은 사용자님의 신뢰하는 저장소 목록에 적용돼요.",
-                // "Enabled": "启用",
+                // "Enabled": "활성화됨",
                     "GPG signing will be available in Codespaces": "코드스페이스에서 GPG 서명이 사용 가능해요",
 
             "Settings Sync": "설정 동기화",
                 "By enabling, your codespaces will be able to pull from VS Code Settings Sync service and push only for the trusted repositories you specify. Only enable this for repositories that you trust.": "활성화하면, 사용자님의 코드스페이스는 VS Code 설정 동기화 서비스에서 데이터를 가져올 수 있고, 지정한 신뢰하는 저장소에만 푸시할 수 있어요. 신뢰하는 저장소에 대해서만 활성화해주세요.",
-                // "Enabled": "启用",
+                // "Enabled": "활성화됨",
                     "VS Code Settings Sync will be available in Codespaces": "코드스페이스에서 VS Code 설정 동기화가 사용 가능해요",
 
             "Trusted repositories": "신뢰하는 저장소",
@@ -5693,7 +5694,7 @@ I18N["ko-KR"]["settings/apps"] = { // 설정 - 개발자 설정/GitHub 앱
                         "Commit statuses.": "커밋 상태에 관한 정보에요.",
                     "Contents": "내용",
                         "Repository contents, commits, branches, downloads, releases, and merges.": "저장소 내용, 커밋, 분기, 다운로드, 릴리즈 및 병합 내역이에요.",
-                    // 自定义属性
+                    // 사용자 지정 속성
                         "View and set values for a repository's custom properties, when allowed by the property.": "속성 허용 시, 저장소의 사용자 정의 속성 값을 조회 및 설정할 수 있어요.",
                     "Dependabot alerts": "Dependabot 알림",
                         "Retrieve Dependabot alerts.": "Dependabot 알림을 조회할 수 있어요.",
@@ -5847,7 +5848,7 @@ I18N["ko-KR"]["settings/apps"] = { // 설정 - 개발자 설정/GitHub 앱
                     "Check suite is requested, rerequested, or completed.": "체크 스위트가 요청, 재요청 또는 완료되었어요.",
                 "Commit comment": "커밋 댓글",
                     "Commit or diff commented on.": "커밋 또는 변경사항에 대해 댓글이 달렸어요.",
-                //"创建": "",
+                // "생성": "",
                     "Branch or tag created.": "분기 또는 꼬리표가 생성되었어요.",
                 "Custom property": "사용자 정의 속성",
                     "Custom property is created, updated, or deleted.": "사용자 정의 속성이 생성, 업데이트 또는 삭제되었어요.",
@@ -5857,7 +5858,7 @@ I18N["ko-KR"]["settings/apps"] = { // 설정 - 개발자 설정/GitHub 앱
                     "Discussion created, edited, closed, reopened, pinned, unpinned, locked, unlocked, transferred, answered, unanswered, labeled, unlabeled, had its category changed, or was deleted.": "토론이 생성, 편집, 종료, 재개, 고정, 고정 해제, 잠금, 잠금 해제, 전환, 답변, 미답변, 라벨 추가, 라벨 제거, 카테고리 변경 또는 삭제되었어요.",
                 "Discussion comment": "토론 댓글",
                     "Discussion comment created, edited, or deleted.": "토론 댓글이 생성, 편집 또는 삭제되었어요.",
-                //"删除": "",
+                // "삭제": "",
                     "Branch or tag deleted.": "분기 또는 꼬리표가 삭제되었어요.",
                 "Dependabot alert": "Dependabot 알림",
                     "Dependabot alert auto_dismissed, auto_reopened, created, dismissed, reopened, fixed, or reintroduced.": "Dependabot 알림이 자동 해제, 자동 재개, 생성, 해제, 재개, 수정 또는 재도입되었어요.",
@@ -5875,7 +5876,7 @@ I18N["ko-KR"]["settings/apps"] = { // 설정 - 개발자 설정/GitHub 앱
                     "Push ruleset bypass request was created, cancelled, completed, received a response, or a response was dismissed. Note: Delegated bypass for push rules is currently in beta and subject to change.": "푸시 규칙집 예외 요청이 생성, 취소, 완료, 응답 수신 또는 응답 해제되었어요. 참고: 푸시 규칙 위임 예외는 현재 베타 단계이며 변경될 수 있어요.",
                 "Exemption request secret scanning": "시크릿 스캔 예외 요청",
                     "Secret scanning push protection bypass request was created, cancelled, completed, received a response, or a response was dismissed. Note: Delegated bypass for push protection is currently in beta and subject to change.": "시크릿 스캔 푸시 보호 예외 요청이 생성, 취소, 완료, 응답 수신 또는 응답 해제되었어요. 참고: 푸시 보호 위임 예외는 현재 베타 단계이며 변경될 수 있어요.",
-                //"复刻": "",
+                // "포크": "",
                     "Repository forked.": "저장소가 포크되었어요.",
                 "Gollum": "골룸",
                     "Wiki page updated.": "Wiki 페이지가 업데이트되었어요.",
@@ -5945,9 +5946,9 @@ I18N["ko-KR"]["settings/apps"] = { // 설정 - 개발자 설정/GitHub 앱
                     "Secrets scanning scan completed.": "시크릿 스캔이 완료되었어요.",
                 // 별표
                     "A star is created or deleted from a repository.": "저장소에 별표가 생성되거나 취소되었어요.",
-                //"状态": "",
+                // "상태": "",
                     "Commit status updated from the API.": "API를 통해 커밋 상태가 업데이트되었어요.",
-                //"团队": "",
+                // "팀": "",
                     "Team is created, deleted, edited, or added to/removed from a repository.": "팀이 생성, 삭제, 편집되었거나 저장소에 추가/제거되었어요.",
                 "Team add": "팀 추가",
                     "Team added or modified on a repository.": "저장소 팀이 추가되거나 수정되었어요.",
@@ -5968,7 +5969,7 @@ I18N["ko-KR"]["settings/apps"] = { // 설정 - 개발자 설정/GitHub 앱
  
             "Where can this GitHub App be installed?": "이 GitHub 앱을 어디에 설치할 수 있나요?",
                 "Only on this account": "현재 계정에만 설치하기",
-                    // [/Only allow this GitHub App to be installed on the (@[^ ]+) account./, "仅允许在 $1 帐户上安装此 GitHub 应用."],
+                    // [/Only allow this GitHub App to be installed on the (@[^ ]+) account./, "이 GitHub 앱을 $1 계정에만 설치하도록 허용합니다."],
                 "Any account": "어떤 계정에도 설치 가능",
                     "Allow this GitHub App to be installed by any user or organization.": "어떤 사용자나 조직에서도 이 GitHub 앱을 설치할 수 있도록 해요.",
  
@@ -6633,7 +6634,7 @@ I18N["ko-KR"]["settings/tokens"] = { // 설정 - 개발자 설정/개인 접근 
 };
 I18N["ko-KR"]["settings/personal-access-tokens"] = I18N["ko-KR"]["settings/tokens"];
 
-// 仓库相关==
+// 리포지토리 관련==
 I18N["ko-KR"]["repository-public"] = { // 저장소 - 공용 부분
     "static": { // 정적 번역
         // 저장소 페이지 /<user-name>/<repo-name>/
@@ -6668,15 +6669,15 @@ I18N["ko-KR"]["repository-public"] = { // 저장소 - 공용 부분
                 "Committed to this repository in the past week": "최근 일주일 동안 이 저장소에 커밋했어요.",
                 "Committed to this repository in the past month": "최근 한 달 동안 이 저장소에 커밋했어요.",
                 "Member of": "소속 조직:",
-                // [/, and (\d+) more/, "，以及其他 $1 个组织"],
+                // [/, and (\d+) more/, ", 그리고 $1개 더"],
                 "Opened this issue": "이 이슈를 열었어요.",
                 "Opened this pull request": "이 끌어오기 요청을 열었어요.",
                 "Opened this pull request (their first ever)": "이 끌어오기 요청을 열었어요 (첫 번째 요청이에요).",
                 "Started this discussion": "이 토론을 시작했어요.",
 
             // 조직 플로팅 정보 카드
-                // [/(\d+) repositor(y|ies)/, "$1 个仓库"],
-                // [/(\d+) members?/, "$1 个成员"],
+                // [/(\d+) repositor(y|ies)/, "$1개의 리포지토리"],
+                // [/(\d+) members?/, "$1명의 멤버"],
 
             "Some checks haven't completed yet": "일부 체크가 아직 완료되지 않았어요.",
 
@@ -6723,9 +6724,9 @@ I18N["ko-KR"]["repository-public"] = { // 저장소 - 공용 부분
                     "This user is the author of this issue.": "이 사용자가 이 이슈의 작성자예요.",// 끌어오기 요청
                     "This user is the author of this pull request.": "이 사용자가 이 끌어오기 요청의 작성자예요.",// 끌어오기 요청
                 "Member": "멤버",
-                    //[/This user is a member of the ([^ ]+)./, "该用户是 $1 组织的成员."],
+                    // [/This user is a member of the ([^ ]+)./, "이 사용자는 $1 조직의 멤버입니다."],
                 "Collaborator": "협업자",
-                    //[/This user has been invited to collaborate on the ([^ ]+) repository./, "该用户已被邀请在 $1 仓库上进行协作."],
+                    // [/This user has been invited to collaborate on the ([^ ]+) repository./, "이 사용자는 $1 리포지토리에서 협업하도록 초대받았습니다."],
                 "Pick your reaction": "반응 선택하기",
                 "Copy link": "링크 복사하기",
                 "Quote reply": "인용하여 답글 달기",
@@ -6814,7 +6815,7 @@ I18N["ko-KR"]["repository-public"] = { // 저장소 - 공용 부분
                 "Submit comment and close issue": "댓글 제출하고 이슈 닫기",
                 "Preview comment": "댓글 미리보기",
                 "Create issue": "이슈 만들기",
-                // "筛选用户": "",
+                // "사용자 필터링": "",
                 "Filter by or edit assignees"  : "담당자별 필터 또는 담당자 수정하기",
                 "Filter by or edit labels"     : "라벨별 필터 또는 라벨 수정하기",
                 "Filter by or edit projects"   : "프로젝트별 필터 또는 프로젝트 수정하기",
@@ -7070,16 +7071,16 @@ I18N["ko-KR"]["page-new-repo"] = { // 저장소 - 새로 만들기/가져오기/
             "Your access token or password for your source repository": "원본 저장소의 접근 토큰 또는 비밀번호",
 
             "Your new repository details": "새 저장소 정보",
-            //"Owner": "所有者",
-            // "Repository name": "仓库名称",
-                // "is available.": "名称可用.",
+            // "Owner": "소유자",
+            // "Repository name": "리포지토리 이름",
+                // "is available.": "이름을 사용할 수 있습니다.",
                 //"The repository": "저장소",
-                //"already exists on this account.": "已经存在于此账户.",
-                //"Your new repository will be created as": "您的新仓库将被创建为",
+                // "already exists on this account.": "이 계정에 이미 존재합니다.",
+                // "Your new repository will be created as": "새 리포지토리는 다음과 같이 생성됩니다.",
             //"Public": "공개",
-            //"Anyone on the internet can see this repository. You choose who can commit.": "任何人都可以看到这个仓库，您可以选择谁能提交.",
+            // "Anyone on the internet can see this repository. You choose who can commit.": "누구나 이 리포지토리를 볼 수 있으며, 커밋할 수 있는 사람을 선택할 수 있습니다.",
             //"Private": "비공개",
-            //"You choose who can see and commit to this repository.": "您可以选择谁可以看和提交到该仓库.",
+            // "You choose who can see and commit to this repository.": "이 리포지토리를 보고 커밋할 수 있는 사람을 선택할 수 있습니다.",
             "Cancel": "취소하기",
             "Begin import": "가져오기 시작하기",
             "Preparing import…": "가져오기 준비 중이에요…",
@@ -7154,24 +7155,24 @@ I18N["ko-KR"]["repository/import"] = I18N["ko-KR"]["page-new-repo"];
 I18N["ko-KR"]["repository/fork"] = I18N["ko-KR"]["page-new-repo"];
 I18N["ko-KR"]["orgs/repositories/new"] = I18N["ko-KR"]["page-new-repo"];
 
-I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository"] = { // 리포지토리 페이지 /<user-name>/<repo-name>/
+    "static": { // 정적 번역
             ...I18N["ko-KR"]["repository-public"]["static"],
 
-        // 代码标签卡 & 仓库首页 /<user-name>/<repo-name>/ 和 /<user-name>/<repo-name>/tree/<branch>
-            // [/Branch ([^ ]+) was renamed to ([^ ]+)./, "分支 $1 已更名为 $2."],
+        // 코드 탭 카드 및 리포지토리 홈페이지 /<user-name>/<repo-name>/ 및 /<user-name>/<repo-name>/tree/<branch>
+            // [/Branch ([^ ]+) was renamed to ([^ ]+)./, "브랜치 $1이(가) $2(으)로 이름이 변경되었습니다."],
 
-            // 快捷键
+            // 단축키
                 "Commands": "명령어",
                 "Clone repository: Copy HTTPS": "저장소 복제: HTTPS 복사",
                 "Clone repository: Copy SSH": "저장소 복제: SSH 복사",
                 "Clone repository: Copy GitHub CLI": "저장소 복제: GitHub CLI 복사",
                 "Copy file permalink": "파일 영구 링크 복사",
 
-            // 操作条
+            // 작업 표시줄
                 "forked from": "포크함 :",
-                "Public repository · Forked from": "공개 저장소 · 포크함 :", // Android UA 下出现
-                "Public repository · Generated from": "공개 저장소 · 생성함 :", // 同上
+                "Public repository · Forked from": "공개 저장소 · 포크함 :", // Android UA에서 나타남
+                "Public repository · Generated from": "공개 저장소 · 생성함 :", // 위와 동일
                 "generated from": "생성함 :",
                 "mirrored from": "미러함 :",
 
@@ -7183,7 +7184,7 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                     "Profile": "프로필",
                         "Pin this to your personal profile, visible to everyone": "개인 프로필에 이것을 고정하기, 모두에게 보임",
                         "Limit reached": "최대 제한 넘음",
-                    // 组织仓库
+                    // 조직 리포지토리
                     "Public pins in this organization": "이 조직의 공개 고정",
                         "Visible to anyone": "모두에게 보임",
                     "Private pins in this organization": "이 조직의 비공개 고정",
@@ -7201,18 +7202,18 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                 "Unfork": "포크 취소",
 
                 "Sponsor": "후원",
-                // 赞助对话框
-                // [/Sponsor ([^ ]+)?/, "赞助 $1"], // 赞助按钮 对话框 标题
+                // 후원 대화 상자
+                // [/Sponsor ([^ ]+)?/, "$1 후원"], // 후원 버튼 대화 상자 제목
                 "External links": "외부 링크",
                 "Learn more about funding links in repositories": "저장소의 펀딩 링크에 대해 자세히 알아보기",
                 "Report abuse": "남용 신고",
 
-                // 提交栏 GitHub Action
+                // 커밋 표시줄 GitHub Action
                 "All checks have passed": "모든 검사가 통과되었어요",
 
 
-                // 关注 & 订阅通知设置 下拉菜单
-                "Notification settings": "알림 설정", //小屏模式
+                // 팔로우 및 구독 알림 설정 드롭다운 메뉴
+                "Notification settings": "알림 설정", // 작은 화면 모드
                 "Subscribe to events for": "다음 이벤트를 위해 구독 :",
                 "Notifications": "알림",
                 "Participating and @mentions": "구독과 @언급",
@@ -7225,17 +7226,17 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                     "Select events you want to be notified of in addition to participating and @mentions.": "참여 및 @언급 외에도 알림을 받고 싶은 이벤트를 선택하기",
                 "Get push notifications on": "푸시 알림 받기",
                 "Releases": "릴리즈",
-                    //"Issues are not enabled for this repository": "此仓库未启用이슈功能",
+                    // "Issues are not enabled for this repository": "이 리포지토리에서는 이슈 기능이 활성화되어 있지 않습니다",
                 "Discussions": "토론",
-                    //"Discussions are not enabled for this repository": "该仓库未启用讨论功能",
-                    //"Discussions are not enabled for this repo": "此仓库未启用讨论功能",
+                    // "Discussions are not enabled for this repository": "이 리포지토리에서는 토론 기능이 활성화되어 있지 않습니다",
+                    // "Discussions are not enabled for this repo": "이 리포지토리에서는 토론 기능이 활성화되어 있지 않습니다",
                     "are not enabled for this repository": "은 이 저장소에서 활성화 되어 있지 않어요",
                 "Security alerts": "보안 알림",
-                //"Cancel": "取消",
+                // "Cancel": "취소",
                 "Apply": "반영하기",
                 "Close": "닫기",
 
-                // 复刻下拉
+                // 포크 드롭다운
                 "Cannot fork because repository is empty.": "저장소가 비어있기 때문에 포크할 수 없어요.",
                 "Cannot fork because you own this repository and are not a member of any organizations.": "이 저장소를 소유하고 있으며 어떤 조직의 회원도 아니기 때문에 포크할 수 없어요.",
                 "Existing forks": "기존 포크",
@@ -7243,64 +7244,64 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                 "Create a new fork": "새 포크 만들기",
 
                 //
-                "Star this repository": "이 저장소에 별표하기", //小屏模式
-                "Unstar this repository": "이 저장소 별표 취소하기", //小屏模式
+                "Star this repository": "이 저장소에 별표하기", // 작은 화면 모드
+                "Unstar this repository": "이 저장소 별표 취소하기", // 작은 화면 모드
 
-            // 仓库主页 分支保护
-                // [/Your ([^ ]+) branch isn't protected/, "您的 $1 分支不受保护"], // 仓库主页 分支保护
+            // 리포지토리 홈페이지 분기 보호
+                // [/Your ([^ ]+) branch isn't protected/, "$1 브랜치가 보호되지 않았습니다"], // 리포지토리 홈페이지 분기 보호
                 "Your": "사용자님의",
-                "branch isn't protected": "분기가 보호되지 않고 있어요", // 新版仓库概述
+                "branch isn't protected": "분기가 보호되지 않고 있어요", // 새 버전 리포지토리 개요
                 "Protect this branch from force pushing or deletion, or require status checks before merging.": "강제 푸시나 삭제로부터 이 분기를 보호하거나 병합하기 전에 상태 확인이 필요해요.",
                 "View documentation.": "문서 보기",
                 "Protect this branch": "이 분기 보호하기",
                 "Dismiss": "무시",
 
-            // 仓库主页 Dependabot 警告框
+            // 리포지토리 홈페이지 Dependabot 경고 상자
                 "We found potential security vulnerabilities in your dependencies.": "사용하시는 종속성에서 잠재적인 보안 취약점이 발견되었어요.",
                 "Only the owner of this repository can see this message.": "이 저장소의 소유자만 이 메시지를 볼 수 있어요.",
                 "See Dependabot alerts": "Dependabot 알림 보기",
 
-            // 空仓库
+            // 빈 리포지토리
                 "This repository is empty.": "이 저장소는 텅 비어있네요",
                 "Care to check out the": "기다리는 동안",
                 "GitHub Channel on YouTube": "GitHub의 YouTube 채널도",
                 "while you wait?": "확인해보세요. 심심할 것 같아서요.",
 
-            // 已上架的 GitHub Action 项目
+            // 등록된 GitHub Action 프로젝트
                 "Use this GitHub action with your project": "이 GitHub 액션을 프로젝트와 함께 사용하세요",
                 "Add this Action to an existing workflow or create a new one": "기존 워크플로에 이 액션을 추가하거나 새 워크플로를 만들어 주세요",
                 "View on Marketplace": "장터에서 보기",
 
-            // 未上架的 GitHub Action 项目
+            // 등록되지 않은 GitHub Action 프로젝트
                 "You can publish this Action to the GitHub Marketplace": "이 액션을 GitHub 장터에 게시할 수 있어요",
                 "Draft a release": "릴리즈 초안 작성하기",
 
-            // 访问已删除的分支
+            // 삭제된 브랜치에 액세스
             "This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository.": "이 커밋은 이 저장소의 어떤 분기에도 속하지 않으며 저장소 외부의 분기에도 속할 수 있어요.",
 
-            // 最近有了新提交提醒
-            // [/had recent pushes less than/, "有了最近的推送，不到"], //最近有了新提交提醒
-            // [/had recent pushes/, "有了最近的推送，"], //最近有了新提交提醒
+            // 최근 새 커밋 알림
+            // [/had recent pushes less than/, "최근 푸시가 있었으며, "], //최근 새 커밋 알림
+            // [/had recent pushes/, "최근 푸시가 있었습니다, "], //최근 새 커밋 알림
 
-            "Navigate back to": "다음으로 돌아가기 :", // 小屏模式
+            "Navigate back to": "다음으로 돌아가기 :", // 작은 화면 모드
 
-            // 左侧正文
+            // 왼쪽 본문
 
-            // 文档栏目(仅 Andoid UA)
+            // 문서 항목(Andoid UA만)
             "More": "더 보기",
             "Menu": "메뉴",
 
-            // 自述文件(README.md)
+            // 자기소개 파일(README.md)
             "Filter headings": "필터 제목",
             "Edit file": "파일 수정하기",
 
-            // 默认分支被重命名提醒框
+            // 기본 브랜치 이름 변경 알림 상자
                 "The default branch has been renamed!": "기본 지점의 이름이 변경되었어요!",
                 "is now named": "은(는) 이제 이 이름이에요 :",
                 "If you have a local clone, you can update it by running the following commands.": "로컬 복제가 있는 경우 다음 명령을 실행하여 업데이트할 수 있어요.",
                 "OK, got it": "이해했어요",
 
-                // 上游仓库分支重命名
+                // 업스트림 리포지토리 브랜치 이름 변경
                     "The default branch on the parent repository has been renamed!": "부모 저장소의 기본 분기 이름이 변경되었어요!",
                     "renamed its default branch": "기본 분기로 이름을 변경했어요",
                     "You can rename this fork's default branch to match in": "이 포크의 기본 분기 이름을 일치하도록 변경할 수 있어요",
@@ -7316,12 +7317,12 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                 "Go to folder": "폴더로 가기",
                 "See all results": "모든 결과 보기",
             "Add file": "파일 추가",
-                // 添加文件 下拉菜单
+                // 파일 추가 드롭다운 메뉴
                 "Create new file": "새 파일 만들기",
                 "Upload files": "파일 업로드하기",
                 "Upload file": "파일 업로드하기", // Android UA
 
-            // 代码 下拉菜单
+            // 코드 드롭다운 메뉴
                 "Local": "로컬",
                     "Clone": "복제",
                         // HTTPS
@@ -7351,12 +7352,12 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
 
                     "Which remote URL should I use?": "어떤 원격 URL을 사용해야 하나요?",
                     "Copy url to clipboard": "URL 클립보드로 복사하기",
-                    // "Copy to clipboard": "复制到剪切板",
-                    // "Copied!": "✅ 复制成功!",
+                    // "Copy to clipboard": "클립보드에 복사",
+                    // "Copied!": "✅ 복사 성공!",
 
-                // 代码空间
+                // 코드스페이스
                     "Your workspaces in the cloud": "클라우드에 있는 작업공간들",
-                    //[/Create a codespace on ([^ ]+)/, "在 $1 上创建代码空间"],
+                    // [/Create a codespace on ([^ ]+)/, "$1에서 코드스페이스 생성"],
                     "Codespace repository configuration": "코드스페이스 저장소 구성",
                         "New with options...": "새로 만들기 (옵션 포함)",
                         "Configure dev container": "개발 컨테이너 구성",
@@ -7431,9 +7432,9 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                     "Describe a task...": "작업을 묘사해보세요...",
                     "Start task": "작업 시작하기",
 
-                    // [/Codespace \"(.+)\" stopped./, "代码空间 “$1” 已停止."],
-                    // [/Codespace \"(.+)\" deleted./, "代码空间 “$1” 已删除."],
-                    // [/Are you sure you want to delete (.+)\?/, "您确定要删除 $1 吗？"],
+                    // [/Codespace \"(.+)\" stopped./, "코드스페이스 “$1”이(가) 중지되었습니다."],
+                    // [/Codespace \"(.+)\" deleted./, "코드스페이스 “$1”이(가) 삭제되었습니다."],
+                    // [/Are you sure you want to delete (.+)\?/, "$1을(를) 정말 삭제하시겠습니까?"],
 
 
             "Use this template": "이 템플릿 사용",
@@ -7477,37 +7478,37 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                 // [/Discard (\d+) commits?/, "폐기 $1개의 커밋"],
                 "Discarding changes...": "변경 사항을 폐기하는 중이에요...",
 
-                // 顶部提醒
-                    // [/Successfully fetched and merged from upstream ([^ ]+)/, "成功从上游 $1 获取并合并."],
+                // 상단 알림
+                    // [/Successfully fetched and merged from upstream ([^ ]+)/, "업스트림 $1에서 성공적으로 가져와 병합했습니다."],
 
-            // "Choose a head ref": "选择一个头引用",
+            // "Choose a head ref": "헤드 참조 선택",
 
-            // "There isn’t anything to compare.": "没有什么可比较的.",
+            // "There isn’t anything to compare.": "비교할 항목이 없습니다.",
             // "and": "그리고",
-            // "are entirely different commit histories.": "是完全不同的提交历史.",
-            // "No commit comments for this range": "在此范围内没有提交评论",
-            // "No new commits yet. enjoy your day!": "尚无新提交.祝您愉快！",
-            // "Find a branch": "查找分支",
+            // "are entirely different commit histories.": "는 완전히 다른 커밋 기록입니다.",
+            // "No commit comments for this range": "이 범위에는 커밋 댓글이 없습니다",
+            // "No new commits yet. enjoy your day!": "아직 새 커밋이 없습니다. 좋은 하루 보내세요!",
+            // "Find a branch": "브랜치 찾기",
 
-            // 正文
+            // 본문
             "commit": "커밋",
             "commits": "커밋",
             "failure": "실패",
             "success": "성공",
             "Approved": "승인됨",
-            // [/([\d,]+) Commits?/, "$1 次提交"], // 新版仓库概述
+            // [/([\d,]+) Commits?/, "$1번의 커밋"], // 새 버전 리포지토리 개요
 
             "Failed to load latest commit information.": "최신 커밋 정보를 불러오는 데 실패했습니다.",
 
             "View code": "코드 보기", // 소형 화면 모드
 
-            // 仓库缺失 README 提醒
+            // 리포지토리 README 누락 알림
             "Help people interested in this repository understand your project by adding a README.": "이 저장소에 관심 있는 사람들을 위해 README를 추가하여 프로젝트를 이해할 수 있도록 도와주세요!",
             "Add a README": "README 추가",
 
-            // 右侧栏
+            // 오른쪽 사이드바
 
-            // 与用户名同名仓库 编辑 README
+            // 사용자 이름과 동일한 리포지토리 README 편집
             "is a special repository.": "은(는) 특별한 저장소에요.",
             "Its": "그것은", //쀐
             "will appear on your public profile.": "공개 프로필에 표시될거에요.",
@@ -7519,7 +7520,7 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
             ", its": ", 그것은", //쀐
             "Go to Settings": "설정으로 가기",
 
-            // 组织下.github 仓库 README
+            // 조직 하위 .github 리포지토리 README
                 "is a special repository. Create a": "은(는) 특별한 저장소에요.",
                 "and it will appear on the organization's profile!": "를 만들면 조직의 프로필에 나타날거에요!",
                 "Add profile README": "프로필 README 추가하기",
@@ -7527,10 +7528,10 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                 "is a special repository.": "은(는) 특별한 저장소에요.",
                 "will appear on the organization's profile.": "은(는) 조직의 프로필에 나타날거에요.",
 
-            // 组织下.github-private 仓库 README
+            // 조직 하위 .github-private 리포지토리 README
                 "Add a README with an overview of your project.": "프로젝트 개요와 함께 README를 추가해주세요.",
                 "The": " ",
-                // [/will appear on ([^ ]+)'s member profile, visible only to organization members./, "将出现在 $1 的成员资料中，仅对组织成员可见."],
+                // [/will appear on ([^ ]+)'s member profile, visible only to organization members./, "$1의 멤버 프로필에 표시되며 조직 멤버에게만 보입니다."],
 
             // "About": "정보"，
             "No description, website, or topics provided.": "설명, 웹사이트 또는 주제가 제공되지 않았어요.",
@@ -7565,7 +7566,7 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
             "Public repository": "공개 저장소", // 작은 화면 모드
             "Private repository": "비공개 저장소", // 작은 화면 모드
 
-            // 仓库描述编辑 对话框
+            // 리포지토리 설명 편집 대화 상자
             "Edit repository details": "저장소 간략 설명을 편집",
             "Description": "설명",
             "Short description of this repository": "이 저장소에 대한 간단한 설명",
@@ -7604,10 +7605,10 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
 
             // "branch": "분기",
             // "branches": "분기",
-            // "release": "次发布",
-            // "releases": "次发布",
-            // "contributor": "个贡献者",
-            // "contributors": "个贡献者",
+            // "release": "번의 릴리스",
+            // "releases": "번의 릴리스",
+            // "contributor": "명의 기여자",
+            // "contributors": "명의 기여자",
 
             // 새로운 버전 저장소 개요
                 // /<user-name>/<repo-name>#coc
@@ -7665,10 +7666,10 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
                 "Use the URL for this page when adding GitHub as a remote.": "GitHub을 원격 저장소로 추가할 때 이 페이지의 URL을 사용해 보세요.",
 
 
-        // 文件管理器 /<user-name>/<repo-name>/tree/<branch>/<文件夹路径>/
+        // 파일 관리자 /<user-name>/<repo-name>/tree/<branch>/<폴더 경로>/
           // /<user-name>/<repo-name>/?search=1
           // /<user-name>/<repo-name>/tree/?search=1
-            // 文件树侧边栏
+            // 파일 트리 사이드바
             "Expand file tree": "파일 트리를 펼치기",
             "Collapse file tree": "파일 트리를 접기",
             // 검색창
@@ -7756,18 +7757,18 @@ I18N["ko-KR"]["repository"] = { // 仓库页面 /<user-name>/<repo-name>/
     };    
 I18N["ko-KR"]["repository/tree"] = I18N["ko-KR"]["repository"];
 
-I18N["ko-KR"]["repository/milestones"] = { // 仓库 - 里程碑页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/milestones"] = { // 리포지토리 - 마일스톤 페이지
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
 
-        // 里程碑页面 /<user-name>/<repo-name>/milestones
+        // 마일스톤 페이지 /<user-name>/<repo-name>/milestones
             "Labels": "라벨",
             "Milestones": "마일스톤",
 
             "You haven’t created any Milestones.": "아직 마일스톤을 생성하지 않았습니다.",
             "Use Milestones to create collections of Issues and Pull Requests for a particular release or project.": "마일스톤을 사용하여 특정 릴리스 또는 프로젝트의 이슈와 끌어오기 요청를 모아보세요.",
 
-            // 组织 仓库 里程碑
+            // 조직 리포지토리 마일스톤
             "No Milestones found!": "마일스톤을 찾을 수 없습니다!",
             "If this project had milestones, we’d show you them here. Promise!": "이 프로젝트에 마일스톤이 있다면 여기에 표시됩니다. 약속해요!",
 
@@ -7785,16 +7786,16 @@ I18N["ko-KR"]["repository/milestones"] = { // 仓库 - 里程碑页面
                 "Least issues": "이슈가 가장 적은 순",
 
             "No due date": "마감일 없음",
-            // [/Due by (.*)/, "截止日期 $1"], // 里程碑截止日期
+            // [/Due by (.*)/, "마감일 $1"], // 마일스톤 마감일
             "Last updated": "마지막 업데이트",
             "(more)": "（더보기）",
             "Show less": "(간략히)",
-            // 完成进度条
+            // 완료 진행률 표시줄
             "complete": "완료됨",
             "open": "열림",
             "closed": "닫힘",
 
-        // 新建里程碑页面 /<user-name>/<repo-name>/milestones/new
+        // 새 마일스톤 페이지 /<user-name>/<repo-name>/milestones/new
             "New milestone": "새 마일스톤",
                 "Create a new milestone to help organize your issues and pull requests. Learn more about": "새 마일스톤을 생성하여 이슈와 끌어오기 요청를 정리하세요. 자세히 알아보기",
                 "milestones and issues": "마일스톤과 이슈",
@@ -7804,18 +7805,18 @@ I18N["ko-KR"]["repository/milestones"] = { // 仓库 - 里程碑页面
             "Create milestone": "마일스톤 생성",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
         [/([\d,]+) Open/, "$1 打开"],
         [/([\d,]+) Closed/, "$1 已关闭"],
     ],
 };
 
-I18N["ko-KR"]["repository/pull_issue_public"] = { // 仓库 - 이슈和拉取请求页面公共部分
-    "static": { // 静态翻译
-        // pull 与 request 公共词条
+I18N["ko-KR"]["repository/pull_issue_public"] = { // 리포지토리 - 이슈 및 풀 리퀘스트 페이지 공용 부분
+    "static": { // 정적 번역
+        // pull과 request 공용 단어
             "Filters": "필터",
-                // 筛选下拉菜单
+                // 필터 드롭다운 메뉴
                 "Filter Issues": "이슈 필터링",
                 "Open issues and pull requests": "열린 이슈 및 끌어오기 요청",
                 "Your issues": "나의 이슈",
@@ -7831,10 +7832,10 @@ I18N["ko-KR"]["repository/pull_issue_public"] = { // 仓库 - 이슈和拉取请
                 "No labels": "라벨 없음",
             "Milestones": "마일스톤",
             "New issue": "새 이슈",
-            "New": "생성", // 小屏
+            "New": "생성", // 작은 화면
 
-            // 筛选工作条
-            // "Author": "作者",
+            // 필터 작업 표시줄
+            // "Author": "작성자",
                 "Filter by author": "제작자별 필터",
                 "Filter users": "유저 필터링",
 
@@ -7852,7 +7853,7 @@ I18N["ko-KR"]["repository/pull_issue_public"] = { // 仓库 - 이슈和拉取请
                 "Organization": "조직",
                 "No projects found. Sorry about that.": "프로젝트가 없어요.",
 
-            // "Milestones": "里程碑",
+            // "Milestones": "마일스톤",
                 "Filter by milestone": "마일스톤별 필터",
                 "Filter milestones": "마일스톤 필터링",
                 "Issues with no milestone": "마일스톤이 없는 이슈",
@@ -7863,7 +7864,7 @@ I18N["ko-KR"]["repository/pull_issue_public"] = { // 仓库 - 이슈和拉取请
                 "Filter by who’s assigned": "담당자별 필터",
                 "Filter assignees": "담당자 필터링",
                 "Assigned to nobody": "담당자 없음",
-                // [/Awaiting requested review from ([^ ]+)/, "正在等待 $1 审查请求"],
+                // [/Awaiting requested review from ([^ ]+)/, "$1의 검토 요청 대기 중"],
                 "Requested changes must be addressed to merge this pull request.": "이 끌어오기 요청를 병합하려면 요청된 변경 사항을 해결해야 합니다.",
                 "No one -": "담당자 없음 -",
                     "Assign yourself": "나에게 할당",
@@ -7882,7 +7883,7 @@ I18N["ko-KR"]["repository/pull_issue_public"] = { // 仓库 - 이슈和拉取请
                 "Most reactions": "반응이 많은 순",  
                 "Best match": "최적 일치",  
 
-            // 选中模式
+            // 선택 모드
                 "selected": "선택됨",  
                 "Mark as": "다음으로 표시",  
                 "Apply labels": "라벨 적용",  
@@ -7890,7 +7891,7 @@ I18N["ko-KR"]["repository/pull_issue_public"] = { // 仓库 - 이슈和拉取请
                     "Assign someone": "누군가에게 할당",  
                     "Assign to nobody": "아무에게도 할당하지 않음",  
 
-            // 筛选结果
+            // 필터 결과
             "No results matched your search.": "검색 결과가 없습니다.",
             "You could search": "검색해 보세요",
             "all of GitHub": "모든 GitHub",
@@ -8205,7 +8206,7 @@ I18N["ko-KR"]["repository/issues"] = { // 저장소 - 이슈 페이지
                 // 검색 안내
                 "Try adjusting your search filters.": "검색 필터를 조정해 보세요.",
 
-            // [/Want to contribute to ([^ ]+)\?/, "想为 $1 做贡献吗？"],
+            // [/Want to contribute to ([^ ]+)\?/, "$1에 기여하고 싶으신가요?"],
             "If you have a bug or an idea, read the": "버그나 아이디어가 있으시다면, 먼저 읽어보시고",
             "before opening an issue.": "이슈를 열기 전에요.",
             "If you have a bug or an idea, browse the open issues before opening a new one. You can also take a look at the": "버그나 아이디어가 있으시다면, 새 이슈를 열기 전에 열린 이슈들을 먼저 살펴보시고, 또한",
@@ -8563,7 +8564,7 @@ I18N["ko-KR"]["repository/pulls"] = { // 저장소 - 끌어오기 요청 페이�
             "Pull requests help you collaborate on code with other people. As pull requests are created, they’ll appear here in a searchable and filterable list. To get started, you should": "끌어오기 요청은 다른 사람들과 코드 협업을 도와드려요. 끌어오기 요청을 생성하면, 검색 및 필터링이 가능한 목록에 표시돼요. 시작하시려면",
             "create a pull request": "끌어오기 요청 발행하기",
 
-            // [/First time contributing to ([^ ]+)?/, "首次为 $1 做贡献？"], // /pulls
+            // [/First time contributing to ([^ ]+)?/, "$1에 처음 기여하시나요?"], // /pulls
             "If you know how to fix an": "어떤",
             "issue": "이슈",
             ", consider opening a pull request for it.": "를 어떻게 고칠 수 있는지 아신다면, 해당 이슈에 대해 끌어오기 요청을 열어보세요.",
@@ -8685,7 +8686,7 @@ I18N["ko-KR"]["repository/pull"] = { // 저장소 - 특정 끌어오기 요청 �
                 // 코드 공간
                     "This pull request must be reopened to create new codespaces on it.": "새로운 코드 공간을 만들려면 이 끌어오기 요청을 다시 열어야 해요.",
                     "Your workspaces in the cloud": "클라우드에 있는 사용자님의 작업공간",
-                    //[/Create a codespace on ([^ ]+)/, "在 $1 上创建代码空间"],
+                    // [/Create a codespace on ([^ ]+)/, "$1에서 코드스페이스 생성"],
                     "Codespace repository configuration": "코드 공간 저장소 구성",
                         "New with options...": "옵션 포함 새로 만들기...",
                         "Configure dev container": "개발 컨테이너 구성하기",
@@ -8698,11 +8699,11 @@ I18N["ko-KR"]["repository/pull"] = { // 저장소 - 특정 끌어오기 요청 �
                             "Automatically create or reuse the most recent matching codespace.": "최신에 일치하는 코드 공간을 자동으로 생성하거나 재사용해요.",
                             "Read more about creating a link.": "링크 생성에 대해 더 읽어보세요.",
                             "Snippets": "코드 스니펫",
-                            "Use the following snippets to embed an “Open in Codespaces” button for this configuration in your own page or README.": "다음 스니펫을 사용하여 본인의 페이지 또는 리드미에 '코드 공간에서 열기' 버튼을 삽입해보세요.",
+                            "Use the following snippets to embed an “Open in Codespaces” button for this configuration in your own page or README.": "다음 스니펫을 사용하여 본인의 페이지 또는 README에 '코드 공간에서 열기' 버튼을 삽입해보세요.",
                         "What are codespaces?": "코드 공간이란 무엇인가요?",
                     "No codespaces": "코드 공간이 없어요",
                     "You don't have any codespaces with this repository checked out": "사용자님께서는 이 저장소로 체크아웃된 코드 공간이 없어요",
-                    //[/Create codespace on ([^ ]+)/, "在 $1 上创建代码空间"],
+                    // [/Create codespace on ([^ ]+)/, "$1에서 코드스페이스 생성"],
                     "Learn more about codespaces...": "코드 공간에 대해 더 알아보세요...",
 
                     "On current branch": "현재 분기에서",
@@ -8736,9 +8737,9 @@ I18N["ko-KR"]["repository/pull"] = { // 저장소 - 특정 끌어오기 요청 �
 
                     "Codespace usage for this repository is paid for by": "이 저장소의 코드 공간 사용료는 다음에서 결제돼요",
 
-                    // [/Codespace \"(.+)\" stopped./, "代码空间 “$1” 已停止."],
-                    // [/Codespace \"(.+)\" deleted./, "代码空间 “$1” 已删除."],
-                    // [/Are you sure you want to delete (.+)\?/, "您确定要删除 $1 吗？"],
+                    // [/Codespace \"(.+)\" stopped./, "코드스페이스 “$1”이(가) 중지되었습니다."],
+                    // [/Codespace \"(.+)\" deleted./, "코드스페이스 “$1”이(가) 삭제되었습니다."],
+                    // [/Are you sure you want to delete (.+)\?/, "$1을(를) 정말 삭제하시겠습니까?"],
                     
             // 자동 보안 취약점 수정 알림
                 "This automated pull request fixes a": "이 자동 끌어오기 요청이",
@@ -8763,10 +8764,10 @@ I18N["ko-KR"]["repository/pull"] = { // 저장소 - 특정 끌어오기 요청 �
                         "Got it!": "알겠어요!",
 
                 // 병합 후 상단 알림
-                    // [/This pull request resolved a Dependabot alert on ([^ ]+)./, "该请求解决了 $1 的 Dependabot 警报问题."],
+                    // [/This pull request resolved a Dependabot alert on ([^ ]+)./, "이 요청은 $1의 Dependabot 경고 문제를 해결했습니다."],
 
             // 상태 단어
-            // [/merged (\d+) commits? into/, "将 4 个提交合并到"],
+            // [/merged (\d+) commits? into/, "4개의 커밋을 병합했습니다"],
             "into": "에",
             // "merged": "병합됨",
             "wants to merge": "병합하기를 원해요",
@@ -8806,7 +8807,7 @@ I18N["ko-KR"]["repository/pull"] = { // 저장소 - 특정 끌어오기 요청 �
                     "Note: By granting write access, maintainers could potentially edit your repository's workflows to reveal values of secrets and gain access to other branches.": "참고: 쓰기 권한 부여 시, 유지 관리자는 저장소의 워크플로를 수정하여 비밀 값이 노출되거나 다른 분기에 접근할 수 있어요.",
                     "Got it": "알겠어요",
                     "If checked,": "만약 선택된다면,",
-                    // [/users with write access to ([^ ]+) can add new commits/, "对 $1 具有写权限的用户可以添加新的提交"], // 특정 끌어오기 요청
+                    // [/users with write access to ([^ ]+) can add new commits/, "$1에 쓰기 권한이 있는 사용자는 새 커밋을 추가할 수 있습니다"], // 특정 끌어오기 요청
                     "to your": "사용자님의",
                     "branch. You can always change this setting later.": "분기이에요. 이 설정은 언제든 변경할 수 있어요.",
                 "Allow edits and access to secrets by maintainers": "유지 관리자에게 편집 및 비밀 접근 허용하기",
@@ -8819,7 +8820,7 @@ I18N["ko-KR"]["repository/pull"] = { // 저장소 - 특정 끌어오기 요청 �
 
             "marked this pull request as draft": "이 끌어오기 요청을 초안으로 표시했어요",
             "First-time contributor": "첫 기여자",
-            // [/This user is a first-time contributor to the ([^ ]+) repository./, "该用户是第一次为 $1 仓库做贡献."]
+            // [/This user is a first-time contributor to the ([^ ]+) repository./, "이 사용자는 $1 리포지토리에 처음으로 기여했습니다."]
             "View changes": "변경 내용 보기",
             "Outdated": "구식이에요",
             "Resolve conversation": "대화를 해결로 변경하기",
@@ -9107,7 +9108,7 @@ I18N["ko-KR"]["repository/pull"] = { // 저장소 - 특정 끌어오기 요청 �
                 "Rulesets": "규칙 집합",
                 "ensure specific people approve pull requests before they're merged.": "특정 인원이 병합 전에 끌어오기 요청을 승인하도록 보장해요.",
             "Add rule": "규칙 추가하기",
-            // [/Ensure specific people or teams approve pull requests before they're merged into your ([^ ]+) branch./, "确保特定的人或团队在拉取请求被合并到您的 $1 分支之前批准它们."], // 끌어오기 요청
+            // [/Ensure specific people or teams approve pull requests before they're merged into your ([^ ]+) branch./, "특정 인물이나 팀이 귀하의 $1 브랜치에 병합되기 전에 풀 리퀘스트를 승인하도록 하십시오."], // 끌어오기 요청
             // [/(\d+) workflows? awaiting approval/, "$1 개의 작업 흐름 대기중"],
             "This workflow requires approval from a maintainer.": "이 작업 흐름은 유지 관리자의 승인이 필요해요.",
             "Learn more about approving workflows.": "작업 흐름 승인에 대해 더 알아보세요.",
@@ -12428,7 +12429,7 @@ I18N["ko-KR"]["repository/pkgs"] = { // 저장소 - 패키지
 
             "Details": "세부 정보",
                 "stars": "별표",
-            "Readme": "리드미",
+            "Readme": "README",
             "Last published": "마지막 게시일",
             "Total downloads": "총 다운로드 수",
             "Start a discussion": "토론 시작하기",
@@ -12439,8 +12440,8 @@ I18N["ko-KR"]["repository/pkgs"] = { // 저장소 - 패키지
             "Recent Versions": "최신 버전",
             "View and manage all versions": "모든 버전 보기 및 관리하기",
 
-            "Add a Readme to the linked repository": "연결된 저장소에 리드미 추가하기",
-            "The linked repository's Readme will be shown here.": "여기에 연결된 저장소의 리드미가 표시돼요.",
+            "Add a Readme to the linked repository": "연결된 저장소에 README 추가하기",
+            "The linked repository's Readme will be shown here.": "여기에 연결된 저장소의 README가 표시돼요.",
 
         // 모든 버전 /<user-name>/<repo-name>/pkgs/container/<pkg name>/versions
             "All versions": "모든 버전",
@@ -12492,7 +12493,7 @@ I18N["ko-KR"]["packages"] = { // 소프트웨어 패키지 - 저장소에 연결
         ...I18N["ko-KR"]["repository/pkgs"]["static"],
 
         "Link this package to a repository": "이 패키지를 저장소에 연결하기",
-        "By linking to a repository, you can automatically add a Readme, link discussions, and show contributors on this page.": "저장소를 연결하면 이 페이지에 리드미를 자동으로 추가하고, 토론을 연결하며, 기여자를 표시할 수 있어요.",
+        "By linking to a repository, you can automatically add a Readme, link discussions, and show contributors on this page.": "저장소를 연결하면 이 페이지에 README를 자동으로 추가하고, 토론을 연결하며, 기여자를 표시할 수 있어요.",
         "Connect Repository": "저장소 연결하기",
 
         // 저장소 연결 대화상자
@@ -13218,8 +13219,8 @@ I18N["ko-KR"]["repository/community"] = { // 저장소 -> 인사이트 - 커뮤�
 
             "Description": "설명",
                 "Add a description to your repository so people understand the goals of your project.": "프로젝트 목표를 사용자님이 이해할 수 있도록 저장소에 설명을 추가해주세요.",
-            "README": "리드미",
-                "Writing a README": "리드미 작성하기",
+            "README": "README",
+                "Writing a README": "README 작성하기",
             "Code of conduct": "행동 강령",
                 "What is a code of conduct?": "행동 강령이란 무엇인가요?",
             "Contributing": "기여",
@@ -13301,368 +13302,368 @@ I18N["ko-KR"]["repository/community"] = { // 저장소 -> 인사이트 - 커뮤�
 };
 
 
-I18N["ko-KR"]["repository/graphs/traffic"] = { // 仓库 -> 洞察 - 流量
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/graphs/traffic"] = { // 저장소 -> 인사이트 - 트래픽
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-insights-menu"]["static"],
 
-        // 流量 /<user-name>/<repo-name>/graphs/traffic
-            "Git clones": "Git 克隆",
-            "Clones": "克隆",
-            "Unique cloners": "唯一克隆者",
-            "clones": "次克隆",
-            "clone": "次克隆",
-            "unique cloners": "个唯一克隆者",
-            "unique cloner": "个唯一克隆者",
-            "Visitors": "访客",
+        // 트래픽 /<user-name>/<repo-name>/graphs/traffic
+        "Git clones": "Git 클론",
+        "Clones": "클론",
+        "Unique cloners": "고유 클론 수",
+        "clones": "회 클론",
+        "clone": "회 클론",
+        "unique cloners": "명의 고유 클론",
+        "unique cloner": "명의 고유 클론",
+        "Visitors": "방문자",
 
-            "Referring sites": "引荐网站",
-            "Site": "站点",
-            "Domains": "域名",
-            "Views": "浏览",
-            "Unique visitors": "唯一访客",
-            "Unique Visits": "唯一访问",
-            "views": "次浏览",
-            "view": "次浏览",
-            "Visits": "访问",
-            "unique visitors": "个唯一访客",
-            "unique visitor": "个唯一访客",
-            "Popular content": "热门内容",
-            "Content": "内容",
-            "Path": "路径",
+        "Referring sites": "추천 사이트",
+        "Site": "사이트",
+        "Domains": "도메인",
+        "Views": "조회수",
+        "Unique visitors": "고유 방문자",
+        "Unique Visits": "고유 방문",
+        "views": "회 조회",
+        "view": "회 조회",
+        "Visits": "방문",
+        "unique visitors": "명의 고유 방문자",
+        "unique visitor": "명의 고유 방문자",
+        "Popular content": "인기 콘텐츠",
+        "Content": "콘텐츠",
+        "Path": "경로",
 
-            "We don’t have enough data to show anything useful.": "我们没有足够的数据来显示任何有用的东西.",
-            "It usually takes about a week to populate this graph.": "일반需要一周左右的时间来填充此图表.",
-            "It looks like traffic to your repository is a little light. Go spread the word and check back later!": "看起来您的仓库的流量有点少呀.去宣传一下吧，稍后再回来查看！",
+        "We don’t have enough data to show anything useful.": "유용한 정보를 표시하기에 데이터가 충분하지 않아요.",
+        "It usually takes about a week to populate this graph.": "이 그래프를 채우는 데 보통 일주일 정도 걸려요.",
+        "It looks like traffic to your repository is a little light. Go spread the word and check back later!": "사용자님의 저장소 트래픽이 약간 적은 것 같아요. 홍보하고 나중에 다시 확인해보세요!",
 
-            "Crunching the latest data, just for you. Hang tight…": "正在为您准备最新数据，请稍后…",
+        "Crunching the latest data, just for you. Hang tight…": "사용자님을 위해 최신 데이터를 처리하고 있어요. 잠시만 기다려주세요…",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["repository/graphs/commit-activity"] = { // 仓库 -> 洞察 - 提交
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/graphs/commit-activity"] = { // 저장소 -> 인사이트 - 커밋
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-insights-menu"]["static"],
 
-        // 提交 /<user-name>/<repo-name>/graphs/commit-activity
-            "Sunday"    : "周日",
-            "Monday"    : "周一",
-            "Tuesday"   : "周二",
-            "Wednesday" : "周三",
-            "Thursday"  : "周四",
-            "Friday"    : "周五",
-            "Saturday"  : "周六",
+        // 커밋 /<user-name>/<repo-name>/graphs/commit-activity
+        "Sunday": "일요일",
+        "Monday": "월요일",
+        "Tuesday": "화요일",
+        "Wednesday": "수요일",
+        "Thursday": "목요일",
+        "Friday": "금요일",
+        "Saturday": "토요일",
 
-            "Crunching the latest data, just for you. Hang tight…": "正在为您准备最新数据，请稍后…",
+        "Crunching the latest data, just for you. Hang tight…": "사용자님을 위해 최신 데이터를 처리하고 있어요. 잠시만 기다려주세요…",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/commits? the week of (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+)/, function(all, month, day){
+        [/commits? the week of (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+)/, function (all, month, day) {
             var monthKey = {
-                "Jan": "1月",
-                "Feb": "2月",
-                "Mar": "3月",
-                "Apr": "4月",
-                "May": "5月",
-                "Jun": "6月",
-                "Jul": "7月",
-                "Aug": "8月",
-                "Sep": "9月",
-                "Oct": "10月",
-                "Nov": "11月",
-                "Dec": "12月"
+                "Jan": "1월",
+                "Feb": "2월",
+                "Mar": "3월",
+                "Apr": "4월",
+                "May": "5월",
+                "Jun": "6월",
+                "Jul": "7월",
+                "Aug": "8월",
+                "Sep": "9월",
+                "Oct": "10월",
+                "Nov": "11월",
+                "Dec": "12월"
             };
 
-            return '次提交本周，' + monthKey[month] + day + '日';
+            return monthKey[month] + day + '일에 커밋함';
         }],
     ],
 };
 
-I18N["ko-KR"]["repository/graphs/code-frequency"] = { // 仓库 -> 洞察 - 代码频率
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/graphs/code-frequency"] = { // 저장소 -> 인사이트 - 코드 빈도
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-insights-menu"]["static"],
 
-        // 代码频率 /<user-name>/<repo-name>/graphs/code-frequency
-            "Code frequency over the history of": "历史上的代码频率",
-            "Additions": "添加数量",
-            "Deletions": "删除数量",
-            "per week": "每周",
-            "Crunching the latest data, just for you. Hang tight…": "正在为您准备最新数据，请稍后…",
+        // 코드 빈도 /<user-name>/<repo-name>/graphs/code-frequency
+        "Code frequency over the history of": "기록 전체의 코드 빈도",
+        "Additions": "추가",
+        "Deletions": "삭제",
+        "per week": "주당",
+        "Crunching the latest data, just for you. Hang tight…": "사용자님을 위해 최신 데이터를 처리하고 있어요. 잠시만 기다려주세요…",
 
-            // 过多
-            "There are too many commits to generate this graph.": "提交次数过多，无法生成图表.",
-            "More information about this data can be found in the": "有关这些数据的更多信息，请参阅",
-            "activity documentation": "活动文档",
+        // 너무 많음
+        "There are too many commits to generate this graph.": "커밋이 너무 많아 그래프를 생성할 수 없어요.",
+        "More information about this data can be found in the": "이 데이터에 대한 더 많은 정보는 다음에서 찾을 수 있어요:",
+        "activity documentation": "활동 문서",
 
-        // 新版
-        "Additions and deletions per week": "添加数量和删除数量/每周",
-        "Chart options": "图表选项",
-            "View as table": "以表格形式查看",
-            "Download CSV": "下载 CSV",
-            "Download PNG": "下载 PNG",
-            // 图表本体
-                "Date": "日期",
-                "Frequency": "频率",
-                "Values": "值",
+        // 새 버전
+        "Additions and deletions per week": "주당 추가 및 삭제",
+        "Chart options": "차트 옵션",
+        "View as table": "표로 보기",
+        "Download CSV": "CSV 다운로드하기",
+        "Download PNG": "PNG 다운로드하기",
+        // 차트 본문
+        "Date": "날짜",
+        "Frequency": "빈도",
+        "Values": "값",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["repository/network/dependencies"] = { // 仓库 -> 洞察 - 依赖关系图 - 依赖关系
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/network/dependencies"] = { // 저장소 -> 인사이트 - 종속성 그래프 - 종속성
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-insights-menu"]["static"],
 
-        "Dependencies": "依赖关系",
-        "Dependents": "依赖者",
-        // 依赖关系图 - 依赖关系 /network/dependencies
-            "Tell us how to make the Dependency Graph work better for you with a few quick questions.": "请通过几个简单的问题告诉我们，如何使 “依赖关系图” 更好地为您工作.",
+        "Dependencies": "종속성",
+        "Dependents": "의존 요소",
+        // 종속성 그래프 - 종속성 /network/dependencies
+        "Tell us how to make the Dependency Graph work better for you with a few quick questions.": "몇 가지 간단한 질문을 통해 '종속성 그래프'를 더 유용하게 만드는 방법을 알려주세요.",
 
-            "The dependency graph is not enabled": "依赖关系图未启用",
-            "The owner of this repository has not yet enabled the dependency graph. Once enabled, you can": "此仓库的所有者尚未启用依赖关系图.一旦启用，您可以", //个人仓库
-            "The dependency graph has not yet been enabled by an organization owner or a user with admin permissions for this repository. Once enabled, you can": "依赖关系图还没有被组织所有者或具有该仓库管理权限的用户启用.一旦启用，您可以", // 组织仓库
-            "track this repository’s dependencies": "追踪此仓库的依赖关系",
+        "The dependency graph is not enabled": "종속성 그래프가 활성화되지 않았어요",
+        "The owner of this repository has not yet enabled the dependency graph. Once enabled, you can": "이 저장소의 소유자가 아직 종속성 그래프를 활성화하지 않았어요. 활성화되면 다음을 수행할 수 있어요:", //개인 저장소
+        "The dependency graph has not yet been enabled by an organization owner or a user with admin permissions for this repository. Once enabled, you can": "종속성 그래프가 아직 조직 소유자 또는 이 저장소에 대한 관리자 권한이 있는 사용자에 의해 활성화되지 않았어요. 활성화되면 다음을 수행할 수 있어요:", // 조직 저장소
+        "track this repository’s dependencies": "이 저장소의 종속성 추적하기",
 
-            "Enable the dependency graph": "启用依赖关系图",
-            "Track this repository’s dependencies and sub-dependencies": "追踪该仓库的依赖关系和子依赖关系",
-            "The": " ",
-            "is not enabled for this repository. Click on \"Enable the dependency graph\" below to enable it.": "暂未启用.单击下面的 “启用依赖关系图” 以启用它.",
-            "If you’d like to enable the": "如果您想启用",
-            "dependency graph": "依赖关系图",
-            "vulnerability alerting": "漏洞警报",
-            "click on \"Allow access\" below to enable it.": "点击下面的 “允许访问” 来启用它.",
-            "Learn more about how we use your data": "了解更多关于我们如何使用您的数据的信息",
-            "Allow access": "允许访问",
+        "Enable the dependency graph": "종속성 그래프 활성화하기",
+        "Track this repository’s dependencies and sub-dependencies": "이 저장소의 종속성 및 하위 종속성 추적하기",
+        "The": " ",
+        "is not enabled for this repository. Click on \"Enable the dependency graph\" below to enable it.": "이(가) 이 저장소에 대해 활성화되지 않았어요. 활성화하려면 아래의 \"종속성 그래프 활성화하기\"를 클릭하세요.",
+        "If you’d like to enable the": "활성화하고 싶으시면",
+        "dependency graph": "종속성 그래프",
+        "vulnerability alerting": "취약점 경고",
+        "click on \"Allow access\" below to enable it.": "아래의 \"액세스 허용하기\"를 클릭하여 활성화하세요.",
+        "Learn more about how we use your data": "데이터 사용 방법에 대해 자세히 알아보기",
+        "Allow access": "액세스 허용하기",
 
-            "No dependencies found.": "未找到依赖项",
-            "To view your dependency graph, your repository must define dependencies in": "要查看依赖关系图，您的仓库必须定义依赖关系存在",
-            "one of the supported manifest file types": "一个支持的清单文件",
-            ", like": "，例如",
-            ", and": "，和",
+        "No dependencies found.": "종속성을 찾을 수 없어요.",
+        "To view your dependency graph, your repository must define dependencies in": "종속성 그래프를 보려면, 사용자님의 저장소가 다음 위치에 종속성을 정의해야 해요:",
+        "one of the supported manifest file types": "지원되는 매니페스트 파일 형식 중 하나",
+        ", like": ", 예를 들어",
+        ", and": ", 그리고",
 
-            "Export SBOM": "导出 SBOM",
+        "Export SBOM": "SBOM 내보내기",
 
-            // "Dependencies": "依赖关系",
-            "Search all dependencies": "搜索所有依赖项",
+        // "Dependencies": "종속성",
+        "Search all dependencies": "모든 종속성 검색하기",
 
-            "These dependencies are defined in": "这些依赖关系被定义在",
-            "’s manifest files, such as": "的清单文件，例如",
-            "Dependencies defined in": "依赖关系被定义在",
+        "These dependencies are defined in": "다음 위치에 정의된 종속성:",
+        "’s manifest files, such as": "의 매니페스트 파일, 예를 들어",
+        "Dependencies defined in": "다음에 정의된 종속성:",
 
-            // 发现已知漏洞
-            "Dependencies defined in these manifest files have known security vulnerabilities and should be updated:": "这些清单文件中定义的依赖项具有已知的安全漏洞，应更新：",
-            // [/(\d+) vulnerabilities? found/, "发现 $1 个漏洞"],
-            "Known security vulnerability in": "已知的安全漏洞，在",
-                "Known vulnerability found": "发现已知漏洞",
-                "update suggested:": "更新建议：",
-                "Always verify the validity and compatibility of suggestions with your codebase.": "始终验证建议与代码库的有效性和兼容性.",
+        // 알려진 취약점 발견
+        "Dependencies defined in these manifest files have known security vulnerabilities and should be updated:": "이 매니페스트 파일에 정의된 종속성에는 알려진 보안 취약점이 있으므로 업데이트해야 해요:",
+        // [/(\d+) vulnerabilities? found/, "$1개의 취약점 발견"],
+        "Known security vulnerability in": "알려진 보안 취약점 위치:",
+        "Known vulnerability found": "알려진 취약점 발견",
+        "update suggested:": "업데이트 제안:",
+        "Always verify the validity and compatibility of suggestions with your codebase.": "항상 제안이 코드베이스와 유효하고 호환되는지 확인하세요.",
 
-            // [/(\d+) more dependencies/, "更多 $1 个依赖项"],
-            // [/Load (\d+) more…/, "加载更多 $1个…"],
+        // [/(\d+) more dependencies/, "$1개 이상의 종속성"],
+        // [/Load (\d+) more…/, "$1개 더 불러오기…"],
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/View Dependabot alerts?/, "查看 Dependabot 警报"],
-        [/Detected automatically on (.+)/, "自动检测于$1"],
-        [/(\d+) Total/, "$1 总计"],
-        [/(\d+) vulnerabilities? found/, "发现 $1 个漏洞"],
-        [/(\d+) more dependencies/, "更多 $1 个依赖项"],
-        [/(\d+) moderate · (\d+) total/, "$1 中风险 · $2 总计"],
-        [/(\d+) high · (\d+) total/, "$1 高风险 · $2 总计"],
-        [/(\d+) high/, "$1 高风险"],
-        [/(\d+) moderate/, "$1 中风险"],
-        [/Load (\d+) more…/, "加载更多 $1个…"],
+        [/View Dependabot alerts?/, "Dependabot 알림 보기"],
+        [/Detected automatically on (.+)/, "$1에 자동으로 감지됨"],
+        [/(\d+) Total/, "총 $1개"],
+        [/(\d+) vulnerabilities? found/, "$1개의 취약점 발견"],
+        [/(\d+) more dependencies/, "$1개 이상의 종속성"],
+        [/(\d+) moderate · (\d+) total/, "보통 $1개 · 총 $2개"],
+        [/(\d+) high · (\d+) total/, "높음 $1개 · 총 $2개"],
+        [/(\d+) high/, "높음 $1개"],
+        [/(\d+) moderate/, "보통 $1개"],
+        [/Load (\d+) more…/, "$1개 더 불러오기…"],
     ],
 };
 
-I18N["ko-KR"]["repository/network/dependents"] = { // 仓库 -> 洞察 - 依赖关系图 - 依赖者
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/network/dependents"] = { // 저장소 -> 인사이트 - 종속성 그래프 - 의존 요소
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-insights-menu"]["static"],
 
-        "Dependencies": "依赖关系",
-        "Dependents": "依赖者",
-        // 依赖关系图 - 依赖者 /network/dependents
-            "GitHub does not currently determine the dependents of private repositories": "GitHub 目前无法确定私有仓库的依赖者",
+        "Dependencies": "종속성",
+        "Dependents": "의존 요소",
+        // 종속성 그래프 - 의존 요소 /network/dependents
+        "GitHub does not currently determine the dependents of private repositories": "GitHub는 현재 비공개 저장소의 의존 요소를 확인할 수 없어요",
 
-            "Export SBOM": "导出 SBOM",
-            // "Dependents": "依赖者",
-            "We haven’t found any dependents for this repository yet.": "我们尚未找到此仓库的任何依赖者.",
-            "We’ll keep looking!": "我们会继续寻找！",
+        "Export SBOM": "SBOM 내보내기",
+        // "Dependents": "의존 요소",
+        "We haven’t found any dependents for this repository yet.": "아직 이 저장소에 대한 의존 요소를 찾지 못했어요.",
+        "We’ll keep looking!": "계속 찾아볼게요!",
 
-            "Repositories that depend on": "依赖的仓库包括",
-            "Package:": "软件包：",
+        "Repositories that depend on": "다음에 의존하는 저장소:",
+        "Package:": "패키지:",
 
-            "These counts are approximate and may not exactly match the dependents shown below.": "这些计数是近似值，可能与下方显示的依赖项不完全匹配.",
+        "These counts are approximate and may not exactly match the dependents shown below.": "이 수는 근사치이며 아래에 표시된 의존 요소와 정확히 일치하지 않을 수 있어요.",
 
-            // [/(\d+) Repositor(y|ies)/, "$1 仓库"],
-            // [/(\d+) Packages?/, "$1 软件包"],
+        // [/(\d+) Repositor(y|ies)/, "저장소 $1개"],
+        // [/(\d+) Packages?/, "패키지 $1개"],
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/(\d+) Repositor(y|ies)/, "$1 仓库"],
-        [/(\d+) Packages?/, "$1 软件包"],
+        [/(\d+) Repositor(y|ies)/, "저장소 $1개"],
+        [/(\d+) Packages?/, "패키지 $1개"],
     ],
 };
 
-I18N["ko-KR"]["repository/network/updates"] = { // 仓库 -> 洞察 - 依赖关系图 - Dependabot
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/network/updates"] = { // 저장소 -> 인사이트 - 종속성 그래프 - Dependabot
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-insights-menu"]["static"],
 
-        "Dependencies": "依赖关系",
-        "Dependents": "依赖者",
+        "Dependencies": "종속성",
+        "Dependents": "의존 요소",
 
-        "Export SBOM": "导出 SBOM",
-        // 依赖关系图 - Dependabot /network/updates
-            "Enable Dependabot": "启用 Dependabot",
-            "Dependabot isn't enabled": "未启用 Dependabot",
-            "Dependabot isn't enabled on forks by default": "默认情况下，Dependabot 不会在复刻上启用.",
+        "Export SBOM": "SBOM 내보내기",
+        // 종속성 그래프 - Dependabot /network/updates
+        "Enable Dependabot": "Dependabot 활성화하기",
+        "Dependabot isn't enabled": "Dependabot이 활성화되지 않았어요",
+        "Dependabot isn't enabled on forks by default": "기본적으로 포크에서는 Dependabot이 활성화되지 않아요.",
 
-            "Dependabot version updates aren't configured yet": "尚未配置 Dependabot 版本更新",
-            "Dependabot creates pull requests to keep your dependencies up-to-date.": "Dependabot 创建拉取请求以保持您的依赖项是最新的.",
-            "Create config file": "创建配置文件",
+        "Dependabot version updates aren't configured yet": "아직 Dependabot 버전 업데이트가 구성되지 않았어요",
+        "Dependabot creates pull requests to keep your dependencies up-to-date.": "Dependabot은 끌어오기 요청을 생성하여 종속성을 최신 상태로 유지해요.",
+        "Create config file": "구성 파일 만들기",
 
-            "Recent update jobs": "最近更新的工作",
+        "Recent update jobs": "최근 업데이트 작업",
 
-            "Dependabot version updates": "Dependabot 版本更新",
-            "automatically keep your application up-to-date by periodically updating dependencies to their latest versions.": "通过定期将依赖项更新到最新版本，自动保持应用的最新状态.",
-            "Dependabot security updates": "Dependabot 版本更新",
-            "can also help keep dependencies updated.": "还可以帮助保持依赖项更新.",
+        "Dependabot version updates": "Dependabot 버전 업데이트",
+        "automatically keep your application up-to-date by periodically updating dependencies to their latest versions.": "주기적으로 종속성을 최신 버전으로 업데이트하여 앱을 최신 상태로 자동 유지해요.",
+        "Dependabot security updates": "Dependabot 보안 업데이트",
+        "can also help keep dependencies updated.": "는 종속성을 업데이트된 상태로 유지하는 데 도움을 줄 수 있어요.",
 
-            "Monitored dependency files": "受监控的依赖文件",
-            "Check for updates": "检查更新",
-            "Recent jobs": "近期工作",
-            "view logs": "查看日志",
-
-    },
-    "regexp": [ // 正则翻译
-        ...I18N["ko-KR"]["repository-public"]["regexp"],
-    ],
-};
-
-I18N["ko-KR"]["repository/network"] = { // 仓库 -> 洞察 - 网络图
-    "static": { // 静态翻译
-        ...I18N["ko-KR"]["repository-public"]["static"],
-        ...I18N["ko-KR"]["repository-insights-menu"]["static"],
-
-        // 网络图 /<user-name>/<repo-name>/network
-            // 键盘快捷键
-                "Scroll left": "向左滑动",
-                "Scroll right": "向右滑动",
-                "Scroll up": "向上滑动",
-                "Scroll down": "向下滑动",
-                "Toggle visibility of the head labels": "切换头部标签的可见性",
-                "Scroll all the way left": "一直向左滑动",
-                "Scroll all the way right": "一直向右滑动",
-                "Scroll all the way up": "一直向上滑动",
-                "Scroll all the way down": "一直向下滑动",
-
-            "Network graph": "网络图",
-            "Timeline of the most recent commits to this repository and its network ordered by most recently pushed to.": "最近提交到此仓库的时间轴及其网络图按最近推送的顺序排序.",
-
-            "The repository network shows the 100 most recently pushed forks.": "仓库网络图显示最近推送的 100 个复刻.",
-
-            "Loading graph data": "加载网络图数据",
-            "Keyboard shortcuts available": "可用的键盘快捷键",
+        "Monitored dependency files": "모니터링되는 종속성 파일",
+        "Check for updates": "업데이트 확인하기",
+        "Recent jobs": "최근 작업",
+        "view logs": "로그 보기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["repository/network/members"] = { // 仓库 -> 洞察 - 复刻
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/network"] = { // 저장소 -> 인사이트 - 네트워크 그래프
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-insights-menu"]["static"],
 
-        // 复刻 - 树形视图 /<user-name>/<repo-name>/network/members
-            "switch to list view": "切换到列表视图",
+        // 네트워크 그래프 /<user-name>/<repo-name>/network
+        // 키보드 단축키
+        "Scroll left": "왼쪽으로 스크롤하기",
+        "Scroll right": "오른쪽으로 스크롤하기",
+        "Scroll up": "위로 스크롤하기",
+        "Scroll down": "아래로 스크롤하기",
+        "Toggle visibility of the head labels": "헤드 라벨 표시/숨기기",
+        "Scroll all the way left": "맨 왼쪽으로 스크롤하기",
+        "Scroll all the way right": "맨 오른쪽으로 스크롤하기",
+        "Scroll all the way up": "맨 위로 스크롤하기",
+        "Scroll all the way down": "맨 아래로 스크롤하기",
 
-            "No one has forked this repository yet.": "目前，暂无人复刻该仓库.",
-            "Forks are a great way to contribute to a repository. After": "复刻是给该仓库做贡献的好方法.首先",
-            "forking a repository": "复刻仓库",
-            ", you can send the original author a": "，然后您可向原作者发送",
-            "pull request": "拉取请求",
+        "Network graph": "네트워크 그래프",
+        "Timeline of the most recent commits to this repository and its network ordered by most recently pushed to.": "이 저장소와 해당 네트워크에 대한 최신 커밋 타임라인이 가장 최근에 푸시된 순서로 정렬되어 있어요.",
 
-            "Woah, this network is huge! We’re showing only some of this network’s repositories.": "哇，这个网络太庞大了! 我们只展示了这个网络中的一部分仓库.",
+        "The repository network shows the 100 most recently pushed forks.": "저장소 네트워크는 가장 최근에 푸시된 100개의 포크를 보여줘요.",
+
+        "Loading graph data": "그래프 데이터 불러오는 중",
+        "Keyboard shortcuts available": "사용 가능한 키보드 단축키",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["repository/forks"] = { // 仓库 -> 洞察 - 复刻
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/network/members"] = { // 저장소 -> 인사이트 - 포크
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-insights-menu"]["static"],
 
-        // 复刻 - 列表视图 /<user-name>/<repo-name>/forks
-            "Switch to tree view": "切换到树形视图",
+        // 포크 - 트리 뷰 /<user-name>/<repo-name>/network/members
+        "switch to list view": "리스트 뷰로 전환하기",
 
-            "No one has forked this repository yet": "目前，暂无人复刻该仓库",
-            "Forks are a great way to contribute to a repository. After": "复刻是给该仓库做贡献的好方法.首先",
-            "forking a repository": "复刻仓库",
-            ", you can send the original author a": "，然后您可向原作者发送",
-            "pull request": "拉取请求",
+        "No one has forked this repository yet.": "아직 아무도 이 저장소를 포크하지 않았어요.",
+        "Forks are a great way to contribute to a repository. After": "포크는 저장소에 기여하는 좋은 방법이에요. 먼저",
+        "forking a repository": "저장소를 포크",
+        ", you can send the original author a": "한 후, 원작자에게",
+        "pull request": "끌어오기 요청",
 
-            "No forked repositories found": "尚无复刻仓库",
-            "Try changing your filters, or search for": "尝试更改筛选器，或搜索",
-            "active forked repositories": "活跃的复刻仓库",
+        "Woah, this network is huge! We’re showing only some of this network’s repositories.": "와, 이 네트워크는 정말 거대해요! 이 네트워크의 일부 저장소만 표시하고 있어요.",
 
-            "Period:": "周期:",
-                "Filter by period": "筛选周期",
-                "1 month": "1 个月",
-                "6 months": "6 个月",
-                "1 year": "1 年",
-                "2 years": "2 年",
-                "5 years": "5 年",
-                "All time": "所有时间",
-
-                "Any repository that has not been created or updated during this period will be excluded.": "在此期间未被创建或更新的任何仓库将被排除在外.",
-            "Repository type:": "仓库类型:",
-                "Filter by repository type": "筛选仓库类型",
-                "None": "无",
-                "Active": "活跃",
-                    "Repositories with push activity": "有推送活动的仓库",
-                "Inactive": "不活跃",
-                    "Repositories with no push activity": "无推送活动的仓库",
-                "Network": "网络",
-                    "Forks of other forks": "其他复刻的复刻",
-                "Archived": "보관됨",
-                    "Archived repositories": "已存档的仓库",
-                "Starred": "星标",
-                    "Repositories with at least 1 star": "至少有 1 个星标的仓库",
-            "Sort:": "排序:",
-                "Sort by": "排序方式",
-                    "Most starred": "最多星标",
-                    "Recently updated": "最近更新",
-                    "Open issues": "打开的이슈",
-                    "Open pull requests": "打开的拉取请求",
-                "Defaults Saved": "默认值已保存",
-                "Save Defaults": "保存默认值",
-
-            "Never updated": "从未更新",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
-        [/Created/, "创建于"],
-        [/Updated/, "更新于"],
     ],
 };
 
-// 洞察 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+I18N["ko-KR"]["repository/forks"] = { // 저장소 -> 인사이트 - 포크
+    "static": { // 정적 번역
+        ...I18N["ko-KR"]["repository-public"]["static"],
+        ...I18N["ko-KR"]["repository-insights-menu"]["static"],
+
+        // 포크 - 리스트 뷰 /<user-name>/<repo-name>/forks
+        "Switch to tree view": "트리 뷰로 전환하기",
+
+        "No one has forked this repository yet": "아직 아무도 이 저장소를 포크하지 않았어요",
+        "Forks are a great way to contribute to a repository. After": "포크는 저장소에 기여하는 좋은 방법이에요. 먼저",
+        "forking a repository": "저장소를 포크",
+        ", you can send the original author a": "한 후, 원작자에게",
+        "pull request": "끌어오기 요청",
+
+        "No forked repositories found": "포크된 저장소를 찾을 수 없어요",
+        "Try changing your filters, or search for": "필터를 변경하거나 다음을 검색해보세요:",
+        "active forked repositories": "활성 포크된 저장소",
+
+        "Period:": "기간:",
+        "Filter by period": "기간으로 필터링하기",
+        "1 month": "1개월",
+        "6 months": "6개월",
+        "1 year": "1년",
+        "2 years": "2년",
+        "5 years": "5년",
+        "All time": "모든 시간",
+
+        "Any repository that has not been created or updated during this period will be excluded.": "이 기간 동안 생성되거나 업데이트되지 않은 저장소는 제외돼요.",
+        "Repository type:": "저장소 유형:",
+        "Filter by repository type": "저장소 유형으로 필터링하기",
+        "None": "없음",
+        "Active": "활성",
+        "Repositories with push activity": "푸시 활동이 있는 저장소",
+        "Inactive": "비활성",
+        "Repositories with no push activity": "푸시 활동이 없는 저장소",
+        "Network": "네트워크",
+        "Forks of other forks": "다른 포크의 포크",
+        "Archived": "보관됨",
+        "Archived repositories": "보관된 저장소",
+        "Starred": "별표",
+        "Repositories with at least 1 star": "별표가 1개 이상인 저장소",
+        "Sort:": "정렬:",
+        "Sort by": "정렬 기준",
+        "Most starred": "별표가 많은 순",
+        "Recently updated": "최근 업데이트 순",
+        "Open issues": "열린 이슈",
+        "Open pull requests": "열린 끌어오기 요청",
+        "Defaults Saved": "기본값 저장됨",
+        "Save Defaults": "기본값으로 저장하기",
+
+        "Never updated": "업데이트된 적 없음",
+    },
+    "regexp": [ // 정규식 번역
+        ...I18N["ko-KR"]["repository-public"]["regexp"],
+        [/Created/, "생성일:"],
+        [/Updated/, "업데이트:"],
+    ],
+};
+
+// 인사이트 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 I18N["ko-KR"]["repository-settings-menu"] = { // 저장소 설정 공통 부분
     "static": { // 정적 번역
@@ -15503,8 +15504,8 @@ I18N["ko-KR"]["repository/settings/pages"] = { // 저장소 설정 페이지(조
                     "DNS check successful": "DNS 검사 성공",
                     "DNS check unsuccessful": "DNS 검사 실패",
                     "Please wait for the DNS check to complete.": "DNS 검사가 완료될 때까지 기다려 주세요.",
-                    // [/([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?) is improperly configured/, "$1 配置不正确"],
-                    // [/Your site's DNS settings are using a custom subdomain, ([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?), that's not set up with a correct CNAME record. We recommend you set this CNAME record to point at [YOUR USERNAME].github.io. For more information, see/, "您网站的 DNS 设置使用的是自定义子域 $1，该子域未设置正确的 CNAME 记录.我们建议您将此 CNAME 记录设置为指向 [YOUR USERNAME].github.io.有关详细信息，请参阅"],
+                    // [/([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?) is improperly configured/, "$1이(가) 잘못 구성되었습니다"],
+                    // [/Your site's DNS settings are using a custom subdomain, ([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?), that's not set up with a correct CNAME record. We recommend you set this CNAME record to point at [YOUR USERNAME].github.io. For more information, see/, "웹사이트의 DNS 설정이 사용자 지정 하위 도메인 $1을(를) 사용하고 있으며, 해당 하위 도메인에 올바른 CNAME 레코드가 설정되어 있지 않습니다. 이 CNAME 레코드를 [YOUR USERNAME].github.io를 가리키도록 설정하는 것이 좋습니다. 자세한 내용은 다음을 참조하십시오."],
 
                     "DNS records should point to the": "DNS 레코드는 다음을 가리켜야 해요:",
                     "internationalized domain name": "국제화 도메인 이름",
@@ -15592,7 +15593,7 @@ I18N["ko-KR"]["repository/settings/security_analysis"] = { // 저장소 설정 -
                     "Dependabot rules": "Dependabot 규칙",
                         "Create your own custom rules and manage alert presets.": "자신만의 맞춤 규칙을 생성하고 경고 프리셋을 관리해 보세요.",
                         "Review and manage alert presets.": "경고 프리셋을 검토하고 관리해 보세요.",
-                        // [/(\d+) rules? enabled/, "已启用 $1 条规则"],
+                        // [/(\d+) rules? enabled/, "$1개의 규칙이 활성화되었습니다"],
 
                 "Dependabot security updates": "Dependabot 보안 업데이트",
                     "Enabling this option will result in Dependabot automatically attempting to open pull requests to resolve every open Dependabot alert with an available patch.": "이 옵션을 활성화하면 Dependabot이 사용 가능한 패치로 모든 열린 Dependabot 경고를 해결하기 위해 자동으로 끌어오기 요청을 열도록 시도할 거예요.",
@@ -15927,7 +15928,7 @@ I18N["ko-KR"]["repository/settings/secrets"] = { // 저장소 설정 - 기밀 /<
 
             // 조직 저장소
             "No organization secrets have been authorized for this repository.": "이 저장소에는 아직 어떤 조직 기밀도 승인되지 않았어요.",
-            // [/Organization secrets for ([^ ]+) can be managed within/, "$1  的组织机密可以管理，在"],
+            // [/Organization secrets for ([^ ]+) can be managed within/, "$1의 조직 비밀은 다음에서 관리할 수 있습니다."],
             "organization settings": "조직 설정",
 
             // 상단 알림
@@ -15940,13 +15941,13 @@ I18N["ko-KR"]["repository/settings/secrets"] = { // 저장소 설정 - 기밀 /<
 };
 I18N["ko-KR"]["repository/settings/variables"] = I18N["ko-KR"]["repository/settings/secrets"];
 
-I18N["ko-KR"]["repository/settings/installations"] = { // 仓库设置 - GitHub 应用 /<user-name>/<repo-name>/settings/installations
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/installations"] = { // 리포지토리 설정 - GitHub 앱 /<user-name>/<repo-name>/settings/installations
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 集成应用 页面 /<user-name>/<repo-name>/settings/installations====================================
-        // 全局设置在 Applications 应用 /settings/installations
+        // 통합 앱 페이지 /<user-name>/<repo-name>/settings/installations====================================
+        // 전역 설정은 Applications 앱 /settings/installations에 있습니다.
             "Installed GitHub Apps": "설치된 GitHub 앱",
             "GitHub Apps augment and extend your workflows on GitHub with commercial, open source, and homegrown tools.": "GitHub 앱은 상용, 오픈 소스, 그리고 자사 개발 도구를 사용하여 GitHub에서의 워크플로우를 확장하고 향상시켜요.",
             "Configure": "설정",
@@ -15956,17 +15957,17 @@ I18N["ko-KR"]["repository/settings/installations"] = { // 仓库设置 - GitHub 
             "Developed by": "개발자:",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["repository/settings/notifications"] = { // 仓库设置 - 邮件通知 /<user-name>/<repo-name>/settings/notifications/edit
-    "static": { // 静态翻译
+I18N["ko-KR"]["repository/settings/notifications"] = { // 리포지토리 설정 - 이메일 알림 /<user-name>/<repo-name>/settings/notifications/edit
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
 
-        // 邮件通知管理 页面 /<user-name>/<repo-name>/settings/notifications/edit ====================================
+        // 이메일 알림 관리 페이지 /<user-name>/<repo-name>/settings/notifications/edit ====================================
             "Setup email addresses to receive notifications when push events are triggered.": "푸시 이벤트가 트리거될 때 알림을 받을 이메일 주소를 설정하세요.",
             "Asterisk (*) denotes a required field": "별표 (*)는 필수 항목을 나타내요.",
             "Address": "이메일 주소",
@@ -15980,7 +15981,7 @@ I18N["ko-KR"]["repository/settings/notifications"] = { // 仓库设置 - 邮件�
             "Setup notifications": "알림 설정",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["repository-public"]["regexp"],
     ],
 };
@@ -16105,7 +16106,7 @@ I18N["ko-KR"]["repository/codespaces"] = { // 저장소 - 코드스페이스 인
                     "Access codespaces from within": "내부에서 코드스페이스에 액세스하기",
 
             "Go to docs": "문서로 이동하기",
-            // [/Create codespace on ([^ ]+)/, "在 $1 上创建代码空间"]
+            // [/Create codespace on ([^ ]+)/, "$1에서 코드스페이스 생성"]
                     "2-core • 8GB RAM • 32GB": "2코어 • 8GB RAM • 32GB",
                 "Configure and create codespace": "코드스페이스 구성 및 생성하기",
                     "Show advanced options before launching codespace": "코드스페이스를 시작하기 전에 고급 옵션 표시하기",
@@ -16113,7 +16114,7 @@ I18N["ko-KR"]["repository/codespaces"] = { // 저장소 - 코드스페이스 인
 
             "4-core • 16GB RAM • 32GB": "4코어 • 16GB RAM • 32GB",
 
-            // [/(\d+) codespaces?/, "$1 个代码空间"]
+            // [/(\d+) codespaces?/, "$1개의 코드스페이스"]
             "Retrieving…": "가져오는 중…",
             "Active": "활성",
             "Show more actions for codespace": "코드스페이스에 대한 추가 작업 보기",
@@ -16166,25 +16167,25 @@ I18N["ko-KR"]["repository/custom-properties"] = { // 저장소 - 사용자 지�
 // 저장소 관련==
 
 
-I18N["ko-KR"]["homepage"] = { // 未登录的首页
-    "static": { // 静态翻译
-        //"Let’s build from here": "让我们从这里开始",
-        //"The world’s leading AI-powered developer platform.": "全球领先的人工智能开发者平台.",
+I18N["ko-KR"]["homepage"] = { // 로그인하지 않은 홈페이지
+    "static": { // 정적 번역
+        // "Let’s build from here": "여기서부터 시작합시다",
+        // "The world’s leading AI-powered developer platform.": "세계 최고의 인공지능 개발자 플랫폼.",
         "GitHub Copilot is now available for free.": "GitHub Copilot을 이제 무료로 사용할수 있어요.",
         "Build and ship software on a single, collaborative platform": "협력하고, 만들고, 공유해요.",
         "Join the world’s most widely adopted AI-powered developer platform.": "세계에서 가장 널리 채택된 AI 기반 개발자 플랫폼에 참여하세요.",
-        //"Join the world’s most widely adopted AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.": "加入全球最广泛采用的人工智能开发者平台，在这里，数百万的开发人员、企业和最大的开源社区构建推动人类进步的软件.",
+        // "Join the world’s most widely adopted AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.": "수백만 명의 개발자, 기업 및 최대 규모의 오픈 소스 커뮤니티가 인류를 발전시키는 소프트웨어를 구축하는 세계에서 가장 널리 채택된 인공지능 개발자 플랫폼에 참여하십시오.",
 
-        //"Email address": "电子邮箱地址",
+        // "Email address": "이메일 주소",
         "Enter your email": "이메일을 입력하세요",
         "Sign up for GitHub": "GitHub 가입하기",
-        //"Start a free enterprise trial": "开始免费试用企业版",
+        // "Start a free enterprise trial": "무료 엔터프라이즈 평가판 시작",
 
         "Try GitHub Copilot": "GitHub Copilot 시도해보기",
             "30 days free": "30일 체험",
-        "Explore upcoming releases": "다가올 릴리즈 둘러보기", // 已登录
+        "Explore upcoming releases": "다가올 릴리즈 둘러보기", // 로그인됨
 
-        // 代码
+        // 코드
             "Build code quickly and more securely with GitHub Copilot embedded throughout your workflows.": "워크플로 전체에 내장된 GitHub Copilot을 사용하여 코드를 빠르고 안전하게 작성하세요.",
         "Plan": "계획",
             "Track and coordinate your work with GitHub Issues, GitHub Projects, and insights.": "GitHub 이슈, GitHub 프로젝트 및 인사이트를 통해 작업을 추적하고 조정하세요.",
@@ -16261,7 +16262,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
                 "Become an open source partner and support the tools and libraries that power your work.": "오픈 소스 파트너가 되어, 당신의 작업을 지원하는 도구와 라이브러리를 지원하세요.",
                 "Dive into GitHub Sponsors": "GitHub 후원 프로그램 자세히 보기",
 
-        // 从初创公司到大型企业，GitHub 可以适应任何行业、任何规模的团队.
+        // 스타트업부터 대기업까지, GitHub는 모든 산업, 모든 규모의 팀에 적응할 수 있습니다.
         "From startups to enterprises,": "스타트업부터 대기업까지,",
             "GitHub scales": "GitHub는",
             "with teams of any size in any industry.": "모든 산업과 팀 규모에 맞게 확장 가능해요.",
@@ -16271,88 +16272,88 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
         "Millions of developers and businesses call GitHub home": "수백만의 개발자와 기업들이 GitHub에서 살고 있어요",
             "Whether you’re scaling your development process or just learning how to code, GitHub is where you belong. Join the world’s most widely adopted AI-powered developer platform to build the technologies that redefine what’s possible.": "개발 프로세스를 확장하든, 코딩을 배우고 있든, 언제나 GitHub는 당신과 함께해요. 전 세계에서 가장 널리 사용되는 AI 기반 개발자 플랫폼에 참여해 가능성을 재정의하는 기술을 구축하세요.",
 
-        //"Trusted by the world’s leading organizations ↘︎": "全球领先机构所信赖的合作伙伴 ↘︎",
+        // "Trusted by the world’s leading organizations ↘︎": "세계 유수의 기관들이 신뢰하는 파트너 ↘︎",
 
-        //"Productivity": "生产力",
-        //"Accelerate innovation": "加快创新",
-        //"Our AI-powered platform increases the pace of software development.": "我们的人工智能平台加快了软件开发的步伐.",
+        // "Productivity": "생산성",
+        // "Accelerate innovation": "혁신 가속화",
+        // "Our AI-powered platform increases the pace of software development.": "우리의 인공지능 플랫폼은 소프트웨어 개발 속도를 높입니다.",
 
-        //"empowers developers to complete tasks 55% faster with contextualized AI coding assistance across workflows.": "能够为开发者提供上下文化的 AI 编程辅助，帮助他们在整个工作流程中完成任务的速度提高 55%.",
+        // "empowers developers to complete tasks 55% faster with contextualized AI coding assistance across workflows.": "개발자에게 상황에 맞는 AI 코딩 지원을 제공하여 전체 워크플로에서 작업을 55% 더 빠르게 완료할 수 있도록 지원합니다.",
 
-        //"Did you know?": "您知道吗?",
+        // "Did you know?": "알고 계셨나요?",
 
-        //"22% increase": "22% 效率提升",
-        //"in developer productivity after three years with GitHub": "使用 GitHub 三年后，开发人员的工作效率",
-        //"Read the report": "阅读报告",
+        // "22% increase": "22% 효율성 향상",
+        // "in developer productivity after three years with GitHub": "GitHub 사용 3년 후 개발자 생산성",
+        // "Read the report": "보고서 읽기",
 
-        //automates your build, test, and deployment workflow with simple and secure CI/CD.": "可以使用简单且安全的 CI/CD 来自动化您的构建、测试和部署工作流.",
+        // automates your build, test, and deployment workflow with simple and secure CI/CD.": "간단하고 안전한 CI/CD를 사용하여 빌드, 테스트 및 배포 워크플로를 자동화할 수 있습니다.",
         "Discover GitHub Actions": "GitHub Actions 둘러보기",
 
-        //GitHub Codespaces": "GitHub 代码空间",
-        //offers a complete dev environment in seconds. Code, build, test, and open pull requests from any repo.": "可在几秒钟内提供完整的开发环境.可在任何代码库中编写代码、构建、测试并打开拉取请求.",
+        // GitHub Codespaces": "GitHub 코드스페이스",
+        // offers a complete dev environment in seconds. Code, build, test, and open pull requests from any repo.": "몇 초 안에 완전한 개발 환경을 제공합니다. 모든 코드 저장소에서 코드를 작성하고, 빌드하고, 테스트하고, 풀 리퀘스트를 열 수 있습니다.",
         "Check out GitHub Codespaces": "GitHub Codespaces 살펴보기",
 
-        //GitHub Mobile and Copilot": "GitHub Mobile 和 Copilot",
-        //"fits your projects in your pocket, so you never miss a beat while on the go.": "让您的项目尽在掌握，让您在旅途中永不遗漏任何信息.",
-        //"now let you manage projects and converse with your AI pair programmer on the go.": "让您可以管理项目，并与您的 AI 结对程序员在旅途中交流.",
+        // GitHub Mobile and Copilot": "GitHub Mobile 및 Copilot",
+        // "fits your projects in your pocket, so you never miss a beat while on the go.": "프로젝트를 주머니에 쏙 넣어 이동 중에도 정보를 놓치지 않도록 합니다.",
+        // "now let you manage projects and converse with your AI pair programmer on the go.": "이제 프로젝트를 관리하고 이동 중에 AI 페어 프로그래머와 대화할 수 있습니다.",
         "Download GitHub Mobile": "GitHub 모바일 다운로드",
 
-        //"Application security": "应用安全",
-        //"Empower developers": "为开发者赋能",
-        //"With GitHub, you can secure code in minutes.": "通过 GitHub，您可以在几分钟内保护代码安全",
+        // "Application security": "애플리케이션 보안",
+        // "Empower developers": "개발자 역량 강화",
+        // "With GitHub, you can secure code in minutes.": "GitHub를 사용하면 몇 분 안에 코드를 안전하게 보호할 수 있습니다.",
 
-        //"GitHub Advanced Security": "GitHub 高级安全功能",
-        //"enables you to find and fix vulnerabilities with ease and ship secure code quickly.": "可帮助您轻松发现和修复漏洞，并快速发布安全代码.",
-        //"Dive into GitHub Advanced Security": "深入了解 GitHub 高级安全功能",
+        // "GitHub Advanced Security": "GitHub 고급 보안 기능",
+        // "enables you to find and fix vulnerabilities with ease and ship secure code quickly.": "취약점을 쉽게 찾아 수정하고 안전한 코드를 신속하게 배포할 수 있도록 지원합니다.",
+        // "Dive into GitHub Advanced Security": "GitHub 고급 보안 기능 자세히 알아보기",
 
         "7x faster": "7배 빨라진 속도",
         "vulnerability fixes with GitHub": "GitHub을 통한 취약점 수정",
 
-        //"Code scanning": "代码扫描",
-        //"is our code analysis tool that helps you remediate issues in your code.": "是我们的代码分析工具，可以帮助您修复代码中的问题.",
-        //"Download the latest SAST ebook": "下载最新 SAST 电子书",
+        // "Code scanning": "코드 스캔",
+        // "is our code analysis tool that helps you remediate issues in your code.": "는 코드의 문제를 해결하는 데 도움이 되는 코드 분석 도구입니다.",
+        // "Download the latest SAST ebook": "최신 SAST 전자책 다운로드",
 
-        //"makes it easy to find and fix vulnerable dependencies in your supply chain.": "易于发现和修复供应链中的脆弱依赖项.",
-        //"Explore Dependabot": "探索 Dependabot",
+        // "makes it easy to find and fix vulnerable dependencies in your supply chain.": "공급망에서 취약한 종속성을 쉽게 찾아 수정할 수 있습니다.",
+        // "Explore Dependabot": "Dependabot 살펴보기",
 
-        //"Secret scanning": "机密扫描",
-        //"automatically looks for partner patterns and prevents fraudulent use of accidentally committed secrets.": "可以自动寻找合作伙伴模式，并防止意外泄露的机密被恶意使用.",
+        // "Secret scanning": "비밀 스캔",
+        // "automatically looks for partner patterns and prevents fraudulent use of accidentally committed secrets.": "자동으로 파트너 패턴을 찾아 실수로 유출된 비밀이 악의적으로 사용되는 것을 방지합니다.",
         "Read about secret scanning": "비밀 스캔에 대해 알아보기",
 
-        //"Collaboration": "协作",
-        //"Supercharge collaboration": "加强协作",
-        //"GitHub helps your teams work more efficiently together.": "GitHub 帮助您的团队更高效地协作.",
+        // "Collaboration": "협업",
+        // "Supercharge collaboration": "협업 강화",
+        // "GitHub helps your teams work more efficiently together.": "GitHub는 팀이 보다 효율적으로 협업할 수 있도록 지원합니다.",
 
-        //"GitHub Issues and GitHub Projects": "GitHub 이슈和 GitHub 项目",
-        //"supply project management tools that adapt to your team alongside your code.": "提供了适合您的团队和代码的项目管理工具.",
-        //"Get started with GitHub Issues": "开始使用 GitHub 이슈",
+        // "GitHub Issues and GitHub Projects": "GitHub 이슈 및 GitHub 프로젝트",
+        // "supply project management tools that adapt to your team alongside your code.": "팀과 코드에 맞는 프로젝트 관리 도구를 제공합니다.",
+        // "Get started with GitHub Issues": "GitHub 이슈 시작하기",
 
-        //"reduction in onboarding time with GitHub": "使用 GitHub 缩短入职时间",
+        // "reduction in onboarding time with GitHub": "GitHub로 온보딩 시간 단축",
 
-       //"GitHub Discussions": "GitHub 讨论",
-       //"creates space to ask questions and have open-ended conversations.": "营造了提问和开放式对话的空间.",
-       //"Jump into GitHub Discussions": "跳转到 GitHub 讨论",
+       // "GitHub Discussions": "GitHub 토론",
+       // "creates space to ask questions and have open-ended conversations.": "질문을 하고 자유로운 대화를 나눌 수 있는 공간을 만듭니다.",
+       // "Jump into GitHub Discussions": "GitHub 토론으로 이동",
 
-       //"allow real-time communication and collaboration about code changes.": "允许就代码更改进行实时交流和协作.",
-       //"Check out pull requests": "查看拉取请求",
+       // "allow real-time communication and collaboration about code changes.": "코드 변경에 대한 실시간 소통 및 협업을 가능하게 합니다.",
+       // "Check out pull requests": "풀 리퀘스트 확인",
 
-       //"GitHub Sponsors": "GitHub 赞助者",
-       //"lets you support your favorite open source maintainers and projects.": "让您能够支持您喜欢的开源维护者和项目.",
-       //"Invest with GitHub Sponsors": "通过 GitHub 赞助者进行投资",
+       // "GitHub Sponsors": "GitHub 후원자",
+       // "lets you support your favorite open source maintainers and projects.": "좋아하는 오픈 소스 유지 관리자와 프로젝트를 지원할 수 있습니다.",
+       // "Invest with GitHub Sponsors": "GitHub 후원자를 통해 투자하기",
 
-       //"Over 100 million developers call GitHub home": "超过 1 亿开发者把 GitHub 视为自己的家",
-       //"Whether you’re scaling your startup or just learning how to code, GitHub is your home. Join the world’s largest developer platform to build the innovations that empower humanity. Let’s build from here.": "无论您是正在扩大创业规模，还是刚刚开始学习编程，GitHub 都是您的家.加入全球最大的开发者平台，构建赋予人类力量的创新.让我们从这里开始.",
+       // "Over 100 million developers call GitHub home": "1억 명 이상의 개발자가 GitHub를 자신의 집으로 여깁니다",
+       // "Whether you’re scaling your startup or just learning how to code, GitHub is your home. Join the world’s largest developer platform to build the innovations that empower humanity. Let’s build from here.": "스타트업을 확장하든, 이제 막 코딩을 배우기 시작했든, GitHub는 당신의 집입니다. 세계 최대의 개발자 플랫폼에 참여하여 인류에게 힘을 실어주는 혁신을 만들어보세요. 여기서부터 시작합시다.",
 
-        // 动画下方按钮
-        //"Pause": "停止",
-        //"Play": "播放",
+        // 애니메이션 하단 버튼
+        // "Pause": "정지",
+        // "Play": "재생",
 
         "This 7X times factor is based on data from the industry’s longest running analysis of fix rates Veracode State of Software Security 2023, which cites the average time to fix 50% of flaws as 198 days vs. GitHub’s fix rates of 72% of flaws with in 28 days which is at a minimum of 7X faster when compared.": "이 7배 속도 차이는 업계에서 가장 오래된 취약점 수정 비율 분석인 Veracode State of Software Security 2023의 데이터를 바탕으로 해요. 이 보고서에 따르면, 결함의 50%를 수정하는 데 평균 198일이 소요되는 반면, GitHub는 결함의 72%를 28일 이내에 수정하여 최소 7배 더 빠른 속도를 기록했어요.",
-        //"The Total Economic Impact™ Of GitHub Enterprise Cloud and Advanced Security, a commissioned study conducted by Forrester Consulting, 2022. Results are for a composite organization based on interviewed customers.": "由 Forrester Consulting 开展的委托研究《GitHub Enterprise Cloud 和高级安全的总体经济影响》(The Total Economic Impact™ Of GitHub Enterprise Cloud and Advanced Security)，其结果显示了基于受访客户的综合组织的结果.",
-        //"There are now 100 million developers around the world using GitHub.": "现在全球有 1 亿开发者使用 GitHub.",
-        //"Read the blog post": "阅读博客文章",
+        // "The Total Economic Impact™ Of GitHub Enterprise Cloud and Advanced Security, a commissioned study conducted by Forrester Consulting, 2022. Results are for a composite organization based on interviewed customers.": "Forrester Consulting이 의뢰하여 수행한 연구인 《GitHub Enterprise Cloud 및 고급 보안의 총 경제적 영향》(The Total Economic Impact™ Of GitHub Enterprise Cloud and Advanced Security)의 결과는 인터뷰에 참여한 고객을 기반으로 한 종합 조직의 결과를 보여줍니다.",
+        // "There are now 100 million developers around the world using GitHub.": "현재 전 세계적으로 1억 명의 개발자가 GitHub를 사용하고 있습니다.",
+        // "Read the blog post": "블로그 게시물 읽기",
 
-        // 底部栏
+        // 하단 바
         "Subscribe to our developer newsletter": "개발자 뉴스레터 구독하기",
         "Get tips, technical guides, and best practices. Twice a month. Right in your inbox.": "팁, 기술 가이드 및 모범 사례를 받아보세요. 매월 두 번, 당신의 이메일로요.",
         "Subscribe": "구독하기",
@@ -16387,16 +16388,16 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
         "What is Git?": "Git이 무엇인가요?",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
 I18N["ko-KR"]["home"] = I18N["ko-KR"]["homepage"];
 
-I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session, /sessions/two-factor, sessions/recovery, /sessions/recovery/token, /password_reset等)
-    "static": { // 静态翻译
+I18N["ko-KR"]["session-authentication"] = { // 로그인 페이지 포함(/login, /session, /sessions/two-factor, sessions/recovery, /sessions/recovery/token, /password_reset 등)
+    "static": { // 정적 번역
 
-        // 登录页 https://github.com/login
+        // 로그인 페이지 https://github.com/login
             "Sign in to GitHub": "GitHub에 로그인",
             "Sign in to": "로그인 대상:",
             "Signed in as": "현재 로그인 계정:",
@@ -16408,11 +16409,11 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
             "Sign in with a passkey": "패스키로 로그인하기",
             "Signing in…": "로그인 중…",
 
-            "Add an account": "계정 추가하기", // 添加新账号
-            "Want to create an account?": "계정 만들기를 원한다고요?", // 添加新账号
+            "Add an account": "계정 추가하기", // 새 계정 추가
+            "Want to create an account?": "계정 만들기를 원한다고요?", // 새 계정 추가
 
             "Or": "및",
-            // "This browser or device does not fully support passkeys.": "此浏览器或设备不完全支持通行密钥.",
+            // "This browser or device does not fully support passkeys.": "이 브라우저 또는 장치는 패스키를 완전히 지원하지 않습니다.",
             "This browser or device is reporting partial passkey support.": "현재 브라우저 또는 기기에서 패스키가 일부만 지원돼요.",
             "Sign-in with a passkey": "패스키로 로그인하기",
 
@@ -16421,18 +16422,18 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
 
             "Contact GitHub Support": "GitHub에 문의하기",
 
-            // 验证状态提醒
+            // 확인 상태 알림
             "Incorrect username or password.": "사용자 이름 또는 비밀번호가 잘못됐어요.",
             "Recovery code authentication failed.": "복구 코드 인증을 실패했어요.",
 
-        // 设备授权激活 https://github.com/login/device
+        // 장치 인증 활성화 https://github.com/login/device
             "Device Activation": "디바이스 활성화",
             "Enter the code displayed on your device": "기기에 표시된 코드를 입력하세요",
             "Continue": "계속하기",
             "GitHub staff will never ask you to enter your code on this page.": "GitHub 팀은 절대 코드를 이곳에 입력하라고 요구하지 않아요.",
 
-        // 设备授权第2页面 https://github.com/login/device/confirmation
-            // [/Authorize/, "授权"],
+        // 장치 인증 2페이지 https://github.com/login/device/confirmation
+            // [/Authorize/, "인증"],
             "This authorization was requested from": "다음에서 인증 요청이 발생했어요:",
             "Make sure you trust this device as it will get access to your account.": "이 디바이스가 계정에 접근할 수 있으므로 신뢰할 수 있는지 확인하세요.",
             "wants to access your": "다음 항목에 접근하려고 합니다:",
@@ -16528,7 +16529,7 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
         "I understand, get started": "알겠어요, 시작하죠.",
         "Two-factor authentication failed.": "2단계 인증 실패.",
 
-        // 账户恢复 https://github.com/sessions/recovery
+        // 계정 복구 https://github.com/sessions/recovery
         "Account recovery": "계정 복구",
         "The account recovery process can take 1-3 business days. We recommend one of the following if possible.": "계정 복구 과정은 1-3일이 걸릴 수 있어요. 가능하다면 아래 방법 중 하나를 권장해요.",
         "Enter a recovery code": "복구 코드 입력",
@@ -16679,7 +16680,7 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
         "Use an authentication app or browser extension to generate one-time codes.": "인증기 앱이나 브라우저 확장 프로그램을 사용해 일회용 코드를 생성해요.",
         "Select": "선택",
 
-        // 第2步
+        // 2단계
         "Download your recovery codes": "복구 코드를 다운로드해요",
         "You can use recovery codes as a second factor to authenticate in case you lose access to your device. We recommend saving them with a secure password manager such as": "기기를 잃어버렸을 때 복구 코드를 두 번째 인증 요소로 사용할 수 있어요. 안전한 비밀번호 관리자인 다음과 같은 곳에 저장하는 걸 추천해요",
         "Keep your recovery codes in a safe spot": "복구 코드를 안전한 곳에 보관하세요",
@@ -16687,7 +16688,7 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
         "Download": "다운로드",
         "I have saved my recovery codes": "복구 코드를 저장했어요",
 
-        // 第3步
+        // 3단계
         "Two-factor authentication (2FA) is now enabled for your GitHub account": "이제 GitHub 계정에 2단계 인증 (2FA)이 활성화되었어요",
         "You have enabled two-factor authentication using SMS.": "SMS를 사용해 2단계 인증을 활성화했어요",
         "You have enabled two-factor authentication using your authenticator app.": "인증기 앱을 사용해 2단계 인증을 활성화했어요",
@@ -16710,7 +16711,7 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
         "and signing in to your account.": "앱을 설치하고 계정에 로그인해서 활성화하세요.",
         "Done": "완료",
 
-        // 定期验证双因素身份验证（2FA）设置
+        // 2단계 인증(2FA) 설정 정기 확인
         "Verify your two-factor authentication (2FA) settings": "2단계 인증(2FA) 설정을 확인해요",
         "This is a one-time verification of your recent configured 2FA credentials.": "최근 설정한 2단계 인증 정보를 한 번만 확인해요.",
         "Make sure that 2FA is correctly configured, and avoid a potential account lockout disaster. If you're having trouble verifying, you'll be able to reconfigure 2FA for your account.": "2단계 인증이 제대로 설정되었는지 확인하고 계정 잠금 사태를 예방하세요. 만약 문제가 발생하면, 계정의 2단계 인증을 다시 설정할 수 있어요.",
@@ -16746,7 +16747,7 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
         "left to enable 2FA. Take action now to avoid additional interruptions.": "2단계 인증을 활성화할 시간이 남았어요. 추가적인 방해 없이 바로 시작하세요.",
         "Remind me tomorrow": "내일 알림을 주세요",
 
-        // 登出页面 https://github.com/logout
+        // 로그아웃 페이지 https://github.com/logout
         "Are you sure you want to sign out?": "정말 로그아웃 하시겠어요?",
         "Sign out": "로그아웃",
 
@@ -16754,16 +16755,16 @@ I18N["ko-KR"]["session-authentication"] = { // 登录页 包含(/login, /session
         "Sign out from all accounts": "모든 계정에서 로그아웃",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         [/(\d+) verified emails?/, "$1은 인증된 이메일 주소예요"],
         [/(\d+) unverified emails?/, "$1은 인증되지 않은 이메일 주소예요"],
         [/(\d+) keys?/, "$1의 액세스 키"],
         [/(\d+) devices?/, "$1의 기기"],
-        [/You will receive one-time codes at this phone number:/, "다음 전화번호로 일회용 인증 코드를 받게 돼요:"], // 已设置短信/文字信息
+        [/You will receive one-time codes at this phone number:/, "다음 전화번호로 일회용 인증 코드를 받게 돼요:"], // SMS/문자 메시지 설정됨
         [/Continue as (.*)/, "$1로 계속"],
         [/Authorize/, "인증하기"],
 
-        // 设备验证 https://github.com/sessions/verified-device
+        // 장치 확인 https://github.com/sessions/verified-device
         [/We just sent your authentication code via email to (.*)\. The code will expire at (.*)\./, "방금 인증 코드를 $1으로 보냈어요. 이 코드는 $2에 만료돼요."],
     ],
 };
@@ -16773,1824 +16774,1845 @@ I18N["ko-KR"].session = I18N["ko-KR"]["session-authentication"];
 I18N["ko-KR"].sessions = I18N["ko-KR"]["session-authentication"];
 I18N["ko-KR"].password_reset = I18N["ko-KR"]["session-authentication"];
 
-I18N["zh-CN"]["signup"] = { // 注册页
-    "static": { // 静态翻译
-        "Already have an account?": "已经有账户吗？",
-        "Sign in →": "登录 →",
-        "Welcome to GitHub!": "欢迎来到 GitHub!",
-        "Let’s begin the adventure": "让我们开始探险吧",
-        "Enter your email": "输入您的电子邮箱地址",
-            "Email is invalid or already taken": "电子邮箱地址无效或已被占用",
-        "Continue": "继续",
-        "Create a password": "创建密码",
-            "Password is too short": "密码太短",
-            "Password needs a number and lowercase letter": "密码需要有数字和小写字母",
-            "Password is strong": "密码很强",
-            "Make sure it's": "请确保",
-                "at least 15 characters": "至少需要15个字符",
-                "OR": " 或者",
-                "at least 8 characters": "至少需要8个字符",
-                "including a number": "包括数字",
-                "and a lowercase letter": "和小写字母",
-            "Password may be compromised": "密码可能被泄露",
-            "Password is in a list of passwords commonly used on other websites": "密码在其他网站常用的密码列表中",
-        "Enter a username": "输入您的用户名",
-            "Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.": "用户名只能包含字母数字字符或单个连字符，并且不能以连字符开头或结尾.",
-        "Would you like to receive product updates and announcements via email?": "您是否愿意通过电子邮件接收产品更新和公告？",
-        "Type \"y\" for yes or \"n\" for no": "输入 \"y\" 表示愿意，输入 \"n\" 表示不愿意.",
-        "Verify your account": "验证您的账户",
-        "Create account": "创建账户",
-        "By creating an account, you agree to the": "创建账户即表示您同意",
-        "Terms of Service": "服务条款",
-        ". For more information about GitHub's privacy practices, see the": ".更多关于 GitHub 隐私条款的信息，请参见",
-        "GitHub Privacy Statement": "GitHub 隐私声明",
-        ". We'll occasionally send you account-related emails.": ".我们偶尔会向您发送与账户相关的电子邮件.",
+I18N["ko-KR"]["signup"] = { // 가입 페이지
+    "static": { // 정적 번역
+        "Already have an account?": "이미 계정이 있으신가요?",
+        "Sign in →": "로그인 →",
+        "Email": "이메일",
+        "Password": "비밀번호",
+        "Sign up for GitHub": "Github에 회원가입하기",
+        "Continue with Google": "구글로 계속하기",
+        "Username": "닉네임",
+        "Your Country/Region": "사용자님의 국가/지역",
+        "Explore GitHub's core features for individuals and organizations.": "개인 및 조직을 위한 GitHub의 핵심 기능들을 탐색해 보세요",
+        "See what's included": "포함된 내용을 확인해 보세요",
+        "Access to GitHub Copilot": "GitHub Copilot에 액세스하기",
+        "Increase your productivity and accelerate software development.": "생산성을 높이고 소프트웨어 개발 속도를 가속화하세요",
+        "Unlimited repositories": "무제한 저장소",
+        "Collaborate securely on public and private projects.": "공개 및 비공개 프로젝트에서 안전하게 협업하세요",
+        "Integrated code reviews": "통합된 코드 리뷰",
+        "Boost code quality with built-in review tools.": "내장된 검토 도구로 코드 품질을 높여보세요",
+        "Automated workflows": "자동화된 워크플로우",
+        "Save time with CI/CD integrations and GitHub Actions.": "CI/CD 통합 및 GitHub Actions로 시간을 절약하세요",
+        "Community support": "커뮤니티 지원",
+        "Connect with developers worldwide for instant feedback and insights.": "즉각적인 피드백과 통찰력을 얻기 위해 전 세계 개발자들과 연결하세요",
+        "Password should be at least 15 characters OR at least 8 characters including a number and a lowercase letter.": "비밀번호는 최소 15자이거나, 숫자와 소문자를 포함하여 최소 8자여야 합니다.",
+        "For compliance reasons, we're required to collect country information to send you occasional updates and announcements.": "법규 준수 목적으로, 가끔 업데이트 및 공지사항을 보내드리기 위해 국가 정보를 수집해야 합니다",
+        "Create your free account": "무료로 사용자님의 계정을 만들어보세요",
+        "Welcome to GitHub!": "GitHub에 오신 것을 환영해요!",
+        "Let’s begin the adventure": "모험을 시작해 보세요",
+        "Enter your email": "이메일을 입력해주세요",
+            "Email is invalid or already taken": "이메일이 유효하지 않거나 이미 사용 중이에요",
+        "Continue": "계속하기",
+        "Create a password": "비밀번호 만들기",
+            "Password is too short": "비밀번호가 너무 짧아요",
+            "Password needs a number and lowercase letter": "비밀번호에는 숫자와 소문자가 필요해요",
+            "Password is strong": "강력한 비밀번호예요",
+            "Make sure it's": "다음 사항을 확인해주세요",
+                "at least 15 characters": "최소 15자 이상",
+                "OR": " 또는",
+                "at least 8 characters": "최소 8자 이상",
+                "including a number": "숫자 포함",
+                "and a lowercase letter": "그리고 소문자 포함",
+            "Password may be compromised": "비밀번호가 유출되었을 수 있어요",
+            "Password is in a list of passwords commonly used on other websites": "이 비밀번호는 다른 웹사이트에서 흔히 사용되는 비밀번호 목록에 있어요",
+        "Enter a username": "사용자 이름을 입력해주세요",
+            "Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.": "사용자 이름은 영숫자 또는 단일 하이픈만 포함할 수 있으며, 하이픈으로 시작하거나 끝날 수 없어요.",
+        "Would you like to receive product updates and announcements via email?": "제품 업데이트 및 공지 이메일을 받으시겠어요?",
+        "Type \"y\" for yes or \"n\" for no": "예는 \"y\", 아니요는 \"n\"을 입력하세요.",
+        "Verify your account": "계정 인증하기",
+        "Create account": "계정 만들기",
+        "By creating an account, you agree to the": "계정을 만들면 다음에 동의하는 것으로 간주돼요",
+        "Terms of Service": "서비스 약관",
+        ". For more information about GitHub's privacy practices, see the": ". GitHub의 개인정보 보호 관행에 대한 자세한 내용은",
+        "GitHub Privacy Statement": "GitHub 개인정보처리방침",
+        ". We'll occasionally send you account-related emails.": "을 참조하세요. 때때로 계정과 관련된 이메일을 보내드려요.",
     },
-    "regexp": [ // 正则翻译
-        [/Username ([^ ]+) is not available./, "用户名 $1 不可用."],
-        [/([^ ]+) is available./, "用户名 $1 可用."],
+    "regexp": [ // 정규식 번역
+        [/Username ([^ ]+) is not available./, "사용자 이름 $1은(는) 사용할 수 없어요."],
+        [/([^ ]+) is available./, "$1은(는) 사용할 수 있어요."],
     ],
 };
 
-I18N["ko-KR"]["notifications"] = { // 通知页面
-    "static": { // 静态翻译
-        "Notifications": "通知",
-        "All": "所有",
-        "Unread": "未读",
+I18N["ko-KR"]["notifications"] = { // 알림 페이지
+    "static": { // 정적 번역
+        "Notifications": "알림",
+        "All": "모두",
+        "Unread": "읽지 않음",
 
-        "Switch inbox": "切换收件箱", // Android UA 下出现
-        "Inbox": "收件箱",
-        "Saved": "已保存",
-        "Save": "保存",
-        "Done": "已完成",
-        "Filters": "筛选",
-        "Dismiss": "忽略",
-        "get started": "开始",
-        "Subscribe": "订阅",
-        "Unsubscribe": "退订",
+        "Switch inbox": "받은 편지함 전환하기", // Android UA에서 나타남
+        "Inbox": "받은 편지함",
+        "Saved": "저장됨",
+        "Save": "저장하기",
+        "Done": "완료",
+        "Filters": "필터",
+        "Dismiss": "무시하기",
+        "get started": "시작하기",
+        "Subscribe": "구독하기",
+        "Unsubscribe": "구독 취소하기",
 
-        "Search notifications": "搜索通知",
-        "Filter notifications": "筛选通知",
-            "Suggested filters": "建议筛选",
-            "Sorry, we don't support the": "抱歉，我们不支持",
-            "filter yet.": "筛选器.",
-            "Learn more about filters.": "了解更多关于筛选器的信息.",
+        "Search notifications": "알림 검색하기",
+        "Filter notifications": "알림 필터링하기",
+            "Suggested filters": "추천 필터",
+            "Sorry, we don't support the": "죄송하지만,",
+            "filter yet.": "필터는 아직 지원하지 않아요.",
+            "Learn more about filters.": "필터에 대해 더 알아보기.",
 
-            "- submit": "- 提交",
-            "Submit search": "提交搜索",
+            "- submit": "- 제출",
+            "Submit search": "검색 제출하기",
 
-            "Available filters": "可用筛选器",
-            "filter by repository": "按仓库筛选",
-            "filter by status or discussion type": "按状态或评论类型筛选",
-            "filter by notification reason": "按通知原因筛选",
-            "filter by notification author": "按通知作者筛选",
-            "filter by organization": "按组织筛选",
-        "Group by:": "分组：",
-        "Group by: Date": "分组：日期",
-        "Group by: Repository": "分组：仓库",
-        "Date": "日期",
+            "Available filters": "사용 가능한 필터",
+            "filter by repository": "저장소로 필터링하기",
+            "filter by status or discussion type": "상태 또는 토론 유형으로 필터링하기",
+            "filter by notification reason": "알림 이유로 필터링하기",
+            "filter by notification author": "알림 작성자로 필터링하기",
+            "filter by organization": "조직으로 필터링하기",
+        "Group by:": "그룹화 기준:",
+        "Group by: Date": "그룹화 기준: 날짜",
+        "Group by: Repository": "그룹화 기준: 저장소",
+        "Date": "날짜",
         "Repository": "저장소",
-        // [/(\d+) new notifications?/, "$1 条新通知"], // 通知管理页
+        // [/(\d+) new notifications?/, "$1개의 새로운 알림"], // 알림 관리 페이지
 
-        // 筛选结果
-        "No results": "无结果",
-        "No notifications matched your query.": "没有与您的查询相匹配的通知.",
+        // 필터 결과
+        "No results": "결과 없음",
+        "No notifications matched your query.": "쿼리와 일치하는 알림이 없어요.",
 
-        "Select all": "全选",
-        "selected": "条被选中",
-        "Mark as read": "标记为已读",
-        "Mark as unread": "标记为未读",
-        "Mark as done": "标记为已完成",
-        "Move to inbox": "移动到收件箱",
+        "Select all": "모두 선택하기",
+        "selected": "개 선택됨",
+        "Mark as read": "읽음으로 표시하기",
+        "Mark as unread": "읽지 않음으로 표시하기",
+        "Mark as done": "완료로 표시하기",
+        "Move to inbox": "받은 편지함으로 이동하기",
 
-         "Clear selection": "清除选中",
+         "Clear selection": "선택 해제하기",
 
-        //"Mark all as read": "全部标为已读",
-        //"Are you sure?": "您确定吗？",
-        //"Are you sure you want to mark all unread notifications as read?": "您确定要将所有的未读通知标记为已读？",
-        //"Mark all notifications as read": "全部标为已读",
+        //"Mark all as read": "모두 읽음으로 표시하기",
+        //"Are you sure?": "확실하신가요?",
+        //"Are you sure you want to mark all unread notifications as read?": "모든 읽지 않은 알림을 읽음으로 표시하시겠어요?",
+        //"Mark all notifications as read": "모든 알림을 읽음으로 표시하기",
 
-        "Clear out the clutter.": "清除混乱.",
-        "Get the most out of your new inbox by quickly and easily marking all of your previously read notifications as done.": "快速轻松地将所有已阅读的通知标记为已完成，以充分利用新的收件箱.",
-        "Overwhelmed by notifications? We've found some repositories that may be causing notifications you don't need.": "通知不知所措？我们发现了一些仓库，这些仓库可能会导致您不需要的通知.",
-        "Update watching settings": "更新关注设置",
-        "Get started": "开始",
-            "Clean up your inbox": "清理收件箱",
-            "Marking your notifications as \"done\" helps to create a more focused inbox. Don't worry - if there is new activity, you'll still be notified.": "将您的通知标记为 “已完成” 有助于创建一个更加集中的收件箱.不用担心 - 如果有新的活动，您仍然会收到通知.",
-            "Mark all read notifications as done": "将所有已读通知标记为已完成",
-            "This process could take a few moments depending on the quantity.": "这个过程可能会根据数量的多少而耗费一些时间.",
+        "Clear out the clutter.": "정리가 필요해요.",
+        "Get the most out of your new inbox by quickly and easily marking all of your previously read notifications as done.": "이전에 읽은 모든 알림을 빠르고 쉽게 완료로 표시하여 새로운 받은 편지함을 최대한 활용해보세요.",
+        "Overwhelmed by notifications? We've found some repositories that may be causing notifications you don't need.": "알림이 너무 많나요? 필요하지 않은 알림을 유발할 수 있는 몇몇 저장소를 찾았어요.",
+        "Update watching settings": "주시 설정 업데이트하기",
+        "Get started": "시작하기",
+            "Clean up your inbox": "받은 편지함 정리하기",
+            "Marking your notifications as \"done\" helps to create a more focused inbox. Don't worry - if there is new activity, you'll still be notified.": "알림을 \"완료\"로 표시하면 더 집중된 받은 편지함을 만드는 데 도움이 돼요. 걱정하지 마세요 - 새로운 활동이 있으면 계속 알림을 받을 수 있어요.",
+            "Mark all read notifications as done": "읽은 모든 알림을 완료로 표시하기",
+            "This process could take a few moments depending on the quantity.": "이 과정은 양에 따라 시간이 걸릴 수 있어요.",
 
-        "Manage notifications": "管理通知",
-        "Notification settings": "通知设置",
-        "Watched repositories": "关注的仓库",
-        "Subscriptions": "订阅",
-        "Watching": "关注",
+        "Manage notifications": "알림 관리하기",
+        "Notification settings": "알림 설정",
+        "Watched repositories": "주시 중인 저장소",
+        "Subscriptions": "구독",
+        "Watching": "주시 중",
 
-        "subscribed": "订阅",
-        "mention": "提及",
-        "commented": "评论",
-        "author": "作者",
-        "manual": "手动",
-        "state change": "状态更改",
-        "review requested": "请求审查",
-        "ci activity": "CI 活动",
+        "subscribed": "구독함",
+        "mention": "언급",
+        "commented": "댓글 담",
+        "author": "작성자",
+        "manual": "수동",
+        "state change": "상태 변경",
+        "review requested": "검토 요청됨",
+        "ci activity": "CI 활동",
 
-        "View all gist notifications": "查看全部 Gist 通知", // 仓库分组模式
+        "View all gist notifications": "모든 Gist 알림 보기", // 저장소 그룹 모드
 
         "Prev": "이전",
         "Previous": "이전",
         "Next": "다음",
 
-        "change notification settings": "更改通知设置",
-        "you can change how you receive notifications from your account settings.": "您可以从账户设置更改接收通知的方式.",
-        "unwatch suggestions": "取消关注建议",
-        "these repositories may be causing unnecessary notifications.": "这些仓库可能导致不必要的通知.",
-        "unwatch all": "取消所有关注",
-        "customize": "自定义",
+        "change notification settings": "알림 설정 변경하기",
+        "you can change how you receive notifications from your account settings.": "계정 설정에서 알림 수신 방법을 변경할 수 있어요.",
+        "unwatch suggestions": "주시 중단 제안",
+        "these repositories may be causing unnecessary notifications.": "이 저장소들은 불필요한 알림을 유발할 수 있어요.",
+        "unwatch all": "모두 주시 중단하기",
+        "customize": "사용자 지정하기",
 
-        "🎯 Assigned": "🎯 已分配",
-        "💬 Participating": "💬 参与",
-        "✋ Mentioned": "✋ 提及",
-        "🙌 Team mentioned": "🙌 提到的团队",
-        "👀 Review requested": "👀 审查请求",
-        "Add new filter": "添加新筛选器",
-        "Name": "名称",
-        "Filter by…": "筛选…", // Android UA 下才有
-        "New filter": "新建", // Android UA 下才有
-        "Filter inbox by…": "筛选收件箱…",
-        "Create new filter": "创建新规则",
-        "Create": "创建",
-        "Query": "规则",
+        "🎯 Assigned": "🎯 할당됨",
+        "💬 Participating": "💬 참여 중",
+        "✋ Mentioned": "✋ 언급됨",
+        "🙌 Team mentioned": "🙌 팀 언급됨",
+        "👀 Review requested": "👀 검토 요청됨",
+        "Add new filter": "새 필터 추가하기",
+        "Name": "이름",
+        "Filter by…": "필터 기준…", // Android UA에서만 있음
+        "New filter": "새 필터", // Android UA에서만 있음
+        "Filter inbox by…": "받은 편지함 필터 기준…",
+        "Create new filter": "새 필터 만들기",
+        "Create": "만들기",
+        "Query": "쿼리",
 
-        "All caught up!": "处理完了！",
-        "Take a break, write some code, do what you do best.": "休息一下，写一些代码，做您最擅长的事.",
-        "Save something important": "保存重要的东西",
-        "Notifications you save will appear here to read later.": "您保存的通知会出现在这里，以便以后阅读.",
-        "Mark notifications as done so you can move on with your work.": "将通知标记为已完成，以便您可以继续工作.",
-        "New activity appears in your inbox.": "新活动出现在您的收件箱中.",
+        "All caught up!": "모두 처리했어요!",
+        "Take a break, write some code, do what you do best.": "잠시 쉬면서 코드를 작성하는 등 가장 잘하는 일을 해보세요.",
+        "Save something important": "중요한 내용 저장하기",
+        "Notifications you save will appear here to read later.": "저장한 알림은 나중에 읽을 수 있도록 여기에 표시돼요.",
+        "Mark notifications as done so you can move on with your work.": "작업을 계속할 수 있도록 알림을 완료로 표시하세요.",
+        "New activity appears in your inbox.": "새로운 활동이 받은 편지함에 표시돼요.",
 
-        // /notifications?query=repo 某个仓库
-        "We've noticed that you rarely interact with this repository, are you sure you need notifications?": "我们注意到您很少与此仓库交互，您确定需要通知吗？",
+        // /notifications?query=repo 특정 저장소
+        "We've noticed that you rarely interact with this repository, are you sure you need notifications?": "이 저장소와 거의 상호 작용하지 않는 것을 확인했어요. 알림이 정말 필요한가요?",
         "Unwatch": "구독 취소",
-        // "Notifications": "通知类型",
-            "Participating and @mentions": "参与和 @您",
-            "Only receive notifications from this repository when participating or @mentioned.": "仅在参与或 @您 时接收来自此仓库的通知.",
-            "All Activity": "所有活动",
-            "Notified of all notifications on this repository.": "接收来自此仓库所有通知.",
-            "Ignore": "忽略",
-            "Never be notified.": "永不接收通知.",
-            "Custom": "自定义",
-            "Select events you want to be notified of in addition to participating and @mentions.": "选择除参与和 @您 之外还要接收通知的事件.",
-            "Discussions are not enabled for this repo": "此仓库未启用讨论功能",
+        // "Notifications": "알림 유형",
+            "Participating and @mentions": "참여 및 @언급",
+            "Only receive notifications from this repository when participating or @mentioned.": "참여하거나 @언급될 때만 이 저장소의 알림을 받아요.",
+            "All Activity": "모든 활동",
+            "Notified of all notifications on this repository.": "이 저장소의 모든 알림을 받아요.",
+            "Ignore": "무시",
+            "Never be notified.": "알림을 받지 않아요.",
+            "Custom": "사용자 지정",
+            "Select events you want to be notified of in addition to participating and @mentions.": "참여 및 @언급 외에 알림을 받을 이벤트를 선택하세요.",
+            "Discussions are not enabled for this repo": "이 저장소에서는 토론이 활성화되어 있지 않아요.",
             "Releases": "릴리즈",
             "Discussions": "토론",
-                "Discussions are not enabled for this repository": "该仓库未启用讨论功能",
+                "Discussions are not enabled for this repository": "이 저장소에서는 토론이 활성화되어 있지 않아요.",
             "Security alerts": "보안 알림",
-            //"Cancel": "取消",
+            //"Cancel": "취소",
             "Apply": "반영하기",
 
-        "ProTip!": "专业提示！",
-            "Triage notifications on the go with GitHub Mobile for": "使用 GitHub Mobile 随时随地查看分类通知",
-            "When viewing a notification, press": "在查看一条通知时，按下",
-            "to mark it as Done.": "将其标记为 “已完成”.",
-            "to mark it as Unread.": "将其标记为 “未读”.",
-            "Create custom filters to quickly access your most important notifications.": "创建自定义筛选器以快速访问最重要的通知.",
-            "Filter by": "使用",
-            "to see what's new.": "查看新通知.",
-            "then bulk select and mark all as": "然后批量选择并将所有内容标记为",
-            "to clean up your inbox.": "以清理收件箱.",
+        "ProTip!": "전문가 팁!",
+            "Triage notifications on the go with GitHub Mobile for": "GitHub Mobile로 이동 중에도 알림을 분류해보세요:",
+            "When viewing a notification, press": "알림을 볼 때",
+            "to mark it as Done.": "를 누르면 '완료'로 표시돼요.",
+            "to mark it as Unread.": "를 누르면 '읽지 않음'으로 표시돼요.",
+            "Create custom filters to quickly access your most important notifications.": "사용자 지정 필터를 만들어 가장 중요한 알림에 빠르게 접근해보세요.",
+            "Filter by": "다음으로 필터링:",
+            "to see what's new.": "를 사용하여 새로운 내용을 확인하세요.",
+            "then bulk select and mark all as": "그런 다음 일괄 선택하고 모두",
+            "to clean up your inbox.": "(으)로 표시하여 받은 편지함을 정리하세요.",
     },
-    "regexp": [ // 正则翻译
-        [/(\d+) selected/, "$1 条被选中"],
-        [/Select all (\d+) notifications?/, "选中全部 $1 条通知"],
-        [/View all (\d+) notifications?/, "查看全部 $1 条通知"], // 仓库分组模式
-        [/(\d+) new notifications?/, "$1 条新通知"],
-        [/of (\d+)/, " 共 $1 条"],
-        [/workflow run failed for ([^ ]+) branch/, "工作流程运行失败，$1 分支"], // F12 才翻译
+    "regexp": [ // 정규식 번역
+        [/(\d+) selected/, "$1개 선택됨"],
+        [/Select all (\d+) notifications?/, "모든 알림 $1개 선택하기"],
+        [/View all (\d+) notifications?/, "모든 알림 $1개 보기"], // 저장소 그룹 모드
+        [/(\d+) new notifications?/, "새 알림 $1개"],
+        [/of (\d+)/, " / 총 $1개"],
+        [/workflow run failed for ([^ ]+) branch/, "워크플로 실행 실패, $1 분기"], // F12에서만 번역됨
     ],
 };
 
-I18N["ko-KR"]["watching"] = { // 关注的仓库页面
-    "static": { // 静态翻译
-        "Notifications": "通知",
-        "Watching": "关注",
-        "Subscriptions": "订阅",
-        "Custom": "自定义",
-        // "Unwatch": "무시 중",
+I18N["ko-KR"]["watching"] = { // 주시 중인 저장소 페이지
+    "static": { // 정적 번역
+        "Notifications": "알림",
+        "Watching": "주시 중",
+        "Subscriptions": "구독",
+        "Custom": "사용자 지정",
+        // "Unwatch": "주시 중단",
 
-        "Unwatch suggestions": "取消关注建议",
-        "These repositories may be causing unnecessary notifications.": "这些仓库可能导致不必要的通知.",
+        "Unwatch suggestions": "주시 중단 제안",
+        "These repositories may be causing unnecessary notifications.": "이 저장소들은 불필요한 알림을 유발할 수 있어요.",
 
         //
-        "Are you sure?": "您确定吗?",
-        // [/By unwatching these (\d+) repositor(y|ies), you will only receive notifications when participating or @mentioned./, "取消对这 $1 个仓库的关注，您将只在参与或 @您 时收到通知."], //取消所以关注
+        "Are you sure?": "확실하신가요?",
+        // [/By unwatching these (\d+) repositor(y|ies), you will only receive notifications when participating or @mentioned./, "이 $1개의 저장소에 대한 주시를 중단하면 참여하거나 @언급될 때만 알림을 받게 돼요."], //모든 주시 취소
 
-        "Unwatch": "무시 중",
+        "Unwatch": "구독 취소",
         "Stop ignoring": "그만 무시하기",
         "Watch": "구독",
         "Unwatch": "구독 취소",
 
-        //"Watched repositories": "关注的仓库",
+        //"Watched repositories": "주시 중인 저장소",
 
-        // "Stop ignoring": "그만 무시하기",
-        //"Sorted by most recently watched.": "按最近关注排序",
-        "Unwatch all": "取消所有关注",
-            "Unwatch repositories by owner": "按所有者取消关注仓库",
-            "Find a repository owner": "查找仓库所有者",
-            "All repositories": "所有仓库",
-             // [/([^ ]+)'s repositories/, "$1 的仓库"],
-        "Stop watching all repositories": "取消关注所有的仓库",
+        // "Stop ignoring": "무시 중단하기",
+        //"Sorted by most recently watched.": "최근 주시 순으로 정렬됨.",
+        "Unwatch all": "모두 구독 취소하기",
+            "Unwatch repositories by owner": "소유자별로 저장소 구독 취소하기",
+            "Find a repository owner": "저장소 소유자 찾기",
+            "All repositories": "모든 저장소",
+             // [/([^ ]+)'s repositories/, "$1의 저장소"],
+        "Stop watching all repositories": "모든 저장소 구독 중단하기",
 
-        // 取消所有者关注仓库对话框
-        // [/Confirm unwatching ([^ ]+)'s repositories/, "确认不关注 $1 的仓库"],
-        // [/You will stop receiving notifications for all repositories owned by ([^ ]+) that you are watching./, "您将停止接收您所关注的 $1 拥有的所有仓库的通知."],
+        // 소유자의 저장소 구독 취소 대화상자
+        // [/Confirm unwatching ([^ ]+)'s repositories/, "$1의 저장소 구독 취소 확인"],
+        // [/You will stop receiving notifications for all repositories owned by ([^ ]+) that you are watching./, "구독 중인 $1 소유의 모든 저장소 알림 수신을 중단하게 돼요."],
 
-        // 关注 & 订阅通知设置 下拉菜单
-        // "Notifications": "通知类型",
-        "Participating and @mentions": "参与和 @您",
-        "Only receive notifications from this repository when participating or @mentioned.": "仅在参与或 @您 时接收来自此仓库的通知.",
-        "All Activity": "所有活动",
-        "Notified of all notifications on this repository.": "接收来自此仓库所有通知.",
-        "Ignore": "忽略",
-        "Never be notified.": "永不接收通知.",
-        // "Custom": "自定义",
-        "Select events you want to be notified of in addition to participating and @mentions.": "选择除参与和 @您 之外还要接收通知的事件.",
-        "Discussions are not enabled for this repo": "此仓库未启用讨论功能",
+        // 구독 & 구독 알림 설정 드롭다운 메뉴
+        // "Notifications": "알림 유형",
+        "Participating and @mentions": "참여 및 @언급",
+        "Only receive notifications from this repository when participating or @mentioned.": "참여하거나 @언급될 때만 이 저장소의 알림을 받아요.",
+        "All Activity": "모든 활동",
+        "Notified of all notifications on this repository.": "이 저장소의 모든 알림을 받아요.",
+        "Ignore": "무시",
+        "Never be notified.": "알림을 받지 않아요.",
+        // "Custom": "사용자 지정",
+        "Select events you want to be notified of in addition to participating and @mentions.": "참여 및 @언급 외에 알림을 받을 이벤트를 선택하세요.",
+        "Discussions are not enabled for this repo": "이 저장소에서는 토론이 활성화되어 있지 않아요.",
         "Releases": "릴리즈",
         "Discussions": "토론",
-            "Discussions are not enabled for this repository": "该仓库未启用讨论功能",
+            "Discussions are not enabled for this repository": "이 저장소에서는 토론이 활성화되어 있지 않아요.",
         "Security alerts": "보안 알림",
-        //"Cancel": "取消",
+        //"Cancel": "취소",
         "Apply": "반영하기",
 
-        "Notification settings": "通知设置",
-        "You can change how you receive notifications from your account settings.": "您可以从账户设置更改接收通知的方式.",
-        "Change notification settings": "更改通知设置",
+        "Notification settings": "알림 설정",
+        "You can change how you receive notifications from your account settings.": "계정 설정에서 알림 수신 방법을 변경할 수 있어요.",
+        "Change notification settings": "알림 설정 변경하기",
     },
-    "regexp": [ // 正则翻译
-        [/By unwatching these (\d+) repositor(y|ies), you will only receive notifications when participating or @mentioned./, "取消对这 $1 个仓库的关注，您将只在参与或 @您 时收到通知."],
-        [/Unwatch (\d+) repositor(y|ies)/, "取消对 $1 个仓库关注"],
-        [/You will stop receiving notifications for the (\d+) repositor(y|ies) you are watching./, "您将停止接收您正在关注的 $1 个仓库的通知."],
-        [/Confirm unwatching ([^ ]+)'s repositories/, "确定不关注 $1 的仓库"],
-        [/You will stop receiving notifications for all repositories owned by ([^ ]+) that you are watching./, "您将停止接收您所关注的 $1 拥有的所有仓库的通知."],
-        [/([^ ]+)'s repositories/, "$1 的仓库"],
+    "regexp": [ // 정규식 번역
+        [/By unwatching these (\d+) repositor(y|ies), you will only receive notifications when participating or @mentioned./, "이 $1개의 저장소 구독을 취소하면 참여하거나 @언급될 때만 알림을 받아요."],
+        [/Unwatch (\d+) repositor(y|ies)/, "$1개 저장소 구독 취소하기"],
+        [/You will stop receiving notifications for the (\d+) repositor(y|ies) you are watching./, "구독 중인 $1개의 저장소에 대한 알림 수신을 중단해요."],
+        [/Confirm unwatching ([^ ]+)'s repositories/, "$1의 저장소 구독 취소를 확인해주세요"],
+        [/You will stop receiving notifications for all repositories owned by ([^ ]+) that you are watching./, "구독 중인 $1이(가) 소유한 모든 저장소의 알림 수신을 중단해요."],
+        [/([^ ]+)'s repositories/, "$1의 저장소"],
     ],
 };
 
-I18N["ko-KR"]["notifications/subscriptions"] = { //订阅的仓库页面
-    "static": { // 静态翻译
-        "Notifications": "通知",
-        "Watching": "关注",
-        "Subscriptions": "订阅",
+I18N["ko-KR"]["notifications/subscriptions"] = { //구독 중인 저장소 페이지
+    "static": { // 정적 번역
+        "Notifications": "알림",
+        "Watching": "주시 중",
+        "Subscriptions": "구독",
 
-        "Reason": "原因",
-            "Filter by reason": "按原因筛选",
-            "Any reason": "任何原因",
-            "Show all subscriptions": "显示所有订阅",
-            "Assign": "分配",
-            "You were assigned to the Issue/PR.": "您被分配到이슈/拉取请求.",
-            "Author": "作者",
-            "You created the thread.": "您创造了这个话题.",
-            "Comment": "评论",
-            "You commented on the thread.": "您评论了这个话题.",
-            "Manual": "手动",
-            "You subscribed to the thread (via an Issue or Pull Request).": "您订阅了该主题（通过이슈或拉取请求）.",
-            "Mention": "提及",
-            "You were specifically @mentioned in the content.": "在内容中特别 @您.",
-            "Review Requested": "请求审查",
-            "You were requested for review.": "您被要求进行审查.",
-            "State Change": "状态变化",
-            "You changed the thread state (for example, closing an Issue or merging a Pull Request).": "您更改了话题状态（例如，关闭이슈或合并拉取请求）.",
-            "Team Mention": "提及团队",
-            "You were on a team that was mentioned.": "您在团队中被提及.",
+        "Reason": "이유",
+            "Filter by reason": "이유로 필터링하기",
+            "Any reason": "모든 이유",
+            "Show all subscriptions": "모든 구독 보기",
+            "Assign": "할당",
+            "You were assigned to the Issue/PR.": "사용자님이 이슈/끌어오기 요청에 할당되었어요.",
+            "Author": "작성자",
+            "You created the thread.": "사용자님이 스레드를 만들었어요.",
+            "Comment": "댓글",
+            "You commented on the thread.": "사용자님이 스레드에 댓글을 달았어요.",
+            "Manual": "수동",
+            "You subscribed to the thread (via an Issue or Pull Request).": "사용자님이 스레드를 구독했어요 (이슈 또는 끌어오기 요청을 통해).",
+            "Mention": "언급",
+            "You were specifically @mentioned in the content.": "콘텐츠에서 특별히 @언급되었어요.",
+            "Review Requested": "검토 요청됨",
+            "You were requested for review.": "검토 요청을 받았어요.",
+            "State Change": "상태 변경",
+            "You changed the thread state (for example, closing an Issue or merging a Pull Request).": "사용자님이 스레드 상태를 변경했어요 (예: 이슈 닫기 또는 끌어오기 요청 병합).",
+            "Team Mention": "팀 언급",
+            "You were on a team that was mentioned.": "언급된 팀에 속해 있었어요.",
         "Repository": "저장소",
-            "Filter by repository": "按仓库筛选",
-            "Filter repository": "筛选仓库",
-            "All repositories": "所有仓库",
-            "Loading repositories…": "载入仓库中…",
-        "Sort": "排序",
-            "Sort by": "排序方式",
-            "Most recently subscribed": "最近订阅最多的",
-            "Least recently subscribed": "最近订阅最少的",
+            "Filter by repository": "저장소로 필터링하기",
+            "Filter repository": "저장소 필터링하기",
+            "All repositories": "모든 저장소",
+            "Loading repositories…": "저장소를 불러오는 중…",
+        "Sort": "정렬",
+            "Sort by": "정렬 기준",
+            "Most recently subscribed": "가장 최근 구독",
+            "Least recently subscribed": "가장 오래된 구독",
 
-        "Reason:": "原因：",
-        "Repository:": "仓库：",
-        "Clear current filters": "清除当前筛选器",
-        "No results matched your search.": "没有符合您的搜索结果.",
+        "Reason:": "이유:",
+        "Repository:": "저장소:",
+        "Clear current filters": "현재 필터 지우기",
+        "No results matched your search.": "검색과 일치하는 결과가 없어요.",
 
-        "selected": "个被选中",
-        "Unsubscribe": "取消订阅",
+        "selected": "개 선택됨",
+        "Unsubscribe": "구독 취소하기",
 
-        "opened": "打开",
-        "• subscribed": "• 订阅于",
-        "• updated": "• 更新于",
+        "opened": "열림",
+        "• subscribed": "• 구독 시작",
+        "• updated": "• 업데이트됨",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["stars"] = { // 星标 https://github.com/stars/<user-name>
-    "static": { // 静态翻译
-        "Your Stars": "我的星标",
-        "Browse your starred repositories and topics": "浏览我的星标仓库和主题",
-        "Your Starred Repositories": "我的星标仓库",
-        "Browse your starred repositories": "浏览我的星标仓库",
-        "Your Starred Topics": "我的星标主题",
-        "Browse your starred topics": "浏览我的星标主题",
+I18N["ko-KR"]["stars"] = { // 별표 https://github.com/stars/<user-name>
+    "static": { // 정적 번역
+        "Your Stars": "나의 별표",
+        "Browse your starred repositories and topics": "나의 별표 저장소 및 주제 둘러보기",
+        "Your Starred Repositories": "나의 별표 저장소",
+        "Browse your starred repositories": "나의 별표 저장소 둘러보기",
+        "Your Starred Topics": "나의 별표 주제",
+        "Browse your starred topics": "나의 별표 주제 둘러보기",
 
-        "Browse starred repositories and topics": "浏览星标仓库和主题",
-        "Starred Repositories": "星标仓库", // 他人
-        "Browse starred repositories": "浏览星标仓库", // 他人
-        "Starred Topics": "星标主题", // 他人
-        "Browse starred topics": "浏览星标主题", // 他人
+        "Browse starred repositories and topics": "별표 저장소 및 주제 둘러보기",
+        "Starred Repositories": "별표 저장소", // 다른 사용자
+        "Browse starred repositories": "별표 저장소 둘러보기", // 다른 사용자
+        "Starred Topics": "별표 주제", // 다른 사용자
+        "Browse starred topics": "별표 주제 둘러보기", // 다른 사용자
 
-        "Search stars…": "搜索星标主题...",
-        "Sort:": "排序：",
-            // 筛选下拉
-            "Sort options": "排序选项",
-            "Recently starred": "最近标星",
-            "Recently active": "最近活跃",
-            "Most stars": "最多标星",
+        "Search stars…": "별표 검색하기...",
+        "Sort:": "정렬:",
+            // 필터 드롭다운
+            "Sort options": "정렬 옵션",
+            "Recently starred": "최근 별표 순",
+            "Recently active": "최근 활동 순",
+            "Most stars": "별표 많은 순",
 
         "Sponsor": "후원",
-        "Unstar": "已加星标于",
-        "See all starred repositories": "查看所有星标仓库",
-        "See all starred topics": "查看所有星标主题",
+        "Unstar": "별표 취소",
+        "See all starred repositories": "모든 별표 저장소 보기",
+        "See all starred topics": "모든 별표 주제 보기",
 
-        "You don’t have any starred topics, yet.": "您尚无任何的星标主题.",
-        "As you": "如果您",
-        "explore GitHub": "探索 GitHub",
-        ", star topics to save them for later and they’ll show up here.": " 时，将主题标星保存起来，它们会在这里显示出来.",
+        "You don’t have any starred topics, yet.": "아직 별표를 표시한 주제가 없어요.",
+        "As you": "사용자님이",
+        "explore GitHub": "GitHub를 둘러볼 때",
+        ", star topics to save them for later and they’ll show up here.": ", 주제에 별표를 표시하여 나중에 볼 수 있도록 저장하면 여기에 표시돼요.",
 
 
-        // 右侧栏
-        "All stars": "所有星标",
-        "All repositories": "所有仓库",
-        "Your repositories": "我的仓库",
-        "Others’ repositories": "其他仓库",
-        "Topics": "主题",
+        // 오른쪽 사이드바
+        "All stars": "모든 별표",
+        "All repositories": "모든 저장소",
+        "Your repositories": "나의 저장소",
+        "Others’ repositories": "다른 사람의 저장소",
+        "Topics": "주제",
 
-        "Filter by languages": "按语言筛选",
-        "Jump to a friend": "去好基友那",
+        "Filter by languages": "언어로 필터링하기",
+        "Jump to a friend": "친구에게 바로 가기",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["issues"] = { // 이슈页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["issues"] = { // 이슈 페이지
+    "static": { // 정적 번역
         "Pull requests": "끌어오기 요청", // pulls
 
-        "Created": "已创建",
-        "Assigned": "已分配",
-        "Mentioned": "提到的",
-            "Issues mentioning you": "提及您的이슈",
-            "Pull Requests mentioning you": "提及您的拉取请求", // pulls
-        "Review requests": "审查请求", // pulls
-            "Pull Requests requesting your review": "请求您审查的拉取请求", // pulls
+        "Created": "생성됨",
+        "Assigned": "할당됨",
+        "Mentioned": "언급됨",
+            "Issues mentioning you": "사용자님을 언급한 이슈",
+            "Pull Requests mentioning you": "사용자님을 언급한 끌어오기 요청", // pulls
+        "Review requests": "검토 요청", // pulls
+            "Pull Requests requesting your review": "사용자님의 검토를 요청하는 끌어오기 요청", // pulls
 
-        "Visibility": "可见性",
-        "Repository visibility": "仓库可见性",
-        "Private repositories only": "只有私有仓库",
-        "Public repositories only": "只有公共仓库",
+        "Visibility": "공개 범위",
+        "Repository visibility": "저장소 공개 범위",
+        "Private repositories only": "비공개 저장소만",
+        "Public repositories only": "공개 저장소만",
 
         "Organization": "조직",
-        "Filter by organization or owner": "按组织或所有者筛选",
-        "Filter organizations": "筛选组织",
+        "Filter by organization or owner": "조직 또는 소유자로 필터링하기",
+        "Filter organizations": "조직 필터링하기",
 
-        "Sort": "排序",
-        "Sort by": "排序方式",
-        "Newest": "最新的",
-        "Oldest": "最早的",
-        "Most commented": "最多评论",
-        "Least commented": "最少评论",
-        "Recently updated": "最近更新",
-        "Least recently updated": "最早更新",
-        "Best match": "最佳匹配",
-        "Most reactions": "最多回应",
+        "Sort": "정렬",
+        "Sort by": "정렬 기준",
+        "Newest": "최신순",
+        "Oldest": "오래된순",
+        "Most commented": "댓글 많은 순",
+        "Least commented": "댓글 적은 순",
+        "Recently updated": "최근 업데이트순",
+        "Least recently updated": "오래된 업데이트순",
+        "Best match": "정확도순",
+        "Most reactions": "반응 많은 순",
 
-        // 状态词
-        "was merged": "已合并",
-        "was closed": "已关闭",
-        "Approved": "已批准",
-        "Review required": "请求审查", // 拉取请求 页面状态词
-            "Review required before merging": "合并前需要审查",
-        "Changes requested": "请求更改",
-        "outdated": "陈旧的",
-        "Draft": "草案",
+        // 상태 단어
+        "was merged": "병합됨",
+        "was closed": "닫힘",
+        "Approved": "승인됨",
+        "Review required": "검토 필요", // 끌어오기 요청 페이지 상태 단어
+            "Review required before merging": "병합 전 검토 필요",
+        "Changes requested": "변경 요청됨",
+        "outdated": "오래됨",
+        "Draft": "초안",
 
-        "This issue was": "此이슈已",
-            "closed": "关闭",
+        "This issue was": "이 이슈는",
+            "closed": "닫혔어요",
 
-        // "No results matched your search.": "没有符合您的搜索结果.",
-        "Search all issues": "搜索所有이슈",
-        // 筛选结果
-        "No results matched your search.": "没有与您的搜索匹配的结果.",
-        "You could search": "您可以搜索",
-        "all of GitHub": "所有 GitHub",
-        "or try an": "或者尝试",
-        "advanced search": "高级搜索",
+        // "No results matched your search.": "검색과 일치하는 결과가 없어요.",
+        "Search all issues": "모든 이슈 검색하기",
+        // 필터 결과
+        "No results matched your search.": "검색과 일치하는 결과가 없어요.",
+        "You could search": "다음을 검색할 수 있어요",
+        "all of GitHub": "GitHub 전체",
+        "or try an": "또는",
+        "advanced search": "고급 검색",
 
-        // "Use the links above to find what you’re looking for, or try": "使用上面的链接找到您要找的内容，或尝试",
-        // "a new search query": "新的搜索查询",
-        // ". The Filters menu is also super helpful for quickly finding issues most relevant to you.": ".筛选菜单也是快速找到이슈最相关的您超级有帮助的.",
-        // "Updated in the last three days": "更新了最后三天：",
-        "ProTip!": "专业提示！",
-            "Exclude your own issues with": "排除自己的问题",
-            "Mix and match filters to narrow down what you’re looking for.": "通过混合和匹配筛选器以缩小您要查找的范围.",
-            "Exclude everything labeled": "如果要找到所有标有",
-            "with": "标签的，请使用",
+        // "Use the links above to find what you’re looking for, or try": "위의 링크를 사용하여 원하는 것을 찾거나,",
+        // "a new search query": "새로운 검색 쿼리를 시도해보세요",
+        // ". The Filters menu is also super helpful for quickly finding issues most relevant to you.": ". 필터 메뉴는 사용자님과 가장 관련 있는 이슈를 빠르게 찾는 데 매우 유용해요.",
+        // "Updated in the last three days": "최근 3일 내 업데이트:",
+        "ProTip!": "전문가 팁!",
+            "Exclude your own issues with": "를 사용하여 자신의 이슈를 제외하세요",
+            "Mix and match filters to narrow down what you’re looking for.": "필터를 조합하여 원하는 것을 더 쉽게 찾아보세요.",
+            "Exclude everything labeled": "를 사용하여",
+            "with": "(으)로 라벨이 지정된 모든 것을 제외하세요",
 
-        // 键盘快捷键
-            "Pull request list"  : "拉取请求列表",
-                "Open pull request"  : "打开拉取请求",
-            "Pull request - Conversation tab": "拉取请求 - 对话选项卡",
-                "Open in github.dev editor"  : "在 github.dev 编辑器中打开",
-                "Open github.dev editor in a new tab"  : "在新标签页中打开 github.dev 编辑器",
-                "Submit comment": "提交评论",
-                "Submit comment and close or open pull request": "提交评论并关闭或打开拉取请求",
-                "Submit comment and close issue": "提交评论并关闭??이슈", // 이슈
-                "Preview comment": "预览评论",
-                "Create issue": "创建이슈", //이슈
-                "Request reviewers": "请求审查者",
-                "Filter by author"             : "按作者筛选",
-                "Filter by or edit assignees"  : "按受理人筛选或编辑受理人",
-                "Filter by or edit labels"     : "按标签筛选或编辑标签",
-                "Filter by or edit projects"   : "按项目筛选或编辑项目",
-                "Filter by or edit milestones" : "按里程碑筛选或编辑里程碑",
-                "Link an issue or pull request from the same repository": "链接同一仓库的이슈或拉取请求",
-                "Reply (quoting selected text)": "答复（引用所选文本）",
-                "Open saved replies": "打开快捷回复（引用所选文本）",
-                "Insert saved reply (with open saved replies)": "插入快捷回复（打开快捷回复）",
-                "Toggle visibility of all collapsed review comments instead of just the current one": "切换所有折叠审查意见的可见性，而不仅仅是当前的审查意见",
-            "Pull request - Files changed tab": "拉取请求 - 文件更改标签卡",
-                "Open commits list": "打开提交列表",
-                "Open files list": "打开文件列表",
-                "Next commit": "下一个提交",
-                "Previous commit": "上一个提交",
-                "Show or hide annotations": "显示或隐藏批注",
-                "Show or hide comments": "显示或隐藏评论",
-                "Submit a review comment": "提交审查意见",
-                "Collapse or expand all files instead of just the current one": "折叠或展开所有文件，而不仅仅是当前文件",
-                    "and click": "和点击",
+        // 키보드 단축키
+            "Pull request list"  : "끌어오기 요청 목록",
+                "Open pull request"  : "끌어오기 요청 열기",
+            "Pull request - Conversation tab": "끌어오기 요청 - 대화 탭",
+                "Open in github.dev editor"  : "github.dev 편집기에서 열기",
+                "Open github.dev editor in a new tab"  : "새 탭에서 github.dev 편집기 열기",
+                "Submit comment": "댓글 제출하기",
+                "Submit comment and close or open pull request": "댓글 제출하고 끌어오기 요청 닫기 또는 열기",
+                "Submit comment and close issue": "댓글 제출하고 이슈 닫기", // 이슈
+                "Preview comment": "댓글 미리보기",
+                "Create issue": "이슈 만들기", //이슈
+                "Request reviewers": "검토자 요청하기",
+                "Filter by author"             : "작성자로 필터링하기",
+                "Filter by or edit assignees"  : "담당자로 필터링 또는 편집하기",
+                "Filter by or edit labels"     : "라벨로 필터링 또는 편집하기",
+                "Filter by or edit projects"   : "프로젝트로 필터링 또는 편집하기",
+                "Filter by or edit milestones" : "마일스톤으로 필터링 또는 편집하기",
+                "Link an issue or pull request from the same repository": "같은 저장소의 이슈 또는 끌어오기 요청 연결하기",
+                "Reply (quoting selected text)": "답장 (선택한 텍스트 인용)",
+                "Open saved replies": "저장된 답장 열기",
+                "Insert saved reply (with open saved replies)": "저장된 답장 삽입하기 (저장된 답장 열기)",
+                "Toggle visibility of all collapsed review comments instead of just the current one": "현재 검토 댓글뿐만 아니라 모든 축소된 검토 댓글의 표시 여부 전환하기",
+            "Pull request - Files changed tab": "끌어오기 요청 - 변경된 파일 탭",
+                "Open commits list": "커밋 목록 열기",
+                "Open files list": "파일 목록 열기",
+                "Next commit": "다음 커밋",
+                "Previous commit": "이전 커밋",
+                "Show or hide annotations": "주석 표시 또는 숨기기",
+                "Show or hide comments": "댓글 표시 또는 숨기기",
+                "Submit a review comment": "검토 댓글 제출하기",
+                "Collapse or expand all files instead of just the current one": "현재 파일뿐만 아니라 모든 파일 접기 또는 펼치기",
+                    "and click": "그리고 클릭",
     },
-    "regexp": [ // 正则翻译
-        [/(\d+) Open/, "$1 打开"],
-        [/(\d+) Closed/, "$1 已关闭"],
-        [/(\d+) tasks? done/, "$1 个任务完成"],
-        [/(\d+) of (\d+) tasks?/, "$1 / $2 个任务"],
-        [/(\d+) tasks?/, "$1 个任务"],
-        [/(\d+) review approvals?/, "$1 次审查批准"],// 拉取请求页 "已批准' 浮动提示
-        [/(\d+) review requesting changes?/, "$1 条请求更改评论"],
-        [/([\d,]+) linked issues?/, "$1 个关联이슈"],
-        [/([\d,]+) linked pull requests?/, "$1 个关联拉取请求"],
-        [/(\d+) \/ (\d+) checks? OK/, "$1 / $2 检查 OK"], // 对勾 的提醒 /pulls
-        [/Assigned to ([^ ]+)/, "分配给 $1"],
-        // [/Updated/, "更新于"],
-        [/#(\d+) opened/, "#$1 打开于"],
-        [/#(\d+) by/, "#$1 打开者"],
-        [/Notify someone on an issue with a mention, like: @([^ ]+)./, "在某个问题上通知并提及某人，例如：@$1."], // 专业提示
+    "regexp": [ // 정규식 번역
+        [/(\d+) Open/, "$1개 열림"],
+        [/(\d+) Closed/, "$1개 닫힘"],
+        [/(\d+) tasks? done/, "$1개 작업 완료"],
+        [/(\d+) of (\d+) tasks?/, "$2개 작업 중 $1개"],
+        [/(\d+) tasks?/, "작업 $1개"],
+        [/(\d+) review approvals?/, "$1개 검토 승인"],// 끌어오기 요청 페이지 '승인됨' 플로팅 팁
+        [/(\d+) review requesting changes?/, "$1개 변경 요청 댓글"],
+        [/([\d,]+) linked issues?/, "연결된 이슈 $1개"],
+        [/([\d,]+) linked pull requests?/, "연결된 끌어오기 요청 $1개"],
+        [/(\d+) \/ (\d+) checks? OK/, "$1 / $2개 검사 OK"], // 체크 표시 알림 /pulls
+        [/Assigned to ([^ ]+)/, "$1에게 할당됨"],
+        // [/Updated/, "업데이트됨"],
+        [/#(\d+) opened/, "#$1 열림"],
+        [/#(\d+) by/, "#$1 작성자"],
+        [/Notify someone on an issue with a mention, like: @([^ ]+)./, "이슈에서 @$1처럼 언급하여 다른 사람에게 알리세요."], // 전문가 팁
     ],
 };
 I18N["ko-KR"].pulls = I18N["ko-KR"].issues;
 
-I18N["ko-KR"]["search"] = { // 搜索页面
-    "static": { // 静态翻译
-        "More than": "多余",
-        "ms": "毫秒", // 时间，前面"结果"走正则匹配
-        "s": "秒", // 同上
-        "in": "在",
-        "View topic": "查看主题", //搜索结果中的主题
-        // 搜索 https://github.com/search >>>>>>>>>>>>>>>>>>>>>>>>
-            "Search GitHub": "在 GitHub 上搜索",
+I18N["ko-KR"]["search"] = { // 검색 페이지
+    "static": { // 정적 번역
+        "More than": "이상",
+        "ms": "밀리초", // 시간, "결과"는 정규식으로 처리
+        "s": "초", // 위와 동일
+        "in": "내",
+        "View topic": "주제 보기", //검색 결과의 주제
+        // 검색 https://github.com/search >>>>>>>>>>>>>>>>>>>>>>>>
+            "Search GitHub": "GitHub에서 검색하기",
 
-            // ProTip
-            "ProTip!": "专业提示！",
-            "Press the": "再次按",
-            "key to activate the search input again and adjust your query.": "键激活搜索输入并调整您的搜索结果.",
-            "For an": "要进行",
-            "advanced search": "高级搜索",
-            ", use our": "，使用我们的",
-            "prefixes": "前缀",
+            // 전문가 팁
+            "ProTip!": "전문가 팁!",
+            "Press the": "키를 다시 눌러",
+            "key to activate the search input again and adjust your query.": "검색 입력을 활성화하고 검색어를 수정하세요.",
+            "For an": "을(를) 위해",
+            "advanced search": "고급 검색",
+            ", use our": "을(를) 사용하려면",
+            "prefixes": "접두사",
 
-            // 搜索技巧 对话框 (忽略 不翻译)
-            "Search cheat sheet": "搜索小技巧",
-            "GitHub’s search supports a variety of different operations. Here’s a quick cheat sheet for some of the common searches.": "GitHub 的搜索支持各种不同的操作.下面是一些常见搜索的快速小抄.",
-            "For more information, visit our": "更多有关信息，请访问我们的",
-            "search help section": "搜索帮助章节",
-            "Basic search": "基本搜索",
-            "This search": "关键规则",
-            "Finds repositories with…": "查找仓库...",
-            "Repository search": "仓库搜索",
-            "Code search": "代码搜索",
-            "Issue search": "이슈搜索",
-            "User search": "用户搜索",
+            // 검색 팁 대화상자 (번역하지 않음)
+            "Search cheat sheet": "검색 치트 시트",
+            "GitHub’s search supports a variety of different operations. Here’s a quick cheat sheet for some of the common searches.": "GitHub 검색은 다양한 작업을 지원해요. 여기 몇 가지 일반적인 검색에 대한 간단한 치트 시트가 있어요.",
+            "For more information, visit our": "자세한 정보는 다음을 방문하세요:",
+            "search help section": "검색 도움말 섹션",
+            "Basic search": "기본 검색",
+            "This search": "이 검색",
+            "Finds repositories with…": "다음과 같은 저장소를 찾아요…",
+            "Repository search": "저장소 검색",
+            "Code search": "코드 검색",
+            "Issue search": "이슈 검색",
+            "User search": "사용자 검색",
 
-        // 搜索结果页面 https://github.com/search?q=  >>>>>>>>>>>>>>>>>>>>>>>>
-            // 左侧菜单
-            "Filter by": "筛选",
+        // 검색 결과 페이지 https://github.com/search?q=  >>>>>>>>>>>>>>>>>>>>>>>>
+            // 왼쪽 메뉴
+            "Filter by": "필터 기준",
             "Code": "코드",
             "Repositories": "저장소",
-            "Commits": "提交",
+            "Commits": "커밋",
             "Discussions": "토론",
-            "Topics": "主题",
-            "Users": "用户",
+            "Topics": "주제",
+            "Users": "사용자",
             "More": "더 보기",
 
-            "States": "状态",
-            "Closed": "已关闭",
-            "Open": "打开",
+            "States": "상태",
+            "Closed": "닫힘",
+            "Open": "열림",
 
-            "Languages": "语言",
-            "More languages...": "更多语言...",
+            "Languages": "언어",
+            "More languages...": "더 많은 언어...",
 
             // &type=code
-            "More repositories...": "更多仓库...",
-            "Paths": "路径",
-            "More directories...": "更多路径...",
+            "More repositories...": "더 많은 저장소...",
+            "Paths": "경로",
+            "More directories...": "더 많은 경로...",
 
             // &type=registrypackages
             "Types": "유형",
 
             // &type=issues
-            "State": "状态",
+            "State": "상태",
 
-            "Advanced": "高级搜索",
-                "Owner": "所有者",
-                "Size": "尺寸",
-                "Number of followers": "关注数",
-                "Number of forks": "复刻数",
-                "Number of stars": "星标数",
-                "Date created": "创建日期",
-                "Date pushed": "推送日期",
-                "Topic": "话题",
-                "License": "许可证",
+            "Advanced": "고급 검색",
+                "Owner": "소유자",
+                "Size": "크기",
+                "Number of followers": "팔로워 수",
+                "Number of forks": "포크 수",
+                "Number of stars": "별표 수",
+                "Date created": "생성 날짜",
+                "Date pushed": "푸시 날짜",
+                "Topic": "주제",
+                "License": "라이선스",
                 "Archived": "보관됨",
 
                 // &type=code
-                "Symbol": "符号",
-                "Exclude archived": "排除存档",
+                "Symbol": "기호",
+                "Exclude archived": "보관된 항목 제외",
 
                 // &type=issues
-                "Close reason": "关闭原因",
-                "Has linked pull request": "已关联的拉取请求",
-                "Author": "作者",
-                "Assignee": "受理人",
-                "Mentioned user": "提及的用户",
-                "Mentioned team": "提及的团队",
-                "Commenter": "评论者",
-                "Involved user": "相关用户",
-                "Label": "标签",
-                "Milestone": "里程碑",
-                "Number of comments": "评论数",
-                "Number of interactions": "互动数",
+                "Close reason": "닫은 이유",
+                "Has linked pull request": "연결된 끌어오기 요청 있음",
+                "Author": "작성자",
+                "Assignee": "담당자",
+                "Mentioned user": "언급된 사용자",
+                "Mentioned team": "언급된 팀",
+                "Commenter": "댓글 작성자",
+                "Involved user": "관련된 사용자",
+                "Label": "라벨",
+                "Milestone": "마일스톤",
+                "Number of comments": "댓글 수",
+                "Number of interactions": "상호작용 수",
 
                 // &type=pullrequests
-                "CI status": "CI 状态",
-                "Review status": "审查状态",
-                "Merged": "已合并",
-                "Not merged": "未合并",
+                "CI status": "CI 상태",
+                "Review status": "검토 상태",
+                "Merged": "병합됨",
+                "Not merged": "병합되지 않음",
 
                 // &type=discussions
                 "Organization": "조직",
-                "Involves user": "相关用户",
+                "Involves user": "관련된 사용자",
 
                 // &type=users
-                "Full name": "全称",
-                "Location": "地区",
-                "Language": "语言",
-                "Sponsorable": "可赞助",
+                "Full name": "전체 이름",
+                "Location": "지역",
+                "Language": "언어",
+                "Sponsorable": "후원 가능",
 
                 // &type=commits
-                "Committer": "提交至",
-                "Author email": "作者电子邮箱",
-                "Committer email": "提交者电子邮箱",
-                "Merge commits": "合并提交",
-                "Hash": "哈希值",
-                "Parent hash": "父哈希值",
-                "Tree hash": "树哈希值",
+                "Committer": "커밋한 사람",
+                "Author email": "작성자 이메일",
+                "Committer email": "커밋한 사람 이메일",
+                "Merge commits": "병합 커밋",
+                "Hash": "해시",
+                "Parent hash": "부모 해시",
+                "Tree hash": "트리 해시",
 
-            "Advanced search": "高级搜索",
+            "Advanced search": "고급 검색",
                 // &type=wikis
-                "User": "用户",
+                "User": "사용자",
                 "Repository": "저장소",
-                "Last updated date": "最后更新日期",
+                "Last updated date": "마지막 업데이트 날짜",
                 // &type=topics
-                "Curated topics": "策划主题",
-                "Featured topics": "精选主题",
-                "Number of repositories": "仓库数",
-                "Creation date": "创建日期",
+                "Curated topics": "큐레이션된 주제",
+                "Featured topics": "추천 주제",
+                "Number of repositories": "저장소 수",
+                "Creation date": "생성 날짜",
 
-            "Cheat sheet": "搜索技巧",
+            "Cheat sheet": "검색 팁",
 
-            "Sort by:": "排序方式：",
-            "Sort by": "排序方式", // Android UA
-                // 筛选下拉
+            "Sort by:": "정렬 기준:",
+            "Sort by": "정렬 기준", // Android UA
+                // 필터 드롭다운
                 // &type=repositories
-                "Sort options": "排序选项",
-                "Best match": "最佳匹配",
-                "Most stars": "最多星标",
-                "Fewest stars": "最少星标",
-                "Most forks": "最多复刻",
-                "Fewest forks": "最少复刻",
-                "Recently updated": "最近更新",
-                "Least recently updated": "最早更新",
-                // 提交
-                "Recently committed": "最近提交",
-                "Least recently committed": "最早提交",
-                "Recently authored": "最近撰写",
-                "Least recently authored": "最早撰写",
+                "Sort options": "정렬 옵션",
+                "Best match": "정확도순",
+                "Most stars": "별표 많은 순",
+                "Fewest stars": "별표 적은 순",
+                "Most forks": "포크 많은 순",
+                "Fewest forks": "포크 적은 순",
+                "Recently updated": "최근 업데이트순",
+                "Least recently updated": "오래된 업데이트순",
+                // 커밋
+                "Recently committed": "최근 커밋순",
+                "Least recently committed": "오래된 커밋순",
+                "Recently authored": "최근 작성순",
+                "Least recently authored": "오래된 작성순",
                 // 이슈
-                "Most commented": "最多评论",
-                "Least commented": "最少评论",
-                "Newest": "最新",
-                "Oldest": "最早",
-                // 讨论
-                "Highest score": "得分最高",
-                "Lowest score": "得分最低",
-                // 软件包
-                "Most downloads": "最多下载",
-                "Fewest downloads": "最少下载",
-                // 用户
-                "Most followers": "最多关注者",
-                "Fewest followers": "最少关注者",
-                "Most recently joined": "最近加入",
-                "Fewest recently joined": "最早加入",
-                "Least recently joined": "最早加入",
-                "Most repositories": "最多仓库",
-                "Fewest repositories": "最少仓库",
+                "Most commented": "댓글 많은 순",
+                "Least commented": "댓글 적은 순",
+                "Newest": "최신순",
+                "Oldest": "오래된순",
+                // 토론
+                "Highest score": "점수 높은 순",
+                "Lowest score": "점수 낮은 순",
+                // 패키지
+                "Most downloads": "다운로드 많은 순",
+                "Fewest downloads": "다운로드 적은 순",
+                // 사용자
+                "Most followers": "팔로워 많은 순",
+                "Fewest followers": "팔로워 적은 순",
+                "Most recently joined": "최근 가입순",
+                "Fewest recently joined": "오래된 가입순",
+                "Least recently joined": "오래된 가입순",
+                "Most repositories": "저장소 많은 순",
+                "Fewest repositories": "저장소 적은 순",
 
-            "More options": "更多选项",
-            "your search": "您的搜索", // Android UA
-            "View search docs": "查看搜索文档",
+            "More options": "더 많은 옵션",
+            "your search": "나의 검색", // Android UA
+            "View search docs": "검색 문서 보기",
 
-            // 部分状态词
-            "Updated": "更新于", // &type=repositories
-            "committ": "提交",
-            "committed": "提交于", // &type=commits
-            "Opened": "打开于", // &type=issues
-            "Last updated": "最近更新于", // &type=wikis
-            "posted": "发布于", // &type=discussions
+            // 일부 상태 단어
+            "Updated": "업데이트됨", // &type=repositories
+            "committ": "커밋",
+            "committed": "커밋됨", // &type=commits
+            "Opened": "열림", // &type=issues
+            "Last updated": "마지막 업데이트:", // &type=wikis
+            "posted": "게시됨", // &type=discussions
 
-            // 保存对话框
-            "Create saved search": "创建保存的搜索",
-                "Use saved searches to filter your results more quickly": "使用保存的搜索更快地筛选结果",
-                "Name": "名称",
-                "Query": "询问",
-                "To see all available qualifiers, see our": "要查看所有可用的限定符，请参阅我们的",
-                "documentation": "文档",
+            // 저장 대화상자
+            "Create saved search": "저장된 검색 만들기",
+                "Use saved searches to filter your results more quickly": "저장된 검색을 사용하여 결과를 더 빠르게 필터링하세요",
+                "Name": "이름",
+                "Query": "쿼리",
+                "To see all available qualifiers, see our": "사용 가능한 모든 한정자를 보려면 다음을 참조하세요:",
+                "documentation": "문서",
 
-                "Name has already been taken": "名称被占用",
+                "Name has already been taken": "이름이 이미 사용 중이에요",
 
             // &type=repositories
                 "Sponsor": "후원",
-                // [/Sponsor ([^ ]+)?/, "赞助 $1"], // 赞助按钮 对话框 标题
-                // 赞助对话框
+                // [/Sponsor ([^ ]+)?/, "$1 후원하기"], // 후원 버튼 대화상자 제목
+                // 후원 대화상자
                 "External links": "외부 링크",
-                "Learn more about funding links in repositories": "了解更多关于仓库中的赞助链接的信息",
+                "Learn more about funding links in repositories": "저장소의 후원 링크에 대해 더 알아보기",
                 "Report abuse": "남용 신고",
 
-                // 右侧栏
-                    "Sponsor open source projects you depend on": "赞助您依赖的开源项目",
-                    "Contributors are working behind the scenes to make open source better for everyone—give them the help and recognition they deserve.": "贡献者们正在幕后努力，为每个人创造更好的开源环境——给予他们应有的帮助和认可",
-                    "Explore sponsorable projects": "探索可赞助项目",
+                // 오른쪽 사이드바
+                    "Sponsor open source projects you depend on": "사용자님이 의존하는 오픈 소스 프로젝트 후원하기",
+                    "Contributors are working behind the scenes to make open source better for everyone—give them the help and recognition they deserve.": "기여자들은 모두를 위해 오픈 소스를 더 좋게 만들기 위해 보이지 않는 곳에서 노력하고 있어요. 그들에게 필요한 도움과 인정을 보내주세요.",
+                    "Explore sponsorable projects": "후원 가능한 프로젝트 탐색하기",
 
-                    "How can we improve search?": "我们如何改进搜索？",
-                    "Give feedback": "提供反馈意见",
-                        // 对话框
-                        "Provide feedback": "提供反馈",
-                            "We read every piece of feedback, and take your input very seriously.": "我们认真阅读每一份反馈意见，并非常重视您的建议.",
-                            "Include my email address so I can be contacted": "附上我的电子邮件地址以便于联系",
-                            "Submit feedback": "提交",
+                    "How can we improve search?": "검색 기능을 어떻게 개선할 수 있을까요?",
+                    "Give feedback": "피드백 제공하기",
+                        // 대화상자
+                        "Provide feedback": "피드백 제공하기",
+                            "We read every piece of feedback, and take your input very seriously.": "모든 피드백을 읽고 사용자님의 의견을 매우 중요하게 생각해요.",
+                            "Include my email address so I can be contacted": "연락받을 수 있도록 내 이메일 주소 포함하기",
+                            "Submit feedback": "제출하기",
 
             // &type=code
-                // [/Show ([\d,]+) more matches?/, "显示更多 $1 处匹配"],
-                "Show less": "显示更少",
-                "This file contains": "该文件还包含",
-                "more": "处",
-                "match": "匹配",
-                "matches": "匹配",
-                "not shown.": "未显示.",
-                "See all": "查看完整文件中的所有",
-                "matche in the full file": "处匹配",
-                "matches in the full file": "处匹配",
-                // 未登录
-                "Sign in to search code on GitHub": "登录以在 GitHub 上搜索代码",
-                "Before you can access our code search functionality please sign in or create a free account.": "在使用代码搜索功能之前，请先登录或创建一个免费帐户.",
+                // [/Show ([\d,]+) more matches?/, "$1개 일치 항목 더 보기"],
+                "Show less": "간략히 보기",
+                "This file contains": "이 파일에는",
+                "more": "개 더",
+                "match": "일치하는 항목이 있지만",
+                "matches": "일치하는 항목들이 있지만",
+                "not shown.": "표시되지 않았어요.",
+                "See all": "전체 파일에서 모든",
+                "matche in the full file": "일치 항목 보기",
+                "matches in the full file": "일치 항목 보기",
+                // 로그인하지 않은 경우
+                "Sign in to search code on GitHub": "GitHub에서 코드를 검색하려면 로그인하세요",
+                "Before you can access our code search functionality please sign in or create a free account.": "코드 검색 기능을 사용하기 전에 로그인하거나 무료 계정을 만들어주세요.",
 
             // &type=issues
-                "Learn how you can use GitHub Issues to plan and track your work.": "了解如何使用 GitHub 이슈计划和跟踪工作.",
-                "Save views for sprints, backlogs, teams, or releases. Rank, sort, and filter issues to suit the occasion. The possibilities are endless.": "保存冲刺、待办事项、团队或发布的视图.根据场合对이슈进行排名、排序和筛选.可能性是无止境.",
-                "Learn more about GitHub Issues": "了解更多关于 GitHub 이슈的信息",
+                "Learn how you can use GitHub Issues to plan and track your work.": "GitHub 이슈를 사용하여 작업을 계획하고 추적하는 방법을 알아보세요.",
+                "Save views for sprints, backlogs, teams, or releases. Rank, sort, and filter issues to suit the occasion. The possibilities are endless.": "스프린트, 백로그, 팀 또는 릴리스에 대한 보기를 저장하세요. 상황에 맞게 이슈의 순위를 매기고, 정렬하고, 필터링하세요. 가능성은 무한해요.",
+                "Learn more about GitHub Issues": "GitHub 이슈에 대해 더 알아보기",
 
             // &type=registrypackages
-                "Learn GitHub Packages": "了解 GitHub 软件包",
-                "GitHub Packages is a platform for hosting and managing packages, including containers and other dependencies. Get started with publishing or installing packages yourself.": "GitHub 软件包是一个托管和管理包（包括容器和其他依赖项）的平台.开始自行发布或安装软件包吧",
-                "Learn more about GitHub Packages": "了解更多关于 GitHub 软件包的信息",
+                "Learn GitHub Packages": "GitHub 패키지 알아보기",
+                "GitHub Packages is a platform for hosting and managing packages, including containers and other dependencies. Get started with publishing or installing packages yourself.": "GitHub 패키지는 컨테이너 및 기타 종속성을 포함한 패키지를 호스팅하고 관리하는 플랫폼이에요. 직접 패키지를 게시하거나 설치하여 시작해보세요.",
+                "Learn more about GitHub Packages": "GitHub 패키지에 대해 더 알아보기",
 
             // &type=topics
-                "Related:": "相关的：",
+                "Related:": "관련 항목:",
 
-            // &type=registrypackages
-                "latest": "最新",
+// &type=registrypackages
+                "latest": "최신",
 
-            "Your search did not match any": "您的搜索没有匹配任何",
+            "Your search did not match any": "검색 결과가 없어요",
             "Code": "코드",
             "issue": "이슈",
             "issues": "이슈",
-            "pull request": "拉取请求",
+            "pull request": "끌어오기 요청",
             "Pull requests": "끌어오기 요청",
-            "discussion": "讨论",
+            "discussion": "토론",
             "Discussions": "토론",
             "commit": "커밋",
             "commits": "커밋",
             "package": "패키지",
             "packages": "패키지",
-            "wikis": "Wiki",
-            "Try one of the tips below to find more code": "请尝试使用以下提示查找更多代码",
-            "Try one of the tips below to find more repositories": "请尝试使用以下提示查找更多仓库",
-            "You could try one of the tips below.": "请尝试使用以下提示",
+            "wikis": "위키",
+            "Try one of the tips below to find more code": "더 많은 코드를 찾으려면 아래 팁 중 하나를 시도해보세요",
+            "Try one of the tips below to find more repositories": "더 많은 저장소를 찾으려면 아래 팁 중 하나를 시도해보세요",
+            "You could try one of the tips below.": "아래 팁 중 하나를 시도해볼 수 있어요.",
 
-            "However we found": "然而我们发现",
-            "code results": "代码结果",
-            "code result": "代码结果",
+            "However we found": "하지만 다음을 찾았어요",
+            "code results": "코드 결과",
+            "code result": "코드 결과",
             
             "and": "그리고",
-            "that matched your search query. Alternatively try one of the tips below.": "与您的搜索查询相匹配.或者尝试以下提示之一.",
+            "that matched your search query. Alternatively try one of the tips below.": "검색어와 일치합니다. 또는 아래 팁 중 하나를 시도해보세요.",
 
-            "Search across repositories": "跨仓库搜索",
-                "Within a repository:": "在仓库内：",
-                "Across several:": "跨越几个：",
-                "Alternative way:": "替代方式：",
+            "Search across repositories": "저장소 간 검색",
+                "Within a repository:": "저장소 내에서:",
+                "Across several:": "여러 저장소에서:",
+                "Alternative way:": "다른 방법:",
 
-                "Note that we don't currently support regular expressions in the repo or org qualifiers. For more information on search syntax, see our": "请注意，我们目前不支持 repo 或 org 限定符中的正则表达式.更多关于搜索语法的信息，请参阅我们的",
-                "syntax guide": "语法指南",
+                "Note that we don't currently support regular expressions in the repo or org qualifiers. For more information on search syntax, see our": "현재 repo 또는 org 한정자에서는 정규식을 지원하지 않아요. 검색 구문에 대한 자세한 내용은 다음을 참조하세요:",
+                "syntax guide": "구문 가이드",
 
-            "Search across an organization": "跨组织搜索",
-                "Within an organization:": "在组织内：",
-                "User's code:": "用户代码：",
+            "Search across an organization": "조직 간 검색",
+                "Within an organization:": "조직 내에서:",
+                "User's code:": "사용자 코드:",
 
-            "Find a particular file extension": "查找特定的文件扩展名",
-                "With .txt extensions:": "带有 .txt 扩展名：",
-                "JavaScript and TypeScript files:": "JavaScript 和 TypeScript 文件：",
+            "Find a particular file extension": "특정 파일 확장자 찾기",
+                "With .txt extensions:": ".txt 확장자 포함:",
+                "JavaScript and TypeScript files:": "JavaScript 및 TypeScript 파일:",
 
-                "The path qualifier can search the entire file path, not just the extension, and supports regular expressions. For more information, see our": "路径限定符可以搜索整个文件路径，而不仅仅是扩展名，并且支持正则表达式.更多信息，请参阅我们的",
+                "The path qualifier can search the entire file path, not just the extension, and supports regular expressions. For more information, see our": "경로 한정자는 확장자뿐만 아니라 전체 파일 경로를 검색할 수 있으며 정규식을 지원해요. 자세한 내용은 다음을 참조하세요:",
 
-            "Why wasn't my code found?": "为什么找不到我的代码？",
-                "When you search within a repository for the first time, please note that the repository undergoes indexing.": "首次在仓库中搜索时，请注意仓库会进行索引.",
-                "This process may take a few minutes.": "这一过程可能需要几分钟.",
+            "Why wasn't my code found?": "내 코드를 찾을 수 없는 이유는 무엇인가요?",
+                "When you search within a repository for the first time, please note that the repository undergoes indexing.": "저장소 내에서 처음 검색할 때, 저장소가 인덱싱되는 점에 유의해주세요.",
+                "This process may take a few minutes.": "이 과정은 몇 분 정도 걸릴 수 있어요.",
 
-                "The index currently includes more than 70 million popular public repositories, plus all private repositories that users search for.": "该索引目前包括超过 7000 万个流行的公共仓库，以及用户搜索的所有私有仓库.",
-                "Beyond that, we also don't include all files in the search index:": "除此之外，我们也不会将所有文件都纳入搜索索引：",
-                    "Vendored and generated code is excluded": "排除供应和生成的代码",
-                    "Empty files and files over 350 kiB are excluded": "排除空文件和超过 350 kiB 的文件",
-                    "Only UTF-8 encoded files are indexed": "仅对 UTF-8 编码的文件进行索引",
-                    "Very large repositories may not be indexed": "非常大的仓库可能不会被索引",
+                "The index currently includes more than 70 million popular public repositories, plus all private repositories that users search for.": "현재 인덱스에는 7천만 개 이상의 인기 있는 공개 저장소와 사용자가 검색하는 모든 비공개 저장소가 포함되어 있어요.",
+                "Beyond that, we also don't include all files in the search index:": "그 외에도 모든 파일을 검색 인덱스에 포함하지는 않아요:",
+                    "Vendored and generated code is excluded": "벤더링 및 생성된 코드는 제외돼요",
+                    "Empty files and files over 350 kiB are excluded": "빈 파일 및 350kiB를 초과하는 파일은 제외돼요",
+                    "Only UTF-8 encoded files are indexed": "UTF-8로 인코딩된 파일만 인덱싱돼요",
+                    "Very large repositories may not be indexed": "매우 큰 저장소는 인덱싱되지 않을 수 있어요",
 
-                "We intend to continue to increase the amount of code available in the index as much as possible. If we are missing files that are useful to you, feel free to": "我们打算继续尽可能增加索引中可用的代码量.如果我们缺少对您有用的文件，请随意在此处",
-                "provide feedback here": "提供反馈",
+                "We intend to continue to increase the amount of code available in the index as much as possible. If we are missing files that are useful to you, feel free to": "가능한 한 인덱스에서 사용 가능한 코드의 양을 계속 늘릴 계획이에요. 사용자님에게 유용한 파일이 누락된 경우 언제든지",
+                "provide feedback here": "여기에서 피드백을 제공해주세요",
 
-            "Regular expressions": "正则表达式",
-                "Sparse followed by index:": "稀疏跟随索引：",
-                "Lines that end with return:": "以回车结束的行：",
-                "File paths matching:": "文件路径匹配：",
+            "Regular expressions": "정규식",
+                "Sparse followed by index:": "Sparse 다음에 index:",
+                "Lines that end with return:": "return으로 끝나는 줄:",
+                "File paths matching:": "일치하는 파일 경로:",
 
-                "Note that you'll have to escape any slashes in the regex. For more information, see our": "注意，您必须在 正则中转义任何斜线.更多信息，请参阅我们的",
+                "Note that you'll have to escape any slashes in the regex. For more information, see our": "정규식에서 슬래시를 이스케이프해야 한다는 점에 유의하세요. 자세한 내용은 다음을 참조하세요:",
 
-            "Saved searches": "保存搜索",
-                "Always searching within the same organization or set of repositories? Try constructing a query and click the save button in the top right corner.": "总是在同一个组织或一组仓库中搜索？请尝试创建一个查询，然后点击右上角的保存按钮.",
+            "Saved searches": "저장된 검색",
+                "Always searching within the same organization or set of repositories? Try constructing a query and click the save button in the top right corner.": "항상 같은 조직이나 저장소 집합 내에서 검색하시나요? 쿼리를 구성하고 오른쪽 상단의 저장 버튼을 클릭해보세요.",
 
-            "You could try an": "您可以尝试",
+            "You could try an": "다음을 시도해볼 수 있어요",
 
-        // 高级搜索 https://github.com/search/advanced >>>>>>>>>>>>>>>>>>>>>>>>
-            // 高级搜索
-            // "Advanced search": "高级搜索",
-            "Search": "搜索",
-            "Advanced options": "高级选项",
-            "From these owners": "指定作者",
-            "In these repositories": "指定仓库",
-            "Created on the dates": "创建日期",
-            "Written in this language": "使用语言",
-            "Any language": "任何语言",
-                "Popular": "流行的",
-                "Everything else": "其他语言",
+        // 고급 검색 https://github.com/search/advanced >>>>>>>>>>>>>>>>>>>>>>>>
+            // 고급 검색
+            // "Advanced search": "고급 검색",
+            "Search": "검색하기",
+            "Advanced options": "고급 옵션",
+            "From these owners": "소유자:",
+            "In these repositories": "저장소:",
+            "Created on the dates": "생성 날짜:",
+            "Written in this language": "언어:",
+            "Any language": "모든 언어",
+                "Popular": "인기",
+                "Everything else": "기타",
 
-            "Repositories options": "仓库选项",
-            "With this many stars": "指定星标数",
-            "With this many forks": "指定复刻数",
-            "Of this size": "仓库大小",
-            "Pushed to": "推送于",
-            "With this license": "用何种许可证",
-                "Any license": "任意许可证",
-                "Licenses": "许可证",
-                "License families": "许可证系列",
-            "Return repositories": "搜索结果",
-            "not": "不",
-            // "and": "要",
-            "only": "仅",
-            "including forks.": "包含复刻仓库.",
+            "Repositories options": "저장소 옵션",
+            "With this many stars": "별표 수:",
+            "With this many forks": "포크 수:",
+            "Of this size": "저장소 크기:",
+            "Pushed to": "푸시 날짜:",
+            "With this license": "라이선스:",
+                "Any license": "모든 라이선스",
+                "Licenses": "라이선스",
+                "License families": "라이선스 계열",
+            "Return repositories": "검색 결과:",
+            "not": "제외",
+            // "and": "그리고",
+            "only": "만",
+            "including forks.": "포크 포함.",
 
-            "Code options": "代码选项",
-            "With this extension": "文件后缀",
-            "Of this file size": "文件大小",
-            "In this path": "文件路径",
-            "With this file name": "文件名称",
-            "Return code": "搜索结果",
-            // "Return code from forked repositories": "搜索结果包括被复刻的仓库.",
+            "Code options": "코드 옵션",
+            "With this extension": "파일 확장자:",
+            "Of this file size": "파일 크기:",
+            "In this path": "파일 경로:",
+            "With this file name": "파일 이름:",
+            "Return code": "검색 결과:",
+            // "Return code from forked repositories": "포크된 저장소의 코드도 검색 결과에 포함.",
 
-            "Issues options": "이슈选项",
-            "In the state": "이슈状态",
-                "open/closed": "打开/关闭",
-                "open": "打开",
-                "closed": "已关闭",
-            "With the reason": "原因",
-                "any reason": "任何原因",
-                "completed": "已完成",
-                "not planned": "未计划",
-                "reopened": "重新打开",
-            "With this many comments": "评论数量",
-            "With the labels": "이슈标签",
-            "Opened by the author": "提议人",
-            "Mentioning the users": "提及谁",
-            "Assigned to the users": "分配给谁",
-            "Updated before the date": "更新于",
+            "Issues options": "이슈 옵션",
+            "In the state": "이슈 상태:",
+                "open/closed": "열림/닫힘",
+                "open": "열림",
+                "closed": "닫힘",
+            "With the reason": "이유:",
+                "any reason": "모든 이유",
+                "completed": "완료됨",
+                "not planned": "계획되지 않음",
+                "reopened": "다시 열림",
+            "With this many comments": "댓글 수:",
+            "With the labels": "라벨:",
+            "Opened by the author": "작성자:",
+            "Mentioning the users": "언급된 사람:",
+            "Assigned to the users": "담당자:",
+            "Updated before the date": "업데이트 날짜:",
 
-            "Users options": "用户选项",
-            "With this full name": "用户全称",
-            "From this location": "来自哪里",
-            "With this many followers": "有多少关注者",
-            "With this many public repositories": "有多少公共仓库",
-            "Working in this language": "擅长什么语言",
-            "Wiki options": "Wiki 选项",
+            "Users options": "사용자 옵션",
+            "With this full name": "전체 이름:",
+            "From this location": "지역:",
+            "With this many followers": "팔로워 수:",
+            "With this many public repositories": "공개 저장소 수:",
+            "Working in this language": "사용 언어:",
+            "Wiki options": "위키 옵션",
 
     },
-    "regexp": [ // 正则翻译
-        [/Filters?/, "过滤"], // Android UA
-        [/(\d+(k|M|B)?) results?/, "$1 个结果"], // 顶部，数字后可能带 K、M、B 三种字母其中一个
-        [/(\d+(k|M|B)?) files?/, "$1 个文件"], // 同上 https://github.com/search?q=<keyword>&type=code
-        [/Show ([\d,]+) more matches?/, "显示更多 $1 处匹配"],
-        [/(\d+) issues? needs? help/, "$1 个이슈需要帮助"],
-        [/Sponsor ([^ ]+)?/, "赞助 $1"], // 赞助按钮 对话框 标题
-        [/on (.+)/, "$1"], // 日期去除 on
+    "regexp": [ // 정규식 번역
+        [/Filters?/, "필터"], // Android UA
+        [/(\d+(k|M|B)?) results?/, "결과 $1개"], // 상단, 숫자 뒤에 K, M, B 문자가 올 수 있음
+        [/(\d+(k|M|B)?) files?/, "파일 $1개"], // 위와 동일 https://github.com/search?q=<keyword>&type=code
+        [/Show ([\d,]+) more matches?/, "$1개 일치 항목 더 보기"],
+        [/(\d+) issues? needs? help/, "도움이 필요한 이슈 $1개"],
+        [/Sponsor ([^ ]+)?/, "$1 후원하기"], // 후원 버튼 대화상자 제목
+        [/on (.+)/, "$1"], // 날짜에서 'on' 제거
     ],
-    "selector": [ // 元素筛选器规则
-        ["#search_form > div.container-lg.p-responsive.advanced-search-form > fieldset:nth-child(2) > label > select > option:nth-child(2)", "要"],
-        ["#search_form > div.container-lg.p-responsive.advanced-search-form > fieldset:nth-child(3) > label > select > option:nth-child(2)", "要"],
+    "selector": [ // 요소 선택자 규칙
+        ["#search_form > div.container-lg.p-responsive.advanced-search-form > fieldset:nth-child(2) > label > select > option:nth-child(2)", "포함"],
+        ["#search_form > div.container-lg.p-responsive.advanced-search-form > fieldset:nth-child(3) > label > select > option:nth-child(2)", "포함"],
     ],
 };
 I18N["ko-KR"]["repository/search"] = I18N["ko-KR"]["search"];
 
 I18N["ko-KR"]["discussions"] = {
-    "static": { // 静态翻译
+    "static": { // 정적 번역
         // https://github.com/discussions
             "Discussions": "토론",
 
-            "Created": "已创建",
-            "Commented": "已评论",
+            "Created": "생성됨",
+            "Commented": "댓글 담",
 
-            "Search all discussions": "搜索所有讨论",
+            "Search all discussions": "모든 토론 검색하기",
 
-            "No discussions match the selected filters.": "没有符合所筛选条件的讨论.",
-            "Discussions are used to ask questions and have open-ended conversations.": "讨论用于提出问题并进行开放式对话.",
+            "No discussions match the selected filters.": "선택한 필터와 일치하는 토론이 없어요.",
+            "Discussions are used to ask questions and have open-ended conversations.": "토론은 질문을 하고 자유로운 대화를 나누는 데 사용돼요.",
 
         // https://github.com/discussions/commented
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["gist"] = { // 代码片段页面
-    "static": { // 静态翻译
-        // 快捷键
-        "Site wide shortcuts": "全局快捷键",
-        "Gists": "代码片段",
-        "Go to Code": "跳转到代码",
-        "Go to Revisions": "跳转到修订",
+I18N["ko-KR"]["gist"] = { // 코드 스니펫 페이지
+    "static": { // 정적 번역
+        // 단축키
+        "Site wide shortcuts": "전체 사이트 단축키",
+        "Gists": "Gists",
+        "Go to Code": "코드로 이동하기",
+        "Go to Revisions": "수정 내역으로 이동하기",
 
-        "Instantly share code, notes, and snippets.": "即时分享您的代码，笔记，片段，以及灵感.",
-        "Search…": "搜索…", // 未登录
-        "Search...": "搜索...", // 已登录
-        "Search Gists": "搜索代码片段",
-            "No results.": "没有结果.",
-            "Yours": "您的",
-        "All gists": "所有片段",
-        "Back to GitHub": "返回到 GitHub",
+        "Instantly share code, notes, and snippets.": "코드, 노트, 스니펫을 즉시 공유해보세요.",
+        "Search…": "검색…", // 비로그인
+        "Search...": "검색...", // 로그인
+        "Search Gists": "Gist 검색하기",
+            "No results.": "결과가 없어요.",
+            "Yours": "내 Gist",
+        "All gists": "모든 Gist",
+        "Back to GitHub": "GitHub로 돌아가기",
 
-        "Forked": "复刻",
-        "Starred": "星标",
+        "Forked": "포크됨",
+        "Starred": "별표됨",
 
-        // 左侧用户信息栏
-        "Change your avatar": "修改头像",
-        "followers": "关注者",
-        "following": "关注",
-        "Joined": "加入于",
-        "View GitHub Profile": "查看 GitHub 个人资料",
+        // 왼쪽 사용자 정보란
+        "Change your avatar": "아바타 변경하기",
+        "followers": "팔로워",
+        "following": "팔로잉",
+        "Joined": "가입일:",
+        "View GitHub Profile": "GitHub 프로필 보기",
 
-        "Create new gist": "新建片段",
-        // 右上角个人图标下拉菜单
-            "Signed in as": "登录身份为",
-            "Your gists": "我的代码片段",
-            "Starred gists": "我的标星代码片段",
-            "Help": "帮助",
-        "Your GitHub profile": "我的 GitHub 个人资料",
+        "Create new gist": "새 Gist 만들기",
+        // 오른쪽 상단 개인 아이콘 드롭다운 메뉴
+            "Signed in as": "로그인 계정:",
+            "Your gists": "나의 Gist",
+            "Starred gists": "나의 별표 Gist",
+            "Help": "도움말",
+        "Your GitHub profile": "나의 GitHub 프로필",
 
-        "View profile and more": "查看更多信息",
-        "See all of your gists": "查看您的所有片段",
+        "View profile and more": "프로필 및 더보기",
+        "See all of your gists": "나의 모든 Gist 보기",
 
-        // 返回通知页状态条
-            "Back to notifications": "回到通知",
-            "Done": "已完成",
-            "Unsubscribe": "退订",
-            "Mark as unread": "标记为未读",
-            "Save": "保存",
+        // 알림 페이지로 돌아가기 상태 바
+            "Back to notifications": "알림으로 돌아가기",
+            "Done": "완료",
+            "Unsubscribe": "구독 취소하기",
+            "Mark as unread": "읽지 않음으로 표시하기",
+            "Save": "저장하기",
 
-        // 用户 浮动信息卡
-        "Member of": "隶属组织",
-        // [/, and (\d+) more/, "，以及其他 $1 个组织"],
+        // 사용자 플로팅 정보 카드
+        "Member of": "소속 조직:",
+        // [/, and (\d+) more/, ", 및 기타 $1개 조직"],
 
-        // 新建片段页面
-        "View your gists": "查看您的片段",
-        "Gist description…": "片段描述…",
-        "Filename including extension…": "文件名 (包括扩展名)…",
-        "Create secret gist": "创建私密片段",
-        "Secret gists are hidden by search engines but visible to anyone you give the URL to.": "私密片段对搜索引擎不可见，对直接访问您分享的链接可见.",
-        "Create public gist": "创建公开片段",
-        "Public gists are visible to everyone.": "公开片段对所有人可见.",
+        // 새 Gist 만들기 페이지
+        "View your gists": "나의 Gist 보기",
+        "Gist description…": "Gist 설명…",
+        "Filename including extension…": "파일 이름 (확장자 포함)…",
+        "Create secret gist": "비공개 Gist 만들기",
+        "Secret gists are hidden by search engines but visible to anyone you give the URL to.": "비공개 Gist는 검색 엔진에 노출되지 않지만, URL을 공유한 사람은 누구나 볼 수 있어요.",
+        "Create public gist": "공개 Gist 만들기",
+        "Public gists are visible to everyone.": "공개 Gist는 모든 사람에게 보여요.",
 
-        // 代码编辑框
-        "Indent mode": "缩进模式",
-        "Spaces": "空格",
-        "Tabs": "Tab",
-        "Indent size": "缩进大小",
-        "Line wrap mode": "换行模式",
-        "No wrap": "不换行",
-        "Soft wrap": "软换行",
-        "Add file": "添加文件",
-        "Remove file": "移除文件",
+        // 코드 편집 상자
+        "Indent mode": "들여쓰기 모드",
+        "Spaces": "공백",
+        "Tabs": "탭",
+        "Indent size": "들여쓰기 크기",
+        "Line wrap mode": "줄 바꿈 모드",
+        "No wrap": "줄 바꿈 없음",
+        "Soft wrap": "자동 줄 바꿈",
+        "Add file": "파일 추가하기",
+        "Remove file": "파일 제거하기",
 
-        // All gists 标签卡
-        // 筛选 & 排序工具栏
-        "Sort:": "排序:",
-        "Sort options": "排序选项",
-        "Recently created": "最近创建",
-        "Least recently created": "最早创建",
-        "Recently updated": "最近更新",
-        "Least recently updated": "最早更新",
+        // 모든 Gist 탭
+        // 필터링 & 정렬 툴바
+        "Sort:": "정렬:",
+        "Sort options": "정렬 옵션",
+        "Recently created": "최근 생성순",
+        "Least recently created": "오래된 생성순",
+        "Recently updated": "최근 업데이트순",
+        "Least recently updated": "오래된 업데이트순",
 
-        "Type:": "类型:",
-        "Filter options": "筛选选项",
-        "All": "所有",
+        "Type:": "유형:",
+        "Filter options": "필터 옵션",
+        "All": "모두",
         "Public": "공개",
-        "Secret": "私密",
+        "Secret": "비공개",
 
-        "Created": "创建于",
-        "Last active": "最后活动于",
-        "Forked from": "复刻自",
-        "— forked from": "— 复刻自",
-        "View": "查看",
+        "Created": "생성일:",
+        "Last active": "마지막 활동:",
+        "Forked from": "다음에서 포크됨:",
+        "— forked from": "— 다음에서 포크됨",
+        "View": "보기",
 
-        "Newer": "新的",
-        "Older": "旧的",
+        "Newer": "최신",
+        "Older": "이전",
 
-        // View 代码 页面
-        // 头部通用信息
-        "Only those with the link can see this gist.": "只有知道链接的人才能看到此 Gist.",
-        "Edit": "编辑",
-        "Delete": "删除",
-            "Are you positive you want to delete this Gist?": "您确定要删除此 Gist 吗？",
-            // 顶部提醒
-                "Gist deleted successfully.": "代码片段已成功删除.",
-        "Subscribe": "订阅",
-        // "Unsubscribe": "退订",
+        // 코드 보기 페이지
+        // 헤더 공통 정보
+        "Only those with the link can see this gist.": "링크가 있는 사람만 이 Gist를 볼 수 있어요.",
+        "Edit": "편집하기",
+        "Delete": "삭제하기",
+            "Are you positive you want to delete this Gist?": "정말로 이 Gist를 삭제하시겠어요?",
+            // 상단 알림
+                "Gist deleted successfully.": "Gist가 성공적으로 삭제되었어요.",
+        "Subscribe": "구독하기",
+        // "Unsubscribe": "구독 취소하기",
         "Star": "별표",
-            "Star this gist": "星标该代码片段",
-            "You must be signed in to star a gist": "您必须登录才能星标代码片段",
-        "Unstar": "取消星标",
-            "Unstar this gist": "取消该代码片段星标",
-        "Forks": "复刻",
-            "Fork this gist": "复刻代码片段",
-            "You must be signed in to fork a gist": "您必须登录才能复刻代码片段",
-        "User actions": "用户操作",
+            "Star this gist": "이 Gist에 별표하기",
+            "You must be signed in to star a gist": "Gist에 별표하려면 로그인해야 해요",
+        "Unstar": "별표 취소하기",
+            "Unstar this gist": "이 Gist 별표 취소하기",
+        "Forks": "포크",
+            "Fork this gist": "이 Gist 포크하기",
+            "You must be signed in to fork a gist": "Gist를 포크하려면 로그인해야 해요",
+        "User actions": "사용자 작업",
         "Report abuse": "남용 신고",
-        "Disable comments": "禁用评论",
-            "Comments have been disabled.": "评论已禁用.", // 顶部提示
-            "Comments are disabled for this gist.": "评论已被禁用.", // 评论框底部提示
-        "Enable comments": "启用评论",
-            "Comments have been enabled.": "评论已启用.", // 顶部提示
+        "Disable comments": "댓글 비활성화하기",
+            "Comments have been disabled.": "댓글이 비활성화되었어요.", // 상단 팁
+            "Comments are disabled for this gist.": "이 Gist의 댓글이 비활성화되었어요.", // 댓글 상자 하단 팁
+        "Enable comments": "댓글 활성화하기",
+            "Comments have been enabled.": "댓글이 활성화되었어요.", // 상단 팁
 
         "Code": "코드",
-        "Revisions": "修订",
-        "Stars": "星标",
+        "Revisions": "수정 내역",
+        "Stars": "별표",
 
-        "Drop one or more files here to prefill your gist!": "在此处拖放一个或多个文件以填充您的 Gist！",
+        "Drop one or more files here to prefill your gist!": "여기에 하나 이상의 파일을 드래그 앤 드롭하여 Gist를 미리 채워보세요!",
 
-        // 分享工具条
-        "What would you like to do?": "您想做什么？",
-        "Embed": "嵌入",
-            "Embed this gist in your website.": "嵌入到您的网页中.",
-        "Share": "分享",
-            "Copy sharable link for this gist.": "复制片段共享链接.",
-        "Clone via HTTPS": "通过 HTTPS 方式克隆",
-            "Clone using the web URL.": "使用 Web URL 克隆.",
-        "Clone via SSH": "通过 SSH 方式克隆",
-            "Clone with an SSH key and passphrase from your GitHub settings.": "通过 GitHub 设置中的 SSH 密钥和密码进行克隆.",
-        "Learn more about clone URLs": "了解更多关于克隆地址的信息",
+        // 공유 툴바
+        "What would you like to do?": "무엇을 하시겠어요?",
+        "Embed": "임베드",
+            "Embed this gist in your website.": "이 Gist를 웹사이트에 임베드하세요.",
+        "Share": "공유",
+            "Copy sharable link for this gist.": "이 Gist의 공유 가능한 링크를 복사하세요.",
+        "Clone via HTTPS": "HTTPS로 복제하기",
+            "Clone using the web URL.": "웹 URL을 사용하여 복제하세요.",
+        "Clone via SSH": "SSH로 복제하기",
+            "Clone with an SSH key and passphrase from your GitHub settings.": "GitHub 설정의 SSH 키와 암호로 복제하세요.",
+        "Learn more about clone URLs": "복제 URL에 대해 더 알아보기",
 
-        // 外部编辑器
-        "Open repository with": "打开仓库于",
+        // 외부 편집기
+        "Open repository with": "다음에서 열기:",
 
-        "Copy to clipboard": "复制到剪切板",
-        "Copied!": "✅ 复制成功!",
-        "Download ZIP": "下载 Zip 压缩包",
-        "Permalink": "永久链接",
+        "Copy to clipboard": "클립보드에 복사하기",
+        "Copied!": "✅ 복사 완료!",
+        "Download ZIP": "ZIP 다운로드하기",
+        "Permalink": "고유 링크",
 
-        // 代码标签卡
-        "Raw": "源码",
-        "Load earlier comments...": "载入早期的评论...",
+        // 코드 탭
+        "Raw": "원본",
+        "Load earlier comments...": "이전 댓글 불러오기...",
 
-        // 修订标签卡
-        "Unified": "同屏",
-        "Split": "分屏",
-        "created": "创建",
-        "revised": "修订",
-        "renamed": "重命名",
-        "this gist": "该片段于",
-        "with": "包含",
+        // 수정 내역 탭
+        "Unified": "통합",
+        "Split": "분할",
+        "created": "생성됨",
+        "revised": "수정됨",
+        "renamed": "이름 변경됨",
+        "this gist": "이 Gist",
+        "with": "포함:",
         
         "and": "그리고",
-        "No changes.": "无变化",
+        "No changes.": "변경 사항 없음.",
 
-        "Show comments": "显示评论",
-        "View file": "查看文件",
+        "Show comments": "댓글 보기",
+        "View file": "파일 보기",
 
-        "Display the source diff": "显示源差异",
-        "Display the rich diff": "显示富差异",
-        "Empty file.": "空文件.",
-        "File renamed without changes.": "文件仅重命名，内容没有更改.",
-        // [/([\d,]+) additions, ([\d,]+) deletions not shown because the diff is too large. Please use a local Git client to view these changes./, "$1 处添加，$2 处删除未显示，因为差异太大.请使用本地 Git 客户端查看这些更改."],
+        "Display the source diff": "소스 diff 표시하기",
+        "Display the rich diff": "rich diff 표시하기",
+        "Empty file.": "빈 파일.",
+        "File renamed without changes.": "변경 사항 없이 파일 이름만 변경되었어요.",
+        // [/([\d,]+) additions, ([\d,]+) deletions not shown because the diff is too large. Please use a local Git client to view these changes./, "$1개의 추가, $2개의 삭제는 diff가 너무 커서 표시되지 않아요. 이 변경 사항을 보려면 로컬 Git 클라이언트를 사용하세요."],
 
-        // 星标标签卡
-        "Stargazers": "追星者",
-        "Be the first to star this gist.": "成为第一个该代码片段加注星标的人.",
-        "Learn more about starring Gists": "了解更多关于标星代码片段的信息",
+        // 별표 탭
+        "Stargazers": "별표한 사람들",
+        "Be the first to star this gist.": "이 Gist에 처음으로 별표를 남겨보세요.",
+        "Learn more about starring Gists": "Gist에 별표하는 방법에 대해 더 알아보기",
 
-        // 复刻标签卡
-        "Modified": "修改",
-        "View fork": "浏览复刻",
+        // 포크 탭
+        "Modified": "수정됨",
+        "View fork": "포크 보기",
 
-        // 编辑代码页面
-        "Editing": "编辑",
-        "Edit file": "编辑文件",
-        "Edit new file": "编辑新文件",
-        "Preview changes": "预览更改",
-        "Loading preview…": "载入预览…",
-        // 搜索框
-            "Search:": "搜索：",
-            "(Use /re/ syntax for regexp search)": "（使用 /re/ 语法进行正则搜索）",
-        "Attach files by selecting or pasting them.": "通过选择或粘贴来附加文件.",
-        // 底部栏
-            "Use": "使用",
-            "to toggle the": "切换",
-            "key moving focus.": "键移动对焦.",
-        "Make secret": "转为私密",
-        "Make public": "转为公开",
-        "Cancel": "取消",
-        "Update public gist": "更新公开片段",
-        "Update secret gist": "更新私密片段",
+        // 코드 편집 페이지
+        "Editing": "편집 중",
+        "Edit file": "파일 편집하기",
+        "Edit new file": "새 파일 편집하기",
+        "Preview changes": "변경 사항 미리보기",
+        "Loading preview…": "미리보기 로딩 중…",
+        // 검색창
+            "Search:": "검색:",
+            "(Use /re/ syntax for regexp search)": "(정규식 검색을 위해 /re/ 구문 사용)",
+        "Attach files by selecting or pasting them.": "파일을 선택하거나 붙여넣어 첨부하세요.",
+        // 하단 바
+            "Use": "를 사용하여",
+            "to toggle the": "전환",
+            "key moving focus.": "키 이동 포커스.",
+        "Make secret": "비공개로 전환하기",
+        "Make public": "공개로 전환하기",
+        "Cancel": "취소",
+        "Update public gist": "공개 Gist 업데이트하기",
+        "Update secret gist": "비공개 Gist 업데이트하기",
 
-        // 已加星标页面
-        "You don’t have any starred gists yet.": "您还没有标星任何片段.",
+        // 별표한 페이지
+        "You don’t have any starred gists yet.": "아직 별표한 Gist가 없어요.",
 
-        // 评论框
-        "Owner": "所有者",
-        "Author": "作者",
-        "Copy link": "复制链接",
-        "Quote reply": "引用回复",
-        "Report content": "举报内容",
-        "Report": "举报",
-        // 评论删除提醒
-            "Are you sure you want to delete this?": "您定要删除这个吗？",
+        // 댓글창
+        "Owner": "소유자",
+        "Author": "작성자",
+        "Copy link": "링크 복사하기",
+        "Quote reply": "인용하여 답장하기",
+        "Report content": "콘텐츠 신고하기",
+        "Report": "신고",
+        // 댓글 삭제 알림
+            "Are you sure you want to delete this?": "정말로 이것을 삭제하시겠어요?",
 
-        "You are the owner of the gist.": "您是代码片段的所有者.",
-        "You are the author of this gist.": "您是代码片段的作者.",
-        "You are the author of this .": "您是代码片段的作者.",
+        "You are the owner of the gist.": "사용자님은 이 Gist의 소유자예요.",
+        "You are the author of this gist.": "사용자님은 이 Gist의 작성자예요.",
+        "You are the author of this .": "사용자님은 이 Gist의 작성자예요.",
 
-        "commented": "评论于",
-        "via email": "通过邮件",
-        "Update comment": "更新评论",
-        "Hide": "隐藏",
+        "commented": "댓글 작성:",
+        "via email": "이메일을 통해",
+        "Update comment": "댓글 업데이트하기",
+        "Hide": "숨기기",
 
-        "edited": "编辑",
-        "(most recent)": "(最近的)",
-        "(deleted)": "(已删除)",
-        "deleted this content": "删除了该内容",
-        "Options": "选项",
-        "More options": "更多选项",
-        "The most recent revision cannot be deleted. Need to delete sensitive information? Go to the specific edit where the information was added.": "最近的修订版不能被删除.需要删除敏感信息？请到信息的具体编辑处修改.",
-        "Delete revision from history": "从历史记录中删除修订",
-        "This edit’s content will no longer be visible": "此修改的内容将不再可见",
+        "edited": "편집됨",
+        "(most recent)": "(최신)",
+        "(deleted)": "(삭제됨)",
+        "deleted this content": "이 콘텐츠를 삭제했어요",
+        "Options": "옵션",
+        "More options": "더 많은 옵션",
+        "The most recent revision cannot be deleted. Need to delete sensitive information? Go to the specific edit where the information was added.": "가장 최근 수정본은 삭제할 수 없어요. 민감한 정보를 삭제해야 하나요? 정보가 추가된 특정 편집으로 이동하세요.",
+        "Delete revision from history": "기록에서 수정 내역 삭제하기",
+        "This edit’s content will no longer be visible": "이 편집의 내용은 더 이상 보이지 않아요",
 
-        // 探索页面
-        "Discover gists": "探索代码片段",
+        // 탐색 페이지
+        "Discover gists": "Gist 탐색하기",
 
-        // 底部提示栏 (未登录)
-        "Sign up for free": "免费注册",
-        "to join this conversation on GitHub": "加入 GitHub 上的这个讨论",
-        ". Already have an account?": ".已经有账户？",
-        "Sign in to comment": "登录后发表评论",
+        // 하단 팁 바 (비로그인)
+        "Sign up for free": "무료로 가입하고",
+        "to join this conversation on GitHub": "GitHub에서 이 대화에 참여하세요",
+        ". Already have an account?": ". 이미 계정이 있으신가요?",
+        "Sign in to comment": "로그인하여 댓글 달기",
 
     },
-    "regexp": [ // 正则翻译
-        [/View ([^ ]+) on GitHub/, "查看 $1 的 GitHub"],
-        [/(\d+) files?/, "$1 文件"],
-        [/(\d+) forks?/, "$1 复刻"],
-        [/(\d+) comments?/, "$1 评论"],
-        [/(\d+) stars?/, "$1 星标"],
-        [/Save (.+?) to your computer and use it in GitHub Desktop./, "使用 GitHub Desktop，保存 $1 到您的电脑."],
-        //代码修订
-        [/(\d+) changed files?/, "$1 个更改的文件"],
-        [/(\d+) additions?$/, "$1 处增加"],
-        [/(\d+) deletions?$/, "$1 处删除"],
-        [/(\d+) changes?: (\d+) additions? & (\d+) deletions?/, " $1 处更改：$2 处增加 & $3 处删除"],
-        [/([\d,]+) additions, ([\d,]+) deletions not shown because the diff is too large. Please use a local Git client to view these changes./, "$1 处增加，$2 处删除未显示，因为差异太大.请使用本地 Git 客户端查看这些更改."],
-        [/Edited (\d+) times?/,"编辑 $1 次"], //评论框编辑次数
-        [/edited by ([^ ]+)/,"被 $1 编辑"], //评论框 被他人编辑
-        // [/Joined/,"加入于"], //星标标签卡
-        [/, and (\d+) more/, "，以及其他 $1 个组织"], // 用户 浮动信息卡
-        [/doesn’t have any public gists yet./, "尚无任何公开的代码片段."],
+    "regexp": [ // 정규식 번역
+        [/View ([^ ]+) on GitHub/, "GitHub에서 $1 보기"],
+        [/(\d+) files?/, "파일 $1개"],
+        [/(\d+) forks?/, "포크 $1개"],
+        [/(\d+) comments?/, "댓글 $1개"],
+        [/(\d+) stars?/, "별표 $1개"],
+        [/Save (.+?) to your computer and use it in GitHub Desktop./, "GitHub Desktop을 사용하여 $1을(를) 컴퓨터에 저장하세요."],
+        //코드 수정
+        [/(\d+) changed files?/, "$1개의 변경된 파일"],
+        [/(\d+) additions?$/, "$1개 추가"],
+        [/(\d+) deletions?$/, "$1개 삭제"],
+        [/(\d+) changes?: (\d+) additions? & (\d+) deletions?/, " $1개 변경: $2개 추가 & $3개 삭제"],
+        [/([\d,]+) additions, ([\d,]+) deletions not shown because the diff is too large. Please use a local Git client to view these changes./, "$1개의 추가, $2개의 삭제는 diff가 너무 커서 표시되지 않아요. 이 변경 사항을 보려면 로컬 Git 클라이언트를 사용하세요."],
+        [/Edited (\d+) times?/,"편집 $1회"], //댓글창 편집 횟수
+        [/edited by ([^ ]+)/,"$1에 의해 편집됨"], //댓글창 다른 사람이 편집
+        // [/Joined/,"가입일:"], //별표 탭
+        [/, and (\d+) more/, ", 및 기타 $1개 조직"], // 사용자 플로팅 정보 카드
+        [/doesn’t have any public gists yet./, "은(는) 아직 공개 Gist가 없어요."],
     ],
 };
 
-I18N["ko-KR"]["login/oauth"] = { // 应用授权
-    "static": { // 静态翻译
-        // 第三页 安装中
+I18N["ko-KR"]["login/oauth"] = { // 앱 인증
+    "static": { // 정적 번역
+        // 3페이지 설치 중
 
-        // 第四页 安装后 授权
-        // GitHub 应用安装授权 /login/oauth/authorize?client_id=<client-id>&state=<state>
-        // 示例 /login/oauth/authorize?client_id=Iv1.1a4d20f84a40d790&state=login
-            "Resources on your account": "您账户中的资源",
-            "Act on your behalf": "代表您行事",
-            "Email addresses": "电子邮箱地址",
-            "(read)": "(只读)",
-            "View your email addresses": "查看您的电子邮箱地址",
-            "Authorizing will redirect to": "授权将重定向到",
-            "Not": "不由",
-            "owned or operated by GitHub": "GitHub 拥有或运营",
-            "Created": "创建于",
-            "GitHub users": "GitHub 用户",
+        // 4페이지 설치 후 인증
+        // GitHub 앱 설치 인증 /login/oauth/authorize?client_id=<client-id>&state=<state>
+        // 예시 /login/oauth/authorize?client_id=Iv1.1a4d20f84a40d790&state=login
+            "Resources on your account": "사용자님 계정의 리소스",
+            "Act on your behalf": "사용자님을 대신하여 활동",
+            "Email addresses": "이메일 주소",
+            "(read)": "(읽기)",
+            "View your email addresses": "사용자님의 이메일 주소 보기",
+            "Authorizing will redirect to": "인증하면 다음으로 리디렉션돼요:",
+            "Not": "",
+            "owned or operated by GitHub": "GitHub이(가) 소유하거나 운영하지 않아요",
+            "Created": "생성일:",
+            "GitHub users": "GitHub 사용자",
 
-        // OAuth 应用安装授权 /login/oauth/authorize?client_id=<client-id>&redirect_uri=<redirect-uri>&scope=<scope>&state=<>
-        // 示例 /login/oauth/authorize?client_id=78a2ba87f071c28e65bb&redirect_uri=https%3A%2F%2Fcircleci.com%2Fauth%2Fgithub%3Freturn-to%3D%252Fdashboard%253Futm_medium%253Dpartner%2526utm_campaign%253Dghmarketplace%2526utm_source%253Dgithub&scope=repo%2Cuser%3Aemail&state=uZ9BTIkhQ3_98icRI09o1L1HJmfvIO8gK3FDGwytNAzbBRzXwTge440cKS7NaGtvS0tqCR_HzGMH2z3p
-            "wants to access your": "想访问您的",
-            "account": "账户",
-            "Public and": "公共库和",
-            "private": "私有库",
-            "This application will be able to": "该应用将能够",
-            "read and write all public and private repository data": "读写所有公共和私有仓库数据",
-            ". This includes the following:": ".这包括以下内容：",
-            "Wikis": "Wiki",
-            "Webhooks and services": "웹훅和服务",
-            "Deploy keys": "部署密钥",
-            "Collaboration invites": "合作的邀请",
+        // OAuth 앱 설치 인증 /login/oauth/authorize?client_id=<client-id>&redirect_uri=<redirect-uri>&scope=<scope>&state=<>
+        // 예시 /login/oauth/authorize?client_id=78a2ba87f071c28e65bb&redirect_uri=https%3A%2F%2Fcircleci.com%2Fauth%2Fgithub%3Freturn-to%3D%252Fdashboard%253Futm_medium%253Dpartner%2526utm_campaign%253Dghmarketplace%2526utm_source%253Dgithub&scope=repo%2Cuser%3Aemail&state=uZ9BTIkhQ3_98icRI09o1L1HJmfvIO8gK3FDGwytNAzbBRzXwTge440cKS7NaGtvS0tqCR_HzGMH2z3p
+            "wants to access your": "이(가) 사용자님의",
+            "account": "계정에 접근하려고 해요",
+            "Public and": "공개 및",
+            "private": "비공개",
+            "This application will be able to": "이 앱은 다음을 수행할 수 있어요:",
+            "read and write all public and private repository data": "모든 공개 및 비공개 저장소 데이터 읽기 및 쓰기",
+            ". This includes the following:": ". 여기에는 다음이 포함돼요:",
+            "Wikis": "위키",
+            "Webhooks and services": "웹훅 및 서비스",
+            "Deploy keys": "배포 키",
+            "Collaboration invites": "협업 초대",
 
-            "Personal user data": "个人用户资料",
-            "Email addresses (read-only)": "电子邮箱地址(只读)",
-            "This application will be able to read your private email addresses.": "此应用将能够读取您的私人电子邮箱地址.",
+            "Personal user data": "개인 사용자 데이터",
+            "Email addresses (read-only)": "이메일 주소 (읽기 전용)",
+            "This application will be able to read your private email addresses.": "이 앱은 사용자님의 비공개 이메일 주소를 읽을 수 있어요.",
 
-            "Organization access": "组织访问",
-                "Request": "请求",
-                "This organization allows the application to access organization data as described in the permissions above.": "该组织允许应用访问上述权限中所述的组织数据.",
-                "Until access is granted by an owner, the application cannot access the organization’s private data or modify its public data.": "在所有者授予访问权限之前，应用无法访问组织的私有数据或修改其公共数据.",
-                "The application cannot access this organization’s private data or modify its public data.": "应用无法访问该组织的私有数据或修改其公共数据.",
+            "Organization access": "조직 접근 권한",
+                "Request": "요청",
+                "This organization allows the application to access organization data as described in the permissions above.": "이 조직은 앱이 위 권한에 설명된 대로 조직 데이터에 접근하는 것을 허용해요.",
+                "Until access is granted by an owner, the application cannot access the organization’s private data or modify its public data.": "소유자가 접근을 허용할 때까지 앱은 조직의 비공개 데이터에 접근하거나 공개 데이터를 수정할 수 없어요.",
+                "The application cannot access this organization’s private data or modify its public data.": "앱은 이 조직의 비공개 데이터에 접근하거나 공개 데이터를 수정할 수 없어요.",
 
-            // >>>>>具体的权限不打算汉化<<<<<<<
+            // >>>>>구체적인 권한은 번역하지 않음<<<<<<<
 
-            "Owned & operated by GitHub": "由 GitHub 拥有和运营",
+            "Owned & operated by GitHub": "GitHub 소유 및 운영",
 
-        // 第五页 即将跳转到 重定向页面
-            "You are being redirected to the authorized application.": "您将被重定向到授权的应用.",
-            "If your browser does not redirect you back, please visit": "如果您的浏览器没有将您重定向回来，请",
-            "If your browser does not redirect you back, please": "如果您的浏览器没有将您重定向回来，请",
-            "click here": "点击这里",
-            "this setup page": "点击这里",
-            "to continue.": "继续.",
-            "would like permission to:": "希望获得以下许可：",
-            "Know which resources you can access": "了解您可以访问哪些资源",
+        // 5페이지 리디렉션 페이지로 이동
+            "You are being redirected to the authorized application.": "인증된 앱으로 리디렉션되고 있어요.",
+            "If your browser does not redirect you back, please visit": "브라우저가 자동으로 돌아가지 않으면",
+            "If your browser does not redirect you back, please": "브라우저가 자동으로 돌아가지 않으면",
+            "click here": "여기를 클릭하세요",
+            "this setup page": "이 설정 페이지를 방문하세요",
+            "to continue.": "계속하려면.",
+            "would like permission to:": "이(가) 다음 권한을 요청해요:",
+            "Know which resources you can access": "사용자님이 접근할 수 있는 리소스 확인하기",
 
-        // 选择账户授权 https://github.com/login/oauth/select_account?*
-            //"Select user to authorize": "选择用户进行授权",
-            //"Signed in as": "登录身份为",
-            "Use a different account": "使用其他账户",
+        // 계정 인증 선택 https://github.com/login/oauth/select_account?*
+            //"Select user to authorize": "인증할 사용자 선택하기",
+            //"Signed in as": "로그인 계정:",
+            "Use a different account": "다른 계정 사용하기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         // /login/oauth/authorize?client_id=Iv1.1a4d20f84a40d790&state=login
-        [/Verify your GitHub identity/, "验证您的 GitHub 身份"],
-        [/Select user to authorize ([^ ]+)/, "选择用户进行授权 $1"],
-        [/Signed in as/, "登录身份为 "],
-        [/has not been installed on any accounts you have access to./, "尚未安装在您有权访问的任何账户上."],
-        [/Learn more about/, "了解更多关于"],
-        [/More than ([^ ]+)/, "超过 $1"],
+        [/Verify your GitHub identity/, "GitHub 신원 확인하기"],
+        [/Select user to authorize ([^ ]+)/, "$1을(를) 인증할 사용자 선택하기"],
+        [/Signed in as/, "로그인 계정: "],
+        [/has not been installed on any accounts you have access to./, "은(는) 사용자님이 접근 권한을 가진 어떤 계정에도 설치되지 않았어요."],
+        [/Learn more about/, "다음에 대해 더 알아보기:"],
+        [/More than ([^ ]+)/, "$1 이상"],
         // /apps/codacy-production/installations/new/permissions?target_id=7850715
-        // [/Install & Authorize on your personal account/, "安装和授权到您的个人账户"],
-        // [/Install & Authorize/, "安装和授权"],
-        [/Authorize ([^ ]+)/, "授权 $1"], // /login/oauth/authorize?client_id=Iv1.1a4d20f84a40d790&state=login 调整位置避免覆盖
-        // [/Installing and authorizing (.*) immediately grants these permissions on your account:/, "安装和授权 $1 则会立即授予您账户的以下权限："],
-        [/Selected (\d+) repositor(y|ies)./, "选择了 $1 个仓库."],
+        // [/Install & Authorize on your personal account/, "개인 계정에 설치 및 인증하기"],
+        // [/Install & Authorize/, "설치 및 인증하기"],
+        [/Authorize ([^ ]+)/, "$1 인증하기"], // /login/oauth/authorize?client_id=Iv1.1a4d20f84a40d790&state=login 위치 충돌 방지
+        // [/Installing and authorizing (.*) immediately grants these permissions on your account:/, "$1을(를) 설치하고 인증하면 계정에 즉시 다음 권한이 부여돼요:"],
+        [/Selected (\d+) repositor(y|ies)./, "$1개의 저장소가 선택되었어요."],
     ],
 };
 // I18N["ko-KR"]["installations/new"] = I18N["ko-KR"]["login/oauth"];
 
-I18N["ko-KR"]["explore"] = { // 探索页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["explore"] = { // 탐색 페이지
+    "static": { // 정적 번역
 
         // github.com/explore
             "Explore": "탐험하기",
-            "Topics": "主题",
-            "Trending": "热门",
-            "Collections": "集合",
-            "Events": "活动",
-            "GitHub Sponsors": "GitHub 赞助",
-            "Get email updates": "获取电子邮件更新",
-            "Change email updates": "更改电子邮件更新", // 已设置邮件更新通知
+            "Topics": "주제",
+            "Trending": "트렌드",
+            "Collections": "컬렉션",
+            "Events": "이벤트",
+            "GitHub Sponsors": "GitHub Sponsors",
+            "Get email updates": "이메일 업데이트 받기",
+            "Change email updates": "이메일 업데이트 변경하기", // 이메일 업데이트 알림 설정됨
 
-            // 右侧信息栏
-            "Trending repositories": "热门仓库",
-                "today": "今日",
-            "See more trending repositories": "查看更多热门仓库",
-            "Trending developers": "热门开发者",
-            "See more trending developers": "查看更多热门开发者",
+            // 오른쪽 정보란
+            "Trending repositories": "트렌딩 저장소",
+                "today": "오늘",
+            "See more trending repositories": "더 많은 트렌딩 저장소 보기",
+            "Trending developers": "트렌딩 개발자",
+            "See more trending developers": "더 많은 트렌딩 개발자 보기",
 
-            // 中间信息栏
-            "Here's what we found based on your interests...": "以下是我们根据您的兴趣发现的内容...",
-                "This recommendation was generated by GitHub computers": "此推荐由 GitHub 计算机生成",
-                "Based on repositories you’ve starred": "基于您星标的仓库",
-                "Based on topics you've starred": "基于您星标的主题",
-                "Based on people you follow": "基于您关注的人",
-                "Based on repositories you’ve viewed": "基于您查看过的仓库",
-                "Based on your public repository contributions": "基于您对公共仓库的贡献",
-                "App recommended by GitHub": "GitHub 推荐的应用",
-                "Staff pick": "员工精选",
-                "This recommendation was created by GitHub staff": "此推荐由 GitHub 工作人员创建",
-                "Upcoming event recommended by GitHub": "GitHub 推荐的即将举行的活动",
+            // 중간 정보란
+            "Here's what we found based on your interests...": "사용자님의 관심사를 기반으로 찾은 내용이에요...",
+                "This recommendation was generated by GitHub computers": "이 추천은 GitHub 컴퓨터에 의해 생성되었어요",
+                "Based on repositories you’ve starred": "사용자님이 별표한 저장소를 기반으로",
+                "Based on topics you've starred": "사용자님이 별표한 주제를 기반으로",
+                "Based on people you follow": "사용자님이 팔로우하는 사람을 기반으로",
+                "Based on repositories you’ve viewed": "사용자님이 본 저장소를 기반으로",
+                "Based on your public repository contributions": "사용자님의 공개 저장소 기여를 기반으로",
+                "App recommended by GitHub": "GitHub 추천 앱",
+                "Staff pick": "스태프 추천",
+                "This recommendation was created by GitHub staff": "이 추천은 GitHub 스태프가 만들었어요",
+                "Upcoming event recommended by GitHub": "GitHub 추천 예정 이벤트",
 
-            "Star topics that interest you": "为您感兴趣的主题加注星标",
-            "and we'll show you the latest from the octoverse.": "我们将向您展示来自八维空间的最新信息.",
-            "Explore more topics": "探索更多主题",
+            "Star topics that interest you": "관심 있는 주제에 별표를 해보세요",
+            "and we'll show you the latest from the octoverse.": "그러면 Octoverse의 최신 소식을 보여드릴게요.",
+            "Explore more topics": "더 많은 주제 탐색하기",
 
-            "Collection recommended by GitHub": "GitHub 推荐的合集",
+            "Collection recommended by GitHub": "GitHub 추천 컬렉션",
 
-            "That's everything we found for you, for now.": "这就是我们目前为您找到的一切.",
-                "Come back soon to see what we find next,": "请尽快回来查看我们接下来会发现什么，",
-                "get email updates.": "获取电子邮件更新.",
-                "check how often you receive email updates.": "检查您收到电子邮件更新的频率.", // 已设置邮件更新通知
+            "That's everything we found for you, for now.": "지금까지 사용자님을 위해 찾은 모든 내용이에요.",
+                "Come back soon to see what we find next,": "다음에 무엇을 찾을지 곧 다시 확인하러 오세요,",
+                "get email updates.": "이메일 업데이트 받기.",
+                "check how often you receive email updates.": "이메일 업데이트 수신 빈도를 확인하세요.", // 이메일 업데이트 알림 설정됨
 
-            "Updated": "更新于",
-            "See more matching repositories": "查看更多匹配的仓库",
+            "Updated": "업데이트:",
+            "See more matching repositories": "더 많은 일치하는 저장소 보기",
 
         // github.com/explore/email
-            "Explore email newsletter": "探索电子邮件通讯",
-                "Get email updates about what GitHub finds for you based on your interests": "根据您的兴趣，通过电子邮件获取 GitHub 为您找到的最新信息",
+            "Explore email newsletter": "탐색 이메일 뉴스레터",
+                "Get email updates about what GitHub finds for you based on your interests": "사용자님의 관심사를 기반으로 GitHub이 찾은 내용에 대한 이메일 업데이트 받기",
 
-            "None": "无",
-                "Email isn’t for everyone. Or maybe you’ve just made github.com/explore your homepage. We won’t send you any emails.": "电子邮件并不适合所有人.或者，您刚刚把 github.com/explore 作为您的主页.我们不会给您发送任何电子邮件.",
-            "Daily": "每天",
-                "Start your day with a delicious cup of coffee (or perhaps an artisan matcha latte) and interesting repositories every day.": "每天以一杯美味的咖啡（或可能是手工抹茶拿铁）和有趣的仓库开始您的一天.",
-            "Weekly": "每周",
-                "The perfect way to keep on top of everything GitHub. Every Tuesday, we’ll send you an email with everything we found for you in the past week based on your interests.": "掌握 GitHub 一切信息的完美方式.每周二，我们会根据您的兴趣向您发送一封电子邮件，内容是我们在过去一周为您找到的所有内容.",
-            "Monthly": "每月",
-                "The best option for lurkers who want to keep up with major happenings in the open source world.": "对于想了解开源世界重大事件的潜伏者来说，这是最佳选择.",
-            "Unsubscribed!": "已取消订阅！",
-            "Subscribed!": "已订阅！",
+            "None": "없음",
+                "Email isn’t for everyone. Or maybe you’ve just made github.com/explore your homepage. We won’t send you any emails.": "이메일이 모든 사람에게 적합한 것은 아니에요. 아니면 github.com/explore를 홈페이지로 설정하셨을 수도 있죠. 이메일을 보내지 않을게요.",
+            "Daily": "매일",
+                "Start your day with a delicious cup of coffee (or perhaps an artisan matcha latte) and interesting repositories every day.": "매일 맛있는 커피 한 잔(또는 장인의 말차 라떼)과 흥미로운 저장소로 하루를 시작하세요.",
+            "Weekly": "매주",
+                "The perfect way to keep on top of everything GitHub. Every Tuesday, we’ll send you an email with everything we found for you in the past week based on your interests.": "GitHub의 모든 것을 파악하는 완벽한 방법이에요. 매주 화요일, 사용자님의 관심사를 기반으로 지난 주에 찾은 모든 내용을 이메일로 보내드릴게요.",
+            "Monthly": "매월",
+                "The best option for lurkers who want to keep up with major happenings in the open source world.": "오픈 소스 세계의 주요 사건을 계속 접하고 싶은 분들을 위한 최상의 선택이에요.",
+            "Unsubscribed!": "구독 취소 완료!",
+            "Subscribed!": "구독 완료!",
 
     },
-    "regexp": [ // 正则翻译
-        [/([\d,]+) more/, "其他 $1 项"],
-        [/([\d,]+) starred topics?/, "$1 个星标主题"],
-        [/([\d,]+) starred repositories?/, "$1 个星标仓库"],
-        [/There are ([\d,]+) public repositories? matching this topic/, "有 $1 个公共仓库与此主题相匹配"],
-        [/See the ([\d,]+) items? in this collection/, "查看该系列中的 $1 个项目"],
-        [/Topic: ([^ ]+)/, "主题：$1"],
+    "regexp": [ // 정규식 번역
+        [/([\d,]+) more/, "$1개 더보기"],
+        [/([\d,]+) starred topics?/, "별표한 주제 $1개"],
+        [/([\d,]+) starred repositories?/, "별표한 저장소 $1개"],
+        [/There are ([\d,]+) public repositories? matching this topic/, "이 주제와 일치하는 공개 저장소가 $1개 있어요"],
+        [/See the ([\d,]+) items? in this collection/, "이 컬렉션의 $1개 항목 보기"],
+        [/Topic: ([^ ]+)/, "주제: $1"],
     ],
 };
 
-I18N["ko-KR"]["topics"] = { // 探索-->主题页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["topics"] = { // 탐색-->주제 페이지
+    "static": { // 정적 번역
 
         // github.com/topics
             "Explore": "탐험하기",
-            "Topics": "主题",
-            "Trending": "热门",
-            "Collections": "集合",
-            "Events": "活动",
-            "GitHub Sponsors": "GitHub 赞助",
-            "Get email updates": "获取电子邮件更新",
-            "Change email updates": "更改电子邮件更新", // 已设置邮件更新通知
+            "Topics": "주제",
+            "Trending": "트렌드",
+            "Collections": "컬렉션",
+            "Events": "이벤트",
+            "GitHub Sponsors": "GitHub Sponsors",
+            "Get email updates": "이메일 업데이트 받기",
+            "Change email updates": "이메일 업데이트 변경하기", // 이메일 업데이트 알림 설정됨
 
-            "Browse popular topics on GitHub.": "浏览 GitHub 上的热门主题.",
-            "All featured topics": "所有主题",
-            "Popular topics": "热门主题",
+            "Browse popular topics on GitHub.": "GitHub의 인기 주제를 둘러보세요.",
+            "All featured topics": "모든 추천 주제",
+            "Popular topics": "인기 주제",
             "Unstar": "별표 취소",
-            "Load more…": "载入更多…",
-            "Loading more…": "载入中…",
+            "Load more…": "더 불러오기…",
+            "Loading more…": "불러오는 중…",
 
-        // github.com/topics/<某主题>
-            "Created by": "创建者",
-            "Released": "发布于",
-            "Latest release": "最新发行",
+        // github.com/topics/<특정 주제>
+            "Created by": "작성자:",
+            "Released": "릴리스:",
+            "Latest release": "최신 릴리스",
 
-            "Related Topics": "相关主题",
-            "Updated": "更新于",
+            "Related Topics": "관련 주제",
+            "Updated": "업데이트:",
             "Sponsor": "후원",
 
-            "Language:": "语言:",
-                "Filter by language": "按语言筛选",
-                "All": "所有",
-            "Sort:": "排序:",
-                "Sort options": "排序选项",
-                "Most stars": "最多标星",
-                "Fewest stars": "最少星标",
-                "Most forks": "最多复刻",
-                "Fewest forks": "最少复刻",
-                "Recently updated": "最近更新",
-                "Least recently updated": "最早更新",
+            "Language:": "언어:",
+                "Filter by language": "언어로 필터링하기",
+                "All": "모두",
+            "Sort:": "정렬:",
+                "Sort options": "정렬 옵션",
+                "Most stars": "별표 많은 순",
+                "Fewest stars": "별표 적은 순",
+                "Most forks": "포크 많은 순",
+                "Fewest forks": "포크 적은 순",
+                "Recently updated": "최근 업데이트순",
+                "Least recently updated": "오래된 업데이트순",
 
-            "Improve this page": "改善此页面",
-                "Add a description, image, and links to the": "为",
-                "topic page so that developers can more easily learn about it.": "主题页面添加描述、图片和链接，以便开发人员可以更轻松地了解它.",
-                "Curate this topic": "整理此主题",
-            "Add this topic to your repo": "将此主题添加到您的仓库",
-                "To associate your repository with the": "将您的仓库与",
-                "topic, visit your repo's landing page and select \"manage topics.\"": "主题关联，请访问仓库的登录页面，然后选择 “管理主题”.",
+            "Improve this page": "이 페이지 개선하기",
+                "Add a description, image, and links to the": "에 설명, 이미지, 링크를 추가하여",
+                "topic page so that developers can more easily learn about it.": "주제 페이지를 개발자들이 더 쉽게 알 수 있도록 해보세요.",
+                "Curate this topic": "이 주제 큐레이션하기",
+            "Add this topic to your repo": "이 주제를 저장소에 추가하기",
+                "To associate your repository with the": "저장소를",
+                "topic, visit your repo's landing page and select \"manage topics.\"": "주제와 연결하려면 저장소의 랜딩 페이지를 방문하여 \"주제 관리\"를 선택하세요.",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         [/followers?/, "팔로워"],
-        [/Here are ([\d,]+) public repositories? matching this topic.../, "有 $1 个公共仓库与此主题相匹配"],
-        [/Topic: ([^ ]+)/, "주제：$1"],
+        [/Here are ([\d,]+) public repositories? matching this topic.../, "이 주제와 일치하는 공개 저장소가 $1개 있어요..."],
+        [/Topic: ([^ ]+)/, "주제: $1"],
     ],
 };
 
-I18N["ko-KR"]["trending"] = { // 热门页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["trending"] = { // 트렌드 페이지
+    "static": { // 정적 번역
         "Explore": "탐험하기",
-        "Topics": "主题",
-        "Trending": "热门",
-        "Collections": "集合",
-        "Events": "活动",
-        "GitHub Sponsors": "GitHub 赞助",
-        "Get email updates": "获取电子邮件更新",
-        "Change email updates": "更改电子邮件更新", // 已设置邮件更新通知
+        "Topics": "주제",
+        "Trending": "트렌드",
+        "Collections": "컬렉션",
+        "Events": "이벤트",
+        "GitHub Sponsors": "GitHub Sponsors",
+        "Get email updates": "이메일 업데이트 받기",
+        "Change email updates": "이메일 업데이트 변경하기", // 이메일 업데이트 알림 설정됨
 
-        "See what the GitHub community is most excited about today.": "看看 GitHub 社区今天最受关注的项目.",
-        "See what the GitHub community is most excited about this week.": "看看 GitHub 社区本周最受关注的项目.",
-        "See what the GitHub community is most excited about this month.": "看看 GitHub 社区本月最受关注的项目.",
+        "See what the GitHub community is most excited about today.": "오늘 GitHub 커뮤니티가 가장 열광하는 것을 확인해보세요.",
+        "See what the GitHub community is most excited about this week.": "이번 주 GitHub 커뮤니티가 가장 열광하는 것을 확인해보세요.",
+        "See what the GitHub community is most excited about this month.": "이번 달 GitHub 커뮤니티가 가장 열광하는 것을 확인해보세요.",
 
-        "These are the developers building the hot tools today.": "这些是今天创建热门项目的开发人员.",
-        "These are the developers building the hot tools this week.": "这些是本周创建热门项目的开发人员.",
-        "These are the developers building the hot tools this month.": "这些是本月创建热门项目的开发人员.",
+        "These are the developers building the hot tools today.": "오늘 인기 있는 도구를 만드는 개발자들이에요.",
+        "These are the developers building the hot tools this week.": "이번 주에 인기 있는 도구를 만드는 개발자들이에요.",
+        "These are the developers building the hot tools this month.": "이번 달에 인기 있는 도구를 만드는 개발자들이에요.",
 
         "Repositories": "저장소",
-        "Developers": "开发者",
+        "Developers": "개발자",
 
         "Sponsor": "후원",
-        "Built by": "构建者",
+        "Built by": "만든 사람:",
 
-        "Spoken Language:": "母语：",
-            "Select a spoken language": "选择母语：",
-            "This setting can be saved in your": "此设置可以保存在您的",
-            "This setting can be updated in your": "此设置可以更新于您的",
-            "profile settings.": "个人资料.",
-            "Filter spoken languages": "筛选母语",
-            "Clear spoken language": "清除母语",
-            "Any": "任何",
-            // 弹窗
-            "Filter by spoken language": "使用母语筛选",
-                "Select your preferred spoken language in order to see matching trending results.": "选择您喜欢的母语以查看匹配的趋势结果.",
-                "Got it!": "确定",
-        "Language:": "语言：",
-            "Select a language": "选择语言：",
-            "Filter languages": "筛选语言",
-            "Unknown languages": "未知语言",
-        "Date range:": "日期范围：",
-            "Adjust time span": "调整的时间跨度",
-                "Today": "今天",
-                "This week": "本周",
-                "This month": "本月",
-        "Sponsorable:": "可赞助：",
-            "GitHub Sponsors participation": "参与 GitHub 赞助",
-            "Sponsorable developers": "可赞助的开发者",
-            "All developers": "所有开发者",
-            "All": "所有",
+        "Spoken Language:": "사용 언어:",
+            "Select a spoken language": "사용 언어 선택:",
+            "This setting can be saved in your": "이 설정은 다음 위치에 저장할 수 있어요:",
+            "This setting can be updated in your": "이 설정은 다음 위치에서 업데이트할 수 있어요:",
+            "profile settings.": "프로필 설정.",
+            "Filter spoken languages": "사용 언어 필터링하기",
+            "Clear spoken language": "사용 언어 지우기",
+            "Any": "모두",
+            // 팝업창
+            "Filter by spoken language": "사용 언어로 필터링하기",
+                "Select your preferred spoken language in order to see matching trending results.": "일치하는 트렌드 결과를 보려면 선호하는 사용 언어를 선택하세요.",
+                "Got it!": "알겠습니다!",
+        "Language:": "언어:",
+            "Select a language": "언어 선택:",
+            "Filter languages": "언어 필터링하기",
+            "Unknown languages": "알 수 없는 언어",
+        "Date range:": "기간:",
+            "Adjust time span": "기간 조정하기",
+                "Today": "오늘",
+                "This week": "이번 주",
+                "This month": "이번 달",
+        "Sponsorable:": "후원 가능:",
+            "GitHub Sponsors participation": "GitHub Sponsors 참여",
+            "Sponsorable developers": "후원 가능한 개발자",
+            "All developers": "모든 개발자",
+            "All": "모두",
 
-        // 开发者页
-        "Popular repo": "热门仓库",
+        // 개발자 페이지
+        "Popular repo": "인기 저장소",
 
     },
-    "regexp": [ // 正则翻译
-        [/([\d,]+) stars? today/, "今日 $1 星标"],
-        [/([\d,]+) stars? this week/, "本周 $1 星标"],
-        [/([\d,]+) stars? this month/, "本月 $1 星标"],
+    "regexp": [ // 정규식 번역
+        [/([\d,]+) stars? today/, "오늘 별표 $1개"],
+        [/([\d,]+) stars? this week/, "이번 주 별표 $1개"],
+        [/([\d,]+) stars? this month/, "이번 달 별표 $1개"],
     ],
 };
 
-I18N["ko-KR"]["collections"] = { // 集合页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["collections"] = { // 컬렉션 페이지
+    "static": { // 정적 번역
         "Explore": "탐험하기",
-        "Topics": "主题",
-        "Trending": "热门",
-        "Collections": "集合",
-        "Events": "活动",
-        "GitHub Sponsors": "GitHub 赞助",
-        "Get email updates": "获取电子邮件更新",
-        "Change email updates": "更改电子邮件更新", // 已设置邮件更新通知
-        "Curated lists and insight into burgeoning industries, topics, and communities.": "精心策划的列表和对新兴行业、主题和社区的见解.",
-        "Create a collection": "创建一个集合",
-        "Load more…": "载入更多...",
-        "Loading more…": "载入中...",
+        "Topics": "주제",
+        "Trending": "트렌드",
+        "Collections": "컬렉션",
+        "Events": "이벤트",
+        "GitHub Sponsors": "GitHub Sponsors",
+        "Get email updates": "이메일 업데이트 받기",
+        "Change email updates": "이메일 업데이트 변경하기", // 이메일 업데이트 알림 설정됨
+        "Curated lists and insight into burgeoning industries, topics, and communities.": "급성장하는 산업, 주제, 커뮤니티에 대한 큐레이션된 목록과 통찰력.",
+        "Create a collection": "컬렉션 만들기",
+        "Load more…": "더 불러오기...",
+        "Loading more…": "불러오는 중...",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["events"] = { // 活动页面
-    "static": { // 静态翻译
-        "Signed in as": "登录身份为",
-        "Help": "帮助",
+I18N["ko-KR"]["events"] = { // 이벤트 페이지
+    "static": { // 정적 번역
+        "Signed in as": "로그인 계정:",
+        "Help": "도움말",
         "Explore": "탐험하기",
-        "Topics": "主题",
-        "Trending": "热门",
-        "Collections": "集合",
-        "Events": "活动",
-        "GitHub Sponsors": "GitHub 赞助",
-        "Get email updates": "获取电子邮件更新",
-        "Change email updates": "更改电子邮件更新", // 已设置邮件更新通知
-        "Connect with the GitHub community at conferences, meetups, and hackathons around the world.": "在世界各地的会议、聚会和编程马拉松上与 GitHub 社区建立联系.",
-        "GitHub Events": "GitHub 活动",
-        "Sponsored by GitHub": "由 GitHub 赞助",
+        "Topics": "주제",
+        "Trending": "트렌드",
+        "Collections": "컬렉션",
+        "Events": "이벤트",
+        "GitHub Sponsors": "GitHub Sponsors",
+        "Get email updates": "이메일 업데이트 받기",
+        "Change email updates": "이메일 업데이트 변경하기", // 이메일 업데이트 알림 설정됨
+        "Connect with the GitHub community at conferences, meetups, and hackathons around the world.": "전 세계의 컨퍼런스, 밋업, 해커톤에서 GitHub 커뮤니티와 소통하세요.",
+        "GitHub Events": "GitHub 이벤트",
+        "Sponsored by GitHub": "GitHub 후원",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["sponsors"] = { // 赞助界面
+I18N["ko-KR"]["sponsors"] = { // 후원 인터페이스
     "static": {
-        // 赞助者首页 https://github.com/sponsors
-            "Invest in the software that powers your world": "投资驱动您世界的项目",
-            "See your top dependencies": "查看您的首要依赖项",
-            "Get sponsored": "获得赞助",
-            "A new way to contribute": "为开源做出贡献的",
-            "to open source": "新方式",
-            "Invest in your supply chain": "投资您的供应链",
-            "You depend on open source every day": "您每天都依赖于开源项目",
-            "Make open source careers possible": "使开源生涯成为可能",
-            "Thanks to our partners": "感谢我们的合作伙伴",
-            "Available in 103 regions": "可用于 103 个地区",
-            "to receive updates when we expand.": "以便在我们扩展时接收更新.",
-            "View country and region list": "查看国家和地区支持列表",
-            "Anyone can sponsor, but you must reside in a supported region to receive funds.": "任何人都可以赞助，但您必须居住在受支持的地区才能获得资金.",
-            "Frequently asked questions": "常见问题",
-            "Invest in the projects you depend on": "投资您所依赖的项目",
+        // 후원자 홈페이지 https://github.com/sponsors
+            "Invest in the software that powers your world": "세상을 움직이는 소프트웨어에 투자하세요",
+            "See your top dependencies": "주요 의존성 확인하기",
+            "Get sponsored": "후원 받기",
+            "A new way to contribute": "오픈 소스에 기여하는",
+            "to open source": "새로운 방법",
+            "Invest in your supply chain": "공급망에 투자하세요",
+            "You depend on open source every day": "사용자님은 매일 오픈 소스에 의존하고 있어요",
+            "Make open source careers possible": "오픈 소스 경력을 현실로 만들어보세요",
+            "Thanks to our partners": "파트너에게 감사드립니다",
+            "Available in 103 regions": "103개 지역에서 사용 가능",
+            "to receive updates when we expand.": "확장 시 업데이트를 받아보세요.",
+            "View country and region list": "국가 및 지역 지원 목록 보기",
+            "Anyone can sponsor, but you must reside in a supported region to receive funds.": "누구나 후원할 수 있지만, 자금을 받으려면 지원되는 지역에 거주해야 해요.",
+            "Frequently asked questions": "자주 묻는 질문",
+            "Invest in the projects you depend on": "의존하는 프로젝트에 투자하세요",
 
-        // 赞助者账户页面 https://github.com/sponsors/accounts
-            // 标题
-                "GitHub Sponsors accounts": "GitHub 赞助者账户",
-            // 管理
-                "Manage who you sponsor": "管理您赞助的对象",
-                    "You haven't sponsored anyone yet.": "您还没有赞助任何人.",
-                    "Find someone to sponsor": "寻找赞助对象",
-            // 名单
-                "GitHub Sponsors eligible accounts": "符合 GitHub 赞助者资格的账户",
-                    "This account has not applied to join GitHub Sponsors.": "此账户尚未申请加入 GitHub 赞助者.",
-                    "Join the waitlist": "加入等候名单",
+        // 후원자 계정 페이지 https://github.com/sponsors/accounts
+            // 제목
+                "GitHub Sponsors accounts": "GitHub Sponsors 계정",
+            // 관리
+                "Manage who you sponsor": "후원 대상 관리하기",
+                    "You haven't sponsored anyone yet.": "아직 아무도 후원하지 않았어요.",
+                    "Find someone to sponsor": "후원할 사람 찾기",
+            // 명단
+                "GitHub Sponsors eligible accounts": "GitHub Sponsors 자격이 되는 계정",
+                    "This account has not applied to join GitHub Sponsors.": "이 계정은 GitHub Sponsors 가입을 신청하지 않았어요.",
+                    "Join the waitlist": "대기자 명단에 등록하기",
 
-        // GitHub 赞助者个人资料 https://github.com/sponsors/<user-name>
-        // GitHub 赞助者组织资料 https://github.com/sponsors/<org-name>
+        // GitHub Sponsors 개인 프로필 https://github.com/sponsors/<user-name>
+        // GitHub Sponsors 조직 프로필 https://github.com/sponsors/<org-name>
         // ...?preview=true
-        "You are previewing your GitHub Sponsors profile.": "您正在预览您的 GitHub 赞助者个人资料.",
-        "Edit your profile.": "编辑您的个人资料.",
-        // 组织
-        // [/You are previewing ([^ ]+)’s GitHub Sponsors profile./, "您正在预览 $1 组织的 GitHub 赞助者个人资料."],
-        // [/Edit ([^ ]+)’s profile./, "编辑 $1 组织的个人资料."],
-            // 标题
-            "Become a sponsor to": "成为赞助者",
+        "You are previewing your GitHub Sponsors profile.": "사용자님의 GitHub Sponsors 프로필을 미리 보고 있어요.",
+        "Edit your profile.": "프로필 편집하기.",
+        // 조직
+        // [/You are previewing ([^ ]+)’s GitHub Sponsors profile./, "사용자님이 $1 조직의 GitHub Sponsors 프로필을 미리 보고 있어요."],
+        // [/Edit ([^ ]+)’s profile./, "$1 조직의 프로필 편집하기."],
+            // 제목
+            "Become a sponsor to": "의 후원자가 되어보세요",
 
-            "Current sponsors": "当前赞助者",
-            "Past sponsors": "过去赞助者",
+            "Current sponsors": "현재 후원자",
+            "Past sponsors": "과거 후원자",
 
-            "Private Sponsor": "私密赞助者",
+            "Private Sponsor": "비공개 후원자",
 
-            "Meet the team": "查看团队",
-            "Featured work": "精选",
+            "Meet the team": "팀 만나보기",
+            "Featured work": "주요 작업",
 
-            "Learn more about sponsoring developers and organizations": "了解更多关于赞助开发者和组织的信息",
+            "Learn more about sponsoring developers and organizations": "개발자 및 조직 후원에 대해 더 알아보기",
             "Report abuse": "남용 신고",
 
-            // 右侧栏
-            "towards": "达成",
-            "goal": "目标",
-            "Sponsor as": "赞助身份为",
+            // 오른쪽 사이드바
+            "towards": "중",
+            "goal": "목표 달성",
+            "Sponsor as": "다음 계정으로 후원하기:",
 
-            "Hover over your avatar to review the badge you'll get that shows": "当鼠标悬停在您的头像时，将显示",
-            "you're a sponsor.": "的赞助者徽章.",
+            "Hover over your avatar to review the badge you'll get that shows": "아바타에 마우스를 올리면",
+            "you're a sponsor.": "의 후원자임을 나타내는 배지를 확인할 수 있어요.",
 
-            "Select a tier": "选择",
-            "Monthly": "每月",
-                "a month": "/月",
-                "Select": "选择",
-                "Choose a custom amount.": "填入自定义金额.",
-            "One-time": "一次性",
-                "one time": "/次",
-                "A Public Sponsor achievement will be added to your profile.": "一个 “公开赞助者” 成就将添加到您的个人资料中.",
+            "Select a tier": "등급 선택하기",
+            "Monthly": "매월",
+                "a month": "/월",
+                "Select": "선택하기",
+                "Choose a custom amount.": "사용자 지정 금액 입력하기.",
+            "One-time": "일회성",
+                "one time": "/회",
+                "A Public Sponsor achievement will be added to your profile.": "'공개 후원자' 업적이 프로필에 추가돼요.",
 
-        // 赞助者登录页 https://github.com/sponsors/<user-name>/signup
-            // 标题
-                "GitHub Sponsors · Get sponsored": "GitHub 赞助者 · 获得赞助",
-                "Get Sponsored": "获得赞助",
-                "Launch a": "启动一个",
-                "GitHub Sponsors profile": "GitHub 赞助者资料",
-                "and start receiving funding.": "并开始获得资金.",
-            // 联系电子邮箱
-                "Select a verified email address for us to contact you about your GitHub Sponsors profile. This will not be shared publicly. You can manage verified email addresses in your": "选择一个经过验证的电子邮件地址，以便我们就您的 GitHub 赞助者资料与您联系.该地址不会公开共享.您可以在您的",
-            // 收款方式
-                "Bank account": "银行账户",
-                    "Use a bank account to receive your sponsorships. Note: If you use a personal bank account, your country may tax your GitHub Sponsors payouts as personal income.": "使用银行账户接收您的赞助.注意：如果您使用个人银行账户，您所在的国家/地区可能会将您的 GitHub 赞助者 付款作为个人收入征税.",
-                "Fiscal Host": "财政主办方",
-                    "Members of supported fiscal hosts can use their fiscal host to join GitHub Sponsors instead of using a bank account.": "受支持财务主办方的成员可使用其财务主机加入 GitHub 赞助者，而无需使用银行账户.",
-            "Submit": "提交",
+        // 후원자 로그인 페이지 https://github.com/sponsors/<user-name>/signup
+            // 제목
+                "GitHub Sponsors · Get sponsored": "GitHub Sponsors · 후원 받기",
+                "Get Sponsored": "후원 받기",
+                "Launch a": "시작하기:",
+                "GitHub Sponsors profile": "GitHub Sponsors 프로필",
+                "and start receiving funding.": "을(를) 통해 자금 지원을 받아보세요.",
+            // 연락처 이메일
+                "Select a verified email address for us to contact you about your GitHub Sponsors profile. This will not be shared publicly. You can manage verified email addresses in your": "GitHub Sponsors 프로필에 대해 연락드릴 수 있도록 인증된 이메일 주소를 선택해주세요. 이 주소는 공개되지 않아요. 인증된 이메일 주소는 다음 위치에서 관리할 수 있어요:",
+            // 수금 방법
+                "Bank account": "은행 계좌",
+                    "Use a bank account to receive your sponsorships. Note: If you use a personal bank account, your country may tax your GitHub Sponsors payouts as personal income.": "은행 계좌를 사용하여 후원금을 받으세요. 참고: 개인 은행 계좌를 사용하는 경우, 해당 국가에서 GitHub Sponsors 지급액을 개인 소득으로 과세할 수 있어요.",
+                "Fiscal Host": "재정 호스트",
+                    "Members of supported fiscal hosts can use their fiscal host to join GitHub Sponsors instead of using a bank account.": "지원되는 재정 호스트의 회원은 은행 계좌 대신 재정 호스트를 사용하여 GitHub Sponsors에 가입할 수 있어요.",
+            "Submit": "제출하기",
 
-        // 加入等候名单界面 https://github.com/sponsors/<user-name>/waitlist
-            "GitHub Sponsors is now out of beta for 103 regions!": "GitHub 赞助者现已在 103 个地区推出测试版！",
-                "If you have a bank account in": "如果您的银行账户所在",
-                "a country or region where GitHub Sponsors is generally available": "国家或地区普遍支持 GitHub 赞助者",
-                ", you will get an email from us when your application has been reviewed.": "，您将在申请通过审核后收到我们的电子邮件.",
-                "If you don't have an eligible bank account, don't worry! We're working hard to get more countries out of beta soon. Join the waitlist to be the first to know.": "如果您没有符合条件的银行账户，也不用担心！我们正在努力让更多的国家或地区通过测试.加入等候名单，第一时间获知消息.",
-            "Contact email": "联系电子邮箱",
-                "Select a verified email address for us to contact you about your GitHub Sponsors profile. This will not be shared publicly.": "请选择一个经过验证的电子邮箱地址，以便我们就您的 GitHub 赞助者个人资料与您联系.该邮箱地址不会公开.",
-                "You can manage verified email addresses in your": "您可以管理已验证的电子邮箱地址在您的",
-                "email settings": "电子邮箱设置",
-            "Country or region of residence": "居住的国家或地区",
-                "Select a country or region": "选择一个国家或地区",
-                "The country or region where you reside. This is required for tax purposes.": "您居住的国家或地区.这是出于税务目的所必需的.",
-            "How you receive payments": "收款方式",
-                "Use a bank account": "使用银行账户",
-                    "You can use your bank account to join GitHub Sponsors.": "您可以使用您的银行账户加入 GitHub 赞助者.",
-                    "Note that you are responsible for all applicable taxes on payouts you receive. If you use a personal bank account, your country may tax your GitHub Sponsors payouts as personal income.": "请注意，您需承担您收到的付款的所有适用税款.如果您使用个人银行账户，您所在国家或地区可能会将您的 GitHub 赞助者收款作为个人收入征税.",
-                    "Learn more about setting up a Stripe account": "了解更多关于设置 Stripe 账户的信息",
+        // 대기자 명단 등록 인터페이스 https://github.com/sponsors/<user-name>/waitlist
+            "GitHub Sponsors is now out of beta for 103 regions!": "GitHub Sponsors가 이제 103개 지역에서 베타를 종료했어요!",
+                "If you have a bank account in": "만약 은행 계좌가",
+                "a country or region where GitHub Sponsors is generally available": "GitHub Sponsors가 일반적으로 사용 가능한 국가 또는 지역",
+                ", you will get an email from us when your application has been reviewed.": "에 있다면, 신청서가 검토된 후 이메일을 받게 될 거예요.",
+                "If you don't have an eligible bank account, don't worry! We're working hard to get more countries out of beta soon. Join the waitlist to be the first to know.": "자격 있는 은행 계좌가 없더라도 걱정하지 마세요! 더 많은 국가에서 베타를 곧 종료할 수 있도록 노력하고 있어요. 대기자 명단에 등록하여 가장 먼저 소식을 받아보세요.",
+            "Contact email": "연락처 이메일",
+                "Select a verified email address for us to contact you about your GitHub Sponsors profile. This will not be shared publicly.": "GitHub Sponsors 프로필에 대해 연락드릴 수 있도록 인증된 이메일 주소를 선택해주세요. 이 이메일 주소는 공개되지 않아요.",
+                "You can manage verified email addresses in your": "인증된 이메일 주소는 다음에서 관리할 수 있어요:",
+                "email settings": "이메일 설정",
+            "Country or region of residence": "거주 국가 또는 지역",
+                "Select a country or region": "국가 또는 지역 선택하기",
+                "The country or region where you reside. This is required for tax purposes.": "거주하는 국가 또는 지역이에요. 세금 목적으로 필요해요.",
+            "How you receive payments": "지급받는 방법",
+                "Use a bank account": "은행 계좌 사용하기",
+                    "You can use your bank account to join GitHub Sponsors.": "은행 계좌를 사용하여 GitHub Sponsors에 가입할 수 있어요.",
+                    "Note that you are responsible for all applicable taxes on payouts you receive. If you use a personal bank account, your country may tax your GitHub Sponsors payouts as personal income.": "받는 지급액에 대한 모든 관련 세금은 본인 책임이라는 점에 유의하세요. 개인 은행 계좌를 사용하는 경우, 해당 국가에서 GitHub Sponsors 지급액을 개인 소득으로 과세할 수 있어요.",
+                    "Learn more about setting up a Stripe account": "Stripe 계정 설정에 대해 더 알아보기",
 
-                    "Country or region where your bank account is located:": "您的银行账户所在的国家或地区：",
-                        "Your region is": "您所在的地区",
-                        "not supported": "不受支持",
-                        "or may be in": "或者可能处于",
-                        "beta": "测试阶段",
-                    "Use another bank account where GitHub Sponsors is available or complete signup to receive a notification if your region becomes available.": "使用另一个 GitHub 赞助者可用的银行账户，或者在您所在的地区可用时完成注册以收到通知.",
-                "Use a fiscal host": "使用财务托管",
-                    "You can use a fiscal host to join GitHub Sponsors instead of using your own bank account.": "您可以使用财务托管机构代替自己的银行账户来加入 GitHub 赞助者.",
-                    "Choose a fiscal host:": "选择一个财务托管机构：",
-                    "Select a fiscal host": "选择一个财务托管机构",
+                    "Country or region where your bank account is located:": "은행 계좌가 있는 국가 또는 지역:",
+                        "Your region is": "사용자님의 지역은",
+                        "not supported": "지원되지 않거나",
+                        "or may be in": "다음에 해당될 수 있어요:",
+                        "beta": "베타",
+                    "Use another bank account where GitHub Sponsors is available or complete signup to receive a notification if your region becomes available.": "GitHub Sponsors가 사용 가능한 다른 은행 계좌를 사용하거나, 사용자님의 지역이 사용 가능해지면 알림을 받도록 가입을 완료하세요.",
+                "Use a fiscal host": "재정 호스트 사용하기",
+                    "You can use a fiscal host to join GitHub Sponsors instead of using your own bank account.": "자신의 은행 계좌 대신 재정 호스트를 사용하여 GitHub Sponsors에 가입할 수 있어요.",
+                    "Choose a fiscal host:": "재정 호스트 선택하기:",
+                    "Select a fiscal host": "재정 호스트 선택하기",
 
-                    "Fiscal host project profile URL:": "财务托管机构项目资料链接：",
-                        "Please include a link to your profile on your fiscal host's site, if available.": "如果有的话，请提供您在的财务托管机构上的个人资料链接.",
-                    "e.g.,": "例如，",
-            "Join waitlist": "加入等候名单",
+                    "Fiscal host project profile URL:": "재정 호스트 프로젝트 프로필 URL:",
+                        "Please include a link to your profile on your fiscal host's site, if available.": "가능하다면, 재정 호스트 사이트의 프로필 링크를 포함해주세요.",
+                    "e.g.,": "예:",
+            "Join waitlist": "대기자 명단에 등록하기",
 
-        // 探索 GitHub 赞助者界面 https://github.com/sponsors/explore
+        // GitHub Sponsors 탐색 인터페이스 https://github.com/sponsors/explore
             "Explore": "탐험하기",
-            "Topics": "主题",
-            "Trending": "热门",
-            "Collections": "集合",
-            "Events": "活动",
-            "GitHub Sponsors": "GitHub 赞助者",
-            "Get email updates": "获取电子邮件更新",
-            "Change email updates": "更改电子邮件更新", // 已设置邮件更新通知
+            "Topics": "주제",
+            "Trending": "트렌드",
+            "Collections": "컬렉션",
+            "Events": "이벤트",
+            "GitHub Sponsors": "GitHub Sponsors",
+            "Get email updates": "이메일 업데이트 받기",
+            "Change email updates": "이메일 업데이트 변경하기", // 이메일 업데이트 알림 설정됨
 
-            "Explore GitHub Sponsors": "探索 GitHub 赞助者",
-                "Fund the work of developers and projects you depend on.": "为您所依赖的开发者和项目提供资金.",
+            "Explore GitHub Sponsors": "GitHub Sponsors 탐색하기",
+                "Fund the work of developers and projects you depend on.": "의존하는 개발자와 프로젝트의 작업에 자금을 지원하세요.",
 
-            // 左侧栏
-                "Explore as": "使用以下身份进行探索",
-                "Ecosystems": "生态系统",
-                    "All ecosystems": "所有生态系统",
-                "Filters": "过滤器",
-                    "Direct dependencies only": "仅直接依赖项",
+            // 왼쪽 사이드바
+                "Explore as": "다음 계정으로 탐색하기:",
+                "Ecosystems": "생태계",
+                    "All ecosystems": "모든 생태계",
+                "Filters": "필터",
+                    "Direct dependencies only": "직접 의존성만",
 
-            "None of your dependencies can be sponsored": "您的任何依赖项都尚未开放赞助",
-                // [/([^ ]+) does not directly depend on any repositories whose maintainers can be sponsored./, "$1 不直接依赖于任何可以赞助其维护人员的仓库."],
-            "developers who maintain your dependencies": "位开发人员维护您的依赖项",
-            "Download your": "下载",
-            "results as CSV": "结果（CSV格式）",
+            "None of your dependencies can be sponsored": "의존성 중 어느 것도 아직 후원할 수 없어요",
+                // [/([^ ]+) does not directly depend on any repositories whose maintainers can be sponsored./, "$1은(는) 유지 관리자를 후원할 수 있는 어떤 저장소에도 직접적으로 의존하지 않아요."],
+            "developers who maintain your dependencies": "명의 개발자가 의존성을 유지 관리하고 있어요",
+            "Download your": "다운로드하기:",
+            "results as CSV": "결과 (CSV 형식)",
 
-            "Order by": "排序依据",
-                "Most used": "较常使用",
-                "Least used": "较少使用",
-                "Most sponsors": "较多赞助者",
-                "Fewest sponsors": "较少赞助者",
-                "Newest Sponsors profile": "最新赞助者资料",
-                "Oldest Sponsors profile": "最早赞助者资料",
+            "Order by": "정렬 기준:",
+                "Most used": "가장 많이 사용됨",
+                "Least used": "가장 적게 사용됨",
+                "Most sponsors": "후원자 많은 순",
+                "Fewest sponsors": "후원자 적은 순",
+                "Newest Sponsors profile": "최신 Sponsors 프로필",
+                "Oldest Sponsors profile": "가장 오래된 Sponsors 프로필",
 
             "Apply": "반영하기",
 
-            "You depend on": "您依赖于",
-            // [/(\d+) repositor(y|ies) they own or maintain/, "他们拥有或维护 $1 个仓库"],
-            // [/others? sponsor, including (\d+) organizations?/, "位其他赞助者，包括 $1 个组织"],
+            "You depend on": "사용자님은 다음에 의존해요:",
+            // [/(\d+) repositor(y|ies) they own or maintain/, "그들이 소유하거나 유지 관리하는 저장소 $1개"],
+            // [/others? sponsor, including (\d+) organizations?/, "명의 다른 후원자, $1개 조직 포함"],
             "sponsors": "후원",
-            "others sponsor": "位其他赞助者",
-            // [/(\d+)% towards goal/, "实现目标的 $1%"],
+            "others sponsor": "명의 다른 후원자",
+            // [/(\d+)% towards goal/, "목표 달성률 $1%"],
 
-            "Explore people and projects": "探索人员和项目",
-            "Bulk Sponsor": "批量赞助",
-                "Sponsor multiple maintainers in one easy transaction.": "在一笔简单的交易中赞助多位维护人员.",
-                "Get started": "开始",
-            "Don't see what you're looking for? Try": "没有看到您在找的东西？尝试",
-            "searching for people you can sponsor": "寻找可以接受您赞助的人",
-            "and filtering by language!": "并通过语言筛选！",
-            "Clear filter": "清除筛选器",
+            "Explore people and projects": "사람 및 프로젝트 탐색하기",
+            "Bulk Sponsor": "일괄 후원하기",
+                "Sponsor multiple maintainers in one easy transaction.": "한 번의 간편한 거래로 여러 유지 관리자를 후원하세요.",
+                "Get started": "시작하기",
+            "Don't see what you're looking for? Try": "찾는 것이 보이지 않나요? 다음을 시도해보세요:",
+            "searching for people you can sponsor": "후원할 수 있는 사람 검색하기",
+            "and filtering by language!": "그리고 언어로 필터링하기!",
+            "Clear filter": "필터 지우기",
             "Sponsor": "후원",
 
-            // 仓库列表
-            "Repository list": "仓库列表",
-                "You": "您",
-                "owns or maintains.": "拥有或维护",
-                "We check their maintainer status by seeing if they're listed in a repository's": "我们会确认他们是否被列在一个仓库中来检查他们的维护者状态，查看：",
-                "funding file": "资助文件",
-                "Load more...": "加载更多...",
+            // 저장소 목록
+            "Repository list": "저장소 목록",
+                "You": "사용자님",
+                "owns or maintains.": "이(가) 소유하거나 유지 관리해요.",
+                "We check their maintainer status by seeing if they're listed in a repository's": "저장소의 다음 파일에 등재되어 있는지 확인하여 유지 관리자 상태를 확인해요:",
+                "funding file": "후원 파일",
+                "Load more...": "더 불러오기...",
 
-            // [/Want to sponsor on behalf of ([^ ]+)?/, "想代表 $1 赞助吗？"],
-            "Talk to your organization about GitHub Sponsors": "与您的组织讨论 GitHub 赞助者事宜",
-            "Share this discovery page with your team to start a conversation about investing in the people and projects you rely on.": "与您的团队分享本发现页面，并就投资于您所依赖的人员和项目展开讨论.",
-            "Invest in open source software and we'll track your progress here!": "投资开源软件，我们将在这里跟踪您的进度！",
+            // [/Want to sponsor on behalf of ([^ ]+)?/, "$1을(를) 대신하여 후원하시겠어요?"],
+            "Talk to your organization about GitHub Sponsors": "조직과 GitHub Sponsors에 대해 논의해보세요",
+            "Share this discovery page with your team to start a conversation about investing in the people and projects you rely on.": "이 탐색 페이지를 팀과 공유하여 의존하는 사람과 프로젝트에 투자하는 것에 대한 대화를 시작해보세요.",
+            "Invest in open source software and we'll track your progress here!": "오픈 소스 소프트웨어에 투자하면 여기서 진행 상황을 추적해드릴게요!",
     },
-    "regexp": [ // 正则匹配
-        [/You are previewing ([^ ]+)’s GitHub Sponsors profile./, "您正在预览 $1 组织的 GitHub 赞助者个人资料."], // sponsors/<org-name>?preview=true
-        [/Edit ([^ ]+)’s profile./, "编辑 $1 组织的个人资料."], // sponsors/<org-name>?preview=true
-        [/([^ ]+) does not directly depend on any repositories whose maintainers can be sponsored./, "$1 不直接依赖于任何可以赞助其维护人员的仓库."],
-        [/(\d+) repositor(y|ies) they own or maintain/, "他们拥有或维护 $1 个仓库"],
-        [/others? sponsor, including (\d+) organizations?/, "位其他赞助者，包括 $1 个组织"],
-        [/(\d+)% towards goal/, "实现目标的 $1%"],
-        [/Want to sponsor on behalf of ([^ ]+)?/, "想代表 $1 赞助吗？"],
-        [/depend on (\d+) repositor(y|ies)/, "依赖于他的 $1 个仓库："],
-        [/(\d+) repositor(y|ies)/, "$1 个仓库"],
-        [/(\d+) members/, "$1 位成员"],
-        [/(\$\d+) a month/, "$1/月"],
-        [/(\$[\d,]+) per month/, "$1 每月"],
-        [/Amount must be at least (\$\d+)/, "至少填入 $1"],
-        [/Amount exceeds maximum tier amount of (\$[\d,]+)/, "至多填入 $1"],
-        [/You'll receive any rewards listed in the (\$\d+) monthly tier. Additionally, a Public Sponsor achievement will be added to your profile./, "您将获得 $1 月度奖励中列出的所有奖励.此外，您的个人档案中还将添加公共赞助商成就."],
-        [/and (\d+) others sponsor this goal/, "和另外 $1 人赞助此目标"],
-        [/(\d+) of your repositories depends? on this/, "您有 $1 个仓库依赖此"],
+    "regexp": [ // 정규식 일치
+        [/You are previewing ([^ ]+)’s GitHub Sponsors profile./, "$1 조직의 GitHub Sponsors 프로필을 미리 보고 있어요."], // sponsors/<org-name>?preview=true
+        [/Edit ([^ ]+)’s profile./, "$1 조직의 프로필 편집하기."], // sponsors/<org-name>?preview=true
+        [/([^ ]+) does not directly depend on any repositories whose maintainers can be sponsored./, "$1은(는) 유지 관리자를 후원할 수 있는 어떤 저장소에도 직접적으로 의존하지 않아요."],
+        [/(\d+) repositor(y|ies) they own or maintain/, "그들이 소유하거나 유지 관리하는 저장소 $1개"],
+        [/others? sponsor, including (\d+) organizations?/, "명의 다른 후원자, $1개 조직 포함"],
+        [/(\d+)% towards goal/, "목표 달성률 $1%"],
+        [/Want to sponsor on behalf of ([^ ]+)?/, "$1을(를) 대신하여 후원하시겠어요?"],
+        [/depend on (\d+) repositor(y|ies)/, "의존하는 저장소 $1개:"],
+        [/(\d+) repositor(y|ies)/, "저장소 $1개"],
+        [/(\d+) members/, "멤버 $1명"],
+        [/(\$\d+) a month/, "$1/월"],
+        [/(\$[\d,]+) per month/, "매월 $1"],
+        [/Amount must be at least (\$\d+)/, "최소 금액은 $1이에요"],
+        [/Amount exceeds maximum tier amount of (\$[\d,]+)/, "최대 등급 금액인 $1을(를) 초과했어요"],
+        [/You'll receive any rewards listed in the (\$\d+) monthly tier. Additionally, a Public Sponsor achievement will be added to your profile./, "월 $1 등급에 나열된 모든 보상을 받게 될 거예요. 또한, '공개 후원자' 업적이 프로필에 추가돼요."],
+        [/and (\d+) others sponsor this goal/, "그리고 다른 $1명이 이 목표를 후원해요"],
+        [/(\d+) of your repositories depends? on this/, "사용자님의 저장소 $1개가 여기에 의존해요"],
     ],
 };
 
-I18N["ko-KR"]["showcases"] = { // 展示页面
-    "static": { // 静态翻译
-        "Open source showcases": "开源展示",
-        "Browse popular repositories based on the topic that interests you most.": "浏览热门仓库基于您最感兴趣的主题.",
-        "Search showcases": "搜索展示",
+I18N["ko-KR"]["showcases"] = { // 쇼케이스 페이지
+    "static": { // 정적 번역
+        "Open source showcases": "오픈 소스 쇼케이스",
+        "Browse popular repositories based on the topic that interests you most.": "가장 관심 있는 주제를 기반으로 인기 있는 저장소를 둘러보세요.",
+        "Search showcases": "쇼케이스 검색하기",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["account/organizations/new"] = { // 创建组织
-    "static": { // 静态翻译
-        // 创建免费的组织 https://github.com/account/organizations/new?coupon=&plan=team_free
+I18N["ko-KR"]["account/organizations/new"] = { // 조직 만들기
+    "static": { // 정적 번역
+        // 무료 조직 만들기 https://github.com/account/organizations/new?coupon=&plan=team_free
         // https://github.com/account/organizations/new?coupon=&plan=free
-        // 第 1 页
-        "Tell us about your organization": "告诉我们您的组织",
-        "Set up your organization": "设置您的组织",
-        "Organization name": "组织名称",
-            // [/The name \'(\d+)\' is already taken./, "名称 '$1' 已被采用."],
-            // [/The name \'(\d+)\' may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen./, "名称 '$1' 只能包含字母数字字符或单个连字符，并且不能以连字符开头或结尾."],
-            // [/Organization name \'([^ ]+)\' is unavailable./, "组织名称 '$1' 不可用."], //
-            "This will be the name of your account on GitHub.": "这将是您在 GitHub 上的账户名称.",
-            "Your URL will be: https://github.com/": "您的网址将是：https://github.com/",
-        "Contact email": "联系电子邮箱",
-            "Email is invalid": "电子邮箱无效",
-        "This organization belongs to:": "该组织属于：",
-            "My personal account": "我的个人账户",
-                // [/I.e.,/, "即："],
-            "A business or institution": "企业或机构",
-                "For example: GitHub, Inc., Example Institute, American Red Cross": "比如说：GitHub, Inc., Example Institute, American Red Cross",
-                "Name of business or institution this organization belongs to": "该组织所属的企业或机构的名称",
-                "This business or institution — not": "该企业或机构 — 不是",
-                "(your personal account) — will control this organization.": "（您的个人账户）— 将控制此组织.",
-        "Add-ons": "附加组件",
-            "Get GitHub Copilot Business in this organization": "在组织中获取 GitHub Copilot 商业版",
-                "Boost developer productivity for $19/user/month. Pay only for assigned seats after setup.": "以 $19 /用户/月的价格提高开发人员的工作效率.仅需在设置后为分配的席位付费.",
-                "See Copilot Business docs.": "请参阅 GitHub Copilot 商业版文档.",
-        "I hereby accept the": "我特此接受",
-            // 个人账户
-            "Terms of Service": "服务条款",
-            ". For more information about GitHub's privacy practices, see the": ".关于 GitHub 隐私条款的更多信息，请参见",
-            "GitHub Privacy Statement": "GitHub 隐私声明",
-            // 企业或机构
-            "GitHub Customer Agreement": "GitHub 客户协议",
-            "on behalf of my organization and confirm that I have the authority to do so": "代表我的组织，并确认我有权力这样做",
+        // 1페이지
+        "Tell us about your organization": "조직에 대해 알려주세요",
+        "Set up your organization": "조직 설정하기",
+        "Organization name": "조직 이름",
+            // [/The name \'(\d+)\' is already taken./, "이름 '$1'은(는) 이미 사용 중이에요."],
+            // [/The name \'(\d+)\' may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen./, "이름 '$1'은(는) 영숫자 또는 단일 하이픈만 포함할 수 있으며 하이픈으로 시작하거나 끝날 수 없어요."],
+            // [/Organization name \'([^ ]+)\' is unavailable./, "조직 이름 '$1'은(는) 사용할 수 없어요."], //
+            "This will be the name of your account on GitHub.": "이것이 GitHub에서의 계정 이름이 될 거예요.",
+            "Your URL will be: https://github.com/": "URL은 다음과 같이 될 거예요: https://github.com/",
+        "Contact email": "연락처 이메일",
+            "Email is invalid": "이메일이 유효하지 않아요",
+        "This organization belongs to:": "이 조직의 소유자:",
+            "My personal account": "내 개인 계정",
+                // [/I.e.,/, "즉:"],
+            "A business or institution": "기업 또는 기관",
+                "For example: GitHub, Inc., Example Institute, American Red Cross": "예: GitHub, Inc., Example Institute, American Red Cross",
+                "Name of business or institution this organization belongs to": "이 조직이 속한 기업 또는 기관의 이름",
+                "This business or institution — not": "이 기업 또는 기관이",
+                "(your personal account) — will control this organization.": "(사용자님의 개인 계정이 아닌) — 이 조직을 관리하게 돼요.",
+        "Add-ons": "추가 기능",
+            "Get GitHub Copilot Business in this organization": "이 조직에서 GitHub Copilot Business 사용하기",
+                "Boost developer productivity for $19/user/month. Pay only for assigned seats after setup.": "월 $19/사용자로 개발자 생산성을 높여보세요. 설정 후 할당된 시트에 대해서만 지불하면 돼요.",
+                "See Copilot Business docs.": "GitHub Copilot Business 문서 보기.",
+        "I hereby accept the": "본인은 다음을 수락해요:",
+            // 개인 계정
+            "Terms of Service": "서비스 약관",
+            ". For more information about GitHub's privacy practices, see the": ". GitHub의 개인정보 보호 관행에 대한 자세한 내용은 다음을 참조하세요:",
+            "GitHub Privacy Statement": "GitHub 개인정보처리방침",
+            // 기업 또는 기관
+            "GitHub Customer Agreement": "GitHub 고객 계약",
+            "on behalf of my organization and confirm that I have the authority to do so": "을(를) 조직을 대신하여 수락하며, 그렇게 할 권한이 있음을 확인해요",
 
-        // ". We'll occasionally send you account-related emails.": ".我们偶尔会向您发送与账户相关的电子邮件.",
+        // ". We'll occasionally send you account-related emails.": ". 때때로 계정과 관련된 이메일을 보내드려요.",
 
         // https://github.com/organizations/<org-name>/invite
-        // 第 2 页 邀请成员
-        "Start collaborating": "开始合作",
-        // [/Welcome to/, "欢迎来到"],
-        "Add organization members": "添加组织成员",
-        "Organization members will be able to view repositories, organize into teams, review code, and tag other members using @mentions.": "组织成员将能够使用 @提及来查看仓库、组织成团队、审查代码以及标记其他成员.",
-        "Learn more about permissions for organizations →": "了解更多关于组织权限的信息 →",
-        "Search by username, full name or email address": "搜索用户名、全名、或电子邮箱",
-        "Complete setup": "完成设置",
-        "Skip this step": "跳过",
+        // 2페이지 멤버 초대
+        "Start collaborating": "협업 시작하기",
+        // [/Welcome to/, "에 오신 것을 환영해요"],
+        "Add organization members": "조직 멤버 추가하기",
+        "Organization members will be able to view repositories, organize into teams, review code, and tag other members using @mentions.": "조직 멤버는 @언급을 사용하여 저장소를 보고, 팀으로 구성하고, 코드를 검토하고, 다른 멤버를 태그할 수 있어요.",
+        "Learn more about permissions for organizations →": "조직 권한에 대해 더 알아보기 →",
+        "Search by username, full name or email address": "사용자 이름, 전체 이름 또는 이메일 주소로 검색하기",
+        "Complete setup": "설정 완료하기",
+        "Skip this step": "이 단계 건너뛰기",
 
         // https://github.com/orgs/<org-name>/invitations/bulk_create_for_new_org
         // https://github.com/orgs/<org-name>/welcome_survey/new
     },
-    "regexp": [ // 正则翻译
-        [/The name \'([^ ]+)\' is already taken./, "名称 '$1' 已被采用."],
-        [/The name \'([^ ]+)\' may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen./, "名称 '$1' 只能包含字母数字字符或单个连字符，并且不能以连字符开头或结尾."],
-        [/Organization name \'([^ ]+)\' is unavailable./, "组织名称 '$1' 不可用."],
-        [/I.e.,/, "即："],
+    "regexp": [ // 정규식 번역
+        [/The name \'([^ ]+)\' is already taken./, "이름 '$1'은(는) 이미 사용 중이에요."],
+        [/The name \'([^ ]+)\' may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen./, "이름 '$1'은(는) 영숫자 또는 단일 하이픈만 포함할 수 있으며 하이픈으로 시작하거나 끝날 수 없어요."],
+        [/Organization name \'([^ ]+)\' is unavailable./, "조직 이름 '$1'은(는) 사용할 수 없어요."],
+        [/I.e.,/, "즉:"],
     ],
 };
 
-I18N["ko-KR"]["account/choose"] = { // 账户升级选择
-    "static": { // 静态翻译
+I18N["ko-KR"]["account/choose"] = { // 계정 업그레이드 선택
+    "static": { // 정적 번역
         // https://github.com/account/choose?action=upgrade
-            "Which do you want to upgrade?": "您想升级哪个？",
-            "Your personal account": "您的个人账户",
+            "Which do you want to upgrade?": "어떤 것을 업그레이드하시겠어요?",
+            "Your personal account": "나의 개인 계정",
             "Organization": "조직",
-            "Create a new organization": "创建新组织",
-            "Try GitHub Enterprise": "试用 GitHub 企业版",
+            "Create a new organization": "새 조직 만들기",
+            "Try GitHub Enterprise": "GitHub Enterprise 체험하기",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
     ],
 };
 
-I18N["ko-KR"]["account/upgrade"] = { // 账户
+I18N["ko-KR"]["account/upgrade"] = { // 계정 업그레이드
     "static": {
-        "Change how often your account is billed": "更改您账户的计费频率",
+        "Change how often your account is billed": "계정 청구 주기 변경하기",
 
-        "Back to billing settings": "返回账单设置",
+        "Back to billing settings": "청구 설정으로 돌아가기",
 
-        "Change duration to": "切换周期至",
+        "Change duration to": "기간 변경하기:",
 
-        "Pay yearly": "按年支付",
-        "/ year": "/年",
-        "Pay monthly": "按月支付",
-        "/ month": "/月",
+        "Pay yearly": "연간 결제",
+        "/ year": "/년",
+        "Pay monthly": "월간 결제",
+        "/ month": "/월",
 
-        "Payment frequency": "支付频率",
-            "Total amount": "总计",
-            "Due today": "今天到期",
+        "Payment frequency": "결제 주기",
+            "Total amount": "총액",
+            "Due today": "오늘 결제 예정",
 
-        "Billing information": "账单信息",
-            "Personal account": "个人账户",
+        "Billing information": "청구 정보",
+            "Personal account": "개인 계정",
 
-            "Change your account's billing cycle": "更改计费周期",
+            "Change your account's billing cycle": "계정 청구 주기 변경하기",
 
-        "By clicking “Change your account's billing cycle”, you agree to our": "通过点击“更改计费周期”，您同意我们的",
-        "Terms of Service": "服务条款",
-        ". We’ll occasionally send you account-related emails.": "我们会偶尔发送与账户相关的电子邮件.",
+        "By clicking “Change your account's billing cycle”, you agree to our": "“계정 청구 주기 변경하기”를 클릭하면 다음에 동의하는 것으로 간주돼요:",
+        "Terms of Service": "서비스 약관",
+        ". We’ll occasionally send you account-related emails.": "때때로 계정과 관련된 이메일을 보내드려요.",
 
         // https://github.com/account/upgrade?plan=pro&source=account+compare+plans
-            "Upgrade your account from GitHub Free to GitHub Pro": "从 GitHub 免费版升级到 GitHub 专业版",
-            "Plan details": "计划详情",
+            "Upgrade your account from GitHub Free to GitHub Pro": "계정을 GitHub Free에서 GitHub Pro로 업그레이드하세요",
+            "Plan details": "플랜 세부 정보",
 
-            // "Billing information": "账单信息",
-            "Please confirm your billing details to continue. You only need to do this once.": "请确认您的账单详情以继续.您只需确认一次.",
-            // "Personal account": "个人账户",
+            // "Billing information": "청구 정보",
+            "Please confirm your billing details to continue. You only need to do this once.": "계속하려면 청구 세부 정보를 확인해주세요. 이 작업은 한 번만 하면 돼요.",
+            // "Personal account": "개인 계정",
 
-            "First name": "名字",
-                "First name can't be blank.": "名字不能为空.",
-                "First name can't be blank": "名字不能为空",
-            "Last name": "姓氏",
-                "Last name can't be blank.": "姓氏不能为空.",
-                "Last name can't be blank": "姓氏不能为空",
-            "Address": "地址",
-            "(Street, P.O. box)": "（街道，邮政信箱）",
-                "Address can't be blank.": "地址不能为空.",
-                "Address can't be blank": "地址不能为空",
-            "Address line 2": "地址第 2 行",
-            "(Apartment, suite, unit)": "（公寓、套房、单元）",
-            "City": "城市",
-                "City can't be blank.": "城市不能为空.",
-                "City can't be blank": "城市不能为空",
-            "Country/Region": "国家/地区",
-                "Country code can't be blank.": "国家/地区不能为空.",
-                "Country code can't be blank": "国家/地区不能为空",
-                "Choose your country": "选择您所在的国家/地区",
-            "State/Province": "州/省",
-                "Required for certain countries": "某些国家/地区需要",
-            "Postal/Zip code": "邮政编码",
-                "(9-digit zip code for US)": "(美国为 9 位邮政编码）",
-            "VAT/GST ID": "增值税/消费税编号",
+            "First name": "이름",
+                "First name can't be blank.": "이름을 비워둘 수 없어요.",
+                "First name can't be blank": "이름을 비워둘 수 없어요",
+            "Last name": "성",
+                "Last name can't be blank.": "성을 비워둘 수 없어요.",
+                "Last name can't be blank": "성을 비워둘 수 없어요",
+            "Address": "주소",
+            "(Street, P.O. box)": "(도로명, 사서함)",
+                "Address can't be blank.": "주소를 비워둘 수 없어요.",
+                "Address can't be blank": "주소를 비워둘 수 없어요",
+            "Address line 2": "상세 주소",
+            "(Apartment, suite, unit)": "(아파트, 동, 호수)",
+            "City": "도시",
+                "City can't be blank.": "도시를 비워둘 수 없어요.",
+                "City can't be blank": "도시를 비워둘 수 없어요",
+            "Country/Region": "국가/지역",
+                "Country code can't be blank.": "국가 코드를 비워둘 수 없어요.",
+                "Country code can't be blank": "국가 코드를 비워둘 수 없어요",
+                "Choose your country": "국가를 선택하세요",
+            "State/Province": "주/도",
+                "Required for certain countries": "특정 국가의 경우 필수",
+            "Postal/Zip code": "우편번호",
+                "(9-digit zip code for US)": "(미국의 경우 9자리 우편번호)",
+            "VAT/GST ID": "VAT/GST ID",
 
-            "Save and continue": "保存并继续",
+            "Save and continue": "저장하고 계속하기",
     },
     "regexp": [
         [/Payment due (.+)/, (match, p1) => {
         const dateRegExp = I18N["ko-KR"]["public"]["time-regexp"];
         const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
-        return `${translatedDate}结算`;
+        return `${translatedDate} 결제 예정`;
         }],
     ],
 };
@@ -19173,293 +19195,293 @@ I18N["ko-KR"]["marketplace"] = { // GitHub 장터
     ],
 };
 
-I18N["ko-KR"]["apps"] = { // GitHub 应用
-    "static": { // 静态翻译
+I18N["ko-KR"]["apps"] = { // GitHub 앱
+    "static": { // 정적 번역
 
-        // GitHub 应用页面 https://github.com/apps/<app-name>
-        // 示例: https://github.com/apps/codacy-production
-            "GitHub App": "GitHub 应用",
+        // GitHub 앱 페이지 https://github.com/apps/<app-name>
+        // 예시: https://github.com/apps/codacy-production
+            "GitHub App": "GitHub 앱",
 
-            "No description": "尚无描述",
+            "No description": "설명이 아직 없어요",
 
-            "Read more about this app on the Marketplace": "了解更多关于市场中此应用的信息",
+            "Read more about this app on the Marketplace": "장터에서 이 앱에 대한 자세한 정보 알아보기",
 
-            // 未安装
-                "Install": "安装",
-                "Next: Confirm your installation location.": "下一步：确认您的安装位置.",
+            // 미설치
+                "Install": "설치하기",
+                "Next: Confirm your installation location.": "다음: 설치 위치를 확인해주세요.",
 
-            // 已安装
-                "Configure": "设置",
-                "Manage your installation settings.": "管理安装设置.",
+            // 설치됨
+                "Configure": "구성하기",
+                "Manage your installation settings.": "설치 설정을 관리하세요.",
 
-            // 私有 App
-                "Learn more about GitHub Apps": "了解更多关于 GitHub 应用的信息",
+            // 비공개 앱
+                "Learn more about GitHub Apps": "GitHub 앱에 대해 더 알아보기",
 
-            "Developer": "开发者",
-                "App settings": "应用设置", // 已安装
-                "Website": "网站",
+            "Developer": "개발자",
+                "App settings": "앱 설정", // 설치됨
+                "Website": "웹사이트",
 
-            "is provided by a third-party and is governed by separate terms of service, privacy policy, and support documentation.": "是由第三方提供的，并受单独的服务条款、隐私政策和支持文档的约束.",
+            "is provided by a third-party and is governed by separate terms of service, privacy policy, and support documentation.": "는 제3자가 제공하며 별도의 서비스 약관, 개인정보처리방침 및 지원 문서의 적용을 받습니다.",
 
-            "Report abuse": "남용 신고",
+            "Report abuse": "악용 사례 신고",
 
-        // GitHub 应用 安装、授权页面 https://github.com/apps/<app-name>/installations/new/permissions?target_id=<id>
-        // 示例 https://github.com/apps/codacy-production/installations/new/permissions?target_id=7850715
-            "Install & Authorize": "安装与授权",
-            "Authorize & Request": "授权与请求", // 他人的组织
-            "Request": "请求",
-            // [/Install & Authorize on your personal account (.*)/, "在您的个人账户 $1 上安装与授权"],
-            // [/Install on your personal account (.*)/, "在您的个人账户 $1 上安装"],
-            // [/Install & Authorize on your organization (.*)/, "在您的组织 $1 上安装与授权"], // 组织
-            // [/Install on your organization (.*)/, "在您的组织 $1 上安装"], // 组织
-            // [/Request on your organization (.*)/, "对于您的组织 $1 的请求"], // 组织
-            // [/Authorize & Request on your organization (.*)/, "对于您的组织 $1 的授权与请求"], // 组织
+        // GitHub 앱 설치, 승인 페이지 https://github.com/apps/<app-name>/installations/new/permissions?target_id=<id>
+        // 예시 https://github.com/apps/codacy-production/installations/new/permissions?target_id=7850715
+            "Install & Authorize": "설치 및 승인하기",
+            "Authorize & Request": "승인 및 요청하기", // 타인의 조직
+            "Request": "요청하기",
+            // [/Install & Authorize on your personal account (.*)/, "나의 개인 계정 $1에 설치 및 승인하기"],
+            // [/Install on your personal account (.*)/, "나의 개인 계정 $1에 설치하기"],
+            // [/Install & Authorize on your organization (.*)/, "나의 조직 $1에 설치 및 승인하기"], // 조직
+            // [/Install on your organization (.*)/, "나의 조직 $1에 설치하기"], // 조직
+            // [/Request on your organization (.*)/, "나의 조직 $1에 요청하기"], // 조직
+            // [/Authorize & Request on your organization (.*)/, "나의 조직 $1에 승인 및 요청하기"], // 조직
 
-            "for these repositories:": "对于这些仓库：",
-                "All repositories": "所有仓库",
-                    "This applies to all current": "这适用于资源所有者拥有的所有当前",
-                    "and": "그리고",
-                    "future repositories owned by the resource owner.": "未来的仓库.",
-                    "Also includes public repositories (read-only).": "还包括公共仓库（只读）.",
-                "Only select repositories": "仅选定的仓库",
-                    "Select at least one repository.": "至少选择一个仓库.",
-                    "Select repositories": "选择仓库",
-                        "Search for a repository": "搜索仓库",
-                        // [/Selected (\d+) repositor(y|ies)./, "已选择 $1 仓库."],
-                        "request": "请求",
+            "for these repositories:": "다음 저장소에 대해:",
+                "All repositories": "모든 저장소",
+                    "This applies to all current": "이는 리소스 소유자가 소유한 모든 현재",
+                    "and": "및",
+                    "future repositories owned by the resource owner.": "미래의 저장소에 적용돼요.",
+                    "Also includes public repositories (read-only).": "공개 저장소(읽기 전용)도 포함돼요.",
+                "Only select repositories": "선택한 저장소만",
+                    "Select at least one repository.": "하나 이상의 저장소를 선택해주세요.",
+                    "Select repositories": "저장소 선택하기",
+                        "Search for a repository": "저장소 검색하기",
+                        // [/Selected (\d+) repositor(y|ies)./, "$1개의 저장소가 선택되었어요."],
+                        "request": "요청",
 
-            "with these permissions:": "授权以下权限：",
+            "with these permissions:": "다음 권한으로:",
 
-            // >>>>>具体的权限不打算汉化<<<<<<<
-            // >>>>>具体的权限不打算汉化<<<<<<<
+            // >>>>>구체적인 권한은 번역하지 않을 예정<<<<<<<
+            // >>>>>구체적인 권한은 번역하지 않을 예정<<<<<<<
 
-            "User permissions": "用户权限",
-            // [/Installing and authorizing (.*) immediately grants these permissions on your account:/, "安装 & 授权 $1 会立即在您的账户上授予以下权限："],
-            // [/can also request users' permission to the following resources. These permissions will be requested and authorized on an individual-user basis./, "还可以请求用户对以下资源的许可.这些权限将在个人用户的基础上请求和授权."],
-            "These permissions will also be requested and authorized as needed on an individual-user basis.": "这些权限也将根据个人用户的需要进行申请和授权.", // 组织
+            "User permissions": "사용자 권한",
+            // [/Installing and authorizing (.*) immediately grants these permissions on your account:/, "$1 설치 및 승인 시 나의 계정에 다음 권한이 즉시 부여돼요:"],
+            // [/can also request users' permission to the following resources. These permissions will be requested and authorized on an individual-user basis./, "또한 다음 리소스에 대한 사용자 권한을 요청할 수 있어요. 이 권한은 개별 사용자별로 요청되고 승인돼요."],
+            "These permissions will also be requested and authorized as needed on an individual-user basis.": "이 권한들은 개별 사용자별로 필요에 따라 요청되고 승인될 거예요.", // 조직
 
-            "Installing & Authorizing": "安装与授权中",
-            "Installing": "安装中",
-            "Requesting": "请求中",
+            "Installing & Authorizing": "설치 및 승인 중",
+            "Installing": "설치 중",
+            "Requesting": "요청 중",
 
-            "Next: you'll be redirected to": "下一步：您将被重定向到",
-            "Next: you’ll be directed to the GitHub App’s site to complete setup.": "下一步：您将被引导到GitHub 应用网站完成设置.", // 组织
+            "Next: you'll be redirected to": "다음: 다음으로 리디렉션돼요:",
+            "Next: you’ll be directed to the GitHub App’s site to complete setup.": "다음: 설정을 완료하기 위해 GitHub 앱 사이트로 이동될 거예요.", // 조직
 
-        // 应用设置 - 选择目标 https://github.com/apps/<app-name>/installations/select_target
-            // [/Install (.*)/, "安装 $1"],
-            // [/Where do you want to install (.*)\?/, "您想把 $1 安装在哪里？"],
-            // [/(.*) is installed. Click to configure./, "$1 已安装.点击进行配置."],
+        // 앱 설정 - 대상 선택 https://github.com/apps/<app-name>/installations/select_target
+            // [/Install (.*)/, "$1 설치하기"],
+            // [/Where do you want to install (.*)\?/, "$1을(를) 어디에 설치하시겠어요?"],
+            // [/(.*) is installed. Click to configure./, "$1이(가) 설치되었어요. 클릭하여 구성하세요."],
 
     },
-    "regexp": [ // 正则翻译
-        [/Install & Authorize on your personal account (.*)/, "在您的个人账户 $1 上安装与授权"],
-        [/Install & Authorize on your organization (.*)/, "在您的组织 $1 上安装与授权"], // 组织
-        [/Install on your personal account (.*)/, "在您的个人账户 $1 上安装"],
-        [/Install on your organization (.*)/, "在您的组织账户 $1 上安装"],
-        [/Selected (\d+) repositor(y|ies)./, "已选择 $1 仓库."],
-        [/Installing and authorizing (.*) immediately grants these permissions on your account:/, "安装与授权 $1 会立即在您的账户上授予以下权限："],
-        [/can also request users' permission to the following resources. These permissions will be requested and authorized on an individual-user basis./, "还可以请求用户对以下资源的许可.这些权限将在个人用户的基础上请求和授权."],
-        [/Authorize & Request on your organization (.*)/, "对于您的组织 $1 的授权与请求"], // 组织
-        [/Request on your organization (.*)/, "对于您的组织 $1 的请求"], // 组织
-        [/Install (.*)/, "安装 $1"],
-        [/Where do you want to install (.*)\?/, "您想把 $1 安装在哪里？"],
-        [/(.*) is installed. Click to configure./, "$1 已安装.点击进行配置."],
+    "regexp": [ // 정규식 번역
+        [/Install & Authorize on your personal account (.*)/, "나의 개인 계정 $1에 설치 및 승인하기"],
+        [/Install & Authorize on your organization (.*)/, "나의 조직 $1에 설치 및 승인하기"], // 조직
+        [/Install on your personal account (.*)/, "나의 개인 계정 $1에 설치하기"],
+        [/Install on your organization (.*)/, "나의 조직 계정 $1에 설치하기"],
+        [/Selected (\d+) repositor(y|ies)./, "$1개의 저장소가 선택되었어요."],
+        [/Installing and authorizing (.*) immediately grants these permissions on your account:/, "$1 설치 및 승인 시 나의 계정에 다음 권한이 즉시 부여돼요:"],
+        [/can also request users' permission to the following resources. These permissions will be requested and authorized on an individual-user basis./, "또한 다음 리소스에 대한 사용자 권한을 요청할 수 있어요. 이 권한은 개별 사용자별로 요청되고 승인돼요."],
+        [/Authorize & Request on your organization (.*)/, "나의 조직 $1에 승인 및 요청하기"], // 조직
+        [/Request on your organization (.*)/, "나의 조직 $1에 요청하기"], // 조직
+        [/Install (.*)/, "$1 설치하기"],
+        [/Where do you want to install (.*)\?/, "$1을(를) 어디에 설치하시겠어요?"],
+        [/(.*) is installed. Click to configure./, "$1이(가) 설치되었어요. 클릭하여 구성하세요."],
     ],
 };
 
-I18N["ko-KR"]["orgs"] = { // 组织页面
-    "static": { // 静态翻译
-        //>>>>>>>>>>>>>>>>>> 组织主页/概况页 <<<<<<<<<<<<<<<<<<<<<
-            // [/doesn't have any pinned public repositories yet./, "还没有任何置顶的公共仓库."],
+I18N["ko-KR"]["orgs"] = { // 조직 페이지
+    "static": { // 정적 번역
+        //>>>>>>>>>>>>>>>>>> 조직 메인/개요 페이지 <<<<<<<<<<<<<<<<<<<<<
+            // [/doesn't have any pinned public repositories yet./, "아직 고정된 공개 저장소가 없어요."],
 
-            "followers": "关注者",
-            "Sponsor": "후원",
+            "followers": "팔로워",
+            "Sponsor": "후원하기",
 
-            "Send feedback": "发送反馈",
+            "Send feedback": "피드백 보내기",
 
-            "Pinned": "已置顶",
-            "Popular repositories": "流行的仓库",
+            "Pinned": "고정됨",
+            "Popular repositories": "인기 있는 저장소",
 
-            // 仓库
-                // 搜索, 筛选 & 排序工具栏
-                "Find a repository…": "搜索仓库…",
-                // "Type": "유형", // 与全局冲突 使用 Selector 规则翻译
-                    // 下拉菜单
-                    "Select type": "选择类型",
-                    "All": "全部",
+            // 저장소
+                // 검색, 필터 & 정렬 도구 모음
+                "Find a repository…": "저장소 찾기…",
+                // "Type": "유형", // 전역 충돌, Selector 규칙으로 번역
+                    // 드롭다운 메뉴
+                    "Select type": "유형 선택하기",
+                    "All": "전체",
                     "Public": "공개",
                     "Private": "비공개",
-                    "Sources": "源码",
-                    "Forks": "复刻",
+                    "Sources": "소스",
+                    "Forks": "포크",
                     "Archived": "보관됨",
-                    "Can be sponsored": "可赞助",
-                    "Mirrors": "镜像",
-                    "Templates": "模板",
-                "Language": "语言",
-                    // 下拉菜单
-                    "Select language": "选择语言",
-                    "All languages": "所有语言",
-                "Sort": "排序",
-                    // 下拉菜单
-                    "Select order": "选择排序",
-                    "Last updated": "最近更新",
-                    "Name": "仓库名",
-                    // "Recently starred": "最近星标",
-                    // "Recently active": "最近活跃",
-                    // "Most stars": "最多星标",
-                    // "Unstar": "取消星标",
-                "New": "新建",
+                    "Can be sponsored": "후원 가능",
+                    "Mirrors": "미러",
+                    "Templates": "템플릿",
+                "Language": "언어",
+                    // 드롭다운 메뉴
+                    "Select language": "언어 선택하기",
+                    "All languages": "모든 언어",
+                "Sort": "정렬",
+                    // 드롭다운 메뉴
+                    "Select order": "정렬 순서 선택하기",
+                    "Last updated": "최신 업데이트순",
+                    "Name": "이름순",
+                    // "Recently starred": "최근 별표순",
+                    // "Recently active": "최근 활동순",
+                    // "Most stars": "가장 많은 별표순",
+                    // "Unstar": "별표 취소하기",
+                "New": "새로 만들기",
 
-                // 筛选结果
-                "result for": "个结果在",
-                "results for": "个结果在",
+                // 필터 결과
+                "result for": "개의 결과:",
+                "results for": "개의 결과:",
                     "public": "공개",
                     "private": "비공개",
-                    "source": "源码",
-                    "forked": "复刻",
+                    "source": "소스",
+                    "forked": "포크됨",
                     "archived": "보관됨",
-                    "sponsorable": "可赞助",
-                    "mirror": "镜像",
-                    "template": "模板",
-                "repositories matching": "仓库中匹配了",
-                // "result for repositories matching": "个结果在仓库中匹配了",
-                // "results for repositories matching": "个结果在仓库中匹配了",
-                // "repositories sorted by": "仓库，排序按",
-                "written in": "，使用语言",
-                // "results for repositories written in": "个结果在仓库中使用语言",
+                    "sponsorable": "후원 가능",
+                    "mirror": "미러",
+                    "template": "템플릿",
+                "repositories matching": "와(과) 일치하는 저장소",
+                // "result for repositories matching": "개의 결과, 저장소에서 일치:",
+                // "results for repositories matching": "개의 결과, 저장소에서 일치:",
+                // "repositories sorted by": "저장소, 정렬 기준:",
+                "written in": ", 사용 언어:",
+                // "results for repositories written in": "개의 결과, 저장소 사용 언어:",
                 // "star matching": "개의 검색 결과 |", //?tab=stars
                 // "stars matching": "개의 검색 결과 |", //?tab=stars
                 // "star written in": "개의 검색 결과 |", //?tab=stars
                 // "stars written in": "개의 검색 결과 |", //?tab=stars
-                "repositories sorted by": "仓库，排序按",
-                "sorted by": "，排序按",
-                    "last updated": "最近更新",
-                    "name": "仓库名",
-                    "stars": "星标",
-                "all": "所有",
-                "repositories written in": "仓库中使用语言",
+                "repositories sorted by": "저장소 정렬 기준:",
+                "sorted by": ", 정렬 기준:",
+                    "last updated": "최신 업데이트순",
+                    "name": "이름순",
+                    "stars": "별표순",
+                "all": "전체",
+                "repositories written in": "언어로 작성된 저장소",
 
-                "Clear filter": "清除筛选",
+                "Clear filter": "필터 지우기",
 
-                // [/([^ ]+) doesn’t have any repositories that match./, "$1 没有任何匹配的仓库"],
-                "No repositories matched your search.": "没有与您的搜索相匹配的仓库.",
+                // [/([^ ]+) doesn’t have any repositories that match./, "$1에 일치하는 저장소가 없어요."],
+                "No repositories matched your search.": "검색과 일치하는 저장소가 없어요.",
 
-                // 项目 状态词
-                "Updated": "更新于",
-                "Forked from": "复刻自",
+                // 프로젝트 상태 단어
+                "Updated": "업데이트:",
+                "Forked from": "다음에서 포크함:",
 
 
-            // 右侧栏
-                "View as:": "浏览：",
-                    "Switch profile context": "切换视角",
-                    "Member": "成员",
+            // 오른쪽 사이드바
+                "View as:": "다음으로 보기:",
+                    "Switch profile context": "프로필 컨텍스트 전환하기",
+                    "Member": "멤버",
 
-                // 公共视角
-                    "You are viewing the README and pinned repositories as a public user.": "您正在以公共用户的身份查看自述文件和置顶仓库.",
+                // 공개 시점
+                    "You are viewing the README and pinned repositories as a public user.": "현재 공개 사용자 신분으로 README와 고정된 저장소를 보고 있어요.",
 
-                // 组织成员视角
-                    // [/You are viewing the README and pinned repositories as a member of the ([^ ]+) organization./, "您正在以 $1 组织成员的身份查看自述文件和置顶仓库."],
+                // 조직 멤버 시점
+                    // [/You are viewing the README and pinned repositories as a member of the ([^ ]+) organization./, "현재 $1 조직의 멤버로 README와 고정된 저장소를 보고 있어요."],
 
-                "You can": "您可以",
-                "pin repositories": "置顶仓库",
-                "visible to anyone.": "让任何人都能看到.",
-                "visible only to members of the organization.": "仅对组织成员可见.",
+                "You can": "다음을 할 수 있어요:",
+                "pin repositories": "저장소 고정하기",
+                "visible to anyone.": "모두에게 표시돼요.",
+                "visible only to members of the organization.": "조직 멤버에게만 표시돼요.",
 
-                "Get started with tasks": "开始任务",
-                "that most successful organizations complete.": "大多数成功的组织都会完成.",
-                "hide the tasks we've suggested": "隐藏我们建议的任务",
-                "on this page and bring them back later.": "在此页面上，以后再把它们带回来.",
+                "Get started with tasks": "작업 시작하기",
+                "that most successful organizations complete.": "대부분의 성공적인 조직이 완료하는 작업이에요.",
+                "hide the tasks we've suggested": "우리가 제안한 작업 숨기기",
+                "on this page and bring them back later.": "이 페이지에서 숨기고 나중에 다시 표시할 수 있어요.",
 
-                "Top discussions this past month": "上个月的热门讨论",
-                    "Nothing to see here yet!": "这里还没什么可看的!",
-                    "Discussions are for sharing announcements, creating conversation in your community, answering questions, and more.": "讨论是为了分享公告，在您的社区创建对话，回答问题，以及更多.",
-                    "Start a new discussion": "开始新的讨论",
-                    "View all discussions": "查看全部讨论", // 组织讨论
+                "Top discussions this past month": "지난달의 인기 토론",
+                    "Nothing to see here yet!": "아직 볼 내용이 없어요!",
+                    "Discussions are for sharing announcements, creating conversation in your community, answering questions, and more.": "토론은 공지사항 공유, 커뮤니티 대화 생성, 질문 답변 등 다양한 용도로 사용돼요.",
+                    "Start a new discussion": "새 토론 시작하기",
+                    "View all discussions": "모든 토론 보기", // 조직 토론
 
-                // "People": "成员",
-                    "This organization has no public members. You must be a member to see who’s a part of this organization.": "该组织没有公共成员.您必须是成员才能查看谁是该组织的成员.",
-                    "Invite someone": "邀请他人",
-                        // 邀请对话框
-                        // [/Invite a member to/, "邀请成员加入"],
-                        "Search by username, full name or email address": "搜索用户名，全名或邮箱地址：",
-                        "Invite": "邀请",
-                        "Invite a billing manager": "邀请一位账单管理员",
-                        "Authenticate your members with SAML single sign-on": "使用 SAML 单一登录对您的成员进行身份验证",
-                        "Try risk-free for 30 days": "无风险试用 30 天",
-                        "learn more about SAML": "了解更多关于 SAML 的信息",
-                        ", or": "，或",
-                        "dismiss this message": "忽略此消息",
-                    "View all": "查看全部",
+                // "People": "멤버",
+                    "This organization has no public members. You must be a member to see who’s a part of this organization.": "이 조직에는 공개 멤버가 없어요. 조직의 멤버가 되어야 누가 속해 있는지 볼 수 있어요.",
+                    "Invite someone": "초대하기",
+                        // 초대 대화상자
+                        // [/Invite a member to/, "멤버 초대하기:"],
+                        "Search by username, full name or email address": "사용자 이름, 전체 이름 또는 이메일 주소로 검색하세요:",
+                        "Invite": "초대하기",
+                        "Invite a billing manager": "결제 관리자 초대하기",
+                        "Authenticate your members with SAML single sign-on": "SAML SSO(Single Sign-On)로 멤버 인증하기",
+                        "Try risk-free for 30 days": "30일 동안 위험 부담 없이 체험해보세요",
+                        "learn more about SAML": "SAML에 대해 더 알아보기",
+                        ", or": ", 또는",
+                        "dismiss this message": "이 메시지 닫기",
+                    "View all": "모두 보기",
 
-                "Top languages": "热门语言",
-                    "Loading…": "载入中…",
-                "Most used topics": "最常用的话题",
-                "Developer Program Member": "开发者计划成员",
-                "Report abuse": "남용 신고",
+                "Top languages": "인기 언어",
+                    "Loading…": "불러오는 중…",
+                "Most used topics": "가장 많이 사용된 주제",
+                "Developer Program Member": "개발자 프로그램 멤버",
+                "Report abuse": "악용 사례 신고",
 
-            "Create new repository": "新建仓库",
-            "Import": "导入",
+            "Create new repository": "새 저장소 만들기",
+            "Import": "가져오기",
 
-            "This organization has no repositories.": "该组织暂无仓库.",
-            "View all repositories": "查看所有仓库",
+            "This organization has no repositories.": "이 조직에는 저장소가 없어요.",
+            "View all repositories": "모든 저장소 보기",
 
-            // 设置置顶
-            "Edit pinned repositories": "设置置顶项目",
-            "Select up to six public repositories you'd like to show to anyone.": "最多选择 6 个您想向任何人展示的公共仓库.",
-            "Select up to six public, internal, or private repositories you'd like to show only to members of the organization.": "最多选择 6 个您想仅向组织成员展示的公共、内部或私有仓库.",
-            "No repositories or gists found.": "没有发现仓库或 Gists.",
-            // 顶部提醒
-            "You’re not a member of any teams in this organization.": "您不是该组织中任何团队的成员.",
-            "invited you to join the": "邀请您加入",
-            "organization": "组织",
-            "View invitation": "查看邀请",
+            // 고정 설정
+            "Edit pinned repositories": "고정된 저장소 편집하기",
+            "Select up to six public repositories you'd like to show to anyone.": "모든 사람에게 보여주고 싶은 공개 저장소를 최대 6개까지 선택하세요.",
+            "Select up to six public, internal, or private repositories you'd like to show only to members of the organization.": "조직 멤버에게만 보여주고 싶은 공개, 내부 또는 비공개 저장소를 최대 6개까지 선택하세요.",
+            "No repositories or gists found.": "저장소나 gists를 찾을 수 없어요.",
+            // 상단 알림
+            "You’re not a member of any teams in this organization.": "사용자님은 이 조직의 어떤 팀에도 속해 있지 않아요.",
+            "invited you to join the": "님이 다음 조직에 초대했어요:",
+            "organization": "조직",
+            "View invitation": "초대 보기",
 
-            // 新组织 入门任务
-            "We think you’re gonna like it here.": "我们认为您会喜欢这里的.",
-            "We’ve suggested some tasks here in your organization's overview to help you get started.": "我们在这里就您的组织概况提出了一些任务，以帮助您开始工作.",
-            "Invite your people": "邀请同伴",
-                "Invite your first member": "邀请首位成员",
-                    "Find people by their GitHub username or email address.": "通过 GitHub 用户名或电子邮件地址找到他们.",
-                "Customize members' permissions": "自定义成员权限",
-                    "Set everyone’s base permissions for your code.": "为您的代码设置每个人的基本权限.",
-            "Collaborative coding": "协助编码",
-                "See more about collaborative coding": "查看更多关于协作式编码的信息",
-                "Create a pull request": "创建拉取请求",
-                    "Propose and collaborate on changes to a repository.": "就对仓库的更改提出建议并进行协作.",
-                "Create a branch protection rule": "创建分支保护规则",
-                    "Enforce certain workflows for one or more branches.": "为一个或多个分支强制执行某些工作流程.",
-            "Automation and CI/CD": "自动化和 CI/CD",
-                "See more about automation and CI/CD": "查看更多关于自动化和 CI/CD 的信息",
-                "Auto-assign new issues": "自动分配新이슈",
-                    "Try automatically assigning work with GitHub Actions.": "尝试使用 GitHub Actions 自动分配工作.",
-                "Run a continuous integration test": "运行持续集成测试",
-                    "Validate your code using a CI workflow.": "使用 CI 工作流程验证您的代码.",
-            "Discover new GitHub features": "发现 GitHub 的新功能",
-                "See all features": "查看所有功能",
-                "Client apps": "客户端应用",
-                "Project management": "项目管理",
-                "Team administration": "团队管理",
-                "Community": "社区",
+            // 새 조직 시작하기 작업
+            "We think you’re gonna like it here.": "이곳을 좋아하게 되실 거예요.",
+            "We’ve suggested some tasks here in your organization's overview to help you get started.": "시작에 도움이 되도록 조직 개요에 몇 가지 작업을 제안해 드렸어요.",
+            "Invite your people": "동료 초대하기",
+                "Invite your first member": "첫 멤버 초대하기",
+                    "Find people by their GitHub username or email address.": "GitHub 사용자 이름이나 이메일 주소로 사람들을 찾아보세요.",
+                "Customize members' permissions": "멤버 권한 맞춤 설정하기",
+                    "Set everyone’s base permissions for your code.": "나의 코드에 대한 모든 사람의 기본 권한을 설정하세요.",
+            "Collaborative coding": "협업 코딩",
+                "See more about collaborative coding": "협업 코딩에 대해 더 알아보기",
+                "Create a pull request": "끌어오기 요청 만들기",
+                    "Propose and collaborate on changes to a repository.": "저장소 변경 사항을 제안하고 협업하세요.",
+                "Create a branch protection rule": "분기 보호 규칙 만들기",
+                    "Enforce certain workflows for one or more branches.": "하나 이상의 분기에 특정 워크플로를 강제하세요.",
+            "Automation and CI/CD": "자동화 및 CI/CD",
+                "See more about automation and CI/CD": "자동화 및 CI/CD에 대해 더 알아보기",
+                "Auto-assign new issues": "새 이슈 자동 할당하기",
+                    "Try automatically assigning work with GitHub Actions.": "GitHub 액션을 사용하여 작업을 자동으로 할당해보세요.",
+                "Run a continuous integration test": "지속적 통합 테스트 실행하기",
+                    "Validate your code using a CI workflow.": "CI 워크플로를 사용하여 코드를 검증하세요.",
+            "Discover new GitHub features": "새로운 GitHub 기능 발견하기",
+                "See all features": "모든 기능 보기",
+                "Client apps": "클라이언트 앱",
+                "Project management": "프로젝트 관리",
+                "Team administration": "팀 관리",
+                "Community": "커뮤니티",
 
-            // 组织关注 指引框
-                "You can now follow organizations": "您现在可以关注组织",
-                "Organization activity like new discussions, sponsorships, and repositories will appear in": "组织活动，如新的讨论、赞助和仓库将出现在",
-                "your dashboard feed": "您的仪表板的信息上",
-                "OK, got it!": "好的，知道了！",
+            // 조직 팔로우 안내 상자
+                "You can now follow organizations": "이제 조직을 팔로우할 수 있어요",
+                "Organization activity like new discussions, sponsorships, and repositories will appear in": "새로운 토론, 후원, 저장소와 같은 조직 활동이 다음에 나타날 거예요:",
+                "your dashboard feed": "나의 대시보드 피드",
+                "OK, got it!": "네, 알겠어요!",
 
-            "This organization has no public repositories.": "该组织没有公共仓库.",
+            "This organization has no public repositories.": "이 조직에는 공개 저장소가 없어요.",
 
     },
-    "regexp": [ // 正则翻译
-        [/doesn't have any pinned public repositories yet./, "还没有任何置顶的公共仓库."],
-        [/You are viewing the README and pinned repositories as a member of the ([^ ]+) organization./, "您正在以 $1 组织成员的身份查看自述文件和置顶仓库."],
-        [/Invite a member to/, "邀请成员加入"],
-        [/\((\d+) issues? need help\)/, "($1 个이슈需要帮助)"],
-        [/([^ ]+)’s past year of commit activity/, "近几年 $1 的提交活动"],
+    "regexp": [ // 정규식 번역
+        [/doesn't have any pinned public repositories yet./, "아직 고정된 공개 저장소가 없어요."],
+        [/You are viewing the README and pinned repositories as a member of the ([^ ]+) organization./, "현재 $1 조직의 멤버로 README와 고정된 저장소를 보고 있어요."],
+        [/Invite a member to/, "멤버 초대하기:"],
+        [/\((\d+) issues? need help\)/, "($1개의 이슈에 도움이 필요해요)"],
+        [/([^ ]+)’s past year of commit activity/, "지난 1년간 $1의 커밋 활동"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
-    "selector": [ // 元素筛选器规则
-        ["#type-options > summary > span:nth-child(1)", "유형"], // 组织主页 --> 仓库标签页-->类型筛选器 Type
+    "selector": [ // 요소 선택자 규칙
+        ["#type-options > summary > span:nth-child(1)", "유형"], // 조직 메인 페이지 --> 저장소 탭 --> 유형 필터 Type
     ],
 };
 
@@ -19469,152 +19491,152 @@ I18N["ko-KR"]["orgs/projects"] = I18N["ko-KR"]["page-profile/projects"];
 
 I18N["ko-KR"]["orgs/packages"] = I18N["ko-KR"]["page-profile/packages"];
 
-I18N["ko-KR"]["orgs/people"] = { // 组织 - 成员标签卡
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/people"] = { // 조직 - 멤버 탭
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-public"]["static"],
 
-        // 成员标签页 https://github.com/orgs/<orgs-name>/people
-            // 左侧栏
-            "Organization permissions": "组织权限",
-            "Members": "成员",
-            "Outside collaborators": "外部协作者",
-            "Pending collaborators": "待定协作者",
-            "Invitations": "邀请",
-            "Failed invitations": "失败邀请",
-            "Security Managers": "安全管理员",
+        // 멤버 탭 https://github.com/orgs/<orgs-name>/people
+            // 왼쪽 사이드바
+            "Organization permissions": "조직 권한",
+            "Members": "멤버",
+            "Outside collaborators": "외부 협업자",
+            "Pending collaborators": "대기 중인 협업자",
+            "Invitations": "초대",
+            "Failed invitations": "실패한 초대",
+            "Security Managers": "보안 관리자",
 
-            "Find a member…": "搜索成员…",
+            "Find a member…": "멤버 검색…",
 
-            "Export": "导出",
-            "Invite member": "邀请成员",
+            "Export": "내보내기",
+            "Invite member": "멤버 초대하기",
 
-            "You are the only owner of this organization! We recommend a minimum of two people within each organization have the owner role.": "您是该组织的唯一所有者！我们建议每个组织内至少有两人担任所有者角色.",
-            "Dismiss": "忽略",
+            "You are the only owner of this organization! We recommend a minimum of two people within each organization have the owner role.": "사용자님은 이 조직의 유일한 소유자예요! 각 조직 내에 최소 두 명의 소유자 역할을 가진 사람이 있는 것을 권장해요.",
+            "Dismiss": "닫기",
 
-            "Filter by two-factor authentication": "按双因素身份验证筛选",
-            "Everyone": "所有人",
-            "Enabled": "启用",
-            "Disabled": "禁用",
-            "Required": "必须",
+            "Filter by two-factor authentication": "2단계 인증으로 필터링하기",
+            "Everyone": "모두",
+            "Enabled": "활성화됨",
+            "Disabled": "비활성화됨",
+            "Required": "필수",
 
-            "Membership": "成员",
-            "Filter by membership": "按成员筛选",
-            "Owners": "所有者",
-            "Member": "成员",
+            "Membership": "멤버십",
+            "Filter by membership": "멤버십으로 필터링하기",
+            "Owners": "소유자",
+            "Member": "멤버",
 
-            "Organization visibility": "组织可见性",
-            "Your membership is visible to everyone and is displayed on your public profile.": "您的成员资格对所有人都是可见的，并显示在您的个人资料上.",
-            "Your membership is only visible to other members of this organization.": "您的成员资格只对本组织的其他成员可见.",
+            "Organization visibility": "조직 공개 상태",
+            "Your membership is visible to everyone and is displayed on your public profile.": "나의 멤버십은 모든 사람에게 보이며 나의 공개 프로필에 표시돼요.",
+            "Your membership is only visible to other members of this organization.": "나의 멤버십은 이 조직의 다른 멤버에게만 보여요.",
 
-            "Owner": "所有者",
-            "Owners have full access to teams, settings, and repositories.": "所有者拥有对团队、设置和仓库的完全访问权限.",
-            // [/(\d+) teams?/, "$1 团队"],
-            // [/(\d+) roles?/, "$1 角色"],
+            "Owner": "소유자",
+            "Owners have full access to teams, settings, and repositories.": "소유자는 팀, 설정, 저장소에 대한 전체 접근 권한을 가져요.",
+            // [/(\d+) teams?/, "$1개 팀"],
+            // [/(\d+) roles?/, "$1개 역할"],
 
-            "Member settings": "成员设置",
-            "Manage": "管理",
-            "Change role…": "切换角色…",
-            "Convert to outside collaborator…": "转为外部协作者…",
-            "Remove from organization…": "从组织移除…",
+            "Member settings": "멤버 설정",
+            "Manage": "관리하기",
+            "Change role…": "역할 변경하기…",
+            "Convert to outside collaborator…": "외부 협업자로 전환하기…",
+            "Remove from organization…": "조직에서 제거하기…",
 
-            "This organization has no public members.": "该组织没有公开的成员.",
+            "This organization has no public members.": "이 조직에는 공개 멤버가 없어요.",
 
-            // 邀请对话框
-                // [/Invite a member to/, "邀请成员加入"],
-                "Search by username, full name or email address": "搜索用户名、全名、或电子邮箱",
-                "Invite": "邀请",
-                "Invite a billing manager": "邀请一位账单管理员",
-                "Authenticate members with": "对成员进行身份验证，使用",
-                "SAML single sign-on": "SAML 单点登录",
-                "Try it in a 30-day trial of GitHub Enterprise.": "尝试试用 30 天 GitHub 企业版",
-                "Start a free trial": "开始免费试用",
+            // 초대 대화상자
+                // [/Invite a member to/, "멤버 초대하기:"],
+                "Search by username, full name or email address": "사용자 이름, 전체 이름 또는 이메일 주소로 검색하세요",
+                "Invite": "초대하기",
+                "Invite a billing manager": "결제 관리자 초대하기",
+                "Authenticate members with": "다음으로 멤버 인증하기:",
+                "SAML single sign-on": "SAML SSO(Single Sign-On)",
+                "Try it in a 30-day trial of GitHub Enterprise.": "GitHub 기업 30일 평가판에서 사용해보세요.",
+                "Start a free trial": "무료 평가판 시작하기",
 
-            // 转换为外部协作者 对话框
-                // [/Convert ([^ ]+) to outside collaborator?/, "将 $1 转换为外部协作者？"],
-                "Converting members to outside collaborators will remove them from this organization and from all teams, and if they do not currently have access to any private repositories in the organization their seat will be reclaimed.": "将成员转换为外部协作者会将把他们从本组织和所有团队中移除，如果他们目前无法访问组织中的任何私有仓库，他们的席位将被收回.",
-                "Their repository access will be preserved by making them collaborators on all repositories that their teams gave them access to. They will retain access to repositories that they were previously collaborators on, but all other access to this organization’s repositories will be lost.": "通过使他们成为其团队授予他们访问权限的所有仓库的协作者，他们的仓库访问权限将得到保留.他们将保留对之前作为协作者的仓库的访问权限，但对该组织仓库的所有其他访问权限都将丢失.",
-                "Convert to outside collaborator": "转换为外部协作者",
+            // 외부 협업자로 전환 대화상자
+                // [/Convert ([^ ]+) to outside collaborator?/, "$1님을 외부 협업자로 전환하시겠어요?"],
+                "Converting members to outside collaborators will remove them from this organization and from all teams, and if they do not currently have access to any private repositories in the organization their seat will be reclaimed.": "멤버를 외부 협업자로 전환하면 이 조직과 모든 팀에서 제거되며, 현재 조직의 비공개 저장소에 접근 권한이 없는 경우 해당 멤버의 자리는 회수돼요.",
+                "Their repository access will be preserved by making them collaborators on all repositories that their teams gave them access to. They will retain access to repositories that they were previously collaborators on, but all other access to this organization’s repositories will be lost.": "팀이 접근 권한을 부여한 모든 저장소의 협업자로 만들어 저장소 접근 권한을 유지해요. 이전에 협업자였던 저장소에 대한 접근 권한은 유지되지만, 이 조직의 저장소에 대한 다른 모든 접근 권한은 사라져요.",
+                "Convert to outside collaborator": "외부 협업자로 전환하기",
 
-                //顶部提示
-                    "You can't remove yourself from the organization. Have another admin do this for you.": "您无法将自己从组织中删除.请让其他管理员代劳.",
-            // 移除成员 对话框
-                // [/Removing (\d+) members? from/, "移除 $1 名成员，从"],
-                "The following members will be removed:": "以下成员将被移除：",
-                "Remove members": "移除成员",
+                // 상단 알림
+                    "You can't remove yourself from the organization. Have another admin do this for you.": "스스로를 조직에서 제거할 수 없어요. 다른 관리자에게 요청하세요.",
+            // 멤버 제거 대화상자
+                // [/Removing (\d+) members? from/, "다음에서 $1명의 멤버 제거하기:"],
+                "The following members will be removed:": "다음 멤버가 제거될 거예요:",
+                "Remove members": "멤버 제거하기",
 
-                // 顶部提醒
-                    "You can't remove the last owner of this organization.": "您无法移除该组织的最后一位所有者.",
-            // 顶部提醒
-                "You publicized 1 membership.": "您公开了 1 名成员资格",
-                "You concealed 1 membership.": "您隐藏了 1 名成员资格",
+                // 상단 알림
+                    "You can't remove the last owner of this organization.": "이 조직의 마지막 소유자는 제거할 수 없어요.",
+            // 상단 알림
+                "You publicized 1 membership.": "1개의 멤버십을 공개했어요.",
+                "You concealed 1 membership.": "1개의 멤버십을 숨겼어요.",
 
-        // 成员管理 https://github.com/orgs/<orgs-name>/people/<user-name>
+        // 멤버 관리 https://github.com/orgs/<orgs-name>/people/<user-name>
 
-        // 成员权限详情 /orgs/<orgs-name>/people/<user-name>/repositories/<orgs-name>/<repo-name>
+        // 멤버 권한 상세 /orgs/<orgs-name>/people/<user-name>/repositories/<orgs-name>/<repo-name>
 
-        // 外部协作者 https://github.com/orgs/<orgs-name>/outside-collaborators
-            "Find a collaborator…": "寻找协作者…",
-            "Select all": "全选",
-            "No one outside of the organization has access to its repositories.": "组织外部的任何人都无法访问其仓库.",
+        // 외부 협업자 https://github.com/orgs/<orgs-name>/outside-collaborators
+            "Find a collaborator…": "협업자 검색…",
+            "Select all": "모두 선택",
+            "No one outside of the organization has access to its repositories.": "조직 외부의 누구도 해당 저장소에 접근할 수 없어요.",
 
-        // 待定协作者 https://github.com/orgs/<orgs-name>/pending_collaborators
-            "Find a pending collaborator…": "搜索待定协作者…",
-            "There aren't any pending collaborators.": "暂无任何待定的协作者",
+        // 대기 중인 협업자 https://github.com/orgs/<orgs-name>/pending_collaborators
+            "Find a pending collaborator…": "대기 중인 협업자 검색…",
+            "There aren't any pending collaborators.": "대기 중인 협업자가 없어요.",
 
-        // 待定邀请 https://github.com/orgs/<orgs-name>/people/pending_invitations
-            // 顶部提醒
-                // [/You've invited ([^ ]+) to ([^ ]+)! They'll be receiving an email shortly. They can also visit ([^ ]+) to accept the invitation./, "您已邀请 $1 加入到 $2 ！他们很快就会收到一封电子邮件.他们还可以访问 $3 接受邀请."],
-                // [/You've successfully updated ([^ ]+)'s invitation./, "您已成功更新 $1 的邀请."],
-                // [/You've canceled (\d+) invitations? from ([^ ]+). It may take a few minutes to process./, "您已经取消了来自 $2 的 $1 个邀请.可能需要几分钟处理."],
+        // 대기 중인 초대 https://github.com/orgs/<orgs-name>/people/pending_invitations
+            // 상단 알림
+                // [/You've invited ([^ ]+) to ([^ ]+)! They'll be receiving an email shortly. They can also visit ([^ ]+) to accept the invitation./, "$1님을 $2에 초대했어요! 곧 이메일을 받을 거예요. $3을(를) 방문하여 초대를 수락할 수도 있어요."],
+                // [/You've successfully updated ([^ ]+)'s invitation./, "$1님의 초대를 성공적으로 업데이트했어요."],
+                // [/You've canceled (\d+) invitations? from ([^ ]+). It may take a few minutes to process./, "$2(으)로부터의 초대 $1개를 취소했어요. 처리하는 데 몇 분 정도 걸릴 수 있어요."],
 
-            "Find an invitation…": "搜索邀请…",
+            "Find an invitation…": "초대 검색…",
 
-            "Role": "角色",
+            "Role": "역할",
 
-            "Source": "来源",
-            "Filter by invitation source": "按邀请来源筛选",
-            "All sources": "所有来源",
+            "Source": "출처",
+            "Filter by invitation source": "초대 출처로 필터링하기",
+            "All sources": "모든 출처",
 
-            // [/(\d+) invitations?/, "邀请"],
+            // [/(\d+) invitations?/, "초대"],
 
-            "Sort": "排序",
-            "Sort Order": "排序方式",
-            "Newest": "最新的",
-            "Oldest": "最早的",
+            "Sort": "정렬",
+            "Sort Order": "정렬 순서",
+            "Newest": "최신순",
+            "Oldest": "오래된순",
 
-            "No matching invitations.": "暂无匹配的邀请.",
+            "No matching invitations.": "일치하는 초대가 없어요.",
 
-            "Edit invitation": "编辑邀请",
-            "Cancel invitation": "取消邀请",
-                // [/Cancel invitation from ([^ ]+)/, "取消来自 $1 的邀请"],
-                "The following invitations will be canceled:": "以下邀请将被取消：",
+            "Edit invitation": "초대 편집하기",
+            "Cancel invitation": "초대 취소하기",
+                // [/Cancel invitation from ([^ ]+)/, "$1(으)로부터의 초대 취소하기"],
+                "The following invitations will be canceled:": "다음 초대가 취소될 거예요:",
 
-        // 失败邀请 https://github.com/orgs/<orgs-name>/people/failed_invitations
-            // [/(\d+) Failed invitations?/, "个失败邀请"],
-            "No failed invitations.": "暂无失败邀请.",
+        // 실패한 초대 https://github.com/orgs/<orgs-name>/people/failed_invitations
+            // [/(\d+) Failed invitations?/, "개의 실패한 초대"],
+            "No failed invitations.": "실패한 초대가 없어요.",
 
-        // 安全管理 https://github.com/orgs/<orgs-name>/people/security_managers
-            "Find a security manager…": "搜索安全管理员…",
+        // 보안 관리 https://github.com/orgs/<orgs-name>/people/security_managers
+            "Find a security manager…": "보안 관리자 검색…",
 
     },
-    "regexp": [ // 正则翻译
-        [/(\d+) teams?/, "$1 团队"],
-        [/(\d+) roles?/, "$1 角色"],
-        [/(\d+) Failed invitations?/, "$1 失败邀请"],
-        [/Invite a member to/, "邀请成员加入"],
-        [/Convert ([^ ]+) to outside collaborator?/, "将 $1 转换为外部协作者？"],
-        [/Removing (\d+) members? from/, "移除 $1 名成员，从"],
-        [/(\d+) pe(?:ople|rson) in the ([^ ]+) organization/, "$2 组织中的 $1 位成员"],
-        [/(\d+) security managers? in the ([^ ]+) organization/, "$2 组织中的 $1 位安全管理员"],
-        [/You've invited ([^ ]+) to ([^ ]+)! They'll be receiving an email shortly. They can also visit ([^ ]+) to accept the invitation./, "您已邀请 $1 加入到 $2 ！他们很快就会收到一封电子邮件.他们还可以访问 $3 接受邀请."],
-        [/You've successfully updated ([^ ]+)'s invitation./, "您已成功更新 $1 的邀请."],
-        [/Cancel invitation from ([^ ]+)/, "取消来自 $1 的邀请"],
-        [/You've canceled (\d+) invitations? from ([^ ]+). It may take a few minutes to process./, "您已经取消了来自 $2 的 $1 个邀请.可能需要几分钟处理."],
-        [/(\d+) invitations?/, "$1 邀请"],
+    "regexp": [ // 정규식 번역
+        [/(\d+) teams?/, "$1개 팀"],
+        [/(\d+) roles?/, "$1개 역할"],
+        [/(\d+) Failed invitations?/, "$1개의 실패한 초대"],
+        [/Invite a member to/, "멤버 초대하기:"],
+        [/Convert ([^ ]+) to outside collaborator?/, "$1님을 외부 협업자로 전환하시겠어요?"],
+        [/Removing (\d+) members? from/, "다음에서 $1명의 멤버 제거하기:"],
+        [/(\d+) pe(?:ople|rson) in the ([^ ]+) organization/, "$2 조직의 $1명 멤버"],
+        [/(\d+) security managers? in the ([^ ]+) organization/, "$2 조직의 $1명 보안 관리자"],
+        [/You've invited ([^ ]+) to ([^ ]+)! They'll be receiving an email shortly. They can also visit ([^ ]+) to accept the invitation./, "$1님을 $2에 초대했어요! 곧 이메일을 받을 거예요. $3을(를) 방문하여 초대를 수락할 수도 있어요."],
+        [/You've successfully updated ([^ ]+)'s invitation./, "$1님의 초대를 성공적으로 업데이트했어요."],
+        [/Cancel invitation from ([^ ]+)/, "$1(으)로부터의 초대 취소하기"],
+        [/You've canceled (\d+) invitations? from ([^ ]+). It may take a few minutes to process./, "$2(으)로부터의 초대 $1개를 취소했어요. 처리하는 데 몇 분 정도 걸릴 수 있어요."],
+        [/(\d+) invitations?/, "$1개 초대"],
         [/Invited on (.+)/, (match, p1) => {
             const dateRegExp = I18N["ko-KR"]["public"]["time-regexp"];
             const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
-            return `邀请于${translatedDate}`;
+            return `${translatedDate}에 초대됨`;
         }],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
    ],
@@ -19623,1706 +19645,1706 @@ I18N["ko-KR"]["orgs/outside-collaborators"] = I18N["ko-KR"]["orgs/people"];
 I18N["ko-KR"]["orgs/pending_collaborators"] = I18N["ko-KR"]["orgs/people"];
 
 
-I18N["ko-KR"]["orgs/teams"] = { // 组织 - 团队标签卡
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/teams"] = { // 조직 - 팀 탭
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-public"]["static"],
 
-        // 团队标签卡 https://github.com/orgs/<orgs-name>/teams
-            "Seamless communication with teams": "与团队的无缝沟通",
-            "Teams are a great way for groups of people to communicate and work on code together. Take a look at why they’re great.": "团队是一群人在一起交流和编写代码的好方法.看看为什么他们很棒.",
-            "Flexible repository access": "灵活的仓库访问",
-                "You can add repositories to your teams with more flexible levels of access (Admin, Write, Read).": "您可以将仓库添加到您的团队中，并有更灵活的访问级别（管理员、写入、读取）.",
-            "Request to join teams": "申请加入团队",
-                "Members can quickly request to join any team. An owner or team maintainer can approve the request.": "成员可以快速申请加入任何团队.一个所有者或团队维护者可以批准该请求.",
-            "Team mentions": "团队提及",
-                "Use team @mentions (ex.": "使用团队 @提及（例如",
-                "for the entire team) in any comment, issue, or pull request.": "对于整个团队）在任何评论、이슈或拉取请求中.",
-                "New team": "新建团队",
+        // 팀 탭 https://github.com/orgs/<orgs-name>/teams
+            "Seamless communication with teams": "팀과의 원활한 소통",
+            "Teams are a great way for groups of people to communicate and work on code together. Take a look at why they’re great.": "팀은 여러 사람이 함께 소통하고 코드 작업을 하는 좋은 방법이에요. 왜 좋은지 한번 살펴보세요.",
+            "Flexible repository access": "유연한 저장소 접근",
+                "You can add repositories to your teams with more flexible levels of access (Admin, Write, Read).": "더 유연한 접근 수준(관리자, 쓰기, 읽기)으로 팀에 저장소를 추가할 수 있어요.",
+            "Request to join teams": "팀 가입 요청하기",
+                "Members can quickly request to join any team. An owner or team maintainer can approve the request.": "멤버는 모든 팀에 신속하게 가입을 요청할 수 있어요. 소유자나 팀 관리자가 요청을 승인할 수 있어요.",
+            "Team mentions": "팀 언급",
+                "Use team @mentions (ex.": "팀 @언급(예:",
+                "for the entire team) in any comment, issue, or pull request.": "전체 팀)을 모든 댓글, 이슈 또는 끌어오기 요청에서 사용해보세요.",
+                "New team": "새 팀 만들기",
 
-            "Find a team…": "搜索团队……",
-            "Visibility": "可见性",
-                "All": "所有",
-            "Members": "成员",
-                "My teams": "我的团队",
-                "No members": "没有成员",
+            "Find a team…": "팀 검색…",
+            "Visibility": "공개 상태",
+                "All": "모두",
+            "Members": "멤버",
+                "My teams": "나의 팀",
+                "No members": "멤버 없음",
 
-        // 创建团队 /orgs/<org-login>/new-team
-            "Create new team": "新建团队",
-            "Team name": "团队名称",
-            "You’ll use this name to mention this team in conversations.": "您将使用此名称在对话中提及此团队.",
-            "Description": "描述",
-            "What is this team all about?": "这个团队是什么？",
-            "Parent team": "父团队",
-                "There are no teams that can be selected.": "没有可以选择的团队.",
-            "Team visibility": "团队可见性",
-                "Visible": "可见",
-                    "Recommended": "推荐",
-                    "A visible team can be seen and": "可见的团队可以被看到并",
-                    "@mentioned": "@提及",
-                    "by every member of this organization.": "本组织的每一位成员.",
-                "Secret": "私密",
-                    "A secret team can only be seen by its members and may not be nested.": "私密团队只能被其成员看到，而且不能被嵌套.",
-                "Team notifications": "团队通知",
-                    "Enabled": "启用",
-                        "Everyone will be notified when the team is @mentioned.": "当团队被 @提及 时，每个人都会收到通知.",
-                    "Disabled": "禁用",
-                        "No one will receive notifications.": "没有人会收到通知.",
-            "Create team": "创建团队",
+        // 팀 만들기 /orgs/<org-login>/new-team
+            "Create new team": "새 팀 만들기",
+            "Team name": "팀 이름",
+            "You’ll use this name to mention this team in conversations.": "대화에서 이 팀을 언급할 때 이 이름을 사용하게 될 거예요.",
+            "Description": "설명",
+            "What is this team all about?": "이 팀은 무엇에 관한 팀인가요?",
+            "Parent team": "상위 팀",
+                "There are no teams that can be selected.": "선택할 수 있는 팀이 없어요.",
+            "Team visibility": "팀 공개 상태",
+                "Visible": "공개",
+                    "Recommended": "권장",
+                    "A visible team can be seen and": "공개 팀은 볼 수 있으며",
+                    "@mentioned": "@언급될 수 있어요",
+                    "by every member of this organization.": "이 조직의 모든 멤버에 의해.",
+                "Secret": "비밀",
+                    "A secret team can only be seen by its members and may not be nested.": "비밀 팀은 해당 멤버만 볼 수 있으며 중첩될 수 없어요.",
+                "Team notifications": "팀 알림",
+                    "Enabled": "활성화됨",
+                        "Everyone will be notified when the team is @mentioned.": "팀이 @언급되면 모든 사람이 알림을 받아요.",
+                    "Disabled": "비활성화됨",
+                        "No one will receive notifications.": "아무도 알림을 받지 않아요.",
+            "Create team": "팀 만들기",
 
     },
-    "regexp": [ // 正则翻译
-        [/(\d+) members?/, "$1 成员"],
-        [/(\d+) teams?/, "$1 团队"],
+    "regexp": [ // 정규식 번역
+        [/(\d+) members?/, "$1명 멤버"],
+        [/(\d+) teams?/, "$1개 팀"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 I18N["ko-KR"]["orgs/new-team"]= I18N["ko-KR"]["orgs/teams"];
 
-I18N["ko-KR"]["orgs/invitations"] = { // 组织 - 邀请页面
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/invitations"] = { // 조직 - 초대 페이지
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-public"]["static"],
 
-        // 邀请 https://github.com/orgs/<orgs-name>/invitations/<user-name>/edit
-            // [/Invite ([^ ]+) to ([^ ]+)/, "邀请 $1 加入 $2 组织"],
-            "Give them an appropriate role in the organization and add them to some teams to give access to repositories.": "在组织中赋予他们适当的角色，并将他们添加到一些团队中，以便让他们访问仓库.",
-            "Role in the organization": "在组织中的角色",
-                "Member": "成员",
-                    "Members can see all other members, and can be granted access to repositories. They can also create new teams and repositories.": "成员可以看到所有其他成员，并可被授予访问仓库的权限.他们还可以创建新团队和仓库.",
-                "Owner": "所有者",
-                    "Owners have full administrative rights to the organization and have complete access to all repositories and teams.": "所有者拥有组织的全部管理权限，可以完全访问所有仓库和团队.",
-            "Send invitation": "发送邀请",
+        // 초대 https://github.com/orgs/<orgs-name>/invitations/<user-name>/edit
+            // [/Invite ([^ ]+) to ([^ ]+)/, "$2 조직에 $1님 초대하기"],
+            "Give them an appropriate role in the organization and add them to some teams to give access to repositories.": "조직에서 적절한 역할을 부여하고 일부 팀에 추가하여 저장소에 대한 접근 권한을 주세요.",
+            "Role in the organization": "조직 내 역할",
+                "Member": "멤버",
+                    "Members can see all other members, and can be granted access to repositories. They can also create new teams and repositories.": "멤버는 다른 모든 멤버를 볼 수 있으며 저장소에 대한 접근 권한을 부여받을 수 있어요. 또한 새 팀과 저장소를 만들 수도 있어요.",
+                "Owner": "소유자",
+                    "Owners have full administrative rights to the organization and have complete access to all repositories and teams.": "소유자는 조직에 대한 전체 관리 권한을 가지며 모든 저장소와 팀에 완전히 접근할 수 있어요.",
+            "Send invitation": "초대 보내기",
 
-        // 编辑模式
-            // [/Edit ([^ ]+)’s invitation to ([^ ]+)/, "编辑 $2 对 $1 的邀请"],
-            "Originally invited by": "最初由",
-            // [/. As an owner, you can give ([^ ]+) a different role and pick different teams for them./, "邀请.作为所有者，您可以赋予 $1 不同的角色，并为他们挑选不同的团队."],
-            "Cancel invitation": "取消邀请",
-            "Update invitation": "更新邀请",
+        // 편집 모드
+            // [/Edit ([^ ]+)’s invitation to ([^ ]+)/, "$2에 대한 $1님의 초대 편집하기"],
+            "Originally invited by": "최초 초대자:",
+            // [/. As an owner, you can give ([^ ]+) a different role and pick different teams for them./, " 님이 초대했어요. 소유자로서, $1님에게 다른 역할을 부여하고 다른 팀을 선택해줄 수 있어요."],
+            "Cancel invitation": "초대 취소하기",
+            "Update invitation": "초대 업데이트하기",
 
-        // 已通过邀请
-            // [/Invite a member to ([^ ]+)/, "邀请会员加入 $1"],
-            "Sorry,": "抱歉!",
-            // [/is already a member of ([^ ]+)./, "已经是 $1 的成员."],
+        // 이미 수락된 초대
+            // [/Invite a member to ([^ ]+)/, "$1에 멤버 초대하기"],
+            "Sorry,": "죄송합니다!",
+            // [/is already a member of ([^ ]+)./, "님은 이미 $1의 멤버예요."],
 
     },
-    "regexp": [ // 正则翻译
-        [/Invite ([^ ]+) to ([^ ]+)/, "邀请 $1 加入 $2"],
-        [/invitation to ([^ ]+)/, "关于组织 $1 的邀请"],
-        [/. As an owner, you can give ([^ ]+) a different role and pick different teams for them./, "邀请.作为所有者，您可以赋予 $1 不同的角色，并为他们挑选不同的团队."],
-        [/Invite a member to ([^ ]+)/, "邀请会员加入 $1"],
-        [/is already a member of ([^ ]+)./, "已经是 $1 的成员."],
+    "regexp": [ // 정규식 번역
+        [/Invite ([^ ]+) to ([^ ]+)/, "$2에 $1님 초대하기"],
+        [/invitation to ([^ ]+)/, "$1 조직에 대한 초대"],
+        [/. As an owner, you can give ([^ ]+) a different role and pick different teams for them./, " 님이 초대했어요. 소유자로서, $1님에게 다른 역할을 부여하고 다른 팀을 선택해줄 수 있어요."],
+        [/Invite a member to ([^ ]+)/, "$1에 멤버 초대하기"],
+        [/is already a member of ([^ ]+)./, "님은 이미 $1의 멤버예요."],
     ],
 };
 
-I18N["ko-KR"]["orgs/invitation"] = { // 组织 - 接受邀请页面
+I18N["ko-KR"]["orgs/invitation"] = { // 조직 - 초대 수락 페이지
     "static": {
 
-        // 接受邀请 https://github.com/<orgs-name>/invitation
-            "You’ve been invited to the": "您被邀请加入",
-                "organization!": "组织！",
+        // 초대 수락 https://github.com/<orgs-name>/invitation
+            "You’ve been invited to the": "다음 조직에 초대되었어요:",
+                "organization!": "조직!",
 
-            "Invited by": "邀请者：",
+            "Invited by": "초대자:",
 
-            // [/Join ([^ ]+)/, "加入 $1"],
-            "Decline": "拒绝",
+            // [/Join ([^ ]+)/, "$1에 참여하기"],
+            "Decline": "거절하기",
 
-            // [/of ([^ ]+) may be able to see:/, "$1 将可以查看："],
-            // 组织权限
-                "If you have": "您的",
-                    "two-factor authentication": "双重身份验证（2FA）",
-                    "enabled or not": "是否启用",
-                "Your public profile information": "您的公开信息",
-                "Certain activity": "某些活动",
-                    "within this organization": "在该组织内",
-                "Country of request origin": "请求来源国家/地区",
-                "Your access level to repositories within the organization": "您对组织内仓库的访问级别",
-                "Your IP address": "您的 IP 地址",
+            // [/of ([^ ]+) may be able to see:/, "$1의 관리자는 다음을 볼 수 있어요:"],
+            // 조직 권한
+                "If you have": "나의",
+                    "two-factor authentication": "2단계 인증(2FA)",
+                    "enabled or not": "활성화 여부",
+                "Your public profile information": "나의 공개 프로필 정보",
+                "Certain activity": "특정 활동",
+                    "within this organization": "이 조직 내에서의",
+                "Country of request origin": "요청 국가/지역",
+                "Your access level to repositories within the organization": "조직 내 저장소에 대한 나의 접근 수준",
+                "Your IP address": "나의 IP 주소",
 
-            "Opt out": "拒绝",
-                "of future invitations from this organization.": "该组织未来的邀请.",
-            "of future invitations from this organization.": "该组织未来的邀请.",
+            "Opt out": "거부하기:",
+                "of future invitations from this organization.": "이 조직의 향후 초대.",
+            "of future invitations from this organization.": "이 조직의 향후 초대.",
 
     },
     "regexp": [
-        [/Join ([^ ]+)/, "加入 $1"],
-        [/of ([^ ]+) may be able to see:/, "$1 将可以查看："],
+        [/Join ([^ ]+)/, "$1에 참여하기"],
+        [/of ([^ ]+) may be able to see:/, "$1의 관리자는 다음을 볼 수 있어요:"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/domain/new"] = { // 组织 - 添加域名
-    "static": { // 静态翻译
-        "Verified & approved domains": "经验证和批准的域名",
-        "Add a domain": "添加域名",
-        "What domain would you like to add?": "您想添加什么域名？",
-        "Add domain": "添加域名",
-        "Domain name has already been added": "域名已添加",
+I18N["ko-KR"]["orgs/domain/new"] = { // 조직 - 도메인 추가
+    "static": { // 정적 번역
+        "Verified & approved domains": "확인 및 승인된 도메인",
+        "Add a domain": "도메인 추가하기",
+        "What domain would you like to add?": "어떤 도메인을 추가하시겠어요?",
+        "Add domain": "도메인 추가하기",
+        "Domain name has already been added": "도메인 이름이 이미 추가되었어요.",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/profile"] = { // 组织设置 - 组织资料
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/profile"] = { // 조직 설정 - 조직 프로필
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 组织资料 /organizations/<org-login>/settings/profile
-            "Most organization settings are hidden for an archived organization. This organization must be unarchived to change them.": "对于已存档的组织，组织大多数设置都是隐藏的.必须取消对该组织的归档才能更改它们.",
+        // 조직 프로필 /organizations/<org-login>/settings/profile
+            "Most organization settings are hidden for an archived organization. This organization must be unarchived to change them.": "보관된 조직의 경우 대부분의 조직 설정이 숨겨져 있어요. 설정을 변경하려면 이 조직의 보관을 해제해야 해요.",
 
-            "Organization profile": "基本资料",
-                "Profile picture": "我的头像",
-                    "Upload new picture": "上传新头像",
-                    "Note: To apply for a publisher verification your organization's profile picture should not be irrelevant, abusive or vulgar. It should not be a default image provided by GitHub.": "注意：需要申请发布者验证，您的组织的个人资料图片不应该是不相关的、辱骂性的或粗俗的.它不应该是由 GitHub 提供的默认图片.",
-                "Organization display name": "组织显示名称",
-                "Email (will be public)": "公开电子邮箱",
-                "Description": "描述",
-                "URL": "网站",
-                "Social accounts": "社交账户",
-                "Link to social profile": "链接到社交账户",
-                "Location": "位置",
-                    "Select a location": "选择位置",
-                    "Find a location...": "搜索位置...",
-                    "Clear Location": "清除位置",
-                "Billing email": "账单电子邮箱",
-                "(Private)": "（私人）",
-                    "Add more billing email recipients in the": "添加更多的账单邮件收件人在",
-                    "billing page": "账单页面",
-                "Gravatar email": "Gravatar 电子邮箱",
-                "Sponsors update email": "赞助者更新电子邮箱",
-                    "The developers and organizations that your organization sponsors can send you updates to this email.": "您的组织赞助的开发人员和组织可以向您发送此电子邮箱的更新.",
-                "Update profile": "更新资料",
-                "Profile updated successfully": "资料更新成功.",
+            "Organization profile": "기본 프로필",
+                "Profile picture": "프로필 사진",
+                    "Upload new picture": "새 사진 업로드하기",
+                    "Note: To apply for a publisher verification your organization's profile picture should not be irrelevant, abusive or vulgar. It should not be a default image provided by GitHub.": "참고: 게시자 인증을 신청하려면 조직의 프로필 사진이 관련 없거나, 모욕적이거나, 저속해서는 안 돼요. GitHub에서 제공하는 기본 이미지여서도 안 돼요.",
+                "Organization display name": "조직 표시 이름",
+                "Email (will be public)": "이메일 (공개)",
+                "Description": "설명",
+                "URL": "웹사이트",
+                "Social accounts": "소셜 계정",
+                "Link to social profile": "소셜 프로필에 연결하기",
+                "Location": "위치",
+                    "Select a location": "위치 선택하기",
+                    "Find a location...": "위치 검색...",
+                    "Clear Location": "위치 지우기",
+                "Billing email": "결제 이메일",
+                "(Private)": "(비공개)",
+                    "Add more billing email recipients in the": "다음에서 결제 이메일 수신자 추가하기:",
+                    "billing page": "결제 페이지",
+                "Gravatar email": "Gravatar 이메일",
+                "Sponsors update email": "후원자 업데이트 이메일",
+                    "The developers and organizations that your organization sponsors can send you updates to this email.": "사용자님의 조직이 후원하는 개발자와 조직이 이 이메일로 업데이트를 보낼 수 있어요.",
+                "Update profile": "프로필 업데이트하기",
+                "Profile updated successfully": "프로필이 성공적으로 업데이트되었어요.",
 
-            "Link Patreon account": "关联 Patreon 账户",
-                "Connect a Patreon account for": "关联",
-                "to sponsor maintainers with. Get recognition on GitHub for sponsorships made on Patreon when the sponsored person has linked Patreon and GitHub, too, and has a public GitHub Sponsors profile.": "的 Patreon 账户，以便赞助维护者.当被赞助者也关联 Patreon 和 GitHub 账户时，在 Patreon 上获得的赞助也会显示在 GitHub 上，并显示 GitHub 赞助者的公开个人资料.",
-                "Connect with Patreon": "关联 Patreon 账户",
+            "Link Patreon account": "Patreon 계정 연결하기",
+                "Connect a Patreon account for": "다음을 위해 Patreon 계정 연결하기:",
+                "to sponsor maintainers with. Get recognition on GitHub for sponsorships made on Patreon when the sponsored person has linked Patreon and GitHub, too, and has a public GitHub Sponsors profile.": "의 Patreon 계정을 연결하여 유지보수자를 후원하세요. 후원받는 사람이 Patreon과 GitHub 계정을 연결하고 공개 GitHub Sponsors 프로필이 있는 경우, Patreon에서 이루어진 후원이 GitHub에도 표시돼요.",
+                "Connect with Patreon": "Patreon 계정 연결하기",
 
-            "GitHub Developer Program": "GitHub 开发者计划",
-                "Building an application, service, or tool that integrates with GitHub?": "构建应用、服务或工具，集成到 GitHub 吗？",
-                "Join the GitHub Developer Program": "加入 GitHub 开发者计划",
-                ", or read more about it at our": "，或了解更多信息在我们的",
-                "GitHub developer program": "GitHub 开发者计划",
-                "Check out the Developer site": "查看开发者站点，",
-                "for guides, our API reference, and other resources for building applications that integrate with GitHub. Make sure your contact information is up-to-date below. Thanks for being a member!": "以获取指南、我们的 API 参考和其他用于构建与 GitHub 集成的应用的资源.请确保您的联系信息是最新的.感谢您成为我们的成员！",
+            "GitHub Developer Program": "GitHub 개발자 프로그램",
+                "Building an application, service, or tool that integrates with GitHub?": "GitHub과 통합되는 앱, 서비스 또는 도구를 만들고 계신가요?",
+                "Join the GitHub Developer Program": "GitHub 개발자 프로그램에 참여하기",
+                ", or read more about it at our": ", 또는 다음에서 자세한 정보 알아보기:",
+                "GitHub developer program": "GitHub 개발자 프로그램",
+                "Check out the Developer site": "개발자 사이트에서",
+                "for guides, our API reference, and other resources for building applications that integrate with GitHub. Make sure your contact information is up-to-date below. Thanks for being a member!": " 가이드, API 참조 및 GitHub과 통합되는 앱을 만들기 위한 다른 리소스를 확인해보세요. 아래 연락처 정보가 최신인지 확인해주세요. 멤버가 되어주셔서 감사합니다!",
 
-            "Terms of Service": "服务条款",
-                "Standard": "标准",
-                    "Best for individuals wanting the freedom to move data and remain independent of a corporation.": "最适合希望自由移动数据并保持独立于公司的个人.",
-                    "Read the Standard Terms of Service": "阅读 “标准服务条款”",
-                "Corporate": "企业",
-                    "Best for businesses that need to protect their intellectual property and secure visibility into their data.": "最适合需要保护知识产权并确保数据可见性的企业.",
-                    "Read the GitHub customer agreement": "请阅读 GitHub 用户协议",
-                    "Sign GitHub customer terms": "签署 GitHub 用户条款",
+            "Terms of Service": "서비스 약관",
+                "Standard": "표준",
+                    "Best for individuals wanting the freedom to move data and remain independent of a corporation.": "데이터를 자유롭게 이동하고 기업으로부터 독립을 유지하려는 개인에게 가장 적합해요.",
+                    "Read the Standard Terms of Service": "“표준 서비스 약관” 읽기",
+                "Corporate": "기업",
+                    "Best for businesses that need to protect their intellectual property and secure visibility into their data.": "지적 재산을 보호하고 데이터 가시성을 확보해야 하는 기업에 가장 적합해요.",
+                    "Read the GitHub customer agreement": "GitHub 고객 계약 읽기",
+                    "Sign GitHub customer terms": "GitHub 고객 약관에 서명하기",
 
-            "Danger zone": "危险区",
-                "Rename organization": "重命名组织",
-                    "Renaming your organization can have": "重命名您的组织可能会有",
-                    "unintended side effects": "意想不到的副作用",
-                    "This organization cannot be renamed because it is archived.": "该组织无法重命名，因为它已存档.",
-                "Really rename your organization?": "确定要重命名您的组织？",
-                "Unexpected bad things will happen if you don’t read this!": "请仔细阅读以下提示信息！！！",
-                "We": "我们",
-                "will not": "不会",
-                "will": "会",
-                "create redirects for your repositories (web and git access).": "为您的仓库设置重定向（ web 和 git 访问）.",
-                "You will need to update your local repositories to point to the new location.": "您将需要更新您的本地仓库，以指向新的位置.",
-                "Renaming may take a few minutes to complete.": "重命名可能需要几分钟的时间来完成.",
-                "I understand, let’s rename my organization": "我明白了，依然重命名我的组织",
+            "Danger zone": "위험 구역",
+                "Rename organization": "조직 이름 변경하기",
+                    "Renaming your organization can have": "조직 이름을 변경하면",
+                    "unintended side effects": "예상치 못한 부작용이 발생할 수 있어요.",
+                    "This organization cannot be renamed because it is archived.": "이 조직은 보관되어 있어 이름을 변경할 수 없어요.",
+                "Really rename your organization?": "정말로 조직 이름을 변경하시겠어요?",
+                "Unexpected bad things will happen if you don’t read this!": "이 내용을 읽지 않으면 예상치 못한 문제가 발생할 수 있어요!",
+                "We": "우리는",
+                "will not": "하지 않을 거예요",
+                "will": "할 거예요",
+                "create redirects for your repositories (web and git access).": "사용자님의 저장소에 대한 리디렉션(웹 및 git 접근)을 설정할 거예요.",
+                "You will need to update your local repositories to point to the new location.": "로컬 저장소를 새 위치로 가리키도록 업데이트해야 해요.",
+                "Renaming may take a few minutes to complete.": "이름 변경은 완료하는 데 몇 분 정도 걸릴 수 있어요.",
+                "I understand, let’s rename my organization": "이해했으며, 내 조직 이름 변경하기",
 
-                "Rename your organization": "重命名组织",
-                "Change organization’s name": "更改组织名",
-                // 顶部提醒
-                    "Organization name may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen": "组织名称只能包含字母数字字符或单连字符，不能以连字符开始或结束.",
-                    "Organization name is not available": "组织名称不可用",
+                "Rename your organization": "조직 이름 변경하기",
+                "Change organization’s name": "조직 이름 변경하기",
+                // 상단 알림
+                    "Organization name may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen": "조직 이름은 영문, 숫자 또는 단일 하이픈만 포함할 수 있으며, 하이픈으로 시작하거나 끝날 수 없어요.",
+                    "Organization name is not available": "사용할 수 없는 조직 이름이에요.",
 
-                "Archive this organization": "存档组织",
-                    "Mark this organization and all its repositories as archived and read-only.": "将此组织及其所有仓库标记为已存档和只读.",
-                    "Please provide": "请提供",
-                    "feedback": "反馈",
-                    "on this feature.": "关于此功能.",
+                "Archive this organization": "이 조직 보관하기",
+                    "Mark this organization and all its repositories as archived and read-only.": "이 조직과 모든 저장소를 보관됨 및 읽기 전용으로 표시해요.",
+                    "Please provide": "다음에 대한",
+                    "feedback": "피드백을",
+                    "on this feature.": "제공해주세요.",
 
-                    "Archive organization": "存档组织",
-                        "This organization will be archived.": "该组织将被存档.",
-                        "Modifying settings will be limited and creating new repositories will be blocked.": "修改设置将受到限制，并且创建新仓库将被阻止.",
+                    "Archive organization": "조직 보관하기",
+                        "This organization will be archived.": "이 조직이 보관될 거예요.",
+                        "Modifying settings will be limited and creating new repositories will be blocked.": "설정 수정이 제한되고 새 저장소 생성이 차단될 거예요.",
 
-                        "All repositories will be": "所有仓库都将被",
+                        "All repositories will be": "모든 저장소가",
                         "archived": "보관됨",
-                        "and be read-only.": "并设为只读.",
-                        "Before you archive, please consider:": "在存档之前，请考虑：",
-                            "Updating any organization settings": "更新任何组织设置",
-                            "Making a note in your": "请标记在您的",
-                            "organization README": "组织 README",
-                        "Please type": "请输入",
-                        "to confirm.": "进行确定.",
-                        "I understand the consequences, archive this organization": "我明白后果，依然存档该组织",
+                        "and be read-only.": " 상태가 되고 읽기 전용으로 설정될 거예요.",
+                        "Before you archive, please consider:": "보관하기 전에 다음을 고려해주세요:",
+                            "Updating any organization settings": "모든 조직 설정 업데이트하기",
+                            "Making a note in your": "다음에 메모 남기기:",
+                            "organization README": "조직 README",
+                        "Please type": "다음을 입력해주세요:",
+                        "to confirm.": " (확인)",
+                        "I understand the consequences, archive this organization": "결과를 이해했으며, 이 조직 보관하기",
 
-                        // 顶部提醒
-                        // [/Your organization ([^ ]+) is being archived./, "您的组织 $1 已归档."],
+                        // 상단 알림
+                        // [/Your organization ([^ ]+) is being archived./, "사용자님의 조직 $1이(가) 보관 처리되었어요."],
 
-                "Unarchive this organization": "解锁存档组织",
-                    "Mark this organization as unarchived and read-write.": "将此组织标记为未存档且可读写.",
+                "Unarchive this organization": "이 조직 보관 해제하기",
+                    "Mark this organization as unarchived and read-write.": "이 조직을 보관 해제 및 읽기/쓰기 가능으로 표시해요.",
 
-                    "Unarchive organization": "解除组织存档",
-                    "This organization will be unarchived.": "该组织将解除存档.",
-                    "Modifying settings will be possible and creating new repositories will be unblocked.": "可以修改设置，创建新仓库也将不再受限.",
+                    "Unarchive organization": "조직 보관 해제하기",
+                    "This organization will be unarchived.": "이 조직의 보관이 해제될 거예요.",
+                    "Modifying settings will be possible and creating new repositories will be unblocked.": "설정 수정이 가능해지고 새 저장소 생성이 허용될 거예요.",
 
-                    "Repositories will be remain": "仓库将保持",
-                    "and need to be unarchived separately.": "，并需要单独解除存档.",
-                    "I understand the consequences, unarchive this organization": "我明白后果，依然解除该组织存档",
+                    "Repositories will be remain": "저장소는",
+                    "and need to be unarchived separately.": " 그대로 유지되며 별도로 보관 해제해야 해요.",
+                    "I understand the consequences, unarchive this organization": "결과를 이해했으며, 이 조직 보관 해제하기",
 
-                        // 顶部提醒
-                        // [/Your organization ([^ ]+) has been unarchived./, "您的组织 $1 已解除归档."],
+                        // 상단 알림
+                        // [/Your organization ([^ ]+) has been unarchived./, "사용자님의 조직 $1의 보관이 해제되었어요."],
 
-                "Delete this organization": "删除组织",
-                    "Once deleted, it will be gone forever. Please be certain.": "您一旦删除，将再也无法恢复.请确认！",
+                "Delete this organization": "이 조직 삭제하기",
+                    "Once deleted, it will be gone forever. Please be certain.": "한 번 삭제하면 영원히 복구할 수 없어요. 신중하게 결정해주세요!",
 
-                   "Are you sure you want to delete this?": "您确定要删除吗？",
-                   "Deleting the": "删除",
-                   "organization will delete all of its repositories. The": "组织，将会删除其所有仓库.",
-                   "username will be unavailable for 90 days.": "用户名将在 90 天内不可用.",
-                   "Before proceeding, please be sure to review the": "在继续之前，请务必查看",
-                   "regarding account deletion.": "关于账户删除.",
-                   "Enter this organization’s name to confirm": "请输入组织的名称，进行确认",
-                   "Cancel plan and delete the organization": "取消计划并删除此组织",
+                   "Are you sure you want to delete this?": "정말로 삭제하시겠어요?",
+                   "Deleting the": "다음을 삭제하면:",
+                   "organization will delete all of its repositories. The": "조직의 모든 저장소가 삭제돼요. 해당",
+                   "username will be unavailable for 90 days.": "사용자 이름은 90일 동안 사용할 수 없게 돼요.",
+                   "Before proceeding, please be sure to review the": "진행하기 전에 반드시 다음을 검토해주세요:",
+                   "regarding account deletion.": "계정 삭제 관련 정보.",
+                   "Enter this organization’s name to confirm": "확인을 위해 이 조직의 이름을 입력해주세요",
+                   "Cancel plan and delete the organization": "플랜 취소 및 조직 삭제하기",
 
     },
-    "regexp": [ // 正则翻译
-        [/Your organization ([^ ]+) is being archived./, "您的组织 $1 已归档."],
-        [/Your organization ([^ ]+) has been unarchived./, "您的组织 $1 已解除归档."],
+    "regexp": [ // 정규식 번역
+        [/Your organization ([^ ]+) is being archived./, "사용자님의 조직 $1이(가) 보관 처리되었어요."],
+        [/Your organization ([^ ]+) has been unarchived./, "사용자님의 조직 $1의 보관이 해제되었어요."],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/roles"] = { // 组织设置 - 仓库角色
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/roles"] = { // 조직 설정 - 저장소 역할
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 仓库角色 /organizations/<org-login>/settings/roles
-            // "Roles are used to grant access and permissions for teams and members. In addition to the available pre-defined roles, you can create up to 0 custom roles to fit your needs.": "角色是用来为团队和成员授予访问和权限的.除了可用的预定义角色外，您可以创建多达 0 个自定义角色以满足您的需求.",
-            //     "Learn more about custom repository roles": "了解更多关于自定义仓库角色的信息",
-            "Roles are used to grant access and permissions for teams and members.": "角色是用来为团队和成员授予访问和权限的.",
-            "Pre-defined roles": "预定义角色",
-                "You can": "您可",
-                "set the base role": "设置基础角色",
-                "for this organization from one of these roles.": "从该组织的这些角色中设置",
-                    "Read": "只读",
-                        "Read and clone repositories. Open and comment on issues and pull requests.": "读取和克隆仓库.打开并评论问题和拉取请求.",
-                    "Triage": "分级",
-                        "Read permissions plus manage issues and pull requests.": "读取权限外加管理이슈和拉取请求的权限.",
-                    "Write": "可写",
-                        "Triage permissions plus read, clone and push to repositories.": "分级权限外加读取、克隆和推送到仓库.",
-                    "Maintain": "维护",
-                        "Write permissions plus manage issues, pull requests and some repository settings.": "可写权限外加管理이슈、拉取请求和一些仓库设置.",
-                    "Admin": "管理员",
-                        "Full access to repositories including sensitive and destructive actions.": "对仓库的完全访问权限，包括敏感和破坏性操作.",
-                        "Modify Admin Role": "修改管理角色",
+        // 저장소 역할 /organizations/<org-login>/settings/roles
+            // "Roles are used to grant access and permissions for teams and members. In addition to the available pre-defined roles, you can create up to 0 custom roles to fit your needs.": "역할은 팀과 멤버에게 접근 및 권한을 부여하는 데 사용돼요. 사용 가능한 미리 정의된 역할 외에도 필요에 맞게 최대 0개의 사용자 지정 역할을 만들 수 있어요.",
+            //     "Learn more about custom repository roles": "사용자 지정 저장소 역할에 대해 더 알아보기",
+            "Roles are used to grant access and permissions for teams and members.": "역할은 팀과 멤버에게 접근 및 권한을 부여하는 데 사용돼요.",
+            "Pre-defined roles": "미리 정의된 역할",
+                "You can": "다음 중 하나로",
+                "set the base role": "기본 역할을 설정할 수 있어요:",
+                "for this organization from one of these roles.": "이 조직의 역할.",
+                    "Read": "읽기",
+                        "Read and clone repositories. Open and comment on issues and pull requests.": "저장소를 읽고 복제해요. 이슈와 끌어오기 요청을 열고 댓글을 달 수 있어요.",
+                    "Triage": "분류",
+                        "Read permissions plus manage issues and pull requests.": "읽기 권한과 더불어 이슈와 끌어오기 요청을 관리해요.",
+                    "Write": "쓰기",
+                        "Triage permissions plus read, clone and push to repositories.": "분류 권한과 더불어 저장소를 읽고, 복제하고, 푸시해요.",
+                    "Maintain": "유지보수",
+                        "Write permissions plus manage issues, pull requests and some repository settings.": "쓰기 권한과 더불어 이슈, 끌어오기 요청 및 일부 저장소 설정을 관리해요.",
+                    "Admin": "관리자",
+                        "Full access to repositories including sensitive and destructive actions.": "민감하고 파괴적인 작업을 포함하여 저장소에 대한 전체 접근 권한을 가져요.",
+                        "Modify Admin Role": "관리자 역할 수정하기",
 
-            "Custom roles": "自定义角色",
-                "Create a role": "创建角色",
-                "Create custom roles with GitHub Enterprise": "使用 GitHub 企业版创建自定义角色",
-                    "Enterprise accounts offer organizations more granular control over permissions by allowing you to configure up to five custom repository roles. This enables greater control over who and how your users access code and data in your organization.": "企业账户允许配置最多五个自定义仓库角色，从而为企业提供更细粒度的权限控制.这样就能更好地控制组织内用户访问代码和数据.",
-                "Try GitHub Enterprise": "试用 GitHub 企业版",
+            "Custom roles": "사용자 지정 역할",
+                "Create a role": "역할 만들기",
+                "Create custom roles with GitHub Enterprise": "GitHub 기업으로 사용자 지정 역할 만들기",
+                    "Enterprise accounts offer organizations more granular control over permissions by allowing you to configure up to five custom repository roles. This enables greater control over who and how your users access code and data in your organization.": "기업 계정은 최대 5개의 사용자 지정 저장소 역할을 구성할 수 있게 하여 조직에 더 세분화된 권한 제어를 제공해요. 이를 통해 조직 내 사용자가 코드와 데이터에 접근하는 방식과 대상을 더 잘 제어할 수 있어요.",
+                "Try GitHub Enterprise": "GitHub 기업 체험하기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/member_privileges"] = { // 组织设置 - 成员权限
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/member_privileges"] = { // 조직 설정 - 멤버 권한
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 成员权限 /organizations/<org-login>/settings/member_privileges
-            "Member repository permissions": "成员仓库权限",
-                "Base permissions": "基本权限",
-                    "Base permissions to the organization’s repositories apply to all members and excludes outside collaborators. Since organization members can have permissions from multiple sources, members and collaborators who have been granted a higher level of access than the base permissions will retain their higher permission privileges.": "组织仓库的基本权限适用于所有成员，不包括外部协作者.由于组织成员可以拥有多个来源的权限，已经被授予比基本权限更高的访问级别的成员和协作者将保留他们更高的权限.",
+        // 멤버 권한 /organizations/<org-login>/settings/member_privileges
+            "Member repository permissions": "멤버 저장소 권한",
+                "Base permissions": "기본 권한",
+                    "Base permissions to the organization’s repositories apply to all members and excludes outside collaborators. Since organization members can have permissions from multiple sources, members and collaborators who have been granted a higher level of access than the base permissions will retain their higher permission privileges.": "조직 저장소에 대한 기본 권한은 모든 멤버에게 적용되며 외부 협업자는 제외돼요. 조직 멤버는 여러 소스에서 권한을 가질 수 있으므로, 기본 권한보다 높은 수준의 접근 권한을 부여받은 멤버와 협업자는 더 높은 권한을 유지해요.",
 
-                    "Organization member permissions": "组织成员的权限",
-                        "No permission": "无权限",
-                            "Members will only be able to clone and pull public repositories. To give a member additional access, you’ll need to add them to teams or make them collaborators on individual repositories.": "成员只能克隆和拉取公共仓库.要为成员提供额外的访问权限，您需要将他们添加到团队中，或者让他们成为单个仓库的协作者.",
-                            // 对话框
-                                "Change base permission to \"No permission\"": "将基本权限更改为 “无权限”",
-                                "You are about to change the base repository permission for this organization.": "您即将更改此组织仓库的基本权限.",
-                                // [/This may change the permission that the organization’s (\d+) members? has on its (\d+) repositories?./, "这可能会更改组织的 $1 个成员对其 $2 个仓库的权限."],
-                        "Read": "只读",
-                            "Members will be able to clone and pull all repositories.": "成员将能够克隆和拉取所有仓库.",
-                            // 对话框
-                                "Change base permission to \"Read\"": "将基本权限更改为 “只读”",
-                        "Write": "可写",
-                            "Members will be able to clone, pull, and push all repositories.": "成员将能够克隆、拉取和推送所有仓库.",
-                            // 对话框
-                                "Change base permission to \"Write\"": "将基本权限更改为 “可写”",
-                        "Admin": "管理员",
-                            "Members will be able to clone, pull, push, and add new collaborators to all repositories.": "成员将能够克隆、拉取、推送和向所有仓库添加新的协作者.",
-                            // 对话框
-                                "Change base permission to \"Admin\"": "将基本权限更改为 “管理员”",
-                        // 顶部提醒
-                            "Base repository permission removed.": "基本仓库权限已被删除.",
-                            "Base repository permission updated to \"Read\".": "基本仓库权限已更新为 “只读” .",
-                            "Base repository permission updated to \"Write\".": "基本仓库权限已更新为 “可写” .",
-                            "Base repository permission updated to \"Admin\".": "基本仓库权限已更新为 “管理员” .",
-                        "Update in progress": "正在更新中",
-                        ". Refresh to see if it’s done.": ".刷新看看是否完成.",
+                    "Organization member permissions": "조직 멤버 권한",
+                        "No permission": "권한 없음",
+                            "Members will only be able to clone and pull public repositories. To give a member additional access, you’ll need to add them to teams or make them collaborators on individual repositories.": "멤버는 공개 저장소를 복제하고 끌어올 수만 있어요. 멤버에게 추가 접근 권한을 주려면 팀에 추가하거나 개별 저장소의 협업자로 만들어야 해요.",
+                            // 대화상자
+                                "Change base permission to \"No permission\"": "기본 권한을 “권한 없음”으로 변경하기",
+                                "You are about to change the base repository permission for this organization.": "이 조직의 기본 저장소 권한을 변경하려고 해요.",
+                                // [/This may change the permission that the organization’s (\d+) members? has on its (\d+) repositories?./, "이 변경으로 인해 조직의 멤버 $1명의 저장소 $2개에 대한 권한이 변경될 수 있어요."],
+                        "Read": "읽기",
+                            "Members will be able to clone and pull all repositories.": "멤버는 모든 저장소를 복제하고 끌어올 수 있어요.",
+                            // 대화상자
+                                "Change base permission to \"Read\"": "기본 권한을 “읽기”로 변경하기",
+                        "Write": "쓰기",
+                            "Members will be able to clone, pull, and push all repositories.": "멤버는 모든 저장소를 복제, 끌어오기, 푸시할 수 있어요.",
+                            // 대화상자
+                                "Change base permission to \"Write\"": "기본 권한을 “쓰기”로 변경하기",
+                        "Admin": "관리자",
+                            "Members will be able to clone, pull, push, and add new collaborators to all repositories.": "멤버는 모든 저장소에 대해 복제, 끌어오기, 푸시 및 새 협업자 추가를 할 수 있어요.",
+                            // 대화상자
+                                "Change base permission to \"Admin\"": "기본 권한을 “관리자”로 변경하기",
+                        // 상단 알림
+                            "Base repository permission removed.": "기본 저장소 권한이 제거되었어요.",
+                            "Base repository permission updated to \"Read\".": "기본 저장소 권한이 “읽기”로 업데이트되었어요.",
+                            "Base repository permission updated to \"Write\".": "기본 저장소 권한이 “쓰기”로 업데이트되었어요.",
+                            "Base repository permission updated to \"Admin\".": "기본 저장소 권한이 “관리자”로 업데이트되었어요.",
+                        "Update in progress": "업데이트 진행 중",
+                        ". Refresh to see if it’s done.": ". 완료되었는지 확인하려면 새로고침하세요.",
 
-                "Repository creation": "仓库创建",
-                    "Members will be able to create only selected repository types. Outside collaborators can never create repositories.": "成员将只能创建选定类型的仓库.外部协作者永远不能创建仓库.",
+                "Repository creation": "저장소 생성",
+                    "Members will be able to create only selected repository types. Outside collaborators can never create repositories.": "멤버는 선택된 유형의 저장소만 만들 수 있어요. 외부 협업자는 저장소를 만들 수 없어요.",
                     "Public": "공개",
-                        "Members will be able to create public repositories, visible to anyone.": "成员将能够创建任何人都可见的公共仓库.",
-                        "Why is this option disabled?": "为什么该选项被禁用？",
+                        "Members will be able to create public repositories, visible to anyone.": "멤버는 누구나 볼 수 있는 공개 저장소를 만들 수 있어요.",
+                        "Why is this option disabled?": "이 옵션이 비활성화된 이유는 무엇인가요?",
                     "Private": "비공개",
-                        "Members will be able to create private repositories, visible to organization members with permission.": "成员将能够创建私有仓库，对有权限的组织成员可见.",
-                    // 顶部提醒
-                        "Members can no longer create public or private repositories.": "成员不能再创建公共或私有仓库.",
-                        "Members can now create public repositories.": "成员现在可以创建公共仓库.",
-                        "Members can now create public and private repositories.": "成员现在可以创建公共和私有仓库.",
+                        "Members will be able to create private repositories, visible to organization members with permission.": "멤버는 권한이 있는 조직 멤버에게만 보이는 비공개 저장소를 만들 수 있어요.",
+                    // 상단 알림
+                        "Members can no longer create public or private repositories.": "이제 멤버는 공개 또는 비공개 저장소를 만들 수 없어요.",
+                        "Members can now create public repositories.": "이제 멤버는 공개 저장소를 만들 수 있어요.",
+                        "Members can now create public and private repositories.": "이제 멤버는 공개 및 비공개 저장소를 만들 수 있어요.",
 
-                "Repository forking": "仓库复刻",
-                    "Allow forking of private repositories": "允许复刻私有仓库",
-                        "If enabled, forking is allowed on private and public repositories. If disabled, forking is only allowed on public repositories. This setting is also configurable per-repository.": "如果启用，则私有和公共仓库都允许复刻.如果禁用，则只允许复刻公共仓库.此设置也可以在每个仓库中进行配置.",
-                    // 顶部提醒
-                        "Repository forking setting updated!": "仓库复刻设置已经更新！",
-                        "Repository forking setting not updated. Please try again.": "仓库复刻设置不能更新.请重试.",
+                "Repository forking": "저장소 포크",
+                    "Allow forking of private repositories": "비공개 저장소 포크 허용하기",
+                        "If enabled, forking is allowed on private and public repositories. If disabled, forking is only allowed on public repositories. This setting is also configurable per-repository.": "활성화하면 비공개 및 공개 저장소에서 포크가 허용돼요. 비활성화하면 공개 저장소에서만 포크가 허용돼요. 이 설정은 저장소별로도 구성할 수 있어요.",
+                    // 상단 알림
+                        "Repository forking setting updated!": "저장소 포크 설정이 업데이트되었어요!",
+                        "Repository forking setting not updated. Please try again.": "저장소 포크 설정이 업데이트되지 않았어요. 다시 시도해주세요.",
 
-                "Repository discussions": "仓库讨论",
-                    "Allow users with read access to create discussions": "允许具有读取权限的用户创建讨论",
-                        // [/If enabled, all users with read access can create and comment on discussions in ([^ ]+)’s repositories./, "如果启用，所有具有读取权限的用户都可以在 $1 的仓库中创建和评论讨论."],
-                        "If disabled, discussion creation is limited to users with at least triage permission. Users with read access can still comment on discussions.": "如果禁用，讨论的创建仅限于至少具有分级权限的用户.具有读取权限的用户仍然可以对讨论发表评论.",
-                    // 顶部提醒
-                        "Users with read access to repositories can create new discussions.": "对仓库具有读取权限的用户可以创建新的讨论.",
-                        "Only users with at least triage access to repositories can create new discussions.": "只有至少对仓库有分级权限的用户才能创建新的讨论.",
+                "Repository discussions": "저장소 토론",
+                    "Allow users with read access to create discussions": "읽기 접근 권한이 있는 사용자에게 토론 생성 허용하기",
+                        // [/If enabled, all users with read access can create and comment on discussions in ([^ ]+)’s repositories./, "활성화하면 읽기 접근 권한이 있는 모든 사용자가 $1의 저장소에서 토론을 만들고 댓글을 달 수 있어요."],
+                        "If disabled, discussion creation is limited to users with at least triage permission. Users with read access can still comment on discussions.": "비활성화하면 토론 생성은 최소한 분류 권한이 있는 사용자로 제한돼요. 읽기 접근 권한이 있는 사용자는 여전히 토론에 댓글을 달 수 있어요.",
+                    // 상단 알림
+                        "Users with read access to repositories can create new discussions.": "저장소에 대한 읽기 접근 권한이 있는 사용자는 새 토론을 만들 수 있어요.",
+                        "Only users with at least triage access to repositories can create new discussions.": "저장소에 대해 최소한 분류 접근 권한이 있는 사용자만 새 토론을 만들 수 있어요.",
 
-                "Projects base permissions": "项目基本权限",
-                    "Projects created by members will default to the elected role below.": "成员创建的项目将默认为下面选定的角色.",
+                "Projects base permissions": "프로젝트 기본 권한",
+                    "Projects created by members will default to the elected role below.": "멤버가 만든 프로젝트는 아래에서 선택한 역할로 기본 설정돼요.",
 
-                    "No access": "无法访问",
-                        "Members will only be able to see projects that are made public. To give an organization member additional access, they can be added as part of a team or as a collaborator.": "成员只能看到公开项目.要赋予组织成员更多访问权限，可以将其添加为团队成员或协作者.",
-                        // 对话框
-                            "Change base permissions to \"No access\"": "将基本权限改为 “无法访问”",
-                                "You are about to change the base projects permission for this organization.": "您将更改该组织的基本项目权限",
-                                "This won't affect any existing projects.": "这不会影响任何现有项目",
-                    // 只读
-                        "Members can see projects.": "成员可以查看项目",
-                        // 对话框
-                            "Change base permissions to \"Read\"": "将基本权限改为 “只读”",
-                    // 可写
-                        "Members can see and make changes to projects.": "成员可以查看和修改项目",
-                        // 对话框
-                            "Change base permissions to \"Write\"": "将基本权限改为 “可写”",
-                    // 管理员
-                        "Members can see, make changes to, and add new collaborators to projects.": "成员可以查看和修改项目，并可为项目添加新的协助者.",
-                        // 对话框
-                            "You are about to change the base projects permission for this organization.": "您将更改该组织的基本项目权限",
-                    // 顶部提醒
-                        "Base permission updated to \"None\" for projects.": "项目的基本权限已更新为 “无”.",
-                        "Base permission updated to \"Read\" for projects.": "项目的基本权限已更新为 “只读”.",
-                        "Base permission updated to \"Write\" for projects.": "项目的基本权限已更新为 “可写”.",
-                        "Base permission updated to \"Admin\" for projects.": "项目的基本权限已更新为 “管理员”.",
+                    "No access": "접근 불가",
+                        "Members will only be able to see projects that are made public. To give an organization member additional access, they can be added as part of a team or as a collaborator.": "멤버는 공개된 프로젝트만 볼 수 있어요. 조직 멤버에게 추가 접근 권한을 주려면 팀의 일부 또는 협업자로 추가할 수 있어요.",
+                        // 대화상자
+                            "Change base permissions to \"No access\"": "기본 권한을 “접근 불가”로 변경하기",
+                                "You are about to change the base projects permission for this organization.": "이 조직의 기본 프로젝트 권한을 변경하려고 해요.",
+                                "This won't affect any existing projects.": "기존 프로젝트에는 영향을 미치지 않아요.",
+                    // 읽기
+                        "Members can see projects.": "멤버는 프로젝트를 볼 수 있어요.",
+                        // 대화상자
+                            "Change base permissions to \"Read\"": "기본 권한을 “읽기”로 변경하기",
+                    // 쓰기
+                        "Members can see and make changes to projects.": "멤버는 프로젝트를 보고 변경할 수 있어요.",
+                        // 대화상자
+                            "Change base permissions to \"Write\"": "기본 권한을 “쓰기”로 변경하기",
+                    // 관리자
+                        "Members can see, make changes to, and add new collaborators to projects.": "멤버는 프로젝트를 보고 변경하며 새 협업자를 추가할 수 있어요.",
+                        // 대화상자
+                            "You are about to change the base projects permission for this organization.": "이 조직의 기본 프로젝트 권한을 변경하려고 해요.",
+                    // 상단 알림
+                        "Base permission updated to \"None\" for projects.": "프로젝트의 기본 권한이 “없음”으로 업데이트되었어요.",
+                        "Base permission updated to \"Read\" for projects.": "프로젝트의 기본 권한이 “읽기”로 업데이트되었어요.",
+                        "Base permission updated to \"Write\" for projects.": "프로젝트의 기본 권한이 “쓰기”로 업데이트되었어요.",
+                        "Base permission updated to \"Admin\" for projects.": "프로젝트의 기본 권한이 “관리자”로 업데이트되었어요.",
 
-                "Pages creation": "页面创建",
-                    "Members will be able to publish sites with only the selected access controls.": "成员将能够发布仅只有选定的访问控制的站点.",
+                "Pages creation": "페이지 생성",
+                    "Members will be able to publish sites with only the selected access controls.": "멤버는 선택된 접근 제어 권한으로만 사이트를 게시할 수 있어요.",
                     // "Public": "공개",
-                        "Members will be able to create public sites, visible to anyone.": "成员将能够创建任何人都可见的公共站点.",
+                        "Members will be able to create public sites, visible to anyone.": "멤버는 누구나 볼 수 있는 공개 사이트를 만들 수 있어요.",
                     // "Private": "비공개",
-                        "Members will be able to create private sites, visible to anyone with permission.": "成员将能够创建私有站点，对任何有权限的人可见.",
-                    // 顶部提醒
-                        "Projects settings updated for this organization.": "该组织的项目设置已经更新.",
+                        "Members will be able to create private sites, visible to anyone with permission.": "멤버는 권한이 있는 누구나 볼 수 있는 비공개 사이트를 만들 수 있어요.",
+                    // 상단 알림
+                        "Projects settings updated for this organization.": "이 조직의 프로젝트 설정이 업데이트되었어요.",
 
-                "Integration access requests": "集成访问请求",
-                    "Allow integration requests from outside collaborators": "允许来自外部协作者的集成请求",
-                        "Outside collaborators will be able to request access for GitHub or OAuth apps to access this organization and its resources.": "外部协作者将能够为 GitHub 或 OAuth 应用申请访问该组织及其资源的权限.",
-                        // 顶部提醒
-                            "Outside collaborators can no longer request third party access.": "外部协作者无法再请求第三方访问.",
-                            "Outside collaborators can now request third party access.": "外部协作者现在可以请求第三方访问.",
+                "Integration access requests": "통합 접근 요청",
+                    "Allow integration requests from outside collaborators": "외부 협업자의 통합 요청 허용하기",
+                        "Outside collaborators will be able to request access for GitHub or OAuth apps to access this organization and its resources.": "외부 협업자는 GitHub 또는 OAuth 앱이 이 조직과 리소스에 접근하도록 요청할 수 있어요.",
+                        // 상단 알림
+                            "Outside collaborators can no longer request third party access.": "이제 외부 협업자는 제3자 접근을 요청할 수 없어요.",
+                            "Outside collaborators can now request third party access.": "이제 외부 협업자는 제3자 접근을 요청할 수 있어요.",
 
-                "Admin repository permissions": "管理员仓库权限",
-                    "Repository visibility change": "仓库可见性更改",
-                        "Allow members to change repository visibilities for this organization": "允许成员更改此组织的仓库可见性",
-                            "If enabled, members with admin permissions for the repository will be able to change its visibility. If disabled, only organization owners can change repository visibilities.": "如果启用，对仓库有管理权限的成员将能够更改其可见性.如果禁用，只有组织所有者可以更改仓库的可见性.",
-                        // 顶部提醒
-                            "Members can now change repository visibility.": "成员现在可以更改仓库可见性.",
-                            "Members can no longer change repository visibility.": "成员不能再更改仓库可见性.",
+                "Admin repository permissions": "관리자 저장소 권한",
+                    "Repository visibility change": "저장소 공개 상태 변경",
+                        "Allow members to change repository visibilities for this organization": "멤버가 이 조직의 저장소 공개 상태를 변경하도록 허용하기",
+                            "If enabled, members with admin permissions for the repository will be able to change its visibility. If disabled, only organization owners can change repository visibilities.": "활성화하면 저장소에 대한 관리자 권한이 있는 멤버가 공개 상태를 변경할 수 있어요. 비활성화하면 조직 소유자만 저장소 공개 상태를 변경할 수 있어요.",
+                        // 상단 알림
+                            "Members can now change repository visibility.": "이제 멤버는 저장소 공개 상태를 변경할 수 있어요.",
+                            "Members can no longer change repository visibility.": "이제 멤버는 저장소 공개 상태를 변경할 수 없어요.",
 
-                    "Repository deletion and transfer": "仓库的删除和转让",
-                        "Allow members to delete or transfer repositories for this organization": "允许成员删除或转让此组织的仓库",
-                            "If enabled, members with admin permissions for the repository will be able to delete or transfer": "如果启用，对仓库有管理权限的成员将能够删除或转让",
+                    "Repository deletion and transfer": "저장소 삭제 및 이전",
+                        "Allow members to delete or transfer repositories for this organization": "멤버가 이 조직의 저장소를 삭제하거나 이전하도록 허용하기",
+                            "If enabled, members with admin permissions for the repository will be able to delete or transfer": "활성화하면 저장소에 대한 관리자 권한이 있는 멤버가",
                             "public": "공개",
                             "private": "비공개",
-                            "repositories. If disabled, only organization owners can delete or transfer repositories.": "仓库.如果禁用，只有组织所有者可以删除或转让仓库.",
-                        // 顶部提醒
-                            "Members can now delete or transfer repositories.": "成员现在可以删除或转让仓库.",
-                            "Members can no longer delete or transfer repositories.": "成员不能再删除或转让仓库.",
+                            "repositories. If disabled, only organization owners can delete or transfer repositories.": "저장소를 삭제하거나 이전할 수 있어요. 비활성화하면 조직 소유자만 저장소를 삭제하거나 이전할 수 있어요.",
+                        // 상단 알림
+                            "Members can now delete or transfer repositories.": "이제 멤버는 저장소를 삭제하거나 이전할 수 있어요.",
+                            "Members can no longer delete or transfer repositories.": "이제 멤버는 저장소를 삭제하거나 이전할 수 없어요.",
 
-                    "Issue deletion": "이슈删除",
-                        "Allow repository administrators to delete issues for this organization": "允许仓库管理员删除此组织的이슈",
-                            "If enabled, members with admin permissions for the repository will be able to delete issues. If disabled, only organization owners can delete issues.": "如果启用，对仓库有管理权限的成员将能够删除이슈.如果禁用，只有组织所有者可以删除이슈.",
-                            "Learn more about allowing people to delete issues in your organization": "了解更多关于允许成员删除组织内이슈的信息",
+                    "Issue deletion": "이슈 삭제",
+                        "Allow repository administrators to delete issues for this organization": "저장소 관리자가 이 조직의 이슈를 삭제하도록 허용하기",
+                            "If enabled, members with admin permissions for the repository will be able to delete issues. If disabled, only organization owners can delete issues.": "활성화하면 저장소에 대한 관리자 권한이 있는 멤버가 이슈를 삭제할 수 있어요. 비활성화하면 조직 소유자만 이슈를 삭제할 수 있어요.",
+                            "Learn more about allowing people to delete issues in your organization": "조직에서 사람들이 이슈를 삭제하도록 허용하는 방법에 대해 더 알아보기",
 
-                        // 顶部提醒
-                            "Members can now delete issues.": "成员现在可以删除이슈.",
-                            "Members can no longer delete issues.": "成员不能再删除이슈.",
+                        // 상단 알림
+                            "Members can now delete issues.": "이제 멤버는 이슈를 삭제할 수 있어요.",
+                            "Members can no longer delete issues.": "이제 멤버는 이슈를 삭제할 수 없어요.",
 
-                "Member team permissions": "成员团队权限",
-                    "Team creation rules": "团队创建规则",
-                        "Allow members to create teams": "允许成员创建团队",
-                            "If enabled, any member of the organization will be able to create new teams. If disabled, only organization owners can create new teams.": "如果启用，组织的任何成员将能够创建新的团队.如果禁用，只有组织所有者可以创建新的团队.",
-                    // 顶部提醒
-                        "Members can now create teams.": "成员现在可以创建团队.",
-                        "Members can no longer create teams.": "成员不能再创建团队.",
+                "Member team permissions": "멤버 팀 권한",
+                    "Team creation rules": "팀 생성 규칙",
+                        "Allow members to create teams": "멤버가 팀을 만들도록 허용하기",
+                            "If enabled, any member of the organization will be able to create new teams. If disabled, only organization owners can create new teams.": "활성화하면 조직의 모든 멤버가 새 팀을 만들 수 있어요. 비활성화하면 조직 소유자만 새 팀을 만들 수 있어요.",
+                    // 상단 알림
+                        "Members can now create teams.": "이제 멤버는 팀을 만들 수 있어요.",
+                        "Members can no longer create teams.": "이제 멤버는 팀을 만들 수 없어요.",
     },
-    "regexp": [ // 正则翻译
-        [/This may change the permission that the organization’s (\d+) members? has on its (\d+) repositories?./, "这可能会更改组织的 $1 个成员对其 $2 个仓库的权限."], // 组织 基本权限更改
-        [/If enabled, all users with read access can create and comment on discussions in ([^ ]+)’s repositories./, "如果启用，所有具有读取权限的用户都可以在 $1 的仓库中创建和评论讨论."],
+    "regexp": [ // 정규식 번역
+        [/This may change the permission that the organization’s (\d+) members? has on its (\d+) repositories?./, "이 변경으로 인해 조직의 멤버 $1명의 저장소 $2개에 대한 권한이 변경될 수 있어요."], // 조직 기본 권한 변경
+        [/If enabled, all users with read access can create and comment on discussions in ([^ ]+)’s repositories./, "활성화하면 읽기 접근 권한이 있는 모든 사용자가 $1의 저장소에서 토론을 만들고 댓글을 달 수 있어요."],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/teams"] = { // 组织设置 - 团队讨论
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/teams"] = { // 조직 설정 - 팀 토론
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 团队讨论 /organizations/<org-login>/settings/teams
-            "Team discussions provide a place for a team to have conversations that span across projects or repositories and that don’t belong in an issue or a pull request.": "团队讨论为团队提供了一个进行跨项目或仓库，且不属于이슈或拉取请求的对话的场所.",
-            "Enable team discussions for this organization": "为此组织启用团队讨论",
-                "This allows members to start discussions in any team in the": "这允许成员在任何团队中开始讨论，在",
-            "organization.": "组织中.",
+        // 팀 토론 /organizations/<org-login>/settings/teams
+            "Team discussions provide a place for a team to have conversations that span across projects or repositories and that don’t belong in an issue or a pull request.": "팀 토론은 팀이 프로젝트나 저장소를 넘나들며 이슈나 끌어오기 요청에 속하지 않는 대화를 나눌 수 있는 공간을 제공해요.",
+            "Enable team discussions for this organization": "이 조직에 대해 팀 토론 활성화하기",
+                "This allows members to start discussions in any team in the": "이를 통해 멤버는",
+            "organization.": "조직의 모든 팀에서 토론을 시작할 수 있어요.",
 
-            "Looking for": "寻找",
-            "Organization Discussions": "组织讨论",
-            "? Go to": "？转到",
-            "Organization Discussions settings.": "组织讨论设置.",
+            "Looking for": "다음을 찾으시나요?:",
+            "Organization Discussions": "조직 토론",
+            "? Go to": "? 다음으로 이동하세요:",
+            "Organization Discussions settings.": "조직 토론 설정.",
 
-            // 顶部提醒
-                "Team discussions enabled for this organization.": "该组织启用了团队讨论.",
-                "Team discussions disabled for this organization.": "该组织禁用了团队讨论.",
+            // 상단 알림
+                "Team discussions enabled for this organization.": "이 조직에 대해 팀 토론이 활성화되었어요.",
+                "Team discussions disabled for this organization.": "이 조직에 대해 팀 토론이 비활성화되었어요.",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/import-export"] = { // 组织设置 - 导入/导出
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/import-export"] = { // 조직 설정 - 가져오기/내보내기
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // Import/Export 导入/导出 - 占位账户 /organizations/<org-login>/settings/import-export
-            "Mannequins": "占位账户",
-            "Search mannequins by login or email...": "通过登录名或电子邮箱地址搜索占位账户...",
-            "There are no mannequins in this organization": "该组织尚无占位账户",
-            "Mannequins represent authors of imported contributions. They do not have profile pages and cannot sign in. Their contributions can be reattributed to other members of your organization.": "占位账户代表导入贡献的作者.他们没有个人资料页，也不能登录.他们的贡献可以重新归属于您组织的其他成员.",
+        // Import/Export 가져오기/내보내기 - 마네킹 계정 /organizations/<org-login>/settings/import-export
+            "Mannequins": "마네킹",
+            "Search mannequins by login or email...": "로그인 또는 이메일 주소로 마네킹 검색...",
+            "There are no mannequins in this organization": "이 조직에는 마네킹이 없어요.",
+            "Mannequins represent authors of imported contributions. They do not have profile pages and cannot sign in. Their contributions can be reattributed to other members of your organization.": "마네킹은 가져온 기여의 작성자를 나타내요. 프로필 페이지가 없으며 로그인할 수 없어요. 그들의 기여는 조직의 다른 멤버에게 다시 귀속될 수 있어요.",
 
-        // Import/Export 导入/导出 - 归属邀请 /organizations/<org-login>/settings/import-export/attribution-invitations
-            "Attribution Invitations": "归属邀请",
-            "Below are the mannequin reattribution invitations that have been sent within this organization. If the state is \"invited,\" then the user has not yet replied; if it is \"completed,\" then the user has accepted and their contributions have been reattributed, and if it is \"rejected,\" then the user opted not to be credited for that mannequin's contributions.": "以下是该组织内已发送的占位账户重新归属的邀请.如果状态是 “已邀请”，则用户尚未回复；如果是 “已完成”，那么用户已经接受并且他们的贡献已经被重新归属；如果是 “已拒绝”，那么用户选择不记入该占位账户的贡献.",
-            "No attribution invitations have been sent": "尚未发出归属邀请",
+        // Import/Export 가져오기/내보내기 - 귀속 초대 /organizations/<org-login>/settings/import-export/attribution-invitations
+            "Attribution Invitations": "귀속 초대",
+            "Below are the mannequin reattribution invitations that have been sent within this organization. If the state is \"invited,\" then the user has not yet replied; if it is \"completed,\" then the user has accepted and their contributions have been reattributed, and if it is \"rejected,\" then the user opted not to be credited for that mannequin's contributions.": "아래는 이 조직 내에서 전송된 마네킹 재귀속 초대 목록이에요. 상태가 “초대됨”이면 사용자가 아직 회신하지 않은 것이고, “완료됨”이면 사용자가 수락하여 기여가 재귀속된 것이며, “거절됨”이면 사용자가 해당 마네킹의 기여에 대한 크레딧을 받지 않기로 선택한 거예요.",
+            "No attribution invitations have been sent": "전송된 귀속 초대가 없어요.",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/blocked_users"] = { // 组织设置 - 黑名单
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/blocked_users"] = { // 조직 설정 - 차단된 사용자
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // Blocked users 黑名单 /organizations/<org-login>/settings/blocked_users
-            "Block a user": "拉黑用户",
-            "Blocking a user prevents the following on all your repositories:": "拉黑用户可以防止所有仓库中的以下操作：",
-            "opening or commenting on issues or pull requests": "打开或评论이슈或拉取请求",
-            "starring, forking, or watching": "加星标、复刻、关注",
-            "adding or editing wiki pages": "添加或编辑 Wiki 页面",
+        // Blocked users 차단된 사용자 /organizations/<org-login>/settings/blocked_users
+            "Block a user": "사용자 차단하기",
+            "Blocking a user prevents the following on all your repositories:": "사용자를 차단하면 모든 저장소에서 다음 작업이 방지돼요:",
+            "opening or commenting on issues or pull requests": "이슈 또는 끌어오기 요청 열기 또는 댓글 달기",
+            "starring, forking, or watching": "별표 표시, 포크, 또는 주시하기",
+            "adding or editing wiki pages": "위키 페이지 추가 또는 편집하기",
 
-            "Search by username, full name or email address": "搜索用户名、全名、或电子邮箱",
-                "Learn more about blocking a user": "了解更多关于拉黑用户的信息",
-            "Block options": "拉黑选项",
-                "For 1 day": "1 天",
-                "For 3 days": "3 天",
-                "For 7 days": "7 天",
-                "For 30 days": "30 天",
-                "Until I unblock them": "直到取消拉黑",
-            "Block user": "拉黑用户",
-            "You have not blocked any users.": "您还没有拉黑任何用户.",
-            "Unblock": "取消拉黑",
+            "Search by username, full name or email address": "사용자 이름, 전체 이름 또는 이메일 주소로 검색",
+                "Learn more about blocking a user": "사용자 차단에 대해 더 알아보기",
+            "Block options": "차단 옵션",
+                "For 1 day": "1일 동안",
+                "For 3 days": "3일 동안",
+                "For 7 days": "7일 동안",
+                "For 30 days": "30일 동안",
+                "Until I unblock them": "차단 해제할 때까지",
+            "Block user": "사용자 차단하기",
+            "You have not blocked any users.": "차단한 사용자가 없어요.",
+            "Unblock": "차단 해제하기",
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/interaction_limits"] = { // 组织设置 - 互动限制
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/interaction_limits"] = { // 조직 설정 - 상호작용 제한
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // Interaction limits 互动限制 /organizations/<org-login>/settings/interaction_limits
-            "Temporary interaction limits": "临时互动限制",
-            "Temporarily restrict which external users can interact with your repositories (comment, open issues, or create pull requests) for a configurable period of time. Users who are members of this organization will not be affected by these limits.": "在配置的时间段内，可临时限制哪些外部用户与您的仓库互动（评论、打开이슈或创建拉取请求）.作为该组织成员的用户将不受这些限制的影响.",
-            "This may be used to force a \"cool-down\" period during heated discussions or prevent unwanted interactions.": "可用于在激烈讨论期间，强制进入 “冷静” 期或防止不必要的互动.",
-            "Interaction limits may already exist in your organization's": "互动限制可能已经存在于您的组织",
-            "public repositories": "公开仓库",
-            ". Any changes here will override those limits.": " 的设置中.此处的全局设置将覆盖那些仓库的局部设置.",
-            "Limit to existing users": "仅限现有用户",
-                "Users that have recently created their account will be unable to interact with this organization's repositories.": "最近创建账户的用户将无法与您组织的仓库互动.",
-            "Limit to prior contributors": "仅限于先前的贡献者",
-                "Users that have not previously committed to the default branch of a repository in this organization will be unable to interact with that repository.": "以前从未提交到您组织某个仓库默认分支的用户将无法与该仓库互动.",
-            "Limit to repository collaborators": "仅限仓库协作者",
-                "Users that are not collaborators of a repository in this organization will not be able to interact with that repository.": "不是您组织某个仓库的协作者将无法与该仓库互动.",
-            "New users": "新用户",
-            "Users": "用户",
-            "Contributors": "贡献者",
-            "Collaborators": "协作者",
-            "Organization members": "组织成员",
-            // 交互限制时间 下拉菜单
-            "Enable interaction limits for:": "启用交互限制：",
-            "24 hours": "24 小时",
-            "3 days": "3 天",
-            "1 week": "1 周",
-            "1 month": "1 个月",
-            "6 months": "6 个月",
-            // 顶部提醒
-            "User interaction limit settings saved.": "用户交互限制设置已保存.",
+        // Interaction limits 상호작용 제한 /organizations/<org-login>/settings/interaction_limits
+            "Temporary interaction limits": "임시 상호작용 제한",
+            "Temporarily restrict which external users can interact with your repositories (comment, open issues, or create pull requests) for a configurable period of time. Users who are members of this organization will not be affected by these limits.": "구성 가능한 기간 동안 어떤 외부 사용자가 사용자님의 저장소와 상호작용(댓글, 이슈 열기, 또는 끌어오기 요청 생성)할 수 있는지 일시적으로 제한해요. 이 조직의 멤버인 사용자는 이 제한의 영향을 받지 않아요.",
+            "This may be used to force a \"cool-down\" period during heated discussions or prevent unwanted interactions.": "이는 격렬한 토론 중에 “진정” 기간을 강제하거나 원치 않는 상호작용을 방지하는 데 사용될 수 있어요.",
+            "Interaction limits may already exist in your organization's": "상호작용 제한은 이미 조직의",
+            "public repositories": "공개 저장소",
+            ". Any changes here will override those limits.": " 설정에 존재할 수 있어요. 여기서의 변경 사항은 해당 제한을 덮어쓰게 돼요.",
+            "Limit to existing users": "기존 사용자로 제한",
+                "Users that have recently created their account will be unable to interact with this organization's repositories.": "최근에 계정을 만든 사용자는 이 조직의 저장소와 상호작용할 수 없어요.",
+            "Limit to prior contributors": "이전 기여자로 제한",
+                "Users that have not previously committed to the default branch of a repository in this organization will be unable to interact with that repository.": "이전에 이 조직의 저장소 기본 분기에 커밋한 적이 없는 사용자는 해당 저장소와 상호작용할 수 없어요.",
+            "Limit to repository collaborators": "저장소 협업자로 제한",
+                "Users that are not collaborators of a repository in this organization will not be able to interact with that repository.": "이 조직의 저장소 협업자가 아닌 사용자는 해당 저장소와 상호작용할 수 없어요.",
+            "New users": "신규 사용자",
+            "Users": "사용자",
+            "Contributors": "기여자",
+            "Collaborators": "협업자",
+            "Organization members": "조직 멤버",
+            // 상호작용 제한 시간 드롭다운 메뉴
+            "Enable interaction limits for:": "상호작용 제한 활성화 기간:",
+            "24 hours": "24시간",
+            "3 days": "3일",
+            "1 week": "1주",
+            "1 month": "1개월",
+            "6 months": "6개월",
+            // 상단 알림
+            "User interaction limit settings saved.": "사용자 상호작용 제한 설정이 저장되었어요.",
 
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/code_review_limits"] = { // 组织设置 - 代码审查限制
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/code_review_limits"] = { // 조직 설정 - 코드 검토 제한
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 代码审查限制 /organizations/<org-login>/settings/code_review_limits
-            "Restrict users who are permitted to approve or request changes on pull requests in public repositories within this organization.": "限制该组织内允许批准或请求更改公共仓库中拉取请求的用户.",
-            "Code review limits may already be specified by individual repositories. Any changes here will override those limits until unset.": "代码审查限制可能已经由各个仓库指定.此处的任何更改都将覆盖这些限制，直至取消设置.",
-            "Code review limits are currently managed individually for all repositories. Enable limits to permit only users who have explicitly been granted access to each repository to submit reviews that \"approve\" or \"request changes\". Remove limits to allow all users to submit pull request reviews. All users able to submit comment pull request reviews will continue to be able to do so.": "目前，所有仓库代码审查限制都是单独管理的.启用限制，只允许明确授予每个仓库访问权的用户提交 “批准” 或 “请求更改” 的审查.删除限制，允许所有用户提交拉取请求审查.所有能够提交评论拉取请求审查的用户将继续能够这样做.",
-            "Limit reviews on all repositories": "限制对所有仓库的审查",
-            "Remove review limits from all repositories": "取消对所有仓库的审查限制",
+        // 코드 검토 제한 /organizations/<org-login>/settings/code_review_limits
+            "Restrict users who are permitted to approve or request changes on pull requests in public repositories within this organization.": "이 조직 내 공개 저장소에서 끌어오기 요청에 대한 변경을 승인하거나 요청할 수 있는 사용자를 제한해요.",
+            "Code review limits may already be specified by individual repositories. Any changes here will override those limits until unset.": "코드 검토 제한은 개별 저장소에서 이미 지정되었을 수 있어요. 여기서의 변경 사항은 설정이 해제될 때까지 해당 제한을 덮어쓰게 돼요.",
+            "Code review limits are currently managed individually for all repositories. Enable limits to permit only users who have explicitly been granted access to each repository to submit reviews that \"approve\" or \"request changes\". Remove limits to allow all users to submit pull request reviews. All users able to submit comment pull request reviews will continue to be able to do so.": "현재 모든 저장소에 대한 코드 검토 제한은 개별적으로 관리돼요. 제한을 활성화하여 각 저장소에 명시적으로 접근 권한이 부여된 사용자만 “승인” 또는 “변경 요청” 검토를 제출하도록 허용하세요. 모든 사용자가 끌어오기 요청 검토를 제출하도록 허용하려면 제한을 제거하세요. 댓글 끌어오기 요청 검토를 제출할 수 있는 모든 사용자는 계속해서 제출할 수 있어요.",
+            "Limit reviews on all repositories": "모든 저장소에 대한 검토 제한하기",
+            "Remove review limits from all repositories": "모든 저장소에서 검토 제한 제거하기",
 
 
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/moderators"] = { // 组织设置 - 版主
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/moderators"] = { // 조직 설정 - 중재자
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // Moderators 版主 /organizations/<org-login>/settings/moderators
-            "You can add organization members or teams as moderators for your organization. Moderators can block and unblock users from the organization, minimize comments, and manage interaction limits for all public organization repositories.": "您可以将组织成员或团队添加为组织的主版主.版主可以阻止和解除对该组织用户的阻止、最小化评论、并管理所有公共组织仓库的交互限制.",
+        // Moderators 중재자 /organizations/<org-login>/settings/moderators
+            "You can add organization members or teams as moderators for your organization. Moderators can block and unblock users from the organization, minimize comments, and manage interaction limits for all public organization repositories.": "조직 멤버나 팀을 조직의 중재자로 추가할 수 있어요. 중재자는 조직에서 사용자를 차단하고 차단을 해제하며, 댓글을 최소화하고, 모든 공개 조직 저장소의 상호작용 제한을 관리할 수 있어요.",
 
-            "You may add up to": "您最多可以添加",
-            "members or teams as moderators.": "成员或团队作为版主.",
-            "Add a member or team": "添加成员或团队",
-            "You don't have any moderators for this organization.": "该组织尚无任何版主",
+            "You may add up to": "최대",
+            "members or teams as moderators.": "명의 멤버 또는 팀을 중재자로 추가할 수 있어요.",
+            "Add a member or team": "멤버 또는 팀 추가하기",
+            "You don't have any moderators for this organization.": "이 조직에는 중재자가 없어요.",
 
-            // [/Successfully added (@[^\n]+) as a moderator/, "已成功将 $1 添加为版主"],
-            // [/Successfully removed (@[^\n]+) as a moderator/, "已成功将 $1 的版主身份移除"],
-            "Remove moderator": "移除版主",
+            // [/Successfully added (@[^\n]+) as a moderator/, "$1님을 중재자로 성공적으로 추가했어요"],
+            // [/Successfully removed (@[^\n]+) as a moderator/, "$1님의 중재자 자격을 성공적으로 제거했어요"],
+            "Remove moderator": "중재자 제거하기",
 
 
     },
-    "regexp": [ // 正则翻译
-        [/Successfully added (@[^\n]+) as a moderator/, "已成功将 $1 添加为版主"],
-        [/Successfully removed (@[^\n]+) as a moderator/, "已成功将 $1 的版主身份移除"],
+    "regexp": [ // 정규식 번역
+        [/Successfully added (@[^\n]+) as a moderator/, "$1님을 중재자로 성공적으로 추가했어요"],
+        [/Successfully removed (@[^\n]+) as a moderator/, "$1님의 중재자 자격을 성공적으로 제거했어요"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/repository-defaults"] = { // 组织设置 - 仓库 / 默认值
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/repository-defaults"] = { // 조직 설정 - 저장소 / 기본값
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 仓库默认分支 /organizations/<org-login>/settings/repository-defaults
-            "Repository default branch": "仓库默认分支",
-                "Choose the default branch for new repositories in this organization. You might want to change the default name due to different workflows, or because your integrations still require “master” as the default branch name. You can always change the default branch name on individual repositories.": "为该组织中的新仓库选择默认的分支.由于工作流程的不同，或者由于您的集成仍然需要 “master” 作为默认分支名，您可能想改变默认名称.您可以随时改变单个仓库的默认分支名称.",
-                "Learn more about default branches.": "了解更多关于默认分支的信息.",
-            // "Update": "更新",
-            "Updating…": "更新中…",
-            // 顶部提醒
-                // [/New repositories created in ([^ ]+) will use main as their default branch./, "在 $1 中创建的新仓库将使用 main 作为其默认分支."],
+        // 저장소 기본 분기 /organizations/<org-login>/settings/repository-defaults
+            "Repository default branch": "저장소 기본 분기",
+                "Choose the default branch for new repositories in this organization. You might want to change the default name due to different workflows, or because your integrations still require “master” as the default branch name. You can always change the default branch name on individual repositories.": "이 조직의 새 저장소에 대한 기본 분기를 선택하세요. 다른 워크플로 때문에 또는 통합 기능이 여전히 'master'를 기본 분기 이름으로 요구하기 때문에 기본 이름을 변경하고 싶을 수 있어요. 개별 저장소의 기본 분기 이름은 언제든지 변경할 수 있어요.",
+                "Learn more about default branches.": "기본 분기에 대해 더 알아보기.",
+            // "Update": "업데이트하기",
+            "Updating…": "업데이트 중…",
+            // 상단 알림
+                // [/New repositories created in ([^ ]+) will use main as their default branch./, "$1에서 생성된 새 저장소는 main을 기본 분기로 사용해요."],
 
-            "Commit signoff": "提交签署",
-                "Choose whether repositories will require contributors to sign off on commits they make through GitHub's web interface. Signing off is a way for contributors to affirm that their commit complies with the repository's terms, commonly the": "选择仓库是否要求贡献者签署通过 GitHub 的 Web 界面所做的提交.签署是贡献者确认他们的提交符合仓库条款的一种方式，일반是",
-                "Developer Certificate of Origin (DCO)": "开发者来源证书（DCO）",
-                "Learn more about signing off on commits": "了解更多关于签署提交的信息",
-                "All repositories": "所有仓库",
-                    "Require signoff on web-based commits for all repositories in this organization": "要求对该组织中所有仓库的基于 Web 的提交进行签署",
-                "No policy": "无政策",
-                    "Each repository chooses whether to require signoff on web-based commits": "每个仓库选择是否要求对基于 Web 的提交进行签署",
+            "Commit signoff": "커밋 서명",
+                "Choose whether repositories will require contributors to sign off on commits they make through GitHub's web interface. Signing off is a way for contributors to affirm that their commit complies with the repository's terms, commonly the": "저장소에서 기여자가 GitHub 웹 인터페이스를 통해 수행한 커밋에 서명하도록 요구할지 선택하세요. 서명은 기여자가 자신의 커밋이 저장소의 약관(일반적으로",
+                "Developer Certificate of Origin (DCO)": "개발자 원본 증명서(DCO)",
+                "Learn more about signing off on commits": ")을 준수함을 확인하는 방법이에요. 커밋 서명에 대해 더 알아보세요.",
+                "All repositories": "모든 저장소",
+                    "Require signoff on web-based commits for all repositories in this organization": "이 조직의 모든 저장소에서 웹 기반 커밋에 서명을 요구해요.",
+                "No policy": "정책 없음",
+                    "Each repository chooses whether to require signoff on web-based commits": "각 저장소에서 웹 기반 커밋에 서명을 요구할지 선택해요.",
 
-                // 顶部提醒
-                    "Commit signoff settings were updated.": "提交签署设置已更新.",
+                // 상단 알림
+                    "Commit signoff settings were updated.": "커밋 서명 설정이 업데이트되었어요.",
 
-            "Repository labels": "仓库标签",
-                "Set the labels that will be included when a new repository is created in this organization.": "设置在此组织中创建新的仓库时将包含的标签.",
-                "Learn more about managing default labels for your organization.": "了解更多关于为您的组织管理默认标签的信息.",
-            "New label": "新建标签",
-                "Label preview": "标签预览",
-                "Label name": "标签名",
-                "Description": "描述",
-                "Description (optional)": "描述（可选）",
-                "Color": "颜色",
-                    "Get a new color": "获得新颜色",
-                    "Choose from default colors:": "从默认颜色中选择：",
-                "Create label": "创建标签",
-                "Saving...": "保存中...",
-                "Save changes": "保存更改",
-            // 删除提醒
-            "Are you sure? Deleting a label will remove as a default, and no future repositories will receive this label when created.": "您确定吗？删除标签将作为默认值删除，以后的仓库在创建时不会收到此标签.",
+            "Repository labels": "저장소 꼬리표",
+                "Set the labels that will be included when a new repository is created in this organization.": "이 조직에서 새 저장소를 만들 때 포함될 꼬리표를 설정하세요.",
+                "Learn more about managing default labels for your organization.": "조직의 기본 꼬리표 관리에 대해 더 알아보기.",
+            "New label": "새 꼬리표 만들기",
+                "Label preview": "꼬리표 미리보기",
+                "Label name": "꼬리표 이름",
+                "Description": "설명",
+                "Description (optional)": "설명 (선택 사항)",
+                "Color": "색상",
+                    "Get a new color": "새 색상 얻기",
+                    "Choose from default colors:": "기본 색상에서 선택:",
+                "Create label": "꼬리표 만들기",
+                "Saving...": "저장 중...",
+                "Save changes": "변경사항 저장하기",
+            // 삭제 알림
+            "Are you sure? Deleting a label will remove as a default, and no future repositories will receive this label when created.": "확실하신가요? 꼬리표를 삭제하면 기본값에서 제거되며, 앞으로 생성되는 저장소에는 이 꼬리표가 적용되지 않아요.",
 
-            "label": "个标签",
-            "labels": "个标签",
-            "bug": "BUG",
-                "Something isn't working": "有些东西不工作",
-            "dependencies": "依赖性",
-                "Pull requests that update a dependency file": "更新一个依赖文件的拉取请求",
-            "documentation": "文档",
-                "Improvements or additions to documentation": "文档的改进或补充",
-            "duplicate": "重复",
-                "This issue or pull request already exists": "这个이슈或拉取请求已经存在",
-            "enhancement": "增强",
-                "New feature or request": "新功能或请求",
-            "good first issue": "好的首发이슈",
-                "Good for newcomers": "适合新人",
-            "help wanted": "需要帮助",
-                "Extra attention is needed": "需要特别关注",
-            "invalid": "无效",
-                "This doesn't seem right": "这似乎不对",
-            "question": "问题",
-                "Further information is requested": "要求提供更多信息",
-            "wontfix": "不会修复",
-                "This will not be worked on": "这将不会被处理",
+            "label": "개의 꼬리표",
+            "labels": "개의 꼬리표",
+            "bug": "버그",
+                "Something isn't working": "무언가 작동하지 않아요.",
+            "dependencies": "의존성",
+                "Pull requests that update a dependency file": "의존성 파일을 업데이트하는 끌어오기 요청",
+            "documentation": "문서",
+                "Improvements or additions to documentation": "문서 개선 또는 추가",
+            "duplicate": "중복",
+                "This issue or pull request already exists": "이 이슈 또는 끌어오기 요청은 이미 존재해요.",
+            "enhancement": "개선",
+                "New feature or request": "새 기능 또는 요청",
+            "good first issue": "첫 기여자를 위한 이슈",
+                "Good for newcomers": "새로운 기여자에게 좋아요.",
+            "help wanted": "도움 필요",
+                "Extra attention is needed": "특별한 관심이 필요해요.",
+            "invalid": "유효하지 않음",
+                "This doesn't seem right": "올바르지 않은 것 같아요.",
+            "question": "질문",
+                "Further information is requested": "추가 정보가 필요해요.",
+            "wontfix": "수정 안 함",
+                "This will not be worked on": "이 작업은 진행되지 않을 거예요.",
 
     },
-    "regexp": [ // 正则翻译
-        [/New repositories created in ([^ ]+) will use main as their default branch./, "在 $1 中创建的新仓库将使用 main 作为其默认分支."],
-        [/Your default branch name will be ([^ ]+)/, "您的默认分支名称将是 $1"],
+    "regexp": [ // 정규식 번역
+        [/New repositories created in ([^ ]+) will use main as their default branch./, "$1에서 생성된 새 저장소는 main을 기본 분기로 사용해요."],
+        [/Your default branch name will be ([^ ]+)/, "사용자님의 기본 분기 이름은 $1이(가) 될 거예요."],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/topics"] = { // 组织设置 - 仓库 /仓库主题
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/topics"] = { // 조직 설정 - 저장소 / 저장소 주제
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 仓库主题 /orgs/<org-login>/topics
-            "No repositories": "尚无仓库",
-            "A code repository designed to show the best GitHub has to offer.": "旨在展示 GitHub 必须提供的最佳代码仓库.",
+        // 저장소 주제 /orgs/<org-login>/topics
+            "No repositories": "저장소 없음",
+            "A code repository designed to show the best GitHub has to offer.": "GitHub이 제공하는 최고의 기능을 보여주기 위해 설계된 코드 저장소예요.",
 
     },
-    "regexp": [ // 正则翻译
-        [/([^ ]+) repositories you contribute to/, "您贡献的 $1 仓库"],
-        [/There are no repositories in ([^ ]+) that you’ve contributed to and that you can set topics on./, "$1  中没有您贡献过的并且可以设置主题的仓库."],
+    "regexp": [ // 정규식 번역
+        [/([^ ]+) repositories you contribute to/, "사용자님께서 기여한 $1개의 저장소"],
+        [/There are no repositories in ([^ ]+) that you’ve contributed to and that you can set topics on./, "$1에는 사용자님께서 기여했고 주제를 설정할 수 있는 저장소가 없어요."],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/codespaces"] = { // 组织设置 - 仓库 /代码空间
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/codespaces"] = { // 조직 설정 - 저장소 / Codespaces
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
-        "To manage Codespace ownership settings, please": "要管理代码空间所有权设置，请",
-        "upgrade your plan": "升级您的计划",
-        "to enable your organization.": "以启用您的组织.",
+        "To manage Codespace ownership settings, please": "Codespace 소유권 설정을 관리하려면,",
+        "upgrade your plan": "플랜을 업그레이드하여",
+        "to enable your organization.": "조직을 활성화해주세요.",
 
-        "Codespaces access": "代码空间访问",
-            "Manage access to GitHub Codespaces for your organization's members on private and internal repositories. Codespaces are always available on public repositories.": "管理组织成员对私有和内部仓库中 GitHub 代码空间的访问权限.代码空间始终在公共仓库中可用.",
+        "Codespaces access": "Codespaces 접근",
+            "Manage access to GitHub Codespaces for your organization's members on private and internal repositories. Codespaces are always available on public repositories.": "조직 멤버가 비공개 및 내부 저장소의 GitHub Codespaces에 접근하는 것을 관리하세요. Codespaces는 공개 저장소에서 항상 사용할 수 있어요.",
 
-            "By enabling Codespaces, you agree to GitHub’s": "启用代码空间即表示您同意 GitHub 的",
-            "additional products and features terms": "附加产品和功能条款",
-            "and approve of these terms on behalf of your organization.": "并代表您的组织批准这些条款.",
+            "By enabling Codespaces, you agree to GitHub’s": "Codespaces를 활성화하면 GitHub의",
+            "additional products and features terms": "추가 제품 및 기능 약관에",
+            "and approve of these terms on behalf of your organization.": "동의하고 조직을 대신하여 이 약관을 승인하는 것이에요.",
 
-            "Disabled": "禁用",
-                "Disable GitHub Codespaces for all organization owned private and internal repositories": "禁用所有组织拥有的私有和内部仓库的 GitHub 代码空间",
+            "Disabled": "비활성화됨",
+                "Disable GitHub Codespaces for all organization owned private and internal repositories": "조직이 소유한 모든 비공개 및 내부 저장소에 대해 GitHub Codespaces 비활성화하기",
 
-            "Enable for specific members or teams": "为特定成员或团队启用",
-                "Enable GitHub Codespaces for specific organization members or teams on all organization owned private and internal repositories": "在所有组织拥有的私有和内部仓库上为特定组织成员或团队启用 GitHub 代码空间",
+            "Enable for specific members or teams": "특정 멤버 또는 팀에 대해 활성화하기",
+                "Enable GitHub Codespaces for specific organization members or teams on all organization owned private and internal repositories": "조직이 소유한 모든 비공개 및 내부 저장소에서 특정 조직 멤버 또는 팀에 대해 GitHub Codespaces 활성화하기",
 
-            "Enable for all members": "为所有成员启用",
-                "Enable GitHub Codespaces for all organization members on all organization owned private and internal repositories": "在所有组织拥有的私有和内部仓库上为所有组织成员启用 GitHub 代码空间",
+            "Enable for all members": "모든 멤버에 대해 활성화하기",
+                "Enable GitHub Codespaces for all organization members on all organization owned private and internal repositories": "조직이 소유한 모든 비공개 및 내부 저장소에서 모든 조직 멤버에 대해 GitHub Codespaces 활성화하기",
 
-            "Enable for all members and outside collaborators": "为所有成员和外部协作者启用",
-                "Enable GitHub Codespaces for all organization members and outside collaborators on all organization owned private and internal repositories": "在所有组织拥有的私有和内部仓库上为所有组织成员和外部协作者启用 GitHub 代码空间",
+            "Enable for all members and outside collaborators": "모든 멤버 및 외부 협업자에 대해 활성화하기",
+                "Enable GitHub Codespaces for all organization members and outside collaborators on all organization owned private and internal repositories": "조직이 소유한 모든 비공개 및 내부 저장소에서 모든 조직 멤버 및 외부 협업자에 대해 GitHub Codespaces 활성화하기",
 
-        "Codespace ownership": "代码空间所有权",
-            "Control who owns codespaces created by your organization’s members on organization owned repositories. Codespace ownership dictates who is billed for usage, whose policies apply, and where audit logs are sent.": "控制谁拥有组织成员在组织拥有的仓库上创建的代码空间.代码空间所有权决定了由谁来支付使用费、适用谁的策略以及审计日志发送到何处.",
+        "Codespace ownership": "Codespace 소유권",
+            "Control who owns codespaces created by your organization’s members on organization owned repositories. Codespace ownership dictates who is billed for usage, whose policies apply, and where audit logs are sent.": "조직 멤버가 조직 소유의 저장소에서 생성한 Codespace의 소유자를 제어하세요. Codespace 소유권은 사용 요금 청구 대상, 적용 정책, 감사 로그 전송 위치를 결정해요.",
 
-            "Organization ownership": "组织所有权",
-                "All codespaces created by your organization’s members on your organization’s repositories are owned by the organization": "组织成员在组织仓库上创建的所有代码空间都归组织所有",
+            "Organization ownership": "조직 소유권",
+                "All codespaces created by your organization’s members on your organization’s repositories are owned by the organization": "조직 멤버가 조직의 저장소에서 생성한 모든 Codespace는 조직이 소유해요.",
 
-            "User ownership": "用户所有权",
-                "All codespaces created by your organization’s members on your organization’s repositories are owned by the creating member": "组织的成员在组织仓库上创建的所有代码空间都归创建成员所有",
+            "User ownership": "사용자 소유권",
+                "All codespaces created by your organization’s members on your organization’s repositories are owned by the creating member": "조직의 멤버가 조직의 저장소에서 생성한 모든 Codespace는 생성한 멤버가 소유해요.",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/copilot"] = {  // 组织设置 - GitHub Copilot
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/copilot"] = {  // 조직 설정 - GitHub Copilot
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 组织设置 - GitHub Copilot /orgs/<org-login>/settings/copilot
-            "The AI powered pair programmer for your organization. Once you complete onboarding, you’ll have the ability to manage policies and control which users or teams will have access to": "为您的组织提供人工智能助理程序员.完成入职后，您将能够管理策略并控制哪些用户或团队有权访问组织内的",
-            "inside your organization.": ".",
+        // 조직 설정 - GitHub Copilot /orgs/<org-login>/settings/copilot
+            "The AI powered pair programmer for your organization. Once you complete onboarding, you’ll have the ability to manage policies and control which users or teams will have access to": "조직을 위한 AI 기반 페어 프로그래머입니다. 온보딩을 완료하면 정책을 관리하고 조직 내에서 어떤 사용자나 팀이",
+            "inside your organization.": "에 접근할지 제어할 수 있어요.",
 
-            "Enable GitHub Copilot": "启用 GitHub Copilot",
+            "Enable GitHub Copilot": "GitHub Copilot 활성화하기",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/actions"] = { // 组织设置 - 操作
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/actions"] = { // 조직 설정 - 액션
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 操作页面 /organizations/<org-login>/settings/actions
-            "General actions permissions": "常规操作权限",
+        // 액션 페이지 /organizations/<org-login>/settings/actions
+            "General actions permissions": "일반 액션 권한",
 
-            "Policies": "政策",
-                "Choose which repositories are permitted to use GitHub Actions.": "选择允许哪些仓库使用 GitHub Actions.",
-                "All repositories": "所有仓库",
-                    "Actions can be run by any repository in the organization": "操作可以由组织中的任何仓库运行",
-                "Selected repositories": "选定的仓库",
-                    "Actions can only be run by specifically selected repositories": "操作只能由特定选择的仓库运行",
-                    // [/(\d+) selected repositor(y|ies)/, "$1 个选定的仓库"],
-                    "selected repository": "个选定的仓库",
-                    "selected repositories": "个选定的仓库",
-                    // 对话框
-                        "Select the organization repositories that may use Actions.": "选择可以使用操作的组织仓库.",
-                        "Filter repositories": "筛选仓库",
-                        "No repositories found.": "未找到仓库.",
-                        "Select repositories": "选定仓库",
-                "Disabled": "禁用",
-                    "GitHub Actions is disabled for all repositories in the organization": "对组织中的所有仓库禁用 GitHub Actions",
+            "Policies": "정책",
+                "Choose which repositories are permitted to use GitHub Actions.": "GitHub 액션을 사용하도록 허용할 저장소를 선택하세요.",
+                "All repositories": "모든 저장소",
+                    "Actions can be run by any repository in the organization": "액션은 조직의 모든 저장소에서 실행될 수 있어요.",
+                "Selected repositories": "선택된 저장소",
+                    "Actions can only be run by specifically selected repositories": "액션은 특별히 선택된 저장소에서만 실행될 수 있어요.",
+                    // [/(\d+) selected repositor(y|ies)/, "$1개의 선택된 저장소"],
+                    "selected repository": "개의 선택된 저장소",
+                    "selected repositories": "개의 선택된 저장소",
+                    // 대화상자
+                        "Select the organization repositories that may use Actions.": "액션을 사용할 수 있는 조직 저장소를 선택하세요.",
+                        "Filter repositories": "저장소 필터링하기",
+                        "No repositories found.": "저장소를 찾을 수 없어요.",
+                        "Select repositories": "저장소 선택하기",
+                "Disabled": "비활성화됨",
+                    "GitHub Actions is disabled for all repositories in the organization": "조직의 모든 저장소에 대해 GitHub 액션이 비활성화되었어요.",
 
-                "Allow all actions and reusable workflows": "允许所有操作和可复用的工作流程",
-                    "Any action or reusable workflow can be used, regardless of who authored it or where it is defined.": "可以使用任何操作或可复用的工作流程，而不管它是谁创作的或在哪里定义的.",
-                // [/Allow ([^ ]+) actions and reusable workflows/, "允许 $1 的操作和可复用的工作流程"],
-                //     [/Any action or reusable workflow defined in a repository within the ([^ ]+) organization can be used./, "可以使用在 $1 组织内的仓库中定义的任何操作或可复用的工作流程."], // 操作页面
-                // [/Allow ([^ ]+), and select non-([^ ]+), actions and reusable workflows/, "允许 $1，并选择非 $2、操作和可复用的工作流程"],
-                //     [/Any action or reusable workflow that matches the specified criteria, plus those defined in a repository within the ([^ ]+) organization, can be used./, "可以使用符合指定条件的操作或可复用的工作流程，以及在 $1 组织内的仓库中定义的操作或可复用的工作流程."], // 操作页面
-                    "Learn more about allowing specific actions and reusable workflows to run.": "了解更多关于允许运行特定操作和可复用的工作流程的信息.",
-                    "Allow actions created by GitHub": "允许由 GitHub 创建的操作",
-                    "Allow actions by Marketplace": "允许来自市场的操作，",
-                    "verified creators": "由经验证的创建者创建",
-                    "Allow specified actions and reusable workflows": "允许指定的操作和可复用的工作流程",
-                    "Applies to": "适用于",
-                    "repositories only": "仓库，仅仅",
-                        // "Workflows using these actions in private repositories will fail.": "在私有仓库中使用这些操作的工作流程将失败.",
-                        // "Using a list of specific actions is only supported for public repositories on your current GitHub plan. To have this list apply to private repositories,": "只有当前 GitHub 计划中的公共仓库才支持使用特定操作列表.要将此列表应用于私有仓库，",
-                        // "upgrade your plan": "升级您的计划",
-                "Enter a comma-separated list of actions and reusable workflows": "输入以逗号分隔的操作和可复用的工作流程列表",
-                "Wildcards, tags, and SHAs are allowed.": "允许使用通配符、标签和 SHA.",
-                "Action examples:": "操作示例：",
-                "Reusable workflow examples:": "可复用的工作流程示例：",
-                "Entire organization or repository examples:": "整个组织或仓库的示例：",
+                "Allow all actions and reusable workflows": "모든 액션 및 재사용 가능한 워크플로 허용하기",
+                    "Any action or reusable workflow can be used, regardless of who authored it or where it is defined.": "작성자나 정의된 위치에 관계없이 모든 액션 또는 재사용 가능한 워크플로를 사용할 수 있어요.",
+                // [/Allow ([^ ]+) actions and reusable workflows/, "$1의 액션 및 재사용 가능한 워크플로 허용하기"],
+                //     [/Any action or reusable workflow defined in a repository within the ([^ ]+) organization can be used./, "$1 조직 내 저장소에 정의된 모든 액션 또는 재사용 가능한 워크플로를 사용할 수 있어요."], // 액션 페이지
+                // [/Allow ([^ ]+), and select non-([^ ]+), actions and reusable workflows/, "$1 허용 및 비-$2, 액션 및 재사용 가능한 워크플로 선택하기"],
+                //     [/Any action or reusable workflow that matches the specified criteria, plus those defined in a repository within the ([^ ]+) organization, can be used./, "지정된 기준과 일치하는 모든 액션 또는 재사용 가능한 워크플로와 $1 조직 내 저장소에 정의된 것을 사용할 수 있어요."], // 액션 페이지
+                    "Learn more about allowing specific actions and reusable workflows to run.": "특정 액션 및 재사용 가능한 워크플로 실행 허용에 대해 더 알아보기.",
+                    "Allow actions created by GitHub": "GitHub에서 만든 액션 허용하기",
+                    "Allow actions by Marketplace": "장터의 액션 허용하기,",
+                    "verified creators": "검증된 제작자",
+                    "Allow specified actions and reusable workflows": "지정된 액션 및 재사용 가능한 워크플로 허용하기",
+                    "Applies to": "적용 대상:",
+                    "repositories only": "저장소만",
+                        // "Workflows using these actions in private repositories will fail.": "비공개 저장소에서 이 액션을 사용하는 워크플로는 실패해요.",
+                        // "Using a list of specific actions is only supported for public repositories on your current GitHub plan. To have this list apply to private repositories,": "특정 액션 목록 사용은 현재 GitHub 플랜의 공개 저장소에서만 지원돼요. 이 목록을 비공개 저장소에 적용하려면,",
+                        // "upgrade your plan": "플랜을 업그레이드하세요.",
+                "Enter a comma-separated list of actions and reusable workflows": "쉼표로 구분된 액션 및 재사용 가능한 워크플로 목록을 입력하세요",
+                "Wildcards, tags, and SHAs are allowed.": "와일드카드, 꼬리표, SHA가 허용돼요.",
+                "Action examples:": "액션 예시:",
+                "Reusable workflow examples:": "재사용 가능한 워크플로 예시:",
+                "Entire organization or repository examples:": "전체 조직 또는 저장소 예시:",
 
-                // 顶部提醒
-                    "Actions policy updated.": "操作政策已更新",
+                // 상단 알림
+                    "Actions policy updated.": "액션 정책이 업데이트되었어요.",
 
-            // 运行器
-                "Choose which repositories are allowed to create repository-level self-hosted runners.": "选择哪些仓库允许创建仓库级自托管运行器.",
-                // 私有仓库
-                    "Repo-level self-hosted runners can be used by any repository in the organization": "组织内的任何仓库都可以使用仓库级自托管运行器",
-                // 选定的仓库
-                    "Repo-level self-hosted runners can be used by specifically selected repositories": "选定的仓库允许使用仓库级自托管运行器",
-                    "Select the organization repositories that may use repository-level self-hosted runners.": "选择组织中允许使用仓库级自托管运行器的仓库.",
-                // 禁用
-                    "Repo-level self-hosted runners are disabled for all repositories in the organization": "组织中的所有仓库都禁用仓库级别的自托管运行器",
+            // 실행기
+                "Choose which repositories are allowed to create repository-level self-hosted runners.": "저장소 수준의 자체 호스팅 실행기를 생성할 수 있는 저장소를 선택하세요.",
+                // 비공개 저장소
+                    "Repo-level self-hosted runners can be used by any repository in the organization": "저장소 수준의 자체 호스팅 실행기는 조직의 모든 저장소에서 사용할 수 있어요.",
+                // 선택된 저장소
+                    "Repo-level self-hosted runners can be used by specifically selected repositories": "선택된 저장소에서 저장소 수준의 자체 호스팅 실행기를 사용할 수 있어요.",
+                    "Select the organization repositories that may use repository-level self-hosted runners.": "저장소 수준의 자체 호스팅 실행기를 사용할 수 있는 조직 저장소를 선택하세요.",
+                // 비활성화
+                    "Repo-level self-hosted runners are disabled for all repositories in the organization": "조직의 모든 저장소에서 저장소 수준의 자체 호스팅 실행기가 비활성화되었어요.",
 
-                // 顶部提醒
-                    "Repo-level self-hosted runners settings changed.": "仓库级别的自托管运行器设置已更改.",
+                // 상단 알림
+                    "Repo-level self-hosted runners settings changed.": "저장소 수준의 자체 호스팅 실행기 설정이 변경되었어요.",
 
-            "Artifact and log retention": "工件和日志保留",
-                "Choose the default repository settings for artifacts and logs.": "选择工件和日志的默认仓库设置.",
-                "days": "天",
-                "You can set a maximum limit of": "您最多可以设置为",
-                "days.": "天.",
-                "Learn more about the artifact and log retention policy.": "了解更多关于工件和日志保留政策的信息.",
-                "Duration must be 90 or less": "必须为 1-90",
-                "Duration must be 1 or more.": "必须为 1-90",
+            "Artifact and log retention": "아티팩트 및 로그 보존",
+                "Choose the default repository settings for artifacts and logs.": "아티팩트 및 로그의 기본 저장소 설정을 선택하세요.",
+                "days": "일",
+                "You can set a maximum limit of": "최대",
+                "days.": "일까지 설정할 수 있어요.",
+                "Learn more about the artifact and log retention policy.": "아티팩트 및 로그 보존 정책에 대해 더 알아보기.",
+                "Duration must be 90 or less": "기간은 90일 이하여야 해요.",
+                "Duration must be 1 or more.": "기간은 1일 이상이어야 해요.",
 
-            "Fork pull request workflows from outside collaborators": "从外部协作者，复刻拉取请求工作流程",
-                "Choose which subset of outside collaborators will require approval to run workflows on their pull requests.": "选择哪些外部协作者的子集需要批准才能对他们的拉取请求运行工作流程.",
-                "Learn more about approving workflow runs from public forks.": "了解更多关于批准来自公共复刻的工作流运行的信息.",
-                "Require approval for first-time contributors who are new to GitHub": "要求对首次加入 GitHub 的贡献者进行批准审查",
-                    "Only first-time contributors who recently created a GitHub account will require approval to run workflows.": "只有最近创建 GitHub 账户的首次贡献者才需要获得批准才能运行工作流程.",
-                "Require approval for first-time contributors": "要求对首次贡献者进行批准审查",
-                    "Only first-time contributors will require approval to run workflows.": "只有首次贡献者才需要获得批准才能运行工作流程.",
-                "Require approval for all outside collaborators": "要求对所有外部协作者进行批准审查",
-                    "All outside collaborators will always require approval to run workflows on their pull requests.": "所有外部协作者将始终需要批准才能在他们的拉取请求上运行工作流程.",
-                // 顶部提醒
-                    "Fork pull request outside collaborators settings saved.": "外部协作者复刻拉取请求设置已保存.",
+            "Fork pull request workflows from outside collaborators": "외부 협업자의 포크된 끌어오기 요청 워크플로",
+                "Choose which subset of outside collaborators will require approval to run workflows on their pull requests.": "끌어오기 요청에서 워크플로를 실행하기 위해 승인이 필요한 외부 협업자의 하위 집합을 선택하세요.",
+                "Learn more about approving workflow runs from public forks.": "공개 포크에서 워크플로 실행 승인에 대해 더 알아보기.",
+                "Require approval for first-time contributors who are new to GitHub": "GitHub에 새로 가입한 첫 기여자에 대한 승인 요구하기",
+                    "Only first-time contributors who recently created a GitHub account will require approval to run workflows.": "최근에 GitHub 계정을 만든 첫 기여자만 워크플로를 실행하기 위해 승인이 필요해요.",
+                "Require approval for first-time contributors": "첫 기여자에 대한 승인 요구하기",
+                    "Only first-time contributors will require approval to run workflows.": "첫 기여자만 워크플로를 실행하기 위해 승인이 필요해요.",
+                "Require approval for all outside collaborators": "모든 외부 협업자에 대한 승인 요구하기",
+                    "All outside collaborators will always require approval to run workflows on their pull requests.": "모든 외부 협업자는 항상 끌어오기 요청에서 워크플로를 실행하기 위해 승인이 필요해요.",
+                // 상단 알림
+                    "Fork pull request outside collaborators settings saved.": "외부 협업자의 포크된 끌어오기 요청 설정이 저장되었어요.",
 
-            "Fork pull request workflows in private repositories": "私有仓库的复刻拉取请求工作流程",
-                "These settings apply to private repositories. Repository administrators will only be able to change the settings that are enabled here.": "这些设置适用于私有仓库.仓库管理员只能改变这里启用的设置.",
-                "Run workflows from fork pull requests": "从复刻拉取请求运行工作流程",
-                    "This tells Actions to run workflows from pull requests originating from repository forks. Note that doing so will give maintainers of those forks the ability to use tokens with read permissions on the source repository.": "这告诉 Actions 运行工作流程，来自仓库复刻的拉取请求.请注意，这样做将使这些复刻的维护者有能力在源码库上使用具有读取权限的令牌.",
-                    "Send write tokens to workflows from fork pull requests.": "从复刻拉取请求，发送可写令牌到工作流程",
-                        "This tells Actions to send tokens with": "这告诉 Actions 发送令牌",
-                        "write": "写入",
-                        "permissions to workflows from pull requests originating from repository forks. Note that doing so will give maintainers of those forks": "权限到工作流程，来自仓库复刻的拉取请求.请注意，这样做将授予这些复刻的维护者",
-                        "permissions against the source repository.": "权限，针对源仓库.",
-                    "Send secrets and variables to workflows from fork pull requests.": "从复刻拉取请求，发送机密和变量到工作流程",
-                        "This tells Actions to send repository secrets and variables to workflows from pull requests originating from repository forks.": "这告诉 Actions 发送仓库机密和变量到工作流程，来自仓库复刻的拉取请求.",
-                    "Require approval for fork pull request workflows.": "要求批准复刻 拉取请求工作流程.",
-                        "Fork pull requests from users without write access will require approval to run workflows.": "来自没有写入权限的用户的复刻拉取请求需要获得批准才能运行工作流程.",
-                // 顶部提醒
-                    "Fork pull request workflow settings saved.": "复刻拉取请求工作流程设置已保存.",
+            "Fork pull request workflows in private repositories": "비공개 저장소의 포크된 끌어오기 요청 워크플로",
+                "These settings apply to private repositories. Repository administrators will only be able to change the settings that are enabled here.": "이 설정은 비공개 저장소에 적용돼요. 저장소 관리자는 여기서 활성화된 설정만 변경할 수 있어요.",
+                "Run workflows from fork pull requests": "포크된 끌어오기 요청에서 워크플로 실행하기",
+                    "This tells Actions to run workflows from pull requests originating from repository forks. Note that doing so will give maintainers of those forks the ability to use tokens with read permissions on the source repository.": "이는 액션에게 저장소 포크에서 온 끌어오기 요청의 워크플로를 실행하도록 지시해요. 이렇게 하면 해당 포크의 유지보수자가 원본 저장소에 대한 읽기 권한이 있는 토큰을 사용할 수 있게 돼요.",
+                    "Send write tokens to workflows from fork pull requests.": "포크된 끌어오기 요청에서 워크플로로 쓰기 토큰 보내기",
+                        "This tells Actions to send tokens with": "이는 액션에게",
+                        "write": "쓰기",
+                        "permissions to workflows from pull requests originating from repository forks. Note that doing so will give maintainers of those forks": "권한이 있는 토큰을 저장소 포크에서 온 끌어오기 요청의 워크플로로 보내도록 지시해요. 이렇게 하면 해당 포크의 유지보수자에게",
+                        "permissions against the source repository.": "원본 저장소에 대한 권한이 부여돼요.",
+                    "Send secrets and variables to workflows from fork pull requests.": "포크된 끌어오기 요청에서 워크플로로 비밀 정보 및 변수 보내기",
+                        "This tells Actions to send repository secrets and variables to workflows from pull requests originating from repository forks.": "이는 액션에게 저장소 비밀 정보와 변수를 저장소 포크에서 온 끌어오기 요청의 워크플로로 보내도록 지시해요.",
+                    "Require approval for fork pull request workflows.": "포크된 끌어오기 요청 워크플로에 대한 승인 요구하기",
+                        "Fork pull requests from users without write access will require approval to run workflows.": "쓰기 접근 권한이 없는 사용자의 포크된 끌어오기 요청은 워크플로를 실행하기 위해 승인이 필요해요.",
+                // 상단 알림
+                    "Fork pull request workflow settings saved.": "포크된 끌어오기 요청 워크플로 설정이 저장되었어요.",
 
-            "Workflow permissions": "工作流程权限",
-                "Choose the default permissions granted to the GITHUB_TOKEN when running workflows in this organization. You can specify more granular permissions in the workflow using YAML.": "在组织中运行工作流程时，选择授予 GITHUB_TOKEN 的默认权限.您可以使用 YAML 在工作流程中指定更细化的权限.",
-                "Learn more about managing permissions.": "了解更多关于管理权限的信息.",
+            "Workflow permissions": "워크플로 권한",
+                "Choose the default permissions granted to the GITHUB_TOKEN when running workflows in this organization. You can specify more granular permissions in the workflow using YAML.": "이 조직에서 워크플로를 실행할 때 GITHUB_TOKEN에 부여되는 기본 권한을 선택하세요. YAML을 사용하여 워크플로에서 더 세분화된 권한을 지정할 수 있어요.",
+                "Learn more about managing permissions.": "권한 관리에 대해 더 알아보기.",
 
-                "Repository administrators will only be able to change the default permissions to a more restrictive setting.": "仓库管理员只能将默认权限改为更严格的设置.",
-                    "Read and write permissions": "读取和写入权限",
-                        "Workflows have read and write permissions in the repository for all scopes.": "工作流程在仓库中对所有作用域具有读和写的权限.",
-                    "Read repository contents and packages permissions": "读取仓库的内容和软件包的权限",
-                        "Workflows have read permissions in the repository for the contents and packages scopes only.": "工作流程在仓库中仅对内容和软件包作用域具有只读的权限.",
-                    "Choose whether GitHub Actions can create pull requests or submit approving pull request reviews.": "选择 GitHub Actions 是否可以创建拉取请求或提交批准拉取请求审查.",
-                    "Allow GitHub Actions to create and approve pull requests": "允许 GitHub Actions 创建和批准拉取请求",
-                        "This controls whether GitHub Actions can create pull requests or submit approving pull request reviews.": "这控制 GitHub Actions 是否可以创建拉取请求或提交批准的拉取请求审查.",
-                    // 顶部提醒
-                        "Default workflow permissions settings saved.": "默认工作流程权限设置已保存.",
+                "Repository administrators will only be able to change the default permissions to a more restrictive setting.": "저장소 관리자는 기본 권한을 더 제한적인 설정으로만 변경할 수 있어요.",
+                    "Read and write permissions": "읽기 및 쓰기 권한",
+                        "Workflows have read and write permissions in the repository for all scopes.": "워크플로는 저장소의 모든 범위에 대해 읽기 및 쓰기 권한을 가져요.",
+                    "Read repository contents and packages permissions": "저장소 콘텐츠 및 패키지 읽기 권한",
+                        "Workflows have read permissions in the repository for the contents and packages scopes only.": "워크플로는 저장소의 콘텐츠 및 패키지 범위에 대해서만 읽기 권한을 가져요.",
+                    "Choose whether GitHub Actions can create pull requests or submit approving pull request reviews.": "GitHub 액션이 끌어오기 요청을 생성하거나 승인하는 끌어오기 요청 검토를 제출할 수 있는지 선택하세요.",
+                    "Allow GitHub Actions to create and approve pull requests": "GitHub 액션이 끌어오기 요청을 생성하고 승인하도록 허용하기",
+                        "This controls whether GitHub Actions can create pull requests or submit approving pull request reviews.": "이는 GitHub 액션이 끌어오기 요청을 생성하거나 승인하는 끌어오기 요청 검토를 제출할 수 있는지 제어해요.",
+                    // 상단 알림
+                        "Default workflow permissions settings saved.": "기본 워크플로 권한 설정이 저장되었어요.",
 
-            "Required workflows": "所需的工作流程",
-                "Add workflow": "添加工作流",
-                "Set required workflows to run in your organization’s repositories. These workflows will run alongside the repository workflows and branch merging will be blocked until the required checks succeed.": "设置所需的工作流程，在您的组织的仓库中运行.这些工作流程将与仓库的工作流程一起运行，分支合并将被阻止，直到所需的检查成功.",
-                "Learn more about required workflows.": "了解更多关于所需工作流程的信息.",
-                "There are no required workflows in this organization.": "此组织中尚无所需的工作流程.",
+            "Required workflows": "필수 워크플로",
+                "Add workflow": "워크플로 추가하기",
+                "Set required workflows to run in your organization’s repositories. These workflows will run alongside the repository workflows and branch merging will be blocked until the required checks succeed.": "조직의 저장소에서 실행할 필수 워크플로를 설정하세요. 이 워크플로는 저장소 워크플로와 함께 실행되며, 필수 검사가 성공할 때까지 분기 병합이 차단돼요.",
+                "Learn more about required workflows.": "필수 워크플로에 대해 더 알아보기.",
+                "There are no required workflows in this organization.": "이 조직에는 필수 워크플로가 없어요.",
 
-        // 运行器页面 /organizations/<org-login>/settings/actions/runners
-            "Includes all runners across self-hosted and GitHub-hosted runners.": "包括所有自托管和 GitHub 托管的运行器.",
+        // 실행기 페이지 /organizations/<org-login>/settings/actions/runners
+            "Includes all runners across self-hosted and GitHub-hosted runners.": "자체 호스팅 및 GitHub 호스팅 실행기를 모두 포함해요.",
 
-            "Host your own runners and customize the environment used to run jobs in your GitHub Actions workflows. Runners added to this organization can be used to process jobs in multiple repositories in your organization.": "托管您自己的运行器，并定制用于在您的 GitHub Actions 工作流程中运行作业的环境.添加到该组织的运行器可以用来处理您的组织中的多个仓库的工作.",
-            "Learn more about self-hosted runners": "了解更多关于自托管运行器的信息",
+            "Host your own runners and customize the environment used to run jobs in your GitHub Actions workflows. Runners added to this organization can be used to process jobs in multiple repositories in your organization.": "자체 실행기를 호스팅하고 GitHub 액션 워크플로에서 작업을 실행하는 데 사용되는 환경을 사용자 지정하세요. 이 조직에 추가된 실행기는 조직의 여러 저장소에서 작업을 처리하는 데 사용될 수 있어요.",
+            "Learn more about self-hosted runners": "자체 호스팅 실행기에 대해 더 알아보기",
 
-            "Search runners": "搜索运行器",
-            "New runner": "创建运行器",
-                "New self-hosted runner": "新建自托管运行器",
-                    "Bring your own infrastructure": "自备基础设施",
-                "New GitHub-hosted runner": "新建 GitHub 托管运行器",
-                    "Pay-as-you-go, customizable, secure, scaled &": "即用即付、可定制、安全、可扩展并",
-                    "managed by GitHub": "由 GitHub 管理",
-                "Only available on paid Team or Enterprise plans": "仅适用于付费团队或企业计划",
+            "Search runners": "실행기 검색",
+            "New runner": "새 실행기 만들기",
+                "New self-hosted runner": "새 자체 호스팅 실행기 만들기",
+                    "Bring your own infrastructure": "자체 인프라 사용하기",
+                "New GitHub-hosted runner": "새 GitHub 호스팅 실행기 만들기",
+                    "Pay-as-you-go, customizable, secure, scaled &": "사용한 만큼 지불, 사용자 지정 가능, 안전, 확장 가능 및",
+                    "managed by GitHub": "GitHub에서 관리",
+                "Only available on paid Team or Enterprise plans": "유료 팀 또는 기업 플랜에서만 사용 가능해요.",
 
-            "There are no runners configured": "暂无设置运行器",
-            "Learn more about using runners": "了解更多关于使用运行器的信息",
-            "to run actions on your own servers.": "在您自己的服务器上运行操作的信息.",
+            "There are no runners configured": "설정된 실행기가 없어요.",
+            "Learn more about using runners": "실행기 사용에 대해 더 알아보기",
+            "to run actions on your own servers.": "자체 서버에서 액션을 실행하는 방법에 대한 정보.",
 
-            "Standard GitHub-hosted runners": "标准 GitHub 托管运行器",
-            "Ready-to-use runners managed by GitHub.": "由 GitHub 管理的即用型运行器.",
-            // [/(\d+) active jobs?/ ,"$1 个活跃的工作"]
+            "Standard GitHub-hosted runners": "표준 GitHub 호스팅 실행기",
+            "Ready-to-use runners managed by GitHub.": "GitHub에서 관리하는 즉시 사용 가능한 실행기예요.",
+            // [/(\d+) active jobs?/ ,"$1개의 활성 작업"]
 
-        // 由 GitHub 托管的运行器 /organizations/<org-login>/settings/actions/hosted-runners
-            "/ GitHub-hosted runners": "/ GitHub 托管运行器",
-            "All jobs usage": "所有工作的使用情况",
-            "To increase your concurrency limit, upgrade your": "要增加您的并发限制，请升级您的",
-            "GitHub plan.": "GitHub 计划.",
+        // GitHub 호스팅 실행기 /organizations/<org-login>/settings/actions/hosted-runners
+            "/ GitHub-hosted runners": "/ GitHub 호스팅 실행기",
+            "All jobs usage": "모든 작업 사용량",
+            "To increase your concurrency limit, upgrade your": "동시성 한도를 높이려면 다음을 업그레이드하세요:",
+            "GitHub plan.": "GitHub 플랜.",
 
-            "Labels": "标签",
+            "Labels": "꼬리표",
 
-            "Active jobs": "活跃的工作",
-            "There are currently no running jobs": "目前没有正在运行的工作",
-            "Add `": "添加 `",
-            "` to your workflow's YAML to send jobs to GitHub-hosted runners.": "`到您的工作流程的YAML中，以发送作业到 GitHub 托管的运行器.",
+            "Active jobs": "활성 작업",
+            "There are currently no running jobs": "현재 실행 중인 작업이 없어요.",
+            "Add `": "다음을 추가하세요: `",
+            "` to your workflow's YAML to send jobs to GitHub-hosted runners.": "`를 워크플로의 YAML에 추가하여 작업을 GitHub 호스팅 실행기로 보내세요.",
 
-        // 创建运行器页面 /organizations/<org-login>/settings/actions/runners/new
-            "/ Create self-hosted runner": "/ 创建自托管运行器",
-            "Adding a self-hosted runner requires that you download, configure, and execute the GitHub Actions Runner. By downloading and configuring the GitHub Actions Runner, you agree to the": "添加一个自托管运行器需要您下载、配置并执行 GitHub Actions 运行器.下载并配置 GitHub Actions 运行器 后，您同意",
-                "GitHub Terms of Service": "GitHub 服务条款",
-                "GitHub Corporate Terms of Service": "GitHub 企业服务条款",
-                ", as applicable.": "，如适用.",
-            "Runner image": "运行器镜像",
-            "Architecture": "架构",
-            "Download": "下载",
+        // 실행기 만들기 페이지 /organizations/<org-login>/settings/actions/runners/new
+            "/ Create self-hosted runner": "/ 자체 호스팅 실행기 만들기",
+            "Adding a self-hosted runner requires that you download, configure, and execute the GitHub Actions Runner. By downloading and configuring the GitHub Actions Runner, you agree to the": "자체 호스팅 실행기를 추가하려면 GitHub 액션 실행기를 다운로드, 구성 및 실행해야 해요. GitHub 액션 실행기를 다운로드하고 구성하면 다음에 동의하는 것이에요:",
+                "GitHub Terms of Service": "GitHub 서비스 약관",
+                "GitHub Corporate Terms of Service": "GitHub 기업 서비스 약관",
+                ", as applicable.": "(해당하는 경우).",
+            "Runner image": "실행기 이미지",
+            "Architecture": "아키텍처",
+            "Download": "다운로드",
             // win 64
-            "We recommend configuring the runner under \"\\actions-runner\". This will help avoid issues related to service identity folder permissions and long path restrictions on Windows.": "我们建议在 “\\actions-runner” 下配置运行器.这将有助于避免与 Windows 上的服务标识文件夹权限和长路径限制相关的이슈.",
+            "We recommend configuring the runner under \"\\actions-runner\". This will help avoid issues related to service identity folder permissions and long path restrictions on Windows.": "실행기를 '\\actions-runner' 아래에 구성하는 것을 권장해요. 이렇게 하면 Windows의 서비스 ID 폴더 권한 및 긴 경로 제한과 관련된 문제를 피할 수 있어요.",
             // macOS-arm64
-            "macOS-arm64 runners are currently in pre-release status and subject to change.": "macOS-arm64 的运行器目前处于预发布状态，可能会有变化.",
-            "Configure": "设置",
-            "Using your self-hosted runner": "使用您的自托管运行器",
-            "For additional details about configuring, running, or shutting down the runner, please check out our": "关于配置、运行或关闭运行器的其他细节，请查看我们的",
-            "product docs": "产品文档",
+            "macOS-arm64 runners are currently in pre-release status and subject to change.": "macOS-arm64 실행기는 현재 사전 출시 상태이며 변경될 수 있어요.",
+            "Configure": "구성하기",
+            "Using your self-hosted runner": "자체 호스팅 실행기 사용하기",
+            "For additional details about configuring, running, or shutting down the runner, please check out our": "실행기 구성, 실행 또는 종료에 대한 추가 세부 정보는 다음을 확인하세요:",
+            "product docs": "제품 문서",
 
-        // 运行器组 /organizations/<org-login>/settings/actions/runner-groups
-            "Control access to your runners by specifying the repositories that are able to use your shared organization runners. New runners will be automatically assigned to the default group if no other group is specified. Upgrade to an Enterprise plan to create groups.": "通过指定能够使用您的共享组织运行器的仓库来控制对运行器的访问.如果没有指定其他组，新运行器将自动分配到默认组.升级到企业计划以创建组.",
+        // 실행기 그룹 /organizations/<org-login>/settings/actions/runner-groups
+            "Control access to your runners by specifying the repositories that are able to use your shared organization runners. New runners will be automatically assigned to the default group if no other group is specified. Upgrade to an Enterprise plan to create groups.": "공유 조직 실행기를 사용할 수 있는 저장소를 지정하여 실행기에 대한 접근을 제어하세요. 다른 그룹이 지정되지 않으면 새 실행기는 자동으로 기본 그룹에 할당돼요. 그룹을 만들려면 기업 플랜으로 업그레이드하세요.",
 
-            "Search runner groups": "搜索运行器组",
-            "New runner group": "创建运行器组",
+            "Search runner groups": "실행기 그룹 검색",
+            "New runner group": "새 실행기 그룹 만들기",
 
-            "Group": "组",
-            "Default": "默认",
-                "This group cannot be deleted and new runners will be automatically assigned to this group if no other group is specified.": "该组不能被删除，如果没有指定其他组，新的运行器将被自动分配到该组.",
-                "All repositories, excluding public repositories": "所有仓库，不包括公共仓库",
+            "Group": "그룹",
+            "Default": "기본값",
+                "This group cannot be deleted and new runners will be automatically assigned to this group if no other group is specified.": "이 그룹은 삭제할 수 없으며 다른 그룹이 지정되지 않으면 새 실행기는 자동으로 이 그룹에 할당돼요.",
+                "All repositories, excluding public repositories": "모든 저장소(공개 저장소 제외)",
 
-        // 缓存 /organizations/<org-login>/settings/actions/caches
-            "Caches": "缓存",
-            "You can use caches for dependencies and other commonly reused files to speed up your workflows. The data on this page have at least 5 minutes of latency.": "您可以对依赖项和其他经常重复使用的文件的缓存来加快您的工作流程.此页面上的数据至少有 5 分钟的延迟.",
-            "Learn more about caches": "了解更多关于缓存的信息",
+        // 캐시 /organizations/<org-login>/settings/actions/caches
+            "Caches": "캐시",
+            "You can use caches for dependencies and other commonly reused files to speed up your workflows. The data on this page have at least 5 minutes of latency.": "의존성 및 기타 자주 재사용되는 파일에 캐시를 사용하여 워크플로 속도를 높일 수 있어요. 이 페이지의 데이터는 최소 5분의 지연 시간이 있어요.",
+            "Learn more about caches": "캐시에 대해 더 알아보기",
 
-            "Search repositories": "搜索仓库",
+            "Search repositories": "저장소 검색",
 
-            "Sort:": "排序：",
-                "Largest size": "最大尺寸",
-                "Smallest size": "最小尺寸",
+            "Sort:": "정렬:",
+                "Largest size": "가장 큰 크기순",
+                "Smallest size": "가장 작은 크기순",
 
-            "No repository uses caches": "尚无仓库使用缓存",
-            "Nothing has been cached by workflows running in any repositories of this organization.": "该组织任何仓库中运行的工作流程都未缓存任何内容.",
-            "Learn more about caching": "了解更多关于缓存",
-            "dependencies and build outputs to improve workflow execution time.": "依赖关系和构建输出以改善工作流程执行时间的信息.",
+            "No repository uses caches": "캐시를 사용하는 저장소가 없어요.",
+            "Nothing has been cached by workflows running in any repositories of this organization.": "이 조직의 어떤 저장소에서 실행되는 워크플로도 아무것도 캐시하지 않았어요.",
+            "Learn more about caching": "다음에 대해 더 알아보기: 캐싱",
+            "dependencies and build outputs to improve workflow execution time.": "의존성 및 빌드 출력을 캐시하여 워크플로 실행 시간을 개선하는 방법.",
 
     },
-    "regexp": [ // 正则翻译
-        [/(\d+) selected repositor(y|ies)/, "$1 个选定的仓库"],
-        [/Allow ([^ ]+) actions and reusable workflows/, "允许 $1 的操作和可复用的工作流程"],
-        [/Any action or reusable workflow defined in a repository within the ([^ ]+) organization can be used./, "可以使用在 $1 组织内的仓库中定义的任何操作或可复用的工作流程."], // 操作页面
-        [/Allow ([^ ]+), and select non-([^ ]+), actions and reusable workflows/, "允许 $1，并选择非 $2、操作和可复用的工作流程"],
-        [/Any action or reusable workflow that matches the specified criteria, plus those defined in a repository within the ([^ ]+) organization, can be used./, "可以使用符合指定条件的操作或可复用的工作流程，以及在 $1 组织内的仓库中定义的操作或可复用的工作流程."], // 操作页面
-        [/(\d+) active jobs?/ ,"$1 个活跃的工作"], // settings/actions/runners
-        [/(\d+) caches?/, "$1 项缓存"],
+    "regexp": [ // 정규식 번역
+        [/(\d+) selected repositor(y|ies)/, "$1개의 선택된 저장소"],
+        [/Allow ([^ ]+) actions and reusable workflows/, "$1의 액션 및 재사용 가능한 워크플로 허용하기"],
+        [/Any action or reusable workflow defined in a repository within the ([^ ]+) organization can be used./, "$1 조직 내 저장소에 정의된 모든 액션 또는 재사용 가능한 워크플로를 사용할 수 있어요."], // 액션 페이지
+        [/Allow ([^ ]+), and select non-([^ ]+), actions and reusable workflows/, "$1 허용 및 비-$2, 액션 및 재사용 가능한 워크플로 선택하기"],
+        [/Any action or reusable workflow that matches the specified criteria, plus those defined in a repository within the ([^ ]+) organization, can be used./, "지정된 기준과 일치하는 모든 액션 또는 재사용 가능한 워크플로와 $1 조직 내 저장소에 정의된 것을 사용할 수 있어요."], // 액션 페이지
+        [/(\d+) active jobs?/ ,"$1개의 활성 작업"], // settings/actions/runners
+        [/(\d+) caches?/, "$1개의 캐시"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/discussions"] = { // 组织设置 - 讨论
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/discussions"] = { // 조직 설정 - 토론
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 讨论 /organizations/<org-login>/settings/discussions
-            "Discussions for your organization": "您组织的讨论",
-            "Setting up Discussions for your organization will allow you to broadcast updates, answer questions, and hold conversations for the entire organization.": "为您的组织设置 “讨论”，将您能够为整个组织广播更新、回答问题和举行对话.",
-            "Enable discussions for this organization": "启用组织的讨论功能",
+        // 토론 /organizations/<org-login>/settings/discussions
+            "Discussions for your organization": "조직을 위한 토론",
+            "Setting up Discussions for your organization will allow you to broadcast updates, answer questions, and hold conversations for the entire organization.": "조직에 대해 '토론'을 설정하면 전체 조직을 대상으로 업데이트를 방송하고, 질문에 답하며, 대화를 나눌 수 있어요.",
+            "Enable discussions for this organization": "이 조직에 대해 토론 활성화하기",
 
-            "Choose a source repository that will host the discussions.": "选择承载讨论的源码库.",
-                "All discussions on the source repository will be surfaced to the organization Discussions tab.": "源码库上的所有讨论都将显示在组织讨论选项卡中.",
-                "Permissions from the repository will be applied to the organization Discussions. By default, all members of the organization will be able to create and comment on discussions.": "来自仓库的权限将应用于组织讨论.默认情况下，组织的所有成员都可以创建讨论并发表评论.",
-                "Members can now share updates or ask questions to the entire organization.": "成员现在可以向整个组织共享更新或提问.",
-                "For more information, see our documentation.": "有关更多信息，请参阅我们的文档.",
+            "Choose a source repository that will host the discussions.": "토론을 호스팅할 소스 저장소를 선택하세요.",
+                "All discussions on the source repository will be surfaced to the organization Discussions tab.": "소스 저장소의 모든 토론은 조직 토론 탭에 표시돼요.",
+                "Permissions from the repository will be applied to the organization Discussions. By default, all members of the organization will be able to create and comment on discussions.": "저장소의 권한이 조직 토론에 적용돼요. 기본적으로 조직의 모든 멤버는 토론을 만들고 댓글을 달 수 있어요.",
+                "Members can now share updates or ask questions to the entire organization.": "이제 멤버는 전체 조직에 업데이트를 공유하거나 질문할 수 있어요.",
+                "For more information, see our documentation.": "자세한 내용은 문서를 참조하세요.",
 
-                "Choose a repository": "选择仓库",
-                "Search for a repository": "搜索仓库",
+                "Choose a repository": "저장소 선택하기",
+                "Search for a repository": "저장소 검색",
 
-            // 提醒
-                "Organization discussions has been set up!": "组织讨论已经建立！",
-                "View organization discussions": "查看组织讨论",
+            // 알림
+                "Organization discussions has been set up!": "조직 토론이 설정되었어요!",
+                "View organization discussions": "조직 토론 보기",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정적번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/projects"] = { // 组织设置 - 计划 - 项目
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/projects"] = { // 조직 설정 - 프로젝트
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 项目 /organizations/<org-login>/settings/projects
-            "Projects on GitHub help you organize and prioritize your work. You can create projects for specific feature work, comprehensive roadmaps, or even release checklists.": "GitHub 上的项目可以帮助您组织和安排工作的优先级.您可以为特定的功能工作、全面的路线图、甚至是发布清单创建项目.",
-            "Enable Projects for the organization": "启用项目，为组织",
-                "This allows members to create projects for the": "允许成员创建项目，为",
-                "organization. Members can create projects to organize and track issues from any": "组织.成员可以创建项目来组织和跟踪来自任何",
-                "-owned repository.": "组织拥有的仓库.",
-            "Allow members to change project visibilities for this organization": "允许成员更改此组织的项目可见性",
-                "If enabled, members with admin permissions on a project can make the project public or private. If disabled, only organization owners can make the project public or private. All projects are private by default.": "如果启用，在项目上有管理权限的成员可以将项目设为公开或私有.如果禁用，则只有组织所有者可以将项目设为公开或私有.默认情况下，所有项目都是私有的.",
+        // 프로젝트 /organizations/<org-login>/settings/projects
+            "Projects on GitHub help you organize and prioritize your work. You can create projects for specific feature work, comprehensive roadmaps, or even release checklists.": "GitHub의 프로젝트는 업무를 정리하고 우선순위를 정하는 데 도움이 돼요. 특정 기능 작업, 포괄적인 로드맵 또는 출시 체크리스트를 위한 프로젝트를 만들 수 있어요.",
+            "Enable Projects for the organization": "조직의 프로젝트 활성화하기",
+                "This allows members to create projects for the": "멤버들이 다음에 대한 프로젝트를 만들 수 있도록 허용해요:",
+                "organization. Members can create projects to organize and track issues from any": "조직. 멤버들은 모든",
+                "-owned repository.": "소유 저장소의 이슈를 정리하고 추적하기 위한 프로젝트를 만들 수 있어요.",
+            "Allow members to change project visibilities for this organization": "멤버들이 이 조직의 프로젝트 공개 상태를 변경하도록 허용하기",
+                "If enabled, members with admin permissions on a project can make the project public or private. If disabled, only organization owners can make the project public or private. All projects are private by default.": "활성화하면, 프로젝트에 대한 관리자 권한이 있는 멤버가 프로젝트를 공개 또는 비공개로 설정할 수 있어요. 비활성화하면, 조직 소유자만 프로젝트를 공개 또는 비공개로 설정할 수 있어요. 기본적으로 모든 프로젝트는 비공개예요.",
 
-            "Recommended templates": "推荐模板",
-                "Customize a selection of recommended project templates for this organization. These templates will be surfaced first when a member of the organization creates a new project.": "为此组织定制一系列推荐的项目模板.当组织成员创建新项目时，这些模板将首先出现.",
+            "Recommended templates": "추천 템플릿",
+                "Customize a selection of recommended project templates for this organization. These templates will be surfaced first when a member of the organization creates a new project.": "이 조직을 위한 추천 프로젝트 템플릿 모음을 사용자 지정하세요. 이 템플릿들은 조직의 멤버가 새 프로젝트를 만들 때 가장 먼저 표시될 거예요.",
 
-                "Create your first GitHub project template": "创建第一个 GitHub 项目模板",
-                    "Templates can be used to quickly get started with a new project.": "模板可用于快速开始新项目.",
-                "New template": "新建模板",
+                "Create your first GitHub project template": "첫 GitHub 프로젝트 템플릿 만들기",
+                    "Templates can be used to quickly get started with a new project.": "템플릿을 사용하여 새 프로젝트를 빠르게 시작할 수 있어요.",
+                "New template": "새 템플릿 만들기",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/security"] = { // 组织设置 - 身份验证安全
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/security"] = { // 조직 설정 - 인증 보안
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 身份验证安全  /organizations/<org-login>/settings/security
-            "Two-factor authentication": "双因素身份验证",
-            "Requiring an additional authentication method adds another level of security for your organization.": "要求额外的身份验证方法为您的组织增加了另一个级别的安全性.",
-            // [/Require two-factor authentication for everyone in the ([^]+) organization./, "要求对 $1 组织中的每个成员进行双因素身份验证."],
-            "Members, billing managers, and outside collaborators who do not have two-factor authentication enabled for their personal account will be removed from the organization and will receive an email notifying them about the change.": "未为其个人账户启用双因素身份验证的成员、账单管理员和外部协作者将从组织中删除，并会收到一封电子邮件，通知他们有关更改.",
+        // 인증 보안  /organizations/<org-login>/settings/security
+            "Two-factor authentication": "2단계 인증",
+            "Requiring an additional authentication method adds another level of security for your organization.": "추가 인증 방법을 요구하면 조직의 보안 수준이 한층 더 강화돼요.",
+            // [/Require two-factor authentication for everyone in the ([^]+) organization./, "$1 조직의 모든 멤버에게 2단계 인증을 요구하세요."],
+            "Members, billing managers, and outside collaborators who do not have two-factor authentication enabled for their personal account will be removed from the organization and will receive an email notifying them about the change.": "개인 계정에 2단계 인증을 활성화하지 않은 멤버, 청구 관리자, 외부 협업자는 조직에서 제거되며 변경 사항에 대한 이메일 알림을 받게 될 거예요.",
 
-            // 顶部提醒
-                "Enabling two-factor authentication requirement.": "启用双因素身份验证.",
-                "Disabled two-factor authentication requirement.": "禁用双因素身份验证.",
+            // 상단 알림
+                "Enabling two-factor authentication requirement.": "2단계 인증 요구 사항을 활성화했어요.",
+                "Disabled two-factor authentication requirement.": "2단계 인증 요구 사항을 비활성화했어요.",
 
-            "SSH Certificate Authorities": "SSH 证书颁发机构",
-            "Provide SSH certificates that members can use to access your resources with Git": "提供 SSH 证书，成员可以用 Git 来访问您的资源",
-            "Try risk-free for 30 days": "无风险试用 30 天",
-            "learn more": "了解更多",
-            ", or": "，或",
-            "dismiss this message.": "忽略此消息.",
+            "SSH Certificate Authorities": "SSH 인증 기관",
+            "Provide SSH certificates that members can use to access your resources with Git": "멤버들이 Git으로 사용자님의 리소스에 접근하는 데 사용할 수 있는 SSH 인증서를 제공하세요",
+            "Try risk-free for 30 days": "30일 동안 위험 부담 없이 사용해보기",
+            "learn more": "더 알아보기",
+            ", or": ", 또는",
+            "dismiss this message.": "이 메시지 닫기.",
 
-            "IP allow list": "IP 允许列表",
-            "An IP allow list lets your organization limit access based on the IP address a person is accessing from.": "IP 允许列表可让您的组织根据成员访问的 IP 地址来限制访问.",
-            "Restrict access to your organization's assets by configuring a list of IP addresses that are allowed to connect": "通过配置 IP 允许列表来限制对组织资产的访问",
+            "IP allow list": "IP 허용 목록",
+            "An IP allow list lets your organization limit access based on the IP address a person is accessing from.": "IP 허용 목록을 사용하면 멤버가 접근하는 IP 주소를 기반으로 조직의 접근을 제한할 수 있어요.",
+            "Restrict access to your organization's assets by configuring a list of IP addresses that are allowed to connect": "연결이 허용된 IP 주소 목록을 구성하여 조직 자산에 대한 접근을 제한하세요",
     },
-    "regexp": [ // 正则翻译
-        [/Require two-factor authentication for everyone in the ([^]+) organization./, "要求对 $1 组织中的每个成员进行双因素身份验证."],
+    "regexp": [ // 정규식 번역
+        [/Require two-factor authentication for everyone in the ([^]+) organization./, "$1 조직의 모든 멤버에게 2단계 인증을 요구하세요."],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/security_analysis"] = { // 组织设置 - 代码安全性与分析
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/security_analysis"] = { // 조직 설정 - 코드 보안 및 분석
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 代码安全性与分析 /organizations/<org-login>/settings/security_analysis
-            "Try our new settings": "尝试我们的新设置",
-            // 顶部提醒
-                "Something went wrong. Please try again.": "出了些问题.请再试一次.",
+        // 코드 보안 및 분석 /organizations/<org-login>/settings/security_analysis
+            "Try our new settings": "새로운 설정을 사용해보세요",
+            // 상단 알림
+                "Something went wrong. Please try again.": "문제가 발생했어요. 다시 시도해주세요.",
 
-            "Security and analysis features help keep your repositories secure and updated. By enabling these features, you're granting us permission to perform read-only analysis on your organization's repositories.": "安全和分析功能有助于确保您的仓库安全和更新.通过启用这些功能，您授予我们对您组织的仓库执行只读分析的权限.",
+            "Security and analysis features help keep your repositories secure and updated. By enabling these features, you're granting us permission to perform read-only analysis on your organization's repositories.": "보안 및 분석 기능은 사용자님의 저장소를 안전하게 최신 상태로 유지하는 데 도움이 돼요. 이 기능들을 활성화하면, 사용자님은 저희가 조직의 저장소에 대해 읽기 전용 분석을 수행하도록 허용하는 거예요.",
 
-            "Disable all": "禁用全部",
-            "Enable all": "启用全部",
+            "Disable all": "모두 비활성화하기",
+            "Enable all": "모두 활성화하기",
 
-            "Private vulnerability reporting": "私下漏洞报告",
-                "Allow your community to privately report potential security vulnerabilities to maintainers and repository owners.": "允许您的社区向维护者和仓库所有者私下报告潜在的安全漏洞.",
-                "Learn more about private vulnerability reporting": "了解更多关于私下漏洞报告的信息",
-                "Automatically enable for new public repositories": "为新公共仓库自动启用",
+            "Private vulnerability reporting": "비공개 취약점 보고",
+                "Allow your community to privately report potential security vulnerabilities to maintainers and repository owners.": "커뮤니티가 잠재적인 보안 취약점을 유지 관리자와 저장소 소유자에게 비공개로 보고할 수 있도록 허용하세요.",
+                "Learn more about private vulnerability reporting": "비공개 취약점 보고에 대해 더 알아보기",
+                "Automatically enable for new public repositories": "새 공개 저장소에 대해 자동으로 활성화하기",
 
-                // 对话框
-                    "Enable private vulnerability reporting": "启用私下漏洞报告",
-                        // [/You're about to enable private vulnerability reporting on all public repositories in ([^ ]+)./, "您即将启用 $1 组织中的所有私有仓库上的私下漏洞报告."],
+                // 대화 상자
+                    "Enable private vulnerability reporting": "비공개 취약점 보고 활성화하기",
+                        // [/You're about to enable private vulnerability reporting on all public repositories in ([^ ]+)./, "이제 $1 조직의 모든 공개 저장소에서 비공개 취약점 보고를 활성화할 거예요."],
 
-                    "Disable private vulnerability reporting": "禁用私下漏洞报告",
-                        // [/You're about to disable private vulnerability reporting on all public repositories in ([^ ]+)./, "您即将禁用 $1 组织中所有私有仓库上的私下漏洞报告."],
-                        "Enable by default for new public repositories": "默认启用新公共仓库",
+                    "Disable private vulnerability reporting": "비공개 취약점 보고 비활성화하기",
+                        // [/You're about to disable private vulnerability reporting on all public repositories in ([^ ]+)./, "이제 $1 조직의 모든 공개 저장소에서 비공개 취약점 보고를 비활성화할 거예요."],
+                        "Enable by default for new public repositories": "새 공개 저장소에 대해 기본으로 활성화하기",
 
-            "Dependency graph": "依赖关系图",
-                "Understand your dependencies.": "了解您的依赖项.",
-                "Automatically enable for new private repositories": "为新私有仓库自动启用",
+            "Dependency graph": "의존성 그래프",
+                "Understand your dependencies.": "사용자님의 의존성을 파악하세요.",
+                "Automatically enable for new private repositories": "새 비공개 저장소에 대해 자동으로 활성화하기",
 
-                // 对话框
-                    "Enable dependency graph": "启用依赖关系图",
-                        // [/You're about to enable dependency graph on all private repositories in ([^ ]+)./, "您即将启用 $1 组织中的所有私有仓库上的依赖关系图."],
+                // 대화 상자
+                    "Enable dependency graph": "의존성 그래프 활성화하기",
+                        // [/You're about to enable dependency graph on all private repositories in ([^ ]+)./, "이제 $1 조직의 모든 비공개 저장소에서 의존성 그래프를 활성화할 거예요."],
 
-                    "Disable dependency graph": "禁用依赖关系图",
-                        // [/You're about to disable dependency graph on all private repositories in ([^ ]+). This will also disable Dependabot alerts and Dependabot security updates on those repositories./, "您即将禁用 $1 组织中所有私有仓库上的依赖关系图.这也将禁用这些仓库的 Dependabot 警报和 Dependabot 安全更新."],
-                        "Enable by default for new private repositories": "默认为新私有仓库启用",
+                    "Disable dependency graph": "의존성 그래프 비활성화하기",
+                        // [/You're about to disable dependency graph on all private repositories in ([^ ]+). This will also disable Dependabot alerts and Dependabot security updates on those repositories./, "이제 $1 조직의 모든 비공개 저장소에서 의존성 그래프를 비활성화할 거예요. 이렇게 하면 해당 저장소의 Dependabot 경고 및 Dependabot 보안 업데이트도 비활성화돼요."],
+                        "Enable by default for new private repositories": "새 비공개 저장소에 대해 기본으로 활성화하기",
 
             // Dependabot
-                "Keep your dependencies secure and up-to-date.": "保持您的依赖关系的安全和最新",
-                "Learn more about Dependabot": "了解更多关于 Dependabot 的信息",
+                "Keep your dependencies secure and up-to-date.": "사용자님의 의존성을 안전하게 최신 상태로 유지하세요",
+                "Learn more about Dependabot": "Dependabot에 대해 더 알아보기",
 
-                "Dependabot alerts": "Dependabot 警报",
-                    "Receive alerts for vulnerabilities that affect your dependencies and manually generate Dependabot pull requests to resolve these vulnerabilities.": "接收影响您的依赖关系的漏洞警报，并手动生成 Dependabot 拉取请求以解决这些漏洞.",
-                        "Configure alert notifications": "配置警报通知",
-                    "Automatically enable for new repositories": "为新仓库自动启用",
+                "Dependabot alerts": "Dependabot 경고",
+                    "Receive alerts for vulnerabilities that affect your dependencies and manually generate Dependabot pull requests to resolve these vulnerabilities.": "사용자님의 의존성에 영향을 미치는 취약점에 대한 경고를 받고, 이러한 취약점을 해결하기 위해 수동으로 Dependabot 끌어오기 요청을 생성하세요.",
+                        "Configure alert notifications": "경고 알림 구성하기",
+                    "Automatically enable for new repositories": "새 저장소에 대해 자동으로 활성화하기",
 
-                // 对话框
-                    "Enable Dependabot alerts": "启用 Dependabot 警报",
-                        // [/You're about to enable Dependabot alerts on all repositories in ([^ ]+). Alerts require the dependency graph, so we'll also turn that on for all repositories. No notifications will be sent while Dependabot alerts are being enabled./, "您即将启用 $1 组织中所有仓库上的 Dependabot 警报.Dependabot 警报需要依赖关系图，因此我们还将为所有仓库开启它.启用 Dependabot 警报时不会发送任何通知."],
+                // 대화 상자
+                    "Enable Dependabot alerts": "Dependabot 경고 활성화하기",
+                        // [/You're about to enable Dependabot alerts on all repositories in ([^ ]+). Alerts require the dependency graph, so we'll also turn that on for all repositories. No notifications will be sent while Dependabot alerts are being enabled./, "이제 $1 조직의 모든 저장소에서 Dependabot 경고를 활성화할 거예요. 경고에는 의존성 그래프가 필요하므로 모든 저장소에 대해 이 기능도 켤 거예요. Dependabot 경고를 활성화하는 동안에는 알림이 전송되지 않아요."],
 
-                    "Disable Dependabot alerts": "禁用 Dependabot 警报",
-                        // [/You're about to disable Dependabot alerts on all repositories in ([^ ]+). This will also disable Dependabot security updates on those repositories./, "您即将禁用 $1 组织中所有仓库上的 Dependabot 警报.这也将禁用这些仓库的 Dependabot 安全更新."],
-                        "Enable by default for new repositories": "默认为新仓库启用",
+                    "Disable Dependabot alerts": "Dependabot 경고 비활성화하기",
+                        // [/You're about to disable Dependabot alerts on all repositories in ([^ ]+). This will also disable Dependabot security updates on those repositories./, "이제 $1 조직의 모든 저장소에서 Dependabot 경고를 비활성화할 거예요. 이렇게 하면 해당 저장소의 Dependabot 보안 업데이트도 비활성화돼요."],
+                        "Enable by default for new repositories": "새 저장소에 대해 기본으로 활성화하기",
 
-                "Dependabot rules": "Dependabot 规则",
-                    "Create your own custom rules and manage alert presets.": "创建您自己的自定义规则并管理警报预设.",
-                    // [/(\d+) rules? enabled/, "$1 条规则启用"],
+                "Dependabot rules": "Dependabot 규칙",
+                    "Create your own custom rules and manage alert presets.": "사용자 지정 규칙을 만들고 경고 사전 설정을 관리하세요.",
+                    // [/(\d+) rules? enabled/, "$1개의 규칙 활성화됨"],
 
-            "Dependabot security updates": "Dependabot 安全更新",
-                "Enabling this option will result in Dependabot automatically attempting to open pull requests to resolve every open Dependabot alert with an available patch. If you would like more specific configuration options, leave this disabled and use": "启用后，Dependabot 会自动尝试打开拉取请求，以使用可用补丁解决每个打开的 Dependabot 警报.如果您想要更具体的配置选项，请将其禁用并使用",
-                    // "Dependabot rules": "Dependabot 规则",
+            "Dependabot security updates": "Dependabot 보안 업데이트",
+                "Enabling this option will result in Dependabot automatically attempting to open pull requests to resolve every open Dependabot alert with an available patch. If you would like more specific configuration options, leave this disabled and use": "이 옵션을 활성화하면 Dependabot이 사용 가능한 패치가 있는 모든 열린 Dependabot 경고를 해결하기 위해 자동으로 끌어오기 요청을 열려고 시도해요. 더 구체적인 구성 옵션을 원하시면 이 옵션을 비활성화하고 다음을 사용하세요:",
+                    // "Dependabot rules": "Dependabot 규칙",
 
-                // 对话框
-                    "Enable Dependabot security updates": "启用 Dependabot 安全更新",
-                        // [/You're about to enable Dependabot security updates on all repositories in ([^ ]+). Dependabot security updates require the dependency graph and Dependabot alerts, so we'll also turn that on for all repositories./, "您即将启用 $1 组织中的所有仓库上的 Dependabot 安全更新.Dependabot 安全更新需要依赖关系图和 Dependabot 警报，因此我们还将为所有仓库开启他们."],
+                // 대화 상자
+                    "Enable Dependabot security updates": "Dependabot 보안 업데이트 활성화하기",
+                        // [/You're about to enable Dependabot security updates on all repositories in ([^ ]+). Dependabot security updates require the dependency graph and Dependabot alerts, so we'll also turn that on for all repositories./, "이제 $1 조직의 모든 저장소에서 Dependabot 보안 업데이트를 활성화할 거예요. Dependabot 보안 업데이트에는 의존성 그래프와 Dependabot 경고가 필요하므로 모든 저장소에 대해 이 기능들도 켤 거예요."],
 
-                    "Disable Dependabot security updates": "禁用 Dependabot 安全更新",
-                        // [/You're about to disable Dependabot security updates on all repositories in ([^ ]+)./, "您即将禁用 $1 组织中的所有仓库上的 Dependabot 安全更新."],
+                    "Disable Dependabot security updates": "Dependabot 보안 업데이트 비활성화하기",
+                        // [/You're about to disable Dependabot security updates on all repositories in ([^ ]+)./, "이제 $1 조직의 모든 저장소에서 Dependabot 보안 업데이트를 비활성화할 거예요."],
 
-            "Grouped security updates": "分组安全更新",
-                "Groups all available updates that resolve a Dependabot alert into one pull request (per package manager and directory of requirement manifests). This option may be overridden by group rules specified in dependabot.yml -": "将解决可靠警报的所有可用更新分组为一个拉取请求（每个包管理器和需求清单目录）.该选项可被 dependabot.yml 中指定的组规则覆盖 -",
-                "learn more here": "在此了解更多",
+            "Grouped security updates": "그룹화된 보안 업데이트",
+                "Groups all available updates that resolve a Dependabot alert into one pull request (per package manager and directory of requirement manifests). This option may be overridden by group rules specified in dependabot.yml -": "Dependabot 경고를 해결하는 모든 사용 가능한 업데이트를 하나의 끌어오기 요청으로 그룹화해요(패키지 관리자 및 요구 사항 매니페스트 디렉터리당). 이 옵션은 dependabot.yml에 지정된 그룹 규칙으로 재정의될 수 있어요 -",
+                "learn more here": "여기서 더 알아보기",
 
-                // 对话框
-                    "Enable grouped security updates": "启用分组安全更新",
-                        // [/You're about to enable grouped security updates on all repositories in ([^ ]+). Grouped security updates require the dependency graph, Dependabot alerts, Dependabot security updates and Dependabot security updates, so we'll also turn that on for all repositories./, "您即将启用 $1 组织中的所有仓库上的分组安全更新.分组安全更新需要依赖关系图、Dependabot警报、Dependabot安全更新和 Dependabot安全更新，因此我们还将为所有仓库开启他们."],
+                // 대화 상자
+                    "Enable grouped security updates": "그룹화된 보안 업데이트 활성화하기",
+                        // [/You're about to enable grouped security updates on all repositories in ([^ ]+). Grouped security updates require the dependency graph, Dependabot alerts, Dependabot security updates and Dependabot security updates, so we'll also turn that on for all repositories./, "이제 $1 조직의 모든 저장소에서 그룹화된 보안 업데이트를 활성화할 거예요. 그룹화된 보안 업데이트에는 의존성 그래프, Dependabot 경고, Dependabot 보안 업데이트가 필요하므로 모든 저장소에 대해 이 기능들도 켤 거예요."],
 
-                    "Disable grouped security updates": "禁用分组安全更新",
-                        // [/You're about to disable grouped security updates on all repositories in ([^ ]+)./, "您即将禁用 $1 组织中的所有仓库上的分组安全更新."],
+                    "Disable grouped security updates": "그룹화된 보안 업데이트 비활성화하기",
+                        // [/You're about to disable grouped security updates on all repositories in ([^ ]+)./, "이제 $1 조직의 모든 저장소에서 그룹화된 보안 업데이트를 비활성화할 거예요."],
 
-            "Code scanning": "代码扫描",
-                "Identify vulnerabilities and errors with": "识别代码中的漏洞和错误，通过",
-                ". Default CodeQL analysis will be set up on": ".默认的 CodeQL 分析将被设置为",
-                "eligible": "符合条件的",
-                "public repositories.": "公共仓库.",
+            "Code scanning": "코드 스캔",
+                "Identify vulnerabilities and errors with": "다음을 통해 코드의 취약점과 오류를 식별하세요:",
+                ". Default CodeQL analysis will be set up on": ". 기본 CodeQL 분석이 다음에 설정될 거예요:",
+                "eligible": "적격한",
+                "public repositories.": "공개 저장소.",
 
-                "Recommend the extended query suite for repositories enabling default setup": "建议为启用默认设置的仓库提供扩展查询套件",
-                    "The extended query includes the default suite, plus lower severity and precision queries.": "扩展查询包括默认套件，以及较低严重性和精度的查询.",
+                "Recommend the extended query suite for repositories enabling default setup": "기본 설정을 활성화하는 저장소에 확장 쿼리 모음을 추천하기",
+                    "The extended query includes the default suite, plus lower severity and precision queries.": "확장 쿼리에는 기본 모음과 함께 더 낮은 심각도 및 정밀도의 쿼리가 포함돼요.",
 
-                // 对话框
-                    "Enable code scanning default setup": "启用代码扫描默认设置",
-                        "This will turn on CodeQL default setup for all eligible public repositories and repositories with GitHub Advanced Security enabled.": "这将为所有符合条件的公共仓库和已启用 GitHub 高级安全功能的仓库开启 CodeQL 默认设置.",
-                        "What makes a repository eligible for default setup?": "怎样的仓库符合默认设置？",
-                        "Query suites": "查询套件",
-                            "Group of queries": "查询套件",
-                            "to run against your code.": "针对您的代码运行.",
+                // 대화 상자
+                    "Enable code scanning default setup": "코드 스캔 기본 설정 활성화하기",
+                        "This will turn on CodeQL default setup for all eligible public repositories and repositories with GitHub Advanced Security enabled.": "이렇게 하면 모든 적격한 공개 저장소와 GitHub Advanced Security가 활성화된 저장소에 대해 CodeQL 기본 설정이 켜져요.",
+                        "What makes a repository eligible for default setup?": "어떤 저장소가 기본 설정에 적합한가요?",
+                        "Query suites": "쿼리 모음",
+                            "Group of queries": "쿼리 그룹",
+                            "to run against your code.": "을(를) 코드에 대해 실행해요.",
 
-                            "Default": "默认",
-                                "Recommended": "推荐",
-                                "CodeQL high-precision queries.": "CodeQL 高精度查询.",
-                            "Extended": "扩展",
-                                "Queries from the default suite, plus lower severity and precision queries.": "来自默认套件的查询，以及较低严重性和精度查询.",
-                                "Recommended by your organization. Queries from the default suite, plus lower severity and precision queries.": "由您的组织推荐.来自默认套件的查询，以及较低严重性和精度的查询.",
-                        "Code scanning uses GitHub Actions. Also, repositories where code scanning is already enabled will not be re-enabled.": "代码扫描使用 GitHub Actions.此外，已启用代码扫描的仓库将不会重新启用.",
+                            "Default": "기본",
+                                "Recommended": "추천",
+                                "CodeQL high-precision queries.": "CodeQL 고정밀 쿼리.",
+                            "Extended": "확장",
+                                "Queries from the default suite, plus lower severity and precision queries.": "기본 모음의 쿼리에 더 낮은 심각도 및 정밀도 쿼리를 더했어요.",
+                                "Recommended by your organization. Queries from the default suite, plus lower severity and precision queries.": "사용자님의 조직에서 추천해요. 기본 모음의 쿼리에 더 낮은 심각도 및 정밀도 쿼리를 더했어요.",
+                        "Code scanning uses GitHub Actions. Also, repositories where code scanning is already enabled will not be re-enabled.": "코드 스캔은 GitHub 액션을 사용해요. 또한, 코드 스캔이 이미 활성화된 저장소는 다시 활성화되지 않아요.",
 
-                    "Disable code scanning default setup": "禁用代码扫描默认设置",
-                        "This will disable CodeQL default setup on all repositories where it is enabled.": "这将禁用所有仓库的 CodeQL 默认设置.",
+                    "Disable code scanning default setup": "코드 스캔 기본 설정 비활성화하기",
+                        "This will disable CodeQL default setup on all repositories where it is enabled.": "이렇게 하면 CodeQL 기본 설정이 활성화된 모든 저장소에서 비활성화돼요.",
 
-            "Secret scanning": "机密扫描",
-                "Receive alerts on GitHub for detected secrets, keys, or other tokens.": "在 GitHub 上接收有关检测到的机密、密钥或其他令牌的警报.",
+            "Secret scanning": "비밀 스캔",
+                "Receive alerts on GitHub for detected secrets, keys, or other tokens.": "탐지된 비밀, 키 또는 기타 토큰에 대해 GitHub에서 경고를 받으세요.",
 
-                "Push protection": "推送保护",
-                    "Block commits that contain": "阻止提交，包含",
-                    "supported secrets": "受支持的机密",
-                    "Automatically enable for repositories added to secret scanning": "自动启用对添加到机密扫描的仓库进行扫描",
-                    "Add a resource link in the CLI and web UI when a commit is blocked": "当提交被阻止时，在 CLI 和 Web UI 中添加资源链接.",
-                        "Link will show in addition to": "显示链接和",
-                        "the message GitHub displays": "GitHub 显示的消息",
-                        "Save link": "保存链接",
+                "Push protection": "푸시 보호",
+                    "Block commits that contain": "다음을 포함하는 커밋 차단하기:",
+                    "supported secrets": "지원되는 비밀",
+                    "Automatically enable for repositories added to secret scanning": "비밀 스캔에 추가된 저장소에 대해 자동으로 활성화하기",
+                    "Add a resource link in the CLI and web UI when a commit is blocked": "커밋이 차단되었을 때 CLI 및 웹 UI에 리소스 링크 추가하기",
+                        "Link will show in addition to": "다음에 추가로 링크가 표시돼요:",
+                        "the message GitHub displays": "GitHub가 표시하는 메시지",
+                        "Save link": "링크 저장하기",
 
-                // 对话框
-                    "Enable secret scanning for eligible repositories?": "启用适用仓库的机密扫描？",
-                        "This will turn on secret scanning for all public repositories.": "这将为所有公共仓库启用机密扫描.",
-                        "Enable for eligible repositories": "启用符合条件的仓库",
+                // 대화 상자
+                    "Enable secret scanning for eligible repositories?": "적격한 저장소에 대해 비밀 스캔을 활성화할까요?",
+                        "This will turn on secret scanning for all public repositories.": "이렇게 하면 모든 공개 저장소에 대해 비밀 스캔이 켜져요.",
+                        "Enable for eligible repositories": "적격한 저장소에 대해 활성화하기",
 
-                    "Disable secret scanning?": "禁用机密扫描？",
-                        "This will disable secret scanning on all repositories where it is enabled.": "这将禁用所有仓库的机密扫描.",
-                        "Disable secret scanning": "禁用机密扫描",
+                    "Disable secret scanning?": "비밀 스캔을 비활성화할까요?",
+                        "This will disable secret scanning on all repositories where it is enabled.": "이렇게 하면 비밀 스캔이 활성화된 모든 저장소에서 비활성화돼요.",
+                        "Disable secret scanning": "비밀 스캔 비활성화하기",
 
-                    "Enable push protection for eligible repositories?": "为符合条件的仓库启用推送保护？",
-                        "This will turn on push protection for all repositories that have secret scanning enabled.": "这将为所有已启用秘密扫描的仓库启用推送保护.",
-                        "Push protection coverage": "推送保护覆盖范围",
-                        "Already enabled": "已启用",
-                        "Will be enabled": "将启用",
-                        "Not eligible": "不符合条件",
+                    "Enable push protection for eligible repositories?": "적격한 저장소에 대해 푸시 보호를 활성화할까요?",
+                        "This will turn on push protection for all repositories that have secret scanning enabled.": "이렇게 하면 비밀 스캔이 활성화된 모든 저장소에 대해 푸시 보호가 켜져요.",
+                        "Push protection coverage": "푸시 보호 범위",
+                        "Already enabled": "이미 활성화됨",
+                        "Will be enabled": "활성화될 예정",
+                        "Not eligible": "적격하지 않음",
 
-                    "Disable push protection?": "禁用推送保护？",
-                        // [/This will disable push protection on (\d+) repositori(y|es) where it is enabled./, "这将在已启用推送保护的 $1 个仓库中禁用推送保护."],
-                        "You can still enable push protection at the repository level.": "您仍然可以在仓库级别启用推送保护.",
-                        "Disable push protection": "禁用推送保护",
+                    "Disable push protection?": "푸시 보호를 비활성화할까요?",
+                        // [/This will disable push protection on (\d+) repositori(y|es) where it is enabled./, "이렇게 하면 푸시 보호가 활성화된 $1개의 저장소에서 푸시 보호가 비활성화돼요."],
+                        "You can still enable push protection at the repository level.": "저장소 수준에서는 여전히 푸시 보호를 활성화할 수 있어요.",
+                        "Disable push protection": "푸시 보호 비활성화하기",
 
-            "Grant Dependabot access to private repositories": "授予 Dependabot 访问私有库权限",
-                "In order to update dependencies in your organization, Dependabot accesses dependencies in all public repositories and the selected private repositories. The contents of these repositories will be accessible to all users in your organization through Dependabot updates. Be sure that you want to share these repositories with everyone in your organization or consider using private registries instead.": "为了更新组织中的依赖项，Dependabot 会访问所有公共仓库和选定的私有库中的依赖项.您组织中的所有用户都可以通过 Dependabot 更新访问这些仓库内容.请确保您想与组织中的每个人共享这些仓库，或考虑使用私有注册表.",
-                "Add private repositories": "添加私有库",
-                    "Add a private repository": "添加私有库",
-                    // [/(\d+) selected repositor(y|ies)/, "$1 个选定的仓库"],
+            "Grant Dependabot access to private repositories": "비공개 저장소에 대한 Dependabot 접근 권한 부여하기",
+                "In order to update dependencies in your organization, Dependabot accesses dependencies in all public repositories and the selected private repositories. The contents of these repositories will be accessible to all users in your organization through Dependabot updates. Be sure that you want to share these repositories with everyone in your organization or consider using private registries instead.": "조직의 의존성을 업데이트하기 위해 Dependabot은 모든 공개 저장소와 선택된 비공개 저장소의 의존성에 접근해요. 이 저장소들의 콘텐츠는 Dependabot 업데이트를 통해 조직의 모든 사용자에게 접근 가능하게 돼요. 이 저장소들을 조직의 모든 사람과 공유하고 싶은지 확인하거나, 대신 비공개 레지스트리를 사용하는 것을 고려해보세요.",
+                "Add private repositories": "비공개 저장소 추가하기",
+                    "Add a private repository": "비공개 저장소 추가하기",
+                    // [/(\d+) selected repositor(y|ies)/, "$1개의 선택된 저장소"],
 
-            "Security managers": "安全管理员",
-                "Grant a team permission to manage security alerts and settings across your organization. This team will also be granted read access to all repositories.": "授予团队管理整个组织的安全警报和设置的权限.该团队还将被授予对所有仓库的读取权限.",
-                "Learn more about these security privileges": "了解更多关于这些安全特权的信息",
-                "Search for teams": "搜索团队",
+            "Security managers": "보안 관리자",
+                "Grant a team permission to manage security alerts and settings across your organization. This team will also be granted read access to all repositories.": "팀에게 조직 전체의 보안 경고 및 설정을 관리할 수 있는 권한을 부여하세요. 이 팀에게는 모든 저장소에 대한 읽기 접근 권한도 부여돼요.",
+                "Learn more about these security privileges": "이 보안 권한에 대해 더 알아보기",
+                "Search for teams": "팀 검색하기",
 
     },
-    "regexp": [ // 正则翻译
-        [/You're about to enable private vulnerability reporting on all public repositories in ([^ ]+)./, "您即将启用 $1 组织中的所有私有仓库上的私下漏洞报告."],
-        [/You're about to disable private vulnerability reporting on all public repositories in ([^ ]+)./, "您即将禁用 $1 组织中的所有私有仓库上的私下漏洞报告."],
-        [/You're about to enable dependency graph on all private repositories in ([^ ]+)./, "您即将启用 $1 组织中的所有私有仓库上的依赖关系图."],
-        [/You're about to disable dependency graph on all private repositories in ([^ ]+). This will also disable Dependabot alerts and Dependabot security updates on those repositories./, "您即将禁用 $1 组织中所有私有仓库上的依赖关系图.这也将禁用这些仓库的 Dependabot 警报和 Dependabot 安全更新."],
-        [/You're about to enable Dependabot alerts on all repositories in ([^ ]+). Alerts require the dependency graph, so we'll also turn that on for all repositories. No notifications will be sent while Dependabot alerts are being enabled./, "您即将启用 $1 组织中所有仓库上的 Dependabot 警报.Dependabot 警报需要依赖关系图，因此我们还将为所有仓库开启它.启用 Dependabot 警报时不会发送任何通知."],
-        [/You're about to disable Dependabot alerts on all repositories in ([^ ]+). This will also disable Dependabot security updates on those repositories./, "您即将禁用 $1 组织中所有仓库上的 Dependabot 警报.这也将禁用这些仓库的 Dependabot 安全更新."],
-        [/You're about to enable Dependabot security updates on all repositories in ([^ ]+). Dependabot security updates require the dependency graph and Dependabot alerts, so we'll also turn that on for all repositories./, "您即将启用 $1 组织中的所有仓库上的 Dependabot 安全更新.Dependabot 安全更新需要依赖关系图和 Dependabot 警报，因此我们还将为所有仓库开启他们."],
-        [/You're about to disable Dependabot security updates on all repositories in ([^ ]+)./, "您即将禁用 $1 组织中的所有仓库上的 Dependabot 安全更新."],
-        [/You're about to enable grouped security updates on all repositories in ([^ ]+). Grouped security updates require the dependency graph, Dependabot alerts, Dependabot security updates and Dependabot security updates, so we'll also turn that on for all repositories./, "您即将启用 $1 组织中的所有仓库上的分组安全更新.分组安全更新需要依赖关系图、Dependabot警报、Dependabot安全更新和 Dependabot安全更新，因此我们还将为所有仓库开启他们."],
-        [/You're about to disable grouped security updates on all repositories in ([^ ]+)./, "您即将禁用 $1 组织中的所有仓库上的分组安全更新."],
-        [/This will disable push protection on (\d+) repositori(y|es) where it is enabled./, "这将在已启用推送保护的 $1 个仓库中禁用推送保护."],
-        [/(\d+) rules? enabled/, "$1 条规则启用"],
-        [/(\d+) selected repositor(y|ies)/, "$1 个选定的仓库"],
+    "regexp": [ // 정규식 번역
+        [/You're about to enable private vulnerability reporting on all public repositories in ([^ ]+)./, "이제 $1 조직의 모든 공개 저장소에서 비공개 취약점 보고를 활성화할 거예요."],
+        [/You're about to disable private vulnerability reporting on all public repositories in ([^ ]+)./, "이제 $1 조직의 모든 공개 저장소에서 비공개 취약점 보고를 비활성화할 거예요."],
+        [/You're about to enable dependency graph on all private repositories in ([^ ]+)./, "이제 $1 조직의 모든 비공개 저장소에서 의존성 그래프를 활성화할 거예요."],
+        [/You're about to disable dependency graph on all private repositories in ([^ ]+). This will also disable Dependabot alerts and Dependabot security updates on those repositories./, "이제 $1 조직의 모든 비공개 저장소에서 의존성 그래프를 비활성화할 거예요. 이렇게 하면 해당 저장소의 Dependabot 경고 및 Dependabot 보안 업데이트도 비활성화돼요."],
+        [/You're about to enable Dependabot alerts on all repositories in ([^ ]+). Alerts require the dependency graph, so we'll also turn that on for all repositories. No notifications will be sent while Dependabot alerts are being enabled./, "이제 $1 조직의 모든 저장소에서 Dependabot 경고를 활성화할 거예요. 경고에는 의존성 그래프가 필요하므로 모든 저장소에 대해 이 기능도 켤 거예요. Dependabot 경고를 활성화하는 동안에는 알림이 전송되지 않아요."],
+        [/You're about to disable Dependabot alerts on all repositories in ([^ ]+). This will also disable Dependabot security updates on those repositories./, "이제 $1 조직의 모든 저장소에서 Dependabot 경고를 비활성화할 거예요. 이렇게 하면 해당 저장소의 Dependabot 보안 업데이트도 비활성화돼요."],
+        [/You're about to enable Dependabot security updates on all repositories in ([^ ]+). Dependabot security updates require the dependency graph and Dependabot alerts, so we'll also turn that on for all repositories./, "이제 $1 조직의 모든 저장소에서 Dependabot 보안 업데이트를 활성화할 거예요. Dependabot 보안 업데이트에는 의존성 그래프와 Dependabot 경고가 필요하므로 모든 저장소에 대해 이 기능들도 켤 거예요."],
+        [/You're about to disable Dependabot security updates on all repositories in ([^ ]+)./, "이제 $1 조직의 모든 저장소에서 Dependabot 보안 업데이트를 비활성화할 거예요."],
+        [/You're about to enable grouped security updates on all repositories in ([^ ]+). Grouped security updates require the dependency graph, Dependabot alerts, Dependabot security updates and Dependabot security updates, so we'll also turn that on for all repositories./, "이제 $1 조직의 모든 저장소에서 그룹화된 보안 업데이트를 활성화할 거예요. 그룹화된 보안 업데이트에는 의존성 그래프, Dependabot 경고, Dependabot 보안 업데이트가 필요하므로 모든 저장소에 대해 이 기능들도 켤 거예요."],
+        [/You're about to disable grouped security updates on all repositories in ([^ ]+)./, "이제 $1 조직의 모든 저장소에서 그룹화된 보안 업데이트를 비활성화할 거예요."],
+        [/This will disable push protection on (\d+) repositori(y|es) where it is enabled./, "이렇게 하면 푸시 보호가 활성화된 $1개의 저장소에서 푸시 보호가 비활성화돼요."],
+        [/(\d+) rules? enabled/, "$1개의 규칙 활성화됨"],
+        [/(\d+) selected repositor(y|ies)/, "$1개의 선택된 저장소"],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/dependabot_rules"] = { // 组织设置 - Dependabot 规则
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/dependabot_rules"] = { // 조직 설정 - Dependabot 규칙
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
         ...I18N["ko-KR"]["repository-settings-menu"]["static"],
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // Dependabot 规则 /organizations/<org-login>/settings/dependabot_rules
-            // 顶部提醒
-                "Rule created.": "规则已创建.", // 仓库规则
-                "Rule saved. It may take a moment for this rule to be applied to matching alerts": "规则已保存.此规则可能需要一段时间才能应用于匹配的警报",
-                "Rule saved.": "规则已保存.",
-                "Rule was successfully deleted.": "规则已成功删除.",
+        // Dependabot 규칙 /organizations/<org-login>/settings/dependabot_rules
+            // 상단 알림
+                "Rule created.": "규칙을 만들었어요.", // 저장소 규칙
+                "Rule saved. It may take a moment for this rule to be applied to matching alerts": "규칙을 저장했어요. 이 규칙이 일치하는 경고에 적용되기까지 잠시 시간이 걸릴 수 있어요",
+                "Rule saved.": "규칙을 저장했어요.",
+                "Rule was successfully deleted.": "규칙을 성공적으로 삭제했어요.",
 
-            "/ Dependabot rules": "/ Dependabot 规则",
-            "New rule": "新建规则",
-            "GitHub presets": "GitHub 预设",
-                "Managed by GitHub": "由 GitHub 管理",
-                "Edit curated rule": "编辑策划规则",
-                "Edit rule": "编辑规则",  // 仓库规则
-                "Dismiss low-impact alerts for development-scoped dependencies": "解除开发范围下依赖关系的低影响警报",
-                    "In a developer (non-production or runtime) environment, these alerts are unlikely to be exploitable or have limited effect like slow builds or long-running tests.": "在开发人员（非生产或运行时）环境中，这些警报不太可能被利用，或者影响有限，例如缓慢的构建或长时间运行的测试.",
-                    "Learn more about this methodology.": "了解更多关于此方式的信息.",
-            "Repository rules": "仓库规则", // 仓库规则
-            "Organization rules": "组织规则",
-                // [/Managed by ([^ ]+)/, "由 $1 管理"],
-                "Edit custom rule": "编辑自定义规则",
+            "/ Dependabot rules": "/ Dependabot 규칙",
+            "New rule": "새 규칙 만들기",
+            "GitHub presets": "GitHub 사전 설정",
+                "Managed by GitHub": "GitHub에서 관리",
+                "Edit curated rule": "선별된 규칙 편집하기",
+                "Edit rule": "규칙 편집하기",  // 저장소 규칙
+                "Dismiss low-impact alerts for development-scoped dependencies": "개발 범위 의존성에 대한 영향이 적은 경고 해제하기",
+                    "In a developer (non-production or runtime) environment, these alerts are unlikely to be exploitable or have limited effect like slow builds or long-running tests.": "개발자(비프로덕션 또는 런타임) 환경에서 이러한 경고는 악용될 가능성이 낮거나, 빌드 속도 저하 또는 장기 실행 테스트와 같이 제한된 영향을 미쳐요.",
+                    "Learn more about this methodology.": "이 방법론에 대해 더 알아보세요.",
+            "Repository rules": "저장소 규칙", // 저장소 규칙
+            "Organization rules": "조직 규칙",
+                // [/Managed by ([^ ]+)/, "$1이(가) 관리"],
+                "Edit custom rule": "사용자 지정 규칙 편집하기",
 
-        // 新建规则 /organizations/<org-login>/settings/dependabot_rules/new
-            // 顶部警告
-                "The following inputs have errors:": "以下输入有错误：",
+        // 새 규칙 /organizations/<org-login>/settings/dependabot_rules/new
+            // 상단 경고
+                "The following inputs have errors:": "다음 입력에 오류가 있어요:",
 
-            "Dependabot rules": "Dependabot 规则",
-            "/ New rule": "/ 新建规则",
-            "Rule name": "规则名称",
-                "Add a rule name": "添加规则名称",
-            "State": "状态",
-                "Rules will target all public repositories in this organization.": "规则将针对该组织中的所有公共仓库.",
-                    "Enabled": "启用",
-                        "Rule is enabled by default for all public repositories.": "默认情况下，规则对所有公共仓库启用.",
-                    "Enforced": "强制",
-                        "Rule is enabled for all public repositories and can never be disabled by individual repositories.": "规则对所有公共仓库启用，单个仓库永远无法禁用.",
-                    "Disabled": "禁用",
-                        "Rule can never be enabled on any repositories.": "规则永远不能在任何仓库中启用.",
-            "Target alerts": "目标警告",
-                "Add rule metadata": "添加规则元数据",
-                    "Suggested filters": "建议的过滤器",
-                        "severity:": "严重度：",
-                            "critical, high, moderate, low": "严重、高、中、低",
-                                "Severities": "严重度",
-                                    "critical": "严重",
-                                    "high": "高",
-                                    "moderate": "中",
-                                    "low": "低",
-                        "package:": "软件包：",
-                            "package-name": "软件包名称",
-                        "ecosystem:": "生态系统：",
-                            "ecosystem-name": "生态系统名称",
-                        "scope:": "范围：",
-                            "runtime, development": "运行时、开发",
-                                "Scopes": "范围",
-                                    "runtime": "运行时",
-                                    "development": "开发",
-                        "cwe:": "CWE：",
-                            "cwe-number": "CWE 号码",
-                "Rules will be applied for alerts matching all included metadata.": "规则将应用于与所有包含的元数据匹配的警报.",
-            "Rules": "规则",
-                "Select one or more rules to apply to matching alerts.": "选择一个或多个规则以应用于匹配的警报.",
-                "Dismiss alerts": "忽略警报",
-                    "Dependabot will automatically close or reopen alerts based on selected criteria.": "Dependabot 将根据选定的条件自动关闭或重新打开警报.",
-                    "Until patch is available": "直到补丁可用为止",
-                    "Indefinitely": "无限期",
-                "Open a pull request to resolve alerts": "打开拉取请求以解决警报",
-                    "Dependabot will attempt to open security updates based on selected criteria.": "Dependabot 将尝试根据选定的标准打开安全更新.",
-            "Create rule": "创建规则",
+            "Dependabot rules": "Dependabot 규칙",
+            "/ New rule": "/ 새 규칙",
+            "Rule name": "규칙 이름",
+                "Add a rule name": "규칙 이름 추가하기",
+            "State": "상태",
+                "Rules will target all public repositories in this organization.": "규칙은 이 조직의 모든 공개 저장소를 대상으로 해요.",
+                    "Enabled": "활성화됨",
+                        "Rule is enabled by default for all public repositories.": "규칙은 모든 공개 저장소에 대해 기본적으로 활성화돼요.",
+                    "Enforced": "강제 적용",
+                        "Rule is enabled for all public repositories and can never be disabled by individual repositories.": "규칙은 모든 공개 저장소에 대해 활성화되며 개별 저장소에서 비활성화할 수 없어요.",
+                    "Disabled": "비활성화됨",
+                        "Rule can never be enabled on any repositories.": "규칙은 어떤 저장소에서도 활성화할 수 없어요.",
+            "Target alerts": "대상 경고",
+                "Add rule metadata": "규칙 메타데이터 추가하기",
+                    "Suggested filters": "추천 필터",
+                        "severity:": "심각도:",
+                            "critical, high, moderate, low": "심각, 높음, 보통, 낮음",
+                                "Severities": "심각도",
+                                    "critical": "심각",
+                                    "high": "높음",
+                                    "moderate": "보통",
+                                    "low": "낮음",
+                        "package:": "패키지:",
+                            "package-name": "패키지-이름",
+                        "ecosystem:": "생태계:",
+                            "ecosystem-name": "생태계-이름",
+                        "scope:": "범위:",
+                            "runtime, development": "런타임, 개발",
+                                "Scopes": "범위",
+                                    "runtime": "런타임",
+                                    "development": "개발",
+                        "cwe:": "CWE:",
+                            "cwe-number": "CWE-번호",
+                "Rules will be applied for alerts matching all included metadata.": "규칙은 포함된 모든 메타데이터와 일치하는 경고에 적용돼요.",
+            "Rules": "규칙",
+                "Select one or more rules to apply to matching alerts.": "일치하는 경고에 적용할 규칙을 하나 이상 선택하세요.",
+                "Dismiss alerts": "경고 해제하기",
+                    "Dependabot will automatically close or reopen alerts based on selected criteria.": "Dependabot은 선택된 기준에 따라 경고를 자동으로 닫거나 다시 열어요.",
+                    "Until patch is available": "패치가 사용 가능할 때까지",
+                    "Indefinitely": "무기한으로",
+                "Open a pull request to resolve alerts": "경고를 해결하기 위해 끌어오기 요청 열기",
+                    "Dependabot will attempt to open security updates based on selected criteria.": "Dependabot은 선택된 기준에 따라 보안 업데이트를 열려고 시도해요.",
+            "Create rule": "규칙 만들기",
 
-        // 编辑规则 /organizations/<org-login>/settings/dependabot_rules/edit/<id>
-            "/ Edit rule": "/ 编辑规则",
-            "Save rule": "保存规则",
+        // 규칙 편집 /organizations/<org-login>/settings/dependabot_rules/edit/<id>
+            "/ Edit rule": "/ 규칙 편집",
+            "Save rule": "규칙 저장하기",
 
-            "Danger Zone": "危险区",
-                "Delete this rule": "删除规则",
-                    "Deleting this rule can potentially reopen associated alerts.": "删除此规则可能会重新打开相关警报.",
-                    "Delete rule": "删除规则",
+            "Danger Zone": "위험 구역",
+                "Delete this rule": "이 규칙 삭제하기",
+                    "Deleting this rule can potentially reopen associated alerts.": "이 규칙을 삭제하면 관련 경고가 다시 열릴 수 있어요.",
+                    "Delete rule": "규칙 삭제하기",
 
-                    "Are you sure you want to delete this rule?": "您确定要删除此规则吗？",
-                        // [/This will permanently delete the rule \"(.*)\" and potentially reopen associated alerts./, "这将永久删除规则 “$1” 并可能重新打开相关警报."],
+                    "Are you sure you want to delete this rule?": "이 규칙을 정말로 삭제하시겠어요?",
+                        // [/This will permanently delete the rule \"(.*)\" and potentially reopen associated alerts./, "이렇게 하면 “$1” 규칙이 영구적으로 삭제되고 관련 경고가 다시 열릴 수 있어요."],
 
-        // 编辑默认规则 /organizations/<org-login>/settings/dependabot_rules/edit_default/1
-            "/ GitHub Preset rule": "/ GitHub 预设规则",
+        // 기본 규칙 편집 /organizations/<org-login>/settings/dependabot_rules/edit_default/1
+            "/ GitHub Preset rule": "/ GitHub 사전 설정 규칙",
 
     },
-    "regexp": [ // 正则翻译
-        [/Managed by ([^ ]+)/, "由 $1 管理"],
-        [/This will permanently delete the rule \"(.*)\" and potentially reopen associated alerts./, "这将永久删除规则 “$1” 并可能重新打开相关警报."],
+    "regexp": [ // 정규식 번역
+        [/Managed by ([^ ]+)/, "$1이(가) 관리"],
+        [/This will permanently delete the rule \"(.*)\" and potentially reopen associated alerts./, "이렇게 하면 “$1” 규칙이 영구적으로 삭제되고 관련 경고가 다시 열릴 수 있어요."],
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 I18N["ko-KR"]["repository/settings/dependabot_rules"] = I18N["ko-KR"]["orgs/settings/dependabot_rules"];
 
-I18N["ko-KR"]["orgs/settings/domains"] = { // 组织设置 - 经验证和批准的域名
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/domains"] = { // 조직 설정 - 확인 및 승인된 도메인
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 经验证和批准的域名 /organizations/<org-login>/settings/domains
-            "Verified & approved domains": "经验证和批准的域名",
-            "Add a domain": "添加域名",
-            "You can verify the domains controlled by your organization to confirm your organization's identity on GitHub. A": "您可以验证组织控制的域，以确认组织在 GitHub 上的身份.一个",
-            "badge will be added to your organization's profile page if all of the domains displayed on your profile (e.g. public email or website URL) are verified. You may also approve a domain by first adding it to the list of eligible domains. Approved domains may be used for email notification routing to users with verified emails that do not belong to a domain that you can verify.": "的徽章，您的组织的资料页面上显示，则表明您的资料中显示的所有域名（例如公共电子邮箱地址或网站 URL）都经过验证.您也可以通过，首先将一个域名添加到合格的域名列表中来批准该域名.已批准的域名可用于通过电子邮件通知具有经过验证的邮箱地址的用户，这些电子邮箱地址不属于您可以验证的域名.",
-            "Learn more about verifying or approving a domain for your enterprise.": "了解更多关于验证或批准企业域名的信息.",
+        // 확인 및 승인된 도메인 /organizations/<org-login>/settings/domains
+            "Verified & approved domains": "확인 및 승인된 도메인",
+            "Add a domain": "도메인 추가하기",
+            "You can verify the domains controlled by your organization to confirm your organization's identity on GitHub. A": "조직이 관리하는 도메인을 확인하여 GitHub에서 조직의 신원을 증명할 수 있어요. 사용자님의 프로필에 표시된 모든 도메인(예: 공개 이메일 또는 웹사이트 URL)이 확인되면 조직 프로필 페이지에",
+            "badge will be added to your organization's profile page if all of the domains displayed on your profile (e.g. public email or website URL) are verified. You may also approve a domain by first adding it to the list of eligible domains. Approved domains may be used for email notification routing to users with verified emails that do not belong to a domain that you can verify.": "배지가 추가돼요. 또한, 적격 도메인 목록에 먼저 도메인을 추가하여 도메인을 승인할 수도 있어요. 승인된 도메인은 사용자님이 확인할 수 없는 도메인에 속한 이메일을 사용하는 사용자에게 이메일 알림을 라우팅하는 데 사용될 수 있어요.",
+            "Learn more about verifying or approving a domain for your enterprise.": "사용자님의 기업에 대한 도메인 확인 또는 승인에 대해 더 알아보세요.",
     },
-    "regexp": [ // 正则翻译
+    "regexp": [ // 정규식 번역
         ...I18N["ko-KR"]["orgs-public"]["regexp"],
     ],
 };
 
-I18N["ko-KR"]["orgs/settings/secrets"] = { // 组织设置 - 机密和变量
-    "static": { // 静态翻译
+I18N["ko-KR"]["orgs/settings/secrets"] = { // 조직 설정 - 비밀 및 변수
+    "static": { // 정적 번역
         ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
         ...I18N["ko-KR"]["confirm-access"]["static"],
 
-        // 操作机密 /organizations/<org-login>/settings/secrets/actions
-            "Actions secrets and variables": "操作机密和变量",
-            "Secrets and variables allow you to manage reusable configuration data. Secrets are": "机密和变量允许您管理可重复使用的配置数据.机密是",
-            "encrypted": "被加密",
-            "and are used for sensitive data.": "，用于敏感数据.",
-            "Learn more about encrypted secrets": "了解更多关于加密机密的信息",
-            ". Variables are shown as plain text and are used for": ".变量是明文显示，用于",
-            "non-sensitive": "不敏感",
-            "data.": "数据.",
-            "Learn more about variables": "了解更多关于变量的信息",
+        // 액션 비밀 /organizations/<org-login>/settings/secrets/actions
+            "Actions secrets and variables": "액션 비밀 및 변수",
+            "Secrets and variables allow you to manage reusable configuration data. Secrets are": "비밀과 변수를 사용하여 재사용 가능한 구성 데이터를 관리할 수 있어요. 비밀은",
+            "encrypted": "암호화되어",
+            "and are used for sensitive data.": "민감한 데이터에 사용돼요.",
+            "Learn more about encrypted secrets": "암호화된 비밀에 대해 더 알아보기",
+            ". Variables are shown as plain text and are used for": ". 변수는 일반 텍스트로 표시되며",
+            "non-sensitive": "민감하지 않은",
+            "data.": "데이터에 사용돼요.",
+            "Learn more about variables": "변수에 대해 더 알아보기",
 
-            "Anyone with collaborator access to the repositories with access to a secret or variable can use it for Actions. They are not passed to workflows that are triggered by a pull request from a fork.": "任何具有协作者权限的人，只要能接触到机密或变量，都可以将其用于操作.它们不会被传递到由复刻的拉取请求触发的工作流中.",
+            "Anyone with collaborator access to the repositories with access to a secret or variable can use it for Actions. They are not passed to workflows that are triggered by a pull request from a fork.": "비밀이나 변수에 접근할 수 있는 저장소에 대한 협업자 접근 권한이 있는 사람은 누구나 액션에 이를 사용할 수 있어요. 포크에서 온 끌어오기 요청에 의해 트리거되는 워크플로에는 전달되지 않아요.",
 
-            "Organization secrets and variables cannot be used by private repositories with your plan.": "在您的计划中私有仓库不能使用组织机密和变量.",
-            "Please consider": "请考虑",
-            "upgrading your plan": "升级您的计划",
-            "if you require this functionality.": "如果您需要此功能.",
+            "Organization secrets and variables cannot be used by private repositories with your plan.": "사용자님의 플랜에서는 비공개 저장소가 조직 비밀 및 변수를 사용할 수 없어요.",
+            "Please consider": "다음을 고려해주세요:",
+            "upgrading your plan": "플랜 업그레이드하기",
+            "if you require this functionality.": "이 기능이 필요한 경우.",
 
-            "Secrets": "机密",
-            "Variables": "变量",
+            "Secrets": "비밀",
+            "Variables": "변수",
 
-            "Organization secrets": "组织机密",
-                "This organization has no secrets.": "该组织尚无机密.",
-                "New organization secret": "新建组织机密",
+            "Organization secrets": "조직 비밀",
+                "This organization has no secrets.": "이 조직에는 비밀이 없어요.",
+                "New organization secret": "새 조직 비밀 만들기",
 
-            "Visibility": "可见性",
-            "Last updated": "最后更新",
+            "Visibility": "공개 상태",
+            "Last updated": "마지막 업데이트",
 
-            // 顶部提醒
-                "Failed to add secret. Secret names can only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_). Spaces are not allowed. Must start with a letter ([a-z], [A-Z]) or underscores (_).": "添加机密失败.机密名称只能包含字母数字字符（[a-z]、[A-Z]、[0-9]）或下划线 (_).不允许有空格.必须以字母 ([a-z], [A-Z]) 或下划线 (_) 开头.",
-                "Secret added.": "机密已添加.",
-                "Secret updated.": "机密已更新.",
-                "Secret deleted.": "机密已删除.",
+            // 상단 알림
+                "Failed to add secret. Secret names can only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_). Spaces are not allowed. Must start with a letter ([a-z], [A-Z]) or underscores (_).": "비밀 추가에 실패했어요. 비밀 이름은 영숫자 문자([a-z], [A-Z], [0-9]) 또는 밑줄(_)만 포함할 수 있어요. 공백은 허용되지 않아요. 문자([a-z], [A-Z]) 또는 밑줄(_)로 시작해야 해요.",
+                "Secret added.": "비밀을 추가했어요.",
+                "Secret updated.": "비밀을 업데이트했어요.",
+                "Secret deleted.": "비밀을 삭제했어요.",
 
-            // 删除机密对话框
-            "Delete secret": "删除机密",
-                "Are you sure you want to delete": "您确定要删除",
-                    "Deleting": "删除",
-                    "Unable to delete": "无法删除",
-                "Yes, delete this": "是的，删除该",
-                "secret": "机密",
+            // 비밀 삭제 대화 상자
+            "Delete secret": "비밀 삭제하기",
+                "Are you sure you want to delete": "정말로 삭제하시겠어요?",
+                    "Deleting": "삭제 중",
+                    "Unable to delete": "삭제할 수 없음",
+                "Yes, delete this": "예, 삭제합니다:",
+                "secret": "비밀",
 
-        // 新建组织机密 /organizations/<org-login>/settings/secrets/actions/new
-            "Actions secrets": "操作机密",
-            "/ New secret": "/ 新建机密",
-            "Add secret": "添加机密",
-                "Adding…": "添加中…",
+        // 새 조직 비밀 /organizations/<org-login>/settings/secrets/actions/new
+            "Actions secrets": "액션 비밀",
+            "/ New secret": "/ 새 비밀",
+            "Add secret": "비밀 추가하기",
+                "Adding…": "추가 중…",
 
-            "Name": "名称",
-            "Value": "值",
+            "Name": "이름",
+            "Value": "값",
 
-            "Repository access": "仓库权限",
-            "Public repositories": "公共仓库",
-                "This secret may be used by public repositories in the organization. Paid GitHub plans include private repositories.": "该机密可由组织中的公共仓库使用.付费的 GitHub 计划包括私有仓库.",
-            "Private repositories": "私有仓库",
-                "Organization secrets cannot be used by private repositories with your plan.": "在您的计划中私有仓库不能使用组织机密.",
-            "Selected repositories": "选定的仓库",
-                "This secret may only be used by specifically selected repositories.": "该机密只能由特定仓库使用.",
-                    // [/(\d+) selected repositor(y|ies)/, "$1 个选定的仓库"],
-                // 机密仓库访问 对话框
-                    "Secret repository access": "机密仓库访问",
-                    "Select the organization repositories that may use this secret.": "选择可以使用该机密的组织仓库.",
-                        "Filter repositories": "筛选仓库",
-                        "selected repository": "个选定的仓库",
-                        "selected repositories": "个选定的仓库",
-                    "Update selection": "更新选择",
+            "Repository access": "저장소 접근 권한",
+            "Public repositories": "공개 저장소",
+                "This secret may be used by public repositories in the organization. Paid GitHub plans include private repositories.": "이 비밀은 조직의 공개 저장소에서 사용할 수 있어요. 유료 GitHub 플랜에는 비공개 저장소가 포함돼요.",
+            "Private repositories": "비공개 저장소",
+                "Organization secrets cannot be used by private repositories with your plan.": "사용자님의 플랜에서는 비공개 저장소가 조직 비밀을 사용할 수 없어요.",
+            "Selected repositories": "선택된 저장소",
+                "This secret may only be used by specifically selected repositories.": "이 비밀은 특별히 선택된 저장소에서만 사용할 수 있어요.",
+                    // [/(\d+) selected repositor(y|ies)/, "$1개의 선택된 저장소"],
+                // 비밀 저장소 접근 대화 상자
+                    "Secret repository access": "비밀 저장소 접근 권한",
+                    "Select the organization repositories that may use this secret.": "이 비밀을 사용할 수 있는 조직 저장소를 선택하세요.",
+                        "Filter repositories": "저장소 필터링하기",
+                        "selected repository": "개의 선택된 저장소",
+                        "selected repositories": "개의 선택된 저장소",
+                    "Update selection": "선택 업데이트하기",
 
-        // 更新操作机密 /organizations/<org-login>/settings/secrets/actions/<name>
-            "/ Update secret": "/ 更新机密",
-            "Secret values are encrypted and cannot be displayed, but you can": "机密值已加密，无法显示，但您可以",
-            "enter a new value.": "输入一个新值.",
-            "Save changes": "保存更改",
-                "Updating…": "更新中…",
+        // 액션 비밀 업데이트 /organizations/<org-login>/settings/secrets/actions/<name>
+            "/ Update secret": "/ 비밀 업데이트",
+            "Secret values are encrypted and cannot be displayed, but you can": "비밀 값은 암호화되어 표시할 수 없지만, 다음을 할 수 있어요:",
+            "enter a new value.": "새 값 입력하기.",
+            "Save changes": "변경 사항 저장하기",
+                "Updating…": "업데이트 중…",
 
-        // 操作变量 /organizations/<org-login>/settings/variables/actions
-            "Create new organization variable": "新建组织变量",
+        // 액션 변수 /organizations/<org-login>/settings/variables/actions
+            "Create new organization variable": "새 조직 변수 만들기",
 
-            "Organization variables": "组织变量",
-            "This organization has no variables.": "此组织尚无变量.",
+            "Organization variables": "조직 변수",
+            "This organization has no variables.": "이 조직에는 변수가 없어요.",
 
-            // 删除变量对话框
-            "Delete variable": "删除变量",
-                "variable": "变量",
+            // 변수 삭제 대화 상자
+            "Delete variable": "변수 삭제하기",
+                "variable": "변수",
 
-        // 新建组织变量 /organizations/<org-login>/settings/variables/actions/new
-            "Actions variables": "操作变量",
-            "/ New variable": "/ 新建变量",
-            "Note: Variable values are exposed as plain text. If you need to encrypt and mask sensitive information,": "注意：变量值是以纯文本形式暴露的.如果您需要对敏感信息进行加密和屏蔽，请使用",
-            "create a secret": "创建机密",
-            "instead.": "代替.",
+        // 새 조직 변수 /organizations/<org-login>/settings/variables/actions/new
+            "Actions variables": "액션 변수",
+            "/ New variable": "/ 새 변수",
+            "Note: Variable values are exposed as plain text. If you need to encrypt and mask sensitive information,": "참고: 변수 값은 일반 텍스트로 노출돼요. 민감한 정보를 암호화하고 마스킹해야 하는 경우,",
+            "create a secret": "비밀 만들기",
+            "instead.": "를 대신 사용하세요.",
 
-            "Variable names may only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_).": "变量名称只能包含字母数字字符（[A-Z]，[A-Z]，[0-9]）或仅下划线（_）.",
-            "Variable names cannot start with a number.": "变量名称不能以数字开头.",
-            "Variable names cannot start with": "变量名称不能以",
-            "prefix.": "前缀开头.",
+            "Variable names may only contain alphanumeric characters ([a-z], [A-Z], [0-9]) or underscores (_).": "변수 이름은 영숫자 문자([a-z], [A-Z], [0-9]) 또는 밑줄(_)만 포함할 수 있어요.",
+            "Variable names cannot start with a number.": "변수 이름은 숫자로 시작할 수 없어요.",
+            "Variable names cannot start with": "변수 이름은 다음으로 시작할 수 없어요:",
+            "prefix.": "접두사.",
 
-            // 变量名称警示
-                "Variable name can only contain alphanumeric characters. Special characters and spaces are not allowed.": "变量名称只能包含字母数字字符.不允许特殊字符和空格.",
-                "Variable name can only start with a letter or underscore.": "变量名称只能以字母或下划线开头.",
-                "Variable name cannot start with \"GITHUB_\" prefix.": "变量名称不能以 “GITHUB_” 前缀开头.",
+// 변수 이름 경고
+                "Variable name can only contain alphanumeric characters. Special characters and spaces are not allowed.": "변수 이름은 영숫자 문자만 포함할 수 있어요. 특수 문자나 공백은 허용되지 않아요.",
+                "Variable name can only start with a letter or underscore.": "변수 이름은 문자나 밑줄로만 시작할 수 있어요.",
+                "Variable name cannot start with \"GITHUB_\" prefix.": "변수 이름은 \"GITHUB_\" 접두사로 시작할 수 없어요.",
 
-            // "Public repositories": "公共仓库",
-                "This variable may be used by public repositories in the organization. Paid GitHub plans include private repositories.": "改变量可由组织中的公共仓库使用.付费的 GitHub 计划包括私有仓库.",
-            // "Private repositories": "私有仓库",
-                "Organization variables cannot be used by private repositories with your plan.": "在您的计划中私有仓库不能使用组织变量.",
-            // "Selected repositories": "选定的仓库",
-                "This variable may only be used by specifically selected repositories.": "该变量只能由特定仓库使用.",
-                    // [/(\d+) selected repositor(y|ies)/, "$1 个选定的仓库"],
-                // 变量仓库访问 对话框
-                    "Variable repository access": "变量仓库访问",
-                    "Select the organization repositories that may use this variable.": "选择可以使用该变量的组织仓库.",
+            // "Public repositories": "공개 저장소",
+                "This variable may be used by public repositories in the organization. Paid GitHub plans include private repositories.": "이 변수는 조직의 공개 저장소에서 사용할 수 있어요. 유료 GitHub 플랜에는 비공개 저장소가 포함돼요.",
+            // "Private repositories": "비공개 저장소",
+                "Organization variables cannot be used by private repositories with your plan.": "사용자님의 플랜에서는 비공개 저장소가 조직 변수를 사용할 수 없어요.",
+            // "Selected repositories": "선택된 저장소",
+                "This variable may only be used by specifically selected repositories.": "이 변수는 특별히 선택된 저장소에서만 사용할 수 있어요.",
+                    // [/(\d+) selected repositor(y|ies)/, "$1개의 선택된 저장소"],
+                // 변수 저장소 접근 대화 상자
+                    "Variable repository access": "변수 저장소 접근 권한",
+                    "Select the organization repositories that may use this variable.": "이 변수를 사용할 수 있는 조직 저장소를 선택하세요.",
 
-            "Add variable": "添加变量",
+            "Add variable": "변수 추가하기",
 
-        // 更新组织变量 /organizations/<org-login>/settings/variables/actions/<name>
-            "/ Update variable": "/ 更新变量",
-            "Update variable": "更新变量",
-                "Saving…": "保存中…",
-                "Save variable": "保存变量",
+        // 조직 변수 업데이트 /organizations/<org-login>/settings/variables/actions/<name>
+            "/ Update variable": "/ 변수 업데이트",
+            "Update variable": "변수 업데이트하기",
+                "Saving…": "저장 중…",
+                "Save variable": "변수 저장하기",
 
-        // 代码空间机密 /organizations/<org-login>/settings/secrets/codespaces
-            "Codespaces secrets": "代码空间机密",
-            "Development environment secrets are environment variables that are": "开发环境机密是环境变量",
-            "encrypted": "被加密",
-            ". They are available to any codespace user with": ".任何代码空间用户具有",
-            "collaborator": "协作者",
-            "access to the repositories with access to that secret.": "权限访问该机密的仓库.",
+        // Codespaces 비밀 /organizations/<org-login>/settings/secrets/codespaces
+            "Codespaces secrets": "Codespaces 비밀",
+            "Development environment secrets are environment variables that are": "개발 환경 비밀은",
+            "encrypted": "암호화된",
+            ". They are available to any codespace user with": "환경 변수예요. 해당 비밀에 접근할 수 있는 저장소에 대한",
+            "collaborator": "협업자",
+            "access to the repositories with access to that secret.": "접근 권한이 있는 모든 Codespaces 사용자가 사용할 수 있어요.",
 
-            "Development environment secrets": "开发环境机密",
-                "This organization has no development environment secrets.": "该组织尚无开发环境机密.",
-                "New codespace secret": "新建代码空间机密",
+            "Development environment secrets": "개발 환경 비밀",
+                "This organization has no development environment secrets.": "이 조직에는 개발 환경 비밀이 없어요.",
+                "New codespace secret": "새 Codespace 비밀 만들기",
 
-        // Dependabot 机密 /organizations/<org-login>/settings/secrets/dependabot
-            "Dependabot secrets": "Dependabot 机密",
-            "Secrets are credentials that are": "机密是凭证",
-            ". Anyone with": ".任何对此仓库具有",
-            "access to the repositories with access to each secret can use it for Dependabot.": "访问权限的人都可以访问仓库的每个机密用于 Dependabot.",
-            "Secrets are not passed to forks.": "机密不会传递给复刻.",
+        // Dependabot 비밀 /organizations/<org-login>/settings/secrets/dependabot
+            "Dependabot secrets": "Dependabot 비밀",
+            "Secrets are credentials that are": "비밀은",
+            ". Anyone with": "자격 증명이에요. 각 비밀에 접근할 수 있는 저장소에 대한",
+            "access to the repositories with access to each secret can use it for Dependabot.": "접근 권한이 있는 사람은 누구나 Dependabot에 이를 사용할 수 있어요.",
+            "Secrets are not passed to forks.": "비밀은 포크로 전달되지 않아요.",
 
-        // Dependabot 机密 /organizations/<org-login>/settings/secrets/dependabot/new
-            "All repositories": "所有仓库",
-            "This secret may be used by any repository in the organization.": "组织中的任何仓库都可以使用此机密.",
-            "This secret may be used by any private repository in the organization.": "组织中的任何私有仓库都可以使用此机密.",
+        // Dependabot 비밀 /organizations/<org-login>/settings/secrets/dependabot/new
+            "All repositories": "모든 저장소",
+            "This secret may be used by any repository in the organization.": "이 비밀은 조직의 모든 저장소에서 사용할 수 있어요.",
+            "This secret may be used by any private repository in the organization.": "이 비밀은 조직의 모든 비공개 저장소에서 사용할 수 있어요.",
 
-        // 私有登记表 /organizations/<org-login>/settings/secrets/private_registries
-            "Private Registries": "私有注册表",
-            "Private registry configurations include passwords or tokens that are handled as encrypted secrets. Access to private registry configurations is limited to": "私有注册表配置包括加密处理的密码或令牌作为机密.对私有注册表配置的访问仅限于",
-            "CodeQL default setup": "CodeQL 默认设置",
-            "for analyzing code. The automatically-generated name for a private registry configuration is visible to users in log files for debugging. No other information is accessible to users.": "用于分析代码.用户可以在日志文件中看到自动生成的私有注册表配置名称，以便进行调试.用户无法访问其他信息.",
-            "Private registry secrets": "私人注册表机密",
+        // 비공개 레지스트리 /organizations/<org-login>/settings/secrets/private_registries
+            "Private Registries": "비공개 레지스트리",
+            "Private registry configurations include passwords or tokens that are handled as encrypted secrets. Access to private registry configurations is limited to": "비공개 레지스트리 구성에는 암호화된 비밀로 처리되는 암호 또는 토큰이 포함돼요. 비공개 레지스트리 구성에 대한 접근은",
+            "CodeQL default setup": "CodeQL 기본 설정",
+            "for analyzing code. The automatically-generated name for a private registry configuration is visible to users in log files for debugging. No other information is accessible to users.": "(으)로 제한돼요. 비공개 레지스트리 구성의 자동 생성 이름은 디버깅을 위해 사용자가 로그 파일에서 볼 수 있어요. 다른 정보는 사용자에게 접근할 수 없어요.",
+            "Private registry secrets": "비공개 레지스트리 비밀",
 
-            "New private registry": "新建私有注册表",
+            "New private registry": "새 비공개 레지스트리 만들기",
 
-        // 新建私有登记表 /organizations/<org-login>/settings/secrets/private_registries/new
-            "Private registries": "私有注册表",
-            "New private registry": "新建私有注册表",
-            "Select registry type": "选择注册表类型",
-                "Maven Repository": "Maven 仓库",
-                "NuGet Feed": "NuGet 订阅",
-                "Token": "令牌",
-                "Username and password": "用户名和密码",
-                "Username": "用户名",
-                "Password": "비밀번호",
-                "Add Registry": "添加注册表",
+        // 새 비공개 레지스트리 /organizations/<org-login>/settings/secrets/private_registries/new
+            "Private registries": "비공개 레지스트리",
+            "New private registry": "새 비공개 레지스트리 만들기",
+            "Select registry type": "레지스트리 유형 선택하기",
+                "Maven Repository": "Maven 저장소",
+                "NuGet Feed": "NuGet 피드",
+                "Token": "토큰",
+                "Username and password": "사용자 이름 및 암호",
+                "Username": "사용자 이름",
+                "Password": "암호",
+                "Add Registry": "레지스트리 추가하기",
 
-        // 编辑私有登记表 /organizations/<org-login>/settings/secrets/private_registries/<>
-            "Edit private registry": "编辑私有注册表",
-            "Type": "유형",
+        // 비공개 레지스트리 편집 /organizations/<org-login>/settings/secrets/private_registries/<>
+            "Edit private registry": "비공개 레지스트리 편집하기",
+            "Type": "유형",
 
-    },
-    "regexp": [ // 正则翻译
-        [/(\d+) selected repositor(y|ies)/, "$1 个选定的仓库"],
-        ...I18N["ko-KR"]["orgs-public"]["regexp"],
-    ],
+    },
+    "regexp": [ // 정규식 번역
+        [/(\d+) selected repositor(y|ies)/, "$1개의 선택된 저장소"],
+        ...I18N["ko-KR"]["orgs-public"]["regexp"],
+    ],
 };
 I18N["ko-KR"]["orgs/settings/variables"] = I18N["ko-KR"]["orgs/settings/secrets"];
 
-I18N["ko-KR"]["orgs/settings/oauth_application_policy"] = { // 组织设置 - 第三方应用访问策略
-    "static": { // 静态翻译
-        ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
+I18N["ko-KR"]["orgs/settings/oauth_application_policy"] = { // 조직 설정 - 타사 앱 접근 정책
+    "static": { // 정적 번역
+        ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 第三方应用访问策略 /organizations/<org-login>/settings/oauth_application_policy
-            "Third-party application access policy": "第三方应用访问策略",
-            "Policy:": "策略：",
-                "Access restricted": "访问受限",
-                    "Only approved applications can access data in this organization. Applications owned by": "只有获得批准的应用才能访问该组织中的数据.应用由",
-                    "always have access.": "拥有的始终可以访问.",
-                    "Remove restrictions": "解除限制",
-                    // 解除限制对话框
-                    "Are you sure?": "您确定吗？",
-                    "You’re about to remove all third-party application restrictions. Please read this carefully.": "您即将删除所有第三方应用限制.请仔细阅读.",
-                    "Removing third-party application restrictions will immediately give member authorized applications access to private data in the": "取消第三方应用限制，将立即允许成员授权的应用访问私人数据，在",
-                    "Please be sure you want to do this.": "请确定您想这么做.",
-                    "Yes, remove application restrictions": "是的，取消应用限制",
-                "No restrictions": "未受限",
-                    "All applications authorized by organization members have access to": "所有由组织成员授权的应用都可以访问",
-                    "’s data.": "的数据.",
-                    "Setup application access restrictions": "设置应用访问限制",
+        // 타사 앱 접근 정책 /organizations/<org-login>/settings/oauth_application_policy
+            "Third-party application access policy": "타사 앱 접근 정책",
+            "Policy:": "정책:",
+                "Access restricted": "접근 제한됨",
+                    "Only approved applications can access data in this organization. Applications owned by": "승인된 앱만 이 조직의 데이터에 접근할 수 있어요. 다음이 소유한 앱은",
+                    "always have access.": "항상 접근할 수 있어요.",
+                    "Remove restrictions": "제한 해제하기",
+                    // 제한 해제 대화 상자
+                    "Are you sure?": "확실하신가요?",
+                    "You’re about to remove all third-party application restrictions. Please read this carefully.": "모든 타사 앱 제한을 제거하려고 해요. 주의 깊게 읽어주세요.",
+                    "Removing third-party application restrictions will immediately give member authorized applications access to private data in the": "타사 앱 제한을 제거하면 멤버가 승인한 앱이 다음의 비공개 데이터에 즉시 접근할 수 있게 돼요:",
+                    "Please be sure you want to do this.": "정말로 이 작업을 수행하시겠어요?",
+                    "Yes, remove application restrictions": "예, 앱 제한을 해제합니다",
+                "No restrictions": "제한 없음",
+                    "All applications authorized by organization members have access to": "조직 멤버가 승인한 모든 앱은 다음에 접근할 수 있어요:",
+                    "’s data.": "의 데이터.",
+                    "Setup application access restrictions": "앱 접근 제한 설정하기",
 
-            "Denied": "拒绝",
-            "Approved": "已批准",
+            "Denied": "거부됨",
+            "Approved": "승인됨",
 
-            "No pending requests": "没有待处理的请求",
-            "As members request access for specific applications, those requests will be listed here for your approval. You can start by browsing": "当成员请求访问特定应用时，这些请求将在此处列出以供您批准.您可以浏览",
-            "your own authorized applications": "您授权的应用",
+            "No pending requests": "보류 중인 요청 없음",
+            "As members request access for specific applications, those requests will be listed here for your approval. You can start by browsing": "멤버가 특정 앱에 대한 접근을 요청하면 해당 요청이 여기에 목록으로 표시되어 사용자님의 승인을 기다려요. 다음을 탐색하여 시작할 수 있어요:",
+            "your own authorized applications": "사용자님이 승인한 앱",
 
-            "When authorized, applications can act on behalf of organization members. Your access policy determines which applications can access data in your organization.": "获得授权后，应用可以代表组织成员进行操作.您的访问策略决定了哪些应用可以访问您组织中的数据.",
-            "Read more about third-party access and organizations.": "阅读更多关于第三方访问和组织的信息.",
+            "When authorized, applications can act on behalf of organization members. Your access policy determines which applications can access data in your organization.": "승인되면 앱은 조직 멤버를 대신하여 작동할 수 있어요. 사용자님의 접근 정책은 어떤 앱이 조직의 데이터에 접근할 수 있는지를 결정해요.",
+            "Read more about third-party access and organizations.": "타사 접근 및 조직에 대해 더 읽어보기",
 
-        // 设置第三方应用访问限制 /settings/oauth_application_policy/confirm
-            "Third-party application restrictions": "第三方应用限制",
-            "create an extra layer of security that allows owners to better control how applications access data in their organization.": "创建一个额外的安全层，使所有者能够更好地控制应用如何访问其组织中的数据.",
+        // 타사 앱 접근 제한 설정 /settings/oauth_application_policy/confirm
+            "Third-party application restrictions": "타사 앱 제한",
+            "create an extra layer of security that allows owners to better control how applications access data in their organization.": "은(는) 소유자가 앱이 조직 데이터에 접근하는 방식을 더 잘 제어할 수 있도록 하는 추가 보안 계층을 만들어요.",
 
-            "Organization owners maintain an allowlist of trusted applications.": "组织所有者维护受信任应用的允许列表.",
-            "Applications owned by": "应用拥有者",
-                "are always trusted.": "的应用始终受信任.",
-            "Members can request organization approval for an application.": "成员可请求组织批准应用.",
-            "Approval requests notify organization owners, allowing them to deny or approve application access.": "批准请求会通知组织所有者，允许他们拒绝或批准应用的访问.",
-            "Only trusted applications can:": "只有受信任的应用才能：",
-                "Access private organization data via the API or SSH.": "通过 API 或 SSH 访问私有组织数据.",
-                "Change public organization data.": "更改公共组织数据.",
-                "Receive webhooks for private events.": "接收私人事件的 웹훅.",
+            "Organization owners maintain an allowlist of trusted applications.": "조직 소유자는 신뢰할 수 있는 앱의 허용 목록을 유지 관리해요.",
+            "Applications owned by": "다음이 소유한 앱:",
+                "are always trusted.": "은(는) 항상 신뢰할 수 있어요.",
+            "Members can request organization approval for an application.": "멤버는 앱에 대한 조직 승인을 요청할 수 있어요.",
+            "Approval requests notify organization owners, allowing them to deny or approve application access.": "승인 요청은 조직 소유자에게 알려져, 앱 접근을 거부하거나 승인할 수 있도록 해요.",
+            "Only trusted applications can:": "신뢰할 수 있는 앱만 다음을 수행할 수 있어요:",
+                "Access private organization data via the API or SSH.": "API 또는 SSH를 통해 비공개 조직 데이터에 접근해요.",
+                "Change public organization data.": "공개 조직 데이터를 변경해요.",
+                "Receive webhooks for private events.": "비공개 이벤트에 대한 웹훅을 받아요.",
 
-            "Restrict third-party application access": "限制第三方应用访问",
-            "Restricting access will immediately block all unapproved applications and will disable SSH keys created before February 2014.": "限制访问将立即阻止所有未经批准的应用，并禁用 2014 年 2 月前创建的 SSH 密钥.",
-            "Read more at GitHub Help.": "请访问 GitHub 帮助了解更多信息.",
+            "Restrict third-party application access": "타사 앱 접근 제한하기",
+            "Restricting access will immediately block all unapproved applications and will disable SSH keys created before February 2014.": "접근을 제한하면 승인되지 않은 모든 앱이 즉시 차단되고 2014년 2월 이전에 생성된 SSH 키가 비활성화돼요.",
+            "Read more at GitHub Help.": "GitHub 도움말에서 더 읽어보세요.",
 
-    },
-    "regexp": [ // 正则翻译
-        ...I18N["ko-KR"]["orgs-public"]["regexp"],
-    ],
+    },
+    "regexp": [ // 정규식 번역
+        ...I18N["ko-KR"]["orgs-public"]["regexp"],
+    ],
 };
 
-I18N["ko-KR"]["orgs/settings/personal-access-token"] = { // 组织设置 - 个人访问令牌
-    "static": { // 静态翻译
-        ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
+I18N["ko-KR"]["orgs/settings/personal-access-token"] = { // 조직 설정 - 개인용 접근 토큰
+    "static": { // 정적 번역
+        ...I18N["ko-KR"]["orgs-settings-menu"]["static"],
 
-        // 个人访问令牌 - 精细化令牌 /organizations/<org-login>/settings/personal-access-tokens
-            "Fine-grained tokens": "精细化令牌",
-            "Fine-grained personal access tokens": "精细化的个人访问令牌",
-                "By default, fine-grained personal access tokens cannot access content owned by your organization via the Public API or Git. This includes both public and private resources such as repositories.": "默认情况下，精细化的个人访问令牌不能通过公共 API 或 Git 访问您组织拥有的内容.这包括公共和私人资源，如仓库.",
-                "Allow access via fine-grained personal access tokens": "允许通过细化的个人访问令牌进行访问",
-                    "API and Git access will be allowed using approved organization member's fine-grained personal access tokens": "API 和 Git 访问将被允许使用经批准的组织成员的精细化个人访问令牌",
-                "Restrict access via fine-grained personal access tokens": "通过精细化的个人访问令牌限制访问.",
-                    "Organization members will not be allowed to access your organization using a fine-grained personal access token": "不允许组织成员使用精细化的个人访问令牌访问您的组织",
+        // 개인용 접근 토큰 - 세분화된 토큰 /organizations/<org-login>/settings/personal-access-tokens
+            "Fine-grained tokens": "세분화된 토큰",
+            "Fine-grained personal access tokens": "세분화된 개인용 접근 토큰",
+                "By default, fine-grained personal access tokens cannot access content owned by your organization via the Public API or Git. This includes both public and private resources such as repositories.": "기본적으로 세분화된 개인용 접근 토큰은 공개 API 또는 Git을 통해 조직이 소유한 콘텐츠에 접근할 수 없어요. 여기에는 저장소와 같은 공개 및 비공개 리소스가 모두 포함돼요.",
+                "Allow access via fine-grained personal access tokens": "세분화된 개인용 접근 토큰을 통한 접근 허용하기",
+                    "API and Git access will be allowed using approved organization member's fine-grained personal access tokens": "승인된 조직 멤버의 세분화된 개인용 접근 토큰을 사용하여 API 및 Git 접근이 허용돼요",
+                "Restrict access via fine-grained personal access tokens": "세분화된 개인용 접근 토큰을 통한 접근 제한하기",
+                    "Organization members will not be allowed to access your organization using a fine-grained personal access token": "조직 멤버는 세분화된 개인용 접근 토큰을 사용하여 사용자님의 조직에 접근할 수 없어요",
 
-            "Require approval of fine-grained personal access tokens": "要求批准精细化的个人访问令牌",
-                "Access requests by organization members can be subject to review by administrator before approval.": "组织成员的访问请求在批准之前可能需要经过管理员审查.",
-                "Require administrator approval": "需要管理员批准",
-                    "All access requests by organization members to this organization must be approved before the token is usable.": "组织成员对该组织的所有访问请求都必须在令牌可用之前得到批准.",
-                "Do not require administrator approval": "不需要管理员批准",
-                    "Tokens requested for this organization will work immediately, and organization members are not required to provide a justification when creating the token.": "为该组织申请的令牌将立即生效，并且组织成员在创建令牌时无需提供理由.",
+            "Require approval of fine-grained personal access tokens": "세분화된 개인용 접근 토큰 승인 요구하기",
+                "Access requests by organization members can be subject to review by administrator before approval.": "조직 멤버의 접근 요청은 승인 전에 관리자의 검토를 받을 수 있어요.",
+                "Require administrator approval": "관리자 승인 요구하기",
+                    "All access requests by organization members to this organization must be approved before the token is usable.": "이 조직에 대한 조직 멤버의 모든 접근 요청은 토큰을 사용하기 전에 승인되어야 해요.",
+                "Do not require administrator approval": "관리자 승인 요구하지 않기",
+                    "Tokens requested for this organization will work immediately, and organization members are not required to provide a justification when creating the token.": "이 조직에 대해 요청된 토큰은 즉시 작동하며, 조직 멤버는 토큰 생성 시 근거를 제공할 필요가 없어요.",
 
-            "Set maximum lifetimes for personal access tokens": "设置个人访问令牌的最长使用期限",
-                "Control the maximum lifetime for fine-grained personal access tokens in your organizations. If set, your organization members can only use fine-grained personal access tokens against your resources if the tokens are set to expire within the period you provide.": "控制组织中精细化个人访问令牌的最长使用期限.如果设置了，您的组织成员只能在您提供的期限内对您的资源使用精细化个人访问令牌.",
-                "Learn more about token expiration policies.": "了解更多关于令牌过期策略的信息.",
+            "Set maximum lifetimes for personal access tokens": "개인용 접근 토큰의 최대 수명 설정하기",
+                "Control the maximum lifetime for fine-grained personal access tokens in your organizations. If set, your organization members can only use fine-grained personal access tokens against your resources if the tokens are set to expire within the period you provide.": "조직의 세분화된 개인용 접근 토큰의 최대 수명을 제어하세요. 설정된 경우, 조직 멤버는 제공한 기간 내에 만료되도록 설정된 토큰만 리소스에 대해 사용할 수 있어요.",
+                "Learn more about token expiration policies.": "토큰 만료 정책에 대해 더 알아보세요.",
 
-            "Fine-grained personal access tokens must expire": "精细化个人访问令牌必须过期",
-                "Select a maximum lifetime for fine-grained personal access tokens to be allowed to access your organizations.": "选择允许访问组织的精细化个人访问令牌的最长有效期.",
-                // 有效期 下拉菜单
-                    "7 days": "7 天",
-                    "30 days": "30 天",
-                    "60 days": "60 天",
-                    "90 days": "90 天",
-                    "366 days": "366 天",
-                    "Custom...": "自定义...",
+            "Fine-grained personal access tokens must expire": "세분화된 개인용 접근 토큰은 만료되어야 해요",
+                "Select a maximum lifetime for fine-grained personal access tokens to be allowed to access your organizations.": "조직에 접근할 수 있도록 허용되는 세분화된 개인용 접근 토큰의 최대 수명을 선택하세요.",
+                // 유효 기간 드롭다운 메뉴
+                    "7 days": "7일",
+                    "30 days": "30일",
+                    "60 days": "60일",
+                    "90 days": "90일",
+                    "366 days": "366일",
+                    "Custom...": "사용자 지정...",
 
-                    "days": "天",
-                    "between 1 and 366 days": "1 至 366 天之间",
+                    "days": "일",
+                    "between 1 and 366 days": "1일에서 366일 사이",
 
-        // 个人访问令牌 - 令牌（经典）/organizations/<org-login>/settings/personal-access-tokens?tab=classic
-            "Tokens (classic)": "令牌（经典）",
-            "Restrict personal access tokens (classic) from accessing your organizations": "限制个人访问令牌（经典）访问您的组织",
-                "By default, personal access tokens (classic) can access content owned by your organization via the GitHub API or Git over HTTPS. This includes both public and private resources such as repositories.": "默认情况下，个人访问令牌（经典）可以通过 GitHub API 或基于 HTTPS 的 Git 访问您组织拥有的内容.这包括公共和私有资源，例如仓库.",
-                "Allow access via personal access tokens (classic)": "允许通过个人访问令牌进行访问（经典）",
-                    "API and Git access will be allowed using an organization member's personal access token (classic)": "允许组织成员使用个人访问令牌（经典）访问 API 和 Git.",
-                "Restrict access via personal access tokens (classic)": "通过个人访问令牌限制访问（经典）",
-                    "Organization members will not be allowed to access your organization using a personal access token (classic)": "不允许组织成员使用个人访问令牌（经典）访问您的组织",
+        // 개인용 접근 토큰 - 토큰(클래식) /organizations/<org-login>/settings/personal-access-tokens?tab=classic
+            "Tokens (classic)": "토큰(클래식)",
+            "Restrict personal access tokens (classic) from accessing your organizations": "개인용 접근 토큰(클래식)이 조직에 접근하는 것을 제한하기",
+                "By default, personal access tokens (classic) can access content owned by your organization via the GitHub API or Git over HTTPS. This includes both public and private resources such as repositories.": "기본적으로 개인용 접근 토큰(클래식)은 GitHub API 또는 HTTPS를 통한 Git을 통해 조직이 소유한 콘텐츠에 접근할 수 있어요. 여기에는 저장소와 같은 공개 및 비공개 리소스가 모두 포함돼요.",
+                "Allow access via personal access tokens (classic)": "개인용 접근 토큰(클래식)을 통한 접근 허용하기",
+                    "API and Git access will be allowed using an organization member's personal access token (classic)": "조직 멤버의 개인용 접근 토큰(클래식)을 사용하여 API 및 Git 접근이 허용돼요.",
+                "Restrict access via personal access tokens (classic)": "개인용 접근 토큰(클래식)을 통한 접근 제한하기",
+                    "Organization members will not be allowed to access your organization using a personal access token (classic)": "조직 멤버는 개인용 접근 토큰(클래식)을 사용하여 사용자님의 조직에 접근할 수 없어요",
 
-            // 设置个人访问令牌的最长使用期限
-                "Control the maximum lifetime for personal access tokens (classic) in your organizations. If set, your organization members can only use personal access tokens (classic) against your resources if the tokens are set to expire within the period you provide.": "控制组织中个人访问令牌（经典）的最长使用期限.如果设置了，您的组织成员只能在您提供的期限内对您的资源使用个人访问令牌（经典）.",
-                "Personal access tokens (classic) must expire": "个人访问令牌（经典）必须过期",
-                    "Select a maximum lifetime for personal access tokens (classic) to be allowed to access your organizations.": "选择允许访问组织的个人访问令牌（经典）的最长使用期限.",
+            // 개인용 접근 토큰의 최대 수명 설정
+                "Control the maximum lifetime for personal access tokens (classic) in your organizations. If set, your organization members can only use personal access tokens (classic) against your resources if the tokens are set to expire within the period you provide.": "조직의 개인용 접근 토큰(클래식)의 최대 수명을 제어하세요. 설정된 경우, 조직 멤버는 제공한 기간 내에 만료되도록 설정된 토큰만 리소스에 대해 사용할 수 있어요.",
+                "Personal access tokens (classic) must expire": "개인용 접근 토큰(클래식)은 만료되어야 해요",
+                    "Select a maximum lifetime for personal access tokens (classic) to be allowed to access your organizations.": "조직에 접근할 수 있도록 허용되는 개인용 접근 토큰(클래식)의 최대 수명을 선택하세요.",
 
-        // 活跃的令牌  /organizations/<org-login>/settings/personal-access-tokens/active
-            "Filter active fine-grained tokens": "筛选活跃的精细化令牌",
-            "Tokens": "令牌",
-            "Owner": "所有者",
-                "Filter by owner": "按所有者筛选",
-                "Filter users": "筛选用户",
-                "Clear": "清除",
+        // 활성 토큰 /organizations/<org-login>/settings/personal-access-tokens/active
+            "Filter active fine-grained tokens": "활성 세분화된 토큰 필터링하기",
+            "Tokens": "토큰",
+            "Owner": "소유자",
+                "Filter by owner": "소유자로 필터링하기",
+                "Filter users": "사용자 필터링하기",
+                "Clear": "지우기",
 
-            // "Repository": "저장소",
-                "Filter by repository": "按仓库筛选",
-                "Filter repositories": "筛选仓库",
+            // "Repository": "저장소",
+                "Filter by repository": "저장소로 필터링하기",
+                "Filter repositories": "저장소 필터링하기",
 
-            "Permissions": "权限",
-                "Filter by permission": "按权限筛选",
-                "Filter permissions": "筛选权限",
-                    "read": "只读",
-                    "write": "可写",
-                    "Administration": "管理员",
-                    "Attestations": "证书",
-                    "Code scanning alerts": "代码扫描警报",
-                    "Codespaces lifecycle admin": "代码空间生命周期管理员",
-                    "Codespaces metadata": "代码空间元数据",
-                    "Codespaces secrets": "代码空间机密",
-                    "Commit statuses": "提交状态",
-                    "Contents": "内容",
-                    "Dependabot alerts": "Dependabot 警报",
-                    "Dependabot secrets": "Dependabot 机密",
-                    "Deployments": "部署",
-                    "Environments": "环境",
-                    "Merge queues": "合并列队",
-                    "Metadata": "元数据",
-                    "Repository announcement banners": "仓库公告横幅",
-                    "Repository security advisories": "仓库安全公告",
-                    "Secret scanning alerts": "机密扫描警报",
-                    "Secrets": "机密",
-                    "Variables": "变量",
-                    "Workflows": "工作流程",
-                    "Organization": "조직",
-                        "API Insights": "API 透视",
-                        "Blocking users": "拉黑用户",
-                        "Custom organization roles": "自定义组织角色",
-                        "Custom repository roles": "自定义仓库角色",
-                        "Events": "活动",
-                        "GitHub Copilot Business": "GitHub Copilot 商业版",
-                        "Knowledge bases": "知识库",
-                        "Members": "成员",
-                        "Organization announcement banners": "组织公告横幅",
-                        "Organization codespaces": "组织代码空间",
-                        "Organization codespaces secrets": "组织代码空间机密",
-                        "Organization codespaces settings": "组织代码空间设置",
-                        "Organization dependabot secrets": "组织 Dependabot 机密",
-                        "Organization private registries": "组织私有注册表",
-                        "Plan": "计划",
-                        "Self-hosted runners": "自托管运行器",
+            "Permissions": "권한",
+                "Filter by permission": "권한으로 필터링하기",
+                "Filter permissions": "권한 필터링하기",
+                    "read": "읽기 전용",
+                    "write": "쓰기 가능",
+                    "Administration": "관리",
+                    "Attestations": "증명",
+                    "Code scanning alerts": "코드 스캔 경고",
+                    "Codespaces lifecycle admin": "Codespaces 수명 주기 관리",
+                    "Codespaces metadata": "Codespaces 메타데이터",
+                    "Codespaces secrets": "Codespaces 비밀",
+                    "Commit statuses": "커밋 상태",
+                    "Contents": "콘텐츠",
+                    "Dependabot alerts": "Dependabot 경고",
+                    "Dependabot secrets": "Dependabot 비밀",
+                    "Deployments": "배포",
+                    "Environments": "환경",
+                    "Merge queues": "병합 큐",
+                    "Metadata": "메타데이터",
+                    "Repository announcement banners": "저장소 공지 배너",
+                    "Repository security advisories": "저장소 보안 권고",
+                    "Secret scanning alerts": "비밀 스캔 경고",
+                    "Secrets": "비밀",
+                    "Variables": "변수",
+                    "Workflows": "워크플로",
+                    "Organization": "조직",
+                        "API Insights": "API 인사이트",
+                        "Blocking users": "사용자 차단",
+                        "Custom organization roles": "사용자 지정 조직 역할",
+                        "Custom repository roles": "사용자 지정 저장소 역할",
+                        "Events": "이벤트",
+                        "GitHub Copilot Business": "GitHub Copilot Business",
+                        "Knowledge bases": "지식 베이스",
+                        "Members": "멤버",
+                        "Organization announcement banners": "조직 공지 배너",
+                        "Organization codespaces": "조직 Codespaces",
+                        "Organization codespaces secrets": "조직 Codespaces 비밀",
+                        "Organization codespaces settings": "조직 Codespaces 설정",
+                        "Organization dependabot secrets": "조직 Dependabot 비밀",
+                        "Organization private registries": "조직 비공개 레지스트리",
+                        "Plan": "플랜",
+                        "Self-hosted runners": "자체 호스팅 실행기",
 
-            "There aren't any fine-grained tokens for this organization": "该组织尚无任何精细化令牌",
+            "There aren't any fine-grained tokens for this organization": "이 조직에는 세분화된 토큰이 없어요",
 
-        // 精细化的个人访问令牌请求  /organizations/<org-login>/settings/personal-access-token-requests
-            "Fine-grained personal access token requests": "精细化的个人访问令牌请求",
-            "Filter fine-grained personal access tokens requests": "筛选精细化的个人访问令牌请求",
+        // 세분화된 개인용 접근 토큰 요청 /organizations/<org-login>/settings/personal-access-token-requests
+            "Fine-grained personal access token requests": "세분화된 개인용 접근 토큰 요청",
+            "Filter fine-grained personal access tokens requests": "세분화된 개인용 접근 토큰 요청 필터링하기",
 
-            "Requests": "请求",
+            "Requests": "요청",
 
-            "There aren't any personal access token requests for this organization": "该组织尚无任何个人访问令牌的请求",
+            "There aren't any personal access token requests for this organization": "이 조직에 대한 개인용 접근 토큰 요청이 없어요",
 
-    },
-    "regexp": [ // 正则翻译
-        ...I18N["ko-KR"]["orgs-public"]["regexp"],
-    ],
+    },
+    "regexp": [ // 정규식 번역
+        ...I18N["ko-KR"]["orgs-public"]["regexp"],
+    ],
 };
 I18N["ko-KR"]["orgs/settings/reminders"] = { // 조직 설정 - 정기 알림
     "static": { // 정적 번역
@@ -23164,14 +23186,14 @@ I18N["ko-KR"]["copilot"] = {
     ],
 }
 
-I18N["ko-KR"]["sitemap"] = { // 网站地图页，仅匹配公共部分
+I18N["ko-KR"]["sitemap"] = { // 사이트맵 페이지, 공용 부분만 일치
     "static": {
         ...I18N["ko-KR"]["homepage"]["static"],
     },
     "regexp":[],
 };
 
-I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
+I18N["ko-KR"]["education"] = { // 교육 페이지, 학생 팩 신청에 사용
     "static": {
         ...I18N["ko-KR"]["homepage"]["static"],
         // 상단 바
@@ -23183,7 +23205,7 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
         "Empowering the next generation of developers": "차세대 개발자의 역량을 강화해요.",
             "GitHub Education bridges the gap between coding education and a tech career, and is accessible to everyone globally at no cost.": "GitHub 교육은 코딩 교육과 기술 경력의 격차를 메워주며, 전 세계 누구나 무료로 이용할 수 있어요.",
         "Join GitHub Education": "GitHub 교육에 참여하기",
-        // 教育包申请 https://education.github.com/pack
+        // 교육 팩 신청 https://education.github.com/pack
             // 우측 상단 메뉴
                 "Your benefits application": "내 혜택 신청",
                 "Your GitHub.com profile": "내 GitHub.com 프로필",
@@ -23341,7 +23363,7 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
                                 "GitHub user profile": "GitHub 사용자 프로필",
                                 "with your full name exactly as it appears in your academic affiliation document. Please do not use a variation of your name or a nickname. Once you have updated your profile information log out and log back into GitHub before re-applying.": "에 정확히 동일한 전체 이름이 포함되어야 해요. 이름 변형이나 별명을 사용하지 마세요. 프로필 정보를 업데이트한 후 로그아웃했다가 GitHub에 다시 로그인한 후 다시 신청해주세요.",
 
-            // https://education.github.com/discount_requests/숫자/completed 成功
+            // https://education.github.com/discount_requests/숫자/completed 성공
                 "Get benefits": "혜택 받기",
 
                 "Thanks for submitting!": "제출해주셔서 감사합니다!",
@@ -23349,7 +23371,7 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
                     "5 days": "5일 이내",
                     ". Have an Octotastic day!": ". 좋은 하루 보내세요!",
 
-            // https://education.github.com/onboardings/new 申请批准后出现
+            // https://education.github.com/onboardings/new 신청 승인 후 나타남
                 "Welcome to GitHub Education!": "GitHub 교육에 오신 것을 환영해요!",
                     "GitHub Education offers resources and programs to help students achieve their career goals.": "GitHub 교육은 학생들이 진로 목표를 달성할 수 있도록 리소스와 프로그램을 제공해요.",
                     "To get started, please answer two questions so we can add a learning path to your Education dashboard to help you with your goals.": "시작하려면 두 가지 질문에 답해 교육 대시보드에 학습 경로를 추가하여 목표 달성을 도와드릴게요.",
@@ -23478,7 +23500,7 @@ I18N["ko-KR"]["education"] = { // 教育页面，申请学生包会用到
             const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
             return `안녕하세요, ${user}님! 최근에 ${translatedDate}에 학생 인증을 받으셨어요. 지금 다시 인증하실 필요 없어요. 인증에서 학업 혜택을 받기까지는 대기 시간이 있을 수 있어요.`;
         }],
-        [/(Submitted|Verified since) (.+)/, (match, opt, p1) => { // p1为(.+)
+        [/(Submitted|Verified since) (.+)/, (match, opt, p1) => { // p1은 (.+)
             var optKey = {"Submitted": "제출됨 ", "Verified since": "인증된 이후 "};
             const dateRegExp = I18N["ko-KR"]["public"]["time-regexp"];
             const translatedDate = dateRegExp.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), p1);
