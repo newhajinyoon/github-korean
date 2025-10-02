@@ -6985,6 +6985,7 @@ I18N["ko-KR"]["page-new-repo"] = { // 저장소 - 새 저장소/가져오기/포
                 "Repositories contain a project's files and version history.": "저장소는 프로젝트의 파일과 버전 기록을 포함해요.",
                 "Have a project elsewhere?": "다른 곳에 프로젝트가 있으신가요?",
                 "Configuration": "구성",
+                "General": "일반",
                 "Choose visibility": "가시성 선택",
                 "characters": "자",
                 "Choose who can see and commit to this repository": "이 저장소를 볼 수 있는 사람과 커밋할 수 있는 사람을 선택하세요.",
