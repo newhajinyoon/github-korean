@@ -63,6 +63,42 @@
 
 <br>
 
+## 🌟 함께한 주 기여자들
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/newhajinyoon">
+        <img src="https://github.com/newhajinyoon.png?size=100" width="100px;" alt="newhajinyoon"/>
+        <br />
+        <sub><b>newhajinyoon</b></sub>
+      </a>
+      <br />
+      <sub>코딩, 대부분의 번역</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/dlgudwn123">
+        <img src="https://github.com/dlgudwn123.png?size=100" width="100px;" alt="dlgudwn123"/>
+        <br />
+        <sub><b>dlgudwn123</b></sub>
+      </a>
+      <br />
+      <sub>번역 지원, 방향성 제공</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/CoolWithU">
+        <img src="https://github.com/CoolWithU.png?size=100" width="100px;" alt="CoolWithU"/>
+        <br />
+        <sub><b>CoolWithU</b></sub>
+      </a>
+      <br />
+      <sub>번역 지원</sub>
+    </td>
+  </tr>
+</table>
+
+<br>
+
 ## 📄 라이선스 (License)
 
 이 프로젝트는 **GNU General Public License v3.0 (GPL-3.0)** 라이선스를 따릅니다.
