@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GitHub 한국어 (GitHub Korean)",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "GitHub 페이지의 내용을 한국어로 번역하고 기능을 추가하는 확장프로그램입니다.",
   "icons": {
     "16": "logo.png",
@@ -26,8 +26,7 @@
     "https://skills.github.com/*",
     "https://gist.github.com/*",
     "https://education.github.com/*",
-    "https://www.githubstatus.com/*",
-    "https://fanyi.iflyrec.com/*"
+    "https://www.githubstatus.com/*"
   ],
   "content_scripts": [
     {
