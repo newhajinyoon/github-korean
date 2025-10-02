@@ -6969,91 +6969,97 @@ I18N["ko-KR"]["repository-public"] = { // 저장소 - 공용 부분
 };
 
 
-I18N["ko-KR"]["page-new-repo"] = { // 저장소 - 새로 만들기/가져오기/포크하기
+I18N["ko-KR"]["page-new-repo"] = { // 저장소 - 새 저장소/가져오기/포크
     "static": { // 정적 번역
         ...I18N["ko-KR"]["repository-public"]["static"],
 
         // 새 저장소 만들기 https://github.com/new
-            "Create a new repository": "저장소 만들기",
-                "A repository contains all project files, including the revision history.": "저장소는 프로젝트의 모든 파일과 수정 이력을 포함하고 있어요.",
-                "Already have a project repository elsewhere?": "다른 곳에 이미 저장소가 있으신가요?",
-                "Import a repository.": "저장소 가져오기",
-                "Required fields are marked with an asterisk (*).": "필수 항목은 별표 (*) 로 표시되어 있어요.",
+            "Create a new repository": "새 저장소 만들기",
+                "A repository contains all project files, including the revision history.": "저장소는 수정 기록을 포함한 프로젝트의 모든 파일을 포함해요.",
+                "Already have a project repository elsewhere?": "다른 곳에 이미 프로젝트 저장소가 있으신가요?",
+                "Import a repository": "저장소 가져오기",
+                "Required fields are marked with an asterisk (*).": "별표(*)가 표시된 필드는 필수 항목이에요.",
+
+            "🎉 Try the new experience": "🎉 새로운 경험을 시도해보세요",
 
             "Repository template": "저장소 템플릿",
-                "Fetching templates…": "템플릿을 가져오는 중이에요…",
+                "Fetching templates…": "템플릿을 가져오는 중…",
                 "No template": "템플릿 없음",
                 "No templates available.": "사용 가능한 템플릿이 없어요.",
-                "Start your repository with a template repository's contents.": "템플릿 저장소의 내용을 사용해서 저장소를 시작해보세요.",
+                "Start your repository with a template repository's contents.": "템플릿 저장소의 콘텐츠로 새 저장소를 시작해보세요.",
 
             "Owner": "소유자",
             "Repository name": "저장소 이름",
-            "Great repository names are short and memorable. Need inspiration? How about": "멋진 저장소 이름은 짧고 기억하기 쉬워요. 영감이 필요하시면 이건 어때요:",
-                "Checking availability…": "사용 가능 여부를 확인하는 중이에요…",
+            "Great repository names are short and memorable. Need inspiration? How about": "좋은 저장소 이름은 짧고 기억하기 쉬워요. 영감이 필요한가요? 이건 어때요:",
+                "Checking availability…": "사용 가능 여부 확인 중…",
                 "is available.": "은(는) 사용 가능해요.",
                 "The repository": "저장소",
-                "already exists on this account": "이미 이 계정에 있어요.",
-                "Your new repository will be created as": "새 저장소가 다음 이름으로 생성될 거예요:",
+                "already exists on this account": "이(가) 이 계정에 이미 존재해요.",
+                "Your new repository will be created as": "사용자님의 새 저장소는 다음과 같이 생성될 거예요:",
                 "New repository name must not be blank": "새 저장소 이름은 비워둘 수 없어요.",
 
-                // 사용자명과 동일한 저장소
-                "You found a secret!": "비밀을 발견하셨어요!",
+                // 사용자 이름과 동일한 이름의 저장소
+                "You found a secret!": "비밀을 발견하셨네요!",
                 "is a ✨": "은(는) ✨",
                 "special": "특별한",
-                "✨ repository that you can use to add a": "✨ 저장소인데, 이 저장소를 통해",
-                "to your GitHub profile. Make sure it’s public and initialize it with a": "를 프로필에 추가할 수 있어요. 공개 저장소로 하는걸 잊지 마세요!",
-                "to get started.": " 파일을 추가해서 시작해보세요.",
-                 // 조직 .github 저장소
-                "to your organization's GitHub profile. Make sure it’s public and initialize it with a": "를 조직 프로필에 추가할 수 있어요. 공개 저장소로 하는걸 잊지 마세요!",
-                "in the": "다음 위치에서:",
-                "directory to get started.": "디렉토리에서 시작해보세요.",
+                "✨ repository that you can use to add a": "✨ 저장소로, 이것을 사용해 다음에 추가할 수 있어요:",
+                "to your GitHub profile. Make sure it’s public and initialize it with a": "사용자님의 GitHub 프로필. 공개로 설정하고 다음으로 초기화해야 해요:",
+                "to get started.": "을(를) 추가하여 시작해주세요.",
+                 // 조직의 .github 저장소
+                "to your organization's GitHub profile. Make sure it’s public and initialize it with a": "사용자님 조직의 GitHub 프로필에. 공개로 설정하고 다음으로 초기화해야 해요:",
+                "in the": "에 있는",
+                "directory to get started.": "디렉터리에 을(를) 추가하여 시작해주세요.",
 
                 // 조직 저장소
                 "You may not create private repositories by organization policy.": "조직 정책에 따라 비공개 저장소를 만들 수 없어요.",
 
             "Description": "설명",
-                "(optional)": "(선택)",
+                "(optional)": "(선택 사항)",
             "Public": "공개",
-                "Anyone on the internet can see this repository. You choose who can commit.": "인터넷상의 누구나 이 저장소를 볼 수 있어요. 커밋 권한은 본인이 선택할 수 있어요.",
+                "Anyone on the internet can see this repository. You choose who can commit.": "인터넷의 모든 사람이 이 저장소를 볼 수 있어요. 커밋할 수 있는 사람은 사용자님이 선택할 수 있어요.",
             "Private": "비공개",
-                "You choose who can see and commit to this repository.": "누가 이 저장소를 보고 커밋할 수 있는지 본인이 선택할 수 있어요.",
-            "Initialize this repository with:": "다음 항목으로 저장소를 초기화해보세요:",
-                // "Skip this step if you’re importing an existing repository.": "기존 저장소를 가져오시는 경우, 이 단계를 건너뛰셔도 돼요.",
+                "You choose who can see and commit to this repository.": "이 저장소를 보고 커밋할 수 있는 사람을 사용자님이 선택할 수 있어요.",
+            "Initialize this repository with:": "다음으로 이 저장소 초기화하기:",
+                // "기존 저장소를 가져오는 경우 이 단계를 건너뛰세요.",
                 "Add a README file": "README 파일 추가하기",
-                    "This is where you can write a long description for your project.": "여기에 프로젝트에 대한 자세한 설명을 작성할 수 있어요.",
-                    "Learn more about READMEs.": "README에 대해 더 알아보세요.",
+                    "This is where you can write a long description for your project.": "이곳에서 사용자님의 프로젝트에 대한 긴 설명을 작성할 수 있어요.",
+                    "Learn more about READMEs.": "README에 대해 더 알아보기",
             "Add .gitignore": ".gitignore 파일 추가하기",
-                "Choose which files not to track from a list of templates.": "템플릿 목록에서 추적하지 않을 파일을 선택해보세요.",
-                "Learn more about ignoring files.": "파일 무시에 대해 더 알아보세요.",
+                "Choose which files not to track from a list of templates.": "템플릿 목록에서 추적하지 않을 파일을 선택해주세요.",
+                "Learn more about ignoring files.": "파일 무시에 대해 더 알아보기",
                 ".gitignore template:": ".gitignore 템플릿:",
                     ".gitignore template": ".gitignore 템플릿",
                     "Filter…": "필터링…",
                     "None": "없음",
+
+                    // 필터링 - 템플릿 없음
+                    "You haven't created any items yet": "아직 아무 항목도 만들지 않았어요.",
+                        "Please add or create new items to populate the list.": "목록을 채우려면 새 항목을 추가하거나 만들어주세요.",
             "Choose a license": "라이선스 선택하기",
-                "A license tells others what they can and can't do with your code.": "라이선스는 다른 사람들이 사용자님의 코드를 어떻게 사용할 수 있고 사용할 수 없는지를 알려줘요.",
-                "Learn more about licenses.": "라이선스에 대해 더 알아보세요.",
+                "A license tells others what they can and can't do with your code.": "라이선스는 다른 사람들에게 사용자님의 코드로 무엇을 할 수 있고 무엇을 할 수 없는지 알려줘요.",
+                "Learn more about licenses.": "라이선스에 대해 더 알아보기",
 
                 "License:": "라이선스:",
                     "License": "라이선스",
 
             // 장터 앱 목록
-            "Grant your Marketplace apps access to this repository": "장터 앱에 이 저장소에 대한 접근 권한을 부여해보세요.",
+            "Grant your Marketplace apps access to this repository": "장터 앱에 이 저장소에 대한 접근 권한 부여하기",
             "You are": "사용자님은",
-            "subscribed to": "구독하셨어요",
-            "Marketplace app": "장터 앱",
-            "s": " ",
+            "subscribed to": "을(를) 구독했어요",
+            "Marketplace app": "개의 장터 앱",
+            "s": "",
 
-            "You are creating a public repository in your personal account.": "개인 계정에서 공개 저장소를 만들고 있어요.",
-            "You are creating a private repository in your personal account.": "개인 계정에서 비공개 저장소를 만들고 있어요.",
+            "You are creating a public repository in your personal account.": "개인 계정에 공개 저장소를 만들고 있어요.",
+            "You are creating a private repository in your personal account.": "개인 계정에 비공개 저장소를 만들고 있어요.",
 
-            "This will set": "이렇게 설정할 거예요:", // 쀐
-            "as the default branch.": "기본 분기로.",
-            "Change the default name in": "기본 이름 변경은",
+            "This will set": "이렇게 하면",
+            "as the default branch.": "이(가) 기본 분기로 설정될 거예요.",
+            "Change the default name in": "다음에서 기본 이름 변경하기:",
             "your": "사용자님의",
-            "Settings": "설정",
+            "settings": "설정",
 
             "Create repository": "저장소 만들기",
-            "Creating repository...": "저장소 생성 중이에요...",
+            "Creating repository...": "저장소 만드는 중...",
 
         // 템플릿 기반 새 저장소 만들기 https://github.com/new?template_owner=<template-owner>&template_name=<template-name>
             "Include all branches": "모든 분기 포함하기", // 쀐
