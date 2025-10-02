@@ -12,6 +12,9 @@
 </div>
 
 ---
+<img width="1897" height="982" alt="image" src="https://github.com/user-attachments/assets/261a8209-3d96-4f8c-8eab-b8974d5a7570" />
+
+---
 
 ### 🌟 GitHub Korean은 이런 점이 좋아요!
 
