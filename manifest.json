@@ -1,38 +1,50 @@
 {
-    "manifest_version": 3,
-    "name": "GitHub 한국어 확장프로그램",
-    "version": "1.0",
-    "description": "GitHub 페이지의 내용을 한국어로 번역하는 확장프로그램",
-    "permissions": [
-      "storage",
-      "notifications"
-    ],
-    "action": {
-      "default_popup": "popup.html"
+  "manifest_version": 3,
+  "name": "GitHub 한국어 (GitHub Korean)",
+  "version": "1.0.0",
+  "description": "GitHub 페이지의 내용을 한국어로 번역하고 기능을 추가하는 확장프로그램입니다.",
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions": [
+    "storage",
+    "notifications"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "logo.png",
+      "32": "logo.png"
     },
-    "host_permissions": [
-      "https://github.com/*",
-      "https://skills.github.com/*",
-      "https://gist.github.com/*",
-      "https://education.github.com/*",
-      "https://www.githubstatus.com/*",
-      "https://fanyi.iflyrec.com/*"
-    ],
-    "content_scripts": [
-      {
-        "matches": [
-          "https://github.com/*",
-          "https://skills.github.com/*",
-          "https://gist.github.com/*",
-          "https://education.github.com/*",
-          "https://www.githubstatus.com/*"
-        ],
-        "js": [
-          "korean.js",
-          "content.js",
-          "time.js"
-        ],
-        "run_at": "document_start"
-      }
-    ]
+    "default_title": "GitHub 한국어"
+  },
+  "host_permissions": [
+    "https://github.com/*",
+    "https://skills.github.com/*",
+    "https://gist.github.com/*",
+    "https://education.github.com/*",
+    "https://www.githubstatus.com/*",
+    "https://fanyi.iflyrec.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*",
+        "https://skills.github.com/*",
+        "https://gist.github.com/*",
+        "https://education.github.com/*",
+        "https://www.githubstatus.com/*"
+      ],
+      "js": [
+        "korean.js",
+        "content.js",
+        "time.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "short_name": "GitHub KR"
 }
