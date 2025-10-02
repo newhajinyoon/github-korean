@@ -619,6 +619,7 @@ I18N["ko-KR"]["public"] = { // 공용 영역 번역
         "Filter repositories": "저장소 필터",
         "Close filter": "필터 닫기",
         "Show more": "더 보기",
+        "Loading more...": "더 불러오는 중...",
         
         // 상단 알림 배너
         "Don't get locked out of your account.": "계정에 접근할 수 없게 되지 않도록 해보세요.",
