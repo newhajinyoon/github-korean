@@ -38,7 +38,7 @@
 
 | 브라우저 | 상태 | 링크 |
 | :---: | :---: | :---: |
-| <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome_48x48.png" alt="Chrome" width="24"> **Chrome** | `업로드 예정` | [링크 준비 중]() |
+| <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome_48x48.png" alt="Chrome" width="24"> **Chrome** | `게시됨` | [다운로드](https://chromewebstore.google.com/detail/github-%ED%95%9C%EA%B5%AD%EC%96%B4-github-korean/fkddfdhkgfneiibakfdhgpbkkcnnlook?hl=ko&authuser=0) |
 | <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/firefox/firefox_48x48.png" alt="Firefox" width="24"> **Firefox** | `업로드 예정` | [링크 준비 중]() |
 | <img src="https://static.wikia.nocookie.net/logopedia/images/6/63/Naver_Whale_icon.svg/revision/latest?cb=20240516035514" alt="Whale" width="24"> **Whale** | `업로드 예정` | [링크 준비 중]() |
 
