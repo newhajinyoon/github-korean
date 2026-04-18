@@ -1,51 +1,323 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>확장프로그램</title>
+    <title>GitHub KR</title>
     <style>
+        :root {
+            --bg-body: #f6f8fa;
+            --bg-card: #ffffff;
+            --text-main: #24292f;
+            --text-muted: #57606a;
+            --border-color: #d0d7de;
+            
+            --toggle-bg: #8c959f;
+            --toggle-active: #1f883d;
+            --toggle-knob: #ffffff;
+            --toggle-shadow: rgba(27, 31, 36, 0.1);
+
+            --btn-bg: #f6f8fa;
+            --btn-border: rgba(27, 31, 36, 0.15);
+            --btn-hover: #f3f4f6;
+            --btn-shadow: 0 1px 0 rgba(27, 31, 36, 0.04);
+            
+            --donate-bg: #fff8f2;
+            --donate-text: #b35900;
+            --donate-border: #f7dfcc;
+            --donate-hover: #fff1e5;
+
+            --danger-text: #cf222e;
+            --danger-bg: #ffffff;
+            --danger-hover: #ffebe9;
+            --danger-border: rgba(27, 31, 36, 0.15);
+        }
+
+        /* 다크 모드 */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-body: #0d1117;
+                --bg-card: #161b22;
+                --text-main: #c9d1d9;
+                --text-muted: #8b949e;
+                --border-color: #30363d;
+                
+                --toggle-bg: #484f58;
+                --toggle-active: #238636;
+                --toggle-knob: #ffffff;
+                --toggle-shadow: rgba(0, 0, 0, 0.5);
+
+                --btn-bg: #21262d;
+                --btn-border: rgba(240, 246, 252, 0.1);
+                --btn-hover: #30363d;
+                --btn-shadow: 0 0 transparent;
+
+                --donate-bg: rgba(212, 107, 8, 0.1);
+                --donate-text: #e3b341;
+                --donate-border: rgba(212, 107, 8, 0.3);
+                --donate-hover: rgba(212, 107, 8, 0.2);
+
+                --danger-text: #ff7b72;
+                --danger-bg: #21262d;
+                --danger-hover: rgba(248, 81, 73, 0.1);
+                --danger-border: rgba(240, 246, 252, 0.1);
+            }
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            min-width: 200px;
-            padding: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            width: 320px;
+            margin: 0;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header h1 {
+            font-size: 16px;
+            margin: 0 0 0 10px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        .header img {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px var(--toggle-shadow);
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            margin-left: 4px;
+        }
+
+        .settings-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: var(--btn-shadow);
+            overflow: hidden;
+        }
+
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .setting-item:last-child {
+            border-bottom: none;
+        }
+
+        .setting-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding-right: 12px;
+        }
+
+        .setting-title {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .setting-desc {
+            font-size: 11px;
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 38px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: var(--toggle-bg);
+            transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border-radius: 22px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 2px;
+            bottom: 2px;
+            background-color: var(--toggle-knob);
+            transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border-radius: 50%;
+            box-shadow: 0 2px 4px var(--toggle-shadow);
+        }
+
+        input:checked + .slider {
+            background-color: var(--toggle-active);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(16px);
         }
 
         button {
+            font-family: inherit;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.2s ease;
+            box-sizing: border-box;
+        }
+
+        .btn-full {
             width: 100%;
             padding: 10px;
-            margin-bottom: 10px;
-            font-size: 14px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s, border-color 0.3s;
+            font-size: 13px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 8px;
         }
 
-        #source {
-            background-color: #979797;
-            color: #fff;
-            border: 3px solid #797979;
+        .btn-donate {
+            color: var(--donate-text);
+            background-color: var(--donate-bg);
+            border: 1px solid var(--donate-border);
+            box-shadow: var(--btn-shadow);
         }
 
-        #source:hover {
-            background-color: #8a8a8a;
-            border-color: #5f5f5f;
+        .btn-donate:hover {
+            background-color: var(--donate-hover);
         }
 
-        #contact {
-            background-color: #6c7cf4;
-            color: #fff;
-            border: 3px solid #5865f2;
+        .btn-reset {
+            color: var(--danger-text);
+            background-color: var(--danger-bg);
+            border: 1px solid var(--danger-border);
+            box-shadow: var(--btn-shadow);
         }
 
-        #contact:hover {
-            background-color: #5e6de0;
-            border-color: #4550e0;
-    }
+        .btn-reset:hover {
+            background-color: var(--danger-hover);
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .actions button {
+            flex: 1;
+            padding: 8px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-main);
+            background-color: var(--btn-bg);
+            border: 1px solid var(--btn-border);
+            box-shadow: var(--btn-shadow);
+        }
+
+        .actions button:hover {
+            background-color: var(--btn-hover);
+        }
     </style>
 </head>
 <body>
-    <button id="source">소스코드 보기</button>
-    <button id="contact">문의하기</button>
+    <div class="header">
+        <img src="icon.png" alt="Logo" onerror="this.style.display='none'">
+        <h1>GitHub 한국어</h1>
+    </div>
+
+    <div class="section-title">일반 설정</div>
+    <div class="settings-card">
+        <div class="setting-item">
+            <div class="setting-info">
+                <span class="setting-title">한국어 번역 켜기</span>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="setting-translation" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="setting-item">
+            <div class="setting-info">
+                <span class="setting-title">개발 용어 원음 유지</span>
+                <span class="setting-desc">끌어오기 요청 → 풀 리퀘스트 등</span>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="setting-devterms">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="section-title">고급 설정</div>
+    <div class="settings-card">
+        <div class="setting-item">
+            <div class="setting-info">
+                <span class="setting-title">조사 자동 교정</span>
+                <span class="setting-desc">어색한 은/는, 이/가 교정</span>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="setting-particles">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="setting-item">
+            <div class="setting-info">
+                <span class="setting-title">성능 측정 로그</span>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="setting-logs">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <button id="donate" class="btn-full btn-donate">
+        <span>🧃</span> 초코에몽 후원하기
+    </button>
+
+    <button id="reset-settings" class="btn-full btn-reset">
+        기본값으로 되돌리기
+    </button>
+
+    <div class="actions">
+        <button id="source">소스코드</button>
+        <button id="contact">문의하기</button>
+    </div>
 
     <script src="popup.js"></script>
 </body>

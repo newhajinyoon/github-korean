@@ -1,49 +1,38 @@
 {
   "manifest_version": 3,
   "name": "GitHub 한국어 (GitHub Korean)",
-  "version": "1.0.2",
-  "description": "GitHub 페이지의 내용을 한국어로 번역하고 기능을 추가하는 확장프로그램입니다.",
+  "version": "2.0.0",
+  "description": "GitHub 페이지의 내용을 한국어로 번역하고 기능을 추가하는 확장 프로그램입니다.",
+  "short_name": "GitHub KR",
   "icons": {
-    "16": "logo.png",
-    "32": "logo.png",
-    "48": "logo.png",
-    "128": "logo.png"
+    "128": "icon.png"
   },
-  "permissions": [
+  "permissions":[
     "storage",
     "notifications"
   ],
+  "host_permissions":[
+    "https://raw.githubusercontent.com/newhajinyoon/github-korean/main/sponsors.json"
+  ],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": {
-      "16": "logo.png",
-      "32": "logo.png"
-    },
+    "default_icon": "icon.png",
     "default_title": "GitHub 한국어"
   },
-  "host_permissions": [
-    "https://github.com/*",
-    "https://skills.github.com/*",
-    "https://gist.github.com/*",
-    "https://education.github.com/*",
-    "https://www.githubstatus.com/*"
-  ],
   "content_scripts": [
     {
-      "matches": [
+      "matches":[
         "https://github.com/*",
         "https://skills.github.com/*",
         "https://gist.github.com/*",
         "https://education.github.com/*",
         "https://www.githubstatus.com/*"
       ],
-      "js": [
+      "js":[
         "korean.js",
-        "content.js",
-        "time.js"
+        "content.js"
       ],
       "run_at": "document_start"
     }
-  ],
-  "short_name": "GitHub KR"
+  ]
 }
