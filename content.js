@@ -560,6 +560,11 @@ class GitHubPageEnhancer {
   }
 
   async injectSponsorBanner() {
+    if (window.location.hostname !== 'github.com' || window.location.pathname !== '/') {
+      return;
+    }
+
+    // 기존 코드 유지
     if (document.getElementById('github-kr-sponsor-banner') || this.isBannerInjecting) return;
 
     const storageKey = 'github_kr_banner_dismissed_at';
