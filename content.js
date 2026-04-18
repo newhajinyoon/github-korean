@@ -99,11 +99,12 @@ class GitHubPageEnhancer {
     }
   }
 
+
   notify(message) {
     try {
       chrome.notifications.create({
         type: 'basic',
-        iconUrl: '/images/icon48.png',
+        iconUrl: chrome.runtime.getURL('icon.png'),
         title: 'GitHub Enhancer',
         message: message
       });
