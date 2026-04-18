@@ -65,18 +65,18 @@
 
 ## 🌟 함께한 주 기여자들
 
-<table align="center">
+<table align="center" width="100%">
   <tr>
-    <td align="center">
+    <td align="center" width="33%">
       <a href="https://github.com/newhajinyoon">
         <img src="https://github.com/newhajinyoon.png?size=100" width="100px;" alt="newhajinyoon"/>
         <br />
         <sub><b>newhajinyoon</b></sub>
       </a>
       <br />
-      <sub>코딩, 대부분의 번역, 유지보수 중</sub>
+      <sub>코딩, 주요 번역 수행, 유지보수 중</sub>
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <a href="https://github.com/dlgudwn123">
         <img src="https://github.com/dlgudwn123.png?size=100" width="100px;" alt="dlgudwn123"/>
         <br />
@@ -85,11 +85,11 @@
       <br />
       <sub>초기 번역 지원, 방향성 제공</sub>
     </td>
-    <td align="center">
-      <a href="https://github.com/CoolWithU">
-        <img src="https://github.com/CoolWithU.png?size=100" width="100px;" alt="CoolWithU"/>
+    <td align="center" width="34%">
+      <a href="https://github.com/idhts2081">
+        <img src="https://github.com/idhts2081.png?size=100" width="100px;" alt="idhts2081"/>
         <br />
-        <sub><b>CoolWithU</b></sub>
+        <sub><b>idhts2081</b></sub>
       </a>
       <br />
       <sub>초기 번역 지원</sub>
