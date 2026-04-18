@@ -1,0 +1,74 @@
+{
+  "sponsors": [
+    {
+      "text": "제대로 파는 Git & GitHub (얄코)",
+      "link": "https://inf.run/T7Tap",
+      "subtext": "Git의 원리부터 실전까지! 이 링크로 구매하시면 개발자에게 초코에몽값이 돌아와요 ☕"
+    },
+    {
+      "text": "팀 개발을 위한 Git, GitHub 입문",
+      "link": "https://inf.run/uiaWE",
+      "subtext": "협업할 때 Git 꼭 필요하죠. 이 링크로 등록하시면 확장 유지에 도움이 돼요 🙏"
+    },
+    {
+      "text": "모두의 깃 & 깃허브",
+      "link": "https://inf.run/msFAw",
+      "subtext": "Git 처음이라면 여기서 시작! 구매 시 수익 일부가 저에게 돌아와요 😊"
+    },
+    {
+      "text": "빠르게 git",
+      "link": "https://inf.run/Y8YD6",
+      "subtext": "핵심만 빠르게 배우는 Git 강의예요. 이 링크 이용 시 소정의 수수료를 받아요 🧑‍💻"
+    },
+    {
+      "text": "코딩은 실전이다! - 깃린이코스",
+      "link": "https://inf.run/4ZGwD",
+      "subtext": "Git 왕초보용 실습 위주 강의예요. 링크 통해 구매하시면 확장 운영에 큰 힘이 돼요 💪"
+    },
+    {
+      "text": "Git & GitHub 원리부터 차근차근",
+      "link": "https://inf.run/qPbJL",
+      "subtext": "원리를 알면 Git이 쉬워져요. 이 링크로 구매하시면 저에게 수수료가 지급돼요 🎓"
+    },
+    {
+      "text": "따라하며 배우는 도커와 CI환경",
+      "link": "https://inf.run/uawjh",
+      "subtext": "Docker와 CI/CD 한 번에! 이 링크 구매 시 소정의 파트너 수익이 생겨요 🐳"
+    },
+    {
+      "text": "실전! GitHub Actions으로 CI/CD 시작하기",
+      "link": "https://inf.run/dK8Z8",
+      "subtext": "GitHub Actions 실무에 바로 쓰는 강의예요. 구매하시면 제 작업에 보탬이 돼요 ⚙️"
+    },
+    {
+      "text": "비전공자도 이해할 수 있는 CI/CD 입문·실전",
+      "link": "https://inf.run/WvmJh",
+      "subtext": "CI/CD 어렵지 않아요! 링크 통해 등록하시면 저도 작은 수익이 생겨요 🚀"
+    },
+    {
+      "text": "실리콘밸리 엔지니어와 함께하는 Claude Code(개발자용)",
+      "link": "https://inf.run/fFDVv",
+      "subtext": "AI 코딩 도구 제대로 쓰고 싶다면! 이 링크로 구매하시면 파트너 수수료가 지급돼요 🤖"
+    },
+    {
+      "text": "비개발자 4주만에 수익화 서비스 만들기",
+      "link": "https://inf.run/43goW",
+      "subtext": "코딩 몰라도 서비스 만들 수 있어요. 링크 구매 시 저에게 소정의 수익이 돌아와요 💡"
+    },
+    {
+      "text": "모든 개발자의 실무를 위한 올인원 기본기 클래스",
+      "link": "https://inf.run/RLvS5",
+      "subtext": "실무 기본기를 한 번에 잡는 강의예요. 이 링크 이용 시 파트너 수수료를 받아요 🛠️"
+    },
+    {
+      "text": "포트폴리오 초간단 배포하기",
+      "link": "https://inf.run/7iELD",
+      "subtext": "포트폴리오 배포 쉽게 끝내세요! 구매 시 확장 유지비에 조금이나마 보탬이 돼요 📦"
+    },
+    {
+      "text": "이 한글화 확장프로그램 개발자에게 초코에몽을 사주세요",
+      "link": "https://im.jinyoon.kr/donate/",
+      "subtext": "학생 개발자가 혼자 만들고 유지보수하고 있어요 🥹"
+    }
+  ]
+}
