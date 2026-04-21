@@ -565,7 +565,14 @@ class GitHubPageEnhancer {
       return;
     }
 
-    // 기존 코드 유지
+    const isLoggedIn = document.body.classList.contains("logged-in");
+    
+    const feedContainer = document.querySelector('.feed-content.flex-justify-center.border-bottom');
+
+    if (!isLoggedIn || !feedContainer) {
+      return;
+    }
+
     if (document.getElementById('github-kr-sponsor-banner') || this.isBannerInjecting) return;
 
     const storageKey = 'github_kr_banner_dismissed_at';
