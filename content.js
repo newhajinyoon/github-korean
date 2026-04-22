@@ -191,7 +191,9 @@ class GitHubPageEnhancer {
       const textWalker = document.createTreeWalker(overflowElem, NodeFilter.SHOW_TEXT, null, false);
       let textNode;
       while ((textNode = textWalker.nextNode())) {
-        textNode.textContent = textNode.textContent.replace(/^\s+|\s+$/g, '');
+        let text = textNode.textContent.replace(/^\s+|\s+$/g, '');
+        let translated = this.transText(text); // 번역 시도
+        textNode.textContent = translated ? translated : text;
         this.processedNodes.add(textNode);
       }
 
