@@ -464,6 +464,14 @@ class GitHubPageEnhancer {
         let attrModified = false;
         for (const attr of translatableAttributes) {
           if (currentNode.hasAttribute(attr)) {
+            if (attr === 'value') {
+              const tagName = currentNode.tagName.toUpperCase();
+              const type = (currentNode.getAttribute('type') || '').toLowerCase();
+              if (tagName === 'OPTION') continue;
+              if (tagName === 'INPUT' && !['button', 'submit', 'reset'].includes(type)) continue;
+              if (tagName === 'BUTTON') continue;
+            }
+
             const translated = this.transText(currentNode.getAttribute(attr));
             if (translated && currentNode.getAttribute(attr) !== translated) {
               currentNode.setAttribute(attr, translated);
