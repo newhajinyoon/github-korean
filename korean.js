@@ -1,5 +1,4 @@
 /*******************************************************************************
-
 ﻿    locals.js - 搭配用户脚本插件`GitHub 中文化插件`的页面匹配规则, 翻译忽略规则,
                 词条库文件
     Copyright (C) 2016-2021 楼教主 (https://github.com/52cik)
@@ -20096,7 +20095,7 @@ I18N["ko-KR"]["homepage"] = { // 未登录的首页
         "Enter your email": "이메일을 입력해주세요",
         "Sign up for GitHub": "Github에 회원가입하기",
         //"Start a free enterprise trial": "开始免费试用企业版",
-        "Try GitHub Copilot free": "GitHub Copilot 무료로 사용해보기",
+        "Try GitHub Copilot": "GitHub Copilot 사용해보기",
 
         "Try Copilot Free": "Copilot 무료로 사용해보기",
             "30 days free": "30일 체험",
