@@ -28,51 +28,11 @@ class GitHubPageEnhancer {
     this.useParticles = true;
     this.logPerformance = false;
 
-    this.devTermsReplacements = [
-      [/끌어오기\s*요청(을|를)/g, '풀 리퀘스트를'],
-      [/끌어오기\s*요청(이|가)/g, '풀 리퀘스트가'],
-      [/끌어오기\s*요청(은|는)/g, '풀 리퀘스트는'],
-      [/끌어오기\s*요청(과|와)/g, '풀 리퀘스트와'],
-      [/끌어오기\s*요청(으로|로)/g, '풀 리퀘스트로'],
-      [/끌어오기\s*요청/g, '풀 리퀘스트'],
-      [/저장소(를|을)/g, '리포지토리를'],
-      [/저장소(가|이)/g, '리포지토리가'],
-      [/저장소(는|은)/g, '리포지토리는'],
-      [/저장소(와|과)/g, '리포지토리와'],
-      [/저장소(로|으로)/g, '리포지토리로'],
-      [/저장소/g, '리포지토리'],
-      [/분기(를|을)/g, '브랜치를'],
-      [/분기(가|이)/g, '브랜치가'],
-      [/분기(는|은)/g, '브랜치는'],
-      [/분기(와|과)/g, '브랜치와'],
-      [/분기(로|으로)/g, '브랜치로'],
-      [/분기/g, '브랜치'],
-      [/별표(를|을)/g, '스타를'],
-      [/별표(가|이)/g, '스타가'],
-      [/별표(는|은)/g, '스타는'],
-      [/별표(와|과)/g, '스타와'],
-      [/별표(로|으로)/g, '스타로'],
-      [/별표/g, '스타'],
-      [/꼬리표(를|을)/g, '태그를'],
-      [/꼬리표(가|이)/g, '태그가'],
-      [/꼬리표(는|은)/g, '태그는'],
-      [/꼬리표(와|과)/g, '태그와'],
-      [/꼬리표(로|으로)/g, '태그로'],
-      [/꼬리표/g, '태그'],
-      [/장터(를|을)/g, '마켓플레이스를'],
-      [/장터(가|이)/g, '마켓플레이스가'],
-      [/장터(는|은)/g, '마켓플레이스는'],
-      [/장터(로|으로)/g, '마켓플레이스로'],
-      [/장터/g, '마켓플레이스'],
-      [/탐험하기/g, '탐색'],
-      [/빠른\s*답장/g, '저장된 답장'],
-      [/구매/g, '결제'],
-      [/실행기/g, '러너'],
-      [/토론/g, '디스커션'],
-      [/모음/g, '컬렉션'],
-      [/명령\s*팔레트/g, '커맨드 팔레트'],
-      [/슬래시\s*명령어/g, '슬래시 커맨드'],
-      [/엑세스/g, '액세스']
+    this.devTermsReplacements =[[/끌어오기\s*요청(을|를)/g, '풀 리퀘스트를'],[/끌어오기\s*요청(이|가)/g, '풀 리퀘스트가'],[/끌어오기\s*요청(은|는)/g, '풀 리퀘스트는'],[/끌어오기\s*요청(과|와)/g, '풀 리퀘스트와'],[/끌어오기\s*요청(으로|로)/g, '풀 리퀘스트로'],[/끌어오기\s*요청/g, '풀 리퀘스트'],[/저장소(를|을)/g, '리포지토리를'],[/저장소(가|이)/g, '리포지토리가'],[/저장소(는|은)/g, '리포지토리는'],[/저장소(와|과)/g, '리포지토리와'],[/저장소(로|으로)/g, '리포지토리로'],[/저장소/g, '리포지토리'],
+      [/분기(를|을)/g, '브랜치를'],[/분기(가|이)/g, '브랜치가'],[/분기(는|은)/g, '브랜치는'],[/분기(와|과)/g, '브랜치와'],[/분기(로|으로)/g, '브랜치로'],[/분기/g, '브랜치'],[/별표(를|을)/g, '스타를'],[/별표(가|이)/g, '스타가'],[/별표(는|은)/g, '스타는'],[/별표(와|과)/g, '스타와'],[/별표(로|으로)/g, '스타로'],[/별표/g, '스타'],
+      [/꼬리표(를|을)/g, '태그를'],[/꼬리표(가|이)/g, '태그가'],[/꼬리표(는|은)/g, '태그는'],[/꼬리표(와|과)/g, '태그와'],[/꼬리표(로|으로)/g, '태그로'],[/꼬리표/g, '태그'],
+      [/장터(를|을)/g, '마켓플레이스를'],[/장터(가|이)/g, '마켓플레이스가'],[/장터(는|은)/g, '마켓플레이스는'],[/장터(로|으로)/g, '마켓플레이스로'],[/장터/g, '마켓플레이스'],
+      [/탐험하기/g, '탐색'],[/빠른\s*답장/g, '저장된 답장'],[/구매/g, '결제'],[/실행기/g, '러너'],[/토론/g, '디스커션'],[/모음/g, '컬렉션'],[/명령\s*팔레트/g, '커맨드 팔레트'],[/슬래시\s*명령어/g, '슬래시 커맨드'],[/엑세스/g, '액세스']
     ];
   }
 
@@ -83,11 +43,7 @@ class GitHubPageEnhancer {
     } catch (e) {
       const value = localStorage.getItem(key);
       if (value === null) return defaultValue;
-      try {
-        return JSON.parse(value);
-      } catch {
-        return value;
-      }
+      try { return JSON.parse(value); } catch { return value; }
     }
   }
 
@@ -98,7 +54,6 @@ class GitHubPageEnhancer {
       localStorage.setItem(key, JSON.stringify(value));
     }
   }
-
 
   notify(message) {
     try {
@@ -132,7 +87,7 @@ class GitHubPageEnhancer {
   applyDevTerms(text) {
     if (!text) return text;
     let result = text;
-    for (const [pattern, replacement] of this.devTermsReplacements) {
+    for (const[pattern, replacement] of this.devTermsReplacements) {
       result = result.replace(pattern, replacement);
     }
     return result;
@@ -140,13 +95,10 @@ class GitHubPageEnhancer {
 
   reorderFlexElements(parent) {
     if (this.processedNodes.has(parent)) return;
-
     try {
       const shrinkElem = parent.querySelector('.flex-shrink-0');
       const overflowElem = parent.querySelector('.overflow-auto');
-
       if (!shrinkElem || !overflowElem) return;
-
       const userAnchor = shrinkElem.querySelector('a');
       if (!userAnchor) return;
 
@@ -162,27 +114,16 @@ class GitHubPageEnhancer {
       const textContent = shrinkElem.textContent;
       let actionSuffix = "";
 
-      if (cardType === 'STARRED_REPOSITORY' || textContent.includes('starred') || textContent.includes('별표')) {
-        actionSuffix = "에 별표를 남겼습니다";
-      } else if (cardType === 'FOLLOW' || textContent.includes('following') || textContent.includes('팔로우')) {
-        actionSuffix = "을(를) 팔로우하기 시작했습니다";
-      } else if (cardType === 'CREATED_REPOSITORY' || textContent.includes('created') || textContent.includes('만들었')) {
-        actionSuffix = " 저장소를 만들었습니다";
-      } else if (cardType === 'FORKED_REPOSITORY' || textContent.includes('forked') || textContent.includes('포크')) {
-        actionSuffix = " 저장소를 포크했습니다";
-      } else if (cardType === 'ADDED_TO_LIST' || textContent.includes('added') || textContent.includes('추가')) {
-        actionSuffix = "을(를) 목록에 추가했습니다";
-      } else if (cardType === 'PUBLISHED_RELEASE' || textContent.includes('released') || textContent.includes('릴리즈')) {
-        actionSuffix = "의 새 릴리즈를 공개했습니다";
-      } else if (cardType === 'MERGED_PULL_REQUEST' || textContent.includes('merged') || textContent.includes('기여')) {
-        actionSuffix = "에 기여했습니다";
-      } else {
-        return;
-      }
+      if (cardType === 'STARRED_REPOSITORY' || textContent.includes('starred') || textContent.includes('별표')) actionSuffix = "에 별표를 남겼습니다";
+      else if (cardType === 'FOLLOW' || textContent.includes('following') || textContent.includes('팔로우')) actionSuffix = "을(를) 팔로우하기 시작했습니다";
+      else if (cardType === 'CREATED_REPOSITORY' || textContent.includes('created') || textContent.includes('만들었')) actionSuffix = " 저장소를 만들었습니다";
+      else if (cardType === 'FORKED_REPOSITORY' || textContent.includes('forked') || textContent.includes('포크')) actionSuffix = " 저장소를 포크했습니다";
+      else if (cardType === 'ADDED_TO_LIST' || textContent.includes('added') || textContent.includes('추가')) actionSuffix = " 목록에 추가했습니다";
+      else if (cardType === 'PUBLISHED_RELEASE' || textContent.includes('released') || textContent.includes('릴리즈')) actionSuffix = "의 새 릴리즈를 공개했습니다";
+      else if (cardType === 'MERGED_PULL_REQUEST' || textContent.includes('merged') || textContent.includes('기여')) actionSuffix = "에 기여했습니다";
+      else return;
 
-      if (this.useDevTerms) {
-        actionSuffix = this.applyDevTerms(actionSuffix);
-      }
+      if (this.useDevTerms) actionSuffix = this.applyDevTerms(actionSuffix);
 
       shrinkElem.innerHTML = '';
       shrinkElem.appendChild(userAnchor);
@@ -192,7 +133,7 @@ class GitHubPageEnhancer {
       let textNode;
       while ((textNode = textWalker.nextNode())) {
         let text = textNode.textContent.replace(/^\s+|\s+$/g, '');
-        let translated = this.transText(text); // 번역 시도
+        let translated = this.transText(text);
         textNode.textContent = translated ? translated : text;
         this.processedNodes.add(textNode);
       }
@@ -213,16 +154,13 @@ class GitHubPageEnhancer {
 
   reorderUpdatedRelativeTime(div) {
     if (this.processedNodes.has(div)) return;
-
     try {
       const relTime = div.querySelector("relative-time");
       if (!relTime) return;
 
       let updatedTextNode = null;
       div.childNodes.forEach(node => {
-        if (node.nodeType === Node.TEXT_NODE && node.textContent.includes("Updated")) {
-          updatedTextNode = node;
-        }
+        if (node.nodeType === Node.TEXT_NODE && node.textContent.includes("Updated")) updatedTextNode = node;
       });
       if (!updatedTextNode) return;
 
@@ -231,7 +169,6 @@ class GitHubPageEnhancer {
 
       const newText = " " + updatedTextNode.textContent.trim();
       updatedTextNode.remove();
-
       relTime.insertAdjacentText('afterend', newText);
       this.processedNodes.add(div);
     } catch (e) {}
@@ -252,7 +189,6 @@ class GitHubPageEnhancer {
 
   detectPageType() {
     if (typeof I18N === 'undefined' || !I18N.conf) return false;
-
     const { PAGE_MAP, SPECIAL_SITES } = this.config;
     const url = new URL(window.location.href);
     const { hostname, pathname } = url;
@@ -272,8 +208,7 @@ class GitHubPageEnhancer {
       case SPECIAL_SITES.includes(site): pageType = site; break;
       case isProfile:
         const tabParam = new URLSearchParams(url.search).get('tab');
-        pageType = pathname.includes('/stars') ? 'page-profile/stars'
-                 : tabParam ? `page-profile/${tabParam}` : 'page-profile';
+        pageType = pathname.includes('/stars') ? 'page-profile/stars' : tabParam ? `page-profile/${tabParam}` : 'page-profile';
         break;
       case isHomepage: pageType = isLogin ? 'dashboard' : 'homepage'; break;
       case isRepository:
@@ -289,9 +224,7 @@ class GitHubPageEnhancer {
         pageType = pathMatch ? (pathMatch[1] || pathMatch.slice(-1)[0]) : false;
     }
 
-    if (pageType === false || !I18N[this.config.LANG]?.[pageType]) {
-      return false;
-    }
+    if (pageType === false || !I18N[this.config.LANG]?.[pageType]) return false;
     return pageType;
   }
 
@@ -300,24 +233,28 @@ class GitHubPageEnhancer {
 
     const langPack = I18N[this.config.LANG];
     const conf = I18N.conf;
+
+    const extraIgnoreSelectors =[
+      '[class*="DirectoryRichtextContent"]',
+      '[class*="BlobViewContent"]',
+      '.js-snippet-clipboard-copy-unpositioned',
+      'qb-search-input',
+      'search-input',
+      '[class*="QueryBuilder"]',
+      '[id*="query-builder"]',
+      '[data-target*="query-builder"]'
+    ];
+
     this.pageConfig = {
       currentPageType: pageType,
-      staticDict: {
-        ...langPack.public.static,
-        ...(langPack[pageType]?.static || {})
-      },
-      regexpRules: [
-        ...langPack.public.regexp,
-        ...(langPack[pageType]?.regexp || [])
-      ],
+      staticDict: { ...langPack.public.static, ...(langPack[pageType]?.static || {}) },
+      regexpRules: [ ...langPack.public.regexp, ...(langPack[pageType]?.regexp ||[]) ],
       ignoreSelectors: [
         ...conf.ignoreSelectorPage['*'],
-        ...(conf.ignoreSelectorPage[pageType] || [])
+        ...(conf.ignoreSelectorPage[pageType] ||[]),
+        ...extraIgnoreSelectors
       ].join(', '),
-      tranSelectors: [
-        ...(langPack.public.selector || []),
-        ...(langPack[pageType]?.selector || [])
-      ],
+      tranSelectors:[ ...(langPack.public.selector || []), ...(langPack[pageType]?.selector ||[]) ],
     };
   }
   
@@ -331,7 +268,6 @@ class GitHubPageEnhancer {
 
   transText(text) {
     if (!this.useTranslation || !text || /^\s*$/.test(text)) return false;
-
     const trimmedText = text.trim();
     if (!/[a-zA-Z]/.test(trimmedText)) return false; 
 
@@ -350,7 +286,6 @@ class GitHubPageEnhancer {
         return result;
       }
     }
-
     return false;
   }
 
@@ -382,20 +317,14 @@ class GitHubPageEnhancer {
           let pNode;
           while ((pNode = prevWalker.previousNode())) {
             const pMatch = pNode.textContent.match(/[가-힣a-zA-Z0-9](?=[^가-힣a-zA-Z0-9]*$)/);
-            if (pMatch) {
-              prevChar = pMatch[0];
-              break;
-            }
+            if (pMatch) { prevChar = pMatch[0]; break; }
           }
         }
 
         if (prevChar) {
           let hasJongseong = false;
-          if (/[가-힣]/.test(prevChar)) {
-            hasJongseong = (prevChar.charCodeAt(0) - 0xAC00) % 28 > 0;
-          } else {
-            hasJongseong = /[136780lLmMnNrR]/.test(prevChar);
-          }
+          if (/[가-힣]/.test(prevChar)) hasJongseong = (prevChar.charCodeAt(0) - 0xAC00) % 28 > 0;
+          else hasJongseong = /[136780lLmMnNrR]/.test(prevChar);
 
           if (match === '을(를)') return hasJongseong ? '을' : '를';
           if (match === '이(가)') return hasJongseong ? '이' : '가';
@@ -417,15 +346,11 @@ class GitHubPageEnhancer {
     if (this.processedNodes.has(node)) return;
 
     if (node.nodeType === Node.ELEMENT_NODE) {
-      if (node.matches(this.pageConfig.ignoreSelectors) || node.closest(this.pageConfig.ignoreSelectors)) {
-        return;
-      }
+      if (node.matches(this.pageConfig.ignoreSelectors) || node.closest(this.pageConfig.ignoreSelectors)) return;
 
-      const flexElements = node.matches('.flex-1') ? [node] : Array.from(node.querySelectorAll('span.flex-1'));
+      const flexElements = node.matches('.flex-1') ?[node] : Array.from(node.querySelectorAll('span.flex-1'));
       flexElements.forEach(flexElem => {
-        if (flexElem.parentElement && flexElem.parentElement.tagName === 'H3') {
-          this.reorderFlexElements(flexElem);
-        }
+        if (flexElem.parentElement && flexElem.parentElement.tagName === 'H3') this.reorderFlexElements(flexElem);
       });
 
       if (node.tagName === 'DIV' && node.querySelector('relative-time')) {
@@ -462,16 +387,19 @@ class GitHubPageEnhancer {
         }
       } 
       else if (currentNode.nodeType === Node.ELEMENT_NODE) {
-        const translatableAttributes = ['placeholder', 'title', 'aria-label', 'value', 'data-confirm'];
+        const translatableAttributes =['placeholder', 'title', 'aria-label', 'value', 'data-confirm'];
         let attrModified = false;
+        
         for (const attr of translatableAttributes) {
           if (currentNode.hasAttribute(attr)) {
             if (attr === 'value') {
               const tagName = currentNode.tagName.toUpperCase();
-              const type = (currentNode.getAttribute('type') || '').toLowerCase();
-              if (tagName === 'OPTION') continue;
-              if (tagName === 'INPUT' && !['button', 'submit', 'reset'].includes(type)) continue;
-              if (tagName === 'BUTTON') continue;
+              if (tagName === 'INPUT') {
+                const type = (currentNode.getAttribute('type') || '').toLowerCase();
+                if (!['button', 'submit', 'reset'].includes(type)) continue;
+              } else {
+                continue; 
+              }
             }
 
             const translated = this.transText(currentNode.getAttribute(attr));
@@ -485,9 +413,7 @@ class GitHubPageEnhancer {
       }
     }
 
-    if (this.useParticles) {
-      this.resolveKoreanParticles(node);
-    }
+    if (this.useParticles) this.resolveKoreanParticles(node);
   }
 
   transTitle() {
@@ -505,7 +431,6 @@ class GitHubPageEnhancer {
 
   mutationCallback(mutations) {
     if (!this.useTranslation) return;
-    
     const start = performance.now();
 
     if (document.documentElement.lang !== this.config.LANG) {
@@ -533,9 +458,7 @@ class GitHubPageEnhancer {
 
     if (this.logPerformance) {
       const duration = performance.now() - start; 
-      if (duration > 5) { 
-        console.log(`[DOM 처리 소요시간] ${duration.toFixed(2)}ms`);
-      }
+      if (duration > 5) console.log(`[DOM 처리 소요시간] ${duration.toFixed(2)}ms`);
     }
   }
 
@@ -544,75 +467,54 @@ class GitHubPageEnhancer {
     const style = document.createElement('style');
     style.id = 'github-kr-banner-style';
     style.textContent = `
-      .gh-kr-banner-container {
-        margin: 16px 0; border: 1px solid var(--color-border-default); border-radius: 6px; 
-        background-color: var(--color-canvas-subtle); padding: 16px; display: flex; 
-        align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
-      }
+      .gh-kr-banner-container { margin: 16px 0; border: 1px solid var(--color-border-default); border-radius: 6px; background-color: var(--color-canvas-subtle); padding: 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
       .gh-kr-banner-left { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 280px; }
-      .gh-kr-banner-icon {
-        background-color: var(--color-canvas-default); border: 1px solid var(--color-border-default); 
-        border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; 
-        justify-content: center; flex-shrink: 0; box-shadow: var(--color-shadow-small);
-      }
+      .gh-kr-banner-icon { background-color: var(--color-canvas-default); border: 1px solid var(--color-border-default); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: var(--color-shadow-small); }
       .gh-kr-banner-text-group { display: flex; flex-direction: column; line-height: 1.4; }
       .gh-kr-banner-title { font-weight: 600; font-size: 14px; color: var(--color-fg-default); }
       .gh-kr-banner-subtitle { font-size: 12px; color: var(--color-fg-muted); }
       .gh-kr-banner-right { display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
       .gh-kr-banner-close-group { display: flex; align-items: center; gap: 8px; }
-      .gh-kr-banner-close-btn {
-        cursor: pointer; background: transparent; border: none; padding: 4px; 
-        color: var(--color-fg-muted); display: flex; align-items: center; 
-        justify-content: center; border-radius: 4px; transition: background-color 0.2s;
-      }
+      .gh-kr-banner-close-btn { cursor: pointer; background: transparent; border: none; padding: 4px; color: var(--color-fg-muted); display: flex; align-items: center; justify-content: center; border-radius: 4px; transition: background-color 0.2s; }
       .gh-kr-banner-close-btn:hover { background-color: var(--color-action-list-item-danger-hover-bg, rgba(200, 0, 0, 0.1)); }
     `;
     document.head.appendChild(style);
   }
 
   async injectSponsorBanner() {
-    if (window.location.hostname !== 'github.com' || window.location.pathname !== '/') {
-      return;
-    }
-
+    if (window.location.hostname !== 'github.com' || window.location.pathname !== '/') return;
     const isLoggedIn = document.body.classList.contains("logged-in");
-    
     const feedContainer = document.querySelector('.feed-content.flex-justify-center.border-bottom');
-
-    if (!isLoggedIn || !feedContainer) {
-      return;
-    }
-
+    if (!isLoggedIn || !feedContainer) return;
     if (document.getElementById('github-kr-sponsor-banner') || this.isBannerInjecting) return;
 
     const storageKey = 'github_kr_banner_dismissed_at';
     const lastDismissed = await this.storageGet(storageKey, 0);
     const now = Date.now();
-    const ONE_DAY = 24 * 60 * 60 * 1000;
-
-    if (now - lastDismissed < ONE_DAY) return;
+    if (now - lastDismissed < 24 * 60 * 60 * 1000) return;
 
     this.isBannerInjecting = true;
-
     try {
-      const JSON_URL = 'https://raw.githubusercontent.com/newhajinyoon/github-korean/main/sponsors.json';
-      const response = await fetch(JSON_URL);
+      const response = await fetch('https://raw.githubusercontent.com/newhajinyoon/github-korean/main/sponsors.json');
       if (!response.ok) throw new Error();
       const data = await response.json();
-      
-      if (!data?.sponsors?.length) {
-        this.isBannerInjecting = false;
-        return;
-      }
-      
-      if (document.getElementById('github-kr-sponsor-banner')) {
+
+      if (
+        data === 'nosponsor' || 
+        data?.nosponsor === true || 
+        data?.sponsors === 'nosponsor' || 
+        (Array.isArray(data?.sponsors) && data.sponsors[0]?.text === 'nosponsor')
+      ) {
         this.isBannerInjecting = false;
         return;
       }
 
-      const randomIndex = Math.floor(Math.random() * data.sponsors.length);
-      const sponsorData = data.sponsors[randomIndex];
+      if (!data?.sponsors?.length || document.getElementById('github-kr-sponsor-banner')) {
+        this.isBannerInjecting = false;
+        return;
+      }
 
+      const sponsorData = data.sponsors[Math.floor(Math.random() * data.sponsors.length)];
       this.injectSponsorBannerStyle();
 
       const bannerHtml = `
@@ -633,35 +535,33 @@ class GitHubPageEnhancer {
             <div class="gh-kr-banner-close-group">
               <span class="gh-kr-banner-subtitle">오늘 하루 안 나와요</span>
               <button id="github-kr-banner-close" aria-label="닫기" title="닫기 (오늘 하루 보지 않기)" type="button" class="gh-kr-banner-close-btn">
-                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-x">
-                  <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-                </svg>
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-x"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg>
               </button>
             </div>
           </div>
         </div>
       `;
 
-    const targetContainer = document.querySelector('div.repository-content') || document.querySelector('main');
-    if (targetContainer) {
-      const template = document.createElement('template');
-      template.innerHTML = bannerHtml.trim();
-      const bannerEl = template.content.firstChild;
-      targetContainer.insertBefore(bannerEl, targetContainer.firstChild);
+      const targetContainer = document.querySelector('div.repository-content') || document.querySelector('main');
+      if (targetContainer) {
+        const template = document.createElement('template');
+        template.innerHTML = bannerHtml.trim();
+        const bannerEl = template.content.firstChild;
+        targetContainer.insertBefore(bannerEl, targetContainer.firstChild);
 
-      const closeBtn = bannerEl.querySelector('#github-kr-banner-close');
-      if (closeBtn) {
-        closeBtn.addEventListener('click', async () => {
-          bannerEl.remove();
-          await this.storageSet(storageKey, Date.now());
-        });
+        const closeBtn = bannerEl.querySelector('#github-kr-banner-close');
+        if (closeBtn) {
+          closeBtn.addEventListener('click', async () => {
+            bannerEl.remove();
+            await this.storageSet(storageKey, Date.now());
+          });
+        }
       }
+    } catch (e) {
+    } finally {
+      this.isBannerInjecting = false;
     }
-  } catch (e) {
-  } finally {
-    this.isBannerInjecting = false;
   }
-}
 
   async init() {
     if (typeof I18N === 'undefined') return;
@@ -680,29 +580,14 @@ class GitHubPageEnhancer {
 
     chrome.storage.onChanged.addListener((changes) => {
       let needsReload = false;
-      
-      if (changes.useTranslation) {
-        this.useTranslation = changes.useTranslation.newValue;
-        needsReload = true;
-      }
-      if (changes.useDevTerms) {
-        this.useDevTerms = changes.useDevTerms.newValue;
-        needsReload = true;
-      }
-      if (changes.useParticles) {
-        this.useParticles = changes.useParticles.newValue;
-      }
-      if (changes.useLogs) {
-        this.logPerformance = changes.useLogs.newValue;
-      }
-
-      if (needsReload) {
-        window.location.reload();
-      }
+      if (changes.useTranslation) { this.useTranslation = changes.useTranslation.newValue; needsReload = true; }
+      if (changes.useDevTerms) { this.useDevTerms = changes.useDevTerms.newValue; needsReload = true; }
+      if (changes.useParticles) this.useParticles = changes.useParticles.newValue;
+      if (changes.useLogs) this.logPerformance = changes.useLogs.newValue;
+      if (needsReload) window.location.reload();
     });
 
     if (!this.useTranslation) return;
-
     this.observer = new MutationObserver(this.mutationCallback.bind(this));
 
     const startTranslation = () => {
@@ -710,10 +595,8 @@ class GitHubPageEnhancer {
       this.updatePageConfig();
       this.processNode(document.body);
       this.transTitle();
-      
       this.observer.disconnect();
       this.observer.observe(document.documentElement, this.observerConfig);
-
       this.injectSponsorBanner();
     };
 
