@@ -103,6 +103,7 @@
 
 이 프로젝트는 **GNU General Public License v3.0 (GPL-3.0)** 라이선스를 따릅니다.
 
+## 깃허브 한국어는 jinyoon이 만들었다!
 ---
 
 <p align="center">
